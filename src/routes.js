@@ -2,6 +2,8 @@ import ErrorPage from "./error-page";
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "./components/page/dashboard/Dashboard";
 import AllFeatures from "./components/page/all-features/AllFeatures";
+import BlogPage from "./components/page/blog/BlogPage";
+import AboutPage from "./components/page/about/AboutPage";
 
 export const router = createBrowserRouter([
     {
@@ -44,7 +46,7 @@ export const router = createBrowserRouter([
     },
     {
       path: "/about-us",
-      element: <Dashboard />,
+      element: <AboutPage />,
     },
     {
       path: "/rate-calculators",
@@ -76,7 +78,7 @@ export const router = createBrowserRouter([
     },
     {
       path: "/blogs",
-      element: <Dashboard />,
+      element: <BlogPage />,
     },
     {
       path: "/career",
