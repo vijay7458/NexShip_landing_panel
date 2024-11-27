@@ -1,16 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './dashboard.css';
 import Slider from './components/slider/Slider';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Dashboard = () => {
+
+
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const apiUrl = `https://bus-sewa.onrender.com/bus-seva/employee-storage`;
+        const response = await axios.get(apiUrl);
+        setData(response.data);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(data?.data[0].imagestore, "datadatadata")
 
   return (
     <div className="dashboard">
       <div className="dashboard-main">
         <header className="dashboard-header">
           <h1>Welcome to the Home Page</h1>
-
+          <img src={data?.data[0].imagestore} width={"100px"} height={"100px"} alt="" />
           <div className="container mt-3">
             <ul className="list-group d-flex flex-row">
               <li className="list-group-item me-2">
