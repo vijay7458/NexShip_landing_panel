@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { BASE_URL } from '../../../axios/config';
 import axios from 'axios';
 
-const LogisticsListPage = () => {
+const StateListPage = () => {
     const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);   
     const [error, setError] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
@@ -28,4 +28,4 @@ const LogisticsListPage = () => {
     )
 }
 
-export default LogisticsListPage
+export default StateListPage
