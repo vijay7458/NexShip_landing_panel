@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from '../../assets/image/white-logo.png'
+import GooglePlay from '../../assets/image/googleplay.png'
+import AppleStore from '../../assets/image/appstore.png'
+
 import {
   faFacebookF,
   faTwitter,
@@ -8,6 +11,7 @@ import {
   faYoutube,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faEnvelopeOpenText, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import "./Footer.css"; // External CSS file for styles
 
 const Footer = () => {
@@ -38,27 +42,32 @@ const Footer = () => {
           </div>
 
           <h4>Reach Us At</h4>
-          <ul className="mb-2">
-            <li><i className="fas fa-envelope"></i> support@shipease.com</li>
-            <li><i className="fas fa-envelope"></i> sales@shipease.com</li>
+          <ul className="reach-us mb-2">
+            <li><FontAwesomeIcon icon={faEnvelope} /> <p>support@shipease.com</p></li>
+            <li><FontAwesomeIcon icon={faEnvelopeOpenText} /> <p>sales@shipease.com</p></li>
             <li>
-              <i className="fas fa-map-marker-alt"></i> Registered Office Address:<br />
-              sdjnsjkdnsjkdankdja
+              <FontAwesomeIcon icon={faLocationDot} /><p>
+                <strong>Registered Office Address:</strong><br />
+                sdjnsjkdnsjkdankdja
+              </p>
             </li>
             <li>
-              <i className="fas fa-map-marker-alt"></i> Corporate Office Address:<br />
-              jkdnbsjkndkjasdnlksndlkan
+              <FontAwesomeIcon icon={faLocationDot} />
+              <p>
+                <strong>Corporate Office Address:</strong><br />
+                jkdnbsjkndkjasdnlksndlkan
+              </p>
             </li>
           </ul>
-          <h4>Download App</h4>
+          {/* <h4>Download App</h4>
           <div className="app-links">
             <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
-              <img src="/path/to/google-play.png" alt="Google Play" />
+              <img src={GooglePlay} alt="Google Play" />
             </a>
             <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
-              <img src="/path/to/app-store.png" alt="App Store" />
+              <img src={AppleStore} alt="App Store" />
             </a>
-          </div>
+          </div> */}
         </div>
 
 
@@ -77,6 +86,10 @@ const Footer = () => {
             <li>Shipease Cargo</li>
             <li>Shipease Omuni</li>
             <li>Shipease Promise</li>
+            <li>Shipease Amplify</li>
+            <li>Shipease Quick</li>
+            <li>Delivery Boost</li>
+            <li>Shipease Sense</li>
           </ul>
         </div>
 
@@ -90,6 +103,14 @@ const Footer = () => {
             <li>Multiple Pickup Locations</li>
             <li>Print Shipping Labels</li>
             <li>Email & SMS Notifications</li>
+            <li>Amazon Self-Ship</li>
+            <li>All Features</li>
+          </ul>
+          <h4>Partner</h4>
+          <ul>
+            <li>Carrier</li>
+            <li>Technology</li>
+            <li>Become a Partner</li>
           </ul>
         </div>
 
@@ -102,6 +123,31 @@ const Footer = () => {
             <li>Free eCommerce Tools</li>
             <li>Knowledge Base</li>
             <li>FAQs</li>
+            <li>Developers</li>
+            <li>Blog</li>
+            <li>Ebook</li>
+            <li>Encyclopedia</li>
+            <li>Video And Podcast</li>
+            <li>eCommerce Report 2023</li>
+            <li>Customer Stories</li>
+            <li>Showcase Your Brand</li>
+            <li>Tech Sphere</li>
+          </ul>
+        </div>
+
+        <div className="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Customers</li>
+            <li>Careers</li>
+            <li>Company Updates</li>
+            <li>Event</li>
+          </ul>
+          <h4>Support</h4>
+          <ul>
+            <li>Help Center</li>
           </ul>
         </div>
 
