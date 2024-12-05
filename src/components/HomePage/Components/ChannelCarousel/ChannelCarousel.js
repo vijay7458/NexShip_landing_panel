@@ -1,18 +1,26 @@
+import axios from "axios";
+import "./ChannelCarousel.css";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import Slider from "react-slick";
-import "./ChannelCarousel.css";
+import React, { useEffect, useState } from "react";
+import { BASE_URL } from "../../../../axios/config";
 
 const ChannelCarousel = () => {
-    const channels = [
-        { name: "Channel 1", image: "https://via.placeholder.com/100" },
-        { name: "Channel 2", image: "https://via.placeholder.com/100" },
-        { name: "Channel 3", image: "https://via.placeholder.com/100" },
-        { name: "Channel 4", image: "https://via.placeholder.com/100" },
-        { name: "Channel 5", image: "https://via.placeholder.com/100" },
-        // Add more channels as needed
-    ];
+    const [data, setData] = useState(null);
+   
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+              const apiUrl = `${BASE_URL}/core-api/shipease-admin/channel-partner-list/`;
+              const response = await axios.get(apiUrl); 
+              setData(response?.data); 
+            } catch (err) {
+            }
+          };
+      
+          fetchData(); 
+    }, []); 
 
     const settings = {
         infinite: true,
@@ -29,10 +37,10 @@ const ChannelCarousel = () => {
     return (
         <div className="channel-carousel">
             <Slider {...settings}>
-                {channels.map((channel, index) => (
+                {data?.map((channel, index) => (
                     <div key={index} className="carousel-item">
                         <img src={channel.image} alt={channel.name} />
-                        <p>{channel.name}</p>
+                        <p className="text-center">{channel.name}</p>
                     </div>
                 ))}
             </Slider>
