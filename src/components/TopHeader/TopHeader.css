@@ -1,0 +1,42 @@
+/* Top Header Styles */
+.top-header {
+    background-color: #092C4C;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 2px solid #212529;
+    z-index: 13;
+}
+
+.announcement {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.offer-highlight {
+    font-weight: bold;
+    color: #d9534f;
+    /* Red for high visibility */
+}
+
+.btn-dark {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn-dark:hover {
+    background-color: #343a40;
+    color: #092C4C;
+    text-decoration: none;
+}
+
+.top-header .learn-more-btn {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+    padding: 0;
+}
