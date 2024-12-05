@@ -40,7 +40,7 @@ const ChannelCarousel = () => {
                 {data?.map((channel, index) => (
                     <div key={index} className="carousel-item">
                         <img src={channel.image} alt={channel.name} />
-                        <p>{channel.name}</p>
+                        <p className="text-center">{channel.name}</p>
                     </div>
                 ))}
             </Slider>

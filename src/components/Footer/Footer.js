@@ -1,20 +1,29 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Footer.css";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { BASE_URL } from "../../axios/config";
 import Logo from '../../assets/image/white-logo.png'
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-  faYoutube,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import "./Footer.css"; // External CSS file for styles
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn, } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const apiUrl = `${BASE_URL}/core-api/shipease-admin/footer-configuration/`;
+        const response = await axios.get(apiUrl);
+        setData(response?.data);
+      } catch (err) {
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Logo and Social Links Section */}
         <div className="footer-column">
           <div className="footer-logo-section ">
             <img src={Logo} alt="Shipease Logo" className="footer-logo" />
