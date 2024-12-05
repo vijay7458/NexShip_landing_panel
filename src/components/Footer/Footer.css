@@ -1,6 +1,6 @@
 .footer {
     background-color: #092C4C;
-    padding: 40px 20px;
+    padding: 40px 20px 5px 20px;
     font-family: Arial, sans-serif;
     color: #fff;
     border-radius: 40px 40px 0 0;
@@ -93,4 +93,18 @@
 .social-icon:hover {
     color: var(--sh-primary);
     /* Change color on hover */
+}
+
+.reach-us li {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.reach-us li svg {
+    margin-top: 4px;
+}
+
+.reach-us li p {
+    margin-bottom: 0;
 }
