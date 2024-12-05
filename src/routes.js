@@ -1,123 +1,123 @@
 import ErrorPage from "./error-page";
 import { createBrowserRouter } from "react-router-dom";
-import Dashboard from "./components/page/dashboard/Dashboard";
 import AllFeatures from "./components/page/all-features/AllFeatures";
 import BlogPage from "./components/page/blog/BlogPage";
 import AboutPage from "./components/page/about/AboutPage";
+import App from "./App";
 
 export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Dashboard />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/all-features",
-      element: <AllFeatures />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/damaged-shipment",
-      element: <Dashboard />,
-    },
-    {
-      path: "/shipment-protection",
-      element: <Dashboard />,
-    },
-    {
-      path: "/ndr-management",
-      element: <Dashboard />,
-    },
-    {
-      path: "/hyper-local",
-      element: <Dashboard />,
-    },
-    {
-      path: "/amazon-self-ship",
-      element: <Dashboard />,
-    },
-    {
-      path: "/early-cod",
-      element: <Dashboard />,
-    },
-    {
-      path: "/pickup-locations",
-      element: <Dashboard />,
-    },
-    {
-      path: "/about-us",
-      element: <AboutPage />,
-    },
-    {
-      path: "/rate-calculators",
-      element: <Dashboard />,
-    },
-    {
-      path: "/prepaid-and-cod",
-      element: <Dashboard />,
-    },
-    {
-      path: "/support",
-      element: <Dashboard />,
-    },
-    {
-      path: "/carrier-integration",
-      element: <Dashboard />,
-    },
-    {
-      path: "/channel-integration",
-      element: <Dashboard />,
-    },
-    {
-      path: "/whatsapp-integration",
-      element: <Dashboard />,
-    },
-    {
-      path: "/refer-and-earn",
-      element: <Dashboard />,
-    },
-    {
-      path: "/blogs",
-      element: <BlogPage />,
-    },
-    {
-      path: "/career",
-      element: <Dashboard />,
-    },
-    {
-      path: "/contact-us",
-      element: <Dashboard />,
-    },
-    {
-      path: "/order-tracking",
-      element: <Dashboard />,
-    },
-    {
-      path: "/plans-and-pricing",
-      element: <Dashboard />,
-    },
-    {
-      path: "/api-integration",
-      element: <Dashboard />,
-    },
-    {
-      path: "/terms-of-services",
-      element: <Dashboard />,
-    },
-    {
-      path: "/privacy-policy",
-      element: <Dashboard />,
-    },
-    {
-      path: "/all-faq",
-      element: <Dashboard />,
-    },
-    {
-      path: "/all-glossary",
-      element: <Dashboard />,
-    },
-    {
-      path: "/guide",
-      element: <Dashboard />,
-    },
-  ]);
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/all-features",
+    element: <AllFeatures />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/damaged-shipment",
+    element: <App />,
+  },
+  {
+    path: "/shipment-protection",
+    element: <App />,
+  },
+  {
+    path: "/ndr-management",
+    element: <App />,
+  },
+  {
+    path: "/hyper-local",
+    element: <App />,
+  },
+  {
+    path: "/amazon-self-ship",
+    element: <App />,
+  },
+  {
+    path: "/early-cod",
+    element: <App />,
+  },
+  {
+    path: "/pickup-locations",
+    element: <App />,
+  },
+  {
+    path: "/about-us",
+    element: <AboutPage />,
+  },
+  {
+    path: "/rate-calculators",
+    element: <App />,
+  },
+  {
+    path: "/prepaid-and-cod",
+    element: <App />,
+  },
+  {
+    path: "/support",
+    element: <App />,
+  },
+  {
+    path: "/carrier-integration",
+    element: <App />,
+  },
+  {
+    path: "/channel-integration",
+    element: <App />,
+  },
+  {
+    path: "/whatsapp-integration",
+    element: <App />,
+  },
+  {
+    path: "/refer-and-earn",
+    element: <App />,
+  },
+  {
+    path: "/blogs",
+    element: <BlogPage />,
+  },
+  {
+    path: "/career",
+    element: <App />,
+  },
+  {
+    path: "/contact-us",
+    element: <App />,
+  },
+  {
+    path: "/order-tracking",
+    element: <App />,
+  },
+  {
+    path: "/plans-and-pricing",
+    element: <App />,
+  },
+  {
+    path: "/api-integration",
+    element: <App />,
+  },
+  {
+    path: "/terms-of-services",
+    element: <App />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <App />,
+  },
+  {
+    path: "/all-faq",
+    element: <App />,
+  },
+  {
+    path: "/all-glossary",
+    element: <App />,
+  },
+  {
+    path: "/guide",
+    element: <App />,
+  },
+]);

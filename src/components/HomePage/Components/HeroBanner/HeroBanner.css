@@ -1,0 +1,66 @@
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  overflow-y: unset;
+  overflow-x: clip;
+  position: relative;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 37px;
+  left: -30px;
+  width: 110%;
+  height: 117%;
+  background: rgb(25, 117, 201);
+  background: linear-gradient(180deg, rgba(25, 117, 201, 1) 10%, rgba(163, 209, 245, 1) 40%, rgba(255, 255, 255, 1) 70%, rgba(13, 74, 137, 1) 100%);
+  transform: rotate(-4deg);
+  border-radius: 0;
+}
+
+.banner-text {
+  flex: 1;
+  /* Adjust proportionally */
+  padding-right: 20px;
+  /* Space between text and image */
+  color: #333;
+  /* Dark text color */
+  z-index: 1;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.banner-image {
+  flex: 1;
+  /* Adjust proportionally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.banner-image img {
+  width: 100%;
+  /* Adjust based on your design */
+  max-width: 600px;
+  /* Ensures image does not grow too large */
+  height: auto;
+  /* Maintains aspect ratio */
+  border-radius: 10px;
+  object-fit: cover;
+  /* Ensures the image doesn't distort */
+}

@@ -1,0 +1,165 @@
+/* Header Styles */
+.header {
+    background: transparent;
+    /* Primary color */
+    padding: 1rem 0;
+    position: sticky;
+    /* Stick header to the top */
+    top: 0;
+    z-index: 3;
+}
+
+
+.header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background: #fff;
+    z-index: 2;
+    top: -10px;
+    filter: blur(13px);
+}
+
+/* .header.scrolled {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 180px;
+    max-height: 50px;
+    /* Adjust logo size */
+    vertical-align: middle;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    display: none;
+    gap: 2rem;
+    /* Space between menu items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--sh-primary-light);
+    /* Lighter shade on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    /* Position below the nav item */
+    left: 0;
+    background-color: var(--sh-primary-light);
+    /* Lighter background */
+    color: #333;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 200px;
+    z-index: 500;
+    /* Ensure it appears on top */
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--sh-primary-middle);
+    /* Hover background */
+    color: white;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+    /* Smooth appearance */
+}
+
+/* Animations for Dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navigation ul {
+        flex-direction: column;
+        /* Stack menu items vertically */
+        gap: 1rem;
+        position: absolute;
+        background-color: var(--sh-primary);
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        /* Initially hidden */
+    }
+
+    .navigation ul.show {
+        display: flex;
+        /* Show dropdown on toggle */
+    }
+
+    .nav-item:hover .dropdown-menu {
+        position: static;
+        /* Dropdowns stack naturally */
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+}
