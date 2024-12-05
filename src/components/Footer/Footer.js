@@ -21,6 +21,8 @@ const Footer = () => {
     fetchData();
   }, []);
 
+  console.log(data,'lllllllll')
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -49,14 +51,14 @@ const Footer = () => {
           <h4>Reach Us At</h4>
           <ul className="mb-2">
             <li><i className="fas fa-envelope"></i> support@shipease.com</li>
-            <li><i className="fas fa-envelope"></i> sales@shipease.com</li>
+            <li><i className="fas fa-envelope"></i> {data?.email}</li>
             <li>
               <i className="fas fa-map-marker-alt"></i> Registered Office Address:<br />
-              sdjnsjkdnsjkdankdja
+              {data?.address1}
             </li>
             <li>
               <i className="fas fa-map-marker-alt"></i> Corporate Office Address:<br />
-              jkdnbsjkndkjasdnlksndlkan
+              {data?.address2}
             </li>
           </ul>
           <h4>Download App</h4>
