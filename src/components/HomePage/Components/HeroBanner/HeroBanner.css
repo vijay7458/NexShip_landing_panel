@@ -6,6 +6,7 @@
   overflow-y: unset;
   overflow-x: clip;
   position: relative;
+  z-index: 2;
 }
 
 .hero-banner::after {
@@ -17,7 +18,7 @@
   height: 117%;
   background: rgb(25, 117, 201);
   background: linear-gradient(180deg, rgba(25, 117, 201, 1) 10%, rgba(163, 209, 245, 1) 40%, rgba(255, 255, 255, 1) 70%, rgba(13, 74, 137, 1) 100%);
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
   border-radius: 0;
 }
 
