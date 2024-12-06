@@ -8,42 +8,77 @@ import { BASE_URL } from "../../../../axios/config";
 
 const ChannelCarousel = () => {
     const [data, setData] = useState(null);
-   
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         const fetchData = async () => {
             try {
-              const apiUrl = `${BASE_URL}/core-api/shipease-admin/channel-partner-list/`;
-              const response = await axios.get(apiUrl); 
-              setData(response?.data); 
+                const apiUrl = `${BASE_URL}/core-api/shipease-admin/channel-partner-list/`;
+                const response = await axios.get(apiUrl);
+                setData(response?.data);
             } catch (err) {
+                console.error("Error fetching channel data:", err);
+            } finally {
+                setLoading(false);
             }
-          };
-      
-          fetchData(); 
-    }, []); 
+        };
+
+        fetchData();
+    }, []);
+
 
     const settings = {
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 5, // Number of visible slides
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0, // Speed for continuous scrolling
-        cssEase: "linear", // Smooth animation
-        pauseOnHover: true, // Pause on hover
-        arrows: false, // Remove navigation arrows
+        infinite: true, // Continuous looping of slides
+        speed: 3500, // Transition duration for smooth scrolling
+        slidesToShow: 5, // Number of slides visible at once
+        slidesToScroll: 1, // Number of slides to scroll at a time
+        autoplay: true, // Enables automatic sliding
+        autoplaySpeed: 0, // Continuous scrolling with no interval between slides
+        cssEase: "linear", // Ensures consistent, smooth scrolling
+        pauseOnHover: true, // Pauses the carousel immediately when hovered
+        arrows: false, // Removes navigation arrows
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
+
 
     return (
         <div className="channel-carousel">
-            <Slider {...settings}>
-                {data?.map((channel, index) => (
-                    <div key={index} className="carousel-item">
-                        <img src={channel.image} alt={channel.name} />
-                        <p className="text-center">{channel.name}</p>
-                    </div>
-                ))}
-            </Slider>
+            {loading ? (
+                <div className="loading-spinner">Loading...</div>
+            ) : data?.length > 0 ? (
+                <Slider {...settings}>
+                    {data.map((channel, index) => (
+                        <div key={index} className="carousel-item">
+                            <img
+                                src={channel.image || "default-placeholder.png"}
+                                alt={channel.name || "Channel Partner"}
+                                className="carousel-image"
+                            />
+                        </div>
+                    ))}
+                </Slider>
+            ) : (
+                <div className="no-data">No channel data available.</div>
+            )}
         </div>
     );
 };
