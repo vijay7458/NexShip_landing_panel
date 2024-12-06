@@ -31,7 +31,7 @@ const ChannelCarousel = () => {
 
     const settings = {
         infinite: true,
-        speed: 1500, // Default speed when not hovered
+        speed: 2500, // Default speed when not hovered
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
