@@ -1,0 +1,96 @@
+.overview-section {
+    padding: 4rem 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.overview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    color: #7c7c7c;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+
+.highlight {
+    color: #007aff;
+    /* Adjust to match your theme */
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.stat-item h2 {
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #7c7c7c;
+}
+
+.visuals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.image-box {
+    flex: 1;
+    text-align: center;
+}
+
+.main-image {
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+.process-image,
+.truck-image {
+    flex: 1;
+    text-align: center;
+}
+
+.secondary-image,
+.tertiary-image {
+    max-width: 70%;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        margin-bottom: 1rem;
+    }
+
+    .visuals {
+        flex-direction: column;
+    }
+
+    .process-image,
+    .truck-image {
+        margin-top: 2rem;
+    }
+}
