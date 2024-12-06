@@ -2,10 +2,17 @@
     width: 100%;
     margin: auto;
     padding: 20px 0;
-    background-color: #f9f9f9;
+    background-color: #fff;
     margin-top: -81px;
-    z-index: -1;
+    padding-block: 72px 10px;
+    z-index: 1;
     position: relative;
+    box-shadow: 0 0 15px #c5dcf1;
+}
+
+.channel-carousel .slick-track {
+    display: flex;
+    align-items: center;
 }
 
 .carousel-item {
@@ -14,7 +21,8 @@
 }
 
 .carousel-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 120px;
     height: auto;
     max-height: 100px;
     object-fit: contain;
