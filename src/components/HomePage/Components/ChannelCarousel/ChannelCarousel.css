@@ -2,12 +2,26 @@
     width: 100%;
     margin: auto;
     padding: 20px 0;
-    background-color: #fff;
-    margin-top: -81px;
-    padding-block: 72px 10px;
-    z-index: 1;
+    /* background-color: #fff; */
+    margin-top: -50px;
+    /* padding-block: 72px 10px; */
+    z-index: 3;
     position: relative;
-    box-shadow: 0 0 15px #c5dcf1;
+    /* box-shadow: 0 0 15px #c5dcf1; */
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+.channel-carousel::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    left: -10%;
+    height: 120%;
+    background: #fff;
+    z-index: -1;
+    top: -10px;
+    filter: blur(13px);
 }
 
 .channel-carousel .slick-track {

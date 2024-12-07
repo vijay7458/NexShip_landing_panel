@@ -12,13 +12,13 @@
 .hero-banner::after {
   content: "";
   position: absolute;
-  bottom: 37px;
+  bottom: -50px;
   left: -30px;
   width: 110%;
-  height: 117%;
+  height: 144%;
   background: rgb(25, 117, 201);
-  background: linear-gradient(180deg, rgba(25, 117, 201, 1) 10%, rgba(163, 209, 245, 1) 40%, rgba(255, 255, 255, 1) 70%, rgba(13, 74, 137, 1) 100%);
-  transform: rotate(-3deg);
+  background: linear-gradient(180deg, rgba(25, 117, 201, 1) 10%, rgba(163, 209, 245, 1) 40%, rgba(255, 255, 255, 1) 90%, rgba(13, 74, 137, 1) 100%);
+  /* transform: rotate(-3deg); */
   border-radius: 0;
 }
 

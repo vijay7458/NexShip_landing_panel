@@ -1,0 +1,64 @@
+.business-growth-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    color: #2b2b6d;
+    /* Adjust the color */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dashboard-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    /* Optional border for visibility */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+    gap: 20px;
+}
+
+.feature-item {
+    background: linear-gradient(135deg, #e0f7ff, #c0e7ff);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    color: #2b2b6d;
+    /* Adjust the color */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
