@@ -1,0 +1,81 @@
+.operations-panel-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.header h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #777;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.dashboard-image {
+    margin-bottom: 20px;
+}
+
+.dashboard-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature-card {
+    width: 30%;
+    text-align: center;
+}
+
+.icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.gear-icon {
+    color: #007bff;
+}
+
+.lightning-icon {
+    color: #ffc107;
+}
+
+.live-icon {
+    color: #dc3545;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.insight-footer {
+    margin-top: 20px;
+}
+
+.insight-footer p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}

@@ -1,6 +1,6 @@
 .footer {
     background-color: #092C4C;
-    padding: 40px 20px 5px 20px;
+    padding: 40px 10px 5px 20px;
     font-family: Arial, sans-serif;
     color: #fff;
     border-radius: 40px 40px 0 0;
@@ -107,4 +107,5 @@
 
 .reach-us li p {
     margin-bottom: 0;
+    max-width: 180px;
 }
