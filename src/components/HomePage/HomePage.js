@@ -31,7 +31,7 @@ const HomePage = () => {
             <CheckoutRecovery />
             <AbandonedCartFlow />
 
-            <Insights/>
+            <Insights />
 
             <OperationsPanel />
 

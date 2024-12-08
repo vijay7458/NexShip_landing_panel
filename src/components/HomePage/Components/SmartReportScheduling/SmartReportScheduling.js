@@ -1,5 +1,8 @@
 import React from 'react';
 import './SmartReportScheduling.css';
+import ReportType from '../../../../assets/image/ReportType.png'
+import Scheduling from '../../../../assets/image/Schedule.png'
+import Receiving from '../../../../assets/image/Receive.png'
 
 const SmartReportScheduling = () => {
     return (
@@ -12,7 +15,7 @@ const SmartReportScheduling = () => {
                 <div className="grid">
                     <div className="grid-item">
                         <img
-                            src="https://via.placeholder.com/100" // Replace with actual icon URL
+                            src={ReportType}
                             alt="Choose Report Type"
                             className="icon"
                         />
@@ -20,7 +23,7 @@ const SmartReportScheduling = () => {
                     </div>
                     <div className="grid-item">
                         <img
-                            src="https://via.placeholder.com/100" // Replace with actual icon URL
+                            src={Scheduling}
                             alt="Set Your Schedule"
                             className="icon"
                         />
@@ -28,7 +31,7 @@ const SmartReportScheduling = () => {
                     </div>
                     <div className="grid-item">
                         <img
-                            src="https://via.placeholder.com/100" // Replace with actual icon URL
+                            src={Receiving}
                             alt="Relax and Receive"
                             className="icon"
                         />

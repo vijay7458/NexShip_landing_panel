@@ -7,7 +7,7 @@ const WeightAccuracy = () => {
         <>
             <section className="home-section">
                 <div className="overview-container">
-                    <div className='row'>
+                    <div className='row align-items-center'>
                         {/* Heading */}
                         <div className="col-7 heading">
                             <p className="subtitle">Weight Discrepancies</p>

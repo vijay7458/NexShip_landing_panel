@@ -1,5 +1,6 @@
 import React from "react";
 import "./OverviewSection.css"; // Import custom CSS file
+import BannerImage from '../../../../assets/image/banner-image.webp'
 
 const OverviewSection = () => {
     return (
@@ -10,7 +11,7 @@ const OverviewSection = () => {
                     <p className="subtitle">A trusted growth partner</p>
                     <h1>
                         Lakhs of eCommerce businesses chose<br />
-                        <span className="highlight"><strong>Shipease</strong> to streamline their customer<br /> journey—from shipping to returns and beyond</span>
+                        <span className="highlight-overview"><strong>Shipease</strong> to streamline their customer<br /> journey—from shipping to returns and beyond</span>
                     </h1>
                 </div>
                 <div className="row">
@@ -35,7 +36,8 @@ const OverviewSection = () => {
                     </div>
                     {/* Visual Section */}
                     <div className="col-6 visuals">
-                        <div className="image-box">
+                        <img src={BannerImage} alt="" />
+                        {/* <div className="image-box">
                             <img
                                 src="path/to/your-woman-image.jpg"
                                 alt="A woman managing orders"
@@ -55,7 +57,7 @@ const OverviewSection = () => {
                                 alt="Delivery truck"
                                 className="tertiary-image"
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

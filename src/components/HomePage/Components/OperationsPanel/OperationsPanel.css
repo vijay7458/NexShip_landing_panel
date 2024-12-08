@@ -7,58 +7,36 @@
     text-align: center;
 }
 
-.header h5 {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #777;
-}
 
-.header h1 {
-    font-size: 28px;
-    margin: 10px 0;
-}
 
-.content {
-    margin: 20px 0;
-}
 
-.dashboard-image {
-    margin-bottom: 20px;
-}
-
-.dashboard-img {
-    width: 100%;
+.operations-dashboard-image img {
+    margin-bottom: 50px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    text-align: center;
 }
 
 .features {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    gap: 20px;
 }
 
 .feature-card {
-    width: 30%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #e4e4e4;
+    padding: 20px;
 }
 
-.icon {
-    font-size: 32px;
-    margin-bottom: 10px;
+.operatons-icon img {
+    width: 100px;
+    height: 100px;
 }
 
-.gear-icon {
-    color: #007bff;
-}
-
-.lightning-icon {
-    color: #ffc107;
-}
-
-.live-icon {
-    color: #dc3545;
-}
 
 .feature-card h3 {
     font-size: 18px;

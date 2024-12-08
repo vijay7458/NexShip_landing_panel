@@ -11,13 +11,6 @@
     margin-bottom: 5px;
 }
 
-.subtitle {
-    color: #2b2b6d;
-    /* Adjust based on design */
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
 
 .grid {
     display: flex;

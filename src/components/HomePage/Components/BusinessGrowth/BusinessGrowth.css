@@ -20,27 +20,32 @@
 .dashboard-image {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     /* Optional border for visibility */
     border-radius: 10px;
     /* Rounded corners */
+    margin-bottom: 50px;
 }
 
 .features-grid {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     /* Ensures responsiveness */
-    gap: 20px;
+    gap: 30px;
 }
 
 .feature-item {
     background: linear-gradient(135deg, #e0f7ff, #c0e7ff);
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
-    text-align: center;
+    width: 100%;
+    text-align: left;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* vert-card */
+
+    background: linear-gradient(150.67deg, #C5DCF1 20.05%, #60A9EB 41.29%, #1975C9 86.07%);
+    border-radius: 12px;
+
 }
 
 .feature-icon {
