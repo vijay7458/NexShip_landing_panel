@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./OverviewSection.css"; // Import custom CSS file
 import BannerImage from '../../../../assets/image/banner-image.webp'
+import axios from "axios";
+import { BASE_URL } from "../../../../axios/config";
 
 const OverviewSection = () => {
+
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const apiUrl = `${BASE_URL}/core-api/shipease-admin/stats-list/`;
+                const response = await axios.get(apiUrl);
+                setData(response.data);
+
+            } catch (err) {
+
+            }
+        };
+
+        fetchData();
+    }, []);
+
+
+
+
     return (
         <section className="home-section">
             <div className="overview-container">
@@ -17,22 +41,13 @@ const OverviewSection = () => {
                 <div className="row">
                     {/* Stats Section */}
                     <div className="col-6 stats">
-                        <div className="stat-item">
-                            <h2>150 +</h2>
-                            <p>Expert Advisors</p>
-                        </div>
-                        <div className="stat-item">
-                            <h2>28000 +</h2>
-                            <p>Pincode Covered</p>
-                        </div>
-                        <div className="stat-item">
-                            <h2>12000 +</h2>
-                            <p>Daily Shipments</p>
-                        </div>
-                        <div className="stat-item">
-                            <h2>2500 +</h2>
-                            <p>Delight Customers</p>
-                        </div>
+                        {data?.map((item) => (
+                            <div className="stat-item">
+                                <h2>{item?.number} +</h2>
+                                <p>{item?.title}</p>
+                            </div>
+                        ))}
+
                     </div>
                     {/* Visual Section */}
                     <div className="col-6 visuals">
