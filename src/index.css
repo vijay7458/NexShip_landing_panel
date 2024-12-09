@@ -8,3 +8,33 @@
     --sh-bg-red: #FCEAEA;
     --sh-ddd: #dddddd;
 }
+
+.main-button {
+    /* background-color: #1975C9 !important; */
+    background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%);
+    color: #fff;
+    padding: 5px 10px;
+    white-space: nowrap;
+    border: 0;
+}
+
+.main-button:hover {
+    /* background-color: #1975C9 !important; */
+    color: #fff;
+}
+
+.main-button-outline:focus-visible,
+.main-button-outline:active,
+.main-button-outline {
+    border-color: var(--sh-primary);
+    color: var(--sh-primary);
+    /* background-color: #fff; */
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.main-button-outline:hover {
+    /* background-color: #1975C9 !important; */
+    background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%);
+    color: #fff;
+}
