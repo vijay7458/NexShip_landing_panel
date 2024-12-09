@@ -41,14 +41,18 @@ const OverviewSection = () => {
                 <div className="row">
                     {/* Stats Section */}
                     <div className="col-6 stats">
-                        {data?.map((item) => (
-                            <div className="stat-item">
-                                <h2>{item?.number} +</h2>
-                                <p>{item?.title}</p>
-                            </div>
-                        ))}
-
+                        {Array.isArray(data) ? (
+                            data.map((item, index) => (
+                                <div key={index} className="stat-item">
+                                    <h2>{item?.number} +</h2>
+                                    <p>{item?.title}</p>
+                                </div>
+                            ))
+                        ) : (
+                            <p>No data available</p>
+                        )}
                     </div>
+
                     {/* Visual Section */}
                     <div className="col-6 visuals">
                         <img src={BannerImage} alt="" />
