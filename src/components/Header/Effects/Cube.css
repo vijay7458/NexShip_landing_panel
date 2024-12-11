@@ -1,0 +1,90 @@
+.cube {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 10s ease-in-out infinite;
+    perspective: 500px;
+    /* Adds a more realistic 3D perspective */
+}
+
+.cube img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cube .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #6a5acd, #00bfff);
+    /* Gradient for a vibrant look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Adds depth with shadows */
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    /* Subtle border for definition */
+    opacity: 0.95;
+    /* Slightly transparent */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+    border-radius: 5px;
+    /* Softens edges */
+    background: linear-gradient(135deg, #60a9eb, #C5DCF1);
+    background: #C5DCF1;
+    padding: 7px;
+}
+
+/* Applying styles to each face */
+.cube .box1 {
+    transform: translateZ(25px);
+}
+
+.cube .box2 {
+    transform: rotateY(90deg) translateX(25px);
+    transform-origin: right;
+}
+
+.cube .box3 {
+    transform: rotateY(180deg) translateZ(25px);
+}
+
+.cube .box4 {
+    transform: rotateY(-90deg) translateX(-25px);
+    transform-origin: left;
+}
+
+.cube .box5 {
+    transform: rotateX(-90deg) translateY(-25px);
+    transform-origin: top;
+}
+
+.cube .box6 {
+    transform: rotateX(90deg) translateY(25px);
+    transform-origin: bottom;
+}
+
+/* Improved animation */
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateX(90deg) rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateX(270deg) rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
