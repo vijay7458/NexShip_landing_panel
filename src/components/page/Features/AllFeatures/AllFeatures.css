@@ -1,0 +1,115 @@
+/* Container for the features section */
+.all-features-section {
+    padding: 40px;
+    background-color: #f4f4f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Title for the page */
+.all-features-section .features-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid layout for feature cards */
+.all-features-section .features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Style for each feature card */
+.all-features-section .feature-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hover effect for feature cards */
+.all-features-section .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for expanding */
+.all-features-section .feature-card-expanded {
+    height: 400px;
+}
+
+/* Icon styling */
+.all-features-section .feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #4c9aff;
+    transition: transform 0.3s ease;
+}
+
+/* Animation for icons */
+.all-features-section .feature-icon-animation.active {
+    transform: rotate(15deg);
+}
+
+/* Title styling */
+.all-features-section .feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Description text styling */
+.all-features-section .feature-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 50px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+/* Expanded description */
+.all-features-section .feature-description-expanded {
+    max-height: 200px;
+    opacity: 1;
+    display: none;
+}
+
+/* Benefits section */
+.all-features-section .feature-benefits {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.all-features-section .feature-benefits h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.all-features-section .benefit-item {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* Indicator text for expansion */
+.all-features-section .collapse-indicator {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+    font-style: italic;
+}
