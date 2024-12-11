@@ -5,6 +5,7 @@ import HomePage from './components/HomePage/HomePage';
 import TopHeader from './components/TopHeader/TopHeader';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import AllFeatures from './components/page/all-features/AllFeatures';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/all-features' element={<AllFeatures />} />
         </Routes>
       </div>
       <Footer />
