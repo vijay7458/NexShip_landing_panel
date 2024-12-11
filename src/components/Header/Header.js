@@ -101,14 +101,12 @@ const Header = () => {
                   <button className="btn main-button">Learn More</button>
                 </li>
                 <li className="col-8">
-                  <li className="col-8">
-                    <ul>
-                      <li><a className="dropdown-item" href="/carrier-integration">Carrier Integration</a> Sell Anywhere, Ship with Shipease</li>
-                      <li><a className="dropdown-item" href="/api-integration">API Integration</a> Centralized API Integration Hub</li>
-                      <li><a className="dropdown-item" href="/channel-integration">Channel Integration</a> Achieve Seamless Channel Integration</li>
-                      <li><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration</a> Effortless WhatsApp Integration</li>
-                    </ul>
-                  </li>
+                  <ul>
+                    <li><a className="dropdown-item" href="/carrier-integration">Carrier Integration</a> Sell Anywhere, Ship with Shipease</li>
+                    <li><a className="dropdown-item" href="/api-integration">API Integration</a> Centralized API Integration Hub</li>
+                    <li><a className="dropdown-item" href="/channel-integration">Channel Integration</a> Achieve Seamless Channel Integration</li>
+                    <li><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration</a> Effortless WhatsApp Integration</li>
+                  </ul>
                 </li>
               </ul>
             </li>
