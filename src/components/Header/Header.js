@@ -53,15 +53,15 @@ const Header = () => {
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="/all-features">All Features</a> Exploring Our Feature Set</li>
-                    <li><a className="dropdown-item" href="#feature2">Damaged Shipment</a> Recommendation Engine</li>
-                    <li><a className="dropdown-item" href="#feature3">Shipment Protection</a> We've Got You Covered</li>
-                    <li><a className="dropdown-item" href="#feature3">NDR Management</a> Automated NDR Management</li>
-                    <li><a className="dropdown-item" href="#feature3">Hyper Local</a> Ultra Fast Hyper Local Delivery</li>
-                    <li><a className="dropdown-item" href="#feature3">Amazon Self Ship</a> Amazon Self Ship + Shipease</li>
-                    <li><a className="dropdown-item" href="#feature3">Early COD</a> Daily COD Remittance</li>
-                    <li><a className="dropdown-item" href="#feature3">Pickup Locations</a> Optimizing Pickup Locations</li>
-                    <li><a className="dropdown-item signup-box" href="#feature3">Create Account</a> Sign Up With Shipease</li>
+                    <li><a className="dropdown-item" href="/all-features">All Features</a> Explore Our Full Feature Set</li>
+                    <li><a className="dropdown-item" href="/damaged-shipment">Damaged Shipment</a> Advanced Recommendation Engine</li>
+                    <li><a className="dropdown-item" href="/shipment-protection">Shipment Protection</a> Comprehensive Coverage</li>
+                    <li><a className="dropdown-item" href="/ndr-management">NDR Management</a> Streamlined NDR Automation</li>
+                    <li><a className="dropdown-item" href="/hyper-local">Hyper Local</a> Fast and Reliable Hyper Local Delivery</li>
+                    <li><a className="dropdown-item" href="/amazon-self-ship">Amazon Self Ship</a> Seamless Amazon Self-Shipping with Shipease</li>
+                    <li><a className="dropdown-item" href="/early-cod">Early COD</a> Enjoy Daily COD Remittance</li>
+                    <li><a className="dropdown-item" href="/pickup-locations">Pickup Locations</a> Optimize Your Pickup Strategy</li>
+                    <li><a className="dropdown-item signup-box" href="/create-account">Create Account</a> Sign Up with Shipease Today</li>
                   </ul>
                 </li>
               </ul>
@@ -75,14 +75,15 @@ const Header = () => {
               <ul className="dropdown-menu row">
                 <li className="col-3">
                   <h4 className="mb-2">Support and Service</h4>
-                  <p>Refers to a crucial aspect of any organization's operations focused on providing assistance, guidance, and solutions to its customers, clients, or users.</p>
-                  <button className="btn main-button">Explore More</button>
+                  <p>An essential component of every organization, dedicated to delivering assistance, guidance, and effective solutions to customers, clients, or users.</p>
+                  <button className="btn main-button">Learn More</button>
+
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="#product">Plans And Pricing</a> Innovations In Logistics Costing</li>
-                    <li><a className="dropdown-item" href="#service">Rate Calculator</a> Automated Shipping Faster</li>
-                    <li><a className="dropdown-item" href="#service">Prepaid And COD</a> Change Payment mode Easily</li>
+                    <li><a className="dropdown-item" href="/plans-pricing">Plans and Pricing</a> Innovative Logistics Cost Solutions</li>
+                    <li><a className="dropdown-item" href="/rate-calculator">Rate Calculator</a> Simplify Shipping with Automation</li>
+                    <li><a className="dropdown-item" href="/prepaid-cod">Prepaid and COD</a> Effortlessly Switch Payment Modes</li>
                   </ul>
                 </li>
               </ul>
@@ -95,17 +96,19 @@ const Header = () => {
               </a>
               <ul className="dropdown-menu row">
                 <li className="col-3">
-                  <h4 className="mb-2">The Power of Referral Codes</h4>
-                  <p>Introducing our exclusive referral code for logistics services! Share this code with your network and both you and your referred friends can enjoy special discounts and benefits on our top-notch logistics solutions.</p>
-                  <button className="btn main-button">Explore More</button>
+                  <h4 className="mb-2">Unlock Benefits with Referral Codes</h4>
+                  <p>Take advantage of our exclusive referral program! Share your code with friends and colleagues to earn special discounts and rewards for both you and your referrals on premium logistics services.</p>
+                  <button className="btn main-button">Learn More</button>
                 </li>
                 <li className="col-8">
-                  <ul>
-                    <li><a className="dropdown-item" href="#api">Carrier Integration</a> Sell Anywhere, Ship Using Shipease</li>
-                    <li><a className="dropdown-item" href="#third-party">API Integraton</a> API Integration Hub</li>
-                    <li><a className="dropdown-item" href="#third-party">Channel Integraton</a> Achieving Seamless Integration</li>
-                    <li><a className="dropdown-item" href="#third-party">WhatsApp Integraton</a> Mastering WhatsApp Integration</li>
-                  </ul>
+                  <li className="col-8">
+                    <ul>
+                      <li><a className="dropdown-item" href="/carrier-integration">Carrier Integration</a> Sell Anywhere, Ship with Shipease</li>
+                      <li><a className="dropdown-item" href="/api-integration">API Integration</a> Centralized API Integration Hub</li>
+                      <li><a className="dropdown-item" href="/channel-integration">Channel Integration</a> Achieve Seamless Channel Integration</li>
+                      <li><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration</a> Effortless WhatsApp Integration</li>
+                    </ul>
+                  </li>
                 </li>
               </ul>
             </li>
@@ -117,15 +120,15 @@ const Header = () => {
               </a>
               <ul className="dropdown-menu row">
                 <li className="col-3">
-                  <h4 className="mb-2">Calculate Shipping Rates Instantly</h4>
-                  <p>Introducing our exclusive referral code for logistics services! Share this code with your network and both you and your referred friends can enjoy special discounts and benefits on our top-notch logistics solutions.</p>
-                  <button className="btn main-button">Explore More</button>
+                  <h4 className="mb-2">Instantly Calculate Your Shipping Rates</h4>
+                  <p>Get quick and accurate shipping rate calculations with our tool. Share it with your network to unlock special discounts and exclusive benefits for both you and your referrals on premium logistics services.</p>
+                  <button className="btn main-button">Learn More</button>
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="#docs">Media</a> Maxiising Impact with Media</li>
-                    <li><a className="dropdown-item" href="#blog">Refer And Earn</a> Savings with Our Referral Code!</li>
-                    <li><a className="dropdown-item" href="#faq">Career</a> We're Experts in Rapid Expansion</li>
+                    <li><a className="dropdown-item" href="/media">Media</a> Amplify Your Impact with Media</li>
+                    <li><a className="dropdown-item" href="/refer-and-earn">Refer and Earn</a> Unlock Savings with Our Referral Program</li>
+                    <li><a className="dropdown-item" href="/careers">Career</a> Join Our Team of Experts Driving Rapid Growth</li>
                   </ul>
                 </li>
               </ul>
