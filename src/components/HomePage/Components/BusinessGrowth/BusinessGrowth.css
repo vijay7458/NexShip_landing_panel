@@ -44,6 +44,7 @@
     /* vert-card */
 
     background: linear-gradient(150.67deg, #C5DCF1 20.05%, #60A9EB 41.29%, #1975C9 86.07%);
+    background: linear-gradient(150.67deg, #C5DCF1 20.05%, #60A9EB 41.29%, #1975c97a 86.07%);
     border-radius: 12px;
 
 }

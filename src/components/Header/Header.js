@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/image/logo.svg";
+import mobileLogo from "../../assets/image/mobileLogo.svg";
+import LogoAnimation from "./Effects/LogoAnimation/LogoAnimation";
 
 const Header = () => {
 
@@ -24,12 +26,13 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`header py-3 ${isScrolled ? "scrolled" : ""}`}>
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div style={{ zIndex: '3' }} className="container d-flex justify-content-between align-items-center position-relative">
         {/* Logo Section */}
         <div className="logo">
           <a href="/" className="text-decoration-none fw-bold">
-            <img src={Logo} alt="My Website Logo" className="logo-img" />
+            {/* <img src={isScrolled ? mobileLogo : Logo} alt="My Website Logo" className="logo-img" /> */}
+            <LogoAnimation />
           </a>
         </div>
 
@@ -50,7 +53,7 @@ const Header = () => {
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="#feature1">All Features</a> Exploring Our Feature Set</li>
+                    <li><a className="dropdown-item" href="/all-features">All Features</a> Exploring Our Feature Set</li>
                     <li><a className="dropdown-item" href="#feature2">Damaged Shipment</a> Recommendation Engine</li>
                     <li><a className="dropdown-item" href="#feature3">Shipment Protection</a> We've Got You Covered</li>
                     <li><a className="dropdown-item" href="#feature3">NDR Management</a> Automated NDR Management</li>
