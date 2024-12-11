@@ -32,10 +32,10 @@ const OverviewSection = () => {
             <div className="overview-container">
                 {/* Heading */}
                 <div className="heading">
-                    <p className="subtitle">A trusted growth partner</p>
+                    <p className="subtitle">A Reliable Partner for Accelerated Growth</p>
                     <h1>
-                        Lakhs of eCommerce businesses chose<br />
-                        <span className="highlight-overview"><strong>Shipease</strong> to streamline their customer<br /> journey—from shipping to returns and beyond</span>
+                        Lakhs of eCommerce businesses trust and chose<br />
+                        <span className="highlight-overview"><strong>Shipease</strong> to enhance their customer experience—<br />seamlessly managing everything from shipping to returns and more.</span>
                     </h1>
                 </div>
                 <div className="row">
