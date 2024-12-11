@@ -42,9 +42,9 @@ const Header = () => {
             {/* Features Dropdown */}
             {/* <li className="nav-item dropdown position-relative"> */}
             <li className="nav-item dropdown">
-              <a className="nav-link" href="#features">
+              <span className="cursor-pointer nav-link">
                 Features
-              </a>
+              </span>
               <ul className="dropdown-menu row">
                 <li className="col-3">
                   <h4 className="mb-2">We understand the art of scaling rapidly</h4>
@@ -69,9 +69,9 @@ const Header = () => {
 
             {/* Offering Dropdown */}
             <li className="nav-item dropdown">
-              <a className="nav-link" href="#offering">
+              <span className="nav-link cursor-pointer">
                 Offering
-              </a>
+              </span>
               <ul className="dropdown-menu row">
                 <li className="col-3">
                   <h4 className="mb-2">Support and Service</h4>
@@ -91,9 +91,9 @@ const Header = () => {
 
             {/* Integration Dropdown */}
             <li className="nav-item dropdown">
-              <a className="nav-link" href="#integration">
+              <span className="nav-link cursor-pointer">
                 Integration
-              </a>
+              </span>
               <ul className="dropdown-menu row">
                 <li className="col-3">
                   <h4 className="mb-2">Unlock Benefits with Referral Codes</h4>
@@ -115,9 +115,9 @@ const Header = () => {
 
             {/* Resources Dropdown */}
             <li className="nav-item dropdown">
-              <a className="nav-link" href="#resources">
+              <span className="nav-link cursor-pointer">
                 Resources
-              </a>
+              </span>
               <ul className="dropdown-menu row">
                 <li className="col-3">
                   <h4 className="mb-2">Instantly Calculate Your Shipping Rates</h4>
@@ -136,7 +136,7 @@ const Header = () => {
 
             {/* Contact Us */}
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link cursor-pointer" href="/contact">
                 Contact Us
               </a>
             </li>

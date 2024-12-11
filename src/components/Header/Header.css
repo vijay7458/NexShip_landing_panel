@@ -93,8 +93,10 @@
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: var(--sh-primary-light);
+.nav-link.cursor-pointer:hover {
+    color: var(--sh-primary);
+    cursor: pointer;
+    text-decoration: none;
     /* Lighter shade on hover */
 }
 
