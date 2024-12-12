@@ -170,8 +170,39 @@
 
 .nav-item:hover .dropdown-menu ul li a {
     font-size: 16px;
-    padding: 0;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.nav-item:hover .dropdown-menu ul li a hr {
+    border-radius: 2px;
+    margin: 2px;
+    /* width: 0; */
+    background: linear-gradient(90deg,
+            #fff 0%,
+            #C5DCF1 5%,
+            #1975C9 50%,
+            #C5DCF1 95%,
+            #fff 100%);
+    transition: 0.5s;
+    border: none;
+    height: 2px;
+}
+
+
+.nav-item:hover .dropdown-menu ul li a:hover {
+    background: transparent;
+}
+
+.nav-item:hover .dropdown-menu ul li a:hover hr {
+    width: 100%;
+}
+
+.nav-item:hover .dropdown-menu ul li a span {
+    font-size: 12px;
+    font-weight: 400;
 }
 
 /* Animations for Dropdown */

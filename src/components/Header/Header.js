@@ -53,15 +53,15 @@ const Header = () => {
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="/all-features">All Features</a> Explore Our Full Feature Set</li>
-                    <li><a className="dropdown-item" href="/damaged-shipment">Damaged Shipment</a> Advanced Recommendation Engine</li>
-                    <li><a className="dropdown-item" href="/shipment-protection">Shipment Protection</a> Comprehensive Coverage</li>
-                    <li><a className="dropdown-item" href="/ndr-management">NDR Management</a> Streamlined NDR Automation</li>
-                    <li><a className="dropdown-item" href="/hyper-local">Hyper Local</a> Fast and Reliable Hyper Local Delivery</li>
-                    <li><a className="dropdown-item" href="/amazon-self-ship">Amazon Self Ship</a> Seamless Amazon Self-Shipping with Shipease</li>
-                    <li><a className="dropdown-item" href="/early-cod">Early COD</a> Enjoy Daily COD Remittance</li>
-                    <li><a className="dropdown-item" href="/pickup-locations">Pickup Locations</a> Optimize Your Pickup Strategy</li>
-                    <li><a className="dropdown-item signup-box" href="/create-account">Create Account</a> Sign Up with Shipease Today</li>
+                    <li><a className="dropdown-item" href="/all-features">All Features<hr /><span>Explore Our Full Feature Set</span></a></li>
+                    <li><a className="dropdown-item" href="/damaged-shipment">Damaged Shipment<hr /><span>Advanced Recommendation Engine</span></a></li>
+                    <li><a className="dropdown-item" href="/shipment-protection">Shipment Protection<hr /><span>Comprehensive Coverage</span></a></li>
+                    <li><a className="dropdown-item" href="/ndr-management">NDR Management<hr /><span>Streamlined NDR Automation</span></a></li>
+                    <li><a className="dropdown-item" href="/hyper-local">Hyper Local<hr /><span>Fast and Reliable Hyper Local Delivery</span></a></li>
+                    <li><a className="dropdown-item" href="/amazon-self-ship">Amazon Self Ship<hr /><span>Seamless Amazon Self-Shipping with Shipease</span></a></li>
+                    <li><a className="dropdown-item" href="/early-cod">Early COD<hr /><span>Enjoy Daily COD Remittance</span></a></li>
+                    <li><a className="dropdown-item" href="/pickup-locations">Pickup Locations<hr /><span>Optimize Your Pickup Strategy</span></a></li>
+                    <li><a className="dropdown-item signup-box" href="/create-account">Create Account<hr /><span>Sign Up with Shipease Today</span></a></li>
                   </ul>
                 </li>
               </ul>
@@ -81,9 +81,9 @@ const Header = () => {
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="/plans-pricing">Plans and Pricing</a> Innovative Logistics Cost Solutions</li>
-                    <li><a className="dropdown-item" href="/rate-calculator">Rate Calculator</a> Simplify Shipping with Automation</li>
-                    <li><a className="dropdown-item" href="/prepaid-cod">Prepaid and COD</a> Effortlessly Switch Payment Modes</li>
+                    <li><a className="dropdown-item" href="/plans-pricing">Plans and Pricing<hr /><span>Innovative Logistics Cost Solutions</span></a></li>
+                    <li><a className="dropdown-item" href="/rate-calculator">Rate Calculator<hr /><span>Simplify Shipping with Automation</span></a></li>
+                    <li><a className="dropdown-item" href="/prepaid-cod">Prepaid and COD<hr /><span>Effortlessly Switch Payment Modes</span></a></li>
                   </ul>
                 </li>
               </ul>
@@ -102,10 +102,10 @@ const Header = () => {
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="/carrier-integration">Carrier Integration</a> Sell Anywhere, Ship with Shipease</li>
-                    <li><a className="dropdown-item" href="/api-integration">API Integration</a> Centralized API Integration Hub</li>
-                    <li><a className="dropdown-item" href="/channel-integration">Channel Integration</a> Achieve Seamless Channel Integration</li>
-                    <li><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration</a> Effortless WhatsApp Integration</li>
+                    <li><a className="dropdown-item" href="/carrier-integration">Carrier Integration<hr /><span>Sell Anywhere, Ship with Shipease</span></a></li>
+                    <li><a className="dropdown-item" href="/api-integration">API Integration<hr /><span>Centralized API Integration Hub</span></a></li>
+                    <li><a className="dropdown-item" href="/channel-integration">Channel Integration<hr /><span>Achieve Seamless Channel Integration</span></a></li>
+                    <li><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration<hr /><span>Effortless WhatsApp Integration</span></a></li>
                   </ul>
                 </li>
               </ul>
@@ -124,9 +124,9 @@ const Header = () => {
                 </li>
                 <li className="col-8">
                   <ul>
-                    <li><a className="dropdown-item" href="/media">Media</a> Amplify Your Impact with Media</li>
-                    <li><a className="dropdown-item" href="/refer-and-earn">Refer and Earn</a> Unlock Savings with Our Referral Program</li>
-                    <li><a className="dropdown-item" href="/careers">Career</a> Join Our Team of Experts Driving Rapid Growth</li>
+                    <li><a className="dropdown-item" href="/media">Media<hr /><span>Amplify Your Impact with Media</span></a></li>
+                    <li><a className="dropdown-item" href="/refer-and-earn">Refer and Earn<hr /><span>Unlock Savings with Our Referral Program</span></a></li>
+                    <li><a className="dropdown-item" href="/careers">Career<hr /><span>Join Our Team of Experts Driving Rapid Growth</span></a></li>
                   </ul>
                 </li>
               </ul>
