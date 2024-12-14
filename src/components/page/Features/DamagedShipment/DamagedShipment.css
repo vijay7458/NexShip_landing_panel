@@ -1,0 +1,100 @@
+/* DamagedShipment.css */
+
+.damaged-shipment-container {
+    padding: 20px;
+    /* background-color: #f8f9fb; */
+    max-width: 1200px;
+    margin: 30px auto;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Intro Section */
+.damaged-shipment-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.damaged-shipment-intro h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.damaged-shipment-intro p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Highlights Section */
+.damaged-shipment-highlights {
+    margin-bottom: 40px;
+}
+
+.damaged-shipment-highlights h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.damaged-shipment-highlights ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.damaged-shipment-highlights li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Solutions (Cards) Section */
+.damaged-shipment-solutions {
+    text-align: center;
+}
+
+.damaged-shipment-solutions h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.damaged-shipment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.damaged-shipment-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 400px;
+}
+
+.damaged-shipment-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.damaged-shipment-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.damaged-shipment-description-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
