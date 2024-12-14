@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer';
 import AllFeatures from './components/page/Features/AllFeatures/AllFeatures';
 import DamagedShipment from './components/page/Features/DamagedShipment/DamagedShipment';
 import ShipmentProtection from './components/page/Features/ShipmentProtection/ShipmentProtection';
+import NDRManagement from './components/page/Features/NDRManagement/NDRManagement';
+import RateCalculator from './components/page/Offerings/RateCalculator/RateCalculator';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path='/all-features' element={<AllFeatures />} />
           <Route path='/damaged-shipment' element={<DamagedShipment />} />
           <Route path='/shipment-protection' element={<ShipmentProtection />} />
+          <Route path='/ndr-management' element={<NDRManagement />} />
+          <Route path='/rate-calculator' element={<RateCalculator />} />
         </Routes>
       </div>
       <Footer />
