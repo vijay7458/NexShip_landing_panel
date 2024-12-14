@@ -1,0 +1,274 @@
+[
+    {
+        "title": "Custom Branded Tracking",
+        "icon": "📦",
+        "description": "Personalize your shipment tracking experience with your own branding.",
+        "benefits": [
+            "Create a professional look with custom branding",
+            "Increase customer trust with your logo and theme",
+            "Improve engagement through branded tracking pages"
+        ]
+    },
+    {
+        "title": "Multiple Courier Partners",
+        "icon": "🚚",
+        "description": "Select from a range of courier services to suit your needs, from speed to cost.",
+        "benefits": [
+            "Choose reliable couriers for varying needs",
+            "Flexibility in shipping speed, pricing, and service",
+            "Access both local and international delivery options"
+        ]
+    },
+    {
+        "title": "Flexible Payment Options",
+        "icon": "💳",
+        "description": "Offer customers a variety of secure payment methods for smoother transactions.",
+        "benefits": [
+            "Integrate multiple payment methods such as credit, debit, and wallets",
+            "Enhance security with trusted payment gateways",
+            "Facilitate faster and easier transactions for all parties"
+        ]
+    },
+    {
+        "title": "Customizable Shipping Labels",
+        "icon": "🏷️",
+        "description": "Design and print shipping labels that match your brand’s look and feel.",
+        "benefits": [
+            "Create personalized labels to strengthen your brand image",
+            "Streamline the shipping process with custom label printing",
+            "Maintain consistency with your branding across all shipments"
+        ]
+    },
+    {
+        "title": "Customizable Invoices & POD",
+        "icon": "📜",
+        "description": "Generate invoices and proof of delivery documents with fully customizable templates.",
+        "benefits": [
+            "Design invoice layouts that match your brand style",
+            "Ensure consistency and professionalism in all documents",
+            "Generate Proof of Delivery (POD) to track deliveries"
+        ]
+    },
+    {
+        "title": "Automated GST Split",
+        "icon": "📊",
+        "description": "Simplify tax management by automatically splitting GST charges for each shipment.",
+        "benefits": [
+            "Streamline your GST reporting and filing",
+            "Ensure accurate tax calculations for each shipment",
+            "Save time and reduce errors in tax documentation"
+        ]
+    },
+    {
+        "title": "Sub-Account Management",
+        "icon": "🔑",
+        "description": "Create and manage multiple user accounts with customized access levels.",
+        "benefits": [
+            "Assign specific roles and permissions to team members",
+            "Easily manage different user groups within your organization",
+            "Maintain security and control over account activity"
+        ]
+    },
+    {
+        "title": "WhatsApp Integration & Bots",
+        "icon": "💬",
+        "description": "Enhance customer support and automate communication using WhatsApp integration and bots.",
+        "benefits": [
+            "Engage customers directly via WhatsApp for real-time support",
+            "Automate frequent inquiries using bots for better efficiency",
+            "Boost customer satisfaction with fast, responsive communication"
+        ]
+    },
+    {
+        "title": "Comprehensive System Integration",
+        "icon": "🔗",
+        "description": "Seamlessly integrate your entire logistics and business ecosystem, including channels, OMS, and marketplaces.",
+        "benefits": [
+            "Integrate with multiple channels, including online stores and marketplaces",
+            "Sync orders, shipments, and customer data effortlessly across all systems",
+            "Reduce manual entry and errors by automating data flow between platforms",
+            "Ensure smooth operations with end-to-end system integration",
+            "Unify logistics, order management, and marketplace operations in one platform"
+        ]
+    },
+    {
+        "title": "Automated Report Scheduling",
+        "icon": "📅",
+        "description": "Schedule and automate the generation of insightful business reports.",
+        "benefits": [
+            "Automate report creation and distribution for timely insights",
+            "Stay informed with consistent updates on key business metrics",
+            "Make data-driven decisions with regular, automated reports"
+        ]
+    },
+    {
+        "title": "24/7 Customer Support",
+        "icon": "🙋‍♂️",
+        "description": "Access dedicated support anytime for fast issue resolution and guidance.",
+        "benefits": [
+            "Round-the-clock assistance to address concerns promptly",
+            "Get expert help with logistics, technical, or operational issues",
+            "Enhance customer satisfaction with continuous support"
+        ]
+    },
+    {
+        "title": "Simplified Return & Exchange Management",
+        "icon": "🔄",
+        "description": "Efficiently manage returns and exchanges with an automated, user-friendly platform.",
+        "benefits": [
+            "Easily handle returns and exchanges to improve customer service",
+            "Reduce friction with automated return processes",
+            "Offer hassle-free returns to enhance the customer experience"
+        ]
+    },
+    {
+        "title": "Business Health Monitoring",
+        "icon": "🏥",
+        "description": "Track the health of your business using detailed performance analytics.",
+        "benefits": [
+            "Monitor key business metrics and KPIs for growth",
+            "Identify areas for improvement with data-driven insights",
+            "Optimize business processes for increased efficiency"
+        ]
+    },
+    {
+        "title": "Referral Program Benefits",
+        "icon": "🎁",
+        "description": "Reward customers for referring others and grow your business network.",
+        "benefits": [
+            "Offer incentives like discounts or bonuses for successful referrals",
+            "Expand your customer base with word-of-mouth marketing",
+            "Encourage loyalty and engagement through referral rewards"
+        ]
+    },
+    {
+        "title": "Exhaustive Real-Time Tracking",
+        "icon": "📍",
+        "description": "Track shipments in real-time and provide complete visibility to customers.",
+        "benefits": [
+            "Stay updated with live tracking information for every shipment",
+            "Provide customers with precise delivery timelines",
+            "Optimize delivery routes based on real-time data"
+        ]
+    },
+    {
+        "title": "Better Weight Management",
+        "icon": "⚖️",
+        "description": "Ensure accurate weight reporting and reconciliation for efficient shipping cost management.",
+        "benefits": [
+            "Reconcile weight discrepancies and improve cost accuracy",
+            "Ensure precise weight calculations for better cost optimization",
+            "Manage weight-based shipping charges efficiently"
+        ]
+    },
+    {
+        "title": "Marketplace Integrations",
+        "icon": "🛒",
+        "description": "Seamlessly connect with leading marketplaces like Amazon, eBay, and others.",
+        "benefits": [
+            "Sync orders and shipments from marketplaces directly",
+            "Manage multiple marketplace orders in one platform",
+            "Reduce manual work and errors with direct integration"
+        ]
+    },
+    {
+        "title": "Non-Delivery Report (NDR) Management",
+        "icon": "📊",
+        "description": "Efficiently handle non-delivery issues to minimize failed deliveries.",
+        "benefits": [
+            "Track and manage failed delivery attempts",
+            "Resolve delivery issues quickly with automated workflows",
+            "Improve delivery success rate with better NDR management"
+        ]
+    },
+    {
+        "title": "Advanced Business Analytics",
+        "icon": "📈",
+        "description": "Leverage powerful analytics to make informed business decisions.",
+        "benefits": [
+            "Track performance metrics and key business indicators",
+            "Make data-driven decisions to optimize business growth",
+            "Access comprehensive insights to improve logistics efficiency"
+        ]
+    },
+    {
+        "title": "Integrated Return Handling",
+        "icon": "🔄",
+        "description": "Manage returns efficiently with a smooth and easy-to-use platform.",
+        "benefits": [
+            "Automate the return process for quick resolution",
+            "Simplify return handling for better customer satisfaction",
+            "Offer easy returns and exchanges to enhance the customer experience"
+        ]
+    },
+    {
+        "title": "Unified Logistics Platform",
+        "icon": "🔑",
+        "description": "Centralize all logistics operations for seamless management and visibility.",
+        "benefits": [
+            "Manage shipments, orders, and payments in one place",
+            "Reduce complexity and improve operational efficiency",
+            "Access your platform from any device at any time"
+        ]
+    },
+    {
+        "title": "Extended Pin Code Coverage",
+        "icon": "📍",
+        "description": "Expand your reach with coverage across more pin codes, even in remote locations.",
+        "benefits": [
+            "Deliver to more locations, including hard-to-reach areas",
+            "Ensure nationwide delivery coverage without restrictions",
+            "Increase customer satisfaction with a wider service area"
+        ]
+    },
+    {
+        "title": "Competitive Shipping Rates",
+        "icon": "💸",
+        "description": "Access the best shipping rates from a range of courier partners.",
+        "benefits": [
+            "Save money with competitive rates for various shipment types",
+            "Get the lowest rates for bulk shipments",
+            "Enjoy transparent pricing with no hidden fees"
+        ]
+    },
+    {
+        "title": "Smart Courier Recommendation",
+        "icon": "⚙️",
+        "description": "Use our recommendation engine to choose the best courier based on your needs.",
+        "benefits": [
+            "Get courier suggestions based on past shipment data",
+            "Optimize delivery speed and cost with smart choices",
+            "Select the most reliable couriers for your routes"
+        ]
+    },
+    {
+        "title": "Vast Courier Network",
+        "icon": "🌐",
+        "description": "Leverage an extensive network of trusted couriers for faster, more reliable deliveries.",
+        "benefits": [
+            "Access a large network of reliable domestic and international couriers",
+            "Ensure timely and dependable deliveries across regions",
+            "Benefit from global shipping options with trusted partners"
+        ]
+    },
+    {
+        "title": "Shipment Insurance Coverage",
+        "icon": "🛡️",
+        "description": "Protect your shipments against loss or damage with comprehensive insurance options.",
+        "benefits": [
+            "Secure your goods with reliable shipment insurance",
+            "Fast and easy claims process for peace of mind",
+            "Minimize risk and ensure smooth operations"
+        ]
+    },
+    {
+        "title": "Save on Freight with Merging & Splitting",
+        "icon": "💸",
+        "description": "Save on shipping costs by merging and splitting orders based on volume and destination.",
+        "benefits": [
+            "Reduce freight costs by combining multiple shipments into one",
+            "Split larger orders to optimize shipping rates",
+            "Increase cost efficiency by adjusting order sizes and destinations"
+        ]
+    }
+]
