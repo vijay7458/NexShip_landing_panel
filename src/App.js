@@ -12,6 +12,7 @@ import NDRManagement from './components/page/Features/NDRManagement/NDRManagemen
 import RateCalculator from './components/page/Offerings/RateCalculator/RateCalculator';
 import CarrierIntegration from './components/page/Integration/CarrierIntegration/CarrierIntegration';
 import ReferAndEarn from './components/page/Resources/ReferAndEarn/ReferAndEarn';
+import ContactUs from './components/page/ContactUs';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/rate-calculator' element={<RateCalculator />} />
           <Route path='/carrier-integration' element={<CarrierIntegration />} />
           <Route path='/refer-and-earn' element={<ReferAndEarn />} />
+          <Route path='/contact' element={<ContactUs />} />
         </Routes>
       </div>
       <Footer />

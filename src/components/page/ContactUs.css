@@ -1,0 +1,140 @@
+/* General styles */
+.contact-us {
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px;
+    background-color: #f4f7fc;
+}
+
+/* Header section */
+.contact-us__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-us__header h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-us__header p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Container for both sections */
+.contact-us__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact Information */
+.contact-us__info {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.contact-us__info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-us__details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.contact-us__detail {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us__detail h3 {
+    font-size: 1.3rem;
+    color: #007bff;
+}
+
+.contact-us__detail p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Form section */
+.contact-us__form {
+    flex: 1;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.contact-us__form h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-us__form-group {
+    margin-bottom: 25px;
+}
+
+.contact-us__form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us__form-group input,
+.contact-us__form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+.contact-us__form-group input:focus,
+.contact-us__form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-us__channels label {
+    display: block;
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-us__submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-us__submit-button:hover {
+    background-color: #0056b3;
+}
