@@ -10,6 +10,7 @@ import DamagedShipment from './components/page/Features/DamagedShipment/DamagedS
 import ShipmentProtection from './components/page/Features/ShipmentProtection/ShipmentProtection';
 import NDRManagement from './components/page/Features/NDRManagement/NDRManagement';
 import RateCalculator from './components/page/Offerings/RateCalculator/RateCalculator';
+import CarrierIntegration from './components/page/Integration/CarrierIntegration/CarrierIntegration';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/shipment-protection' element={<ShipmentProtection />} />
           <Route path='/ndr-management' element={<NDRManagement />} />
           <Route path='/rate-calculator' element={<RateCalculator />} />
+          <Route path='/carrier-integration' element={<CarrierIntegration />} />
         </Routes>
       </div>
       <Footer />
