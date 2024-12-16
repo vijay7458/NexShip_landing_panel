@@ -117,10 +117,18 @@
 }
 
 .contact-us__channels label {
-    display: block;
+    display: flex;
     margin: 8px 0;
     font-size: 1rem;
     color: #555;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.contact-us__channels label input {
+    width: auto;
 }
 
 .contact-us__submit-button {
@@ -138,3 +146,5 @@
 .contact-us__submit-button:hover {
     background-color: #0056b3;
 }
+
+

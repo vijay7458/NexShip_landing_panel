@@ -1,7 +1,6 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import React, { useState } from 'react';
 import './ContactUs.css';
-
+import MapboxComponent from './MapboxComponent';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -14,6 +13,8 @@ const ContactUs = () => {
         monthlyShipment: '',
         channels: []
     });
+
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -39,17 +40,10 @@ const ContactUs = () => {
         // Add form submission logic here
     };
 
-    const mapRef = useRef(null);
 
-    const containerStyle = {
-        width: '100%',
-        height: '400px',
-    };
 
-    const center = {
-        lat: 28.4595, // Latitude for Gurugram office
-        lng: 77.0266, // Longitude for Gurugram office
-    };
+
+
 
     return (
         <div className="contact-us">
@@ -82,6 +76,7 @@ const ContactUs = () => {
                             <h3>Surat Office</h3>
                             <p>Unit 129, Althan, Surat, Gujarat, Pin - 395017</p>
                         </div>
+                        <MapboxComponent />
                     </div>
                 </section>
 
@@ -241,16 +236,8 @@ const ContactUs = () => {
                     </form>
                 </section>
             </section>
-            <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                <GoogleMap
-                    mapContainerStyle={containerStyle}
-                    center={center}
-                    zoom={13}
-                    ref={mapRef}
-                >
-                    <Marker position={center} />
-                </GoogleMap>
-            </LoadScript>
+
+
         </div>
     );
 };
