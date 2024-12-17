@@ -12,12 +12,6 @@
     text-align: center;
 }
 
-.carrier-integration__header h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
 .carrier-integration__partners h2,
 .carrier-integration__trust h2 {
     font-size: 2rem;
@@ -151,9 +145,6 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .carrier-integration__header h1 {
-        font-size: 2rem;
-    }
 
     .carrier-integration__partner-name {
         font-size: 1rem;

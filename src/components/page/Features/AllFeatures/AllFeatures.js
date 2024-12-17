@@ -5,7 +5,7 @@ import features from "./features.json"
 const AllFeatures = () => {
   return (
     <div className="all-features-section">
-      <h2 className="features-heading">All Features</h2>
+      <h1 className="heading text-center">All Features</h1>
       <div className="features-list">
         {features.map((feature, index) => (
           <div className="feature-card" key={index}>

@@ -29,7 +29,7 @@ const DamagedShipment = () => {
         <div className="damaged-shipment-container">
             {/* Intro Section */}
             <section className="damaged-shipment-intro">
-                <h1>Manage Damaged Shipments with Ease</h1>
+                <h1 className='heading text-center'>Manage Damaged Shipments with Ease</h1>
                 <p>
                     As an eCommerce aggregator, we offer a seamless solution for handling damaged shipments.
                     Our platform ensures that sellers have all the tools they need to manage, report, and

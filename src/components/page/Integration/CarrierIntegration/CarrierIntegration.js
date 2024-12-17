@@ -24,7 +24,7 @@ const CarrierIntegration = () => {
     return (
         <div className="carrier-integration">
             <header className="carrier-integration__header">
-                <h1>Courier Partner Integrations</h1>
+                <h1 className='heading text-center'>Courier Partner Integrations</h1>
             </header>
 
             <section className="carrier-integration__partners">

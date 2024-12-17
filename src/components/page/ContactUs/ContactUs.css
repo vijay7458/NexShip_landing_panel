@@ -11,12 +11,6 @@
     margin-bottom: 40px;
 }
 
-.contact-us__header h1 {
-    font-size: 2.8rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
 .contact-us__header p {
     font-size: 1.2rem;
     color: #777;
@@ -146,5 +140,3 @@
 .contact-us__submit-button:hover {
     background-color: #0056b3;
 }
-
-

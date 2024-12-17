@@ -5,10 +5,10 @@ const ReferAndEarn = () => {
     return (
         <div className="refer-and-earn">
             <header className="refer-and-earn__header">
-                <h1>Refer a Business, Earn Big!</h1>
+                <h1 className='heading text-center'>Refer a Business, Earn Big!</h1>
                 <p className="refer-and-earn__description">
-                    As a trusted logistics partner, you can now earn rewards by referring other businesses to join our platform. 
-                    Help them streamline their logistics and grow your rewards in the process. 
+                    As a trusted logistics partner, you can now earn rewards by referring other businesses to join our platform.
+                    Help them streamline their logistics and grow your rewards in the process.
                     Start referring today and benefit from every successful onboarding.
                 </p>
             </header>
@@ -17,27 +17,27 @@ const ReferAndEarn = () => {
                 <h2>Why Refer Other Businesses?</h2>
                 <div className="refer-and-earn__benefit-list">
                     <div className="refer-and-earn__benefit-item">
-                        <img 
-                            src="https://via.placeholder.com/150?text=Benefit+1" 
-                            alt="Benefit 1" 
+                        <img
+                            src="https://via.placeholder.com/150?text=Benefit+1"
+                            alt="Benefit 1"
                             className="refer-and-earn__benefit-image"
                         />
                         <h3>Grow Your Network</h3>
                         <p>Expand your network of business partners while helping other companies streamline their logistics operations.</p>
                     </div>
                     <div className="refer-and-earn__benefit-item">
-                        <img 
-                            src="https://via.placeholder.com/150?text=Benefit+2" 
-                            alt="Benefit 2" 
+                        <img
+                            src="https://via.placeholder.com/150?text=Benefit+2"
+                            alt="Benefit 2"
                             className="refer-and-earn__benefit-image"
                         />
                         <h3>Exclusive Rewards</h3>
                         <p>Earn financial incentives and exclusive perks for every successful referral that joins our platform.</p>
                     </div>
                     <div className="refer-and-earn__benefit-item">
-                        <img 
-                            src="https://via.placeholder.com/150?text=Benefit+3" 
-                            alt="Benefit 3" 
+                        <img
+                            src="https://via.placeholder.com/150?text=Benefit+3"
+                            alt="Benefit 3"
                             className="refer-and-earn__benefit-image"
                         />
                         <h3>Boost Your Business</h3>

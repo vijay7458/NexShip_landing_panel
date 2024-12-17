@@ -48,7 +48,7 @@ const ContactUs = () => {
     return (
         <div className="contact-us">
             <header className="contact-us__header">
-                <h1>Contact Us</h1>
+                <h1 className='heading text-center'>Contact Us</h1>
                 <p>Have any questions? We're here to help you.</p>
             </header>
 

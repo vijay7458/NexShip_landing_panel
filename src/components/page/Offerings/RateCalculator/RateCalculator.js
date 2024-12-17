@@ -19,7 +19,7 @@ const RateCalculator = () => {
   return (
     <div className="shipping-rate-calculator">
       <header className="shipping-rate-calculator__header">
-        <h1>Shipping Rate Calculator</h1>
+        <h1 className='heading text-center'>Shipping Rate Calculator</h1>
       </header>
 
       <main className="shipping-rate-calculator__main">
