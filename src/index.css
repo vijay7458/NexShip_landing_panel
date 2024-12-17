@@ -10,16 +10,17 @@
 }
 
 .main-button {
-    /* background-color: #1975C9 !important; */
-    background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%);
+    background-color: #1975C9 !important;
+    /* background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%); */
     color: #fff;
     padding: 5px 10px;
     white-space: nowrap;
     border: 0;
+    box-shadow: rgba(255, 255, 255, 0.25) 0.5px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
 }
 
 .main-button:hover {
-    /* background-color: #1975C9 !important; */
+    background-color: #1975C9 !important;
     color: #fff;
 }
 
