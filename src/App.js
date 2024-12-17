@@ -13,6 +13,7 @@ import RateCalculator from './components/page/Offerings/RateCalculator/RateCalcu
 import CarrierIntegration from './components/page/Integration/CarrierIntegration/CarrierIntegration';
 import ReferAndEarn from './components/page/Resources/ReferAndEarn/ReferAndEarn';
 import ContactUs from './components/page/ContactUs/ContactUs';
+import APIIntegration from './components/page/Integration/APIIntegration/APIIntegration';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/carrier-integration' element={<CarrierIntegration />} />
           <Route path='/refer-and-earn' element={<ReferAndEarn />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/api-integration' element={<APIIntegration />} />
         </Routes>
       </div>
       <Footer />
