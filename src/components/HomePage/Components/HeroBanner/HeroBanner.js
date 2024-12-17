@@ -29,7 +29,7 @@ const HeroBanner = () => {
           <AnimatedText text="Logistics Industry" />
           <AnimatedText text="Dynamics Unveiled." />
           <p>A deep dive into logistics, revealing the mechanisms driving global commerce and supply chains.</p>
-          {/* <AnimatedArrowButton href="https://google.com">Explore More</AnimatedArrowButton> */}
+          <button className="btn main-button">Sign up for free</button>
         </div>
 
 
