@@ -19,11 +19,11 @@
     z-index: 2;
     top: -10px;
     filter: blur(13px);
+    padding-block: 12px;
 }
 
 .header.scrolled {
     margin-inline: 4%;
-    padding-block: 12px;
     top: 15px;
 }
 
