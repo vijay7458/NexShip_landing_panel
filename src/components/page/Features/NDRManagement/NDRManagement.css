@@ -1,0 +1,139 @@
+/* Page Container */
+.ndr-management__page-container {
+    background-color: #f4f7fa;
+    padding: 3rem 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.ndr-management__page-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Section Title */
+.ndr-management__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Overview Section */
+.ndr-management__overview {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.ndr-management__description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Features Section */
+.ndr-management__features {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.ndr-management__feature-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ndr-management__feature-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ndr-management__feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.ndr-management__feature-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.ndr-management__feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+.ndr-management__feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Benefits Section */
+.ndr-management__benefits {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.ndr-management__benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ndr-management__benefit-item {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+/* CTA Section */
+.ndr-management__cta {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ndr-management__cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ndr-management__cta-button:hover {
+    background-color: #0055a5;
+}
+
+.ndr-management__cta-button:focus {
+    outline: none;
+}
