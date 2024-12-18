@@ -24,16 +24,26 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<HomePage />} />
+
+          {/* Features Routes */}
           <Route path='/all-features' element={<AllFeatures />} />
           <Route path='/damaged-shipment' element={<DamagedShipment />} />
           <Route path='/shipment-protection' element={<ShipmentProtection />} />
           <Route path='/ndr-management' element={<NDRManagement />} />
           <Route path='/hyper-local' element={<HyperLocal />} />
+
+          {/* Offering Routes */}
           <Route path='/rate-calculator' element={<RateCalculator />} />
+
+          {/* Integration Routes */}
           <Route path='/carrier-integration' element={<CarrierIntegration />} />
-          <Route path='/refer-and-earn' element={<ReferAndEarn />} />
-          <Route path='/contact' element={<ContactUs />} />
           <Route path='/api-integration' element={<APIIntegration />} />
+
+          {/* Resources Routes */}
+          <Route path='/refer-and-earn' element={<ReferAndEarn />} />
+
+          
+          <Route path='/contact' element={<ContactUs />} />
         </Routes>
       </div>
       <Footer />
