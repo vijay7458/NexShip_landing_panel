@@ -15,6 +15,7 @@ import ReferAndEarn from './components/page/Resources/ReferAndEarn/ReferAndEarn'
 import ContactUs from './components/page/ContactUs/ContactUs';
 import APIIntegration from './components/page/Integration/APIIntegration/APIIntegration';
 import HyperLocal from './components/page/Features/HyperLocal/HyperLocal';
+import AmazonSelfShip from './components/page/Features/AmazonSelfShip/AmazonSelfShip';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/shipment-protection' element={<ShipmentProtection />} />
           <Route path='/ndr-management' element={<NDRManagement />} />
           <Route path='/hyper-local' element={<HyperLocal />} />
+          <Route path='/amazon-self-ship' element={<AmazonSelfShip />} />
 
           {/* Offering Routes */}
           <Route path='/rate-calculator' element={<RateCalculator />} />
@@ -42,7 +44,7 @@ function App() {
           {/* Resources Routes */}
           <Route path='/refer-and-earn' element={<ReferAndEarn />} />
 
-          
+
           <Route path='/contact' element={<ContactUs />} />
         </Routes>
       </div>
