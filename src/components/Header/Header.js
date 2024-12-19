@@ -61,7 +61,7 @@ const Header = () => {
                     <li><a className="dropdown-item" href="/amazon-self-ship">Amazon Self Ship<hr /><span>Seamless Amazon Self-Shipping with Shipease</span></a></li>
                     <li><a className="dropdown-item" href="/early-cod">Early COD<hr /><span>Enjoy Daily COD Remittance</span></a></li>
                     <li><a className="dropdown-item" href="/pickup-locations">Pickup Locations<hr /><span>Optimize Your Pickup Strategy</span></a></li>
-                    <li><a className="dropdown-item signup-box" href="/create-account">Create Account<hr /><span>Sign Up with Shipease Today</span></a></li>
+                    <li><a className="dropdown-item signup-box" target="_blank" href="https://app.shipease.in/sign-up">Create Account<hr /><span>Sign Up with Shipease Today</span></a></li>
                   </ul>
                 </li>
               </ul>
