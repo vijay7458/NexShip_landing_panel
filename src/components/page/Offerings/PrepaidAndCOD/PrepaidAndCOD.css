@@ -1,0 +1,150 @@
+.prepaid-and-cod {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.prepaid-and-cod__header {
+    background: linear-gradient(90deg, #60a9eb 0%, #C5DCF1 25%, #fff 50%, #C5DCF1 75%, #60a9eb 100%);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.prepaid-and-cod__header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.prepaid-and-cod__header p {
+    font-size: 1.2rem;
+}
+
+.prepaid-and-cod__how-it-works {
+    padding: 40px 0;
+}
+
+.prepaid-and-cod__how-it-works h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prepaid-and-cod__steps {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.prepaid-and-cod__step {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 90%;
+    max-width: 500px;
+}
+
+.prepaid-and-cod__step:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    background-color: #60a9eb;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    font-size: 1.5rem;
+}
+
+.prepaid-and-cod__why-offer {
+    background-color: #f1f5f9;
+    padding: 40px 20px;
+}
+
+.prepaid-and-cod__why-offer h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    color: #2b2b6d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.prepaid-and-cod__benefits {
+    padding: 50px 20px;
+    background-color: #f1f5f9;
+    text-align: center;
+}
+
+.prepaid-and-cod__benefits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2b2b6d;
+}
+
+.benefits__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefits__item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    background-color: #60a9eb;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+}
+
+.benefits__item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #2b2b6d;
+}
+
+.benefits__item p {
+    font-size: 1.2rem;
+    color: #333;
+}
