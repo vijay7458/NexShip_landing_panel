@@ -16,6 +16,11 @@ import ContactUs from './components/page/ContactUs/ContactUs';
 import APIIntegration from './components/page/Integration/APIIntegration/APIIntegration';
 import HyperLocal from './components/page/Features/HyperLocal/HyperLocal';
 import AmazonSelfShip from './components/page/Features/AmazonSelfShip/AmazonSelfShip';
+import EarlyCOD from './components/page/Features/EarlyCOD/EarlyCOD';
+import PickupLocations from './components/page/Features/PickupLocations/PickupLocations';
+import PrepaidAndCOD from './components/page/Offerings/PrepaidAndCOD/PrepaidAndCOD';
+import ChannelIntegration from './components/page/Integration/ChannelIntegration/ChannelIntegration';
+import WhatsAppIntegration from './components/page/Integration/WhatsAppIntegration/WhatsAppIntegration';
 
 function App() {
   return (
@@ -33,13 +38,18 @@ function App() {
           <Route path='/ndr-management' element={<NDRManagement />} />
           <Route path='/hyper-local' element={<HyperLocal />} />
           <Route path='/amazon-self-ship' element={<AmazonSelfShip />} />
+          <Route path='/early-cod' element={<EarlyCOD />} />
+          <Route path='/pickup-locations' element={<PickupLocations />} />
 
           {/* Offering Routes */}
           <Route path='/rate-calculator' element={<RateCalculator />} />
+          <Route path='/prepaid-cod' element={<PrepaidAndCOD />} />
 
           {/* Integration Routes */}
           <Route path='/carrier-integration' element={<CarrierIntegration />} />
           <Route path='/api-integration' element={<APIIntegration />} />
+          <Route path='/channel-integration' element={<ChannelIntegration />} />
+          <Route path='/whatsapp-integration' element={<WhatsAppIntegration />} />
 
           {/* Resources Routes */}
           <Route path='/refer-and-earn' element={<ReferAndEarn />} />
