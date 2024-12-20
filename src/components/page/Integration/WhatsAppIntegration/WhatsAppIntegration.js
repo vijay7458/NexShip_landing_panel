@@ -40,20 +40,20 @@ const WhatsAppIntegration = () => {
       {/* Features Section */}
       <div className="whatsapp-integration-container__features">
         <h2>Key Features</h2>
-        <div className="features-grid">
-          <div className="feature-card">
+        <div className="whatsapp-features-grid">
+          <div className="whatsapp-feature-card">
             <h3>Seamless Order Creation</h3>
             <p>Reduce time and effort by managing all orders on one platform.</p>
           </div>
-          <div className="feature-card">
+          <div className="whatsapp-feature-card">
             <h3>Efficient Seller Onboarding</h3>
             <p>Onboard new sellers quickly and efficiently with automated processes.</p>
           </div>
-          <div className="feature-card">
+          <div className="whatsapp-feature-card">
             <h3>Real-Time Order Updates</h3>
             <p>Keep customers informed with real-time order status and tracking.</p>
           </div>
-          <div className="feature-card">
+          <div className="whatsapp-feature-card">
             <h3>Streamlined Shipping Process</h3>
             <p>Manage and confirm shipments with ease, ensuring timely deliveries.</p>
           </div>
