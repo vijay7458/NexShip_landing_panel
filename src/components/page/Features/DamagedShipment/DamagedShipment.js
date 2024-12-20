@@ -39,7 +39,7 @@ const DamagedShipment = () => {
 
             {/* Feature Highlights */}
             <section className="damaged-shipment-highlights">
-                <h2>Key Benefits</h2>
+                <h2 className='heading text-center'>Key Benefits</h2>
                 <ul>
                     <li>One-stop platform for managing all shipment issues.</li>
                     <li>Seamless integration with top shipping carriers.</li>
@@ -50,7 +50,7 @@ const DamagedShipment = () => {
 
             {/* Detailed Solutions (Cards) */}
             <section className="damaged-shipment-solutions">
-                <h2>Our Solutions</h2>
+                <h2 className='heading text-center'>Our Solutions</h2>
                 <ul className="damaged-shipment-list">
                     {solutions.map((solution) => (
                         <li key={solution.id} className="damaged-shipment-item">

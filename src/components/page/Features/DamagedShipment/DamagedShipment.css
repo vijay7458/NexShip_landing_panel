@@ -27,9 +27,7 @@
 }
 
 .damaged-shipment-highlights h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
 }
 
 .damaged-shipment-highlights ul {
@@ -49,10 +47,7 @@
 }
 
 .damaged-shipment-solutions h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 .damaged-shipment-list {
