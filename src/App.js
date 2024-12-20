@@ -21,6 +21,8 @@ import PickupLocations from './components/page/Features/PickupLocations/PickupLo
 import PrepaidAndCOD from './components/page/Offerings/PrepaidAndCOD/PrepaidAndCOD';
 import ChannelIntegration from './components/page/Integration/ChannelIntegration/ChannelIntegration';
 import WhatsAppIntegration from './components/page/Integration/WhatsAppIntegration/WhatsAppIntegration';
+import Media from './components/page/Resources/Media/Media';
+import Career from './components/page/Resources/Career/Career';
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
 
           {/* Resources Routes */}
           <Route path='/refer-and-earn' element={<ReferAndEarn />} />
+          <Route path='/media' element={<Media />} />
+          <Route path='/careers' element={<Career />} />
 
 
           <Route path='/contact' element={<ContactUs />} />
