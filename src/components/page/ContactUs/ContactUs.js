@@ -232,7 +232,7 @@ const ContactUs = () => {
                             </div>
                         </div>
 
-                        <button type="submit" className="contact-us__submit-button">Submit</button>
+                        <button type="submit" className="btn main-button">Submit</button>
                     </form>
                 </section>
             </section>
