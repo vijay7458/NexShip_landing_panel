@@ -49,7 +49,7 @@
     transform: translateY(-5px);
 }
 
-.icon {
+.prepaid-and-cod__step .icon {
     background-color: #60a9eb;
     color: #fff;
     width: 50px;
@@ -88,7 +88,7 @@
 }
 
 .step h3 {
-    color: #2b2b6d;
+    color: #092C4C;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -102,7 +102,7 @@
 .prepaid-and-cod__benefits h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #2b2b6d;
+    color: #092C4C;
 }
 
 .benefits__container {
@@ -125,7 +125,7 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.icon {
+.prepaid-and-cod__step .icon {
     background-color: #60a9eb;
     color: #fff;
     width: 50px;
@@ -141,7 +141,7 @@
 .benefits__item h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #2b2b6d;
+    color: #092C4C;
 }
 
 .benefits__item p {
