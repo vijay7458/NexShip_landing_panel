@@ -5,11 +5,11 @@ const ShipmentProtection = () => {
     return (
         <section className="shipment-protection__page-container">
             {/* Page Title */}
-            <h1 className="shipment-protection__page-title">Secure Your Shipments with Confidence</h1>
+            <h1 className="heading text-center">Secure Your Shipments with Confidence</h1>
 
             {/* How It Works Section */}
             <section className="shipment-protection__how-it-works">
-                <h2 className="shipment-protection__title">How Does It Work?</h2>
+                <h2 className="heading text-center">How Does It Work?</h2>
                 <div className="shipment-protection__steps">
                     <div className="shipment-protection__step">
                         <h3 className="shipment-protection__step-title">STEP 01</h3>
@@ -31,7 +31,7 @@ const ShipmentProtection = () => {
 
             {/* How to Opt for Cover */}
             <section className="shipment-protection__opt-for-cover">
-                <h2 className="shipment-protection__title">How Can You Opt For Cover?</h2>
+                <h2 className="heading text-center">How Can You Opt For Cover?</h2>
                 <div className="shipment-protection__cover-options">
                     <div className="shipment-protection__cover">
                         <h3 className="shipment-protection__cover-title">Selective Cover</h3>
@@ -54,7 +54,7 @@ const ShipmentProtection = () => {
 
             {/* Eligible Products Section */}
             <section className="shipment-protection__eligible-products">
-                <h2 className="shipment-protection__title">Eligible Products</h2>
+                <h2 className="heading text-center">Eligible Products</h2>
                 <ul className="shipment-protection__product-list">
                     <li className="shipment-protection__product-item">
                         <img src="https://via.placeholder.com/220x180?text=Electronics" alt="Electronics" className="shipment-protection__product-image" />
