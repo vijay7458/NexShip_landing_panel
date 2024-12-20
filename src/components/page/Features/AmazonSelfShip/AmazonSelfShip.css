@@ -3,7 +3,7 @@
     color: #333;
 }
 
-.amazon-self-ship .container {
+.amazon-self-ship-container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -45,7 +45,7 @@
 
 .amazon-self-ship__features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -57,9 +57,10 @@
     text-align: center;
 }
 
-.amazon-self-ship__feature h3 {
-    color: #2b2b6d;
+.amazon-self-ship-container h3 {
+    color: #092C4C;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 /* Steps Section */
@@ -84,7 +85,7 @@
 }
 
 .amazon-self-ship__step-icon {
-    background: #2b2b6d;
+    background: #092C4C;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -98,16 +99,17 @@
 
 /* Footer */
 .amazon-self-ship__footer {
-    background: #2b2b6d;
+    background: #092C4C;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
     border-radius: 8px;
+    margin-bottom: 60px;
 }
 
 .amazon-self-ship__cta {
     background: #fff;
-    color: #2b2b6d;
+    color: #092C4C;
     padding: 10px 20px;
     font-size: 1rem;
     border: none;

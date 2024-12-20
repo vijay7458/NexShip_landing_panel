@@ -14,8 +14,8 @@ const AmazonSelfShip = () => {
             </header>
 
             <section className="amazon-self-ship__features">
-                <div className="container">
-                    <h2 className="amazon-self-ship__section-title">Why Choose Amazon Self-Ship?</h2>
+                <div className="amazon-self-ship-container">
+                    <h2 className="heading text-center">Why Choose Amazon Self-Ship?</h2>
                     <div className="amazon-self-ship__features-grid">
                         <div className="amazon-self-ship__feature">
                             <h3>Multi-Location Pickups</h3>
@@ -46,8 +46,8 @@ const AmazonSelfShip = () => {
             </section>
 
             <section className="amazon-self-ship__steps">
-                <div className="container">
-                    <h2 className="amazon-self-ship__section-title">How Does Amazon Self-Ship Work?</h2>
+                <div className="amazon-self-ship-container">
+                    <h2 className="heading text-center">How Does Amazon Self-Ship Work?</h2>
                     <div className="amazon-self-ship__steps-grid">
                         <div className="amazon-self-ship__step">
                             <div className="amazon-self-ship__step-icon">1</div>
@@ -74,7 +74,7 @@ const AmazonSelfShip = () => {
             </section>
 
             <footer className="amazon-self-ship__footer">
-                <div className="container">
+                <div className="">
                     <h2>Ready to Get Started?</h2>
                     <p>Take control of your shipping and grow your business with Amazon Self-Ship + ShipEase.</p>
                     <button className="amazon-self-ship__cta">Start Shipping</button>
