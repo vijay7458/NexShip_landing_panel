@@ -20,7 +20,7 @@
     font-weight: 600;
     color: #333;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid #0066cc;
+    border-bottom: 2px solid #092C4C;
     padding-bottom: 0.5rem;
     display: inline-block;
 }
@@ -78,7 +78,7 @@
 .ndr-management__feature-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #0066cc;
+    color: #092C4C;
     margin-bottom: 1rem;
 }
 
@@ -123,7 +123,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: white;
-    background-color: #0066cc;
+    background-color: #092C4C;
     border: none;
     border-radius: 8px;
     cursor: pointer;
