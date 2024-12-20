@@ -89,7 +89,7 @@
 .hyperlocal__feature-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #3498db;
+    color: #092C4C;
     margin-bottom: 1rem;
 }
 
@@ -139,7 +139,7 @@
 .hyperlocal__step-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #3498db;
+    color: #092C4C;
     margin-bottom: 1rem;
 }
 
@@ -147,8 +147,7 @@
 .hyperlocal__cta {
     text-align: center;
     padding: 2rem;
-    background-color: #3498db;
-    color: #ffffff;
+    background: linear-gradient(90deg, #60a9eb 0%, #c5dcf1 100%);
     border-radius: 8px;
 }
 
@@ -165,7 +164,7 @@
 
 .hyperlocal__cta-button {
     background-color: #ffffff;
-    color: #3498db;
+    color: #092C4C;
     border: none;
     padding: 1rem 2rem;
     font-size: 1rem;
