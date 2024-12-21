@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Footer.css"; 
 import React, { useEffect, useState } from "react";
 import { BASE_URL } from "../../axios/config";
-import Logo from '../../assets/image/white-logo.png'
+import Logo from '../../assets/image/logo.svg'
 import { faEnvelope, faEnvelopeOpenText, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn, } from "@fortawesome/free-brands-svg-icons";
