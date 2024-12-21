@@ -159,13 +159,19 @@
     grid-template-columns: repeat(3, 3fr);
     padding: 10px;
     position: unset;
+    align-items: start;
 }
 
 .nav-item:hover .dropdown-menu ul li {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 12px;
+    align-items: start;
+    font-size: 18px;
+    gap: 10px;
+    color: var(--sh-primary);
+}
+
+.nav-item:hover .dropdown-menu ul li svg {
+    margin-top: 6px;
 }
 
 .nav-item:hover .dropdown-menu ul li a {
@@ -174,6 +180,8 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item:hover .dropdown-menu ul li a hr {
@@ -186,23 +194,47 @@
             #1975C9 50%,
             #C5DCF1 95%,
             #fff 100%);
-    transition: 0.5s;
     border: none;
     height: 2px;
 }
 
 
+
 .nav-item:hover .dropdown-menu ul li a:hover {
     background: transparent;
+    /* color: var(--sh-primary); */
+}
+
+.nav-item:hover .dropdown-menu ul li a:hover span {
+    color: #333;
 }
 
 .nav-item:hover .dropdown-menu ul li a:hover hr {
-    width: 100%;
+    transition: 2s;
+    animation: leftToRight 1s linear;
+     background: linear-gradient(90deg,
+            #fff 0%,
+            #C5DCF1 5%,
+            #07549c 50%,
+            #C5DCF1 95%,
+            #fff 100%);
+}
+
+
+@keyframes leftToRight {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .nav-item:hover .dropdown-menu ul li a span {
     font-size: 12px;
     font-weight: 400;
+    white-space: normal;
 }
 
 /* Animations for Dropdown */
