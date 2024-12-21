@@ -7,6 +7,7 @@ import AllFeaturesIcon from "./NavIcons/AllFeaturesIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsProgress, faBoxOpen, faCalculator, faCloud, faHandHoldingDollar, faHandsHoldingCircle, faIndianRupeeSign, faLocationDot, faMapLocation, faMoneyBill1, faRoadBarrier, faShuffle, faSuitcase, faUserPlus, faUsers, faWallet } from "@fortawesome/free-solid-svg-icons";
 import { faAmazon, faMedium, faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import sampleVideo from '../../assets/image/sample.webm'
 
 const Header = () => {
 
@@ -36,7 +37,15 @@ const Header = () => {
         <div className="logo">
           <a href="/" className="text-decoration-none fw-bold">
             {/* <img src={isScrolled ? mobileLogo : Logo} alt="My Website Logo" className="logo-img" /> */}
-            <LogoAnimation />
+            {/* <LogoAnimation /> */}
+            <video
+              className="video-element"
+              src={sampleVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
           </a>
         </div>
 
@@ -53,9 +62,9 @@ const Header = () => {
                 <li className="col-3">
                   <h4 className="mb-2">We understand the art of scaling rapidly</h4>
                   <p>Founded in 2020 by Ajay, Lalit, and Pawan, ShipEase has quickly emerged as one of India’s fastest-growing SaaS companies.</p>
-                  <button className="btn main-button">Explore More</button>
+                  <button className="btn">Explore More</button>
                 </li>
-                <li className="col-8">
+                <li className="col-9">
                   <ul>
                     <li><FontAwesomeIcon icon={faSuitcase} /><a className="dropdown-item" href="/all-features">All Features<hr /><span>Explore Our Full Feature Set</span></a></li>
                     <li><FontAwesomeIcon icon={faBoxOpen} /><a className="dropdown-item" href="/damaged-shipment">Damaged Shipment<hr /><span>Advanced Recommendation Engine</span></a></li>
@@ -80,10 +89,10 @@ const Header = () => {
                 <li className="col-3">
                   <h4 className="mb-2">Support and Service</h4>
                   <p>An essential component of every organization, dedicated to delivering assistance, guidance, and effective solutions to customers, clients, or users.</p>
-                  <button className="btn main-button">Learn More</button>
+                  <button className="btn">Learn More</button>
 
                 </li>
-                <li className="col-8">
+                <li className="col-9">
                   <ul>
                     <li><FontAwesomeIcon icon={faIndianRupeeSign} /><a className="dropdown-item" href="/plans-pricing">Plans and Pricing<hr /><span>Innovative Logistics Cost Solutions</span></a></li>
                     <li><FontAwesomeIcon icon={faCalculator} /><a className="dropdown-item" href="/rate-calculator">Rate Calculator<hr /><span>Simplify Shipping with Automation</span></a></li>
@@ -102,15 +111,17 @@ const Header = () => {
                 <li className="col-3">
                   <h4 className="mb-2">Unlock Benefits with Referral Codes</h4>
                   <p>Take advantage of our exclusive referral program! Share your code with friends and colleagues to earn special discounts and rewards for both you and your referrals on premium logistics services.</p>
-                  <button className="btn main-button">Learn More</button>
+                  <button className="btn">Learn More</button>
                 </li>
-                <li className="col-8">
-                  <ul>
-                    <li><FontAwesomeIcon icon={faRoadBarrier} /><a className="dropdown-item" href="/carrier-integration">Carrier Integration<hr /><span>Sell Anywhere, Ship with Shipease</span></a></li>
-                    <li><FontAwesomeIcon icon={faCloud} /><a className="dropdown-item" href="/api-integration">API Integration<hr /><span>Centralized API Integration Hub</span></a></li>
-                    <li><FontAwesomeIcon icon={faShuffle} /><a className="dropdown-item" href="/channel-integration">Channel Integration<hr /><span>Achieve Seamless Channel Integration</span></a></li>
-                    <li><FontAwesomeIcon icon={faSquareWhatsapp} /><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration<hr /><span>Effortless WhatsApp Integration</span></a></li>
-                  </ul>
+                <li className="col-9">
+                  <div>
+                    <ul>
+                      <li><FontAwesomeIcon icon={faRoadBarrier} /><a className="dropdown-item" href="/carrier-integration">Carrier Integration<hr /><span>Sell Anywhere, Ship with Shipease</span></a></li>
+                      <li><FontAwesomeIcon icon={faCloud} /><a className="dropdown-item" href="/api-integration">API Integration<hr /><span>Centralized API Integration Hub</span></a></li>
+                      <li><FontAwesomeIcon icon={faShuffle} /><a className="dropdown-item" href="/channel-integration">Channel Integration<hr /><span>Achieve Seamless Channel Integration</span></a></li>
+                      <li><FontAwesomeIcon icon={faSquareWhatsapp} /><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration<hr /><span>Effortless WhatsApp Integration</span></a></li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -124,9 +135,9 @@ const Header = () => {
                 <li className="col-3">
                   <h4 className="mb-2">Instantly Calculate Your Shipping Rates</h4>
                   <p>Get quick and accurate shipping rate calculations with our tool. Share it with your network to unlock special discounts and exclusive benefits for both you and your referrals on premium logistics services.</p>
-                  <button className="btn main-button">Learn More</button>
+                  <button className="btn">Learn More</button>
                 </li>
-                <li className="col-8">
+                <li className="col-9">
                   <ul>
                     <li><FontAwesomeIcon icon={faMedium} /><a className="dropdown-item" href="/media">Media<hr /><span>Amplify Your Impact with Media</span></a></li>
                     <li><FontAwesomeIcon icon={faHandHoldingDollar} /><a className="dropdown-item" href="/refer-and-earn">Refer and Earn<hr /><span>Unlock Savings with Our Referral Program</span></a></li>
