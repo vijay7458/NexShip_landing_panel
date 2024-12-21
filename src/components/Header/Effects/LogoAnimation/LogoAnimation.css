@@ -78,6 +78,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    transform-style: preserve-3d;
     /* Ensure it's on top of all the animation */
 }
 
@@ -85,4 +86,5 @@
     width: 50px;
     height: auto;
     object-fit: contain;
+    animation: rotateCube 10s linear infinite;
 }
