@@ -1,17 +1,39 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/image/logo.svg";
-import mobileLogo from "../../assets/image/mobileLogo.svg";
 import LogoAnimation from "./Effects/LogoAnimation/LogoAnimation";
 import AllFeaturesIcon from "./NavIcons/AllFeaturesIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsProgress, faBoxOpen, faCalculator, faCloud, faHandHoldingDollar, faHandsHoldingCircle, faIndianRupeeSign, faLocationDot, faMapLocation, faMoneyBill1, faRoadBarrier, faShuffle, faSuitcase, faUserPlus, faUsers, faWallet } from "@fortawesome/free-solid-svg-icons";
 import { faAmazon, faMedium, faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import sampleVideo from '../../assets/image/sample.webm'
+import mobileLogo from "../../assets/image/mobileLogo.svg";
+
 
 const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showVideo, setShowVideo] = useState(false); // Initial state shows the image
+
+  useEffect(() => {
+    const cycleAnimation = () => {
+      setShowVideo(false); // Start with the image
+      setTimeout(() => {
+        setShowVideo(true); // Switch to the video
+      }, 2000); // Image duration: 2 seconds
+    };
+
+    cycleAnimation(); // Start the first cycle immediately
+
+    const interval = setInterval(() => {
+      cycleAnimation(); // Repeat the cycle
+    }, 10000); // Total cycle duration: 2s (image) + 8s (video)
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,14 +60,18 @@ const Header = () => {
           <a href="/" className="text-decoration-none fw-bold">
             {/* <img src={isScrolled ? mobileLogo : Logo} alt="My Website Logo" className="logo-img" /> */}
             {/* <LogoAnimation /> */}
-            <video
-              className="video-element"
-              src={sampleVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+            {showVideo ? (
+              <video
+                className="video-element"
+                src={sampleVideo}
+                autoPlay
+                muted
+                // loop
+                playsInline
+              />
+            ) : (
+              <img src={mobileLogo} alt="Logo" className="logo-image" />
+            )}
           </a>
         </div>
 
