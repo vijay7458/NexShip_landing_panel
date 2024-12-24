@@ -13,24 +13,15 @@ import mobileLogo from "../../assets/image/mobileLogo.svg";
 const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showVideo, setShowVideo] = useState(false); // Initial state shows the image
+  const [showVideo, setShowVideo] = useState(true);
 
   useEffect(() => {
-    const cycleAnimation = () => {
-      setShowVideo(false); // Start with the image
-      setTimeout(() => {
-        setShowVideo(true); // Switch to the video
-      }, 2000); // Image duration: 2 seconds
-    };
-
-    cycleAnimation(); // Start the first cycle immediately
-
     const interval = setInterval(() => {
-      cycleAnimation(); // Repeat the cycle
-    }, 10000); // Total cycle duration: 2s (image) + 8s (video)
+      setShowVideo((prev) => !prev);
+    }, showVideo ? 5000 : 3000); // 8 seconds for video, 2 seconds for image
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+  }, [showVideo]);
 
 
 
@@ -60,18 +51,19 @@ const Header = () => {
           <a href="/" className="text-decoration-none fw-bold">
             {/* <img src={isScrolled ? mobileLogo : Logo} alt="My Website Logo" className="logo-img" /> */}
             {/* <LogoAnimation /> */}
-            {showVideo ? (
-              <video
-                className="video-element"
-                src={sampleVideo}
-                autoPlay
-                muted
-                // loop
-                playsInline
-              />
-            ) : (
-              <img src={mobileLogo} alt="Logo" className="logo-image" />
-            )}
+            <img
+              src={mobileLogo}
+              alt="Logo"
+              className={`logo-image ${showVideo ? 'logo-hidden' : ''}`}
+            />
+            <video
+              className={`video-element ${showVideo ? '' : 'logo-hidden'}`}
+              src={sampleVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
           </a>
         </div>
 

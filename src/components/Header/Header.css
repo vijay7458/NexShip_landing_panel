@@ -44,6 +44,13 @@
 .header .logo a {
     display: flex;
     height: 60px;
+    position: relative;
+}
+
+.logo-hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Prevent interactions when hidden */
 }
 
 /* 
@@ -64,6 +71,9 @@
     border-radius: 8px;
     /* Optional: Rounded edges for aesthetics */
     object-fit: cover;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth fade effect */
 }
 
 .navigation {
