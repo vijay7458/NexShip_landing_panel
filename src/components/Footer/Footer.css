@@ -8,7 +8,9 @@
             #60a9eb 0%,
             #1975C9 50%,
             #60a9eb 100%);
-    color: #092C4C;
+    background: #286580;
+    /* color: #092C4C; */
+    border-radius: 44px 44px 0 0;
 }
 
 .footer-container {
@@ -68,7 +70,7 @@
     content: "";
     position: absolute;
     width: 127px;
-    background: #092C4C;
+    background: #fff;
     height: 2px;
     left: 0;
     bottom: -3px;
@@ -82,7 +84,7 @@
 .footer-column ul li {
     margin-bottom: 10px;
     font-size: 14px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .footer-column p {
@@ -103,7 +105,7 @@
 .social-icon {
     font-size: 20px;
     color: #fff;
-    color: #092C4C;
+    /* color: #092C4C; */
     margin: 0;
     transition: color 0.3s;
 }
@@ -123,6 +125,15 @@
     margin-top: 4px;
 }
 
+.footer a,
+.footer a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.reach-us li a,
 .reach-us li p {
     margin-bottom: 0;
     max-width: 180px;

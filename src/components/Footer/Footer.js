@@ -1,9 +1,9 @@
 import "./Footer.css";
 import axios from "axios";
-import "./Footer.css"; 
+import "./Footer.css";
 import React, { useEffect, useState } from "react";
 import { BASE_URL } from "../../axios/config";
-import Logo from '../../assets/image/logo.svg'
+import Logo from '../../assets/image/white-logo.png'
 import { faEnvelope, faEnvelopeOpenText, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn, } from "@fortawesome/free-brands-svg-icons";
@@ -23,7 +23,7 @@ const Footer = () => {
     fetchData();
   }, []);
 
-  console.log(data,'lllllllll')
+  console.log(data, 'lllllllll')
 
   return (
     <footer className="footer">
@@ -52,12 +52,12 @@ const Footer = () => {
 
           <h4>Reach Us At</h4>
           <ul className="reach-us mb-2">
-            <li><FontAwesomeIcon icon={faEnvelope} /> <p>support@shipease.com</p></li>
-            <li><FontAwesomeIcon icon={faEnvelopeOpenText} /> <p>sales@shipease.com</p></li>
+            <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:support@shipease.com">support@shipease.com</a></li>
+            <li><FontAwesomeIcon icon={faEnvelopeOpenText} /> <a href="sales@shipease.com" target="_blank">sales@shipease.com</a></li>
             <li>
               <FontAwesomeIcon icon={faLocationDot} /><p>
                 <strong>Registered Office Address:</strong><br />
-                {data?.address1}
+                <a href="https://maps.app.goo.gl/WaManVxH3wV6xP1m7" target="_blank">{data?.address1}</a>
               </p>
             </li>
             <li>
