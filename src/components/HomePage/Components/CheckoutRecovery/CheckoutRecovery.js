@@ -5,7 +5,7 @@ import AbondantCheckoutFlow from '../../../../assets/image/AbondantCheckoutFlow.
 const CheckoutRecovery = () => {
   return (
     <>
-      <div className="home-section mb-0">
+      <div className="home-section">
         <div className='overview-container'>
           <div className='heading'>
             <h3 className="subtitle">Abandoned Checkout Recovery</h3>

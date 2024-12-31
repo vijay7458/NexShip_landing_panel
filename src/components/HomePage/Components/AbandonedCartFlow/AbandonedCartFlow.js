@@ -60,7 +60,7 @@ const AbandonedCartFlow = () => {
         //     </text>
         // </svg>
 
-        <div className="home-section mt-0 pt-0">
+        <div className="home-section">
             <div className='overview-container'>
                 <div className='abundant-recovery-flow'>
                     <img src={AbundantRecoveryFlow} alt="Abundant Recovery Flow" className='mt-5' />

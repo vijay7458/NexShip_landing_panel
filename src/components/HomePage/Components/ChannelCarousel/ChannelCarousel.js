@@ -5,10 +5,14 @@ import "./ChannelCarousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BASE_URL } from "../../../../axios/config";
+import { useNavigate } from "react-router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const DEFAULT_IMAGE = "default-placeholder.png";
 
 const ChannelCarousel = () => {
+    let Navigate = useNavigate()
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -37,7 +41,7 @@ const ChannelCarousel = () => {
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: "linear",
-        pauseOnHover: true, // Reacts to hover by default
+        pauseOnHover: false, // Reacts to hover by default
         arrows: false,
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 3 } },
@@ -65,6 +69,7 @@ const ChannelCarousel = () => {
             ) : (
                 <div className="no-data">No channel data available.</div>
             )}
+            {/* <span onClick={() => Navigate("/channel-integration")}>Wide Range of Channels <FontAwesomeIcon icon={faArrowRight} /></span> */}
         </div>
     );
 };

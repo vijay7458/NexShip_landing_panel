@@ -49,9 +49,9 @@ const Header = () => {
         {/* Logo Section */}
         <div className="logo">
           <a href="/" className="text-decoration-none fw-bold">
-            {/* <img src={isScrolled ? mobileLogo : Logo} alt="My Website Logo" className="logo-img" /> */}
+            <img src={Logo} alt="My Website Logo" className="mt-3" style={{ height: '30px', width: 'auto' }} />
             {/* <LogoAnimation /> */}
-            <img
+            {/* <img
               src={mobileLogo}
               alt="Logo"
               className={`logo-image ${showVideo ? 'logo-hidden' : ''}`}
@@ -63,7 +63,7 @@ const Header = () => {
               muted
               loop
               playsInline
-            />
+            /> */}
           </a>
         </div>
 

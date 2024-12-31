@@ -1,8 +1,7 @@
 .homepage .home-section {
-    margin-block: 50px;
+    margin-top: 100px;
 
-    padding: 4rem 2rem;
-    font-family: Arial, sans-serif;
+    padding: 0rem 2rem;
     color: #333;
     text-align: center;
 }

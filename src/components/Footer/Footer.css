@@ -1,7 +1,6 @@
 .footer {
     background-color: #092C4C;
     padding: 40px 10px 5px 20px;
-    font-family: Arial, sans-serif;
     color: #fff;
     /* border-radius: 40px 40px 0 0; */
     background: linear-gradient(312deg,
@@ -9,6 +8,7 @@
             #1975C9 50%,
             #60a9eb 100%);
     background: #286580;
+    background: var(--sh-secondary);
     /* color: #092C4C; */
     border-radius: 44px 44px 0 0;
 }
