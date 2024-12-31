@@ -4,6 +4,7 @@ import bannerImage from "../../../../assets/image/banner-image.webp";
 import ChannelCarousel from "../ChannelCarousel/ChannelCarousel";
 import Cube from "../../../Header/Effects/Cube";
 import AnimatedText from "./AnimatedLetters";
+import BannerGraphic from "./BannerGraphic/BannerGraphic";
 
 const HeroBanner = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -16,9 +17,9 @@ const HeroBanner = () => {
 
   return (
     <>
-      <section className="hero-banner d-flex">
+      <section className="hero-banner row mx-0">
         {/* Left side with image */}
-        <div className="banner-text">
+        <div className="banner-text col-5">
           {/* <Cube /> */}
           {/* <h1>
             <span>L</span><span>o</span><span>g</span><span>i</span><span>s</span><span>t</span><span>i</span><span>c</span><span>s</span>
@@ -32,10 +33,10 @@ const HeroBanner = () => {
           <button className="btn main-button">Sign up for free</button>
         </div>
 
-
         {/* Right side with heading and subheading */}
-        <div className="banner-image">
-          <img src={bannerImage} alt="Logistics Dynamics" />
+        <div className="banner-image col-5">
+          {/* <img src={bannerImage} alt="Logistics Dynamics" /> */}
+          <BannerGraphic />
         </div>
       </section>
       <ChannelCarousel />
