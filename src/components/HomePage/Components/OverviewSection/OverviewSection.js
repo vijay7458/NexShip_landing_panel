@@ -37,7 +37,7 @@ const OverviewSection = () => {
                     setIsAnimated(true); // Trigger animation only once
                 }
             },
-            { threshold: 0.5 }
+            { threshold: 0.2 }
         );
 
         if (sectionRef.current) {

@@ -1,17 +1,42 @@
-import React from 'react';
-import './CheckoutRecovery.css';
+import React, { useEffect, useRef, useState } from 'react';
 import AbondantCheckoutFlow from '../../../../assets/image/AbondantCheckoutFlow.png'
+import "animate.css";
+import './CheckoutRecovery.css';
 
 const CheckoutRecovery = () => {
+
+  const [isAnimated, setIsAnimated] = useState(false); // Track if animation has been applied
+  const sectionRef = useRef(null);
+  // Set up Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isAnimated) {
+          setIsAnimated(true); // Trigger animation only once
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [isAnimated]);
   return (
     <>
-      <div className="home-section">
+      <div className="home-section" ref={sectionRef}>
         <div className='overview-container'>
-          <div className='heading'>
+          <div className={`heading ${isAnimated ? "animate__animated animate__zoomInDown" : ""}`}>
             <h3 className="subtitle">Abandoned Checkout Recovery</h3>
             <h1>Bring Customers Back to Complete Their Journey</h1>
           </div>
-          <div className='checkout-flow'>
+          <div className={`checkout-flow ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
             <img src={AbondantCheckoutFlow} alt="Abondant Checkout Flow" />
           </div>
           {/* <div className="recovery-diagram">
