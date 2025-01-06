@@ -10,6 +10,7 @@ import CheckoutRecovery from "./Components/CheckoutRecovery/CheckoutRecovery";
 import Insights from "./Components/Insights/Insights";
 import OperationsPanel from "./Components/OperationsPanel/OperationsPanel";
 import "./HomePage.css";
+import InsightsFooter from "./Components/Insights/InsightsFooter";
 
 const sectionsData = [
     { id: "hero-banner", Component: HeroBanner, animation: "" },
@@ -17,10 +18,11 @@ const sectionsData = [
     { id: "weight-accuracy", Component: WeightAccuracy, animation: "animate__fadeInUp" },
     { id: "smart-report", Component: SmartReportScheduling, animation: "animate__fadeInDown" },
     { id: "business-growth", Component: BusinessGrowth, animation: "animate__zoomIn" },
-    { id: "checkout-recovery", Component: CheckoutRecovery, animation: "animate__flipInX" },
-    { id: "abandoned-cart", Component: AbandonedCartFlow, animation: "animate__bounceIn" },
+    { id: "checkout-recovery", Component: CheckoutRecovery, animation: "" },
+    { id: "abandoned-cart", Component: AbandonedCartFlow, animation: "" },
     { id: "insights", Component: Insights, animation: "" },
-    { id: "operations-panel", Component: OperationsPanel, animation: "animate__fadeInRight" },
+    { id: "insights-footer", Component: InsightsFooter, animation: "" },
+    { id: "operations-panel", Component: OperationsPanel, animation: "animate__fadeInLeft" },
 ];
 
 const Section = ({ id, Component, animation, isVisible }) => {
