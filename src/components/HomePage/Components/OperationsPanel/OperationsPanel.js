@@ -55,7 +55,7 @@ const OperationsPanel = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="highlight insights-footer">
+                    <div className="highlight">
                         <p>
                             Designed to simplify your workflow, the Focused Panel brings all your
                             critical operations into one easy-to-navigate interface. It’s your
