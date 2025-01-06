@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import AbundantRecoveryFlow from '../../../../assets/image/AbundantRecoveryFlow.png'
+import "animate.css";
 import './AbandonedCartFlow.css'
 
 const AbandonedCartFlow = () => {
+    const [isAnimated, setIsAnimated] = useState(false); // Track if animation has been applied
+    const sectionRef = useRef(null);
+    // Set up Intersection Observer
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !isAnimated) {
+                    setIsAnimated(true); // Trigger animation only once
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, [isAnimated]);
+
     return (
         // <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
         //     {/* Abandoned Cart Detected */}
@@ -60,10 +85,10 @@ const AbandonedCartFlow = () => {
         //     </text>
         // </svg>
 
-        <div className="home-section">
+        <div className="home-section" ref={sectionRef}>
             <div className='overview-container'>
                 <div className='abundant-recovery-flow'>
-                    <img src={AbundantRecoveryFlow} alt="Abundant Recovery Flow" className='mt-5' />
+                    <img src={AbundantRecoveryFlow} alt="Abundant Recovery Flow" className={`mt-5 ${isAnimated ? "animate__animated animate__backInDown" : ""}`} />
                 </div>
             </div>
         </div>
