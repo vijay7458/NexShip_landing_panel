@@ -1,40 +1,81 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "animate.css"; // Import Animate.css
 import HeroBanner from "./Components/HeroBanner/HeroBanner";
-import "./HomePage.css";
-import ChannelCarousel from "./Components/ChannelCarousel/ChannelCarousel";
-import AboutSection from "./Components/AboutSection/AboutSection";
 import OverviewSection from "./Components/OverviewSection/OverviewSection";
 import WeightAccuracy from "./Components/WeightAccuracy/WeightAccuracy";
 import SmartReportScheduling from "./Components/SmartReportScheduling/SmartReportScheduling";
 import BusinessGrowth from "./Components/BusinessGrowth/BusinessGrowth";
 import AbandonedCartFlow from "./Components/AbandonedCartFlow/AbandonedCartFlow";
 import CheckoutRecovery from "./Components/CheckoutRecovery/CheckoutRecovery";
-import OperationsPanel from "./Components/OperationsPanel/OperationsPanel";
 import Insights from "./Components/Insights/Insights";
+import OperationsPanel from "./Components/OperationsPanel/OperationsPanel";
+import "./HomePage.css";
+
+const sectionsData = [
+    { id: "hero-banner", Component: HeroBanner, animation: "" },
+    { id: "overview-section", Component: OverviewSection, animation: "" },
+    { id: "weight-accuracy", Component: WeightAccuracy, animation: "animate__fadeInUp" },
+    { id: "smart-report", Component: SmartReportScheduling, animation: "animate__fadeInDown" },
+    { id: "business-growth", Component: BusinessGrowth, animation: "animate__zoomIn" },
+    { id: "checkout-recovery", Component: CheckoutRecovery, animation: "animate__flipInX" },
+    { id: "abandoned-cart", Component: AbandonedCartFlow, animation: "animate__bounceIn" },
+    { id: "insights", Component: Insights, animation: "" },
+    { id: "operations-panel", Component: OperationsPanel, animation: "animate__fadeInRight" },
+];
+
+const Section = ({ id, Component, animation, isVisible }) => {
+    return (
+        <div
+            id={id}
+            className={`section animate__animated ${isVisible ? animation : ""
+                }`}
+            style={{
+                animationDuration: "0.8s",
+                opacity: isVisible ? 1 : 0, // Fallback for smoother appearance
+            }}
+        >
+            <Component />
+        </div>
+    );
+};
 
 const HomePage = () => {
+    const [visibleSections, setVisibleSections] = useState({});
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setVisibleSections((prev) => ({
+                            ...prev,
+                            [entry.target.id]: true,
+                        }));
+                    }
+                });
+            },
+            { threshold: 0.2 } // Trigger when 20% of the section is visible
+        );
+
+        sectionsData.forEach(({ id }) => {
+            const element = document.getElementById(id);
+            if (element) observer.observe(element);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="homepage">
-
-            <HeroBanner />
-
-            {/* <ChannelCarousel /> */}
-
-            <OverviewSection />
-
-            <WeightAccuracy />
-
-            <SmartReportScheduling />
-
-            <BusinessGrowth />
-
-            <CheckoutRecovery />
-            <AbandonedCartFlow />
-
-            <Insights />
-
-            <OperationsPanel />
-
+            {sectionsData.map(({ id, Component, animation }) => (
+                <Section
+                    key={id}
+                    id={id}
+                    Component={Component}
+                    animation={animation}
+                    isVisible={visibleSections[id]}
+                />
+            ))}
         </div>
     );
 };
