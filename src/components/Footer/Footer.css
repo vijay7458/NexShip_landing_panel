@@ -11,6 +11,7 @@
     background: var(--sh-secondary);
     /* color: #092C4C; */
     border-radius: 44px 44px 0 0;
+    margin-top: 100px;
 }
 
 .footer-container {
