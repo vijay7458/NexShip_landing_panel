@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import InsightsLeft from '../../../../assets/image/InsightsLeft.png'
-import InsightsRight from '../../../../assets/image/InsightsRight.png'
-import InsightsGraph from '../../../../assets/image/InsightsGraph1.png'
+import InsightsLeft from "../../../../assets/image/InsightsLeft.png";
+import InsightsRight from "../../../../assets/image/InsightsRight.png";
 import "animate.css";
 import "./Insights.css";
 
@@ -31,44 +30,49 @@ const Insights = () => {
   }, [isAnimated]);
 
   return (
-    <>
-      <div className="home-section">
-        <div className='overview-container'>
-          <div className='heading'>
-            <h3 className="subtitle">Lead Generation & Analytics</h3>
-            <h1>Turn Insights Into Action</h1>
-          </div>
-          <div className="insights-content">
-            <div className="insights-text-content row">
-              <img className="col-2" src={InsightsLeft} alt="Insights Left" />
-              <p className="highlight col-9">
-                Attract potential customers with ease by using intuitive forms, engaging landing pages, and tailored outreach strategies designed to connect with your audience effectively.
-              </p>
-            </div>
-            <div className="insights-text-content row">
-              <p className="highlight col-9">
-                Understand customer behavior deeply, evaluate the effectiveness of your campaigns, and monitor your business’s overall performance. Gain valuable insights to make informed decisions and drive growth.
-              </p>
-              <img className="col-2" src={InsightsRight} alt="Insights Right" />
-            </div>
-            {/* <div className="insights-visuals">
-              <img src={InsightsGraph} alt="" />
-            </div> */}
-          </div>
+    <div className="home-section" ref={sectionRef}>
+      <div className="overview-container">
+        {/* Section Heading */}
+        <div className={`heading ${isAnimated ? "animate__animated animate__pulse" : ""}`}>
+          <h3 className="subtitle">Lead Generation & Analytics</h3>
+          <h1>Turn Insights Into Action</h1>
         </div>
-      </div>
-      <div className="row insights-footer" ref={sectionRef}>
-        <p className={`col-6 highlight ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
-          Empower your business with tools that not only attract new leads but
-          also provide actionable data to refine strategies and drive growth.
-          Monitor your progress and make data-driven decisions for success.
-        </p>
-        <div className={`col-6 text-end ${isAnimated ? "animate__animated animate__fadeInRight" : ""}`}>
-          <img src={InsightsGraph} alt="Insights Graph" />
-        </div>
-      </div>
 
-    </>
+        {/* Content Section */}
+        <div className="insights-content">
+          {/* Left Text and Image */}
+          <div className="insights-text-content row" style={{ overflow: "hidden" }}>
+            <img
+              className={`col-2 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
+              src={InsightsLeft}
+              alt="Insights Left"
+            />
+            <p
+              className={`highlight col-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
+            >
+              Attract potential customers with ease by using intuitive forms, engaging landing pages,
+              and tailored outreach strategies designed to connect with your audience effectively.
+            </p>
+          </div>
+
+          {/* Right Text and Image */}
+          <div className="insights-text-content row" style={{ overflow: "hidden" }}>
+            <p
+              className={`highlight col-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
+            >
+              Understand customer behavior deeply, evaluate the effectiveness of your campaigns, and
+              monitor your business’s overall performance. Gain valuable insights to make informed
+              decisions and drive growth.
+            </p>
+            <img
+              className={`col-2 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
+              src={InsightsRight}
+              alt="Insights Right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
