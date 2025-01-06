@@ -55,11 +55,51 @@
 }
 
 .insights-footer {
-  margin-top: 20px;
+  align-items: center;
+  background: linear-gradient(90deg,
+      #60a9eb 0%,
+      #C5DCF1 25%,
+      #fff 50%,
+      #C5DCF1 75%,
+      #60a9eb 100%);
+  background: #fff;
+  padding-block: 40px;
+  padding-inline: 50px;
+  position: relative;
+  overflow: hidden;
+  margin: 40px 0 !important;
+  background-image: url(../../../../assets/image/grid.svg);
+}
+
+.insights-footer::before {
+  top: -26px;
+}
+
+.insights-footer::after {
+  bottom: -30px;
+}
+
+.insights-footer::before,
+.insights-footer::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  background: #F4F7FC;
+  filter: blur(9px);
+  height: 50px;
+  width: 110%;
 }
 
 .insights-footer p {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.6;
   text-align: left;
+  color: #fff;
+  margin-bottom: 0;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+  font-weight: 600;
+}
+
+.insights-footer img {
+  max-width: 500px;
 }

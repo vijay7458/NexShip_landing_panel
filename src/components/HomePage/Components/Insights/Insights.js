@@ -1,10 +1,35 @@
-import React from "react";
-import "./Insights.css"; // Create a CSS file for styling
+import React, { useEffect, useRef, useState } from "react";
 import InsightsLeft from '../../../../assets/image/InsightsLeft.png'
 import InsightsRight from '../../../../assets/image/InsightsRight.png'
-import InsightsGraph from '../../../../assets/image/InsightsGraph.png'
+import InsightsGraph from '../../../../assets/image/InsightsGraph1.png'
+import "animate.css";
+import "./Insights.css";
 
 const Insights = () => {
+  const [isAnimated, setIsAnimated] = useState(false); // Track if animation has been applied
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isAnimated) {
+          setIsAnimated(true); // Trigger animation only once
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [isAnimated]);
+
   return (
     <>
       <div className="home-section">
@@ -26,17 +51,20 @@ const Insights = () => {
               </p>
               <img className="col-2" src={InsightsRight} alt="Insights Right" />
             </div>
-            <div className="insights-visuals">
+            {/* <div className="insights-visuals">
               <img src={InsightsGraph} alt="" />
-            </div>
+            </div> */}
           </div>
-          <div className="insights-footer">
-            <p className="highlight">
-              Empower your business with tools that not only attract new leads but
-              also provide actionable data to refine strategies and drive growth.
-              Monitor your progress and make data-driven decisions for success.
-            </p>
-          </div>
+        </div>
+      </div>
+      <div className="row insights-footer" ref={sectionRef}>
+        <p className={`col-6 highlight ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
+          Empower your business with tools that not only attract new leads but
+          also provide actionable data to refine strategies and drive growth.
+          Monitor your progress and make data-driven decisions for success.
+        </p>
+        <div className={`col-6 text-end ${isAnimated ? "animate__animated animate__fadeInRight" : ""}`}>
+          <img src={InsightsGraph} alt="Insights Graph" />
         </div>
       </div>
 
