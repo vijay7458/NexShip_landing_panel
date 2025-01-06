@@ -92,6 +92,13 @@
   /* Smooth bounce effect */
 }
 
+
+.banner-text h1:first-of-type {
+  background: url(../../../../assets/image/generic-1.svg) no-repeat 69% 0%;
+  padding-right: 4%;
+  background-size: 5%;
+}
+
 @keyframes letterBounce {
   0% {
     transform: translateY(0);
@@ -125,6 +132,7 @@
   align-items: center;
   z-index: 1;
 }
+
 /* 
 .banner-image img {
   width: 100%;
