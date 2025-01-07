@@ -23,6 +23,7 @@ import ChannelIntegration from './components/page/Integration/ChannelIntegration
 import WhatsAppIntegration from './components/page/Integration/WhatsAppIntegration/WhatsAppIntegration';
 import Media from './components/page/Resources/Media/Media';
 import Career from './components/page/Resources/Career/Career';
+import PriceAndPlans from './components/page/Offerings/PriceAndPlans/PriceAndPlans';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path='/pickup-locations' element={<PickupLocations />} />
 
           {/* Offering Routes */}
+          <Route path='/plans-pricing' element={<PriceAndPlans />} />
           <Route path='/rate-calculator' element={<RateCalculator />} />
           <Route path='/prepaid-cod' element={<PrepaidAndCOD />} />
 
