@@ -51,6 +51,60 @@ const OverviewSection = () => {
         };
     }, [isAnimated]);
 
+
+    const [scale, setScale] = useState(1); // Scale of the image
+    const [isInView, setIsInView] = useState(false); // Track if the section is in view
+    const imageSectionRef = useRef(null); // Ref for the section containing the image
+    const imageRef = useRef(null); // Ref for the image
+
+    useEffect(() => {
+        // IntersectionObserver to detect when the section is in the viewport
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsInView(entry.isIntersecting); // Update state based on intersection
+            },
+            { threshold: 0.2 } // Trigger when at least 10% of the section is visible
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isInView) return;
+
+        const handleScroll = () => {
+            if (imageRef.current) {
+                const sectionTop = sectionRef.current.getBoundingClientRect().top;
+                const sectionHeight = sectionRef.current.offsetHeight;
+
+                // Calculate scroll progress within the section (0 to 1)
+                const progress = Math.min(
+                    Math.max(1 - sectionTop / sectionHeight, 0),
+                    1
+                );
+
+                // Update scale based on scroll progress (1x to 2x)
+                setScale(1 + progress * 0.2);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [isInView]);
+
+
+
     return (
         <section
             className={`home-section ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}
@@ -70,7 +124,7 @@ const OverviewSection = () => {
                     </h1>
                 </div>
 
-                <div className="row">
+                <div className="row" ref={imageSectionRef}>
                     {/* Stats Section */}
                     <div className="col-6 stats">
                         {loading ? (
@@ -101,7 +155,14 @@ const OverviewSection = () => {
 
                     {/* Visual Section */}
                     <div className="col-6 visuals">
-                        <img src={BannerImage} alt="Banner" />
+                        <img
+                            ref={imageRef}
+                            src={BannerImage} alt="Banner"
+                            style={{
+                                transition: "transform 1s ease",
+                                transform: `scale(${scale})`,
+                            }}
+                        />
                     </div>
                 </div>
             </div>
