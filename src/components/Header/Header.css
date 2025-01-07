@@ -234,6 +234,7 @@
     font-size: 18px;
     gap: 10px;
     color: var(--sh-primary);
+    height: 56px;
 }
 
 .nav-item:hover .dropdown-menu ul li svg {
