@@ -1,17 +1,18 @@
 /* All Features Section */
 .all-features-section {
     padding: 20px;
-    background-color: whitesmoke;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
-.all-features-section .features-heading {
+.all-features-section .heading {
     text-align: center;
-    margin-block: 40px;
+    margin-block: 50px;
 }
 
 .features-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* Responsive Grid */
     gap: 20px;
 }
@@ -23,7 +24,7 @@
 .all-features-section .card {
     position: relative;
     width: 100%;
-    height: 305px;
+    height: 350px;
     background: linear-gradient(-45deg, #fff 0%, #C5DCF1 100%);
     border-radius: 10px;
     display: flex;

@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Custom Branded Tracking",
         "icon": "📦",
         "description": "Personalize your shipment tracking experience with your own branding.",
@@ -10,6 +11,7 @@
         ]
     },
     {
+        "id": 2,
         "title": "Multiple Courier Partners",
         "icon": "🚚",
         "description": "Select from a range of courier services to suit your needs, from speed to cost.",
@@ -20,6 +22,7 @@
         ]
     },
     {
+        "id": 3,
         "title": "Flexible Payment Options",
         "icon": "💳",
         "description": "Offer customers a variety of secure payment methods for smoother transactions.",
@@ -30,6 +33,7 @@
         ]
     },
     {
+        "id": 4,
         "title": "Customizable Shipping Labels",
         "icon": "🏷️",
         "description": "Design and print shipping labels that match your brand’s look and feel.",
@@ -40,6 +44,7 @@
         ]
     },
     {
+        "id": 5,
         "title": "Customizable Invoices & POD",
         "icon": "📜",
         "description": "Generate invoices and proof of delivery documents with fully customizable templates.",
@@ -50,6 +55,7 @@
         ]
     },
     {
+        "id": 6,
         "title": "Automated GST Split",
         "icon": "📊",
         "description": "Simplify tax management by automatically splitting GST charges for each shipment.",
@@ -60,6 +66,7 @@
         ]
     },
     {
+        "id": 7,
         "title": "Sub-Account Management",
         "icon": "🔑",
         "description": "Create and manage multiple user accounts with customized access levels.",
@@ -70,6 +77,7 @@
         ]
     },
     {
+        "id": 8,
         "title": "WhatsApp Integration & Bots",
         "icon": "💬",
         "description": "Enhance customer support and automate communication using WhatsApp integration and bots.",
@@ -80,18 +88,18 @@
         ]
     },
     {
+        "id": 9,
         "title": "Comprehensive System Integration",
         "icon": "🔗",
         "description": "Seamlessly integrate your entire logistics and business ecosystem, including channels, OMS, and marketplaces.",
         "benefits": [
-            "Integrate with multiple channels, including online stores and marketplaces",
-            "Sync orders, shipments, and customer data effortlessly across all systems",
-            "Reduce manual entry and errors by automating data flow between platforms",
-            "Ensure smooth operations with end-to-end system integration",
-            "Unify logistics, order management, and marketplace operations in one platform"
+            "Multi-Channel Integration: Connect stores and marketplaces seamlessly.",
+            "Automation: Sync data effortlessly, reduce errors.",
+            "Unified Operations: Centralize logistics and workflows."
         ]
     },
     {
+        "id": 10,
         "title": "Automated Report Scheduling",
         "icon": "📅",
         "description": "Schedule and automate the generation of insightful business reports.",
@@ -102,6 +110,7 @@
         ]
     },
     {
+        "id": 11,
         "title": "24/7 Customer Support",
         "icon": "🙋‍♂️",
         "description": "Access dedicated support anytime for fast issue resolution and guidance.",
@@ -112,6 +121,7 @@
         ]
     },
     {
+        "id": 12,
         "title": "Simplified Return & Exchange Management",
         "icon": "🔄",
         "description": "Efficiently manage returns and exchanges with an automated, user-friendly platform.",
@@ -122,6 +132,7 @@
         ]
     },
     {
+        "id": 13,
         "title": "Business Health Monitoring",
         "icon": "🏥",
         "description": "Track the health of your business using detailed performance analytics.",
@@ -132,6 +143,7 @@
         ]
     },
     {
+        "id": 14,
         "title": "Referral Program Benefits",
         "icon": "🎁",
         "description": "Reward customers for referring others and grow your business network.",
@@ -142,6 +154,7 @@
         ]
     },
     {
+        "id": 15,
         "title": "Exhaustive Real-Time Tracking",
         "icon": "📍",
         "description": "Track shipments in real-time and provide complete visibility to customers.",
@@ -152,6 +165,7 @@
         ]
     },
     {
+        "id": 16,
         "title": "Better Weight Management",
         "icon": "⚖️",
         "description": "Ensure accurate weight reporting and reconciliation for efficient shipping cost management.",
@@ -162,6 +176,7 @@
         ]
     },
     {
+        "id": 17,
         "title": "Marketplace Integrations",
         "icon": "🛒",
         "description": "Seamlessly connect with leading marketplaces like Amazon, eBay, and others.",
@@ -172,6 +187,7 @@
         ]
     },
     {
+        "id": 18,
         "title": "Non-Delivery Report (NDR) Management",
         "icon": "📊",
         "description": "Efficiently handle non-delivery issues to minimize failed deliveries.",
@@ -182,6 +198,7 @@
         ]
     },
     {
+        "id": 19,
         "title": "Advanced Business Analytics",
         "icon": "📈",
         "description": "Leverage powerful analytics to make informed business decisions.",
@@ -192,6 +209,7 @@
         ]
     },
     {
+        "id": 20,
         "title": "Integrated Return Handling",
         "icon": "🔄",
         "description": "Manage returns efficiently with a smooth and easy-to-use platform.",
@@ -202,6 +220,7 @@
         ]
     },
     {
+        "id": 21,
         "title": "Unified Logistics Platform",
         "icon": "🔑",
         "description": "Centralize all logistics operations for seamless management and visibility.",
@@ -212,6 +231,7 @@
         ]
     },
     {
+        "id": 22,
         "title": "Extended Pin Code Coverage",
         "icon": "📍",
         "description": "Expand your reach with coverage across more pin codes, even in remote locations.",
@@ -222,6 +242,7 @@
         ]
     },
     {
+        "id": 23,
         "title": "Competitive Shipping Rates",
         "icon": "💸",
         "description": "Access the best shipping rates from a range of courier partners.",
@@ -232,6 +253,7 @@
         ]
     },
     {
+        "id": 24,
         "title": "Smart Courier Recommendation",
         "icon": "⚙️",
         "description": "Use our recommendation engine to choose the best courier based on your needs.",
@@ -242,6 +264,7 @@
         ]
     },
     {
+        "id": 25,
         "title": "Vast Courier Network",
         "icon": "🌐",
         "description": "Leverage an extensive network of trusted couriers for faster, more reliable deliveries.",
@@ -252,6 +275,7 @@
         ]
     },
     {
+        "id": 26,
         "title": "Shipment Insurance Coverage",
         "icon": "🛡️",
         "description": "Protect your shipments against loss or damage with comprehensive insurance options.",
@@ -262,6 +286,7 @@
         ]
     },
     {
+        "id": 27,
         "title": "Save on Freight with Merging & Splitting",
         "icon": "💸",
         "description": "Save on shipping costs by merging and splitting orders based on volume and destination.",
