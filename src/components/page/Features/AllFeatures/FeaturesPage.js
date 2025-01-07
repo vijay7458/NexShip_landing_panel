@@ -1,6 +1,7 @@
 import React from 'react';
 import './FeaturesPage.css';
 import features from "./features.json"
+import ArrowFeature from '../../../../assets/image/arrowFeature.png'
 
 const featureCards = [
     { id: 1, title: "Card One", content: "This is the content of card one.", imgSrc: "https://assets.codepen.io/210284/flower-9.jpg", alt: "card one" },
@@ -25,7 +26,7 @@ const FeaturesPage = () => {
                                 <div className='logistics-feature-icon'>
                                     <span>{card.icon}</span>
                                 </div>
-                                <div>
+                                <div style={{ maxWidth: 'calc(100% - 70px' }}>
                                     <h2>{card.title}</h2>
                                     <p>{card.description}</p>
                                 </div>
@@ -33,7 +34,7 @@ const FeaturesPage = () => {
                             <ul className='benefit-list'>
                                 {card.benefits.map((benefit, i) => (
                                     <li key={i} className="benefit-item">
-                                        ✅ {benefit}
+                                        <img src={ArrowFeature} alt="ArrowFeature" /> {benefit}
                                     </li>
                                 ))}
                             </ul>
