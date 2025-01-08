@@ -1,275 +1,273 @@
-	
-	
 	:root {
-        --card-height: 80vw;
-        --card-margin: 4vw;
-        --card-top-offset: 10px;
-        --numcards: 27;
-        --outline-width: 0px;
-    }
-    
-    
-    #card-1 {
-        --index: 1;
-        width: calc(95%);
-    }
-    
-    #card-2 {
-        --index: 2;
-        width: calc(95% - 2%);
-    }
-    
-    #card-3 {
-        --index: 3;
-        width: calc(95% - 3%);
-    }
-    
-    #card-4 {
-        --index: 4;
-        width: calc(95% - 4%);
-    }
-    
-    #card-5 {
-        --index: 5;
-        width: calc(95% - 5%);
-    }
-    
-    #card-6 {
-        --index: 6;
-        width: calc(95% - 6%);
-    }
-    
-    #card-7 {
-        --index: 7;
-        width: calc(95% - 7%);
-    }
-    
-    #card-8 {
-        --index: 8;
-        width: calc(95% - 8%);
-    }
-    
-    #card-9 {
-        --index: 9;
-        width: calc(95% - 9%);
-    }
-    
-    #card-10 {
-        --index: 10;
-        width: calc(95% - 10%);
-    }
-    
-    #card-11 {
-        --index: 11;
-        width: calc(95% - 11%);
-    }
-    
-    #card-12 {
-        --index: 12;
-        width: calc(95% - 12%);
-    }
-    
-    #card-13 {
-        --index: 13;
-        width: calc(95% - 13%);
-    }
-    
-    #card-14 {
-        --index: 14;
-        width: calc(95% - 14%);
-    }
-    
-    #card-15 {
-        --index: 15;
-        width: calc(95% - 15%);
-    }
-    
-    #card-16 {
-        --index: 16;
-        width: calc(95% - 16%);
-    }
-    
-    #card-17 {
-        --index: 17;
-        width: calc(95% - 17%);
-    }
-    
-    #card-18 {
-        --index: 18;
-        width: calc(95% - 18%);
-    }
-    
-    #card-19 {
-        --index: 19;
-        width: calc(95% - 19%);
-    }
-    
-    #card-20 {
-        --index: 20;
-        width: calc(95% - 20%);
-    }
-    
-    #card-21 {
-        --index: 21;
-        width: calc(95% - 21%);
-    }
-    
-    #card-22 {
-        --index: 22;
-        width: calc(95% - 22%);
-    }
-    
-    #card-23 {
-        --index: 23;
-        width: calc(95% - 23%);
-    }
-    
-    #card-24 {
-        --index: 24;
-        width: calc(95% - 24%);
-    }
-    
-    #card-25 {
-        --index: 25;
-        width: calc(95% - 25%);
-    }
-    
-    #card-26 {
-        --index: 26;
-        width: calc(95% - 26%);
-    }
-    
-    #card-27 {
-        --index: 27;
-        width: calc(95% - 27%);
-    }
-    
-    #logistics-feature-cards {
-        list-style: none;
-        display: grid;
-        grid-template-columns: 1fr;
-        /* grid-template-rows: repeat(var(--numcards), var(--card-height)); */
-        /* gap: var(--card-margin); */
-        /* padding-bottom: calc(var(--numcards) * var(--card-top-offset)); */
-        /* margin-bottom: var(--card-margin); */
-        padding-inline: 0;
-    }
-    
-    
-    .logistics-feature-card {
-        position: sticky;
-        top: 65px;
-        padding-top: calc(var(--index) * var(--card-top-offset));
-        /* width: calc(98% - 2 * var(--index)); */
-        max-width: 95%;
-        padding-inline: 0;
-        margin-inline: auto;
-    }
-    
-    .feature-card-content {
-        box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-        background: #fffaf2;
-        color: #131212;
-        border-radius: 20px;
-        overflow: hidden;
-        display: grid;
-        grid-template-areas: "text img";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        align-items: center;
-        padding: 1.4em;
-        min-height: 165px;
-        background: linear-gradient(146.88deg, #a6edff 9.67%, #60a9eb 85.4%);
-        max-width: calc(100% - 2 * var(--index));
-    }
-    
-    /* 
+	    --card-height: 80vw;
+	    --card-margin: 4vw;
+	    --card-top-offset: 13px;
+	    --numcards: 27;
+	    --outline-width: 0px;
+	}
+
+
+	#card-1 {
+	    --index: 1;
+	    width: calc(95% - 1%);
+	}
+
+	#card-2 {
+	    --index: 2;
+	    width: calc(95% - 2%);
+	}
+
+	#card-3 {
+	    --index: 3;
+	    width: calc(95% - 3%);
+	}
+
+	#card-4 {
+	    --index: 4;
+	    width: calc(95% - 4%);
+	}
+
+	#card-5 {
+	    --index: 5;
+	    width: calc(95% - 5%);
+	}
+
+	#card-6 {
+	    --index: 6;
+	    width: calc(95% - 6%);
+	}
+
+	#card-7 {
+	    --index: 7;
+	    width: calc(95% - 7%);
+	}
+
+	#card-8 {
+	    --index: 8;
+	    width: calc(95% - 8%);
+	}
+
+	#card-9 {
+	    --index: 9;
+	    width: calc(95% - 9%);
+	}
+
+	#card-10 {
+	    --index: 10;
+	    width: calc(95% - 10%);
+	}
+
+	#card-11 {
+	    --index: 11;
+	    width: calc(95% - 11%);
+	}
+
+	#card-12 {
+	    --index: 12;
+	    width: calc(95% - 12%);
+	}
+
+	#card-13 {
+	    --index: 13;
+	    width: calc(95% - 13%);
+	}
+
+	#card-14 {
+	    --index: 14;
+	    width: calc(95% - 14%);
+	}
+
+	#card-15 {
+	    --index: 15;
+	    width: calc(95% - 15%);
+	}
+
+	#card-16 {
+	    --index: 16;
+	    width: calc(95% - 16%);
+	}
+
+	#card-17 {
+	    --index: 17;
+	    width: calc(95% - 17%);
+	}
+
+	#card-18 {
+	    --index: 18;
+	    width: calc(95% - 18%);
+	}
+
+	#card-19 {
+	    --index: 19;
+	    width: calc(95% - 19%);
+	}
+
+	#card-20 {
+	    --index: 20;
+	    width: calc(95% - 20%);
+	}
+
+	#card-21 {
+	    --index: 21;
+	    width: calc(95% - 21%);
+	}
+
+	#card-22 {
+	    --index: 22;
+	    width: calc(95% - 22%);
+	}
+
+	#card-23 {
+	    --index: 23;
+	    width: calc(95% - 23%);
+	}
+
+	#card-24 {
+	    --index: 24;
+	    width: calc(95% - 24%);
+	}
+
+	#card-25 {
+	    --index: 25;
+	    width: calc(95% - 25%);
+	}
+
+	#card-26 {
+	    --index: 26;
+	    width: calc(95% - 26%);
+	}
+
+	#card-27 {
+	    --index: 27;
+	    width: calc(95% - 27%);
+	}
+
+	#logistics-feature-cards {
+	    list-style: none;
+	    display: grid;
+	    grid-template-columns: 1fr;
+	    /* grid-template-rows: repeat(var(--numcards), var(--card-height)); */
+	    /* gap: var(--card-margin); */
+	    /* padding-bottom: calc(var(--numcards) * var(--card-top-offset)); */
+	    /* margin-bottom: var(--card-margin); */
+	    padding-inline: 0;
+	}
+
+
+	.logistics-feature-card {
+	    position: sticky;
+	    top: 65px;
+	    padding-top: calc(var(--index) * var(--card-top-offset));
+	    /* width: calc(98% - 2 * var(--index)); */
+	    max-width: 95%;
+	    padding-inline: 0;
+	    margin-inline: auto;
+	}
+
+	.feature-card-content {
+	    box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	    background: #fffaf2;
+	    color: #131212;
+	    border-radius: 20px;
+	    overflow: hidden;
+	    display: grid;
+	    grid-template-areas: "text img";
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-rows: auto;
+	    align-items: center;
+	    padding: 1.4em;
+	    min-height: 165px;
+	    background: linear-gradient(146.88deg, #a6edff 9.67%, #60a9eb 85.4%);
+	    max-width: calc(100% - 2 * var(--index));
+	}
+
+	/* 
     .feature-card-content:hover {
         transform: scale(1.03);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     } */
-    
-    .feature-card-content>div {
-        grid-area: text;
-        width: 95%;
-        max-width: 800px;
-        place-self: center;
-        text-align: left;
-        display: flex;
-        gap: 10px;
-        place-items: start;
-        align-items: center;
-    }
-    
-    .logistics-feature-icon {
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-        /* margin-bottom: 20px; */
-        border-radius: 12px;
-        background: #fff;
-    }
-    
-    
-    .feature-card-content h2 {
-        font-size: 1.4rem;
-        margin: 0;
-    }
-    
-    .feature-card-content p {
-        font-weight: 300;
-        line-height: 1.42;
-        font-size: 1rem;
-        margin-bottom: 0;
-    }
-    
-    .feature-card-content .benefit-list {
-        padding: 0;
-    }
-    
-    .feature-card-content .benefit-list img {
-        max-width: 15px;
-        margin-top: -5px;
-        margin-right: 8px;
-    }
-    
-    /* Animation */
-    @supports (animation-timeline: works) {
-    
-        @scroll-timeline cards-element-scrolls-in-body {
-            source: selector(body);
-            scroll-offsets:
-                selector(#logistics-feature-cards) start 1,
-                selector(#logistics-feature-cards) start 0;
-            start: selector(#logistics-feature-cards) start 1;
-            end: selector(#logistics-feature-cards) start 0;
-            time-range: 4s;
-        }
-    
-        .logistics-feature-card {
-            --index0: calc(var(--index) - 1);
-            --reverse-index: calc(var(--numcards) - var(--index0));
-            --reverse-index0: calc(var(--reverse-index) - 1);
-        }
-    
-        .feature-card-content {
-            transform-origin: 50% 0%;
-            will-change: transform;
-    
-            --duration: calc(var(--reverse-index0) * 1s);
-            --delay: calc(var(--index0) * 1s);
-    
-            animation: var(--duration) linear scale var(--delay) forwards;
-            animation-timeline: cards-element-scrolls-in-body;
-        }
-    
-        @keyframes scale {
-            to {
-                transform:
-                    scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
-            }
-        }
-    }
+
+	.feature-card-content>div {
+	    grid-area: text;
+	    width: 95%;
+	    max-width: 800px;
+	    place-self: center;
+	    text-align: left;
+	    display: flex;
+	    gap: 10px;
+	    place-items: start;
+	    align-items: center;
+	}
+
+	.logistics-feature-icon {
+	    width: 60px;
+	    height: 60px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    font-size: 32px;
+	    /* margin-bottom: 20px; */
+	    border-radius: 12px;
+	    background: #fff;
+	}
+
+
+	.feature-card-content h2 {
+	    font-size: 1.4rem;
+	    margin: 0;
+	}
+
+	.feature-card-content p {
+	    font-weight: 300;
+	    line-height: 1.42;
+	    font-size: 1rem;
+	    margin-bottom: 0;
+	}
+
+	.feature-card-content .benefit-list {
+	    padding: 0;
+	}
+
+	.feature-card-content .benefit-list img {
+	    max-width: 15px;
+	    margin-top: -5px;
+	    margin-right: 8px;
+	}
+
+	/* Animation */
+	@supports (animation-timeline: works) {
+
+	    @scroll-timeline cards-element-scrolls-in-body {
+	        source: selector(body);
+	        scroll-offsets:
+	            selector(#logistics-feature-cards) start 1,
+	            selector(#logistics-feature-cards) start 0;
+	        start: selector(#logistics-feature-cards) start 1;
+	        end: selector(#logistics-feature-cards) start 0;
+	        time-range: 4s;
+	    }
+
+	    .logistics-feature-card {
+	        --index0: calc(var(--index) - 1);
+	        --reverse-index: calc(var(--numcards) - var(--index0));
+	        --reverse-index0: calc(var(--reverse-index) - 1);
+	    }
+
+	    .feature-card-content {
+	        transform-origin: 50% 0%;
+	        will-change: transform;
+
+	        --duration: calc(var(--reverse-index0) * 1s);
+	        --delay: calc(var(--index0) * 1s);
+
+	        animation: var(--duration) linear scale var(--delay) forwards;
+	        animation-timeline: cards-element-scrolls-in-body;
+	    }
+
+	    @keyframes scale {
+	        to {
+	            transform:
+	                scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
+	        }
+	    }
+	}

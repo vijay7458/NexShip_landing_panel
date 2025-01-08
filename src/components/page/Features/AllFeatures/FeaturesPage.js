@@ -3,15 +3,6 @@ import './FeaturesPage.css';
 import features from "./features.json"
 import ArrowFeature from '../../../../assets/image/arrowFeature.png'
 
-const featureCards = [
-    { id: 1, title: "Card One", content: "This is the content of card one.", imgSrc: "https://assets.codepen.io/210284/flower-9.jpg", alt: "card one" },
-    { id: 2, title: "Card Two", content: "This is the content of card two.", imgSrc: "https://assets.codepen.io/210284/flower-8.jpg", alt: "card two" },
-    { id: 3, title: "Card Two", content: "This is the content of card two.", imgSrc: "https://assets.codepen.io/210284/flower-8.jpg", alt: "card two" },
-    { id: 4, title: "Card Two", content: "This is the content of card two.", imgSrc: "https://assets.codepen.io/210284/flower-8.jpg", alt: "card two" },
-    { id: 5, title: "Card Two", content: "This is the content of card two.", imgSrc: "https://assets.codepen.io/210284/flower-8.jpg", alt: "card two" },
-    // Add more cards here
-];
-
 const FeaturesPage = () => {
     return (
         <>
