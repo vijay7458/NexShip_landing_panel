@@ -1,172 +1,200 @@
-/* General styles for the carrier integration component */
 .carrier-integration {
     padding: 20px;
-}
-
-/* Center align headers and text */
-.carrier-integration__header,
-.carrier-integration__trust,
-.carrier-integration__partners {
-    text-align: center;
-}
-
-.carrier-integration__partners h2,
-.carrier-integration__trust h2 {
-    font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
-.carrier-integration__description {
-    font-size: 1rem;
-    color: #666;
+/* Header */
+.carrier-integration__header {
     text-align: center;
     margin-bottom: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+
+/* Description Section */
+.carrier-integration__description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Courier Partners Section */
 .carrier-integration__partner-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: center;
-    padding: 10px;
+    justify-items: center;
+    margin-bottom: 40px;
 }
 
 .carrier-integration__partner-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 250px;
-    height: 300px;
     text-align: center;
-    background-color: #ffffff;
+    background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
-    padding: 10px;
+    min-width: 100%;
 }
 
 .carrier-integration__partner-item:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .carrier-integration__partner-image {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-    object-fit: contain;
-    background-color: #f8f8f8;
-    border-radius: 50%;
-    padding: 10px;
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .carrier-integration__partner-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #333;
-    font-weight: bold;
-    margin-top: 10px;
 }
 
-.carrier-integration__trust {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    margin-top: 40px;
+.carrier-integration__partner-tagline {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.carrier-integration__partner-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.carrier-integration__partner-features li {
+    margin-bottom: 5px;
+}
+
+.carrier-integration__partner-cta {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrier-integration__partner-cta:hover {
+    background-color: #2980b9;
+}
+
+
+/* How It Works Section */
+.carrier-integration__how-it-works {
+    background-color: #eaf4fc;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.carrier-integration__how-it-works h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.carrier-integration__steps {
+    list-style-type: decimal;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Trusted Section */
+.carrier-integration__trust {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .carrier-integration__trust h2 {
-    font-size: 2rem;
-    color: #2e2e2e;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 .carrier-integration__trust-description {
-    font-size: 1.125rem;
-    color: #555;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8;
+    font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #555;
 }
 
 .carrier-integration__cta {
     display: inline-block;
-    background-color: #007bff;
+    padding: 10px 20px;
+    background-color: #3498db;
     color: #fff;
-    padding: 12px 25px;
-    font-size: 1.125rem;
-    font-weight: bold;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
     transition: background-color 0.3s;
-    margin-bottom: 30px;
 }
 
 .carrier-integration__cta:hover {
-    background-color: #0056b3;
+    background-color: #2980b9;
 }
 
-.carrier-integration__trust-icons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.carrier-integration__trust-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+/* Testimonials Section */
+.carrier-integration__testimonials {
+    background-color: #fff;
     padding: 20px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60px;
-    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
-.carrier-integration__trust-icon img {
-    width: 35px;
-    height: 35px;
+.carrier-integration__testimonials h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
-/* Mobile responsiveness */
+.carrier-integration__testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrier-integration__testimonial {
+    font-size: 1rem;
+    color: #555;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+}
+
+.carrier-integration__testimonial cite {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+
+/* Responsive Design */
 @media (max-width: 768px) {
 
-    .carrier-integration__partner-name {
-        font-size: 1rem;
-    }
-
-    .carrier-integration__partner-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    .carrier-integration__partner-list {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
+    .carrier-integration__description,
     .carrier-integration__trust-description {
         font-size: 1rem;
     }
 
-    .carrier-integration__cta {
-        font-size: 1rem;
-        padding: 10px 20px;
+    .carrier-integration__partner-item {
+        padding: 10px;
     }
 
-    .carrier-integration__trust-icons {
-        gap: 15px;
+    .carrier-integration__cta {
+        font-size: 0.9rem;
     }
 }
