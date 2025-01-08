@@ -89,7 +89,7 @@
 }
 
 .business-plan-page .plan-price p::after {
-    content: 'gms';
+    content: '/kg';
     position: absolute;
     bottom: 4px;
     right: -40px;
