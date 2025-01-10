@@ -37,7 +37,7 @@ const platforms = [
 const ChannelIntegration = () => {
     return (
         <div className="channel-integration">
-            <header className="channel-integration__header">
+            <header className="Page__header">
                 <h1 className="channel-integration__title">Expand Your Reach, Ship Seamlessly with Shipease</h1>
                 <p className="channel-integration__subtitle">
                     Leverage AI-driven selection to optimize your shipping processes and enhance efficiency.

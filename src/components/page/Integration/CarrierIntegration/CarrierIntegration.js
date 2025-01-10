@@ -1,43 +1,70 @@
 import React from 'react';
 import './CarrierIntegration.css';
 import { courierPartners } from './courierPartners';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const CarrierIntegration = () => {
 
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
+
     return (
-        <div className="carrier-integration">
-            <header className="carrier-integration__header">
-                <h1 className='heading text-center'>Courier Partner Integrations</h1>
-            </header>
-
-            <section className="carrier-integration__partners">
-                <p className="carrier-integration__description">
-                    Seamlessly connect with leading courier partners to ensure efficient and reliable shipping.
-                </p>
-                <div className="carrier-integration__partner-list">
-                    {courierPartners.map((partner) => (
-                        <div key={partner.id} className="carrier-integration__partner-item">
-                            <img
-                                src={partner.image}
-                                alt={`${partner.name} Logo`}
-                                className="carrier-integration__partner-image"
-                                loading="lazy"
-                                onError={(e) => e.target.src = 'https://via.placeholder.com/80?text=No+Image'}
-                            />
-                            <h3 className="carrier-integration__partner-name">{partner.name}</h3>
-                            <p className="carrier-integration__partner-tagline">{partner.tagline}</p>
-                            <ul className="carrier-integration__partner-features">
-                                {partner.features.map((feature, i) => (
-                                    <li key={i}>{feature}</li>
-                                ))}
-                            </ul>
-                            <button className="carrier-integration__partner-cta">Learn More</button>
-                        </div>
+        <>
+            <div className="carrier-integration">
+                <header className="page-header">
+                    {/* <div className="bubbles-container">
+                        {Array.from({ length: 20 }).map((_, index) => (
+                            <div className="bubble" key={index}></div>
+                        ))}
+                    </div> */}
+                    {courierPartners.map((partner, index) => (
+                        <img key={index} src={partner.image} alt={`Floating Image ${index}`} className="floating-image" />
                     ))}
-                </div>
+                    <h1 className=''>Courier integrations that <span className="">expand reach</span><br />like never before.</h1>
+                    <p className="page-header-description">
+                        Seamlessly connect with leading courier partners to ensure efficient and reliable shipping.
+                    </p>
+                    <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
+                </header>
 
-            </section>
-        </div>
+                <section className="carrier-integration__partners">
+                    <div className='carrier-integration__header'>
+                        <h2>Relying on a single option is not an option.</h2>
+                        <p>Leveraging multiple courier services to deliver across 24,000+ pin codes in India feels effortless.</p>
+                    </div>
+                    <div className="carrier-integration__partner-list">
+                        {courierPartners.map((partner) => (
+                            <div key={partner.id} className="carrier-integration__partner-item">
+                                <img
+                                    src={partner.image}
+                                    alt={`${partner.name} Logo`}
+                                    className="carrier-integration__partner-image"
+                                    loading="lazy"
+                                    onError={(e) => e.target.src = 'https://via.placeholder.com/80?text=No+Image'}
+                                />
+                                <h3 className="carrier-integration__partner-name">{partner.name}</h3>
+                                <p className="carrier-integration__partner-tagline">{partner.tagline}</p>
+                                <ul className="carrier-integration__partner-features">
+                                    {partner.features.map((feature, i) => (
+                                        <li key={i}>{feature}</li>
+                                    ))}
+                                </ul>
+                                <button className="carrier-integration__partner-cta">Learn More</button>
+                            </div>
+                        ))}
+                    </div>
+
+                </section>
+            </div>
+
+
+
+        </>
     );
 };
 

@@ -69,7 +69,7 @@
 }
 
 .banner-text h1 {
-  font-size: 2.5rem;
+  font-size: 3.38rem;
   /* Adjust size as needed */
   font-weight: bold;
   margin-bottom: 0;
@@ -94,7 +94,7 @@
 
 
 .banner-text h1:first-of-type {
-  background: url(../../../../assets/image/generic-1.svg) no-repeat 69% 0%;
+  background: url(../../../../assets/image/generic-1.svg) no-repeat 98% 0%;
   padding-right: 4%;
   background-size: 5%;
 }
