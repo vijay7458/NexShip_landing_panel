@@ -193,6 +193,164 @@
     margin-top: 5px;
 }
 
+/* Floating Images */
+
+.bubble-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Makes the images circular */
+    animation: float 10s infinite ease-in-out;
+    opacity: 0.8;
+    top: 0;
+    transform-style: preserve-3d;
+    background: linear-gradient(139deg,
+            #60a9eb 0%,
+            #C5DCF1 25%,
+            #fff 50%,
+            #C5DCF1 75%,
+            #60a9eb 100%);
+}
+
+.bubble-image.rotate-image:nth-last-of-type(odd) {
+    transition: transform 2s ease-in-out;
+    /* animation: rotateX 0.5s infinite ease-in-out; */
+    animation: moveLeftToRight 0.5s linear;
+}
+
+.bubble-image.rotate-image:nth-last-of-type(even) {
+    transition: transform 2s ease-in-out;
+    /* animation: rotateX 0.5s infinite ease-in-out; */
+    animation: moveRightToLeft 0.5s linear;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(200%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Random Positions for Images */
+.bubble-image:nth-child(1) {
+    top: 29%;
+    left: 3%;
+    /* animation-delay: 0s; */
+}
+
+.bubble-image:nth-child(3) {
+    top: 69%;
+    left: 29%;
+    /* animation-delay: 2s; */
+}
+
+.bubble-image:nth-child(5) {
+    top: 59%;
+    left: 11%;
+    /* animation-delay: 4s; */
+}
+
+.bubble-image:nth-child(7) {
+    top: 79%;
+    left: 3%;
+    /* animation-delay: 4s; */
+}
+
+.bubble-image:nth-child(2) {
+    top: 29%;
+    right: 3%;
+    /* animation-delay: 0s; */
+}
+
+.bubble-image:nth-child(4) {
+    top: 69%;
+    right: 29%;
+    /* animation-delay: 2s; */
+}
+
+.bubble-image:nth-child(6) {
+    top: 59%;
+    right: 11%;
+    /* animation-delay: 4s; */
+}
+
+.bubble-image:nth-child(8) {
+    top: 79%;
+    right: 3%;
+    /* animation-delay: 4s; */
+}
+
+.floating-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.floating-image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.floating-image:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.floating-image:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.floating-image:nth-child(5) {
+    animation-delay: 0s;
+}
+
+.floating-image:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.floating-image:nth-child(7) {
+    animation-delay: 4s;
+}
+
+.floating-image:nth-child(8) {
+    animation-delay: 4s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
