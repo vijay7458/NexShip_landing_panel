@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ChannelIntegration.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const platforms = [
     {
@@ -35,13 +37,30 @@ const platforms = [
 ];
 
 const ChannelIntegration = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
+
+    const [rotate, setRotate] = useState(true);
+
+    setTimeout(() => {
+        setRotate(false)
+    }, [2000])
+
     return (
         <div className="channel-integration">
-            <header className="Page__header">
-                <h1 className="channel-integration__title">Expand Your Reach, Ship Seamlessly with Shipease</h1>
-                <p className="channel-integration__subtitle">
+            <header className="page-header">
+                {platforms.map((partner, index) => (
+                    <img key={index} src={partner.image} alt={`Floating Image ${index}`} className={`bubble-image ${rotate ? 'rotate-image' : 'floating-image'}`} />
+                ))}
+                <h1 className=''>Expand Your Reach, Ship Seamlessly with Shipease</h1>
+                <p className="page-header-description">
                     Leverage AI-driven selection to optimize your shipping processes and enhance efficiency.
                 </p>
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
 
             <section className="channel-integration__content">

@@ -78,6 +78,9 @@ h2.heading {
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
+    padding-inline: 20px;
+    max-width: 1110px;
+    margin-inline: auto;
 }
 
 .page-header h1 span.highlight {
@@ -106,4 +109,3 @@ h2.heading {
     margin-bottom: 30px;
     color: var(--sh-secondary);
 }
-
