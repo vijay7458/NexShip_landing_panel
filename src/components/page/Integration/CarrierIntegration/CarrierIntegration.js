@@ -55,7 +55,7 @@ const CarrierIntegration = () => {
                                         <li key={i}>{feature}</li>
                                     ))}
                                 </ul>
-                                <button className="carrier-integration__partner-cta">Learn More</button>
+                                <button className="btn main-button">Learn More</button>
                             </div>
                         ))}
                     </div>
