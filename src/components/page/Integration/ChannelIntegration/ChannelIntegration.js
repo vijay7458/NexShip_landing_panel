@@ -2,37 +2,43 @@ import React, { useState } from 'react';
 import './ChannelIntegration.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import EasyCommLogo from '../../../../assets/image/Channels/EasyCommLogo.png'
+import UCLogo from '../../../../assets/image/Channels/UCLogo.png'
+import ClickPostLogo from '../../../../assets/image/Channels/ClickPostLogo.png'
+import VinculumLogo from '../../../../assets/image/Channels/VinculumLogo.png'
+import OmsGuruLogo from '../../../../assets/image/Channels/OmsGuruLogo.png'
+import EasyShipLogo from '../../../../assets/image/Channels/EasyShipLogo.png'
 
 const platforms = [
     {
         name: 'EasyEcom',
         description: 'AI-powered omnichannel platform for inventory, warehousing, payment reconciliation, and wholesale management.',
-        image: 'https://via.placeholder.com/60', // Placeholder image
+        image: EasyCommLogo,
     },
     {
         name: 'Unicommerce',
         description: 'Efficient e-commerce solutions to simplify courier and logistics management for businesses.',
-        image: 'https://via.placeholder.com/60',
+        image: UCLogo,
     },
     {
         name: 'ClickPost',
         description: 'Comprehensive logistics management platform for businesses of all sizes.',
-        image: 'https://via.placeholder.com/60',
+        image: ClickPostLogo,
     },
     {
         name: 'Vinculum',
         description: 'Integrated courier services as part of Vinculum’s advanced e-commerce and omnichannel solutions.',
-        image: 'https://via.placeholder.com/60',
+        image: VinculumLogo,
     },
     {
         name: 'OMS Guru',
         description: 'Order fulfillment tools that optimize courier operations for e-commerce businesses.',
-        image: 'https://via.placeholder.com/60',
+        image: OmsGuruLogo,
     },
     {
         name: 'EasyShip',
         description: 'All-in-one logistics platform for streamlining courier services and enhancing customer satisfaction.',
-        image: 'https://via.placeholder.com/60',
+        image: EasyShipLogo,
     },
 ];
 
