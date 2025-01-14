@@ -76,7 +76,9 @@ const ContactUs = () => {
                             <h3>Surat Office</h3>
                             <p>Unit 129, Althan, Surat, Gujarat, Pin - 395017</p>
                         </div>
-                        <MapboxComponent />
+                        <div className='contact-us__detail p-0'>
+                            <MapboxComponent />
+                        </div>
                     </div>
                 </section>
 
@@ -233,12 +235,12 @@ const ContactUs = () => {
                         </div>
 
                         <button type="submit" className="btn main-button">Submit</button>
-                    </form>
-                </section>
-            </section>
+                    </form >
+                </section >
+            </section >
 
 
-        </div>
+        </div >
     );
 };
 
