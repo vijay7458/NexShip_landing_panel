@@ -2,10 +2,32 @@ import React from 'react';
 import './FeaturesPage.css';
 import features from "./features.json"
 import ArrowFeature from '../../../../assets/image/arrowFeature.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const FeaturesPage = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
     return (
         <>
+            <header className="page-header">
+                <div className="ripple-shape">
+                    <span className="ripple-1" />
+                    <span className="ripple-2" />
+                    <span className="ripple-3" />
+                    <span className="ripple-4" />
+                    <span className="ripple-5" />
+                </div>
+                <h1 className=''>Comprehensive Features for an Effortless Logistics Experience</h1>
+                <p className="page-header-description">
+                    Partner with the Leading Logistics Platform to Ensure Timely Deliveries for Your Customers
+                </p>
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
+            </header>
             <div>
                 <h1 className="heading text-center mt-5">Our Amazing Features</h1>
             </div>
