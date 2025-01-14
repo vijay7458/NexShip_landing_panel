@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css'
+import ScrollToTop from "./ScrollToTop";
 import HomePage from './components/HomePage/HomePage';
 import TopHeader from './components/TopHeader/TopHeader';
 import Header from './components/Header/Header';
@@ -25,12 +26,14 @@ import Media from './components/page/Resources/Media/Media';
 import Career from './components/page/Resources/Career/Career';
 import PriceAndPlans from './components/page/Offerings/PriceAndPlans/PriceAndPlans';
 
+
 function App() {
   return (
     <>
       <TopHeader />
       <Header />
       <div className="App">
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomePage />} />
 
