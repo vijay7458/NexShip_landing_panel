@@ -1,14 +1,31 @@
 import React from 'react';
 import './PickupLocations.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const PickupLocations = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className="pickup-locations">
-            <header className="pickup-locations__header">
-                <h1 className="pickup-locations__title">Manage Pickup Locations</h1>
-                <p className="pickup-locations__subtitle">
-                    Simplify your logistics by adding and managing multiple pickup locations effortlessly.
+            <header className="page-header">
+                <div className="ripple-shape">
+                    <span className="ripple-1" />
+                    <span className="ripple-2" />
+                    <span className="ripple-3" />
+                    <span className="ripple-4" />
+                    <span className="ripple-5" />
+                </div>
+                <h1>Effortlessly Manage and Streamline Your Pickup Locations</h1>
+
+                <p className="page-header-description">Simplify your logistics by adding and managing multiple pickup locations effortlessly.
                 </p>
+
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
 
             <section className="pickup-locations__section">

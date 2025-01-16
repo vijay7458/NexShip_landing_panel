@@ -1,15 +1,30 @@
 import React from 'react';
 import './EarlyCOD.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const EarlyCOD = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className="early-cod">
             {/* Header Section */}
-            <header className="early-cod__header">
-                <h1 className="early-cod__title">Faster COD Payments</h1>
-                <p className="early-cod__subtitle">
-                    Speed up your cash flow and gain full control over your remittance cycles with Shipease's Early COD.
-                </p>
+            <header className="page-header">
+                <div className="ripple-shape">
+                    <span className="ripple-1" />
+                    <span className="ripple-2" />
+                    <span className="ripple-3" />
+                    <span className="ripple-4" />
+                    <span className="ripple-5" />
+                </div>
+                <h1>Boost Your Cash Flow with Shipease's Early COD Payment Feature</h1>
+                <p className="page-header-description">Speed up your payment cycles and enhance liquidity with Shipease's Early COD.</p>
+
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
 
             {/* Feature Section */}
