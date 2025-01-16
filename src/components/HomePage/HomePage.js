@@ -15,7 +15,7 @@ import InsightsFooter from "./Components/Insights/InsightsFooter";
 const sectionsData = [
     { id: "hero-banner", Component: HeroBanner, animation: "" },
     { id: "overview-section", Component: OverviewSection, animation: "" },
-    { id: "weight-accuracy", Component: WeightAccuracy, animation: "animate__fadeInUp" },
+    { id: "weight-accuracy", Component: WeightAccuracy, animation: "" },
     { id: "smart-report", Component: SmartReportScheduling, animation: "animate__fadeInDown" },
     { id: "business-growth", Component: BusinessGrowth, animation: "animate__zoomIn" },
     { id: "checkout-recovery", Component: CheckoutRecovery, animation: "" },
