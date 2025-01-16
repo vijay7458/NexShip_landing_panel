@@ -52,7 +52,7 @@ const OverviewSection = () => {
     }, [isAnimated]);
 
 
-    const [scale, setScale] = useState(1); // Scale of the image
+    const [scale, setScale] = useState(0.5); // Scale of the image
     const [isInView, setIsInView] = useState(false); // Track if the section is in view
     const imageSectionRef = useRef(null); // Ref for the section containing the image
     const imageRef = useRef(null); // Ref for the image
@@ -92,7 +92,7 @@ const OverviewSection = () => {
                 );
 
                 // Update scale based on scroll progress (1x to 2x)
-                setScale(1 + progress * 0.2);
+                setScale(0.5 + progress * 0.6);
             }
         };
 
@@ -107,14 +107,14 @@ const OverviewSection = () => {
 
     return (
         <section
-            className={`home-section ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}
+            className="home-section"
             ref={sectionRef}
         >
             <div className="overview-container">
                 {/* Heading */}
                 <div className="heading">
                     <p className="subtitle">A Reliable Partner for Accelerated Growth</p>
-                    <h1>
+                    <h1 className={`${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
                         Lakhs of eCommerce businesses trust and chose<br />
                         <span className="highlight-overview">
                             <strong>Shipease</strong> to enhance their customer experience—
@@ -159,7 +159,7 @@ const OverviewSection = () => {
                             ref={imageRef}
                             src={BannerImage} alt="Banner"
                             style={{
-                                transition: "transform 1s ease",
+                                transition: "transform .1s ease",
                                 transform: `scale(${scale})`,
                             }}
                         />
