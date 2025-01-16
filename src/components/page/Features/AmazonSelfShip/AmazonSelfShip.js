@@ -1,21 +1,35 @@
 import React from 'react';
 import './AmazonSelfShip.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const AmazonSelfShip = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className="amazon-self-ship">
-            <header className="amazon-self-ship__header">
-                <div className="amazon-self-ship__header-content">
-                    <h1 className="amazon-self-ship__title">Amazon Self-Ship + ShipEase</h1>
-                    <p className="amazon-self-ship__subtitle">
-                        Empower your business with flexible shipping solutions. Manage payments, logistics, and operations seamlessly with ShipEase.
-                    </p>
+            <header className="page-header">
+                <div className="ripple-shape">
+                    <span className="ripple-1" />
+                    <span className="ripple-2" />
+                    <span className="ripple-3" />
+                    <span className="ripple-4" />
+                    <span className="ripple-5" />
                 </div>
+                <h1 className=''>Amazon Self-Ship + ShipEase</h1>
+                <p className="page-header-description">
+                    Empower your business with flexible shipping solutions. Manage payments, logistics, and operations seamlessly with ShipEase.
+                </p>
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
 
             <section className="amazon-self-ship__features">
                 <div className="amazon-self-ship-container">
-                    <h2 className="heading text-center">Why Choose Amazon Self-Ship?</h2>
+                    <h2 className="heading text-center my-5">Why Choose Amazon Self-Ship?</h2>
                     <div className="amazon-self-ship__features-grid">
                         <div className="amazon-self-ship__feature">
                             <h3>Multi-Location Pickups</h3>
@@ -47,7 +61,7 @@ const AmazonSelfShip = () => {
 
             <section className="amazon-self-ship__steps">
                 <div className="amazon-self-ship-container">
-                    <h2 className="heading text-center">How Does Amazon Self-Ship Work?</h2>
+                    <h2 className="heading text-center mb-4">How Does Amazon Self-Ship Work?</h2>
                     <div className="amazon-self-ship__steps-grid">
                         <div className="amazon-self-ship__step">
                             <div className="amazon-self-ship__step-icon">1</div>
@@ -77,7 +91,7 @@ const AmazonSelfShip = () => {
                 <div className="">
                     <h2>Ready to Get Started?</h2>
                     <p>Take control of your shipping and grow your business with Amazon Self-Ship + ShipEase.</p>
-                    <button className="amazon-self-ship__cta">Start Shipping</button>
+                    <button className="btn main-button">Start Shipping</button>
                 </div>
             </footer>
         </div>
