@@ -61,13 +61,13 @@ const Footer = () => {
                 <a href="https://maps.app.goo.gl/WaManVxH3wV6xP1m7" target="_blank">{data?.address1}</a>
               </p>
             </li>
-            <li>
+            {/* <li>
               <FontAwesomeIcon icon={faLocationDot} />
               <p>
                 <strong>Corporate Office Address:</strong><br />
                 {data?.address2}
               </p>
-            </li>
+            </li> */}
           </ul>
           {/* <h4>Download App</h4>
           <div className="app-links">
