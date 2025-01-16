@@ -4,13 +4,15 @@ import Logo from "../../assets/image/logo.svg";
 import LogoAnimation from "./Effects/LogoAnimation/LogoAnimation";
 import AllFeaturesIcon from "./NavIcons/AllFeaturesIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBarsProgress, faBoxOpen, faCalculator, faCloud, faHandHoldingDollar, faHandsHoldingCircle, faIndianRupeeSign, faLocationDot, faMapLocation, faMoneyBill1, faRoadBarrier, faShuffle, faSuitcase, faUserPlus, faUsers, faWallet } from "@fortawesome/free-solid-svg-icons";
+import { faBarsProgress, faBoxOpen, faCalculator, faCloud, faHandHoldingDollar, faHandsHoldingCircle, faIndianRupeeSign, faLocationDot, faMapLocation, faMoneyBill1, faRightToBracket, faRoadBarrier, faShuffle, faSuitcase, faUserPlus, faUsers, faWallet } from "@fortawesome/free-solid-svg-icons";
 import { faAmazon, faMedium, faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import sampleVideo from '../../assets/image/sample.webm'
 import mobileLogo from "../../assets/image/mobileLogo.svg";
+import { useNavigate } from "react-router";
 
 
 const Header = () => {
+  let Navigate = useNavigate();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [showVideo, setShowVideo] = useState(true);
@@ -173,6 +175,15 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        <div className="track-login-nav">
+          <button className="btn" title="Track Your Shipment">
+            <FontAwesomeIcon icon={faLocationDot} />
+          </button>
+          <button onClick={() => Navigate("https://app.shipease.in")} className="btn" title="Login">
+            <FontAwesomeIcon icon={faRightToBracket} />
+          </button>
+        </div>
       </div>
     </header>
   );
