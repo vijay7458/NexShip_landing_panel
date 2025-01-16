@@ -7,6 +7,7 @@ import Logo from '../../assets/image/white-logo.png'
 import { faEnvelope, faEnvelopeOpenText, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faYoutube, faLinkedinIn, } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [data, setData] = useState(null);
@@ -53,7 +54,7 @@ const Footer = () => {
           <h4>Reach Us At</h4>
           <ul className="reach-us mb-2">
             <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:support@shipease.com">support@shipease.com</a></li>
-            <li><FontAwesomeIcon icon={faEnvelopeOpenText} /> <a href="sales@shipease.com" target="_blank">sales@shipease.com</a></li>
+            <li><FontAwesomeIcon icon={faEnvelope} /> <a href="sales@shipease.com" target="_blank">sales@shipease.com</a></li>
             <li>
               <FontAwesomeIcon icon={faLocationDot} /><p>
                 <strong>Registered Office Address:</strong><br />
@@ -82,7 +83,7 @@ const Footer = () => {
 
 
         {/* Products Section */}
-        <div className="footer-column">
+        {/* <div className="footer-column">
           <h4>Products</h4>
           <ul>
             <li>Shipease Shipping</li>
@@ -100,7 +101,7 @@ const Footer = () => {
             <li>Delivery Boost</li>
             <li>Shipease Sense</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Features Section */}
         <div className="footer-column">
@@ -108,17 +109,17 @@ const Footer = () => {
           <ul>
             <li>Cash on Delivery</li>
             <li>Serviceable Pin Codes</li>
-            <li>API Integration</li>
-            <li>Multiple Pickup Locations</li>
+            <li><Link to="/api-integration">API Integration</Link></li>
+            <li><Link to="/pickup-locations">Multiple Pickup Locations</Link></li>
             <li>Print Shipping Labels</li>
             <li>Email & SMS Notifications</li>
-            <li>Amazon Self-Ship</li>
-            <li>All Features</li>
+            <li><Link to="/amazon-self-ship">Amazon Self-Ship</Link></li>
+            <li><Link to="/all-features">All Features</Link></li>
           </ul>
           <h4>Partner</h4>
           <ul>
-            <li>Carrier</li>
-            <li>Technology</li>
+            <li><Link to="/carrier-integration">Carrier</Link></li>
+            <li><Link to="/channel-integration">Technology</Link></li>
             <li>Become a Partner</li>
           </ul>
         </div>
@@ -127,13 +128,13 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Resources</h4>
           <ul>
-            <li>Shipping Rate Calculator</li>
+            <li><Link to="/rate-calculator">Shipping Rate Calculator</Link></li>
             <li>Volumetric Weight Calculator</li>
             <li>Free eCommerce Tools</li>
             <li>Knowledge Base</li>
             <li>FAQs</li>
             <li>Developers</li>
-            <li>Blog</li>
+            <li><Link to="/media">Blog</Link></li>
             <li>Ebook</li>
             <li>Encyclopedia</li>
             <li>Video And Podcast</li>
@@ -148,9 +149,9 @@ const Footer = () => {
           <h4>Company</h4>
           <ul>
             <li>About Us</li>
-            <li>Contact Us</li>
+            <li><Link to="/contact">Contact Us</Link></li>
             <li>Customers</li>
-            <li>Careers</li>
+            <li><Link to="/careers">Careers</Link></li>
             <li>Company Updates</li>
             <li>Event</li>
           </ul>
