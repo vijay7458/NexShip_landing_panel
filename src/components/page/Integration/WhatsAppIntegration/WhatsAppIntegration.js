@@ -2,6 +2,10 @@ import React from 'react';
 import './WhatsAppIntegration.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import OrderCreationIcon from './Icon/OrderCreationIcon';
+import SellerOnboardingIcon from './Icon/SellerOnboardingIcon';
+import OrderTrackingIcon from './Icon/OrderTrackingIcon';
+import OrderShipIcon from './Icon/OrderShipIcon';
 
 const WhatsAppIntegration = () => {
   const handleScroll = () => {
@@ -35,22 +39,30 @@ const WhatsAppIntegration = () => {
         <h2>Core Applications</h2>
         <div className="core-applications-grid">
           <div className="core-application-card">
-            <img src="path_to_image" alt="Order Creation" />
+            <div className='my-3'>
+              <OrderCreationIcon />
+            </div>
             <h3>Order Creation</h3>
             <p>Efficiently handle and process orders from a single platform to reduce processing time.</p>
           </div>
           <div className="core-application-card">
-            <img src="path_to_image" alt="Seller Onboarding" />
+            <div className="my-3">
+              <SellerOnboardingIcon />
+            </div>
             <h3>Seller Onboarding</h3>
             <p>Onboard sellers effortlessly and manage their e-commerce platform integration.</p>
           </div>
           <div className="core-application-card">
-            <img src="path_to_image" alt="Order Tracking" />
+            <div className="my-3">
+              <OrderTrackingIcon />
+            </div>
             <h3>Order Tracking</h3>
             <p>Keep customers updated with real-time status updates on their orders.</p>
           </div>
           <div className="core-application-card">
-            <img src="path_to_image" alt="Order Ship" />
+            <div className="my-3">
+              <OrderShipIcon />
+            </div>
             <h3>Order Ship</h3>
             <p>Confirm shipping details with carriers and ensure smooth delivery processes.</p>
           </div>
@@ -84,7 +96,7 @@ const WhatsAppIntegration = () => {
       <div className="whatsapp-integration-container__cta">
         <h2>Get Started with WhatsApp Integration Today</h2>
         <p>Unlock the potential of WhatsApp in your logistics operations. Start integrating now.</p>
-        <button className="cta-button">Start Now</button>
+        <button className="btn main-button">Start Now</button>
       </div>
     </div>
   );
