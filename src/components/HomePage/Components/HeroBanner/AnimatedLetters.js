@@ -5,7 +5,7 @@ const AnimatedText = ({ text }) => {
     // const text = "Logistics Industry Dynamics Unveiled.";
 
     return (
-        <h1 className="animated-text-container">
+        <>
             {text.split("").map((char, index) => (
                 <span
                     key={index}
@@ -17,7 +17,7 @@ const AnimatedText = ({ text }) => {
                     {char === " " ? "\u00A0" : char}
                 </span>
             ))}
-        </h1>
+        </>
     );
 };
 
