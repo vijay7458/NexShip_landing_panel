@@ -2,6 +2,9 @@ import React from 'react';
 import './ReferAndEarn.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import BoostIcon from './Icons/BoostIcon';
+import RewardsIcon from './Icons/RewardsIcon';
+import GrowIcon from './Icons/GrowIcon';
 
 const ReferAndEarn = () => {
     const handleScroll = () => {
@@ -40,29 +43,38 @@ const ReferAndEarn = () => {
                     <h2>Why Refer Other Businesses?</h2>
                     <div className="refer-and-earn__benefit-list">
                         <div className="refer-and-earn__benefit-item">
-                            <img
+                            {/* <img
                                 src="https://via.placeholder.com/150?text=Benefit+1"
                                 alt="Benefit 1"
                                 className="refer-and-earn__benefit-image"
-                            />
+                            /> */}
+                            <div className='my-3'>
+                                <GrowIcon />
+                            </div>
                             <h3>Grow Your Network</h3>
                             <p>Expand your network of business partners while helping other companies streamline their logistics operations.</p>
                         </div>
                         <div className="refer-and-earn__benefit-item">
-                            <img
+                            {/* <img
                                 src="https://via.placeholder.com/150?text=Benefit+2"
                                 alt="Benefit 2"
                                 className="refer-and-earn__benefit-image"
-                            />
+                            /> */}
+                            <div className='my-3'>
+                                <RewardsIcon />
+                            </div>
                             <h3>Exclusive Rewards</h3>
                             <p>Earn financial incentives and exclusive perks for every successful referral that joins our platform.</p>
                         </div>
                         <div className="refer-and-earn__benefit-item">
-                            <img
+                            {/* <img
                                 src="https://via.placeholder.com/150?text=Benefit+3"
                                 alt="Benefit 3"
                                 className="refer-and-earn__benefit-image"
-                            />
+                            /> */}
+                            <div className='my-3'>
+                                <BoostIcon />
+                            </div>
                             <h3>Boost Your Business</h3>
                             <p>By referring businesses to our platform, you not only help them optimize their logistics, but also enhance your own business growth.</p>
                         </div>
@@ -88,7 +100,7 @@ const ReferAndEarn = () => {
                 </section>
 
                 <section className="refer-and-earn__cta">
-                    <button className="refer-and-earn__cta-button">Get My Referral Link</button>
+                    <button className="btn main-button">Get My Referral Link</button>
                 </section>
 
                 <section className="refer-and-earn__faq">
