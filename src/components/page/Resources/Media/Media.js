@@ -1,5 +1,7 @@
 import React from 'react';
 import './Media.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const Media = () => {
     const mediaContent = [
@@ -64,22 +66,42 @@ const Media = () => {
             author: "ShipEase Technology",
         },
     ];
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
 
     return (
-        <div className="media-page">
-            <h1 className="media-heading">Media Highlights</h1>
-            <p className="media-intro">Stay updated with the latest news and stories about ShipEase.</p>
-            <div className="media-grid">
-                {mediaContent.map((item, index) => (
-                    <div className="media-card" key={index}>
-                        <div className="media-date">{item.date}</div>
-                        <h2 className="media-title">{item.title}</h2>
-                        <p className="media-description">{item.description}</p>
-                        <div className="media-author">By {item.author}</div>
-                    </div>
-                ))}
+        <>
+            <header className="page-header">
+                <div className="ripple-shape">
+                    <span className="ripple-1" />
+                    <span className="ripple-2" />
+                    <span className="ripple-3" />
+                    <span className="ripple-4" />
+                    <span className="ripple-5" />
+                </div>
+                <h1>Featured Media Coverage and Industry Insights</h1>
+                <p className="page-header-description">Explore coverage, recognition, and insightful articles on business, eCommerce, and industry trends.</p>
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
+            </header>
+            <div className="media-page">
+                <h1 className="media-heading">Media Highlights</h1>
+                <p className="media-intro">Stay updated with the latest news and stories about ShipEase.</p>
+                <div className="media-grid">
+                    {mediaContent.map((item, index) => (
+                        <div className="media-card" key={index}>
+                            <div className="media-date">{item.date}</div>
+                            <h2 className="media-title">{item.title}</h2>
+                            <p className="media-description">{item.description}</p>
+                            <div className="media-author">By {item.author}</div>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

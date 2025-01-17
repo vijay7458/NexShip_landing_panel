@@ -1,14 +1,34 @@
 import React from 'react';
 import './WhatsAppIntegration.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const WhatsAppIntegration = () => {
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 550,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="whatsapp-integration-container">
       {/* Header Section */}
-      <div className="whatsapp-integration-container__header">
+      {/* <div className="whatsapp-integration-container__header">
         <h1>Unlock the Power of WhatsApp for Your Logistics</h1>
         <p>Boost customer interaction and streamline logistics operations with WhatsApp integration.</p>
-      </div>
+      </div> */}
+      <header className="page-header">
+        <div className="ripple-shape">
+          <span className="ripple-1" />
+          <span className="ripple-2" />
+          <span className="ripple-3" />
+          <span className="ripple-4" />
+          <span className="ripple-5" />
+        </div>
+        <h1>Unlock the Power of WhatsApp for Your Logistics</h1>
+        <p className="page-header-description">Boost customer interaction and streamline logistics operations with WhatsApp integration</p>
+        <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
+      </header>
 
       {/* Core Applications Section */}
       <div className="whatsapp-integration-container__core-applications">

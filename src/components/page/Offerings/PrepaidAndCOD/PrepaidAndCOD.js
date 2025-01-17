@@ -1,13 +1,33 @@
 import React from 'react';
 import './PrepaidAndCOD.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const PrepaidAndCOD = () => {
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 550,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className="prepaid-and-cod">
-            <section className="prepaid-and-cod__header">
+            {/* <section className="prepaid-and-cod__header">
                 <h1>Prepaid vs. Cash on Delivery (COD)?</h1>
                 <p>AI-powered courier selection to guide you in making the best payment choice.</p>
-            </section>
+            </section> */}
+            <header className="page-header">
+                <div className="ripple-shape">
+                    <span className="ripple-1" />
+                    <span className="ripple-2" />
+                    <span className="ripple-3" />
+                    <span className="ripple-4" />
+                    <span className="ripple-5" />
+                </div>
+                <h1>Prepaid or Cash on Delivery (COD): Which option suits you best?</h1>
+                <p className="page-header-description">AI-powered courier selection to guide you in making the best payment choice</p>
+                <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
+            </header>
 
             <section className="prepaid-and-cod__how-it-works">
                 <h2>Change Payment Mode Easily</h2>
