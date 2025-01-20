@@ -10,7 +10,7 @@ import ReportingIcon from './Icons/ReportingIcon';
 import ClaimFilingIcon from './Icons/ClaimFilingIcon';
 import SupportTeamIcon from './Icons/SupportTeamIcon';
 import AnalyticsAndInsightsIcon from './Icons/AnalyticsAndInsightsIcon';
-import DamagedShipmentImage from '../../../../assets/image/DamagedShipmentImage.png'
+import DamagedShipmentImage from '../../../../assets/image/DamagedSolutions.png'
 
 const DamagedShipment = () => {
     const handleScroll = () => {
