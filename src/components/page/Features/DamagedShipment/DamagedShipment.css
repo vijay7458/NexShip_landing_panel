@@ -9,10 +9,10 @@
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
+
 /* Intro Section */
 .damaged-shipment-intro {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .damaged-shipment-intro p {
@@ -23,7 +23,20 @@
 
 /* Highlights Section */
 .damaged-shipment-highlights {
-    margin-bottom: 40px;
+    margin-bottom: 150px;
+    justify-content: space-between;
+    align-items: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.damaged-shipment-highlights img {
+    max-width: 480px;
 }
 
 .damaged-shipment-highlights h2 {
@@ -31,14 +44,22 @@
 }
 
 .damaged-shipment-highlights ul {
-    list-style: disc;
-    padding-left: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .damaged-shipment-highlights li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #555;
+    flex: 1 1 calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
 
 /* Solutions (Cards) Section */
@@ -53,22 +74,39 @@
 .damaged-shipment-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     padding: 0;
     list-style: none;
+    margin-top: 50px;
 }
 
 .damaged-shipment-item {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     flex: 1 1 calc(45% - 20px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 400px;
+    /* max-width: 400px; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
+
+.damaged-shipment-item .solutions-image svg {
+    width: 180px;
+    height: 180px;
+}
+
+.damaged-shipment-item .solutions-description {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+}
+
 
 .damaged-shipment-item:hover {
     transform: scale(1.03);
