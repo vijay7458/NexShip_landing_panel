@@ -318,7 +318,7 @@ const AnalyticsAndInsightsIcon = () => {
                     transform="translate(-250.85824 -145.71065)"
                     fill="#ccc"
                 />
-                <circle cx="473.61424" cy="65.48819" r="26.8189" fill="#6c63ff" />
+                <circle cx="473.61424" cy="65.48819" r="26.8189" fill="#1975C9" />
                 <rect x="447.11838" y="193.94675" width={6} height={2} fill="#3f3d56" />
                 <path
                     d="M880.14507,341.6574h-12.5835v-2h12.5835Zm-25.167,0h-12.5835v-2h12.5835Zm-25.167,0h-12.5835v-2h12.5835Zm-25.16651,0H792.06109v-2h12.58349Zm-25.167,0h-12.5835v-2h12.5835Zm-25.167,0H741.7271v-2h12.5835Zm-25.167,0h-12.5835v-2h12.5835Z"
@@ -326,13 +326,13 @@ const AnalyticsAndInsightsIcon = () => {
                     fill="#3f3d56"
                 />
                 <rect x="641.87033" y="193.94675" width={6} height={2} fill="#3f3d56" />
-                <rect x="543.95676" y="158.55906" width={5} height={34} fill="#6c63ff" />
-                <rect x="594.95676" y="158.55906" width={5} height={34} fill="#6c63ff" />
-                <rect x="619.95676" y="177.55906" width={5} height={15} fill="#6c63ff" />
-                <rect x="568.95676" y="143.55906" width={5} height={49} fill="#6c63ff" />
-                <circle cx="89.95676" cy="220.55906" r={6} fill="#6c63ff" />
-                <circle cx="105.95676" cy="191.55906" r={6} fill="#6c63ff" />
-                <circle cx="281.95676" cy="168.55906" r={6} fill="#6c63ff" />
+                <rect x="543.95676" y="158.55906" width={5} height={34} fill="#1975C9" />
+                <rect x="594.95676" y="158.55906" width={5} height={34} fill="#1975C9" />
+                <rect x="619.95676" y="177.55906" width={5} height={15} fill="#1975C9" />
+                <rect x="568.95676" y="143.55906" width={5} height={49} fill="#1975C9" />
+                <circle cx="89.95676" cy="220.55906" r={6} fill="#1975C9" />
+                <circle cx="105.95676" cy="191.55906" r={6} fill="#1975C9" />
+                <circle cx="281.95676" cy="168.55906" r={6} fill="#1975C9" />
                 <polygon
                     points="144.231 597.467 153.281 597.466 157.586 562.559 144.229 562.56 144.231 597.467"
                     fill="#ffb6b6"
