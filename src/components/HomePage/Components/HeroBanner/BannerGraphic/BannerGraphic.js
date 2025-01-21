@@ -17,6 +17,11 @@ import Shodowfax from '../../../../../assets/image/Couriers/Shodowfax.svg'
 import Smartr from '../../../../../assets/image/Couriers/Smartr.svg'
 import Smc from '../../../../../assets/image/Couriers/Smc.svg'
 import Xpressbees from '../../../../../assets/image/Couriers/Xpressbees.svg'
+import WhatsApp from '../../../../../assets/image/Channels/whatsappIcon.png'
+import Pragma from '../../../../../assets/image/Channels/PragmaLogo.svg'
+import UCLogo from '../../../../../assets/image/Channels/UCLogo.png'
+import woocommerceLogo from '../../../../../assets/image/Channels/woocommerceLogo.png'
+import ShopifyLogo from '../../../../../assets/image/Channels/ShopifyLogo.png'
 
 const BannerGraphic = () => {
   return (
@@ -29,9 +34,19 @@ const BannerGraphic = () => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                style={{ width: "50px", height: "50px", display: "flex" }}
+                style={{ width: "50px", height: "50px", display: "flex", alignItems: 'center', justifyContent: 'center' }}
               >
-                <img src={Ekart} alt="" />
+                <img src={WhatsApp} alt="" width={30} height={30} />
+              </a>
+            </div>
+            <div className="satellite66">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer"
+                style={{ width: "50px", height: "50px", display: "flex", alignItems: 'center', justifyContent: 'center' }}
+              >
+                <img src={Pragma} alt="" width={30} height={30} />
               </a>
             </div>
           </div>
@@ -43,7 +58,7 @@ const BannerGraphic = () => {
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
               >
-                <img src={Amazon} alt="" />
+                <img src={UCLogo} alt="" />
               </a>
             </div>
             <div className="satellite3">
@@ -51,9 +66,9 @@ const BannerGraphic = () => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                style={{ width: "50px", height: "50px", display: "flex" }}
+                style={{ width: "50px", height: "50px", display: "flex", alignItems: 'center', justifyContent: 'center' }}
               >
-                <img src={Bluedart} alt="" />
+                <img src={woocommerceLogo} alt="" height={20} />
               </a>
             </div>
             <div className="satellite33">
@@ -61,9 +76,9 @@ const BannerGraphic = () => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                style={{ width: "50px", height: "50px", display: "flex" }}
+                style={{ width: "50px", height: "50px", display: "flex", alignItems: 'center', justifyContent: 'center' }}
               >
-                <img src={Delhivery} alt="" />
+                <img src={ShopifyLogo} alt="" height={35} />
               </a>
             </div>
           </div>
@@ -75,7 +90,7 @@ const BannerGraphic = () => {
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
               >
-                <img src={Xpressbees} alt="" />
+                <img src={Amazon} alt="" />
               </a>
             </div>
             <div className="satellite44">
@@ -84,7 +99,7 @@ const BannerGraphic = () => {
                 href=""
                 style={{ width: "50px", height: "50px", display: "flex" }}
               >
-                <img src={Shodowfax} alt="" />
+                <img src={Bluedart} alt="" />
               </a>
             </div>
             <div className="satellite22">
@@ -94,7 +109,7 @@ const BannerGraphic = () => {
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
               >
-                <img src={Dtdc} alt="" />
+                <img src={Delhivery} alt="" />
               </a>
             </div>
             <div className="satellite2">
@@ -104,7 +119,7 @@ const BannerGraphic = () => {
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
               >
-                <img src={Ecom} alt="" />
+                <img src={Ekart} alt="" />
               </a>
             </div>
           </div>

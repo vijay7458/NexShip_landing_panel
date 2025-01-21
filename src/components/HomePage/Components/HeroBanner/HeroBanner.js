@@ -21,14 +21,14 @@ const HeroBanner = () => {
       <section className="hero-banner row mx-0">
         {/* Left side with image */}
         <div className="banner-text col-5">
-          <h1 className="animated-text-container animate__animated animate__slideInUp">
+          <h1 className="animated-text-container animate__animated animate__fadeInLeft">
             <AnimatedText className="" text="Logistics Industry" />
           </h1>
-          <h1 className="animated-text-container animate__animated animate__slideInUp">
+          <h1 className="animated-text-container animate__animated animate__fadeInLeft">
             <AnimatedText text="Dynamics Unveiled." />
           </h1>
-          <p className="animate__animated animate__slideInDown">A deep dive into logistics, revealing the mechanisms driving global commerce and supply chains.</p>
-          <button className="btn main-button animate__animated animate__slideInLeft">Sign up for free</button>
+          <p className="animate__animated animate__slideInUp">A deep dive into logistics, revealing the mechanisms driving global commerce and supply chains.</p>
+          <button className="btn main-button animate__animated animate__slideInUp">Sign up for free</button>
         </div>
 
         {/* Right side with heading and subheading */}
