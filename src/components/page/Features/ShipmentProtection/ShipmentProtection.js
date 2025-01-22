@@ -2,6 +2,13 @@ import React from 'react';
 import './ShipmentProtection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import SecurePackages from '../../../../assets/image/SecurePackages.png'
+import SubmitClaimIcon from '../../../../assets/image/SubmitClaimIcon.png'
+import ReceiveReimbursement from '../../../../assets/image/ReceiveReimbursement.png'
+import SelectCover from '../../../../assets/image/SelectCover.png'
+import ElectronicsIcon from './Icons/ElectronicsIcon';
+import MedicineIcon from './Icons/MedicineIcon';
+import FashionApparelsIcon from './Icons/FashionApparelsIcon';
 
 const ShipmentProtection = () => {
     const handleScroll = () => {
@@ -37,16 +44,19 @@ const ShipmentProtection = () => {
                         <div className="shipment-protection__step">
                             <h3 className="shipment-protection__step-title">STEP 01</h3>
                             <p className="shipment-protection__step-heading">Secure Packages</p>
+                            <img src={SecurePackages} alt="Secure Packages" />
                             <p>Easily secure your packages. The premium will be calculated based on the package value.</p>
                         </div>
                         <div className="shipment-protection__step">
                             <h3 className="shipment-protection__step-title">STEP 02</h3>
                             <p className="shipment-protection__step-heading">Submit Claims</p>
+                            <img src={SubmitClaimIcon} alt="Submit Claim" />
                             <p>Submit a claim for reimbursement in case the package is damaged, or stolen.</p>
                         </div>
                         <div className="shipment-protection__step">
                             <h3 className="shipment-protection__step-title">STEP 03</h3>
                             <p className="shipment-protection__step-heading">Receive Reimbursement</p>
+                            <img src={ReceiveReimbursement} alt="Receive Reimbursement" />
                             <p>Receive reimbursement up to the total value of the package.</p>
                         </div>
                     </div>
@@ -64,6 +74,9 @@ const ShipmentProtection = () => {
                                 will reflect based on the option selected.
                             </p>
                         </div>
+                        <div className='shipment-protection-image'>
+                            <img src={SelectCover} alt="" />
+                        </div>
                         <div className="shipment-protection__cover">
                             <h3 className="shipment-protection__cover-title">Blanket Cover</h3>
                             <p>
@@ -73,6 +86,7 @@ const ShipmentProtection = () => {
                             </p>
                         </div>
                     </div>
+
                 </section>
 
                 {/* Eligible Products Section */}
@@ -80,15 +94,15 @@ const ShipmentProtection = () => {
                     <h2 className="heading text-center">Eligible Products</h2>
                     <ul className="shipment-protection__product-list">
                         <li className="shipment-protection__product-item">
-                            <img src="https://via.placeholder.com/220x180?text=Electronics" alt="Electronics" className="shipment-protection__product-image" />
+                            <ElectronicsIcon />
                             <span>Electronics</span>
                         </li>
                         <li className="shipment-protection__product-item">
-                            <img src="https://via.placeholder.com/220x180?text=Medicine" alt="Medicine" className="shipment-protection__product-image" />
+                            <MedicineIcon />
                             <span>Medicine</span>
                         </li>
                         <li className="shipment-protection__product-item">
-                            <img src="https://via.placeholder.com/220x180?text=Fashion" alt="Fashion Apparels" className="shipment-protection__product-image" />
+                            <FashionApparelsIcon />
                             <span>Fashion Apparels</span>
                         </li>
                     </ul>

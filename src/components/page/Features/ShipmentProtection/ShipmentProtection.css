@@ -2,6 +2,8 @@
 .shipment-protection__page-container {
     background-color: #f7f8fa;
     padding: 3rem 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 /* Title Styling */
@@ -26,10 +28,6 @@
 
 /* How It Works Section */
 .shipment-protection__how-it-works {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -44,10 +42,15 @@
     flex: 1 1 250px;
     text-align: center;
     padding: 1rem;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
     background-color: #f9f9f9;
     transition: transform 0.3s ease;
+}
+
+.shipment-protection__step img {
+    max-height: 100px;
+    margin-bottom: 10px;
 }
 
 .shipment-protection__step:hover {
@@ -75,17 +78,32 @@
 
 /* Cover Options Section */
 .shipment-protection__opt-for-cover {
-    background-color: #ffffff;
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-block: 5rem;
+    padding-bottom: 124px;
 }
 
 .shipment-protection__cover-options {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 12rem;
+    margin-top: 40px;
+    position: relative;
+}
+
+.shipment-protection-image {
+    position: absolute;
+    top: 42%;
+    left: 32%;
+    width: max-content;
+    height: auto;
+}
+
+.shipment-protection-image img {
+    width: 70%;
 }
 
 .shipment-protection__cover {
@@ -116,10 +134,7 @@
 
 /* Eligible Products Section */
 .shipment-protection__eligible-products {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
 .shipment-protection__product-list {
@@ -156,6 +171,7 @@
     color: #333;
     margin-top: 0.5rem;
 }
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
