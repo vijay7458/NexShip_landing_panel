@@ -10,7 +10,7 @@
 }
 
 .hero-banner::before {
-  content: "";
+  /* content: "";
   position: absolute;
   width: 120%;
   left: -10%;
@@ -20,16 +20,25 @@
   z-index: 1;
   top: 100%;
   filter: blur(13px);
-  transition: all 1s ease;
+  transition: all 1s ease; */
+  content: "";
+  position: absolute;
+  top: 123%;
+  left: -10%;
+  width: 120%;
+  height: 100px;
+  background: #F4F7FC;
+  z-index: 1;
+  filter: blur(13px);
 }
 
 .hero-banner::after {
   content: "";
   position: absolute;
-  bottom: -50px;
+  bottom: -108px;
   left: -30px;
   width: 120%;
-  height: 140%;
+  height: 157%;
   /* background: linear-gradient(90deg,
       #60a9eb 0%,
       #C5DCF1 25%,
