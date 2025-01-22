@@ -14,7 +14,7 @@
 
 .bg-container-wt img:first-child {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     animation: upDown 10s linear infinite;
 }
