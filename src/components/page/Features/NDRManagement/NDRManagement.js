@@ -2,6 +2,11 @@ import React from 'react';
 import './NDRManagement.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import TrackingIcon from './Icons/TrackingIcon';
+import ResolveNdrIcon from './Icons/ResolveNdrIcon';
+import NdrInsightsIcon from './Icons/NdrInsightsIcon';
+import CheckIcon from './Icons/CheckIcon';
+import NdrBg from '../../../../assets/image/NdrBg.png'
 
 const NDRManagement = () => {
     const handleScroll = () => {
@@ -26,10 +31,10 @@ const NDRManagement = () => {
             </header>
             <section className="ndr-management__page-container">
                 {/* Page Title */}
-                <h1 className="heading text-center">Efficient NDR Management for Seamless Deliveries</h1>
 
                 {/* NDR Overview Section */}
                 <section className="ndr-management__overview">
+                    <h1 className="heading text-center">Efficient NDR Management for Seamless Deliveries</h1>
                     <h2 className="heading text-center">What is NDR Management?</h2>
                     <p className="ndr-management__description">
                         Non-Delivery Reports (NDRs) are crucial in the logistics process, allowing us to track and address
@@ -44,32 +49,61 @@ const NDRManagement = () => {
                     <h2 className="heading text-center">Key Features of NDR Management</h2>
                     <div className="ndr-management__feature-cards">
                         <div className="ndr-management__feature-card">
-                            <img className="ndr-management__feature-image" src="https://via.placeholder.com/220x180?text=Track-NDRs" alt="Track NDRs" />
-                            <h3 className="ndr-management__feature-title">Real-Time Tracking</h3>
-                            <p>Track the status of all your NDRs in real time and receive instant updates on any changes.</p>
+                            <div className="inner__feature-card">
+                                <div className='card-icon'>
+                                    <span>
+                                        <TrackingIcon />
+                                    </span>
+                                </div>
+                                <div>
+                                    <h3 className="ndr-management__feature-title">Real-Time Tracking</h3>
+                                    <p>Monitor all your NDRs seamlessly with real-time updates that keep you in control.</p>
+                                </div>
+                            </div>
                         </div>
                         <div className="ndr-management__feature-card">
-                            <img className="ndr-management__feature-image" src="https://via.placeholder.com/220x180?text=Resolve-NDRs" alt="Resolve NDRs" />
-                            <h3 className="ndr-management__feature-title">Quick Resolution</h3>
-                            <p>Resolve NDRs efficiently by directly contacting the logistics team or triggering automated actions.</p>
+                            <div className="inner__feature-card second-card">
+                                <div className='card-icon'>
+                                    <span>
+                                        <ResolveNdrIcon />
+                                    </span>
+                                </div>
+                                <div>
+                                    <h3 className="ndr-management__feature-title">Quick Resolution</h3>
+                                    <p>Ensure quick resolutions by connecting directly with the logistics team or automating actions to save time.</p>
+                                </div>
+                            </div>
                         </div>
                         <div className="ndr-management__feature-card">
-                            <img className="ndr-management__feature-image" src="https://via.placeholder.com/220x180?text=NDR-Insights" alt="NDR Insights" />
-                            <h3 className="ndr-management__feature-title">Comprehensive Insights</h3>
-                            <p>Gain valuable insights into the most common causes of NDRs and enhance future logistics strategies.</p>
+                            <div className="inner__feature-card">
+                                <div className='card-icon'>
+                                    <span>
+                                        <NdrInsightsIcon />
+                                    </span>
+                                </div>
+                                <div>
+                                    <h3 className="ndr-management__feature-title">Comprehensive Insights</h3>
+                                    <p>Analyze trends and discover actionable insights to minimize recurring issues and improve delivery success rates.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 {/* Benefits Section */}
-                <section className="ndr-management__benefits">
-                    <h2 className="heading text-center">Why Choose Our NDR Management System?</h2>
-                    <ul className="ndr-management__benefit-list">
-                        <li className="ndr-management__benefit-item">Reduce customer complaints and dissatisfaction.</li>
-                        <li className="ndr-management__benefit-item">Enhance operational efficiency and minimize delays.</li>
-                        <li className="ndr-management__benefit-item">Increase transparency and accountability across teams.</li>
-                        <li className="ndr-management__benefit-item">Generate reports for continuous improvement.</li>
-                    </ul>
+                <section className="ndr-management__benefits row">
+                    <div className='col-6'>
+                        <h2 className="heading mb-5">Why Choose Our NDR Management System?</h2>
+                        <ul className="ndr-management__benefit-list">
+                            <li className="ndr-management__benefit-item"><CheckIcon />Reduce customer complaints and dissatisfaction.</li>
+                            <li className="ndr-management__benefit-item"><CheckIcon />Enhance operational efficiency and minimize delays.</li>
+                            <li className="ndr-management__benefit-item"><CheckIcon />Increase transparency and accountability across teams.</li>
+                            <li className="ndr-management__benefit-item"><CheckIcon />Generate reports for continuous improvement.</li>
+                        </ul>
+                    </div>
+                    <div className='col-6 text-end'>
+                        <img src={NdrBg} alt="NDR Management" />
+                    </div>
                 </section>
 
                 {/* Call to Action */}

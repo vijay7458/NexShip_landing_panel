@@ -1,7 +1,8 @@
 /* Page Container */
-.ndr-management__page-container {
-    background-color: #f4f7fa;
-    padding: 3rem 1rem;
+.ndr-management__page-container>section {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 100px;
 }
 
 /* Title Styling */
@@ -25,25 +26,18 @@
 }
 
 /* Overview Section */
-.ndr-management__overview {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+.ndr-management__overview h1 {
+    margin-bottom: 50px;
 }
 
 .ndr-management__description {
     font-size: 1.1rem;
     color: #555;
+    text-align: center;
 }
 
 /* Features Section */
 .ndr-management__features {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
 
@@ -52,16 +46,55 @@
     gap: 2rem;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .ndr-management__feature-card {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+    background: White;
+    border: 1px solid rgb(10 108 155 / 30%);
+    padding: 20px;
     border-radius: 8px;
     width: 30%;
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease;
+}
+
+.inner__feature-card {
+    background: #EFF6FD;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.inner__feature-card.second-card {
+    background: var(--sh-primary);
+}
+
+.inner__feature-card.second-card .ndr-management__feature-title,
+.inner__feature-card.second-card p {
+    color: #fff;
+}
+
+.ndr-management__feature-card .card-icon {
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.ndr-management__feature-card .card-icon span {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px dashed var(--sh-secondary);
 }
 
 .ndr-management__feature-card:hover {
@@ -88,15 +121,20 @@
 
 /* Benefits Section */
 .ndr-management__benefits {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ndr-management__benefits img {
+    max-height: 350px;
 }
 
 .ndr-management__benefit-list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
@@ -107,9 +145,13 @@
     margin-bottom: 0.8rem;
 }
 
+.ndr-management__benefit-item svg {
+    margin-right: 15px;
+}
+
 /* CTA Section */
 .ndr-management__cta {
-    background-color: #ffffff;
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
