@@ -1,6 +1,5 @@
 /* Page Container */
 .shipment-protection__page-container {
-    background-color: #f7f8fa;
     padding: 3rem 1rem;
     max-width: 1200px;
     margin-inline: auto;
@@ -28,7 +27,7 @@
 
 /* How It Works Section */
 .shipment-protection__how-it-works {
-    margin-bottom: 2rem;
+    margin-block: 50px 2rem;
 }
 
 .shipment-protection__steps {
