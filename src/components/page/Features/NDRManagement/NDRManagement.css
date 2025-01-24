@@ -73,7 +73,7 @@
 }
 
 .inner__feature-card.second-card {
-    background: var(--sh-primary);
+    background: var(--sh-secondary);
 }
 
 .inner__feature-card.second-card .ndr-management__feature-title,
@@ -127,7 +127,8 @@
 }
 
 .ndr-management__benefits img {
-    max-height: 350px;
+    max-height: 450px;
+    border-bottom-right-radius: 30px;
 }
 
 .ndr-management__benefit-list {
@@ -151,7 +152,7 @@
 
 /* CTA Section */
 .ndr-management__cta {
-    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

@@ -7,8 +7,8 @@ const CheckIcon = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.1"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                width={30}
-                height={30}
+                width={20}
+                height={20}
                 x={0}
                 y={0}
                 viewBox="0 0 60 60"
