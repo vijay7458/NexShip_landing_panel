@@ -1,8 +1,16 @@
 /* Page Layout */
 .hyperlocal__page-container {
-    background-color: #f8f9fa;
-    padding: 4rem 2rem;
+    padding-block: 4rem;
     color: #333;
+    position: relative;
+}
+
+
+
+.hyperlocal__page-container section {
+    padding-inline: 4rem;
+    margin-top: 100px;
+    width: 100%;
 }
 
 /* Header */
@@ -34,11 +42,9 @@
 
 /* Overview Section */
 .hyperlocal__overview {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hyperlocal__description {
@@ -94,17 +100,20 @@
 
 /* Benefits Section */
 .hyperlocal__marketplace {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
+    justify-content: space-between;
 }
 
 .hyperlocal__benefit-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.hyperlocal__benefit-list li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 .hyperlocal__benefit-item {
@@ -115,39 +124,56 @@
 
 /* How It Works Section */
 .hyperlocal__how-it-works {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    padding-block: 40px 60px;
 }
 
 .hyperlocal__steps {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-around;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid #B8C6C8;
+    margin-top: 34px;
+}
+
+.hyperlocal__steps p {
+    margin-bottom: 0px;
+}
+
+.hyperlocal__steps hr {
+    border-color: #AEBBBD;
 }
 
 .hyperlocal__step {
-    background-color: #ecf0f1;
-    padding: 2rem;
-    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+}
+
+.hyperlocal__step .hyperlocal-step-number {
+    color: var(--sh-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 24px;
 }
 
 .hyperlocal__step-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: #092C4C;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 /* Call to Action Section */
 .hyperlocal__cta {
     text-align: center;
-    padding: 2rem;
-    background: linear-gradient(90deg, #60a9eb 0%, #c5dcf1 100%);
-    border-radius: 8px;
+    padding: 4rem 2rem;
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+    /* border-radius: 8px; */
 }
 
 .hyperlocal__cta-title {
