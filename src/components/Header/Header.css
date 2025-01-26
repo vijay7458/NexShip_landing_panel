@@ -327,6 +327,20 @@
     }
 }
 
+
+.header .login-button {
+    font-size: 14px;
+    color: var(--sh-secondary);
+    border: 1px solid var(--sh-secondary);
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.header .login-button:hover {
+    background: var(--sh-secondary);
+    color: #fff;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .navigation ul {

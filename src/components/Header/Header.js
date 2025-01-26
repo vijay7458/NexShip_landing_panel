@@ -8,6 +8,7 @@ import { faBarsProgress, faBoxOpen, faCalculator, faCloud, faHandHoldingDollar, 
 import { faAmazon, faMedium, faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import sampleVideo from '../../assets/image/sample.webm'
 import mobileLogo from "../../assets/image/mobileLogo.svg";
+import TrackingIcon from "./NavIcons/TrackingIcon";
 
 const Header = () => {
 
@@ -179,10 +180,10 @@ const Header = () => {
 
         <div className="track-login-nav">
           <button className="btn" title="Track Your Shipment">
-            <FontAwesomeIcon icon={faLocationDot} />
+            <TrackingIcon />
           </button>
-          <button onClick={handleNavigation} className="btn" title="Login">
-            <FontAwesomeIcon icon={faRightToBracket} />
+          <button onClick={handleNavigation} className="btn login-button" title="Login">
+            Login
           </button>
         </div>
       </div>
