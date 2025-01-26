@@ -51,10 +51,50 @@
 
 .amazon-self-ship__feature {
     background: #fff;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.amazon-self-ship__feature>div:first-of-type {
+    padding: 20px;
+
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px dashed var(--sh-secondary);
+}
+
+@keyframes cloudAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.amazon-self-ship__feature>div:last-of-type {
+    padding: 20px;
+    /* background: var(--sh-secondary);
+    background: linear-gradient(135deg,
+            #1975C9 20%,
+            #60a9eb 40%,
+            #C5DCF1 60%,
+            #092C4C 100%);
+    background-size: 200% 200%;
+    animation: cloudAnimation 10s ease-in-out infinite; */
+    text-align: start;
 }
 
 .amazon-self-ship-container h3 {
@@ -99,26 +139,10 @@
 
 /* Footer */
 .amazon-self-ship__footer {
-    background: #092C4C;
-    color: #fff;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    color: var(--sh-secondary);
     text-align: center;
     padding: 40px 20px;
     border-radius: 8px;
     margin-bottom: 60px;
-}
-
-.amazon-self-ship__cta {
-    background: #fff;
-    color: #092C4C;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.amazon-self-ship__cta:hover {
-    background: #0056b3;
-    color: #fff;
 }

@@ -2,6 +2,12 @@ import React from 'react';
 import './AmazonSelfShip.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import MultiLocationIcon from './Icons/MultiLocationIcon';
+import MinimisedReturns from './Icons/MinimisedReturns';
+import IndependentLogisticsIcon from './Icons/IndependentLogisticsIcon';
+import FlexibleOperationsIcon from './Icons/FlexibleOperationsIcon';
+import InventoryManageIcon from './Icons/InventoryManageIcon';
+import ExtensiveCoverageIcon from './Icons/ExtensiveCoverageIcon';
 
 const AmazonSelfShip = () => {
     const handleScroll = () => {
@@ -32,56 +38,105 @@ const AmazonSelfShip = () => {
                     <h2 className="heading text-center my-5">Why Choose Amazon Self-Ship?</h2>
                     <div className="amazon-self-ship__features-grid">
                         <div className="amazon-self-ship__feature">
-                            <h3>Multi-Location Pickups</h3>
-                            <p>Easily collect orders from multiple locations and ship across India with minimal hassle.</p>
+                            <div>
+                                <MultiLocationIcon />
+                            </div>
+                            <div>
+                                <h3>Multi-Location Pickups</h3>
+                                <p>Easily collect orders from multiple locations and ship across India with minimal hassle.</p>
+                            </div>
                         </div>
                         <div className="amazon-self-ship__feature">
-                            <h3>Minimized Returns</h3>
-                            <p>Accept prepaid orders to reduce cancellations and streamline operations.</p>
+                            <div>
+                                <MinimisedReturns />
+                            </div>
+                            <div>
+                                <h3>Minimized Returns</h3>
+                                <p>Accept prepaid orders to reduce cancellations and streamline operations.</p>
+                            </div>
                         </div>
                         <div className="amazon-self-ship__feature">
-                            <h3>Independent Logistics</h3>
-                            <p>Eliminate dependency on Amazon for delivery, pickup, or remittance processes.</p>
+                            <div>
+                                <IndependentLogisticsIcon />
+                            </div>
+                            <div>
+                                <h3>Independent Logistics</h3>
+                                <p>Eliminate dependency on Amazon for delivery, pickup, or remittance processes.</p>
+                            </div>
                         </div>
                         <div className="amazon-self-ship__feature">
-                            <h3>Flexible Operations</h3>
-                            <p>Process orders at your convenience with your preferred shipping partner.</p>
+                            <div>
+                                <FlexibleOperationsIcon />
+                            </div>
+                            <div>
+                                <h3>Flexible Operations</h3>
+                                <p>Process orders at your convenience with your preferred shipping partner.</p>
+                            </div>
                         </div>
                         <div className="amazon-self-ship__feature">
-                            <h3>Inventory Management</h3>
-                            <p>Track inventory and orders in real-time, improving operational efficiency.</p>
+                            <div>
+                                <InventoryManageIcon />
+                            </div>
+                            <div>
+                                <h3>Inventory Management</h3>
+                                <p>Track inventory and orders in real-time, improving operational efficiency.</p>
+                            </div>
                         </div>
                         <div className="amazon-self-ship__feature">
-                            <h3>Extensive Coverage</h3>
-                            <p>Ship products to over 29,000 pin codes in India, reaching more customers than ever before.</p>
+                            <div>
+                                <ExtensiveCoverageIcon />
+                            </div>
+                            <div>
+                                <h3>Extensive Coverage</h3>
+                                <p>Ship products to over 29,000 pin codes in India, reaching more customers than ever before.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="amazon-self-ship__steps">
-                <div className="amazon-self-ship-container">
-                    <h2 className="heading text-center mb-4">How Does Amazon Self-Ship Work?</h2>
-                    <div className="amazon-self-ship__steps-grid">
-                        <div className="amazon-self-ship__step">
-                            <div className="amazon-self-ship__step-icon">1</div>
-                            <h3>Integrate Your Amazon Account</h3>
-                            <p>Link your Amazon account with ShipEase by accessing the "Permissions" tab and adding ShipEase as a third-party app.</p>
+            <section className="hyperlocal__how-it-works">
+                <div className='amazon-self-ship-container'>
+                    <h2 className="heading text-center">How Does Amazon Self-Ship Work?</h2>
+                    <div className="hyperlocal__steps">
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>01.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Integrate Your Amazon Account</h3>
+                                <p>Link your Amazon account with ShipEase by accessing the "Permissions" tab and adding ShipEase as a third-party app.</p>
+                            </div>
                         </div>
-                        <div className="amazon-self-ship__step">
-                            <div className="amazon-self-ship__step-icon">2</div>
-                            <h3>Import Orders</h3>
-                            <p>Download order history reports from Amazon and upload them to ShipEase to manage orders seamlessly.</p>
+                        <hr />
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>02.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Import Orders</h3>
+                                <p>Download order history reports from Amazon and upload them to ShipEase to manage orders seamlessly.</p>
+                            </div>
                         </div>
-                        <div className="amazon-self-ship__step">
-                            <div className="amazon-self-ship__step-icon">3</div>
-                            <h3>Select Courier Partners</h3>
-                            <p>Use ShipEase’s CORE tool to find the best shipping solutions based on your requirements.</p>
+                        <hr />
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>03.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Select Courier Partners</h3>
+                                <p>Use ShipEase’s CORE tool to find the best shipping solutions based on your requirements.</p>
+                            </div>
                         </div>
-                        <div className="amazon-self-ship__step">
-                            <div className="amazon-self-ship__step-icon">4</div>
-                            <h3>Ship Across India</h3>
-                            <p>Deliver to over 29,000 pin codes and scale your business with nationwide coverage.</p>
+                        <hr />
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>04.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Ship Across India</h3>
+                                <p>Deliver to over 29,000 pin codes and scale your business with nationwide coverage.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
