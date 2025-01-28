@@ -44,8 +44,7 @@
 
 /* Steps Section */
 .pickup-locations__section {
-    padding: 50px 20px;
-    background-color: #ffffff;
+    padding-block: 60px 100px;
 }
 
 .pickup-locations__steps {
@@ -77,7 +76,7 @@
 /* Benefits Section */
 .pickup-locations__benefits {
     padding: 50px 20px;
-    background-color: #c5dcf1;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
     /* Lighter blue to match the overall theme */
 }
 
@@ -89,12 +88,120 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.pickup-locations__benefit p {
+    margin-bottom: 0;
+}
+
+
 .pickup-locations__benefit-title {
     font-size: 1.4rem;
     color: #092C4C;
     /* Dark blue to maintain consistency */
     font-weight: 600;
     margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.pickup-benefits-bg {
+    height: 100%;
+    width: auto;
+    max-height: 550px;
+}
+
+/* PickupLocations FAQ Section Styles */
+
+.pickup-locations__faqs-section {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.pickup-locations__faqs-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.pickup-locations__faqs-highlight {
+    color: #007bff;
+    /* Primary color for highlighting */
+}
+
+.pickup-locations__faqs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pickup-locations__faq-item {
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    /* background: rgba(26, 64, 72, 0.3); */
+    filter: blur(0);
+    border: 1px solid rgba(26, 64, 72, 0.2);
+    box-shadow: 3px 3px 9px rgba(26, 64, 72, 0.2);
+    padding: 1rem;
+}
+
+.pickup-locations__faq-item:hover {
+    box-shadow: 3px 6px 9px rgba(26, 64, 72, 0.2);
+    transform: translateY(-2px);
+}
+
+.pickup-locations__faq-item.active {
+    background: #fff;
+    border-color: rgba(26, 64, 72, 0.4);
+}
+
+.pickup-locations__faq-question {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    /* padding: 1rem; */
+    margin: 0;
+    transition: background 0.3s ease;
+}
+
+.pickup-locations__faq-answer-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.pickup-locations__faq-answer {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.pickup-locations__faq-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--sh-primary);
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.pickup-locations__faq-link:hover {
+    text-decoration: underline;
+}
+
+.pickup-locations-faq-bg {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    text-align: end;
+}
+
+.pickup-locations-faq-bg img {
+    width: 50%;
 }
 
 /* Responsive design */
