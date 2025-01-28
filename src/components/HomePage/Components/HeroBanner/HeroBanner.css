@@ -23,11 +23,11 @@
   transition: all 1s ease; */
   content: "";
   position: absolute;
-  top: 123%;
+  top: 122%;
   left: -10%;
   width: 120%;
-  height: 100px;
-  background: #F4F7FC;
+  height: 50px;
+  background: #f9f9f9;
   z-index: 1;
   filter: blur(13px);
 }

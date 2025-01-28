@@ -16,6 +16,10 @@ const HeroBanner = () => {
 
   const nameArray = ['i', 'm', 'a', 'n', 's', 'h', 'u']
 
+  const handleNavigation = () => {
+    window.open("https://app.shipease.in/sign-up", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
       <section className="hero-banner row mx-0">
@@ -29,7 +33,7 @@ const HeroBanner = () => {
           </h1>
           <div className="animate__animated animate__slideInUp">
             <p>A deep dive into logistics, revealing the mechanisms driving global commerce and supply chains.</p>
-            <button className="btn main-button">Sign up for free</button>
+            <button onClick={handleNavigation} className="btn main-button">Sign up for free</button>
           </div>
         </div>
 
