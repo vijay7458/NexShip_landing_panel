@@ -57,6 +57,12 @@
     margin-bottom: 10px;
 }
 
+.early-cod__steps {
+    margin-block: 3rem;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    padding-block: 40px 60px;
+}
+
 .early-cod__steps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
