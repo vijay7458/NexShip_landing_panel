@@ -152,6 +152,7 @@
 .hyperlocal__step {
     display: flex;
     gap: 20px;
+    max-width: 80%;
 }
 
 .hyperlocal__step .hyperlocal-step-number {
