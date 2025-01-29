@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <div style={{ zIndex: '3' }} className="container d-flex justify-content-between align-items-center position-relative">
+      <div style={{ zIndex: '3', paddingInline: '62px' }} className=" d-flex justify-content-between align-items-center position-relative">
         {/* Logo Section */}
         <div className="logo">
           <a href="/" className="text-decoration-none fw-bold">

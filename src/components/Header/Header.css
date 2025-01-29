@@ -1,25 +1,30 @@
 /* Header Styles */
 .header {
-    background: transparent;
-    padding: 4px 0;
+    padding: 0;
     position: sticky;
     top: 0;
     z-index: 4;
+    overflow-x: clip;
+    background: #d2e4f5;
 }
 
 
 .header::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 120%;
+    width: 120%;
+    left: -10%;
+    height: 120px;
     background: #fff;
     z-index: 2;
-    top: -10px;
+    bottom: -11px;
     filter: blur(13px);
     padding-block: 12px;
 }
 
+.header.scrolled{
+    background: transparent;
+}
 .header.scrolled::after {
     content: '';
     -webkit-backdrop-filter: blur(25px);
@@ -159,6 +164,8 @@
     justify-content: space-between;
     border: none;
     border-radius: 13px;
+    max-width: 80%;
+    left: 10%;
 }
 
 .nav-item .dropdown-menu button {
