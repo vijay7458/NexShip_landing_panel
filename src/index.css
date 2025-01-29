@@ -13,7 +13,7 @@
 .main-button {
     background-color: #1975C9 !important;
     /* background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%); */
-    color: #fff;
+    color: #fff !important;
     padding: 10px 20px;
     white-space: nowrap;
     position: relative;
