@@ -90,3 +90,13 @@
     font-size: 1.2rem;
     margin: 0 auto 10px auto;
 }
+
+.early-cod__steps-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.early-cod__steps-bg img {
+    height: 100%;
+}

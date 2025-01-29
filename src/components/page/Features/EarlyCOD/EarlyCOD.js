@@ -2,6 +2,7 @@ import React from 'react';
 import './EarlyCOD.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import ThumbsUpGirl from '../../../../assets/image/ThumbsUpGirl.png'
 
 const EarlyCOD = () => {
     const handleScroll = () => {
@@ -59,7 +60,10 @@ const EarlyCOD = () => {
 
             {/* Steps Section */}
             <section className="early-cod__steps">
-                <div className='amazon-self-ship-container'>
+                <div className='amazon-self-ship-container position-relative'>
+                    <div className='early-cod__steps-bg'>
+                        <img src={ThumbsUpGirl} alt="" />
+                    </div>
                     <h2 className="heading text-center">How Early COD Works</h2>
                     <div className="hyperlocal__steps">
                         <div className="hyperlocal__step">
