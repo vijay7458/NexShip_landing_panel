@@ -1,144 +1,141 @@
 /* Container Styling */
 .shipping-rate-calculator {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-  }
-  
-  .shipping-rate-calculator__header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  
-  /* Main Layout */
-  .shipping-rate-calculator__main {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  /* Row Layout */
+  margin-block: 50px 100px;
+}
+
+.shipping-rate-calculator__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* Main Layout */
+.shipping-rate-calculator__main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Row Layout */
+.shipping-rate-calculator__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.shipping-rate-calculator__row img {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+/* How-To Section */
+.shipping-rate-calculator__calculator {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  /* padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9; */
+}
+
+.shipping-rate-calculator__how-to ol {
+  color: #555;
+}
+
+.shipping-rate-calculator__how-to li {
+  margin-bottom: 8px;
+}
+
+/* Calculator Section */
+.shipping-rate-calculator__input-group {
+  margin-bottom: 15px;
+}
+
+.shipping-rate-calculator__input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.shipping-rate-calculator__input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.shipping-rate-calculator__button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shipping-rate-calculator__button:hover {
+  background-color: #0056b3;
+}
+
+/* Result Section */
+.shipping-rate-calculator__result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shipping-rate-calculator__result p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Factors Section */
+.shipping-rate-calculator__factors {
+  background-color: #f8f9fa;
+  margin-block: 20px;
+  padding-block: 20px;
+}
+
+
+.shipping-rate-calculator__factors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.shipping-rate-calculator__factors li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.required-text {
+  color: red;
+  font-size: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .shipping-rate-calculator__row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: column;
   }
-  
-  /* How-To Section */
-  .shipping-rate-calculator__how-to,
-  .shipping-rate-calculator__calculator {
-    flex: 1;
-    min-width: 300px;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .shipping-rate-calculator__how-to h2,
-  .shipping-rate-calculator__calculator h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #2c3e50;
-  }
-  
-  .shipping-rate-calculator__how-to ol {
-    margin-left: 20px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .shipping-rate-calculator__how-to li {
-    margin-bottom: 8px;
-  }
-  
-  /* Calculator Section */
-  .shipping-rate-calculator__input-group {
-    margin-bottom: 15px;
-  }
-  
-  .shipping-rate-calculator__input-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  .shipping-rate-calculator__input-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  
-  .shipping-rate-calculator__button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .shipping-rate-calculator__button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Result Section */
-  .shipping-rate-calculator__result {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .shipping-rate-calculator__result h2 {
-    font-size: 20px;
-    color: #28a745;
-  }
-  
-  .shipping-rate-calculator__result p {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  /* Factors Section */
-  .shipping-rate-calculator__factors {
-    padding: 15px 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    background-color: #f8f9fa;
-  }
-  
-  .shipping-rate-calculator__factors h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2c3e50;
-  }
-  
-  .shipping-rate-calculator__factors ul {
-    margin-left: 20px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .shipping-rate-calculator__factors li {
-    margin-bottom: 8px;
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .shipping-rate-calculator__row {
-      flex-direction: column;
-    }
-  }
-  
+}
