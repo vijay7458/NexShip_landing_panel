@@ -9,7 +9,12 @@
   height: calc(100vh - 220px);
 }
 
-.hero-banner::before {
+#hero-banner {
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-banner::before {
   /* content: "";
   position: absolute;
   width: 120%;
@@ -23,13 +28,13 @@
   transition: all 1s ease; */
   content: "";
   position: absolute;
-  top: 122%;
   left: -10%;
   width: 120%;
   height: 50px;
   background: #f9f9f9;
-  z-index: 1;
   filter: blur(13px);
+  bottom: 0;
+  z-index: 3;
 }
 
 .hero-banner::after {
@@ -104,9 +109,18 @@
 
 
 .banner-text h1:first-of-type {
+  position: relative;
+  width: fit-content;
+}
+
+.banner-text h1:first-of-type:after {
+  position: absolute;
+  content: "";
+  top: -12px;
+  right: -36px;
   background: url(../../../../assets/image/generic-1.svg) no-repeat 98% 0%;
-  padding-right: 4%;
-  background-size: 5%;
+  width: 52px;
+  height: 52px;
 }
 
 @keyframes letterBounce {

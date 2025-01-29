@@ -5,7 +5,7 @@
     margin: 0 auto;
     scale: 1.2;
     transform: translate(300px, -50px);
-    -webkit-transform: translate(300px, -50px);
+    -webkit-transform: translate(180px, -50px);
 }
 
 .system {
