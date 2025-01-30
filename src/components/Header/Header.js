@@ -9,6 +9,7 @@ import { faAmazon, faMedium, faSquareWhatsapp } from "@fortawesome/free-brands-s
 import sampleVideo from '../../assets/image/sample.webm'
 import mobileLogo from "../../assets/image/mobileLogo.svg";
 import TrackingIcon from "./NavIcons/TrackingIcon";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -179,9 +180,9 @@ const Header = () => {
         </nav>
 
         <div className="track-login-nav">
-          <button className="btn" title="Track Your Shipment">
+          <Link to="/order-tracking" className="btn" title="Track Your Shipment">
             <TrackingIcon />
-          </button>
+          </Link>
           <button onClick={handleNavigation} className="btn login-button" title="Login">
             Login
           </button>

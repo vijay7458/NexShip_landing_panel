@@ -25,6 +25,7 @@ import WhatsAppIntegration from './components/page/Integration/WhatsAppIntegrati
 import Media from './components/page/Resources/Media/Media';
 import Career from './components/page/Resources/Career/Career';
 import PriceAndPlans from './components/page/Offerings/PriceAndPlans/PriceAndPlans';
+import TrackingOrder from './components/page/TrackingOrder/TrackingOrder';
 
 
 function App() {
@@ -62,6 +63,8 @@ function App() {
           <Route path='/refer-and-earn' element={<ReferAndEarn />} />
           <Route path='/media' element={<Media />} />
           <Route path='/careers' element={<Career />} />
+
+          <Route path='/order-tracking' element={<TrackingOrder />} />
 
 
           <Route path='/contact' element={<ContactUs />} />
