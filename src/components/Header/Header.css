@@ -17,19 +17,21 @@
     height: 120px;
     background: #fff;
     z-index: 2;
-    bottom: -11px;
+    bottom: -21px;
     filter: blur(13px);
     padding-block: 12px;
 }
 
-.header.scrolled{
+.header.scrolled {
     background: transparent;
 }
+
 .header.scrolled::after {
     content: '';
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     background: #fffc;
+    bottom: 0px;
 }
 
 .header .dropdown {
