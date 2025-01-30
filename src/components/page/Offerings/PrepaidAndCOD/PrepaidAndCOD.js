@@ -2,6 +2,11 @@ import React from 'react';
 import './PrepaidAndCOD.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import Benefits from '../../../../assets/image/Benefits.png'
+import TransactionImage from '../../../../assets/image/TransactionImage.png'
+import NoFraudImage from '../../../../assets/image/NoFraudImage.png'
+import FlexiblePaymentImage from '../../../../assets/image/FlexiblePaymentImage.png'
+import IncreasedSalesImage from '../../../../assets/image/IncreasedSalesImage.png'
 
 const PrepaidAndCOD = () => {
     const handleScroll = () => {
@@ -30,89 +35,107 @@ const PrepaidAndCOD = () => {
             </header>
 
             <section className="prepaid-and-cod__how-it-works">
-                <h2>Change Payment Mode Easily</h2>
-                <div className="prepaid-and-cod__steps">
-                    <div className="prepaid-and-cod__step">
-                        <div className="icon">
-                            <i className="fas fa-lock"></i>
-                        </div>
-                        <h3>Secure Your Packages</h3>
-                        <p>Log in to your ShipEase account, go to Settings - Shipment Features, and click on the "COD to Prepaid" button.</p>
-                    </div>
+                <div className='amazon-self-ship-container'>
+                    <h2>Change Payment Mode Easily</h2>
 
-                    <div className="prepaid-and-cod__step">
-                        <div className="icon">
-                            <i className="fas fa-search"></i>
+                    <div className="hyperlocal__steps">
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>01.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Access Payment Settings</h3>
+                                <p>Log in to your ShipEase account, go to Settings - Shipment Features, and click on the "COD to Prepaid" button.</p>
+                            </div>
                         </div>
-                        <h3>Submit Claims</h3>
-                        <p>Go to "All Orders" and filter the relevant shipment to submit your claim for payment mode change.</p>
-                    </div>
-
-                    <div className="prepaid-and-cod__step">
-                        <div className="icon">
-                            <i className="fas fa-credit-card"></i>
+                        <hr />
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>02.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Filter & Submit Request</h3>
+                                <p>Go to "All Orders" and filter the relevant shipment to submit your claim for payment mode change.</p>
+                            </div>
                         </div>
-                        <h3>Receive Reimbursement</h3>
-                        <p>Go to the "Payment" section, click the edit icon, and switch your payment mode to prepaid.</p>
+                        <hr />
+                        <div className="hyperlocal__step">
+                            <div>
+                                <span className='hyperlocal-step-number'>03.</span>
+                            </div>
+                            <div>
+                                <h3 className="hyperlocal__step-title">Update & Confirm</h3>
+                                <p>Go to the "Payment" section, click the edit icon, and switch your payment mode to prepaid.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section className="prepaid-and-cod__why-offer">
-                <h2>Why Offer Multiple Payment Options?</h2>
-                <div className="steps">
-                    <div className="step">
-                        <h3>More Engagement</h3>
-                        <p>Empower your customers to make the right payment choice at the right time.</p>
-                    </div>
-                    <div className="step">
-                        <h3>Reduced Cart Abandonment</h3>
-                        <p>Lower the chances of losing potential buyers to competitors.</p>
-                    </div>
-                    <div className="step">
-                        <h3>Enhanced Customer Satisfaction</h3>
-                        <p>Simplify the payment process for your customers, making transactions hassle-free.</p>
-                    </div>
-                    <div className="step">
-                        <h3>Boosted Credibility</h3>
-                        <p>Increase trust and loyalty by going the extra mile for your customers.</p>
+                <div className='amazon-self-ship-container'>
+                    <h2>Why Offer Multiple Payment Options?</h2>
+                    <div className='row'>
+                        <ul className="why_cod-steps col-7">
+                            <li className="why_cod-step">
+                                <p><span>More Engagement</span><br />
+                                    Empower your customers to make the right payment choice at the right time.</p>
+                            </li>
+                            <li className="why_cod-step">
+                                <p><span>Reduced Cart Abandonment</span><br />
+                                    Lower the chances of losing potential buyers to competitors.</p>
+                            </li>
+                            <li className="why_cod-step">
+                                <p><span>Enhanced Customer Satisfaction</span><br />
+                                    Simplify the payment process for your customers, making transactions hassle-free.</p>
+                            </li>
+                            <li className="why_cod-step">
+                                <p><span>Boosted Credibility</span><br />
+                                    Increase trust and loyalty by going the extra mile for your customers.</p>
+                            </li>
+                        </ul>
+                        <div className='why-cod-bg col-5'>
+                            <img src={Benefits} alt="Benefits" />
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section className="prepaid-and-cod__benefits">
-                <h2>Benefits of Offering COD</h2>
-                <div className="benefits__container">
-                    <div className="benefits__item">
-                        <div className="icon">
-                            <i className="fas fa-credit-card"></i>
+                <div className='amazon-self-ship-container'>
+                    <h2>Benefits of Offering COD</h2>
+                    <div className="benefits__container">
+                        <div className="benefits__item">
+                            <div className="icon">
+                                <img src={TransactionImage} alt="" />
+                            </div>
+                            <h3>Convenient Transactions</h3>
+                            <p>Allow customers to pay upon receiving the product, making it easier for them to purchase from your store.</p>
                         </div>
-                        <h3>Convenient Transactions</h3>
-                        <p>Allow customers to pay upon receiving the product, making it easier for them to purchase from your store.</p>
-                    </div>
 
-                    <div className="benefits__item">
-                        <div className="icon">
-                            <i className="fas fa-shield-alt"></i>
+                        <div className="benefits__item">
+                            <div className="icon">
+                                <img src={NoFraudImage} alt="" />
+                            </div>
+                            <h3>No Fraud Risks</h3>
+                            <p>By offering COD, you minimize the risk of fraud by ensuring payments are only made after successful delivery.</p>
                         </div>
-                        <h3>No Fraud Risks</h3>
-                        <p>By offering COD, you minimize the risk of fraud by ensuring payments are only made after successful delivery.</p>
-                    </div>
 
-                    <div className="benefits__item">
-                        <div className="icon">
-                            <i className="fas fa-exchange-alt"></i>
+                        <div className="benefits__item">
+                            <div className="icon">
+                                <img src={FlexiblePaymentImage} alt="" />
+                            </div>
+                            <h3>Flexible Payment Options</h3>
+                            <p>Give customers the flexibility to choose between COD and prepaid options, catering to their preferred payment methods.</p>
                         </div>
-                        <h3>Flexible Payment Options</h3>
-                        <p>Give customers the flexibility to choose between COD and prepaid options, catering to their preferred payment methods.</p>
-                    </div>
 
-                    <div className="benefits__item">
-                        <div className="icon">
-                            <i className="fas fa-chart-line"></i>
+                        <div className="benefits__item">
+                            <div className="icon">
+                                <img src={IncreasedSalesImage} alt="" />
+                            </div>
+                            <h3>Increased Sales Opportunities</h3>
+                            <p>Attract a wider range of customers who prefer paying for products upon delivery, expanding your customer base.</p>
                         </div>
-                        <h3>Increased Sales Opportunities</h3>
-                        <p>Attract a wider range of customers who prefer paying for products upon delivery, expanding your customer base.</p>
                     </div>
                 </div>
             </section>

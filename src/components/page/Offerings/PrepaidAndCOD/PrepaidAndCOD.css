@@ -63,7 +63,7 @@
 }
 
 .prepaid-and-cod__why-offer {
-    background-color: #f1f5f9;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
     padding: 40px 20px;
 }
 
@@ -73,29 +73,55 @@
     margin-bottom: 20px;
 }
 
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    text-align: center;
+.why_cod-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.step {
+.why_cod-step {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.step h3 {
+.why_cod-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.why_cod-step p span {
     color: #092C4C;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
+    display: inline-block;
+}
+
+.why-cod-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-cod-bg img {
+    max-height: 300px;
 }
 
 .prepaid-and-cod__benefits {
-    padding: 50px 20px;
-    background-color: #f1f5f9;
+    padding: 80px 20px 50px;
     text-align: center;
 }
 
@@ -107,7 +133,7 @@
 
 .benefits__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
@@ -123,6 +149,17 @@
 .benefits__item:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.benefits__item .icon {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+
+.benefits__item img {
+    width: auto;
+    max-height: 100%;
 }
 
 .prepaid-and-cod__step .icon {
