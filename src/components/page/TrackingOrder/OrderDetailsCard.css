@@ -1,0 +1,45 @@
+.order-card {
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.order-card-content {
+    padding-bottom: 12px;
+}
+
+.order-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-title {
+    font-size: 16px;
+}
+
+.order-info {
+    margin-top: 12px;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.order-label {
+    font-weight: 500;
+}
+
+.order-value {
+    color: #333;
+    max-width: 200px;
+    text-align: end;
+}
+
+@media screen and (max-width: 425px) {
+    .order-title {
+        font-size: 13px !important;
+    }
+}
