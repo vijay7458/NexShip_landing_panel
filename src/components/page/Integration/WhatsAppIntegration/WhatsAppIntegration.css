@@ -120,8 +120,7 @@
 
 /* CTA Section */
 .whatsapp-integration-container__cta {
-    background: #092C4C;
-    color: white;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
     padding: 50px 20px;
     text-align: center;
     border-radius: 10px;
