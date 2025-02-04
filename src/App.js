@@ -26,6 +26,9 @@ import Media from './components/page/Resources/Media/Media';
 import Career from './components/page/Resources/Career/Career';
 import PriceAndPlans from './components/page/Offerings/PriceAndPlans/PriceAndPlans';
 import TrackingOrder from './components/page/TrackingOrder/TrackingOrder';
+import DetailedFooter from './components/DetailedFooter/DetailedFooter';
+import TermsAndConditions from './components/Footer/Components/TermsAndConditions/TermsAndConditions';
+import PrivacyPolicy from './components/Footer/Components/PrivacyPolicy/PrivacyPolicy';
 
 
 function App() {
@@ -68,9 +71,14 @@ function App() {
 
 
           <Route path='/contact' element={<ContactUs />} />
+
+          {/* Footer Links */}
+          <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>
       </div>
       <Footer />
+      <DetailedFooter />
     </>
   );
 }
