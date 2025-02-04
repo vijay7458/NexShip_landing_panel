@@ -1,7 +1,6 @@
 /* General styles for the Refer and Earn page */
-.refer-and-earn {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
+.refer-and-earn section {
+    margin-top: 100px;
 }
 
 /* Header section */
@@ -11,7 +10,6 @@
 }
 
 .refer-and-earn__description {
-    font-size: 1.2rem;
     color: #666;
     max-width: 800px;
     margin-left: auto;
@@ -25,11 +23,6 @@
     margin-bottom: 40px;
 }
 
-.refer-and-earn__benefits h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
 
 .refer-and-earn__benefit-list {
     display: grid;
@@ -46,15 +39,9 @@
     text-align: center;
 }
 
-.refer-and-earn__benefit-item h3 {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
 
 .refer-and-earn__benefit-item p {
     color: #555;
-    font-size: 1rem;
 }
 
 .refer-and-earn__benefit-image {
@@ -66,7 +53,6 @@
 
 /* How It Works section */
 .refer-and-earn__how-it-works {
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -85,28 +71,22 @@
     text-align: center;
 }
 
-.refer-and-earn__step h3 {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
 .refer-and-earn__step p {
     color: #555;
-    font-size: 1rem;
 }
 
 /* CTA button */
 .refer-and-earn__cta {
     text-align: center;
     margin-bottom: 40px;
+    padding: 50px;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
 }
 
 .refer-and-earn__cta-button {
     background-color: #007bff;
     color: #fff;
     padding: 15px 30px;
-    font-size: 1.2rem;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -119,57 +99,20 @@
 }
 
 /* FAQ section */
-.refer-and-earn__faq {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
 
-.refer-and-earn__faq h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
 .refer-and-earn__faq-item {
     margin-bottom: 20px;
 }
 
-.refer-and-earn__faq-item h3 {
-    font-size: 1.2rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
 
 .refer-and-earn__faq-item p {
     color: #555;
-    font-size: 1rem;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-
-    .refer-and-earn__description {
-        font-size: 1rem;
-    }
-
-    .refer-and-earn__benefits h2,
-    .refer-and-earn__how-it-works h2 {
-        font-size: 1.5rem;
-    }
-
     .refer-and-earn__cta-button {
-        font-size: 1rem;
         padding: 12px 20px;
-    }
-
-    .refer-and-earn__faq h2 {
-        font-size: 1.5rem;
-    }
-
-    .refer-and-earn__faq-item h3 {
-        font-size: 1rem;
     }
 }
