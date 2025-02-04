@@ -12,10 +12,15 @@ const TrackingOrder = () => {
     const [awb, setAwb] = useState("");
     const [orderId, setOrderId] = useState("");
     const [phone, setPhone] = useState("");
+    const [remarks, setRemarks] = useState("")
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
     };
+
+    const handleSubmit = () => {
+        alert("Remarks:" + remarks)
+    }
 
     return (
         <>
@@ -133,6 +138,13 @@ const TrackingOrder = () => {
                         <hr style={{ width: '93%', marginLeft: '25px', marginBlock: '0px' }} />
                         <DeliveryActivity />
                     </div>
+                </div>
+            </div>
+            <div className='tracking-feedback row'>
+                <div className='col-10'>
+                    <label htmlFor="">Remarks</label>
+                    <textarea onChange={(e) => setRemarks(e.target.value)} placeholder='Please enter your remarks here' rows={5} />
+                    <button onClick={handleSubmit} className='btn main-button float-end'>Sumbit</button>
                 </div>
             </div>
         </>

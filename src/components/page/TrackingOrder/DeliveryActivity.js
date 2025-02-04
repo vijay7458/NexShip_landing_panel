@@ -82,8 +82,8 @@ const DeliveryActivity = () => {
                             key={index}
                             className={index === 0 ? 'delivery-list-item active' : 'delivery-list-item'}
                         >
-                            <span>Activity: <span className="activity">{activity.activity}</span></span>
-                            <span>Location: <span className="activity">{activity.location}</span></span>
+                            <span className='font14'>Activity: <span className="activity">{activity.activity}</span></span>
+                            <span className='font14'>Location: <span className="activity">{activity.location}</span></span>
 
                             <div className="date-for-activities">
                                 <span className="date">{activity.date}</span>
