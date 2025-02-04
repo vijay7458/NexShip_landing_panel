@@ -33,8 +33,7 @@
 }
 
 .tracking-id {
-    font-size: 14px;
-    color: #3C0DB3;
+    color: var(--sh-primary);
     font-weight: 600;
 }
 

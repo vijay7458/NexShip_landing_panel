@@ -13,13 +13,39 @@
 }
 
 .delivery-info ul {
-    padding-left: 0px;
+    padding-left: 100px;
     width: 100%;
     float: right;
     margin: 0;
     margin-top: -20px;
     max-height: 260px;
     overflow: auto;
+}
+
+/* For WebKit browsers */
+.delivery-info ul::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Track (background) */
+.delivery-info ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Light grey background */
+    border-radius: 5px;
+}
+
+/* Handle (the moving part) */
+.delivery-info ul::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Dark grey handle */
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.delivery-info ul::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker grey */
 }
 
 .delivery-list-item {
@@ -42,6 +68,14 @@
 
 .delivery-list-item span span {
     display: inline;
+}
+
+.delivery-info li .date-for-activities {
+    position: absolute;
+    left: -85px;
+    top: 28px;
+    text-align: right;
+    font-size: 11px;
 }
 
 .delivery-info li .date-for-activities span:first-child {

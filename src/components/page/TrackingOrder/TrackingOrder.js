@@ -23,7 +23,7 @@ const TrackingOrder = () => {
                 <div className="tracking-container">
                     <div className="tracking-content">
                         <h1 className="tracking-heading">
-                            Effortlessly track your orders anytime
+                            Effortlessly Track Your Orders Anytime
                         </h1>
                         <p className="tracking-description">
                             Simply enter your Mobile Number, AWB tracking number, or Order ID, and quickly access your order status.
@@ -123,7 +123,7 @@ const TrackingOrder = () => {
                 </div>
             </section>
 
-            <div className='row justify-content-center mt-5'>
+            <div className='row justify-content-center mt-5 w-100'>
                 <div className='col-5'>
                     <OrderDetailsCard />
                 </div>

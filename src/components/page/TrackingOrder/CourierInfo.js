@@ -11,10 +11,16 @@ const CourierInfo = () => {
                 <span className="courier-title">Blue Dart</span>
             </div>
 
-            {/* Tracking Info */}
-            <div className="tracking-info">
-                <span className="tracking-label">Tracking ID:</span>
-                <span className="tracking-id">81581595933</span>
+            <div className="d-flex flex-column">
+                {/* Tracking Info */}
+                <div className="tracking-info">
+                    <span className="tracking-label">Tracking ID: </span>
+                    <span className="tracking-id">34581595922</span>
+                </div>
+                <div>
+                    <span className="tracking-label">EDD: </span>
+                    <span>04 Feb, 2025</span>
+                </div>
             </div>
         </div>
     );
