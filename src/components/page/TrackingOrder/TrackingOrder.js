@@ -4,6 +4,10 @@ import DeliveryActivity from './DeliveryActivity';
 import TrackingBG from '../../../assets/image/TrackingBG.png'
 import OrderDetailsCard from './OrderDetailsCard';
 import CourierInfo from './CourierInfo';
+import { Button, Modal } from 'react-bootstrap';
+import Swal from 'sweetalert2';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 const TrackingOrder = () => {
     const [activeTab, setActiveTab] = useState("mobile");
@@ -13,13 +17,38 @@ const TrackingOrder = () => {
     const [orderId, setOrderId] = useState("");
     const [phone, setPhone] = useState("");
     const [remarks, setRemarks] = useState("")
+    const [error, setError] = useState("")
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
     };
 
     const handleSubmit = () => {
-        alert("Remarks:" + remarks)
+        if (remarks !== "") {
+            Swal.fire({
+                title: `Your remarks has been submitted seccessfully`,
+                icon: "success",
+                html: `<br><br> <b>Thank you for your feedback</b>`,
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText: `👍🏻 Great!`,
+                confirmButtonAriaLabel: "Thumbs up, great!",
+                cancelButtonText: `
+              👎🏻
+            `,
+                cancelButtonAriaLabel: "Thumbs down",
+                customClass: {
+                    confirmButton: 'btn main-button',
+                    cancelButton: 'btn cancel-button'
+                }
+            });
+            setError("")
+            setRemarks("")
+        }
+        else {
+            setError("Please enter your remarks")
+        }
     }
 
     return (
@@ -142,8 +171,12 @@ const TrackingOrder = () => {
             </div>
             <div className='tracking-feedback row'>
                 <div className='col-10'>
-                    <label htmlFor="">Remarks</label>
-                    <textarea onChange={(e) => setRemarks(e.target.value)} placeholder='Please enter your remarks here' rows={5} />
+                    <label htmlFor="">Remarks
+                        {error &&
+                            <span style={{ color: 'red', fontSize: '12px', marginLeft: '15px' }}>{error}*</span>
+                        }
+                    </label>
+                    <textarea onChange={(e) => setRemarks(e.target.value)} value={remarks} placeholder='Please enter your remarks here' rows={5} />
                     <button onClick={handleSubmit} className='btn main-button float-end'>Sumbit</button>
                 </div>
             </div>

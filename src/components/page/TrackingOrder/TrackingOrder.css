@@ -136,8 +136,9 @@
 .tracking-feedback {
     /* background: transparent linear-gradient(244deg, #d3e6f7 0%, #d3e6f7 100%) 0% 0% no-repeat padding-box; */
     /* padding-block: 50px; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     justify-content: center;
+    width: 100%;
 }
 
 .tracking-feedback label {
