@@ -4,6 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import BullsEyeImg from '../../../assets/image/BullsEyeImg.png'
 import choseUsBg from '../../../assets/image/choseUsBg.png'
+import MultiCarrierIcon from './Icons/MultiCarrierIcon';
+import RealTimeTrackIcon from './Icons/RealTimeTrackIcon';
+import AIPoweredRouteIcon from './Icons/AIPoweredRouteIcon';
+import IntegratedDashboardIcon from './Icons/IntegratedDashboardIcon';
+import SeamlessIntegrationIcon from './Icons/SeamlessIntegrationIcon';
 
 const AboutPage = () => {
 
@@ -106,22 +111,27 @@ const AboutPage = () => {
             <h2 className="heading text-center">Our Services</h2>
             <ul>
               <li>
+                <MultiCarrierIcon />
                 <h3 className="heading text-center">Multi-Carrier Shipping</h3>
                 <p>Connect with top logistics providers and ship with confidence. Compare rates, transit times, and choose the best carrier for your needs.</p>
               </li>
               <li>
+                <RealTimeTrackIcon />
                 <h3 className="heading text-center">Real-Time Tracking & Visibility</h3>
                 <p>Stay updated with live tracking, automated notifications, and estimated delivery times.</p>
               </li>
               <li>
+                <AIPoweredRouteIcon />
                 <h3 className="heading text-center">AI-Powered Route Optimization</h3>
                 <p>Reduce shipping costs and transit time with intelligent route selection.</p>
               </li>
               <li>
+                <IntegratedDashboardIcon />
                 <h3 className="heading text-center">Integrated Dashboard</h3>
                 <p>Manage orders, track shipments, and access insightful reports—all in one place.</p>
               </li>
               <li>
+                <SeamlessIntegrationIcon />
                 <h3 className="heading text-center">Seamless API Integration</h3>
                 <p>Integrate our shipping solutions into your eCommerce store, ERP, or order management system for a hassle-free experience.</p>
               </li>
