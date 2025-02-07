@@ -148,7 +148,7 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Company</h4>
           <ul>
-            <li>About Us</li>
+            <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li>Customers</li>
             <li><Link to="/careers">Careers</Link></li>

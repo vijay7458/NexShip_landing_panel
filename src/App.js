@@ -29,6 +29,7 @@ import TrackingOrder from './components/page/TrackingOrder/TrackingOrder';
 import DetailedFooter from './components/DetailedFooter/DetailedFooter';
 import TermsAndConditions from './components/Footer/Components/TermsAndConditions/TermsAndConditions';
 import PrivacyPolicy from './components/Footer/Components/PrivacyPolicy/PrivacyPolicy';
+import AboutPage from './components/page/about/AboutPage';
 
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
           {/* Footer Links */}
           <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/about-us' element={<AboutPage />} />
         </Routes>
       </div>
       <Footer />
