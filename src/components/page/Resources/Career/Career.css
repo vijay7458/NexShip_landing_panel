@@ -1,5 +1,5 @@
 .career-page section {
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 .career-section .whoweare-img {
@@ -168,7 +168,7 @@
 
 .career-footer {
     text-align: center;
-    margin-top: 70px !important;
+    /* margin-top: 70px !important; */
 }
 
 .career-footer-text {
@@ -177,4 +177,5 @@
     background-image: url("../../../../assets/image/DottedBG.svg");
     border-radius: 50%;
     color: var(--sh-primary);
+    line-height: 1.8;
 }

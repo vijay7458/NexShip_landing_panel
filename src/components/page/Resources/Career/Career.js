@@ -53,8 +53,8 @@ const Career = () => {
                                     <BlobSvg />
                                 </div>
                                 <div className='col-6'>
-                                    <h2 className="heading">Why Work with Us?</h2>
-                                    <p className=''>
+                                    <h2 className="heading text-center">Why Work with Us?</h2>
+                                    <p style={{ textAlign: 'justify' }}>
                                         At ShipEase, we cultivate a dynamic work environment built on collaboration, innovation, and a commitment to excellence. Our team thrives on solving complex logistics challenges, continuously pushing the boundaries of technology to develop cutting-edge solutions. We believe in fostering a culture where creativity and problem-solving go hand in hand, empowering our employees to think outside the box and drive meaningful change. By leveraging advanced technology and data-driven strategies, we streamline logistics processes, enhance operational efficiency, and deliver seamless solutions that create a real-world impact. Our goal is not just to keep up with the evolving industry landscape but to lead the way in redefining logistics with smarter, more efficient, and customer-centric solutions.
                                     </p>
                                 </div>
@@ -100,7 +100,7 @@ const Career = () => {
                 <section className="career-footer">
                     <div className='amazon-self-ship-container'>
                         <h2 className="career-footer-text">
-                            Join the journey of redefining logistics, one step at a time.
+                            Join the journey of redefining logistics,<br />one step at a time.
                         </h2>
                     </div>
                 </section>
