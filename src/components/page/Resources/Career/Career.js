@@ -4,6 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import OpportunityBG from '../../../../assets/image/OpportunityBG.png';
 import CheckIcon from '../../Features/NDRManagement/Icons/CheckIcon';
+import AccordionComponent from './AccordionComponent';
+import success from '../../../../assets/image/success.webp'
+import spirit from '../../../../assets/image/spirit.webp'
+import QuickDelivery from '../../../../assets/image/QuickDelivery.webp'
+import KeepItSimple from '../../../../assets/image/KeepItSimple.webp'
+import DiversityAndInclusion from '../../../../assets/image/DiversityAndInclusion.webp'
+import WhoWeAreImageTransparent from '../../../../assets/image/WhoWeAreImageTransparent.png'
+import BlobSvg from './BlobSvg';
 
 const Career = () => {
     const handleScroll = () => {
@@ -12,6 +20,15 @@ const Career = () => {
             behavior: "smooth",
         });
     };
+
+    const accordionData = [
+        { title: "Customer Success", content: "The success of our customers is at the core of what we do. We succeed when our customers succeed.", image: success },
+        { title: "Geeky Spirit", content: "We are curious and passionate about what we do. We thrive when we are continuously raising the bar for ourselves and our team.", image: spirit },
+        { title: "Quick Delivery", content: "We work in a highly competitive market and must deliver quality work as fast as possible to stay ahead.", image: QuickDelivery },
+        { title: "Keep it Simple", content: "We put all our energy into work and aim for continual progress. ‘We adhere to a flat organizational structure, keeping our communications simple and straight forward.", image: KeepItSimple },
+        { title: "Diversity and Inclusion", content: "‘We value talent and drive above all else. We welcome and respect diversity in all its forms - race, language, culture, beliefs, gender, and identity.", image: DiversityAndInclusion },
+    ];
+
     return (
         <>
             <header className="page-header">
@@ -30,10 +47,26 @@ const Career = () => {
                 <div className="career-content">
                     <section className="career-section">
                         <div className='amazon-self-ship-container'>
-                            <h2 className="heading text-center">Why Work with Us?</h2>
-                            <p className='text-center'>
-                                At ShipEase, we foster a culture of collaboration, innovation, and excellence. Our team is committed to making a real-world impact by solving complex logistics challenges with cutting-edge solutions.
-                            </p>
+                            <div className='row align-items-center justify-content-between'>
+                                <div className='col-6 whoweare-img'>
+                                    <img src={WhoWeAreImageTransparent} alt="" />
+                                    <BlobSvg />
+                                </div>
+                                <div className='col-6'>
+                                    <h2 className="heading">Why Work with Us?</h2>
+                                    <p className=''>
+                                        At ShipEase, we cultivate a dynamic work environment built on collaboration, innovation, and a commitment to excellence. Our team thrives on solving complex logistics challenges, continuously pushing the boundaries of technology to develop cutting-edge solutions. We believe in fostering a culture where creativity and problem-solving go hand in hand, empowering our employees to think outside the box and drive meaningful change. By leveraging advanced technology and data-driven strategies, we streamline logistics processes, enhance operational efficiency, and deliver seamless solutions that create a real-world impact. Our goal is not just to keep up with the evolving industry landscape but to lead the way in redefining logistics with smarter, more efficient, and customer-centric solutions.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className='w-100 d-flex justify-content-center'>
+                        <div className='amazon-self-ship-container'>
+                            <h2 className="heading text-center">Our Values</h2>
+                            <AccordionComponent items={accordionData} />
                         </div>
                     </section>
                     <section className="career-section">
@@ -65,7 +98,11 @@ const Career = () => {
                     </section>
                 </div>
                 <section className="career-footer">
-                    <p className="career-footer-text">Join the journey of redefining logistics, one step at a time.</p>
+                    <div className='amazon-self-ship-container'>
+                        <h2 className="career-footer-text">
+                            Join the journey of redefining logistics, one step at a time.
+                        </h2>
+                    </div>
                 </section>
             </div>
         </>

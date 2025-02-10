@@ -2,6 +2,24 @@
     margin-top: 100px;
 }
 
+.career-section .whoweare-img {
+    position: relative;
+    text-align: start;
+}
+
+.career-section .whoweare-img svg {
+    position: absolute;
+    top: -98px;
+    width: 545px;
+    left: 25px;
+    z-index: -1;
+}
+
+.career-section .whoweare-img img {
+    max-width: 500px;
+    width: 100%;
+}
+
 .career-image-sec {
     text-align: center;
     position: relative;
@@ -150,10 +168,13 @@
 
 .career-footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 70px !important;
 }
 
 .career-footer-text {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    padding-block: 120px;
+    background-image: url("../../../../assets/image/DottedBG.svg");
+    border-radius: 50%;
     color: var(--sh-primary);
 }
