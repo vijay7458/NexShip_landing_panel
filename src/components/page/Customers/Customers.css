@@ -1,0 +1,149 @@
+.customers-page section {
+    margin-top: 100px;
+}
+
+.customer-counts ul {
+    display: flex;
+    margin-top: 50px;
+}
+
+.customer-counts ul p {
+    margin-bottom: 0;
+}
+
+.customer-counts ul p:first-of-type {
+    color: var(--sh-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.customer-counts ul li {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Customer Testimonials */
+.customer-testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.quote-icon {
+    color: #1975C9;
+    font-size: 2rem;
+}
+
+.testimonial-card p {
+    margin: 10px 0;
+}
+
+
+.testimonial-card span {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Trusted By */
+.trusted-by {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.brands-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.brands-logos img {
+    height: 50px;
+}
+
+/* Case Studies */
+.case-studies {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.case-studies-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.case-study-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background-image: radial-gradient(at 88% 40%,
+            rgb(255, 255, 255) 0px,
+            transparent 85%),
+        radial-gradient(at 49% 30%, rgb(255, 255, 255) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, rgb(255, 255, 255) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, #60a9eb 0px, transparent 85%),
+        radial-gradient(at 41% 94%, #c5dcf1 0px, transparent 85%),
+        radial-gradient(at 100% 99%, #1975C9 0px, transparent 85%);
+}
+
+.case-study-card h3 {
+    font-size: 1.2rem;
+}
+
+/* Get Started */
+.get-started {
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb40 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box; */
+    padding-block: 3rem 2rem;
+    box-shadow: 0 0 17px 0px #0d6efd4a;
+    text-align: center;
+}
+
+.get-started p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.customer-counts-des {
+    max-width: 900px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.customer-carousel .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.customer-carousel .swiper-slide img {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-inline: 15px;
+}
