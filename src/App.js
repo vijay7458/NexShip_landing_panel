@@ -30,6 +30,7 @@ import DetailedFooter from './components/DetailedFooter/DetailedFooter';
 import TermsAndConditions from './components/Footer/Components/TermsAndConditions/TermsAndConditions';
 import PrivacyPolicy from './components/Footer/Components/PrivacyPolicy/PrivacyPolicy';
 import AboutPage from './components/page/about/AboutPage';
+import Customers from './components/page/Customers/Customers';
 
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
           <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/about-us' element={<AboutPage />} />
+          <Route path='/customers' element={<Customers />} />
         </Routes>
       </div>
       <Footer />
