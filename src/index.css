@@ -19,16 +19,21 @@
     position: relative;
     border: 0;
     box-shadow: rgba(255, 255, 255, 0.25) 0.5px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
+    /* transition: boxshadow 1s ease-in-out !important; */
 }
 
-.main-button:hover {
-    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
-}
 
 .main-button:hover,
 .main-button:active {
-    background-color: #1975C9 !important;
+    /* box-shadow: inset 0px -38px 10px rgba(0, 0, 0, 0.2), 3px 3px 9px 0px rgba(0, 0, 0, 0.75); */
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    background-color: var(--sh-primary) !important;
     color: #fff !important;
+    border: 1px solid var(--sh-primary) !important;
+}
+
+.main-button:active {
+    transform: translateY(2px)
 }
 
 .cancel-button {
@@ -61,7 +66,7 @@
 }
 
 h2.heading {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
 }
 
 .page-header {
@@ -124,7 +129,7 @@ h2.heading {
 
 .page-header-description {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.13rem;
     margin-bottom: 30px;
     color: var(--sh-secondary);
     padding-inline: 20px;
