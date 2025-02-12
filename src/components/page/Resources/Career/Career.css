@@ -83,6 +83,8 @@
 
 .no-openings {
     background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb40 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box; */
+
     padding-block: 3rem 2rem;
     position: relative;
     overflow: hidden;
