@@ -8,8 +8,9 @@ import { BASE_URL } from "../../../../axios/config";
 import { useNavigate } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ChannelDefault from "../../../../assets/image/ChannelDefault.png"
 
-const DEFAULT_IMAGE = "default-placeholder.png";
+// const DEFAULT_IMAGE = "default-placeholder.png";
 
 const ChannelCarousel = () => {
     let Navigate = useNavigate()
@@ -59,7 +60,7 @@ const ChannelCarousel = () => {
                     {data.map((channel, index) => (
                         <div key={index} className="carousel-item">
                             <img
-                                src={channel.image || DEFAULT_IMAGE}
+                                src={channel.image || ChannelDefault}
                                 alt={channel.name || "Channel Partner"}
                                 className="carousel-image"
                             />
