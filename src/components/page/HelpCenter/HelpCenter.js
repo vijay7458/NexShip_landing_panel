@@ -85,7 +85,6 @@ const HelpCenter = () => {
                   return (
                     <div key={subCategory} className="help-center__subcategory">
                       <h3 className="help-center__subcategory-title">{subCategory}</h3>
-                      <hr />
                       <ul className="help-center__questions">
                         {questions.slice(0, 5).map((faq) => (
                           <li
