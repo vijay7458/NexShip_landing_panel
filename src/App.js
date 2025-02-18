@@ -31,6 +31,10 @@ import TermsAndConditions from './components/Footer/Components/TermsAndCondition
 import PrivacyPolicy from './components/Footer/Components/PrivacyPolicy/PrivacyPolicy';
 import AboutPage from './components/page/about/AboutPage';
 import Customers from './components/page/Customers/Customers';
+import HelpCenter from './components/page/HelpCenter/HelpCenter';
+import FAQDetail from './components/page/HelpCenter/FAQDetail';
+import SubCategoryPage from './components/page/HelpCenter/SubCategoryPage';
+import VolumetricWeightCalculator from './components/page/VolumetricWeightCalculator/VolumetricWeightCalculator';
 
 
 function App() {
@@ -79,6 +83,10 @@ function App() {
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/about-us' element={<AboutPage />} />
           <Route path='/customers' element={<Customers />} />
+          <Route path="/support/home" element={<HelpCenter />} />
+          <Route path="/support/solutions/articles/:id" element={<FAQDetail />} />
+          <Route path="/support/solutions/:category/:subCategory" element={<SubCategoryPage />} />
+          <Route path="/volumetric-weight-calculator" element={<VolumetricWeightCalculator />} />
         </Routes>
       </div>
       <Footer />

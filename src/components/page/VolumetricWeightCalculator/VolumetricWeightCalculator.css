@@ -1,0 +1,268 @@
+/* Volumetric Weight Calculator Styles */
+
+/* General Styles */
+.volumetric-weight-calculator section {
+    margin-top: 70px;
+}
+
+
+/* Calculator Form Styling */
+
+.volumetric-weight-calculator .calculator h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.volumetric-weight-calculator .calculator p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+
+.volumetric-weight-inputs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* width: 100%; */
+}
+
+.volumetric-weight-inputs label {
+    /* width: 100%; */
+    position: relative;
+}
+
+.volumetric-weight-inputs input {
+    background: #fff;
+    border: 1px solid var(--sh-primary-light);
+    border-radius: .5rem;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+.volumetric-weight-inputs .input-unit {
+    background: linear-gradient(180deg, var(--sh-primary-light) 0, var(--sh-primary-middle) 0, var(--sh-primary) 100%);
+    border: none;
+    border-radius: 0 .5rem .5rem 0;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volumetric-weight-calculator .calculator input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+.volumetric-weight-calculator .calculator .reset-button {
+    color: #3498db;
+    padding: 0;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    background: transparent;
+}
+
+
+.volumetric-weight-calculator .calculator .reset-button:hover {
+    color: #2980b9;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+.volumetric-weight-calculator .calculator .reset-button:active {
+    transform: translateY(1px);
+}
+
+/* Volumetric Weight Result Section */
+.volumetric-weight-calculator .calculator .calculated-weight {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    height: 0px;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.volumetric-weight-calculator .calculator .calculated-weight>div {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 0;
+    border-radius: 8px;
+}
+
+
+.volumetric-weight-calculator .calculator .calculated-weight::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../../assets/image/output-onlinegiftools.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+.volumetric-weight-calculator .calculator .calculated-weight:before {
+    content: "";
+    position: absolute;
+    background-image: url("../../../assets/image/calculator.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    /* background: var(--sh-primary); */
+    z-index: 0;
+    transform-style: preserve-3d;
+    animation: upDownCalc 10s ease-in-out infinite;
+
+}
+
+@keyframes upDownCalc {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.volumetric-weight-calculator .calculator .calculated-weight.open,
+.volumetric-weight-calculator .calculator .calculated-weight.open>div {
+    height: 200px;
+}
+
+.volumetric-weight-calculator .calculator .calculated-weight h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.volumetric-weight-calculator .calculator .calculated-weight p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 0;
+    max-width: 80%;
+}
+
+.volumetric-weight-calculator .info img {
+    width: 80%;
+    margin-inline: auto;
+    height: auto;
+    border-radius: 0.8rem;
+}
+
+
+.volumetric-weight-calculator .info h2,
+.volumetric-weight-calculator .calculation h2,
+.volumetric-weight-calculator .faq h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.volumetric-weight-calculator .info p,
+.volumetric-weight-calculator .calculation p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.volumetric-weight-calculator .faq ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.volumetric-weight-calculator .faq li {
+    margin-bottom: 25px;
+}
+
+.volumetric-weight-calculator .faq li strong {
+    color: #34495e;
+    font-size: 1.2rem;
+}
+
+.volumetric-weight-calculator .faq li p {
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+}
+
+.volumetric-weight-calculator .calculation img {
+    width: 90%;
+}
+
+.volumetric-weight-calculator .calculation .volumetric-formula {
+    width: fit-content;
+    display: block;
+    margin-inline: auto;
+    margin-block: 0 1rem;
+    overflow: auto;
+    font-size: .875em;
+    color: #000;
+    padding: 0.6rem 2rem;
+    background: rgba(25, 117, 201, 0.15);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .volumetric-weight-calculator {
+        padding: 20px;
+    }
+
+    .volumetric-weight-calculator header h1 {
+        font-size: 2rem;
+    }
+
+    .volumetric-weight-calculator .calculator button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .volumetric-weight-calculator .calculator .reset-button {
+        margin-top: 10px;
+    }
+
+    .volumetric-weight-calculator .faq li p {
+        font-size: 1rem;
+    }
+}
