@@ -52,7 +52,7 @@ const VolumetricWeightCalculator = () => {
                     <div className="amazon-self-ship-container">
                         <h2 className='heading text-center'>Volumetric Weight Calculator</h2>
                         <p className='text-center'>Enter the dimensions of your package to calculate its volumetric weight.<br />This will help you estimate shipping costs based on space occupied rather than actual weight.</p>
-                        <div className='d-flex align-items-center gap-5'>
+                        <div className='d-flex align-items-center gap-5 justify-content-center'>
                             <div className='volumetric-weight-inputs'>
                                 <label>
                                     <input
