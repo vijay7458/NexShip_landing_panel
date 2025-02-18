@@ -17,6 +17,7 @@
     padding: 10px 20px;
     white-space: nowrap;
     position: relative;
+    border: 1px solid var(--sh-primary) !important;
     border: 0;
     box-shadow: rgba(255, 255, 255, 0.25) 0.5px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
     /* transition: boxshadow 1s ease-in-out !important; */
