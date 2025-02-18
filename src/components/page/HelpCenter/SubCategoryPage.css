@@ -1,0 +1,84 @@
+/* Overall layout of the subcategory page */
+.subcategory-page {
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 60px;
+}
+
+/* Heading for the subcategory page */
+.subcategory-page h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styling for the FAQ list */
+.subcategory-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subcategory-page li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for individual FAQ items */
+.subcategory-page li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* FAQ question styling */
+.subcategory-page li h3 {
+    font-size: 1.2rem;
+    color: var(--sh-primary);
+    margin: 0;
+}
+
+/* FAQ answer styling */
+.subcategory-page li p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Message when no questions are available */
+.subcategory-page p.no-questions {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Add some space between list items and the top of the page */
+.subcategory-page ul {
+    margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .subcategory-page h1 {
+        font-size: 1.6rem;
+    }
+
+    .subcategory-page li {
+        padding: 10px;
+    }
+
+    .subcategory-page li h3 {
+        font-size: 1rem;
+    }
+
+    .subcategory-page li p {
+        font-size: 0.9rem;
+    }
+}

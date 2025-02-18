@@ -1,0 +1,453 @@
+{
+  "Home": {
+    "Getting Started": [
+      {
+        "id": 1,
+        "question": "How do I sign up for a Shipease account?",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      },
+      {
+        "id": 111,
+        "question": "What is Shipease and how does it work?",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      },
+      {
+        "id": 112,
+        "question": "Important Terms All Shipease Users Should Know",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      },
+      {
+        "id": 113,
+        "question": "Shipease: 3 Tips for Taking Better Shipment Photos",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      },
+      {
+        "id": 114,
+        "question": "Learn More About Your Home Page",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      },
+      {
+        "id": 115,
+        "question": "How do I contact the Shipease support team?",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      },
+      {
+        "id": 116,
+        "question": "What are the different Acronyms used at Shipease?",
+        "answer": "You can create an account by signing up on our platform using your email and setting a password."
+      }
+    ]
+  },
+  "Orders": {
+    "New Order": [
+      {
+        "id": 2,
+        "question": "How to Create an Order in Shipease?",
+        "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+      },
+      {
+        "id": 221,
+        "question": "How to add an order?",
+        "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+      },
+      {
+        "id": 222,
+        "question": "How to create manual order on Shipease?",
+        "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+      },
+      {
+        "id": 223,
+        "question": "What is Multi Packet Shipment? How to create it?",
+        "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+      },
+      {
+        "id": 224,
+        "question": "Learn More About the Shipease Orders Screen",
+        "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+      }
+    ],
+    "Process Order": [
+      {
+        "id": 3,
+        "question": "How do I ship an order with Shipease?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 331,
+        "question": "How do I process or ship my orders in bulk?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 332,
+        "question": "How to change the payment mode of my order?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 333,
+        "question": "How to download a manifest?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 334,
+        "question": "How to verify my orders in Shipease?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 335,
+        "question": "How do I add order tag?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 336,
+        "question": "How to download shipping invoices and labels?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 337,
+        "question": "How to edit an order?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 338,
+        "question": "How do I update orders in bulk?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 339,
+        "question": "Why do I need to upload package images?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3310,
+        "question": "How to upload and change Eway Bill for forward orders?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3311,
+        "question": "How to download my orders report?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3312,
+        "question": "What are the actions you can take from the Ready to Ship tab?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3313,
+        "question": "What are the actions you can take from the Pickups tab?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3314,
+        "question": "What are the actions you can take from the In Transit tab?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3315,
+        "question": "What are the actions you can take from the Delivered tab?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3316,
+        "question": "What are the actions you can take from the RTO tab?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      },
+      {
+        "id": 3317,
+        "question": "What are the actions you can take from the New tab?",
+        "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+      }
+    ],
+    "Pickups": [
+      {
+        "id": 4,
+        "question": "How do I schedule a pickup?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 441,
+        "question": "What is a pickup ID?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 442,
+        "question": "How do I find my pickup ID?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 443,
+        "question": "Can shipments be moved from one pickup ID to another?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 444,
+        "question": "Pickup ID vs. Manifest ID - Know the Difference",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 445,
+        "question": "Why I'm unable to request a pickup for my shipments? Please help!",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 446,
+        "question": "How do I handle pickup delays in my Shipease account?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 447,
+        "question": "What is a pickup exception?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 448,
+        "question": "Can I cancel a picked up shipment?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 449,
+        "question": "What do I do in case of a fake pickup attempt?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4410,
+        "question": "Can I schedule shipment for a future date?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4411,
+        "question": "Can I still use Manifest ID to escalate pickup delays?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4412,
+        "question": "I'm not able to locate my existing Pick up ID on Shipease",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4413,
+        "question": "What happens to a pickup ID if all shipments are canceled?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4414,
+        "question": "What are the various Pick up ID statuses?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4415,
+        "question": "In what circumstances can different pickup IDs be generated?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4416,
+        "question": "What will be the role of Manifest ID?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4417,
+        "question": "Will this have an impact on the pickup process in the Shipease mobile apps as well?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4418,
+        "question": "Can I modify the order details after I've scheduled pickup?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4419,
+        "question": "What are the steps from order creation to pick up?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4420,
+        "question": "What is a Pickup error and how to solve it?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4421,
+        "question": "Can I update the details of an already picked shipment?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4422,
+        "question": "My order is in out for pickup status. Can I cancel it?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      },
+      {
+        "id": 4423,
+        "question": "Can I change the payment mode of my order if it’s in the out for delivery status?",
+        "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+      }
+    ],
+    "RTO Orders": [
+      {
+        "id": 5,
+        "question": "What is RTO?",
+        "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+      },
+      {
+        "id": 551,
+        "question": "Will I be charged for RTO?",
+        "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+      },
+      {
+        "id": 552,
+        "question": "How to block ODA (Out of Delivery Area) pincodes?",
+        "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+      }
+    ],
+    "Delivery Dispute": [
+      {
+        "id": 6,
+        "question": "How can I raise a delivery dispute?",
+        "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+      }
+    ],
+    "NDR": [
+      {
+        "id": 7,
+        "question": "What is an NDR?",
+        "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+      }
+    ],
+    "Direct Ship": [
+      {
+        "id": 8,
+        "question": "What is Direct Ship?",
+        "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
+      }
+    ]
+  },
+  "Return & Refund Management": {
+    "Return": [
+      {
+        "id": 9,
+        "question": "How do I initiate a return?",
+        "answer": "Go to 'Return Management' and enter order details to process a return."
+      }
+    ],
+    "Refund": [
+      {
+        "id": 10,
+        "question": "How long does a refund take?",
+        "answer": "Refunds are usually processed within 5-7 business days."
+      }
+    ]
+  },
+  "Delivery Boost": {
+    "Delivery Boost": [
+      {
+        "id": 11,
+        "question": "How does Delivery Boost work?",
+        "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+      }
+    ]
+  },
+  "Weight Management": {
+    "Weight Discrepancy": [
+      {
+        "id": 12,
+        "question": "What is a weight discrepancy?",
+        "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+      }
+    ],
+    "Weight Freeze": [
+      {
+        "id": 13,
+        "question": "What is Weight Freeze?",
+        "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+      }
+    ]
+  },
+  "Setup & Manage": {
+    "Channels": [],
+    "Catalogue": [],
+    "Courier": [],
+    "Packaging": [],
+    "Customers": []
+  },
+  "Buyer Experience": {
+    "Brand Boost": [],
+    "Buyer Communication": [],
+    "Return & Refunds": []
+  },
+  "Billing": {
+    "Early COD": [],
+    "Postpaid": [],
+    "COD Remittance": [],
+    "Plan Details": [],
+    "Invoice Management": []
+  },
+  "ONDC": {
+    "Getting Started": [],
+    "Catalogue Update & Visibility": [],
+    "Order Processing": [],
+    "Remittances and Billing": [],
+    "In-transit/Post-Delivery Issues": [],
+    "Return Policy": []
+  },
+  "Tools": {
+    "Tracking and Notifications": [],
+    "Rate Calculator": [],
+    "Rate Card": [],
+    "Bulk Print Actions": [],
+    "Reports": []
+  },
+  "Settings": {
+    "Company Settings": [],
+    "Billing Settings": [],
+    "API Settings": [],
+    "User Role Management": []
+  },
+  "Shipment Features": {
+    "Secure Shipment": [],
+    "RTO Score": []
+  },
+  "Mobile App": {
+    "Account Setup": [],
+    "Tracking and Notifications": [],
+    "Order Management": [],
+    "Billing & Recharge": []
+  },
+  "Shipease Fulfillment": {
+    "Introduction": [],
+    "SRF Pricing": [],
+    "SRF Inventory": [],
+    "SRF Packaging": []
+  },
+  "Shipments": {
+    "Custom Buyer Communication": []
+  },
+  "Weight Discrepancy": {
+    "Shipment Weight": [],
+    "Weight Freeze": []
+  },
+  "NDR": {
+    "NDR Buyer Flow": []
+  },
+  "Setting": {
+    "Company Settings": []
+  },
+  "Shipease Mobile App": {
+    "General FAQs & Settings": [],
+    "Hyperlocal": [],
+    "Pickup & Delivery": [],
+    "Orders & Shipments": []
+  },
+  "Invoice": {
+    "Billing & Remittance": [],
+    "Invoice Management": [],
+    "Shipease Wallet": []
+  },
+  "FAQ": {
+    "Others": []
+  },
+  "Shipping Queries": {
+    "International Shipping": []
+  },
+  "SR Checkout Articles": {
+    "SR Checkout": [],
+    "SR Checkout: Manage Discount": []
+  }
+}

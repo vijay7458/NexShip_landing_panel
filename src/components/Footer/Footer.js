@@ -129,7 +129,7 @@ const Footer = () => {
           <h4>Resources</h4>
           <ul>
             <li><Link to="/rate-calculator">Shipping Rate Calculator</Link></li>
-            <li>Volumetric Weight Calculator</li>
+            <li><Link to="/volumetric-weight-calculator">Volumetric Weight Calculator</Link></li>
             <li>Free eCommerce Tools</li>
             <li>Knowledge Base</li>
             <li>FAQs</li>
@@ -157,7 +157,7 @@ const Footer = () => {
           </ul>
           <h4>Support</h4>
           <ul>
-            <li>Help Center</li>
+            <li><Link to="/support/home">Help Center</Link></li>
           </ul>
         </div>
 
