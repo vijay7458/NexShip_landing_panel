@@ -1,0 +1,138 @@
+/* Container */
+.timeline-container {
+  text-align: center;
+  padding: 0px 20px;
+  background: #f9fafb;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Title */
+.timeline-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.timeline-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline Events */
+.timeline-event {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.timeline-event.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left & Right Positioning */
+.timeline-event.left {
+  justify-content: flex-end;
+  padding-right: 54%;
+}
+
+.timeline-event.right {
+  justify-content: flex-start;
+  padding-left: 54%;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  background: #1975C9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Timeline Content */
+.timeline-content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+}
+
+.timeline-step {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1975C9;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #333;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-event.left,
+  .timeline-event.right {
+    padding: 0;
+  }
+
+  .timeline-icon {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-content {
+    width: 80%;
+    margin-left: 60px;
+  }
+}
