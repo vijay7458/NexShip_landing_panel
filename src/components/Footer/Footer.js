@@ -107,12 +107,12 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Features</h4>
           <ul>
-            <li>Cash on Delivery</li>
-            <li>Serviceable Pin Codes</li>
+            {/* <li>Cash on Delivery</li> */}
+            {/* <li>Serviceable Pin Codes</li> */}
             <li><Link to="/api-integration">API Integration</Link></li>
             <li><Link to="/pickup-locations">Multiple Pickup Locations</Link></li>
-            <li>Print Shipping Labels</li>
-            <li>Email & SMS Notifications</li>
+            {/* <li>Print Shipping Labels</li> */}
+            {/* <li>Email & SMS Notifications</li> */}
             <li><Link to="/amazon-self-ship">Amazon Self-Ship</Link></li>
             <li><Link to="/all-features">All Features</Link></li>
           </ul>
@@ -120,7 +120,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/carrier-integration">Carrier</Link></li>
             <li><Link to="/channel-integration">Technology</Link></li>
-            <li>Become a Partner</li>
+            {/* <li>Become a Partner</li> */}
           </ul>
         </div>
 
@@ -130,18 +130,18 @@ const Footer = () => {
           <ul>
             <li><Link to="/rate-calculator">Shipping Rate Calculator</Link></li>
             <li><Link to="/volumetric-weight-calculator">Volumetric Weight Calculator</Link></li>
-            <li>Free eCommerce Tools</li>
-            <li>Knowledge Base</li>
-            <li>FAQs</li>
-            <li>Developers</li>
+            {/* <li>Free eCommerce Tools</li> */}
+            <li><Link to="/support/home">Knowledge Base</Link></li>
+            {/* <li><Link to="/support/home">FAQs</Link></li> */}
+            {/* <li>Developers</li> */}
             <li><Link to="/media">Blog</Link></li>
-            <li>Ebook</li>
-            <li>Encyclopedia</li>
-            <li>Video And Podcast</li>
-            <li>eCommerce Report 2023</li>
-            <li>Customer Stories</li>
-            <li>Showcase Your Brand</li>
-            <li>Tech Sphere</li>
+            {/* <li>Ebook</li> */}
+            {/* <li>Encyclopedia</li> */}
+            {/* <li>Video And Podcast</li> */}
+            {/* <li>eCommerce Report 2023</li> */}
+            {/* <li>Customer Stories</li> */}
+            {/* <li>Showcase Your Brand</li> */}
+            {/* <li>Tech Sphere</li> */}
           </ul>
         </div>
 
@@ -152,8 +152,8 @@ const Footer = () => {
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/customers">Customers</Link></li>
             <li><Link to="/careers">Careers</Link></li>
-            <li>Company Updates</li>
-            <li>Event</li>
+            {/* <li>Company Updates</li> */}
+            {/* <li>Event</li> */}
           </ul>
           <h4>Support</h4>
           <ul>
