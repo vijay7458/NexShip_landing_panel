@@ -89,7 +89,7 @@ const AboutPage = () => {
               </ul>
               <div className='col-6 d-flex flex-column align-items-center'>
                 <h2 className="heading text-center">Why Choose Us?</h2>
-                <img className='mt-5' style={{ width: '80%', marginRight: '-10%' }} src={choseUsBg} alt="" />
+                <img className='mt-0' style={{ width: '80%', marginRight: '-10%' }} src={choseUsBg} alt="" />
               </div>
             </div>
             <ul className='d-flex align-items-center flex-row' style={{ gap: '20px', marginTop: '-12px' }}>
