@@ -175,7 +175,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 		align-items: center;
-		padding: 1.4em;
+		padding: 1em;
 		min-height: 165px;
 		background: linear-gradient(146.88deg, #a6edff 9.67%, #60a9eb 85.4%);
 		max-width: calc(100% - 2 * var(--index));
