@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css'
+import './responsive.css'
 import ScrollToTop from "./ScrollToTop";
 import HomePage from './components/HomePage/HomePage';
 import TopHeader from './components/TopHeader/TopHeader';

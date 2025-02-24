@@ -1,0 +1,74 @@
+@media screen and (max-width: 1240px) {
+    #weight-accuracy .overview-container img {
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .hero-banner {
+        padding: 32px;
+    }
+
+    .insights-footer img {
+        width: 100%;
+    }
+
+    #hero-banner .hero-banner {
+        padding: 50px 2rem;
+    }
+
+    .hero-banner .banner-text,
+    .hero-banner .banner-image {
+        padding: 0;
+    }
+
+    .header>div {
+        padding-inline: 2rem !important;
+    }
+
+    .header .navigation ul {
+        gap: 1.4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .top-header {
+        display: none;
+    }
+
+    .header .navigation ul {
+        flex-direction: column;
+        /* Stack menu items vertically */
+        gap: 1rem;
+        position: fixed;
+        background-color: var(--sh-primary);
+        top: 0%;
+        left: -100%;
+        transition: 0.7s;
+        width: 200px;
+        height: 100%;
+    }
+
+    .navigation ul.show {
+        left: 0;
+    }
+
+    .nav-item:hover .dropdown-menu {
+        position: static;
+        /* Dropdowns stack naturally */
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+}

@@ -15,6 +15,8 @@ const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [showVideo, setShowVideo] = useState(true);
+  const [ToggleShow, setToggleShow] = useState(false)
+  const [ToggleOpen, setToggleOpen] = useState(false)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,6 +50,11 @@ const Header = () => {
     window.open("https://app.shipease.in", "_blank", "noopener,noreferrer");
   };
 
+  const handleToggle = () => {
+    setToggleOpen(!ToggleOpen)
+    setToggleShow(!ToggleShow)
+  }
+
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div style={{ zIndex: '3', paddingInline: '62px' }} className=" d-flex justify-content-between align-items-center position-relative">
@@ -74,7 +81,7 @@ const Header = () => {
 
         {/* Centered Navigation Section with Dropdowns */}
         <nav className="navigation mx-auto">
-          <ul className="d-flex mb-0 list-unstyled justify-content-center">
+          <ul className={`d-flex mb-0 list-unstyled ${ToggleShow && 'show'}`}>
             {/* Features Dropdown */}
             {/* <li className="nav-item dropdown position-relative"> */}
             <li className="nav-item dropdown">
@@ -186,7 +193,16 @@ const Header = () => {
           <button onClick={handleNavigation} className="btn login-button" title="Login">
             Login
           </button>
+          <button onClick={handleToggle} id="nav-icon3" className={`btn ${ToggleOpen && "open"}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+
+
+
       </div>
     </header>
   );
