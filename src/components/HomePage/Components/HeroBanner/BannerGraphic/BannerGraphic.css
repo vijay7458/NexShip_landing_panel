@@ -610,25 +610,3 @@
         scale: 1;
     }
 } */
-
-
-@media only screen and (max-width: 1200px) {
-    #orbit-system {
-        margin: 0 !important;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    #orbit-system {
-        transform: translate(150px, -50px) !important;
-        -webkit-transform: translate(150px, -50px) !important;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #orbit-system {
-        scale: 0.8 !important;
-        transform: translate(110px, -50px) !important;
-        -webkit-transform: translate(110px, -50px) !important;
-    }
-}

@@ -24,7 +24,7 @@ const HeroBanner = () => {
     <>
       <section className="hero-banner row mx-0">
         {/* Left side with image */}
-        <div className="banner-text col-5">
+        <div className="banner-text col-12 col-sm-9 col-md-7 col-lg-5">
           <h1 className="animated-text-container animate__animated animate__fadeInLeft">
             <AnimatedText className="" text="Logistics Industry" />
           </h1>
@@ -38,7 +38,7 @@ const HeroBanner = () => {
         </div>
 
         {/* Right side with heading and subheading */}
-        <div className="banner-image col-5">
+        <div className="banner-image col-12 col-sm-5">
           {/* <img src={bannerImage} alt="Logistics Dynamics" /> */}
           <BannerGraphic />
         </div>
