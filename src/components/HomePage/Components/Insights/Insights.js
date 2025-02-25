@@ -43,12 +43,12 @@ const Insights = () => {
           {/* Left Text and Image */}
           <div className="insights-text-content row" style={{ overflow: "hidden" }}>
             <img
-              className={`col-2 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
+              className={`col-12 col-sm-2 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
               src={InsightsLeft}
               alt="Insights Left"
             />
             <p
-              className={`highlight col-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
+              className={`highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
             >
               Attract potential customers with ease by using intuitive forms, engaging landing pages,
               and tailored outreach strategies designed to connect with your audience effectively.
@@ -58,14 +58,14 @@ const Insights = () => {
           {/* Right Text and Image */}
           <div className="insights-text-content row" style={{ overflow: "hidden" }}>
             <p
-              className={`highlight col-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
+              className={`highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
             >
               Understand customer behavior deeply, evaluate the effectiveness of your campaigns, and
               monitor your business’s overall performance. Gain valuable insights to make informed
               decisions and drive growth.
             </p>
             <img
-              className={`col-2 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
+              className={`col-12 col-sm-2 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
               src={InsightsRight}
               alt="Insights Right"
             />

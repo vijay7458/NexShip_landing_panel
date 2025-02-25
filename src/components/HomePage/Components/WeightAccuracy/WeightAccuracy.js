@@ -39,12 +39,12 @@ const WeightAccuracy = () => {
                 <div className="overview-container position-relative" style={{ zIndex: 1 }}>
                     <div className='row align-items-center'>
                         {/* Heading */}
-                        <div className={`col-7 heading ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
+                        <div className={`col-12 col-lg-7 px-0 heading ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
                             <p className="subtitle">Weight Discrepancies</p>
                             <h1>Accuracy Matters</h1>
                             <p className="highlight">Prevent disruptions with accurate weight tracking and quick resolution of discrepancies. Trust us to keep your shipments on track.</p>
                         </div>
-                        <div className={`col-5 ${isAnimated ? "animate__animated animate__fadeInRight" : ""}`}>
+                        <div className={`col-12 col-lg-5 ${isAnimated ? "animate__animated animate__fadeInRight" : ""}`}>
                             <img src={WeightD} alt="Weight Discrepancies" />
                         </div>
                     </div>

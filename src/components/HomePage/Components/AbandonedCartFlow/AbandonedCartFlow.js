@@ -88,7 +88,7 @@ const AbandonedCartFlow = () => {
         <div className="home-section" ref={sectionRef}>
             <div className='overview-container'>
                 <div className='abundant-recovery-flow'>
-                    <img src={AbundantRecoveryFlow} alt="Abundant Recovery Flow" className={`mt-5 ${isAnimated ? "animate__animated animate__backInDown" : ""}`} />
+                    <img src={AbundantRecoveryFlow} alt="Abundant Recovery Flow" className={`${isAnimated ? "animate__animated animate__backInDown" : ""}`} />
                 </div>
             </div>
         </div>

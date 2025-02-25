@@ -126,7 +126,7 @@ const OverviewSection = () => {
 
                 <div className="row" ref={imageSectionRef}>
                     {/* Stats Section */}
-                    <div className="col-6 stats">
+                    <div className="col-12 col-md-6 stats">
                         {loading ? (
                             <p>Loading...</p>
                         ) : error ? (
@@ -154,7 +154,7 @@ const OverviewSection = () => {
                     </div>
 
                     {/* Visual Section */}
-                    <div className="col-6 visuals">
+                    <div className="col-12 col-md-6 visuals">
                         <img
                             ref={imageRef}
                             src={BannerImage} alt="Banner"
