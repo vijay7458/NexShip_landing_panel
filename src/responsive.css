@@ -349,6 +349,19 @@
         transform: translate(110px, -50px) !important;
         -webkit-transform: translate(110px, -50px) !important;
     }
+
+    .track-login-nav a {
+        padding: 0;
+    }
+
+    .header>div {
+        padding-inline: 20px !important;
+    }
+
+    .logo img {
+        margin-top: 21px !important;
+        max-height: 22px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
