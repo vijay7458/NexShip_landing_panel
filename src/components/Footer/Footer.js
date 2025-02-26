@@ -24,7 +24,6 @@ const Footer = () => {
     fetchData();
   }, []);
 
-  console.log(data, 'lllllllll')
 
   return (
     <footer className="footer">

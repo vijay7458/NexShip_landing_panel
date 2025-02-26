@@ -19,6 +19,9 @@ const TrackingOrder = () => {
     const [remarks, setRemarks] = useState("")
     const [error, setError] = useState("")
 
+    const [TrackingData, setTrackingData] = useState()
+    const [showOrderTracking, setshowOrderTracking] = useState(false)
+
     const handleTabChange = (tab) => {
         setActiveTab(tab);
     };
@@ -50,6 +53,35 @@ const TrackingOrder = () => {
             setError("Please enter your remarks")
         }
     }
+
+    const handleTracking = async () => {
+        try {
+            const response = await fetch(`https://app.shipease.in/core-api/shipping/track-order/${awb}/`);
+            const data = await response.json(); // Store response in `data` always
+
+            console.log(data, "Tracking Response");
+
+            if (!response.ok) {
+                // console.error(`Error: ${response.status} - ${data?.message || "Unknown error"}`);
+                setTrackingData(data.detail || "Unknown Error");
+            } else {
+                setTrackingData(data);
+                setshowOrderTracking(true);
+            }
+
+            return data; // Return the response for further use
+        } catch (error) {
+            // console.error("Error fetching tracking data:", error);
+            setTrackingData("Failed to fetch tracking data. Please try again.");
+        }
+    };
+
+
+    const handleSubmitAwb = (e) => {
+        e.preventDefault(); // Prevent form from refreshing the page
+        handleTracking(); // Call tracking function
+    };
+
 
     return (
         <>
@@ -118,7 +150,7 @@ const TrackingOrder = () => {
                         )}
 
                         {activeTab === "awb" && (
-                            <form className="tracking-form-content">
+                            <form className="tracking-form-content" onSubmit={handleSubmitAwb}>
                                 <input
                                     type="text"
                                     placeholder="Enter your AWB number"
@@ -156,30 +188,38 @@ const TrackingOrder = () => {
                     </div>
                 </div>
             </section>
-
-            <div className='row justify-content-center mt-5 w-100'>
-                <div className='col-5'>
-                    <OrderDetailsCard />
-                </div>
-                <div className='col-5'>
-                    <div className='d-flex flex-column'>
-                        <CourierInfo />
-                        <hr style={{ width: '93%', marginLeft: '25px', marginBlock: '0px' }} />
-                        <DeliveryActivity />
+            {
+                showOrderTracking ?
+                    <>
+                        <div className='row justify-content-center mt-5 w-100'>
+                            <div className='col-5'>
+                                <OrderDetailsCard TrackingData={TrackingData} />
+                            </div>
+                            <div className='col-5'>
+                                <div className='d-flex flex-column'>
+                                    <CourierInfo TrackingData={TrackingData} />
+                                    <hr style={{ width: '93%', marginLeft: '25px', marginBlock: '0px' }} />
+                                    <DeliveryActivity TrackingData={TrackingData?.order_tracking} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='tracking-feedback row'>
+                            <div className='col-10'>
+                                <label htmlFor="">Remarks
+                                    {error &&
+                                        <span style={{ color: 'red', fontSize: '12px', marginLeft: '15px' }}>{error}*</span>
+                                    }
+                                </label>
+                                <textarea onChange={(e) => setRemarks(e.target.value)} value={remarks} placeholder='Please enter your remarks here' rows={5} />
+                                <button onClick={handleSubmit} className='btn main-button float-end'>Sumbit</button>
+                            </div>
+                        </div>
+                    </>
+                    :
+                    <div>
+                        {TrackingData}
                     </div>
-                </div>
-            </div>
-            <div className='tracking-feedback row'>
-                <div className='col-10'>
-                    <label htmlFor="">Remarks
-                        {error &&
-                            <span style={{ color: 'red', fontSize: '12px', marginLeft: '15px' }}>{error}*</span>
-                        }
-                    </label>
-                    <textarea onChange={(e) => setRemarks(e.target.value)} value={remarks} placeholder='Please enter your remarks here' rows={5} />
-                    <button onClick={handleSubmit} className='btn main-button float-end'>Sumbit</button>
-                </div>
-            </div>
+            }
         </>
     );
 };

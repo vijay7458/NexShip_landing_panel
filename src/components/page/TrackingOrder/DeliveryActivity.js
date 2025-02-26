@@ -1,7 +1,8 @@
 import React from 'react';
 import './DeliveryActivity.css';
+import moment from 'moment';
 
-const DeliveryActivity = () => {
+const DeliveryActivity = ({ TrackingData }) => {
 
     const activities = [
         {
@@ -76,7 +77,7 @@ const DeliveryActivity = () => {
     return (
         <div className="delivery-info">
             <div className="delivery-list-wrap">
-                <ul>
+                {/* <ul>
                     {updatedActivities.map((activity, index) => (
                         <li
                             key={index}
@@ -88,6 +89,23 @@ const DeliveryActivity = () => {
                             <div className="date-for-activities">
                                 <span className="date">{activity.date}</span>
                                 <span className="time">{activity.time}</span>
+                            </div>
+                            <i className="circle-icon"></i>
+                        </li>
+                    ))}
+                </ul> */}
+                <ul>
+                    {TrackingData?.map((activity, index) => (
+                        <li
+                            key={index}
+                            className={index === 0 ? 'delivery-list-item active' : 'delivery-list-item'}
+                        >
+                            <span className='font14'>Activity: <span className="activity text-capitalize">{activity?.shipease_status}</span>{activity?.remarks}</span>
+                            <span className='font14'>Location: <span className="activity">{activity?.location}</span></span>
+
+                            <div className="date-for-activities">
+                                <span className="date">{moment(activity?.courier_action_date).format('DD MMM YYYY')}</span>
+                                <span className="time">{moment(activity?.courier_action_date).format('LT')}</span>
                             </div>
                             <i className="circle-icon"></i>
                         </li>
