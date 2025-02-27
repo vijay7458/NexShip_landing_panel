@@ -3,6 +3,13 @@
         width: 90%;
         margin-inline: auto;
     }
+
+    .feature-card-content .benefit-list {
+        min-height: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -117,6 +124,10 @@
         padding: 0;
     }
 
+    .track-login-nav {
+        gap: 7px;
+    }
+
     .track-login-nav #toggle-icon {
         display: block;
     }
@@ -162,6 +173,19 @@
         transform: translate(150px, -7px) !important;
         -webkit-transform: translate(150px, -7px) !important;
     }
+
+    .feature-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .feature-card-content>div {
+        place-self: unset;
+        min-height: 73px;
+        align-items: flex-start;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -186,6 +210,10 @@
 
     .detailed-footer .detailed-footer__container {
         flex-direction: column-reverse;
+    }
+
+    .logistics-feature-card {
+        width: 95% !important;
     }
 }
 
@@ -281,6 +309,7 @@
         flex: 0 0 auto;
     }
 
+    .page-header h1,
     .hero-banner .banner-text h1 {
         font-size: 2.5rem;
     }
@@ -348,6 +377,10 @@
     .bg-container-wt img {
         width: 30%;
     }
+
+    .feature-card-content .benefit-list {
+        min-height: 140px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -369,10 +402,28 @@
         margin-top: 21px !important;
         max-height: 22px;
     }
+
+    .feature-card-content>div {
+        min-height: 155px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (max-width: 425px) {
+
+    .page-header h1,
     .hero-banner .banner-text h1 {
         font-size: 2rem;
+    }
+
+    .feature-card-content .benefit-list {
+        min-height: 180px;
+    }
+
+    .feature-card-content>div {
+        min-height: 172px;
     }
 }
