@@ -232,6 +232,25 @@
         margin-inline: auto;
         /* max-width: 380px; */
     }
+
+    .shipping-rate-calculator__calculator button {
+        width: 100%;
+    }
+
+    .shipping-rate-calculator__row {
+        flex-direction: column;
+    }
+
+    .shipping-rate-calculator__row img {
+        width: 90%;
+        margin-inline: auto;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .shipping-rate-calculator__header {
+        padding-inline: 20px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -494,6 +513,18 @@
 
     .heading {
         font-size: 1.8rem;
+    }
+
+    h2.heading {
+        font-size: 1.6rem;
+    }
+
+    .amazon-self-ship-container h3 {
+        font-size: 1rem;
+    }
+
+    .hyperlocal__step {
+        max-width: 100%;
     }
 }
 
