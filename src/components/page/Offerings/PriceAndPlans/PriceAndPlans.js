@@ -31,7 +31,7 @@ const PriceAndPlans = () => {
                     </p>
                     <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
                 </header>
-                <h2 className='mt-3 text-center'>Grab The Perfect Plan for Your Needs</h2>
+                <h2 className='heading mt-3 text-center'>Grab The Perfect Plan for Your Needs</h2>
                 <p className='text-center text-sh-primary'>Our transparent pricing makes it easy to find a plan that works within your financial constraints.</p>
                 <div className='plans-container'>
                     <div className='plan-item'>
