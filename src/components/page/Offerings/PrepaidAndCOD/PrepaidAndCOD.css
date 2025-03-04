@@ -23,7 +23,6 @@
 }
 
 .prepaid-and-cod__how-it-works h2 {
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -68,7 +67,6 @@
 }
 
 .prepaid-and-cod__why-offer h2 {
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -126,9 +124,9 @@
 }
 
 .prepaid-and-cod__benefits h2 {
-    font-size: 2.5rem;
     margin-bottom: 30px;
     color: #092C4C;
+    text-align: center;
 }
 
 .benefits__container {
@@ -176,8 +174,8 @@
 }
 
 .benefits__item h3 {
-    font-size: 1.6rem;
     margin-bottom: 15px;
+    text-align: center;
     color: #092C4C;
 }
 

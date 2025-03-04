@@ -29,14 +29,14 @@ const PrepaidAndCOD = () => {
                     <span className="ripple-4" />
                     <span className="ripple-5" />
                 </div>
-                <h1>Prepaid or Cash on Delivery (COD): Which option suits you best?</h1>
+                <h1 className='heading'>Prepaid or Cash on Delivery (COD): Which option suits you best?</h1>
                 <p className="page-header-description">AI-powered courier selection to guide you in making the best payment choice</p>
                 <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
 
             <section className="prepaid-and-cod__how-it-works">
                 <div className='amazon-self-ship-container'>
-                    <h2>Change Payment Mode Easily</h2>
+                    <h2 className="heading">Change Payment Mode Easily</h2>
 
                     <div className="hyperlocal__steps">
                         <div className="hyperlocal__step">
@@ -74,9 +74,9 @@ const PrepaidAndCOD = () => {
 
             <section className="prepaid-and-cod__why-offer">
                 <div className='amazon-self-ship-container'>
-                    <h2>Why Offer Multiple Payment Options?</h2>
-                    <div className='row'>
-                        <ul className="why_cod-steps col-7">
+                    <h2 className='heading'>Why Offer Multiple Payment Options?</h2>
+                    <div className='row flex-column-reverse flex-lg-row'>
+                        <ul className="why_cod-steps col-12 col-lg-7">
                             <li className="why_cod-step">
                                 <p><span>More Engagement</span><br />
                                     Empower your customers to make the right payment choice at the right time.</p>
@@ -94,7 +94,7 @@ const PrepaidAndCOD = () => {
                                     Increase trust and loyalty by going the extra mile for your customers.</p>
                             </li>
                         </ul>
-                        <div className='why-cod-bg col-5'>
+                        <div className='why-cod-bg col-12 col-lg-5'>
                             <img src={Benefits} alt="Benefits" />
                         </div>
                     </div>
@@ -103,13 +103,13 @@ const PrepaidAndCOD = () => {
 
             <section className="prepaid-and-cod__benefits">
                 <div className='amazon-self-ship-container'>
-                    <h2>Benefits of Offering COD</h2>
+                    <h2 className="heading">Benefits of Offering COD</h2>
                     <div className="benefits__container">
                         <div className="benefits__item">
                             <div className="icon">
                                 <img src={TransactionImage} alt="" />
                             </div>
-                            <h3>Convenient Transactions</h3>
+                            <h3 className="heading">Convenient Transactions</h3>
                             <p>Allow customers to pay upon receiving the product, making it easier for them to purchase from your store.</p>
                         </div>
 
@@ -117,7 +117,7 @@ const PrepaidAndCOD = () => {
                             <div className="icon">
                                 <img src={NoFraudImage} alt="" />
                             </div>
-                            <h3>No Fraud Risks</h3>
+                            <h3 className="heading">No Fraud Risks</h3>
                             <p>By offering COD, you minimize the risk of fraud by ensuring payments are only made after successful delivery.</p>
                         </div>
 
@@ -125,7 +125,7 @@ const PrepaidAndCOD = () => {
                             <div className="icon">
                                 <img src={FlexiblePaymentImage} alt="" />
                             </div>
-                            <h3>Flexible Payment Options</h3>
+                            <h3 className="heading">Flexible Payment Options</h3>
                             <p>Give customers the flexibility to choose between COD and prepaid options, catering to their preferred payment methods.</p>
                         </div>
 
@@ -133,7 +133,7 @@ const PrepaidAndCOD = () => {
                             <div className="icon">
                                 <img src={IncreasedSalesImage} alt="" />
                             </div>
-                            <h3>Increased Sales Opportunities</h3>
+                            <h3 className="heading">Increased Sales Opportunities</h3>
                             <p>Attract a wider range of customers who prefer paying for products upon delivery, expanding your customer base.</p>
                         </div>
                     </div>
