@@ -186,6 +186,25 @@
         min-height: 73px;
         align-items: flex-start;
     }
+
+    .tracking-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .tracking-container .tracking-content {
+        text-align: center;
+    }
+
+    .tracking-container .tracking-content img {
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .tracking-form {
+        width: 500px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -293,6 +312,36 @@
         width: 80%;
         margin-left: 60px;
     }
+
+    .tracking-content {
+        max-width: 100%;
+        padding: 0;
+        min-width: unset;
+    }
+
+    .tracking-container .tracking-content img {
+        max-width: 90%;
+    }
+
+    .tracking-form {
+        max-width: unset;
+        min-width: 100%;
+        width: auto;
+        padding: 10px;
+    }
+
+    .tracking-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .tracking-description {
+        font-size: 16px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -381,6 +430,11 @@
     .feature-card-content .benefit-list {
         min-height: 140px;
     }
+
+
+    .tracking-form .tab-button {
+        padding: 6px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -425,5 +479,19 @@
 
     .feature-card-content>div {
         min-height: 172px;
+    }
+
+    .order-header {
+        align-items: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .order-header>*{
+        text-align: right;
+    }
+
+    .courier-card {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

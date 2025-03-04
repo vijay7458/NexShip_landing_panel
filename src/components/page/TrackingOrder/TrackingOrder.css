@@ -155,26 +155,5 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .tracking-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .tracking-content,
-    .tracking-form {
-        max-width: 100%;
-    }
-
-    .tracking-heading {
-        font-size: 28px;
-    }
-
-    .tracking-description {
-        font-size: 16px;
-    }
-
-    .tab-button {
-        font-size: 14px;
-    }
+    
 }

@@ -192,10 +192,10 @@ const TrackingOrder = () => {
                 showOrderTracking ?
                     <>
                         <div className='row justify-content-center mt-5 w-100'>
-                            <div className='col-5'>
+                            <div className='col-12 col-md-7 col-lg-5'>
                                 <OrderDetailsCard TrackingData={TrackingData} />
                             </div>
-                            <div className='col-5'>
+                            <div className='col-12 col-md-7 col-lg-5'>
                                 <div className='d-flex flex-column'>
                                     <CourierInfo TrackingData={TrackingData} />
                                     <hr style={{ width: '93%', marginLeft: '25px', marginBlock: '0px' }} />
