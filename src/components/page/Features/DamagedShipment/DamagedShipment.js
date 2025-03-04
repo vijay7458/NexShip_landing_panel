@@ -77,13 +77,13 @@ const DamagedShipment = () => {
                 {/* Feature Highlights */}
                 <section className="damaged-shipment-highlights">
                     {/* <h2 className='heading text-center'>Key Benefits</h2> */}
-                    <ul className='col-6'>
+                    <ul className='col-12 col-lg-6'>
                         <li><WarehouseIcon /> One-stop platform for managing all shipment issues.</li>
                         <li><IntegrationIcon /> Seamless integration with top shipping carriers.</li>
                         <li><TrackingIcon /> Real-time tracking of damage resolution status.</li>
                         <li><AnalyticsIcon /> Comprehensive reporting and analytics for strategic insights.</li>
                     </ul>
-                    <div className='col-6 text-end'>
+                    <div className='col-12 col-lg-6 text-lg-end'>
                         <img src={DamagedShipmentImage} alt="Damaged Shipment Image" />
                     </div>
                 </section>
