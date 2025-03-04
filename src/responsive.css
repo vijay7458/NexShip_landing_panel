@@ -214,6 +214,24 @@
     .damaged-shipment-highlights img {
         width: 100%;
     }
+
+    .business-plan-page .plans-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-inline: 15px;
+    }
+
+    .business-plan-page .plans-container .plan-item:nth-of-type(1),
+    .business-plan-page .plans-container .plan-item:nth-of-type(3) {
+        margin-block: 0;
+    }
+
+    .book-demo-sec {
+        width: 92%;
+        margin-inline: auto;
+        /* max-width: 380px; */
+    }
 }
 
 @media only screen and (max-width: 900px) {
