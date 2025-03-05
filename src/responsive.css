@@ -278,6 +278,10 @@
     .hyperlocal__marketplace>div:last-of-type {
         padding-left: calc(var(--bs-gutter-x) * .5);
     }
+
+    .early-cod__steps .hyperlocal__step {
+        max-width: 60%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -477,6 +481,18 @@
 
     .hyperlocal__cta-title {
         font-size: 1.6rem;
+    }
+
+    .early-cod__steps .hyperlocal__steps {
+        padding-inline: 15px;
+    }
+
+    .early-cod__steps-bg {
+        display: none;
+    }
+
+    .early-cod__steps .hyperlocal__step {
+        max-width: 100%;
     }
 }
 

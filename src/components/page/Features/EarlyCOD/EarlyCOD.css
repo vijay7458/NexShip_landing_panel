@@ -20,11 +20,6 @@
     margin-top: 10px;
 }
 
-.early-cod__features,
-.early-cod__steps {
-    padding: 40px 20px;
-}
-
 .early-cod__section-title {
     font-size: 2rem;
     text-align: center;
@@ -95,6 +90,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 1;
 }
 
 .early-cod__steps-bg img {
