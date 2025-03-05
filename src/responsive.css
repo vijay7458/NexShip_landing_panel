@@ -460,6 +460,7 @@
 
     .shipment-protection__opt-for-cover {
         padding-bottom: 180px;
+        padding-inline: 15px;
     }
 
     .shipment-protection-image {
