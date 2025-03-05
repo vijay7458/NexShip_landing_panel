@@ -91,13 +91,6 @@
     border-radius: 8px;
 }
 
-.hyperlocal__feature-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #092C4C;
-    margin-bottom: 1rem;
-}
-
 /* Benefits Section */
 .hyperlocal__marketplace {
     margin-bottom: 3rem;
@@ -202,4 +195,16 @@
 
 .hyperlocal__cta-button:hover {
     background-color: #ecf0f1;
+}
+
+.hyperlocal__marketplace>div:last-of-type {
+    padding-left: 3rem;
+}
+
+.hyperlocal__page-container section {
+    padding-inline: 20px;
+}
+
+.hyperlocal__header{
+    padding-inline: 20px;
 }

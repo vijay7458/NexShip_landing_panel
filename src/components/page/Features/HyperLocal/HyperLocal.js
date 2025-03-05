@@ -37,14 +37,14 @@ const HyperLocal = () => {
 
                 {/* HyperLocal Overview Section */}
                 <section className="hyperlocal__overview row">
-                    <div className='col-6'>
+                    <div className='col-12 col-md-6'>
                         <h2 className="heading">What is HyperLocal Delivery?</h2>
                         <p className="hyperlocal__description">
                             Hyperlocal delivery focuses on quickly delivering products directly from local sellers to customers within a specific area.
                             Our service ensures your deliveries are fast, reliable, and cost-effective, helping businesses to better serve their customers with shorter transit times.
                         </p>
                     </div>
-                    <div className='col-6 text-end'>
+                    <div className='col-12 col-md-6 text-center text-md-end'>
                         <img src={HyperLocalBG} alt="Hyper Local" />
                     </div>
                 </section>
@@ -61,7 +61,7 @@ const HyperLocal = () => {
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 className="hyperlocal__feature-title">Speed and Reliability</h3>
+                                    <h3 className="ndr-management__feature-title">Speed and Reliability</h3>
                                     <p>Ensure rapid deliveries to customers, with products reaching them in a matter of hours, not days. This leads to happier customers and repeat business.</p>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ const HyperLocal = () => {
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 className="hyperlocal__feature-title">Real-Time Tracking</h3>
+                                    <h3 className="ndr-management__feature-title">Real-Time Tracking</h3>
                                     <p>Stay informed with real-time tracking, giving both businesses and customers full visibility of the delivery process from start to finish.</p>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ const HyperLocal = () => {
                                     </span>
                                 </div>
                                 <div>
-                                    <h3 className="hyperlocal__feature-title">Optimized Delivery Routes</h3>
+                                    <h3 className="ndr-management__feature-title">Optimized Delivery Routes</h3>
                                     <p>Optimize delivery routes to reduce fuel costs and improve delivery times, ensuring your customers receive their products faster and more efficiently.</p>
                                 </div>
                             </div>
@@ -97,10 +97,10 @@ const HyperLocal = () => {
 
                 {/* Hyperlocal Marketplace Benefits Section */}
                 <section className="hyperlocal__marketplace row pt-5">
-                    <div className="col-4">
+                    <div className="col-12 col-md-6 col-lg-4">
                         <img src={WhyHyperLocal} alt="Why Hyper Local" />
                     </div>
-                    <div className='col-7 ps-5'>
+                    <div className='col-12 col-md-6 col-lg-7'>
                         <h2 className="heading text-center mb-3">Why Choose HyperLocal Delivery?</h2>
                         <p className="hyperlocal__description">
                             By utilizing our hyperlocal delivery service, businesses can experience faster, more reliable deliveries, resulting in cost savings, improved customer loyalty, and increased sales. Here are the key benefits:

@@ -10,6 +10,16 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .hyperlocal__marketplace>div:first-of-type {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .hyperlocal__marketplace>div:first-of-type img {
+        width: 140%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -260,6 +270,14 @@
     .shipment-protection-image {
         bottom: -133px;
     }
+
+    .hyperlocal__marketplace>div:first-of-type img {
+        width: 100%;
+    }
+
+    .hyperlocal__marketplace>div:last-of-type {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -437,6 +455,24 @@
 
     .ndr-management__benefits {
         gap: 15px;
+    }
+
+    .hyperlocal__marketplace {
+        flex-direction: column-reverse;
+    }
+
+    .hyperlocal__marketplace>div:first-of-type {
+        justify-content: center;
+    }
+
+    .hyperlocal__overview img,
+    .hyperlocal__marketplace>div:first-of-type img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hyperlocal__cta-title {
+        font-size: 1.6rem;
     }
 }
 
