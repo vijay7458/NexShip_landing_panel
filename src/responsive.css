@@ -541,6 +541,11 @@
     .pickup-benefits-items {
         flex-direction: column;
     }
+
+    .hyperlocal__overview .heading,
+    .hyperlocal__description {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 575px) {
