@@ -96,7 +96,7 @@ const PickupLocations = () => {
 
             <section className="pickup-locations__section">
                 <div className='amazon-self-ship-container'>
-                    <h2 className="pickup-locations__section-title">How to Manage Pickup Locations</h2>
+                    <h2 className="heading text-center">How to Manage Pickup Locations</h2>
                     <div className="pickup-locations__steps">
                         <div className="pickup-locations__step">
                             <h3 className="pickup-locations__step-title">Add New Pickup Address</h3>
@@ -112,9 +112,9 @@ const PickupLocations = () => {
 
             <section className="pickup-locations__benefits">
                 <div className='amazon-self-ship-container'>
-                    <h2 className="pickup-locations__section-title">Why You Should Optimize Your Pickup Locations</h2>
+                    <h2 className="heading text-center">Why You Should Optimize Your Pickup Locations</h2>
                     <div className='row'>
-                        <div className='col-6'>
+                        <div className='col-12 col-lg-6 pickup-benefits-items'>
                             <div className="pickup-locations__benefit">
                                 <FasterDeliveryIcom />
                                 <h3 className="pickup-locations__benefit-title">Faster Delivery</h3>
@@ -131,7 +131,7 @@ const PickupLocations = () => {
                                 <p>Reduce shipping costs by selecting a nearby pickup location, minimizing transportation expenses.</p>
                             </div>
                         </div>
-                        <div className='col-6 d-flex justify-content-center align-items-center'>
+                        <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
                             <img className='pickup-benefits-bg' src={MultiplePickupBG} alt="" />
                         </div>
                     </div>
@@ -144,7 +144,7 @@ const PickupLocations = () => {
                         <img src={FaqBg} alt="" />
                     </div>
                     <p className='subtitle text-center mb-3'>FAQ</p>
-                    <h2 className="pickup-locations__section-title">Frquently Asked Questions <br />
+                    <h2 className="heading text-center">Frquently Asked Questions <br />
                         <span className='pickup-locations__subtitle'>about Multiple Pickup Locations</span>
                     </h2>
                     <div className="pickup-locations__faqs-list">

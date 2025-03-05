@@ -58,6 +58,31 @@
     .header .navigation ul {
         gap: 1.4rem;
     }
+
+    .pickup-locations__faqs-section .amazon-self-ship-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pickup-locations__faqs-section .amazon-self-ship-container>p {
+        order: o;
+    }
+
+    .pickup-locations__faqs-section .amazon-self-ship-container>h2 {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .pickup-locations-faq-bg {
+        position: unset;
+        text-align: center;
+        order: 2;
+    }
+
+    .pickup-locations__faqs-list {
+        order: 3;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -282,6 +307,11 @@
     .early-cod__steps .hyperlocal__step {
         max-width: 60%;
     }
+
+    .pickup-benefits-items {
+        display: flex;
+        gap: 15px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -494,6 +524,10 @@
     .early-cod__steps .hyperlocal__step {
         max-width: 100%;
     }
+
+    .pickup-benefits-items {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -604,6 +638,12 @@
 
     .amazon-self-ship__features-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pickup-benefits-bg {
+        height: auto;
+        width: 90%;
+        margin-inline: auto;
     }
 }
 

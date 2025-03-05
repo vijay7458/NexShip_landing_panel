@@ -75,7 +75,7 @@
 
 /* Benefits Section */
 .pickup-locations__benefits {
-    padding: 50px 20px;
+    padding: 50px 0px;
     background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
     /* Lighter blue to match the overall theme */
 }
@@ -111,7 +111,7 @@
 /* PickupLocations FAQ Section Styles */
 
 .pickup-locations__faqs-section {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     background-color: #f9f9f9;
     border-radius: 8px;
     margin-top: 2rem;
