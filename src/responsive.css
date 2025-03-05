@@ -16,7 +16,12 @@
     #orbit-system {
         margin: 0 !important;
     }
+
+    .shipment-protection__cover-options {
+        gap: 110px;
+    }
 }
+
 
 @media only screen and (max-width: 1140px) {
     .hero-banner {
@@ -251,6 +256,10 @@
     .shipping-rate-calculator__header {
         padding-inline: 20px;
     }
+
+    .shipment-protection-image {
+        bottom: -133px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -392,6 +401,31 @@
     .benefits__container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .shipment-protection__opt-for-cover {
+        padding-bottom: 180px;
+    }
+
+    .shipment-protection-image {
+        width: 70%;
+        left: 15%;
+        bottom: -180px;
+    }
+
+    .shipment-protection__cover-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shipment-protection__cover {
+        width: 100%;
+    }
+
+    .shipment-protection-image {
+        width: 70%;
+        left: 15%;
+        bottom: -180px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -489,6 +523,16 @@
     .damaged-shipment-highlights img {
         width: 90%;
     }
+
+    .shipment-protection__opt-for-cover {
+        padding-bottom: 180px;
+    }
+
+    .shipment-protection-image {
+        width: 100%;
+        left: 0;
+        bottom: -180px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -565,5 +609,24 @@
     .damaged-shipment-item .solutions-image svg {
         width: 100px;
         height: 100px;
+    }
+
+    .shipment-protection__opt-for-cover {
+        padding-bottom: 180px;
+    }
+
+    .shipment-protection-image {
+        width: 100%;
+        left: 0;
+        bottom: -180px;
+    }
+
+    .shipment-protection-image img {
+        width: 100%;
+    }
+
+    .shipment-protection__product-list {
+        flex-direction: column;
+        align-items: center;
     }
 }

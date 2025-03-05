@@ -78,11 +78,12 @@
 /* Cover Options Section */
 .shipment-protection__opt-for-cover {
     background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
-    padding: 2rem;
+    padding: 10% 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-block: 5rem;
     padding-bottom: 124px;
+    overflow: hidden;
 }
 
 .shipment-protection__cover-options {
@@ -95,10 +96,12 @@
 
 .shipment-protection-image {
     position: absolute;
-    top: 42%;
-    left: 32%;
-    width: max-content;
+    bottom: -61%;
+    left: 25%;
+    width: 50%;
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .shipment-protection-image img {
@@ -169,32 +172,4 @@
     font-weight: 600;
     color: #333;
     margin-top: 0.5rem;
-}
-
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .shipment-protection__cover-options {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .shipment-protection__cover {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
-    .shipment-protection__steps {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .shipment-protection__product-list {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .shipment-protection__product-item {
-        max-width: 100%;
-    }
 }
