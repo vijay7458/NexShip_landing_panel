@@ -1,4 +1,8 @@
 /* Page Container */
+.ndr-management__page-container {
+    padding: 20px;
+}
+
 .ndr-management__page-container>section {
     max-width: 1200px;
     margin-inline: auto;

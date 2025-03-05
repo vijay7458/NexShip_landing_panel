@@ -426,6 +426,18 @@
         left: 15%;
         bottom: -180px;
     }
+
+    .ndr-management__feature-cards {
+        flex-direction: column;
+    }
+
+    .ndr-management__feature-card {
+        width: 100%;
+    }
+
+    .ndr-management__benefits {
+        gap: 15px;
+    }
 }
 
 @media only screen and (max-width: 575px) {

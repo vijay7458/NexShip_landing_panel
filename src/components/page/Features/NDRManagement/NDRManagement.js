@@ -92,7 +92,7 @@ const NDRManagement = () => {
 
                 {/* Benefits Section */}
                 <section className="ndr-management__benefits row">
-                    <div className='col-6'>
+                    <div className='col-12 col-md-6'>
                         <h2 className="heading mb-5">Why Choose Our NDR Management System?</h2>
                         <ul className="ndr-management__benefit-list">
                             <li className="ndr-management__benefit-item"><CheckIcon />Reduce customer complaints and dissatisfaction.</li>
@@ -101,7 +101,7 @@ const NDRManagement = () => {
                             <li className="ndr-management__benefit-item"><CheckIcon />Generate reports for continuous improvement.</li>
                         </ul>
                     </div>
-                    <div className='col-6 text-end'>
+                    <div className='col-12 col-md-6 text-center text-md-end'>
                         <img src={NdrBg} alt="NDR Management" />
                     </div>
                 </section>
