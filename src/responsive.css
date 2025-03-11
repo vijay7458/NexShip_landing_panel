@@ -324,6 +324,11 @@
         display: flex;
         gap: 15px;
     }
+
+    .hyperlocal__overview img {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -516,12 +521,6 @@
         justify-content: center;
     }
 
-    .hyperlocal__overview img,
-    .hyperlocal__marketplace>div:first-of-type img {
-        width: 100%;
-        max-width: 400px;
-    }
-
     .hyperlocal__cta-title {
         font-size: 1.6rem;
     }
@@ -545,6 +544,14 @@
     .hyperlocal__overview .heading,
     .hyperlocal__description {
         text-align: center;
+    }
+
+    .hyperlocal__marketplace>div:last-of-type {
+        padding: 0;
+    }
+
+    .hyperlocal__marketplace>div:first-of-type img {
+        max-width: 500px;
     }
 }
 

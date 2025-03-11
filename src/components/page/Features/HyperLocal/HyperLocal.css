@@ -203,8 +203,9 @@
 
 .hyperlocal__page-container section {
     padding-inline: 20px;
+    margin-inline: auto;
 }
 
-.hyperlocal__header{
+.hyperlocal__header {
     padding-inline: 20px;
 }
