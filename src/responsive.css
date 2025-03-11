@@ -605,6 +605,18 @@
     .channel-integration .bubble-image {
         opacity: 0;
     }
+
+    .whatsapp-integration-container__cta {
+        padding-inline: 0;
+    }
+
+    .whatsapp-integration-container__cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .whatsapp-integration-container__cta p {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -729,6 +741,10 @@
 
     .page-header-description {
         font-size: 1rem;
+    }
+
+    .whatsapp-integration-container .whatsapp-features-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
