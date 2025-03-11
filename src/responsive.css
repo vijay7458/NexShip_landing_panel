@@ -722,6 +722,10 @@
     .carrier-integration__partner-list {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .page-header-description {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -769,7 +773,7 @@
 
     .page-header h1,
     .hero-banner .banner-text h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .feature-card-content .benefit-list {

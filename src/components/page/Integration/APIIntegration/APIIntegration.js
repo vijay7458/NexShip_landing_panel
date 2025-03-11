@@ -32,7 +32,7 @@ const APIIntegration = () => {
             <div className="api-integration-container">
                 <section className="api-integration-intro">
                     <div className="amazon-self-ship-container row">
-                        <div className='col-6'>
+                        <div className='ool-12 col-md-6'>
                             <h1 className="heading text-center">API Integration</h1>
                             <p className="api-integration-description">
                                 Connect your eCommerce store to your Shipease account and manage all your orders from a single platform.
@@ -42,7 +42,7 @@ const APIIntegration = () => {
                                 Stay on top of your shipments, streamline processes, and never lose track of an order again.
                             </p>
                         </div>
-                        <div className='col-6 d-flex align-items-center justify-content-center'>
+                        <div className='ool-12 col-md-6 d-flex align-items-center justify-content-center'>
                             <img src={ApiIntegrationImg} alt="API Integration" />
                         </div>
                     </div>
