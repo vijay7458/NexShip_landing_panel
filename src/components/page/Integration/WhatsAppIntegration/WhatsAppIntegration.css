@@ -26,14 +26,9 @@
 /* Core Applications Section */
 .whatsapp-integration-container__core-applications {
     text-align: center;
-    margin-bottom: 50px;
+    margin-block: 50px;
 }
 
-.whatsapp-integration-container__core-applications h2 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-    font-weight: 600;
-}
 
 .whatsapp-integration-container__core-applications .core-applications-grid {
     display: grid;
@@ -81,12 +76,6 @@
     margin-bottom: 50px;
 }
 
-.whatsapp-integration-container__features h2 {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    font-weight: 600;
-    text-align: center;
-}
 
 .whatsapp-integration-container__features .whatsapp-features-grid {
     display: grid;
@@ -126,11 +115,6 @@
     border-radius: 10px;
 }
 
-.whatsapp-integration-container__cta h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
 
 .whatsapp-integration-container__cta p {
     font-size: 1.2rem;

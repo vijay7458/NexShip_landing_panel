@@ -37,7 +37,7 @@ const WhatsAppIntegration = () => {
       {/* Core Applications Section */}
       <div className="whatsapp-integration-container__core-applications">
         <div className="amazon-self-ship-container">
-          <h2>Core Applications</h2>
+          <h2 className='heading text-center'>Core Applications</h2>
           <div className="core-applications-grid">
             <div className="core-application-card">
               <div className='my-3'>
@@ -74,7 +74,7 @@ const WhatsAppIntegration = () => {
       {/* Features Section */}
       <div className="whatsapp-integration-container__features">
         <div className="amazon-self-ship-container">
-          <h2>Key Features</h2>
+          <h2 className='heading text-center'>Key Features</h2>
           <div className="whatsapp-features-grid">
             <div className="whatsapp-feature-card">
               <h3>Seamless Order Creation</h3>
@@ -99,7 +99,7 @@ const WhatsAppIntegration = () => {
       {/* CTA Section */}
       <div className="whatsapp-integration-container__cta">
         <div className="amazon-self-ship-container">
-          <h2>Get Started with WhatsApp Integration Today</h2>
+          <h2 className='heading text-center'>Get Started with WhatsApp Integration Today</h2>
           <p>Unlock the potential of WhatsApp in your logistics operations. Start integrating now.</p>
           <button className="btn main-button">Start Now</button>
         </div>
