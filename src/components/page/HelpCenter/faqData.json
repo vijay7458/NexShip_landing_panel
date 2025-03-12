@@ -333,7 +333,7 @@
             },
             {
                 "id": 560,
-                "question": "How can I reduce my RTO Shipments? What are the tools offered by Shiprocket?",
+                "question": "How can I reduce my RTO Shipments? What are the tools offered by Shipease?",
                 "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
             }
         ],
@@ -345,7 +345,7 @@
             },
             {
                 "id": 661,
-                "question": "How to raise a delivery dispute in Shiprocket?",
+                "question": "How to raise a delivery dispute in Shipease?",
                 "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
             },
             {
@@ -424,12 +424,12 @@
             },
             {
                 "id": 881,
-                "question": "What is Shiprocket Direct-Ship?",
+                "question": "What is Shipease Direct-Ship?",
                 "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
             },
             {
                 "id": 882,
-                "question": "How to activate Shiprocket Direct-ship?",
+                "question": "How to activate Shipease Direct-ship?",
                 "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
             }
         ]
@@ -659,17 +659,17 @@
             },
             {
                 "id": 1412,
-                "question": "How Do I integrate Woocommerce with Shiprocket?",
+                "question": "How Do I integrate Woocommerce with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1413,
-                "question": "How do I integrate Shopify as a channel with Shiprocket?",
+                "question": "How do I integrate Shopify as a channel with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1414,
-                "question": "How do I integrate Unicommerce with Shiprocket?",
+                "question": "How do I integrate Unicommerce with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -684,32 +684,32 @@
             },
             {
                 "id": 1417,
-                "question": "Shiprocket Wordpress App Help Document",
+                "question": "Shipease Wordpress App Help Document",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1418,
-                "question": "How do I integrate Ecwid as a channel with Shiprocket ?",
+                "question": "How do I integrate Ecwid as a channel with Shipease ?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1419,
-                "question": "How Do I integrate Opencart with Shiprocket?",
+                "question": "How Do I integrate Opencart with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1420,
-                "question": "How Do I integrate Magento(version 1) with Shiprocket?",
+                "question": "How Do I integrate Magento(version 1) with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1421,
-                "question": "How Do I integrate Magento(Version 2) with Shiprocket?",
+                "question": "How Do I integrate Magento(Version 2) with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1422,
-                "question": "How to Integrate Prestashop with Shiprocket?",
+                "question": "How to Integrate Prestashop with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -724,17 +724,17 @@
             },
             {
                 "id": 1425,
-                "question": "How do I integrate my Zoho website with Shiprocket?",
+                "question": "How do I integrate my Zoho website with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1426,
-                "question": "How do I integrate my Store Hippo account with Shiprocket?",
+                "question": "How do I integrate my Store Hippo account with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1427,
-                "question": "How to integrate Facebook Messenger with Shiprocket?",
+                "question": "How to integrate Facebook Messenger with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -744,7 +744,7 @@
             },
             {
                 "id": 1429,
-                "question": "How do I integrate Instamojo with Shiprocket?",
+                "question": "How do I integrate Instamojo with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -754,12 +754,12 @@
             },
             {
                 "id": 1431,
-                "question": "How to Integrate Kartrocket with Shiprocket?",
+                "question": "How to Integrate Kartrocket with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1432,
-                "question": "How do I integrate 'WIX' as a channel with Shiprocket ?",
+                "question": "How do I integrate 'WIX' as a channel with Shipease ?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -771,7 +771,7 @@
             },
             {
                 "id": 1511,
-                "question": "What kind of packaging is available with Shiprocket Fulfillment?",
+                "question": "What kind of packaging is available with Shipease Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -796,7 +796,7 @@
             },
             {
                 "id": 1516,
-                "question": "Is GST applicable on SRF packaging?",
+                "question": "Is GST applicable on SEF packaging?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -850,7 +850,7 @@
             },
             {
                 "id": 1711,
-                "question": "What kind of packaging is available with Shiprocket Fulfillment?",
+                "question": "What kind of packaging is available with Shipease Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -875,7 +875,7 @@
             },
             {
                 "id": 1716,
-                "question": "Is GST applicable on SRF packaging?",
+                "question": "Is GST applicable on SEF packaging?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -887,17 +887,17 @@
             },
             {
                 "id": 1711,
-                "question": "How to add and search your customer's details in Shiprocket?",
+                "question": "How to add and search your customer's details in Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1712,
-                "question": "What are the benefits of saving customer details in Shiprocket?",
+                "question": "What are the benefits of saving customer details in Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1713,
-                "question": "What Customer Insights Can You Gain from Shiprocket's Customer Profiles?",
+                "question": "What Customer Insights Can You Gain from Shipease's Customer Profiles?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -911,27 +911,27 @@
             },
             {
                 "id": 1811,
-                "question": "What is Shiprocket Brand Boost?",
+                "question": "What is Shipease Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1812,
-                "question": "What are the benefits of Using Shiprocket Brand Boost?",
+                "question": "What are the benefits of Using Shipease Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1813,
-                "question": "How to Use Shiprocket Brand Boost?",
+                "question": "How to Use Shipease Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1814,
-                "question": "What is the difference between basic tracking page and Shiprocket Brand Boost?",
+                "question": "What is the difference between basic tracking page and Shipease Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1815,
-                "question": "Want to Empower Your Customers? Unlock Shiprocket's Order Tracking Widget",
+                "question": "Want to Empower Your Customers? Unlock Shipease's Order Tracking Widget",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -958,7 +958,7 @@
             },
             {
                 "id": 1913,
-                "question": "I don’t want to send any order notification from Shiprocket. Help me!",
+                "question": "I don’t want to send any order notification from Shipease. Help me!",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -998,7 +998,7 @@
             },
             {
                 "id": 1921,
-                "question": "Which shipment status updates does Shiprocket send?",
+                "question": "Which shipment status updates does Shipease send?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1029,12 +1029,12 @@
             },
             {
                 "id": 2111,
-                "question": "What is Shiprocket Early COD? Should I opt for it?",
+                "question": "What is Shipease Early COD? Should I opt for it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2112,
-                "question": "How to activate Early COD for my Shiprocket account?",
+                "question": "How to activate Early COD for my Shipease account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1046,12 +1046,12 @@
             },
             {
                 "id": 2211,
-                "question": "I have already activated Shiprocket Postpaid, but it's not showing active for my account.",
+                "question": "I have already activated Shipease Postpaid, but it's not showing active for my account.",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2212,
-                "question": "What is Shiprocket Postpaid? How do I activate it?",
+                "question": "What is Shipease Postpaid? How do I activate it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1080,7 +1080,7 @@
             },
             {
                 "id": 2411,
-                "question": "What are the available plans in Shiprocket and which one would be the most suitable for my shipping needs?",
+                "question": "What are the available plans in Shipease and which one would be the most suitable for my shipping needs?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1090,12 +1090,12 @@
             },
             {
                 "id": 2413,
-                "question": "How do I recharge my Shiprocket wallet?",
+                "question": "How do I recharge my Shipease wallet?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2414,
-                "question": "I want to upgrade my Shiprocket plan. How do I do it?",
+                "question": "I want to upgrade my Shipease plan. How do I do it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1126,7 +1126,7 @@
             },
             {
                 "id": 2612,
-                "question": "What benefits does onboarding onto the ONDC network through Shiprocket offer?",
+                "question": "What benefits does onboarding onto the ONDC network through Shipease offer?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1190,12 +1190,12 @@
             },
             {
                 "id": 2812,
-                "question": "Do all orders received through ONDC require shipment exclusively through Shiprocket?",
+                "question": "Do all orders received through ONDC require shipment exclusively through Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2813,
-                "question": "Is Shiprocket planning to implement specific courier rules to identify such orders?",
+                "question": "Is Shipease planning to implement specific courier rules to identify such orders?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1291,7 +1291,7 @@
             },
             {
                 "id": 3114,
-                "question": "How does the product get returned when a customer complaint has been accepted, and should it be returned through Shiprocket or Non- Shiprocket logistics courier partner?",
+                "question": "How does the product get returned when a customer complaint has been accepted, and should it be returned through Shipease or Non- Shipease logistics courier partner?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1347,7 +1347,7 @@
             },
             {
                 "id": 3314,
-                "question": "I want to send my shipment outside India. How do I check the international shipping rate in Shiprocket?",
+                "question": "I want to send my shipment outside India. How do I check the international shipping rate in Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1364,12 +1364,12 @@
             },
             {
                 "id": 3411,
-                "question": "Can I see all Shiprocket rates in one place?",
+                "question": "Can I see all Shipease rates in one place?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 3412,
-                "question": "How to compare different Shiprocket plans rates while using filters?",
+                "question": "How to compare different Shipease plans rates while using filters?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1467,7 +1467,7 @@
             },
             {
                 "id": 3711,
-                "question": "What are the basic details required to start shipping with Shiprocket?",
+                "question": "What are the basic details required to start shipping with Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1526,7 +1526,7 @@
             },
             {
                 "id": 3911,
-                "question": "Shiprocket API Document Helpsheet",
+                "question": "Shipease API Document Helpsheet",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1562,22 +1562,22 @@
             },
             {
                 "id": 4111,
-                "question": "List of Goods Covered Under Shiprocket Secure",
+                "question": "List of Goods Covered Under Shipease Secure",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4112,
-                "question": "List of Goods Not Covered Under Shiprocket Secure",
+                "question": "List of Goods Not Covered Under Shipease Secure",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4113,
-                "question": "What Is Shiprocket Secure? How Do I Activate It for My Account?",
+                "question": "What Is Shipease Secure? How Do I Activate It for My Account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4114,
-                "question": "How to activate Shiprocket Secure?",
+                "question": "How to activate Shipease Secure?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1648,7 +1648,7 @@
             },
             {
                 "id": 4311,
-                "question": "Download Shiprocket App",
+                "question": "Download Shipease App",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1658,12 +1658,12 @@
             },
             {
                 "id": 4313,
-                "question": "Shiprocket App: Can I add my brand logo and product details to the shipping label?",
+                "question": "Shipease App: Can I add my brand logo and product details to the shipping label?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4314,
-                "question": "Can I integrate my sales channel using Shiprocket app?",
+                "question": "Can I integrate my sales channel using Shipease app?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1675,12 +1675,12 @@
             },
             {
                 "id": 4411,
-                "question": "Shiprocket App: Explain Weight Discrepancy tab",
+                "question": "Shipease App: Explain Weight Discrepancy tab",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4412,
-                "question": "Shiprocket App: Shipment weight terms you should know",
+                "question": "Shipease App: Shipment weight terms you should know",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1692,7 +1692,7 @@
             },
             {
                 "id": 4511,
-                "question": "How to create a return order in Shiprocket App?",
+                "question": "How to create a return order in Shipease App?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1714,17 +1714,17 @@
             },
             {
                 "id": 4612,
-                "question": "Shiprocket App: When will I receive my COD payment?",
+                "question": "Shipease App: When will I receive my COD payment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4613,
-                "question": "Shiprocket App: All about freight invoices",
+                "question": "Shipease App: All about freight invoices",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4614,
-                "question": "Explaining Shiprocket Passbook Charges",
+                "question": "Explaining Shipease Passbook Charges",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -1738,12 +1738,12 @@
             },
             {
                 "id": 4711,
-                "question": "What is Shiprocket Fulfillment?",
+                "question": "What is Shipease Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4712,
-                "question": "How does SRF work?",
+                "question": "How does SEF work?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1758,17 +1758,17 @@
             },
             {
                 "id": 4715,
-                "question": "How do you add products to your Shiprocket Fulfillment Account?",
+                "question": "How do you add products to your Shipease Fulfillment Account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4716,
-                "question": "Shiprocket Fulfillment: Will you also manage my return orders?",
+                "question": "Shipease Fulfillment: Will you also manage my return orders?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4717,
-                "question": "I’m on the Shiprocket Lite plan. Can I still register for SRF?",
+                "question": "I’m on the Shipease Lite plan. Can I still register for SEF?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1778,12 +1778,12 @@
             },
             {
                 "id": 4719,
-                "question": "How to activate your Shiprocket Fulfillment account?",
+                "question": "How to activate your Shipease Fulfillment account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4720,
-                "question": "How do I map products in Shiprocket Fulfillment?",
+                "question": "How do I map products in Shipease Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1792,10 +1792,10 @@
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
-        "SRF Pricing": [
+        "SEF Pricing": [
             {
                 "id": 48,
-                "question": "What is SRF Pricing?",
+                "question": "What is SEF Pricing?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1809,15 +1809,15 @@
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
-        "SRF Inventory": [
+        "SEF Inventory": [
             {
                 "id": 49,
-                "question": "What is SRF Inventory ?",
+                "question": "What is SEF Inventory ?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4911,
-                "question": "How much inventory do you need for SRF?",
+                "question": "How much inventory do you need for SEF?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1837,7 +1837,7 @@
             },
             {
                 "id": 4915,
-                "question": "I want to register for SRF, but my business needs are season specific. Please help!",
+                "question": "I want to register for SEF, but my business needs are season specific. Please help!",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1867,7 +1867,7 @@
             },
             {
                 "id": 4921,
-                "question": "How can I make product combos in my Shiprocket Fulfillment Account?",
+                "question": "How can I make product combos in my Shipease Fulfillment Account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1881,10 +1881,10 @@
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
-        "SRF Packaging": [
+        "SEF Packaging": [
             {
                 "id": 50,
-                "question": "What is SRF Packaging?",
+                "question": "What is SEF Packaging?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1996,22 +1996,22 @@
             },
             {
                 "id": 5613,
-                "question": "Can I submit my KYC details via Shiprocket app?",
+                "question": "Can I submit my KYC details via Shipease app?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5614,
-                "question": "Shiprocket App: I want to integrate my sales channels?",
+                "question": "Shipease App: I want to integrate my sales channels?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5615,
-                "question": "How to set the courier priority in Shiprocket App?",
+                "question": "How to set the courier priority in Shipease App?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5616,
-                "question": "I want to add my customer details in Shiprocket App",
+                "question": "I want to add my customer details in Shipease App",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -2028,7 +2028,7 @@
             },
             {
                 "id": 5711,
-                "question": "Shiprocket App: How to ship my local orders?",
+                "question": "Shipease App: How to ship my local orders?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -2045,22 +2045,22 @@
             },
             {
                 "id": 5811,
-                "question": "Shiprocket App: How to escalate my order pickup?",
+                "question": "Shipease App: How to escalate my order pickup?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5812,
-                "question": "Shiprocket App: My order hasn't been delivered yet. How to escalate it?",
+                "question": "Shipease App: My order hasn't been delivered yet. How to escalate it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5813,
-                "question": "Shiprocket App: How to escalate my NDR reattempt request?",
+                "question": "Shipease App: How to escalate my NDR reattempt request?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5814,
-                "question": "Shiprocket App: How to process an NDR shipment?",
+                "question": "Shipease App: How to process an NDR shipment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -2072,22 +2072,22 @@
             },
             {
                 "id": 5911,
-                "question": "Shiprocket App: How to process an order?",
+                "question": "Shipease App: How to process an order?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5912,
-                "question": "Shiprocket App: How to generate label and invoice for an order?",
+                "question": "Shipease App: How to generate label and invoice for an order?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5913,
-                "question": "Shiprocket App: How to generate manifest for multiple orders at once?",
+                "question": "Shipease App: How to generate manifest for multiple orders at once?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5914,
-                "question": "What type of orders we can add in Shiprocket mobile app?",
+                "question": "What type of orders we can add in Shipease mobile app?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -2140,7 +2140,7 @@
             },
             {
                 "id": 6212,
-                "question": "My transaction is successful, but I haven't received money in my Shiprocket wallet",
+                "question": "My transaction is successful, but I haven't received money in my Shipease wallet",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -2154,17 +2154,17 @@
             },
             {
                 "id": 6311,
-                "question": "Which products are prohibited/dangerous to ship via Shiprocket?",
+                "question": "Which products are prohibited/dangerous to ship via Shipease?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6312,
-                "question": "Whom should I contact - Shiprocket or courier partner?",
+                "question": "Whom should I contact - Shipease or courier partner?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6313,
-                "question": "I'm not able to log in to my Shiprocket account",
+                "question": "I'm not able to log in to my Shipease account",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -2183,93 +2183,93 @@
             }
         ]
     },
-    "SR Checkout Articles": {
-        "SR Checkout": [
+    "SE Checkout Articles": {
+        "SE Checkout": [
             {
                 "id": 65,
-                "question": "What is SR Checkout?",
+                "question": "What is SE Checkout?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6511,
-                "question": "Shiprocket Checkout Guide: An Overview of Dashboard",
+                "question": "Shipease Checkout Guide: An Overview of Dashboard",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6512,
-                "question": "SR Checkout: Manage Shipping Settings",
+                "question": "SE Checkout: Manage Shipping Settings",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6513,
-                "question": "SR Checkout: Managing Store Settings",
+                "question": "SE Checkout: Managing Store Settings",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6514,
-                "question": "SR Checkout: Payment",
+                "question": "SE Checkout: Payment",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6515,
-                "question": "SR Checkout: Platform",
+                "question": "SE Checkout: Platform",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6516,
-                "question": "SR Checkout: Tracking Info",
+                "question": "SE Checkout: Tracking Info",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6517,
-                "question": "SR Checkout: Webhooks",
+                "question": "SE Checkout: Webhooks",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6518,
-                "question": "SR Checkout: Adding a Webhook",
+                "question": "SE Checkout: Adding a Webhook",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
-        "SR Checkout: Manage Discount": [
+        "SE Checkout: Manage Discount": [
             {
                 "id": 66,
-                "question": "What is SR Checkout: Manage Discount ?",
+                "question": "What is SE Checkout: Manage Discount ?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6611,
-                "question": "SR Checkout: Manage Discount",
+                "question": "SE Checkout: Manage Discount",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6612,
-                "question": "SR Checkout Discount: Amount off products",
+                "question": "SE Checkout Discount: Amount off products",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6613,
-                "question": "SR Checkout Discount: Amount off Cart",
+                "question": "SE Checkout Discount: Amount off Cart",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6614,
-                "question": "SR Checkout Discount: Buy 'Y' get 'X' ",
+                "question": "SE Checkout Discount: Buy 'Y' get 'X' ",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6615,
-                "question": "SR Checkout Discount: Bundle",
+                "question": "SE Checkout Discount: Bundle",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6616,
-                "question": "SR Checkout Discount: Tiered Discount",
+                "question": "SE Checkout Discount: Tiered Discount",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6617,
-                "question": "SR Checkout Discount: Import Discounts",
+                "question": "SE Checkout Discount: Import Discounts",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
