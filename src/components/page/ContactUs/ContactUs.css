@@ -34,12 +34,6 @@
     min-width: 300px;
 }
 
-.contact-us__info h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;
-}
 
 .contact-us__details {
     display: grid;
@@ -75,12 +69,6 @@
     min-width: 300px;
 }
 
-.contact-us__form h2 {
-    font-size: 2.2rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
 .contact-us__form-group {
     margin-bottom: 25px;

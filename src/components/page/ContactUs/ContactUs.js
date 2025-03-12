@@ -74,7 +74,7 @@ const ContactUs = () => {
 
                 <section className="contact-us__container">
                     <section className="contact-us__info">
-                        <h2>Contact Information</h2>
+                        <h2 className='heading text-center'>Contact Information</h2>
                         <div className="contact-us__details">
                             <div className="contact-us__detail">
                                 <h3>Email</h3>
@@ -103,7 +103,7 @@ const ContactUs = () => {
                     </section>
 
                     <section className="contact-us__form">
-                        <h2>Get in Touch with Us</h2>
+                        <h2 className='heading text-center'>Get in Touch with Us</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="contact-us__form-group">
                                 <label htmlFor="userType">I am a:</label>

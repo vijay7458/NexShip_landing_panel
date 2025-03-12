@@ -393,6 +393,19 @@
     .career-section .whoweare-img svg {
         width: 90%;
     }
+
+    .contact-us__container {
+        gap: 20px;
+    }
+
+    .contact-us__info,
+    .contact-us__form {
+        padding: 20px;
+    }
+
+    .contact-us__detail {
+        padding: 15px 20px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
