@@ -8,6 +8,11 @@
         width: 60px;
         height: 60px;
     }
+
+    .career-page .accordion-header {
+        font-size: 1.8rem;
+        line-height: unset;
+    }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -137,6 +142,10 @@
     .bubble-image:nth-child(7),
     .bubble-image:nth-child(8) {
         top: 89%;
+    }
+
+    .career-page .accordion-item img {
+        height: 250px;
     }
 }
 
@@ -372,6 +381,18 @@
         width: 100%;
         max-width: 400px;
     }
+
+    .career-page .accordion-header {
+        font-size: 1.3rem;
+    }
+
+    .career-section .whoweare-img img {
+        width: 100%;
+    }
+
+    .career-section .whoweare-img svg {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -405,6 +426,15 @@
     .amazon-self-ship__features-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .career-page .accordion-item .accordion-text-content {
+        width: 100%;
+    }
+
+    .career-page .accordion-item img {
+        height: 191px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -617,6 +647,24 @@
     .whatsapp-integration-container__cta p {
         font-size: 1rem;
     }
+
+    .career-page .accordion-content {
+        z-index: 9;
+        position: relative;
+    }
+
+    .career-page .accordion-item img {
+        opacity: 1;
+    }
+
+    .career-page .accordion-item.open img {
+        opacity: 0.5;
+    }
+
+    .career-section .whoweare-img {
+        order: 1;
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -786,6 +834,35 @@
 
     .hyperlocal__step {
         max-width: 100%;
+    }
+
+    .career-page .accordion-item {
+        width: 75px;
+    }
+
+    .career-page .accordion-item.open {
+        width: 500px;
+    }
+
+    .career-page .accordion-container {
+        gap: 15px;
+    }
+
+    .career-page .accordion-item .accordion-text-content {
+        padding: 15px;
+    }
+
+    .career-page .accordion-content {
+        font-size: 0.8rem;
+    }
+
+    .career-page .career-text {
+        font-size: 1rem;
+    }
+
+    .career-page .no-openings::before {
+        width: 50px;
+        height: 50px;
     }
 }
 

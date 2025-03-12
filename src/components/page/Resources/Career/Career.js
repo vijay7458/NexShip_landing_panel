@@ -48,11 +48,11 @@ const Career = () => {
                     <section className="career-section">
                         <div className='amazon-self-ship-container'>
                             <div className='row align-items-center justify-content-between'>
-                                <div className='col-6 whoweare-img'>
+                                <div className='col-12 col-md-6 whoweare-img'>
                                     <img src={WhoWeAreImageTransparent} alt="" />
                                     <BlobSvg />
                                 </div>
-                                <div className='col-6'>
+                                <div className='col-12 col-md-6'>
                                     <h2 className="heading text-center">Why Work with Us?</h2>
                                     <p style={{ textAlign: 'justify' }}>
                                         At ShipEase, we cultivate a dynamic work environment built on collaboration, innovation, and a commitment to excellence. Our team thrives on solving complex logistics challenges, continuously pushing the boundaries of technology to develop cutting-edge solutions. We believe in fostering a culture where creativity and problem-solving go hand in hand, empowering our employees to think outside the box and drive meaningful change. By leveraging advanced technology and data-driven strategies, we streamline logistics processes, enhance operational efficiency, and deliver seamless solutions that create a real-world impact. Our goal is not just to keep up with the evolving industry landscape but to lead the way in redefining logistics with smarter, more efficient, and customer-centric solutions.
@@ -72,7 +72,7 @@ const Career = () => {
                         <div className='amazon-self-ship-container'>
                             <h2 className="heading text-center">How We Help Build Your Career</h2>
                             <div className='row align-items-center mt-4'>
-                                <div className='col-6'>
+                                <div className='col-12 col-md-6'>
                                     <ul className="career-list">
                                         <li><CheckIcon />Comprehensive training programs to upskill and grow.</li>
                                         <li><CheckIcon />Opportunities to work on impactful projects with global reach.</li>
@@ -81,7 +81,7 @@ const Career = () => {
                                         <li><CheckIcon />Flexible work policies that promote work-life balance.</li>
                                     </ul>
                                 </div>
-                                <div className='career-image-sec col-6'>
+                                <div className='career-image-sec col-12 col-md-6'>
                                     <img src={OpportunityBG} alt="" />
                                 </div>
                             </div>
