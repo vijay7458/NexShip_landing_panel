@@ -3,15 +3,22 @@
   align-items: center;
   padding: 50px;
   overflow-y: unset;
-  overflow-x: clip;
+  /* overflow-x: clip; */
   position: relative;
   z-index: 2;
   height: calc(100vh - 220px);
+
+  max-width: 1322px;
 }
 
 #hero-banner {
   overflow: hidden;
   position: relative;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #hero-banner::before {
@@ -41,8 +48,8 @@
   content: "";
   position: absolute;
   bottom: -108px;
-  left: -30px;
-  width: 120%;
+  left: -100%;
+  width: 300%;
   height: 157%;
   /* background: linear-gradient(90deg,
       #60a9eb 0%,
