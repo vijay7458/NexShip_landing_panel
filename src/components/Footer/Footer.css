@@ -137,5 +137,6 @@
 .reach-us li a,
 .reach-us li p {
     margin-bottom: 0;
-    max-width: 180px;
+    max-width: 80%;
+    word-wrap: break-word;
 }
