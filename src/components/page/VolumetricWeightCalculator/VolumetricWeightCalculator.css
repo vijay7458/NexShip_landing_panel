@@ -168,13 +168,14 @@
 .volumetric-weight-calculator .calculator .calculated-weight h3 {
     font-size: 1.8rem;
     color: #2c3e50;
+    max-width: calc(100% - 200px);
 }
 
 .volumetric-weight-calculator .calculator .calculated-weight p {
     font-size: 1.1rem;
     color: #7f8c8d;
     margin-bottom: 0;
-    max-width: 80%;
+    max-width: calc(100% - 200px);
 }
 
 .volumetric-weight-calculator .info img {
@@ -244,12 +245,16 @@
 }
 
 
+.calc-input-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .volumetric-weight-calculator {
-        padding: 20px;
-    }
 
     .volumetric-weight-calculator header h1 {
         font-size: 2rem;

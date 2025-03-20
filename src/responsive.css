@@ -471,6 +471,18 @@
         height: 191px;
     }
 
+    .calc-input-container {
+        flex-direction: column;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight h3 {
+        font-size: 1.2rem;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight p {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -717,6 +729,28 @@
     .brands-logos {
         flex-wrap: wrap;
     }
+
+    .volumetric-weight-inputs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .volumetric-weight-inputs label {
+        min-width: calc(50% - 3rem);
+        width: 100%;
+        max-width: 500px;
+        min-width: calc(50% - 3rem);
+    }
+
+    .volumetric-weight-calculator .info img,
+    .volumetric-weight-calculator .calculation img {
+        max-width: 300px;
+    }
+
+    .volumetric-weight-calculator .info p,
+    .volumetric-weight-calculator .calculation p {
+        text-align: justify;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -941,6 +975,23 @@
         left: 142px;
         right: unset;
     }
+
+    .volumetric-weight-calculator .calculator .calculated-weight>div {
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight.open,
+    .volumetric-weight-calculator .calculator .calculated-weight.open>div {
+        height: 305px;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight h3,
+    .volumetric-weight-calculator .calculator .calculated-weight p {
+        max-width: 80%;
+    }
+
 }
 
 @media only screen and (max-width: 425px) {

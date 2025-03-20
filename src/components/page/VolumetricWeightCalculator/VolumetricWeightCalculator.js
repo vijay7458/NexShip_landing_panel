@@ -52,7 +52,7 @@ const VolumetricWeightCalculator = () => {
                     <div className="amazon-self-ship-container">
                         <h2 className='heading text-center'>Volumetric Weight Calculator</h2>
                         <p className='text-center'>Enter the dimensions of your package to calculate its volumetric weight.<br />This will help you estimate shipping costs based on space occupied rather than actual weight.</p>
-                        <div className='d-flex align-items-center gap-5 justify-content-center'>
+                        <div className='calc-input-container'>
                             <div className='volumetric-weight-inputs'>
                                 <label>
                                     <input
@@ -101,8 +101,8 @@ const VolumetricWeightCalculator = () => {
                     <div className="amazon-self-ship-container">
                         <h2 className='heading text-center'>What is Volumetric Weight?</h2>
                         <div className='row justify-content-between align-items-center'>
-                            <p className='col-8'>Volumetric weight, also known as dimensional weight, is a measurement used by shipping carriers to determine the shipping cost of a package based on its volume. It takes into account the space a package occupies in a shipping vehicle or container, rather than just its actual weight. For lightweight but large packages, volumetric weight can be higher than the actual weight, resulting in higher shipping costs.</p>
-                            <div className='col-4 text-end'>
+                            <p className='col-12 col-md-8'>Volumetric weight, also known as dimensional weight, is a measurement used by shipping carriers to determine the shipping cost of a package based on its volume. It takes into account the space a package occupies in a shipping vehicle or container, rather than just its actual weight. For lightweight but large packages, volumetric weight can be higher than the actual weight, resulting in higher shipping costs.</p>
+                            <div className='col-12 col-md-4 text-center text-md-end'>
                                 <img src={volumetricWeightImage} alt="" />
                             </div>
                         </div>
@@ -113,12 +113,12 @@ const VolumetricWeightCalculator = () => {
                     <div className="amazon-self-ship-container">
                         <h2 className='heading text-center'>How is Volumetric Weight Calculated?</h2>
                         <div className='row justify-content-center align-items-center'>
-                            <div className='col-6'>
+                            <div className='col-12 col-md-6'>
                                 <p>Volumetric weight is calculated using the following formula:</p>
                                 <p className='volumetric-formula'>(Length × Breadth × Height) / 5000</p>
                                 <p>Here, the dimensions are in centimeters, and the divisor (5000) is a standard value used by most shipping companies. The result is then expressed in kilograms. This method helps shipping carriers charge for the space your package occupies, which can be much more important for bulky, low-weight items.</p>
                             </div>
-                            <div className='col-6 text-end'>
+                            <div className='col-12 col-md-6 text-center text-md-end'>
                                 <img src={HowToCalculate} alt="" />
                             </div>
                         </div>
