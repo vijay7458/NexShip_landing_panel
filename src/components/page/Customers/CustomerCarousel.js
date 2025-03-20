@@ -16,7 +16,7 @@ const customers = [
   { id: 3, name: "Customer Three", logo: customerThree },
   { id: 4, name: "Customer Four", logo: customerFour },
   { id: 5, name: "Customer Five", logo: customerFive },
-  { id: 5, name: "Customer Six", logo: customerSix }
+  { id: 6, name: "Customer Six", logo: customerSix }
 ];
 
 export default function CustomerCarousel() {
