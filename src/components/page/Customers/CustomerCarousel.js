@@ -20,10 +20,21 @@ const customers = [
 ];
 
 export default function CustomerCarousel() {
+
+  const [screenWidth, setscreenWidth] = useState(window.innerWidth);
+
+  const updateWidth = () => setscreenWidth(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, [])
+
+
   return (
     <div className="w-full max-w-2xl mx-auto">
       <Swiper
-        slidesPerView={3}
+        slidesPerView={screenWidth < 767 ? 1 : 3}
         spaceBetween={20}
         loop={true}
         autoplay={{ delay: 2000, disableOnInteraction: false }}

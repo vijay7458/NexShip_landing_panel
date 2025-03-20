@@ -5,6 +5,8 @@
 .customer-counts ul {
     display: flex;
     margin-top: 50px;
+    gap: 20px;
+    text-align: center;
 }
 
 .customer-counts ul p {
@@ -108,6 +110,7 @@
     justify-content: center;
     gap: 40px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .case-study-card {

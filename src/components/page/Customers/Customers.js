@@ -162,9 +162,11 @@ const Customers = () => {
 
                 {/* Get Started */}
                 <section section className="get-started" >
-                    <h2 className="heading text-center">Partner With Us</h2>
-                    <p>Join the growing network of businesses that trust <strong>Shipease</strong> for efficient logistics solutions. Get started today!</p>
-                    <button className="btn main-button">Get Started</button>
+                    <div className='amazon-self-ship-container'>
+                        <h2 className="heading text-center">Partner With Us</h2>
+                        <p>Join the growing network of businesses that trust <strong>Shipease</strong> for efficient logistics solutions. Get started today!</p>
+                        <button className="btn main-button">Get Started</button>
+                    </div>
                 </section>
             </div>
         </>
