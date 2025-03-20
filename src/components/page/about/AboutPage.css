@@ -63,7 +63,7 @@
 .about-mission,
 .about-services,
 .about-impact {
-    padding: 40px 20px;
+    padding: 40px 0px;
     margin-top: 20px;
     border-radius: 8px;
     text-align: center;
@@ -131,6 +131,20 @@
     min-width: unset;
     max-width: unset;
     padding: 40px 25px;
+}
+
+.about-section ul.why-choose-ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 4px;
+    flex-direction: row;
+}
+
+.first-order img {
+    width: 80%;
+    margin-right: -10%;
+    margin-bottom: -4px;
 }
 
 .about-cta {

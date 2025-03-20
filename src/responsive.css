@@ -43,6 +43,11 @@
         width: 50px;
         height: 50px;
     }
+
+    .ceo-message-section .ceo-qoute {
+        font-size: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -53,6 +58,11 @@
     .shipment-protection__cover-options {
         gap: 110px;
     }
+
+    .first-order img {
+        margin-bottom: -15px;
+    }
+
 }
 
 
@@ -406,6 +416,19 @@
     .contact-us__detail {
         padding: 15px 20px;
     }
+
+    .first-order {
+        order: -1;
+    }
+
+    .first-order img {
+        margin-bottom: 0;
+        max-width: 500px;
+    }
+
+    .about-section ul.why-choose-ul {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -678,6 +701,10 @@
         order: 1;
         margin-bottom: 50px;
     }
+
+    .about-mission {
+        background-size: cover;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -807,6 +834,25 @@
     .whatsapp-integration-container .whatsapp-features-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .ceo-message-section .ceo-qoute {
+        font-size: 1.4rem;
+    }
+
+    .about-impact ul,
+    .about-section ol,
+    .about-services ul {
+        padding-left: 0px;
+    }
+
+    .about-impact ul li,
+    .about-section ol li,
+    .about-services ul li {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        flex: auto;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -876,6 +922,12 @@
     .career-page .no-openings::before {
         width: 50px;
         height: 50px;
+    }
+
+    .about-mission img {
+        width: 80px;
+        left: 142px;
+        right: unset;
     }
 }
 

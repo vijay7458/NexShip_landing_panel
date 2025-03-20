@@ -60,8 +60,7 @@ const AboutPage = () => {
           <div className="amazon-self-ship-container">
             <div style={{
               width: 'fit-content',
-              marginInline: 'auto'
-            }} className='d-flex position-relative justify-content-center mb-4'>
+            }} className='mx-auto d-flex position-relative justify-content-center mb-4'>
               <h2 className="heading text-center">Our Mission</h2>
               <img src={BullsEyeImg} alt="Bullseye" />
             </div>
@@ -72,8 +71,8 @@ const AboutPage = () => {
         {/* Why Choose Us */}
         <section className="about-section">
           <div className="amazon-self-ship-container">
-            <div className='row align-items-center'>
-              <ul className='col-6'>
+            <div className='row align-items-end'>
+              <ul className='col-12 col-lg-6'>
                 <li>
                   <h3 className="heading">Extensive Carrier Network</h3>
                   <p>Access a wide range of shipping partners offering domestic and international shipping.</p>
@@ -87,12 +86,12 @@ const AboutPage = () => {
                   <p>Compare rates from multiple carriers and choose the best option.</p>
                 </li>
               </ul>
-              <div className='col-6 d-flex flex-column align-items-center'>
+              <div className='col-12 col-lg-6 first-order'>
                 <h2 className="heading text-center">Why Choose Us?</h2>
-                <img className='mt-0' style={{ width: '80%', marginRight: '-10%' }} src={choseUsBg} alt="" />
+                <img className='mt-0' src={choseUsBg} alt="" />
               </div>
             </div>
-            <ul className='d-flex align-items-center flex-row' style={{ gap: '20px', marginTop: '-12px' }}>
+            <ul className='why-choose-ul'>
               <li className='w-100'>
                 <h3 className="heading">Reliable & Secure</h3>
                 <p>We prioritize safety, ensuring secure and damage-free shipments.</p>
