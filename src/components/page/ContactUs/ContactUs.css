@@ -113,6 +113,11 @@
     width: auto;
 }
 
+.contact-us__channels label img {
+    width: 40px;
+    height: auto;
+}
+
 .contact-us__submit-button {
     background-color: #007bff;
     color: white;

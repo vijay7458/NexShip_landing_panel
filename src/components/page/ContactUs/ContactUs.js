@@ -3,6 +3,12 @@ import './ContactUs.css';
 import MapboxComponent from './MapboxComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import ShopifyLogo from "../../../assets/image/Channels/logo/shopify.jpg"
+import AmazonLogo from "../../../assets/image/Channels/logo/AmazonLogo.png"
+import WooLogo from "../../../assets/image/Channels/logo/WCLogo.png"
+import HippoLogo from "../../../assets/image/Channels/logo/StoreHippo.png"
+import MagentoLogo from "../../../assets/image/Channels/logo/magento.png"
+import CustomLogo from "../../../assets/image/Channels/logo/Manual.png"
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -204,7 +210,7 @@ const ContactUs = () => {
                                             checked={formData.channels.includes('Shopify')}
                                             onChange={handleCheckboxChange}
                                         />
-                                        Shopify
+                                        <img src={ShopifyLogo} alt="" />Shopify
                                     </label>
                                     <label>
                                         <input
@@ -213,7 +219,7 @@ const ContactUs = () => {
                                             checked={formData.channels.includes('Amazon')}
                                             onChange={handleCheckboxChange}
                                         />
-                                        Amazon
+                                        <img src={AmazonLogo} alt="" />Amazon
                                     </label>
                                     <label>
                                         <input
@@ -222,7 +228,7 @@ const ContactUs = () => {
                                             checked={formData.channels.includes('WooCommerce')}
                                             onChange={handleCheckboxChange}
                                         />
-                                        WooCommerce
+                                        <img src={WooLogo} alt="" />WooCommerce
                                     </label>
                                     <label>
                                         <input
@@ -231,7 +237,7 @@ const ContactUs = () => {
                                             checked={formData.channels.includes('StoreHippo')}
                                             onChange={handleCheckboxChange}
                                         />
-                                        StoreHippo
+                                        <img src={HippoLogo} alt="" />StoreHippo
                                     </label>
                                     <label>
                                         <input
@@ -240,7 +246,7 @@ const ContactUs = () => {
                                             checked={formData.channels.includes('Magento')}
                                             onChange={handleCheckboxChange}
                                         />
-                                        Magento
+                                        <img src={MagentoLogo} alt="" />Magento
                                     </label>
                                     <label>
                                         <input
@@ -249,7 +255,7 @@ const ContactUs = () => {
                                             checked={formData.channels.includes('Custom')}
                                             onChange={handleCheckboxChange}
                                         />
-                                        Custom
+                                        <img src={CustomLogo} alt="" />Custom
                                     </label>
                                 </div>
                             </div>
