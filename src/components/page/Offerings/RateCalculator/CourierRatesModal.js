@@ -18,7 +18,7 @@ const CourierRatesModal = ({ show, handleClose, shippingData }) => {
                                     <tr>
                                         <th style={{ width: '60%' }}>Courier Name</th>
                                         <th style={{ width: '20%' }}>Rate</th>
-                                        <th style={{ width: '20%' }}>EDD</th>
+                                        <th style={{ width: '20%' }}>EDD(days)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
