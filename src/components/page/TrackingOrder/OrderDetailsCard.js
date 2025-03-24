@@ -16,7 +16,7 @@ const OrderDetailsCard = ({ TrackingData }) => {
                     </div>
                     <div>
                         <span className="font14">Status: </span>
-                        <span style={{ color: '#1EA231' }}>{TrackingData?.status}</span>
+                        <span className="text-capitalize" style={{ color: '#1EA231' }}>{TrackingData?.status}</span>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ const OrderDetailsCard = ({ TrackingData }) => {
                     </div>
                     <div className="order-row">
                         <span className="order-label">Courier Partner</span>
-                        <span className="order-value">{TrackingData?.courier_partner}</span>
+                        <span className="order-value">{TrackingData?.courier_partner || TrackingData?.courier}</span>
                     </div>
                     <div className="order-row">
                         <span className="order-label">Expected Delivery Date</span>

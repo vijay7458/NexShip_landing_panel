@@ -9,7 +9,7 @@ const CourierInfo = ({ TrackingData }) => {
             {/* Courier Name */}
             <div className="courier-name">
                 <img className="courier-logo" src={TrackingData?.courier_image} alt="Courier Image" />
-                <span className="courier-title">{TrackingData?.courier_partner}</span>
+                <span className="courier-title">{TrackingData?.courier_partner || TrackingData?.courier}</span>
             </div>
 
             <div className="d-flex flex-column">
