@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 const TrackingOrder = () => {
-    const [activeTab, setActiveTab] = useState("mobile");
+    const [activeTab, setActiveTab] = useState("awb");
     const [mobileNumber, setMobileNumber] = useState("");
     const [otp, setOtp] = useState("");
     const [awb, setAwb] = useState("");
@@ -103,12 +103,6 @@ const TrackingOrder = () => {
                     <div className="tracking-form">
                         <div className="tracking-tabs">
                             <button
-                                className={`tab-button ${activeTab === "mobile" ? "active" : ""}`}
-                                onClick={() => handleTabChange("mobile")}
-                            >
-                                Mobile Number
-                            </button>
-                            <button
                                 className={`tab-button ${activeTab === "awb" ? "active" : ""}`}
                                 onClick={() => handleTabChange("awb")}
                             >
@@ -119,6 +113,12 @@ const TrackingOrder = () => {
                                 onClick={() => handleTabChange("order")}
                             >
                                 Order ID
+                            </button>
+                            <button
+                                className={`tab-button ${activeTab === "mobile" ? "active" : ""}`}
+                                onClick={() => handleTabChange("mobile")}
+                            >
+                                Mobile Number
                             </button>
                         </div>
 
