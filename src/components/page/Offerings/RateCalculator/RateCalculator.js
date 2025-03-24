@@ -8,20 +8,42 @@ import DifferentLocationsIcon from './Icons/DifferentLocationsIcon';
 import PackageWeightIcon from './Icons/PackageWeightIcon';
 import RemoteLocationIcon from './Icons/RemoteLocationIcon';
 import FragileItemIcon from './Icons/FragileItemIcon';
+import axios from 'axios';
 
 const RateCalculator = () => {
   const [pickupPincode, setPickupPincode] = useState('');
   const [deliveryPincode, setDeliveryPincode] = useState('');
   const [weight, setWeight] = useState('');
-  const [shippingRate, setShippingRate] = useState(null);
-  const [error, seterror] = useState()
+  const [shippingRate, setShippingRate] = useState(false);
+  const [error, setError] = useState("");
+  const [shippingData, setShippingData] = useState(null);
 
-  const calculateShippingRate = () => {
-    if (pickupPincode && deliveryPincode && weight) {
-      setShippingRate(true);
-      seterror();
-    } else {
-      seterror('Please fill in all the details.');
+  const calculateShippingRate = async () => {
+    if (!pickupPincode || !deliveryPincode || !weight) {
+      setError('Please fill in all the details.');
+      return;
+    }
+
+    setError('');
+    setShippingData(null); // Reset previous data while fetching
+
+    const url = "https://app.shipease.in/core-api/shipping/calculate-rate/";
+    const payload = {
+      source_pincode: pickupPincode,
+      destination_pincode: deliveryPincode,
+      weight: parseFloat(weight) || 0, // Ensure valid number
+    };
+
+    try {
+      const response = await axios.post(url, payload, {
+        headers: { "Content-Type": "application/json" },
+      });
+
+      setShippingData(response.data); // Store API response
+      setShippingRate(true); // Open popup
+    } catch (error) {
+      console.error("Error fetching shipping rate:", error);
+      setError("Failed to fetch shipping rate. Please try again.");
     }
   };
 
@@ -98,12 +120,12 @@ const RateCalculator = () => {
                   </button>
                 </div>
 
-                {shippingRate && (
+                {/* {shippingRate && (
                   <div className="shipping-rate-calculator__result">
                     <h2>Estimated Shipping Rate</h2>
                     <p>₹{shippingRate}</p>
                   </div>
-                )}
+                )} */}
               </section>
               <div className='text-center'>
                 <img src={RateCalculatorImg} alt="" />
@@ -173,7 +195,7 @@ const RateCalculator = () => {
         </main>
       </div>
 
-      <CourierRatesModal show={shippingRate} handleClose={() => setShippingRate(false)} />
+      <CourierRatesModal shippingData={shippingData} show={shippingRate} handleClose={() => setShippingRate(false)} />
 
     </>
   );

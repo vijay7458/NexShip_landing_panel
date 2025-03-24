@@ -133,6 +133,42 @@
   font-size: 12px;
 }
 
+.courier-rates-pop::-webkit-scrollbar {
+  width: 5px;
+}
+
+.courier-rates-pop::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.courier-rates-pop::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.courier-rates-pop::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.courier-rates-pop {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  /* position: relative; */
+}
+
+.courier-rates-pop thead tr {
+  position: sticky;
+  top: 0;
+}
+
+.courier-rates-pop thead tr th {
+  background: #fff;
+}
+.courier-rates-pop td{
+  padding-block: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .shipping-rate-calculator__row {
