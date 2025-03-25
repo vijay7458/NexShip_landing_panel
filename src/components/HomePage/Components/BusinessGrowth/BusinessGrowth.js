@@ -1,9 +1,12 @@
 import React from 'react';
 import './BusinessGrowth.css';
 import DashboardImage from '../../../../assets/image/dashboardImage.png'
-import IncreaseBusiness from '../../../../assets/image/IncreaseBusiness.png'
-import EnhanceMarketing from '../../../../assets/image/EnhanceMarketing.png'
-import ExpandReach from '../../../../assets/image/ExpandReach.png'
+// import IncreaseBusiness from '../../../../assets/image/IncreaseBusiness.png'
+// import EnhanceMarketing from '../../../../assets/image/EnhanceMarketing.png'
+import ExpandReach from './ExpandReach';
+import EnhanceMarketing from './EnhanceMarketing';
+import IncreaseBusiness from './IncreaseBusiness';
+// import ExpandReach from '../../../../assets/image/ExpandYourReach.png'
 
 const BusinessGrowth = () => {
   return (
@@ -24,33 +27,27 @@ const BusinessGrowth = () => {
           </div>
           <div className="features-grid">
             <div className="feature-item">
-              <img
-                src={IncreaseBusiness}
-                alt="Increase Your Business"
-                className="feature-icon"
-              />
+              <div className='business-icon'>
+                <IncreaseBusiness />
+              </div>
               <h3 className="feature-title">Increase Your Business</h3>
               <p className="feature-description">
                 Boost your revenue with smarter tools and actionable insights tailored to your goals.
               </p>
             </div>
             <div className="feature-item">
-              <img
-                src={EnhanceMarketing}
-                alt="Enhance Your Marketing"
-                className="feature-icon"
-              />
+              <div className='business-icon'>
+                <EnhanceMarketing />
+              </div>
               <h3 className="feature-title">Enhance Your Marketing</h3>
               <p className="feature-description">
                 Promote your brand effectively with targeted strategies and creative campaigns.
               </p>
             </div>
             <div className="feature-item">
-              <img
-                src={ExpandReach}
-                alt="Expand Your Reach"
-                className="feature-icon"
-              />
+              <div className='business-icon'>
+                <ExpandReach />
+              </div>
               <h3 className="feature-title">Expand Your Reach</h3>
               <p className="feature-description">
                 Scale your business across multiple platforms and unlock new opportunities.
