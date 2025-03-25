@@ -9,6 +9,7 @@ import { useNavigate } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ChannelDefault from "../../../../assets/image/ChannelDefault.png"
+import ChannelData from "./ChannelData";
 
 // const DEFAULT_IMAGE = "default-placeholder.png";
 
@@ -20,10 +21,11 @@ const ChannelCarousel = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(
-                    `${BASE_URL}/core-api/shipease-admin/channel-partner-list/`
-                );
-                setData(response?.data);
+                // const response = await axios.get(
+                //     `${BASE_URL}/core-api/shipease-admin/channel-partner-list/`
+                // );
+                // setData(response?.data);
+                setData(ChannelData)
             } catch (error) {
                 console.error("Error fetching channel data:", error);
             } finally {
@@ -70,7 +72,7 @@ const ChannelCarousel = () => {
             ) : (
                 <div className="no-data">No channel data available.</div>
             )}
-            {/* <span onClick={() => Navigate("/channel-integration")}>Wide Range of Channels <FontAwesomeIcon icon={faArrowRight} /></span> */}
+            <span onClick={() => Navigate("/channel-integration")}>Wide Range of Channels <FontAwesomeIcon icon={faArrowRight} /></span>
         </div>
     );
 };
