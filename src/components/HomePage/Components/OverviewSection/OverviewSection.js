@@ -7,27 +7,60 @@ import "animate.css";
 import "./OverviewSection.css"; // Import custom CSS file
 
 const OverviewSection = () => {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([
+        {
+            "id": 4,
+            "created_at": "2024-12-13T09:55:00.916733+05:30",
+            "updated_at": "2024-12-13T09:55:00.916733+05:30",
+            "title": "Delighted Customers",
+            "number": 2500,
+            "status": true
+        },
+        {
+            "id": 3,
+            "created_at": "2024-12-13T09:55:00.916733+05:30",
+            "updated_at": "2024-12-13T09:55:00.916733+05:30",
+            "title": "Daily Shipments",
+            "number": 12000,
+            "status": true
+        },
+        {
+            "id": 2,
+            "created_at": "2024-12-13T09:54:07.743171+05:30",
+            "updated_at": "2024-12-13T09:54:07.743171+05:30",
+            "title": "Pincode Covered",
+            "number": 28000,
+            "status": true
+        },
+        {
+            "id": 1,
+            "created_at": "2024-12-13T09:54:07.743171+05:30",
+            "updated_at": "2024-12-13T09:54:07.743171+05:30",
+            "title": "Expert Advisors",
+            "number": 150,
+            "status": true
+        }
+    ]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [isAnimated, setIsAnimated] = useState(false); // Track if animation has been applied
     const sectionRef = useRef(null);
 
     // Fetch API data
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const apiUrl = `${BASE_URL}/core-api/shipease-admin/stats-list/`;
-                const response = await axios.get(apiUrl);
-                setData(response.data);
-                setLoading(false);
-            } catch (err) {
-                setError("Failed to fetch data");
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const apiUrl = `${BASE_URL}/core-api/shipease-admin/stats-list/`;
+    //             const response = await axios.get(apiUrl);
+    //             setData(response.data);
+    //             setLoading(false);
+    //         } catch (err) {
+    //             setError("Failed to fetch data");
+    //             setLoading(false);
+    //         }
+    //     };
+    //     fetchData();
+    // }, []);
 
     // Set up Intersection Observer
     useEffect(() => {
@@ -117,7 +150,7 @@ const OverviewSection = () => {
                     <h1 className={`${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
                         Lakhs of eCommerce businesses trust and chose<br />
                         <span className="highlight-overview">
-                            <strong>Shipease</strong> to enhance their customer experience—
+                            <strong>ShipEase</strong> to enhance their customer experience—
                             <br />
                             seamlessly managing everything from shipping to returns and more.
                         </span>
@@ -127,30 +160,25 @@ const OverviewSection = () => {
                 <div className="row" ref={imageSectionRef}>
                     {/* Stats Section */}
                     <div className="col-12 col-md-6 stats">
-                        {loading ? (
-                            <p>Loading...</p>
-                        ) : error ? (
-                            <p>{error}</p>
-                        ) : Array.isArray(data) ? (
-                            data.map((item, index) => (
-                                <div key={index} className="stat-item">
-                                    <h2>
-                                        {isAnimated && (
-                                            <CountUp
-                                                start={0}
-                                                end={item?.number}
-                                                duration={3}
-                                                separator=","
-                                            />
-                                        )}{" "}
-                                        +
-                                    </h2>
-                                    <p>{item?.title}</p>
-                                </div>
-                            ))
-                        ) : (
-                            <p>No data available</p>
-                        )}
+                        {
+                            Array.isArray(data) && (
+                                data.map((item, index) => (
+                                    <div key={index} className="stat-item">
+                                        <h2>
+                                            {isAnimated && (
+                                                <CountUp
+                                                    start={0}
+                                                    end={item?.number}
+                                                    duration={3}
+                                                    separator=","
+                                                />
+                                            )}{" "}
+                                            +
+                                        </h2>
+                                        <p>{item?.title}</p>
+                                    </div>
+                                ))
+                            )}
                     </div>
 
                     {/* Visual Section */}
