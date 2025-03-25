@@ -6,7 +6,7 @@ const DetailedFooter = () => {
     return (
         <footer className="detailed-footer">
             <div className="detailed-footer__container">
-                <p className="detailed-footer__text">© 2025 Shipease. All rights reserved.</p>
+                <p className="detailed-footer__text">© 2025 ShipEase. All rights reserved.</p>
                 <div className="detailed-footer__links">
                     <Link to="/terms-and-conditions" className="detailed-footer__link">
                         Terms & Conditions

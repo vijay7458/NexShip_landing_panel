@@ -150,7 +150,7 @@ const OverviewSection = () => {
                     <h1 className={`${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
                         Lakhs of eCommerce businesses trust and chose<br />
                         <span className="highlight-overview">
-                            <strong>Shipease</strong> to enhance their customer experience—
+                            <strong>ShipEase</strong> to enhance their customer experience—
                             <br />
                             seamlessly managing everything from shipping to returns and more.
                         </span>
