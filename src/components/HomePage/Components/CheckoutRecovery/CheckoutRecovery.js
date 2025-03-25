@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import AbondantCheckoutFlow from '../../../../assets/image/AbondantCheckoutFlow.png'
 import "animate.css";
 import './CheckoutRecovery.css';
+import NewCheckoutRecovery from './NewCheckoutRecovery';
 
 const CheckoutRecovery = () => {
 
@@ -85,6 +86,7 @@ const CheckoutRecovery = () => {
           </div> */}
         </div>
       </div>
+      <NewCheckoutRecovery />
     </>
   );
 };
