@@ -44,7 +44,7 @@ const OrderDetailsCard = ({ TrackingData }) => {
                     </div>
                     <div className="order-row">
                         <span className="order-label">Courier Partner</span>
-                        <span className="order-value">{TrackingData?.courier_partner || TrackingData?.courier}</span>
+                        <span className="order-value">{TrackingData?.courier || TrackingData?.courier_partner}</span>
                     </div>
                     <div className="order-row">
                         <span className="order-label">Expected Delivery Date</span>
