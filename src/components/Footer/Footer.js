@@ -32,19 +32,19 @@ const Footer = () => {
           <div className="footer-logo-section ">
             <img src={Logo} alt="Shipease Logo" className="footer-logo" />
             <div className="footer-social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="http://www.facebook.com/shipease.in" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/Shipease_IN" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faTwitter} className="social-icon" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/shipease.in/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="social-icon" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@ShipEaseTechnologiesPvtLTD" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faYoutube} className="social-icon" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@ShipEaseTechnologiesPvtLTD" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
               </a>
             </div>
@@ -53,11 +53,11 @@ const Footer = () => {
           <h4>Reach Us At</h4>
           <ul className="reach-us mb-2">
             <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:support@shipease.com">support@shipease.com</a></li>
-            <li><FontAwesomeIcon icon={faEnvelope} /> <a href="sales@shipease.com" target="_blank">sales@shipease.com</a></li>
+            <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:sales@shipease.com" target="_blank">sales@shipease.com</a></li>
             <li>
               <FontAwesomeIcon icon={faLocationDot} /><p>
                 <strong>Registered Office Address:</strong><br />
-                <a href="https://maps.app.goo.gl/WaManVxH3wV6xP1m7" target="_blank">{data?.address1}</a>
+                <a href="https://maps.app.goo.gl/WaManVxH3wV6xP1m7" target="_blank">Unit 321, Tower B1, M3M Cosmopolitan, Sector-66, Gurugram, Haryana, Pin-122101</a>
               </p>
             </li>
             {/* <li>
