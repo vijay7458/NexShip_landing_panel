@@ -38,7 +38,7 @@ const PriceAndPlans = () => {
                         <h4>Standard</h4>
                         <div className='plan-price'>
                             {/* <span>₹</span> */}
-                            <p>26.27 per</p>
+                            <p>26.27 <span>/ 500 gram</span></p>
                         </div>
                         <p className='mt-3'>Unlock advanced features and receive priority support.</p>
                         <div className='plans-features'>
@@ -55,7 +55,7 @@ const PriceAndPlans = () => {
                         <h4>Pro</h4>
                         <div className='plan-price'>
                             {/* <span>₹</span> */}
-                            <p>23.88 per</p>
+                            <p>23.88 <span>/ 500 gram</span></p>
                         </div>
                         <p className='mt-3'>Access premium tools and team colaboration options.</p>
                         <div className='plans-features'>
@@ -71,7 +71,7 @@ const PriceAndPlans = () => {
                     <div className='plan-item'>
                         <h4>Pro Plus</h4>
                         <div className='plan-price'>
-                            <p>20.34 per</p>
+                            <p>20.34 <span>/ 500 gram</span></p>
                         </div>
 
                         <p className='mt-3'>Customizable solutions for large shipping and dedicated support.</p>

@@ -79,6 +79,11 @@
     position: relative;
 }
 
+.business-plan-page .plan-price p span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 .business-plan-page .plan-price p::before {
     content: '₹';
     position: absolute;
@@ -88,14 +93,14 @@
     font-weight: 400;
 }
 
-.business-plan-page .plan-price p::after {
-    content: '/kg';
+/* .business-plan-page .plan-price p::after {
+    content: '/0.5 kg';
     position: absolute;
     bottom: 4px;
-    right: -40px;
+    right: -68px;
     font-size: 1.2rem;
     font-weight: 400;
-}
+} */
 
 .business-plan-page .plans-features {
     margin-left: 10%;
