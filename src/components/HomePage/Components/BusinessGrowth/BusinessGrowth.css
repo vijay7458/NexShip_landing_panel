@@ -84,7 +84,8 @@
     background: var(--sh-primary-middle);
     position: relative;
     margin-top: 50px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    margin-inline: -2rem;
 }
 
 .bg-fetaure-section .overview-container {
