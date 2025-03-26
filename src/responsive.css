@@ -429,6 +429,18 @@
     .about-section ul.why-choose-ul {
         flex-direction: column;
     }
+
+    .cr-section-info {
+        padding-top: 20px;
+    }
+
+    .cr-left-bg {
+        left: 40%;
+    }
+
+    .cr-left-logo {
+        left: 63%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -751,6 +763,17 @@
     .volumetric-weight-calculator .calculation p {
         text-align: justify;
     }
+
+    .cr-left-bg {
+        left: 20%;
+        width: 140%;
+        height: 80%;
+        top: 10%;
+    }
+
+    .cr-left-logo {
+        left: 38%;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -899,6 +922,22 @@
         max-width: unset;
         flex: auto;
     }
+
+    .feature-card-content h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .cr-left-bg {
+        height: 60%;
+        top: 20%;
+    }
+
+    .cr-left-logo {
+        left: 30%;
+        height: 280px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -990,6 +1029,19 @@
     .volumetric-weight-calculator .calculator .calculated-weight h3,
     .volumetric-weight-calculator .calculator .calculated-weight p {
         max-width: 80%;
+    }
+
+    .cr-left-bg {
+        width: 188%;
+        height: 63%;
+        top: 20%;
+        left: 5%;
+    }
+
+    .cr-left-logo {
+        top: 31%;
+        left: 16%;
+        height: 250px;
     }
 
 }

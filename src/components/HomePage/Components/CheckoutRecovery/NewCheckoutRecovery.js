@@ -22,7 +22,7 @@ const NewCheckoutRecovery = () => {
                             <h1>Bring Customers Back to Complete Their Journey</h1>
                         </div>
                         <div className='text-end'>
-                            With WhatsApp, SMS and Email
+                            With WhatsApp, SMS and Email Notifications
                         </div>
                         <div className='text-end'>
                             <p>Send timely reminders & personalized offers <Pointer /></p>

@@ -85,7 +85,7 @@ const AbandonedCartFlow = () => {
         //     </text>
         // </svg>
 
-        <div className="home-section" ref={sectionRef}>
+        <div className="home-section pt-0" ref={sectionRef}>
             <div className='overview-container'>
                 <div className='abundant-recovery-flow'>
                     <img src={AbundantRecoveryFlow} alt="Abundant Recovery Flow" className={`${isAnimated ? "animate__animated animate__backInDown" : ""}`} />
