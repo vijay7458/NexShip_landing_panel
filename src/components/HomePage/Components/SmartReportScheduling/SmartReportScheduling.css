@@ -1,3 +1,37 @@
+.rs-section {
+    background: var(--sh-primary-middle);
+    padding-top: 30px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.rs-section .overview-container {
+    position: relative;
+    z-index: 1;
+}
+
+.rs-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../../../../assets/image/realistic-white-golden-geometric-background.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.rs-section .subtitle {
+    color: #fff;
+}
+
+.rs-section h1 {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(114deg, #C5DCF1, #ddd 69%) 0px 0px no-repeat padding-box text transparent;
+}
+
 .smart-report-container {
     text-align: center;
     padding: 20px;
@@ -10,7 +44,6 @@
     font-weight: 600;
     margin-bottom: 5px;
 }
-
 
 .grid {
     display: flex;

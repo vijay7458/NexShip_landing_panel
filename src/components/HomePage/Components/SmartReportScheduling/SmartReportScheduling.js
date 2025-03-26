@@ -8,7 +8,7 @@ import SmartReportTimeline from './SmartReportTimeline';
 const SmartReportScheduling = () => {
     return (
         <>
-            <div className="home-section">
+            <div className="home-section rs-section">
                 <div className='overview-container'>
                     <div className='heading'>
                         <h3 className="subtitle">Smart Report Scheduling</h3>
