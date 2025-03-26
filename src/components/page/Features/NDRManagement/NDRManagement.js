@@ -19,7 +19,7 @@ const NDRManagement = () => {
     const ndrMethods = [
         { id: 1, title: "IVR Calling", icon: "📞", description: "Automated calls for quick response." },
         { id: 2, title: "Manual Calling", icon: "🎙️", description: "Dedicated agents for follow-ups." },
-        { id: 3, title: "WhatsApp Bots", icon: "💬", description: "Instant messaging for resolutions." },
+        { id: 3, title: "WhatsApp Bots", "icon": "📲", description: "Instant messaging for resolutions." },
         { id: 4, title: "SMS Alerts", icon: "📩", description: "Notify customers with simple steps." },
         { id: 5, title: "Email Follow-Ups", icon: "📧", description: "Encourage timely responses." },
         { id: 6, title: "Dashboard Insights", icon: "📊", description: "Track real-time NDR cases." }
