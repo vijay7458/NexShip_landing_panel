@@ -938,6 +938,16 @@
         left: 30%;
         height: 280px;
     }
+
+    .cr-pointers p {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    }
+    .cr-pointers p svg{
+        width: 40px;
+        height: 60px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1040,8 +1050,13 @@
 
     .cr-left-logo {
         top: 31%;
-        left: 16%;
-        height: 250px;
+        left: 30%;
+        width: 130%;
+        height: 50%;
+    }
+
+    .cr-section .blue-half {
+        height: 480px;
     }
 
 }

@@ -21,10 +21,10 @@ const NewCheckoutRecovery = () => {
                             <h3 className="subtitle">Abandoned Checkout Recovery</h3>
                             <h1>Bring Customers Back to Complete Their Journey</h1>
                         </div>
-                        <div className='text-end'>
+                        <div className='text-end cr-pointers'>
                             With WhatsApp, SMS and Email Notifications
                         </div>
-                        <div className='text-end'>
+                        <div className='text-end cr-pointers'>
                             <p>Send timely reminders & personalized offers <Pointer /></p>
                             <p>Nudge customers with quick updates and easy links <Pointer /></p>
                             <p>Provide detailed order summaries & exclusive discounts <Pointer /></p>
