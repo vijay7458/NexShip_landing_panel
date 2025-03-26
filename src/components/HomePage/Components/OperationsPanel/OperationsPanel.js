@@ -12,7 +12,7 @@ const OperationsPanel = () => {
             <div className="home-section">
                 <div className='overview-container'>
                     <div className='heading'>
-                        <h3 className="subtitle">Lead Generation & Analytics</h3>
+                        <h3 className="subtitle">Seamless Management for Your Business</h3>
                         <h1>Your Operations, Streamlined</h1>
                     </div>
                     <div className="content">
