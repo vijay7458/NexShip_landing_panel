@@ -60,7 +60,7 @@ const AmazonSelfShip = () => {
                                 <IndependentLogisticsIcon />
                             </div>
                             <div>
-                                <h3>Independent Logistics</h3>
+                                <h3>Cost Effective logistics</h3>
                                 <p>Eliminate dependency on Amazon for delivery, pickup, or remittance processes.</p>
                             </div>
                         </div>
