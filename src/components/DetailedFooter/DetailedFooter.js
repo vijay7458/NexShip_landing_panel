@@ -14,10 +14,10 @@ const DetailedFooter = () => {
                     <Link to="/privacy-policy" className="detailed-footer__link">
                         Privacy Policy
                     </Link>
-                    <Link to="" className="detailed-footer__link">
+                    {/* <Link to="" className="detailed-footer__link">
                         Compliance
-                    </Link>
-                    <Link to="" className="detailed-footer__link">
+                    </Link> */}
+                    <Link to="/" className="detailed-footer__link">
                         Refund & Cancellation Policy
                     </Link>
                 </div>
