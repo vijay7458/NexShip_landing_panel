@@ -15,6 +15,16 @@ const NDRManagement = () => {
             behavior: "smooth",
         });
     };
+
+    const ndrMethods = [
+        { id: 1, title: "IVR Calling", icon: "📞", description: "Automated calls for quick response." },
+        { id: 2, title: "Manual Calling", icon: "🎙️", description: "Dedicated agents for follow-ups." },
+        { id: 3, title: "WhatsApp Bots", icon: "💬", description: "Instant messaging for resolutions." },
+        { id: 4, title: "SMS Alerts", icon: "📩", description: "Notify customers with simple steps." },
+        { id: 5, title: "Email Follow-Ups", icon: "📧", description: "Encourage timely responses." },
+        { id: 6, title: "Dashboard Insights", icon: "📊", description: "Track real-time NDR cases." }
+    ];
+
     return (
         <>
             <header className="page-header">
@@ -87,6 +97,19 @@ const NDRManagement = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                <section className='ways-of-ndr'>
+                    <h2 className="heading text-center">How We Manage NDR</h2>
+                    <div className="ndr-grid">
+                        {ndrMethods.map((method) => (
+                            <div key={method.id} className="ndr-card">
+                                <span className="ndr-icon">{method.icon}</span>
+                                <h3 className="ndr-method">{method.title}</h3>
+                                <p className="ndr-desc">{method.description}</p>
+                            </div>
+                        ))}
                     </div>
                 </section>
 
