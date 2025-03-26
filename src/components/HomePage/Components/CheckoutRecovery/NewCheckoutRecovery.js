@@ -3,6 +3,7 @@ import "./NewCheckoutRecovery.css"
 import CrLeftBg from "../../../../assets/image/cr-left-bg.png"
 import crLeftRings from "../../../../assets/image/cr-left-rings.png"
 import crLeftLogo from "../../../../assets/image/KPI-Interaction-Illustration-3.webp"
+import Pointer from './Pointer'
 
 const NewCheckoutRecovery = () => {
     return (
@@ -21,7 +22,12 @@ const NewCheckoutRecovery = () => {
                             <h1>Bring Customers Back to Complete Their Journey</h1>
                         </div>
                         <div className='text-end'>
-
+                            With WhatsApp, SMS and Email
+                        </div>
+                        <div className='text-end'>
+                            <p>Send timely reminders & personalized offers <Pointer /></p>
+                            <p>Nudge customers with quick updates and easy links <Pointer /></p>
+                            <p>Provide detailed order summaries & exclusive discounts <Pointer /></p>
                         </div>
                     </div>
                 </div>
