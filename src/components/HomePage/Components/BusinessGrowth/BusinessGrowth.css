@@ -83,9 +83,9 @@
     padding: 100px 2rem 50px;
     background: var(--sh-primary-middle);
     position: relative;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* border-radius: 20px; */
-    margin-inline: -2rem;
+    /* margin-inline: -2rem; */
 }
 
 .bg-fetaure-section .overview-container {

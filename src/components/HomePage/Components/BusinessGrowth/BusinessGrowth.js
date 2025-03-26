@@ -27,36 +27,36 @@ const BusinessGrowth = () => {
           </div>
 
         </div>
-        <div className="bg-fetaure-section">
-          <div className='overview-container'>
-            <div className="features-grid">
-              <div className="feature-item">
-                <div className='business-icon'>
-                  <IncreaseBusiness />
-                </div>
-                <h3 className="bg-feature-title">Increase Your Business</h3>
-                <p className="feature-description">
-                  Boost your revenue with smarter tools and actionable insights tailored to your goals.
-                </p>
+      </div>
+      <div className="bg-fetaure-section">
+        <div className='overview-container'>
+          <div className="features-grid">
+            <div className="feature-item">
+              <div className='business-icon'>
+                <IncreaseBusiness />
               </div>
-              <div className="feature-item">
-                <div className='business-icon'>
-                  <EnhanceMarketing />
-                </div>
-                <h3 className="bg-feature-title">Enhance Your Marketing</h3>
-                <p className="feature-description">
-                  Promote your brand effectively with targeted strategies and creative campaigns.
-                </p>
+              <h3 className="bg-feature-title">Increase Your Business</h3>
+              <p className="feature-description">
+                Boost your revenue with smarter tools and actionable insights tailored to your goals.
+              </p>
+            </div>
+            <div className="feature-item">
+              <div className='business-icon'>
+                <EnhanceMarketing />
               </div>
-              <div className="feature-item">
-                <div className='business-icon'>
-                  <ExpandReach />
-                </div>
-                <h3 className="bg-feature-title">Expand Your Reach</h3>
-                <p className="feature-description">
-                  Scale your business across multiple platforms and unlock new opportunities.
-                </p>
+              <h3 className="bg-feature-title">Enhance Your Marketing</h3>
+              <p className="feature-description">
+                Promote your brand effectively with targeted strategies and creative campaigns.
+              </p>
+            </div>
+            <div className="feature-item">
+              <div className='business-icon'>
+                <ExpandReach />
               </div>
+              <h3 className="bg-feature-title">Expand Your Reach</h3>
+              <p className="feature-description">
+                Scale your business across multiple platforms and unlock new opportunities.
+              </p>
             </div>
           </div>
         </div>
