@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Custom Branded Tracking",
+        "title": "Brand Promotion via Tracking",
         "icon": "📦",
         "description": "Personalize your shipment tracking experience with your own branding.",
         "benefits": [
@@ -27,9 +27,9 @@
         "icon": "💳",
         "description": "Offer customers a variety of secure payment methods for smoother transactions.",
         "benefits": [
-            "Integrate multiple payment methods such as credit, debit, and wallets",
-            "Enhance security with trusted payment gateways",
-            "Facilitate faster and easier transactions for all parties"
+            "Integrate multiple payment methods such as credit card, debit card, wallets, UPI and NEFT",
+            "Enhance security with trusted payment gateways as Razorpay",
+            "Facilitate faster and easier transactions"
         ]
     },
     {
@@ -51,14 +51,14 @@
         "benefits": [
             "Design invoice layouts that match your brand style",
             "Ensure consistency and professionalism in all documents",
-            "Generate Proof of Delivery (POD) to track deliveries"
+            "Fetch Proof of Delivery (POD) on single click"
         ]
     },
     {
         "id": 6,
         "title": "Automated GST Split",
         "icon": "📊",
-        "description": "Simplify tax management by automatically splitting GST charges for each shipment.",
+        "description": "Simplify tax management by automatically splitting GST charges across different accounts.",
         "benefits": [
             "Streamline your GST reporting and filing",
             "Ensure accurate tax calculations for each shipment",
@@ -84,7 +84,7 @@
         "benefits": [
             "Engage customers directly via WhatsApp for real-time support",
             "Automate frequent inquiries using bots for better efficiency",
-            "Boost customer satisfaction with fast, responsive communication"
+            "Boost customer satisfaction with fast and responsive communication"
         ]
     },
     {
@@ -127,7 +127,7 @@
         "description": "Efficiently manage returns and exchanges with an automated, user-friendly platform.",
         "benefits": [
             "Easily handle returns and exchanges to improve customer service",
-            "Reduce friction with automated return processes",
+            "Reduce friction with automated return processes and refunds",
             "Offer hassle-free returns to enhance the customer experience"
         ]
     },
@@ -166,23 +166,23 @@
     },
     {
         "id": 16,
-        "title": "Better Weight Management",
+        "title": "Smart Weight Management",
         "icon": "⚖️",
         "description": "Ensure accurate weight reporting and reconciliation for efficient shipping cost management.",
         "benefits": [
             "Reconcile weight discrepancies and improve cost accuracy",
             "Ensure precise weight calculations for better cost optimization",
-            "Manage weight-based shipping charges efficiently"
+            "API based weight validation from courier on real time basis"
         ]
     },
     {
         "id": 17,
         "title": "Marketplace Integrations",
         "icon": "🛒",
-        "description": "Seamlessly connect with leading marketplaces like Amazon, eBay, and others.",
+        "description": "Seamlessly connect with leading marketplaces like Amazon, Flipkart, and others.",
         "benefits": [
-            "Sync orders and shipments from marketplaces directly",
             "Manage multiple marketplace orders in one platform",
+            "Syncing and tracking update on real time basis",
             "Reduce manual work and errors with direct integration"
         ]
     },
@@ -232,9 +232,9 @@
     },
     {
         "id": 22,
-        "title": "Extended Pin Code Coverage",
+        "title": "Wider Pincode Coverage",
         "icon": "📍",
-        "description": "Expand your reach with coverage across more pin codes, even in remote locations.",
+        "description": "Expand your reach with coverage across more pin codes, even to the remotest location.",
         "benefits": [
             "Deliver to more locations, including hard-to-reach areas",
             "Ensure nationwide delivery coverage without restrictions",
@@ -265,13 +265,13 @@
     },
     {
         "id": 25,
-        "title": "Vast Courier Network",
-        "icon": "🌐",
-        "description": "Leverage an extensive network of trusted couriers for faster, more reliable deliveries.",
+        "title": "Custom Courier & Carrier Integration",
+        "icon": "🔗",
+        "description": "Empower businesses to plug in their own courier and carrier services.",
         "benefits": [
-            "Access a large network of reliable domestic and international couriers",
-            "Ensure timely and dependable deliveries across regions",
-            "Benefit from global shipping options with trusted partners"
+            "Let businesses add their own couriers and carriers",
+            "Support third-party logistics integration",
+            "Offer flexible and custom shipping options"
         ]
     },
     {
