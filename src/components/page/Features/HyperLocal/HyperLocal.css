@@ -197,8 +197,10 @@
     background-color: #ecf0f1;
 }
 
-.hyperlocal__marketplace>div:last-of-type {
-    padding-left: 3rem;
+
+.hyperlocal__marketplace img {
+    width: 100%;
+    height: auto;
 }
 
 .hyperlocal__page-container section {
