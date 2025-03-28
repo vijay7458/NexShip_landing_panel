@@ -30,6 +30,8 @@ const BusinessGrowth = () => {
       </div>
       <div className="bg-fetaure-section">
         <div className='overview-container'>
+          <h3 className='text-white'>Unlock New Opportunities with Smart Strategies</h3>
+          <p className='text-white'>Boost revenue with actionable insights, enhance your marketing with targeted strategies, and scale your business effortlessly across multiple platforms.</p>
           <div className="features-grid">
             <div className="feature-item">
               <div className='business-icon'>

@@ -86,6 +86,7 @@
     /* margin-top: 50px; */
     /* border-radius: 20px; */
     /* margin-inline: -2rem; */
+    overflow: hidden;
 }
 
 .bg-fetaure-section .overview-container {
@@ -101,8 +102,10 @@
     height: 100%;
     top: 5%;
     left: 0;
-    background: url("../../../../assets/image/growth-bg.png");
+    background: url("../../../../assets/image/growth-bg2.png");
     background-size: contain;
+    /* background-repeat: no-repeat;
+    background-position: center; */
     opacity: 0.2;
-    filter: brightness(1) grayscale(1);
+    /* filter: brightness(1) grayscale(0.5); */
 }
