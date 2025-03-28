@@ -12,6 +12,7 @@ import OperationsPanel from "./Components/OperationsPanel/OperationsPanel";
 import "./HomePage.css";
 import InsightsFooter from "./Components/Insights/InsightsFooter";
 import NewCheckoutRecovery from "./Components/CheckoutRecovery/NewCheckoutRecovery";
+import TestimonialCarousel from "./TestimonialSection/TestimonialCarousel";
 
 const sectionsData = [
     { id: "hero-banner", Component: HeroBanner, animation: "" },
@@ -24,6 +25,7 @@ const sectionsData = [
     { id: "insights", Component: Insights, animation: "" },
     { id: "insights-footer", Component: InsightsFooter, animation: "" },
     { id: "operations-panel", Component: OperationsPanel, animation: "animate__fadeInLeft" },
+    { id: "testimonials", Component: TestimonialCarousel, animation: "" },
 ];
 
 const Section = ({ id, Component, animation, isVisible }) => {
