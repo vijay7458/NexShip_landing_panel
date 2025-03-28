@@ -7,6 +7,10 @@ import TransactionImage from '../../../../assets/image/TransactionImage.png'
 import NoFraudImage from '../../../../assets/image/NoFraudImage.png'
 import FlexiblePaymentImage from '../../../../assets/image/FlexiblePaymentImage.png'
 import IncreasedSalesImage from '../../../../assets/image/IncreasedSalesImage.png'
+import BoostedCred from './icons/BoostedCred';
+import CustomerSatisfaction from './icons/CustomerSatisfaction';
+import CartDone from './icons/CartDone';
+import MoreEngagement from './icons/MoreEngagement';
 
 const PrepaidAndCOD = () => {
     const handleScroll = () => {
@@ -78,18 +82,22 @@ const PrepaidAndCOD = () => {
                     <div className='row flex-column-reverse flex-lg-row'>
                         <ul className="why_cod-steps col-12 col-lg-7">
                             <li className="why_cod-step">
+                                <MoreEngagement />
                                 <p><span>More Engagement</span><br />
                                     Empower your customers to make the right payment choice at the right time.</p>
                             </li>
                             <li className="why_cod-step">
+                                <CartDone />
                                 <p><span>Reduced Cart Abandonment</span><br />
                                     Lower the chances of losing potential buyers to competitors.</p>
                             </li>
                             <li className="why_cod-step">
+                                <CustomerSatisfaction />
                                 <p><span>Enhanced Customer Satisfaction</span><br />
                                     Simplify the payment process for your customers, making transactions hassle-free.</p>
                             </li>
                             <li className="why_cod-step">
+                                <BoostedCred />
                                 <p><span>Boosted Credibility</span><br />
                                     Increase trust and loyalty by going the extra mile for your customers.</p>
                             </li>
