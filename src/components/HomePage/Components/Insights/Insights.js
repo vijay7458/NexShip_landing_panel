@@ -34,8 +34,8 @@ const Insights = () => {
       <div className="overview-container">
         {/* Section Heading */}
         <div className={`heading ${isAnimated ? "animate__animated animate__pulse" : ""}`}>
-          <h3 className="subtitle">Lead Generation & Analytics</h3>
-          <h1>Turn Insights Into Action</h1>
+          <h3 className="subtitle">Sales Analytics & Insights</h3>
+          <h1>Turn Data Into Growth</h1>
         </div>
 
         {/* Content Section */}
@@ -47,23 +47,26 @@ const Insights = () => {
               src={InsightsLeft}
               alt="Insights Left"
             />
-            <p
-              className={`highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
+            <div
+              className={`text-end highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
             >
-              Attract potential customers with ease by using intuitive forms, engaging landing pages,
-              and tailored outreach strategies designed to connect with your audience effectively.
-            </p>
+              <h3>Optimize Your Sales</h3>
+              <p>
+                Gain deep insights into your orders, customer preferences, and trending products. Use data to refine your strategy and target the right audience.
+              </p>
+            </div>
           </div>
 
           {/* Right Text and Image */}
           <div className="insights-text-content row" style={{ overflow: "hidden" }}>
-            <p
-              className={`highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
+            <div
+              className={`text-start highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
             >
-              Understand customer behavior deeply, evaluate the effectiveness of your campaigns, and
-              monitor your business’s overall performance. Gain valuable insights to make informed
-              decisions and drive growth.
-            </p>
+              <h3>Smart Decisions, Better Results</h3>
+              <p>
+                Track sales performance, analyze demand patterns, and make informed decisions to maximize profitability and business growth.
+              </p>
+            </div>
             <img
               className={`col-12 col-sm-2 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
               src={InsightsRight}
