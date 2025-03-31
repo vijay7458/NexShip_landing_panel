@@ -7,8 +7,11 @@ import ResolveNdrIcon from './Icons/ResolveNdrIcon';
 import NdrInsightsIcon from './Icons/NdrInsightsIcon';
 import CheckIcon from './Icons/CheckIcon';
 import NdrBg from '../../../../assets/image/NdrBg.png'
+import { useNavigate } from 'react-router';
 
 const NDRManagement = () => {
+    let navigate = useNavigate();
+
     const handleScroll = () => {
         window.scrollTo({
             top: 550,
@@ -133,7 +136,7 @@ const NDRManagement = () => {
                 <section className="ndr-management__cta">
                     <h2 className="heading text-center">Start Streamlining Your NDR Process Today</h2>
                     <p>Leverage our NDR Management system to minimize delays and optimize your logistics operations.</p>
-                    <button className="btn main-button">Learn More</button>
+                    <button onClick={() => navigate("/support/home")} className="btn main-button">Learn More</button>
                 </section>
             </section>
         </>

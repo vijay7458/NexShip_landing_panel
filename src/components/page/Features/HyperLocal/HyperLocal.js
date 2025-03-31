@@ -6,8 +6,11 @@ import HyperLocalBG from "../../../../assets/image/HyperLocalBG.png"
 import WhyHyperLocal from "../../../../assets/image/WhyHyperLocal.png"
 import CheckIcon from '../NDRManagement/Icons/CheckIcon';
 import ResolveNdrIcon from '../NDRManagement/Icons/ResolveNdrIcon';
+import { useNavigate } from 'react-router';
 
 const HyperLocal = () => {
+    let navigate = useNavigate();
+
     const handleScroll = () => {
         window.scrollTo({
             top: 550,
@@ -170,7 +173,7 @@ const HyperLocal = () => {
                         <p className="hyperlocal__cta-description">
                             Start offering ultra-fast deliveries that delight your customers and streamline your logistics. Join the future of local delivery today!
                         </p>
-                        <button className="btn main-button">Get Started Now</button>
+                        <button onClick={()=>navigate("/contact")} className="btn main-button">Get Started Now</button>
                     </div>
                 </section>
             </section>

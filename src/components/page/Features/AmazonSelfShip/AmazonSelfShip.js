@@ -8,8 +8,10 @@ import IndependentLogisticsIcon from './Icons/IndependentLogisticsIcon';
 import FlexibleOperationsIcon from './Icons/FlexibleOperationsIcon';
 import InventoryManageIcon from './Icons/InventoryManageIcon';
 import ExtensiveCoverageIcon from './Icons/ExtensiveCoverageIcon';
+import { useNavigate } from 'react-router';
 
 const AmazonSelfShip = () => {
+    let navigate = useNavigate();
     const handleScroll = () => {
         window.scrollTo({
             top: 550,
@@ -146,7 +148,7 @@ const AmazonSelfShip = () => {
                 <div className="">
                     <h2>Ready to Get Started?</h2>
                     <p>Take control of your shipping and grow your business with Amazon Self-Ship + ShipEase.</p>
-                    <button className="btn main-button">Start Shipping</button>
+                    <button onClick={() => navigate("/contact")} className="btn main-button">Start Shipping</button>
                 </div>
             </footer>
         </div>
