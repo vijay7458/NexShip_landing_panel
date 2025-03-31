@@ -4,11 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import SecurePackages from '../../../../assets/image/SecurePackages.png'
 import SubmitClaimIcon from '../../../../assets/image/SubmitClaimIcon.png'
-import ReceiveReimbursement from '../../../../assets/image/ReceiveReimbursement.png'
+// import ReceiveReimbursement from '../../../../assets/image/ReceiveReimbursement.png'
 import SelectCover from '../../../../assets/image/SelectCover.png'
 import ElectronicsIcon from './Icons/ElectronicsIcon';
 import MedicineIcon from './Icons/MedicineIcon';
 import FashionApparelsIcon from './Icons/FashionApparelsIcon';
+import SecurePackage from './Icons/SecurePackage';
+import SubmitClaim from './Icons/SubmitClaim';
+import ReceiveReimbursement from './Icons/ReceiveReimbursement';
 
 const ShipmentProtection = () => {
     const handleScroll = () => {
@@ -44,19 +47,19 @@ const ShipmentProtection = () => {
                         <div className="shipment-protection__step">
                             <h3 className="shipment-protection__step-title">STEP 01</h3>
                             <p className="shipment-protection__step-heading">Secure Packages</p>
-                            <img src={SecurePackages} alt="Secure Packages" />
+                            <SecurePackage />
                             <p>Easily secure your packages. The premium will be calculated based on the package value.</p>
                         </div>
                         <div className="shipment-protection__step">
                             <h3 className="shipment-protection__step-title">STEP 02</h3>
                             <p className="shipment-protection__step-heading">Submit Claims</p>
-                            <img src={SubmitClaimIcon} alt="Submit Claim" />
+                            <SubmitClaim />
                             <p>Submit a claim for reimbursement in case the package is damaged, or stolen.</p>
                         </div>
                         <div className="shipment-protection__step">
                             <h3 className="shipment-protection__step-title">STEP 03</h3>
                             <p className="shipment-protection__step-heading">Receive Reimbursement</p>
-                            <img src={ReceiveReimbursement} alt="Receive Reimbursement" />
+                            <ReceiveReimbursement/>
                             <p>Receive reimbursement up to the total value of the package.</p>
                         </div>
                     </div>
