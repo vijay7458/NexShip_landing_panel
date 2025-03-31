@@ -43,13 +43,15 @@ const PriceAndPlans = () => {
                         <p className='mt-3'>Unlock advanced features and receive priority support.</p>
                         <div className='plans-features'>
                             <ul className=''>
-                                <li><ListIcon /> 1 Ecommerce Channel Integration</li>
-                                <li><ListIcon /> Chat, Call & Email Support</li>
+                                <li><ListIcon /> 2 Ecommerce Channel Integration</li>
+                                <li><ListIcon /> Ticket Support and Panel Escalations</li>
+                                <li><ListIcon /> NDR & RTO Management</li>
                                 <li><ListIcon /> Automated Channel Order Sync</li>
                                 <li><ListIcon /> Domestic And International Shipping</li>
+                                <li><ListIcon /> Basic Analytics Dashboard</li>
                             </ul>
                         </div>
-                        <button className='btn main-button-outline mt-4'>Get Started</button>
+                        {/* <button className='btn main-button-outline mt-4'>Get Started</button> */}
                     </div>
                     <div className='plan-item'>
                         <h4>Pro</h4>
@@ -60,13 +62,15 @@ const PriceAndPlans = () => {
                         <p className='mt-3'>Access premium tools and team colaboration options.</p>
                         <div className='plans-features'>
                             <ul className=''>
+                                <li><ListIcon /> All Features from Standard</li>
                                 <li><ListIcon /> 5 Ecommerce Channel Integration</li>
-                                <li><ListIcon /> Chat, Call & Email Support</li>
-                                <li><ListIcon /> Automated Channel Order Sync</li>
-                                <li><ListIcon /> Domestic And International Shipping</li>
+                                <li><ListIcon /> Dedicated Key Account Manager</li>
+                                <li><ListIcon /> Merging of Shipment</li>
+                                <li><ListIcon /> Payment Mode Change</li>
+                                <li><ListIcon /> Pro Analytics Dashboard</li>
                             </ul>
                         </div>
-                        <button className='btn main-button-outline mt-4'>Get Started</button>
+                        {/* <button className='btn main-button-outline mt-4'>Get Started</button> */}
                     </div>
                     <div className='plan-item'>
                         <h4>Pro Plus</h4>
@@ -77,14 +81,15 @@ const PriceAndPlans = () => {
                         <p className='mt-3'>Customizable solutions for large shipping and dedicated support.</p>
                         <div className='plans-features'>
                             <ul className=''>
-                                <li><ListIcon /> Intelligent Courier Allocation</li>
+                                <li><ListIcon /> All Features from Pro</li>
+                                <li><ListIcon /> AI Powered Courier Allocation Engine</li>
                                 <li><ListIcon /> Unlimited Ecommerce Channel Integration</li>
-                                <li><ListIcon /> Domestic Shipping</li>
-                                <li><ListIcon /> Automated Channel Order Sync</li>
-                                <li><ListIcon /> Ndr Calling And Ivr Response Setup</li>
+                                <li><ListIcon /> 24*7 Support</li>
+                                <li><ListIcon /> Custom Branding Page with NPS</li>
+                                <li><ListIcon /> Pro+ Analytics Dashboard</li>
                             </ul>
                         </div>
-                        <button className='btn main-button-outline mt-4'>Get Started</button>
+                        {/* <button className='btn main-button-outline mt-4'>Get Started</button> */}
                     </div>
                 </div>
                 <div className='book-demo-sec'>

@@ -118,6 +118,12 @@
     gap: 10px;
 }
 
+.business-plan-page .plans-features ul li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
 .book-demo-sec {
     width: 70%;
     margin-inline: auto;
