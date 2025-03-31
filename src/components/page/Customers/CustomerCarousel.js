@@ -3,20 +3,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import customerOne from '../../../assets/image/customers/group-26288.svg'
-import customerTwo from '../../../assets/image/customers/gymshark.svg'
-import customerThree from '../../../assets/image/customers/harry-s.svg'
-import customerFour from '../../../assets/image/customers/mous.svg'
-import customerFive from '../../../assets/image/customers/pelagic-logo-v3.svg'
-import customerSix from '../../../assets/image/customers/rakuten-logo-1.svg'
+
+import Curefit from "../../../assets/image/clients/curefit.png"
+import XYXX from "../../../assets/image/clients/xyxx.png"
+import RareRabbit from "../../../assets/image/clients/rareRabbit.jpeg"
+import TheAyurvedaExperience from "../../../assets/image/clients/ayurveda.png"
+import SwissMilitary from "../../../assets/image/clients/swissMilitary.png"
 
 const customers = [
-  { id: 1, name: "Customer One", logo: customerOne },
-  { id: 2, name: "Customer Two", logo: customerTwo },
-  { id: 3, name: "Customer Three", logo: customerThree },
-  { id: 4, name: "Customer Four", logo: customerFour },
-  { id: 5, name: "Customer Five", logo: customerFive },
-  { id: 6, name: "Customer Six", logo: customerSix }
+  { id: 1, name: "Curefit", logo: Curefit },
+  { id: 2, name: "XYXX", logo: XYXX },
+  { id: 3, name: "Rare Rabbit", logo: RareRabbit },
+  { id: 4, name: "The Ayurveda Experience", logo: TheAyurvedaExperience },
+  { id: 5, name: "Swiss Military", logo: SwissMilitary },
 ];
 
 export default function CustomerCarousel() {
@@ -37,7 +36,7 @@ export default function CustomerCarousel() {
         slidesPerView={screenWidth < 767 ? 1 : 3}
         spaceBetween={20}
         loop={true}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        autoplay={{ delay: 200000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Pagination, Autoplay]}
         className="w-full"
@@ -45,7 +44,7 @@ export default function CustomerCarousel() {
         {customers.map((customer) => (
           <SwiperSlide key={customer.id} className="p-4 bg-white shadow-md rounded-xl flex flex-col items-center">
             <img src={customer.logo} alt={customer.name} className="w-16 h-16 rounded-full mb-2" />
-            <p className="text-lg font-semibold">{customer.name}</p>
+            <p className="text-lg fw-bold mt-2">{customer.name}</p>
           </SwiperSlide>
         ))}
       </Swiper>

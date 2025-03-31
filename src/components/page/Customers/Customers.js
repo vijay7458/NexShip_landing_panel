@@ -3,10 +3,11 @@ import './Customers.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import CustomerCarousel from './CustomerCarousel';
-import customerOne from '../../../assets/image/customers/group-26288.svg'
-import customerTwo from '../../../assets/image/customers/gymshark.svg'
-import customerThree from '../../../assets/image/customers/harry-s.svg'
-import customerFour from '../../../assets/image/customers/mous.svg'
+import Curefit from "../../../assets/image/clients/curefit.png"
+import XYXX from "../../../assets/image/clients/xyxx.png"
+import RareRabbit from "../../../assets/image/clients/rareRabbit.jpeg"
+import TheAyurvedaExperience from "../../../assets/image/clients/ayurveda.png"
+import SwissMilitary from "../../../assets/image/clients/swissMilitary.png"
 
 const Customers = () => {
     const handleScroll = () => {
@@ -18,47 +19,46 @@ const Customers = () => {
 
 
 
-
     const Testimonials = [
         {
             id: "1",
-            name: "John Doe",
+            name: "Aabhar Ventures",
             designation: "CEO",
-            company_name: "XYZ Retail",
+            company_name: "aabhar ventures",
             company_logo: "/images/xyz-retail-logo.png",
-            message: "Shipease has transformed our logistics operations, providing seamless order fulfillment and faster deliveries. A true game-changer!"
+            message: "ShipEase has transformed our logistics operations, providing seamless order fulfillment and faster deliveries. A true game-changer!"
         },
         {
             id: "2",
-            name: "Sarah Williams",
+            name: "ASM Traders",
             designation: "Operations Manager",
-            company_name: "ABC Electronics",
+            company_name: "ASM Traders",
             company_logo: "/images/abc-electronics-logo.png",
             message: "The real-time tracking and automated solutions have significantly improved our supply chain efficiency. Highly recommended!"
         },
         {
             id: "3",
-            name: "Michael Lee",
+            name: "Atomic Food",
             designation: "Founder",
-            company_name: "Global Fashion Hub",
+            company_name: "Atomic Food",
             company_logo: "/images/global-fashion-hub-logo.png",
-            message: "With Shipease, we’ve streamlined our shipping process, reduced delays, and improved customer satisfaction. It's a must-have for eCommerce brands!"
+            message: "With ShipEase, we’ve streamlined our shipping process, reduced delays, and improved customer satisfaction. It's a must-have for eCommerce brands!"
         },
         {
             id: "4",
-            name: "Emily Carter",
+            name: "Tatsat Ayurveda",
             designation: "Logistics Head",
-            company_name: "Home Essentials Co.",
+            company_name: "Tatsat Ayurveda",
             company_logo: "/images/home-essentials-logo.png",
             message: "The AI-driven recommendations and cost-effective shipping solutions have been invaluable for our growing business. Fantastic service!"
         },
         {
             id: "5",
-            name: "David Robinson",
+            name: "Zoe Nails",
             designation: "Supply Chain Director",
-            company_name: "TechGear Solutions",
+            company_name: "Zoe Nails",
             company_logo: "/images/techgear-solutions-logo.png",
-            message: "Shipease provides unmatched visibility into our logistics, allowing us to optimize routes and reduce shipping costs. Highly efficient!"
+            message: "ShipEase provides unmatched visibility into our logistics, allowing us to optimize routes and reduce shipping costs. Highly efficient!"
         }
     ];
 
@@ -72,8 +72,8 @@ const Customers = () => {
                     <span className="ripple-4" />
                     <span className="ripple-5" />
                 </div>
-                <h1>Over 100,000+ brands trust Shipease's logistics.</h1>
-                <p className="page-header-description">  At <strong>Shipease</strong>, we provide seamless, efficient, and
+                <h1>Over 100,000+ brands trust ShipEase's logistics.</h1>
+                <p className="page-header-description">  At <strong>ShipEase</strong>, we provide seamless, efficient, and
                     cost-effective logistics solutions that help businesses scale without
                     logistical barriers. Our trusted clients range from startups to global
                     enterprises, all relying on us to streamline their supply chain.</p>
@@ -84,7 +84,7 @@ const Customers = () => {
 
                 <section className='customer-counts'>
                     <div className='amazon-self-ship-container'>
-                        <h2 className="heading text-center">Enhance your customer's experience with Shipease.</h2>
+                        <h2 className="heading text-center">Enhance your customer's experience with ShipEase.</h2>
                         <p className='customer-counts-des'>Our platform optimizes supply chain efficiency, reduces operational costs, and enhances customer satisfaction, driving long-term business growth.</p>
                         <ul>
                             <li>
@@ -117,7 +117,7 @@ const Customers = () => {
                                 <div key={id} className="testimonial-card">
                                     <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
                                     <p>"{item.message}"</p>
-                                    <h4>{item.name}</h4>
+                                    {/* <h4>{item.name}</h4> */}
                                     <span>{item.designation}, {item.company_name}</span>
                                 </div>
                             ))}
@@ -130,10 +130,11 @@ const Customers = () => {
                     <h2 className="heading text-center">Trusted By Leading Brands</h2>
                     <p>Our logistics network supports a diverse range of industries.</p>
                     <div className="brands-logos">
-                        <img src={customerOne} alt="Brand 1" />
-                        <img src={customerTwo} alt="Brand 2" />
-                        <img src={customerThree} alt="Brand 3" />
-                        <img src={customerFour} alt="Brand 4" />
+                        <img src={Curefit} alt="Brand 1" />
+                        <img src={SwissMilitary} alt="Brand 2" />
+                        <img src={TheAyurvedaExperience} alt="Brand 3" />
+                        <img src={RareRabbit} alt="Brand 4" />
+                        <img src={XYXX} alt="Brand 4" />
                     </div>
                 </section>
 
@@ -154,17 +155,17 @@ const Customers = () => {
                     </div>
                 </section>
 
-                <section className='customer-carousel'>
+                {/* <section className='customer-carousel'>
                     <div className='amazon-self-ship-container'>
                         <CustomerCarousel />
                     </div>
-                </section>
+                </section> */}
 
                 {/* Get Started */}
                 <section section className="get-started" >
                     <div className='amazon-self-ship-container'>
                         <h2 className="heading text-center">Partner With Us</h2>
-                        <p>Join the growing network of businesses that trust <strong>Shipease</strong> for efficient logistics solutions. Get started today!</p>
+                        <p>Join the growing network of businesses that trust <strong>ShipEase</strong> for efficient logistics solutions. Get started today!</p>
                         <button className="btn main-button">Get Started</button>
                     </div>
                 </section>
