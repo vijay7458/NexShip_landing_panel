@@ -90,7 +90,7 @@ const TestimonialCarousel = () => {
                     <Swiper
                         modules={[Autoplay, Pagination, Navigation]}
                         spaceBetween={20}
-                        autoplay={{ delay: 99999, disableOnInteraction: false }}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
                         pagination={{ clickable: true }}
                         navigation
                         loop={true}
