@@ -20,7 +20,7 @@ const CourierInfo = ({ TrackingData }) => {
                 </div>
                 <div>
                     <span className="tracking-label">EDD: </span>
-                    <span>{moment(TrackingData?.other_details?.expected_delivery_date).format("DD MMM YYY")}</span>
+                    <span>{moment(TrackingData?.other_details?.expected_delivery_date).format("DD MMM YYYY")}</span>
                 </div>
             </div>
         </div>

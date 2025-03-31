@@ -86,7 +86,7 @@ const EarlyCOD = () => {
                             </div>
                         </div>
                         <hr />
-                        <div className="hyperlocal__step">
+                        {/* <div className="hyperlocal__step">
                             <div>
                                 <span className='hyperlocal-step-number'>03.</span>
                             </div>
@@ -95,10 +95,10 @@ const EarlyCOD = () => {
                                 <p>Fulfill orders promptly, complete all necessary documentation, and ensure accurate delivery records.</p>
                             </div>
                         </div>
-                        <hr />
+                        <hr /> */}
                         <div className="hyperlocal__step">
                             <div>
-                                <span className='hyperlocal-step-number'>04.</span>
+                                <span className='hyperlocal-step-number'>03.</span>
                             </div>
                             <div>
                                 <h3 className="hyperlocal__step-title">Receive Payments</h3>

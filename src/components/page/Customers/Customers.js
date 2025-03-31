@@ -24,7 +24,7 @@ const Customers = () => {
             id: "1",
             name: "Aabhar Ventures",
             designation: "CEO",
-            company_name: "aabhar ventures",
+            company_name: "Aabhar Ventures",
             company_logo: "/images/xyz-retail-logo.png",
             message: "ShipEase has transformed our logistics operations, providing seamless order fulfillment and faster deliveries. A true game-changer!"
         },
