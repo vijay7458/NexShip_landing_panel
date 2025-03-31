@@ -4,12 +4,23 @@ import mapboxgl from 'mapbox-gl';
 
 
 const MapboxComponent = () => {
+
+    const [screenWidth, setscreenWidth] = useState(window.innerWidth);
+
+    const updateWidth = () => setscreenWidth(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener('resize', updateWidth);
+        return () => window.removeEventListener('resize', updateWidth);
+    }, [])
+
+
     const [viewport, setViewport] = useState({
         latitude: 28.40210377028585,
         longitude: 77.06037752131253,
         zoom: 16,
         width: '100%',  // Full width
-        height: '400px',  // Ensure map has height
+        height: screenWidth > 600 ? '800px' : '400px',  // Ensure map has height
     });
 
     const [address, setAddress] = useState('Fetching address...');

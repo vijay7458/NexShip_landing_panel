@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ContactUs.css';
 import MapboxComponent from './MapboxComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -42,12 +42,29 @@ const ContactUs = () => {
         });
     };
 
+    const [showModal, setShowModal] = useState(false);
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        // Add form submission logic here
+        setShowModal(true);
     };
 
+    useEffect(() => {
+        if (!showModal) {
+            setFormData({
+                userType: '',
+                name: '',
+                mobile: '',
+                companyName: '',
+                companyUrl: '',
+                email: '',
+                monthlyShipment: '',
+                channels: []
+            })
+        }
+    }, [showModal])
 
 
     const handleScroll = () => {
@@ -90,17 +107,10 @@ const ContactUs = () => {
                                 <h3>Phone</h3>
                                 <p>+91 97172 00551</p>
                             </div>
+
                             <div className="contact-us__detail">
-                                <h3>Registered Address</h3>
-                                <p>476B 2nd & 3rd Floor, Sector 39 Block C, Gurugram, Haryana, 122001</p>
-                            </div>
-                            <div className="contact-us__detail">
-                                <h3>Gurugram Office</h3>
+                                <h3>Office Address</h3>
                                 <p>Unit 321, Tower B1, M3M Cosmopolitan, Sector-66, Gurugram, Haryana, Pin-122101</p>
-                            </div>
-                            <div className="contact-us__detail">
-                                <h3>Surat Office</h3>
-                                <p>Unit 129, Althan, Surat, Gujarat, Pin - 395017</p>
                             </div>
                             <div className='contact-us__detail p-0'>
                                 <MapboxComponent />
@@ -261,12 +271,34 @@ const ContactUs = () => {
                             </div>
 
                             <button type="submit" className="btn main-button">Submit</button>
-                        </form >
-                    </section >
-                </section >
+                        </form>
+                    </section>
+                </section>
 
 
             </div>
+            {/* Bootstrap Modal */}
+            <div className={`modal fade contact-us-modal ${showModal ? "show d-block" : ""}`} tabIndex="-1">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">Your Query is submitted!</h5>
+                            <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+                        </div>
+                        <div className="modal-body">
+                            <p>Concerned person from our team will contact you shortly.</p>
+                            <div className='text-center mt-4'>
+                                <button type="button" className="btn main-button" onClick={() => setShowModal(false)}>
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Bootstrap Modal Backdrop */}
+            {showModal && <div className="modal-backdrop fade show"></div>}
         </>
     );
 };

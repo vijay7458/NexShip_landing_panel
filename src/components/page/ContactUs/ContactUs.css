@@ -133,3 +133,7 @@
 .contact-us__submit-button:hover {
     background-color: #0056b3;
 }
+
+.contact-us-modal .modal-header {
+    background: var(--sh-primary-light);
+}
