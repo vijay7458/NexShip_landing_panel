@@ -7,6 +7,10 @@
     text-align: left;
 }
 
+.api-integration-intro>div {
+    align-items: center;
+}
+
 .api-integration-intro img {
     max-width: 500px;
     width: 100%;

@@ -69,17 +69,17 @@ const APIIntegration = () => {
                             <div className="api-integration-pointer-item">
                                 <SyncingIcon />
                                 <div className='mt-3'>
-                                    <h3 className="heading">Continuous Syncing</h3>
-                                    <p>Sync your catalog every 15 minutes and stay on top of every new order that comes to your store.</p>
+                                    <h3 className="heading">On-Demand Syncing</h3>
+                                    <p>Sync your catalog and fetch new orders whenever needed, giving you complete control over order management.</p>
                                 </div>
                             </div>
-                            <div className="api-integration-pointer-item">
+                            {/* <div className="api-integration-pointer-item">
                                 <AutomatedProcessIcon />
                                 <div className='mt-3'>
                                     <h3 className="heading">Automated Process</h3>
                                     <p>With constant syncing, automate your order fulfillment process right from the start.</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </section>
