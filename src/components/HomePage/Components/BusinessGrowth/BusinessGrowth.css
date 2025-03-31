@@ -45,6 +45,7 @@
     background: linear-gradient(150.67deg, #C5DCF1 20.05%, #60A9EB 41.29%, #1975C9 86.07%);
     background: linear-gradient(150.67deg, #c5dcf182 20.05%, #60a9eb1c 41.29%, #1975c97a 86.07%);
     /* background: linear-gradient(135deg, #e0f7ff, #c0e7ff); */
+    background: #fff;
     border-radius: 12px;
 
 }
@@ -56,14 +57,14 @@
 }
 
 .bg-feature-title {
-    color: #fff;
+    color: #000;
     font-size: 1.4rem;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .feature-description {
-    color: #fff;
+    color: #000;
     font-size: 0.9rem;
     line-height: 1.4;
 }
@@ -75,8 +76,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: #f9f9f9;
     border-radius: 18px;
+    border: 2px dashed #6c757d;
 }
 
 .bg-fetaure-section {
