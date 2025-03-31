@@ -9,9 +9,11 @@ import { faAmazon, faMedium, faSquareWhatsapp } from "@fortawesome/free-brands-s
 // import sampleVideo from '../../assets/image/sample.webm'
 // import mobileLogo from "../../assets/image/mobileLogo.svg";
 import TrackingIcon from "./NavIcons/TrackingIcon";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+  let navigate = useNavigate();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [showVideo, setShowVideo] = useState(true);
@@ -55,6 +57,11 @@ const Header = () => {
     setToggleShow(!ToggleShow)
   }
 
+  const LearnMoreNav = (path) => {
+    
+    navigate(path)
+  }
+
   return (
     <>
       <header className={`header ${isScrolled ? "scrolled" : ""}`}>
@@ -93,7 +100,7 @@ const Header = () => {
                   <li className="col-12 col-lg-3">
                     <h4 className="mb-2">We understand the art of scaling rapidly</h4>
                     <p>Founded in 2020 by Ajay, Lalit, and Pawan, ShipEase has quickly emerged as one of India’s fastest-growing SaaS companies.</p>
-                    <button className="btn">Explore More</button>
+                    <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
                   </li>
                   <li className="col-12 col-lg-9">
                     <ul>
@@ -120,7 +127,7 @@ const Header = () => {
                   <li className="col-3">
                     <h4 className="mb-2">Support and Service</h4>
                     <p>An essential component of every organization, dedicated to delivering assistance, guidance, and effective solutions to customers, clients, or users.</p>
-                    <button className="btn">Learn More</button>
+                    <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
 
                   </li>
                   <li className="col-9">
@@ -142,7 +149,7 @@ const Header = () => {
                   <li className="col-3">
                     <h4 className="mb-2">Unlock Benefits with Referral Codes</h4>
                     <p>Take advantage of our exclusive referral program! Share your code with friends and colleagues to earn special discounts and rewards for both you and your referrals on premium logistics services.</p>
-                    <button className="btn">Learn More</button>
+                    <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
                   </li>
                   <li className="col-9">
                     <div>
@@ -166,7 +173,7 @@ const Header = () => {
                   <li className="col-3">
                     <h4 className="mb-2">Instantly Calculate Your Shipping Rates</h4>
                     <p>Get quick and accurate shipping rate calculations with our tool. Share it with your network to unlock special discounts and exclusive benefits for both you and your referrals on premium logistics services.</p>
-                    <button className="btn">Learn More</button>
+                    <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
                   </li>
                   <li className="col-9">
                     <ul>
