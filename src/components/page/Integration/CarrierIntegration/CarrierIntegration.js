@@ -36,7 +36,7 @@ const CarrierIntegration = () => {
                 <section className="carrier-integration__partners">
                     <div className='carrier-integration__header'>
                         <h2>Relying on a single option is not an option.</h2>
-                        <p>Leveraging multiple courier services to deliver across 24,000+ pin codes in India feels effortless.</p>
+                        <p>Leveraging multiple courier services to deliver across 29,000+ pin codes in India feels effortless.</p>
                     </div>
                     <div className="carrier-integration__partner-list">
                         {courierPartners.map((partner) => (
@@ -55,7 +55,7 @@ const CarrierIntegration = () => {
                                         <li key={i}>{feature}</li>
                                     ))}
                                 </ul>
-                                <button className="btn main-button">Learn More</button>
+                                {/* <button className="btn main-button">Learn More</button> */}
                             </div>
                         ))}
                     </div>
