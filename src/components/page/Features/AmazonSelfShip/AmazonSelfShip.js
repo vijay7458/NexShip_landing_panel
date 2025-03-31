@@ -102,27 +102,27 @@ const AmazonSelfShip = () => {
                     <h2 className="heading text-center">How Does Amazon Self-Ship Work?</h2>
                     <div className="hyperlocal__steps">
                         <div className="hyperlocal__step">
-                            <div>
+                            <div style={{ width: "30px" }}>
                                 <span className='hyperlocal-step-number'>01.</span>
                             </div>
                             <div>
-                                <h3 className="hyperlocal__step-title">Integrate Your Amazon Account</h3>
-                                <p>Link your Amazon account with ShipEase by accessing the "Permissions" tab and adding ShipEase as a third-party app.</p>
+                                <h3 className="hyperlocal__step-title">Single Click Integration</h3>
+                                <p>Go to the Integrations tab and click on "Integrate Amazon".</p>
                             </div>
                         </div>
                         <hr />
                         <div className="hyperlocal__step">
-                            <div>
+                            <div style={{ width: "30px" }}>
                                 <span className='hyperlocal-step-number'>02.</span>
                             </div>
                             <div>
-                                <h3 className="hyperlocal__step-title">Import Orders</h3>
-                                <p>Download order history reports from Amazon and upload them to ShipEase to manage orders seamlessly.</p>
+                                <h3 className="hyperlocal__step-title">Permission from Amazon Account</h3>
+                                <p>Go to the "Permissions" tab and add ShipEase as a third-party app.</p>
                             </div>
                         </div>
                         <hr />
                         <div className="hyperlocal__step">
-                            <div>
+                            <div style={{ width: "30px" }}>
                                 <span className='hyperlocal-step-number'>03.</span>
                             </div>
                             <div>
@@ -132,7 +132,7 @@ const AmazonSelfShip = () => {
                         </div>
                         <hr />
                         <div className="hyperlocal__step">
-                            <div>
+                            <div style={{ width: "30px" }}>
                                 <span className='hyperlocal-step-number'>04.</span>
                             </div>
                             <div>
