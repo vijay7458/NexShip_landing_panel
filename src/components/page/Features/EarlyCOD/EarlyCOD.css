@@ -39,6 +39,12 @@
     gap: 20px;
 }
 
+.cm__feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 .early-cod__feature {
     background: #fff;
     padding: 20px;
@@ -95,4 +101,23 @@
 
 .early-cod__steps-bg img {
     height: 100%;
+}
+
+.cm-feature-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.early-cod__conclude {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--sh-primary);
+    font-size: 1.4rem;
 }

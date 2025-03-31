@@ -108,6 +108,44 @@ const EarlyCOD = () => {
                     </div>
                 </div>
             </section>
+
+
+            {/* Working Capitol Section */}
+            <section className="early-cod__features">
+                <div className='amazon-self-ship-container'>
+                    <h2 className="early-cod__section-title">Strengthen Your Working Capital Management</h2>
+                    <p className="early-cod__description">
+                        Early COD helps maintain a steady cash flow, reducing dependency on external credit and improving financial stability. By receiving payments faster, you can:
+                    </p>
+                    <div className="cm__feature-grid">
+                        <div className="cm-feature-card">
+                            <h3>Reinvest in Inventory</h3>
+                            <p>
+                                Keep stock levels optimal without cash flow bottlenecks.
+                            </p>
+                        </div>
+                        <div className="cm-feature-card">
+                            <h3>Reduce Credit Reliance</h3>
+                            <p>
+                                Minimize the need for business loans or credit lines.
+                            </p>
+                        </div>
+                        <div className="cm-feature-card">
+                            <h3>Improve Supplier Payments</h3>
+                            <p>
+                                Pay vendors on time to secure better pricing and maintain strong relationships.
+                            </p>
+                        </div>
+                        <div className="cm-feature-card">
+                            <h3>Enhance Business Growth</h3>
+                            <p>
+                                Allocate funds to marketing, operations, and expansion without financial strain.
+                            </p>
+                        </div>
+                    </div>
+                    <p className="early-cod__conclude">Take control of your cash flow with ShipEase’s Early COD and drive sustainable growth!</p>
+                </div>
+            </section>
         </div>
     );
 };
