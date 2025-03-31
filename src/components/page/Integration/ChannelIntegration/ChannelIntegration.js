@@ -5,42 +5,38 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import EasyCommLogo from '../../../../assets/image/Channels/EasyCommLogo.png'
 import UCLogo from '../../../../assets/image/Channels/UCLogo.png'
 import ClickPostLogo from '../../../../assets/image/Channels/ClickPostLogo.png'
-import VinculumLogo from '../../../../assets/image/Channels/VinculumLogo.png'
 import OmsGuruLogo from '../../../../assets/image/Channels/OmsGuruLogo.png'
 import EasyShipLogo from '../../../../assets/image/Channels/EasyShipLogo.png'
+import VinculumLogo from '../../../../assets/image/Channels/VinculumLogo.png'
+import { CarrierPartners } from './CarrierPartners';
 
 const platforms = [
     {
         name: 'EasyEcom',
-        description: 'AI-powered omnichannel platform for inventory, warehousing, payment reconciliation, and wholesale management.',
         image: EasyCommLogo,
     },
     {
         name: 'Unicommerce',
-        description: 'Efficient e-commerce solutions to simplify courier and logistics management for businesses.',
         image: UCLogo,
     },
     {
         name: 'ClickPost',
-        description: 'Comprehensive logistics management platform for businesses of all sizes.',
         image: ClickPostLogo,
     },
     {
-        name: 'Vinculum',
-        description: 'Integrated courier services as part of Vinculum’s advanced e-commerce and omnichannel solutions.',
-        image: VinculumLogo,
-    },
-    {
         name: 'OMS Guru',
-        description: 'Order fulfillment tools that optimize courier operations for e-commerce businesses.',
         image: OmsGuruLogo,
     },
     {
         name: 'EasyShip',
-        description: 'All-in-one logistics platform for streamlining courier services and enhancing customer satisfaction.',
         image: EasyShipLogo,
     },
-];
+
+    {
+        name: 'VinculumLogo',
+        image: VinculumLogo,
+    },
+]
 
 const ChannelIntegration = () => {
     const handleScroll = () => {
@@ -72,14 +68,16 @@ const ChannelIntegration = () => {
             <section className="channel-integration__content">
                 <h2 className="channel-integration__section-title">Seamless Integration with Top Platforms</h2>
                 <div className="channel-integration__grid">
-                    {platforms.map((platform, index) => (
+                    {CarrierPartners.map((platform, index) => (
                         <div key={index} className="channel-integration__item">
-                            <img
-                                src={platform.image}
-                                alt={`${platform.name} Logo`}
-                                className="channel-integration__image"
-                            />
-                            <h3>{platform.name}</h3>
+                            <div className='ci-image-container'>
+                                <img
+                                    src={platform.image}
+                                    alt={`${platform.name} Logo`}
+                                    className="channel-integration__image"
+                                />
+                            </div>
+                            {/* <h3>{platform.name}</h3> */}
                             <p>{platform.description}</p>
                         </div>
                     ))}

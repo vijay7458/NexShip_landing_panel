@@ -13,7 +13,7 @@ const CourierRatesModal = ({ show, handleClose }) => {
         ],
         surface: [
             { courier: "Amazon COD Surface 500gm", rate: "₹67.00", edd: "3 Days" },
-            { courier: "Shiprocket Next Day Delivery", rate: "₹75.00", edd: "2 Days" },
+            { courier: "ShipEase Next Day Delivery", rate: "₹75.00", edd: "2 Days" },
             { courier: "Ecom Express Next day delivery", rate: "₹78.00", edd: "2 Days" },
             { courier: "Xpressbees Surface", rate: "₹93.60", edd: "3 Days" },
             { courier: "Ecom Express Surface", rate: "₹96.30", edd: "3 Days" },
@@ -77,7 +77,7 @@ const CourierRatesModal = ({ show, handleClose }) => {
                 <Button variant="secondary" onClick={handleClose}>
                     Close
                 </Button>
-                <Button variant="primary" href="https://app.shiprocket.in/register" target="_blank">
+                <Button variant="primary" href="https://app.shipease.in/signup" target="_blank">
                     Signup Now
                 </Button>
             </Modal.Footer>

@@ -750,6 +750,10 @@
         max-width: 300px;
         margin-inline: auto;
     }
+
+    .channel-integration__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1034,6 +1038,11 @@
 
     .cr-section .blue-half {
         height: 480px;
+    }
+
+
+    .channel-integration__grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
