@@ -75,6 +75,7 @@ function App() {
           <Route path='/careers' element={<Career />} />
 
           <Route path='/order-tracking' element={<TrackingOrder />} />
+          <Route path="/order-tracking/:awbNumber" element={<TrackingOrder />} />
 
 
           <Route path='/contact' element={<ContactUs />} />

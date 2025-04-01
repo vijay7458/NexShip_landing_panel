@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './TrackingOrder.css'
 import DeliveryActivity from './DeliveryActivity';
 import TrackingBG from '../../../assets/image/TrackingBG.png'
@@ -8,12 +8,17 @@ import { Button, Modal } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate, useParams } from 'react-router';
 
 const TrackingOrder = () => {
+
+    let navigate = useNavigate();
+    const { awbNumber } = useParams(); // Get AWB from URL
+
     const [activeTab, setActiveTab] = useState("awb");
     const [mobileNumber, setMobileNumber] = useState("");
     const [otp, setOtp] = useState("");
-    const [awb, setAwb] = useState("");
+    const [awb, setAwb] = useState(awbNumber || "");
     const [orderId, setOrderId] = useState("");
     const [phone, setPhone] = useState("");
     const [remarks, setRemarks] = useState("")
@@ -54,9 +59,16 @@ const TrackingOrder = () => {
         }
     }
 
-    const handleTracking = async () => {
+    useEffect(() => {
+        if (awbNumber) {
+            handleTracking(awbNumber)
+        }
+    }, [awbNumber])
+
+
+    const handleTracking = async (awbNumber) => {
         try {
-            const response = await fetch(`https://app.shipease.in/core-api/shipping/track-order/${awb}/`);
+            const response = await fetch(`https://app.shipease.in/core-api/shipping/track-order/${awbNumber}/`);
             const data = await response.json(); // Store response in `data` always
 
             console.log(data, "Tracking Response");
@@ -64,6 +76,7 @@ const TrackingOrder = () => {
             if (!response.ok) {
                 // console.error(`Error: ${response.status} - ${data?.message || "Unknown error"}`);
                 setTrackingData(data.detail || "Unknown Error");
+                // navigate(`/${awb}`)
             } else {
                 setTrackingData(data);
                 setshowOrderTracking(true);
@@ -77,9 +90,14 @@ const TrackingOrder = () => {
     };
 
 
+
+
     const handleSubmitAwb = (e) => {
-        e.preventDefault(); // Prevent form from refreshing the page
-        handleTracking(); // Call tracking function
+        e.preventDefault();
+        if (awb.trim()) {
+            navigate(`/order-tracking/${awb}`); // Update URL
+            handleTracking(awb); // Fetch new data
+        }
     };
 
 
