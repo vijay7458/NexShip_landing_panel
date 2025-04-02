@@ -23,10 +23,9 @@ const ReferAndEarn = () => {
                     <span className="ripple-4" />
                     <span className="ripple-5" />
                 </div>
-                <h1>Refer a Business, Earn Big!</h1>
-                <p className="page-header-description">As a trusted logistics partner, you can now earn rewards by referring other businesses to join our platform.
-                    Help them streamline their logistics and grow your rewards in the process.
-                    Start referring today and benefit from every successful onboarding</p>
+                <h1>Refer a Business & Earn Big!</h1>
+                <p className="page-header-description">Invite businesses to our platform and earn rewards for every booking they make!
+                    Help them streamline logistics while you benefit—start referring today!</p>
                 <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
             <div className="refer-and-earn">
