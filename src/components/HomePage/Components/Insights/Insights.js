@@ -48,10 +48,10 @@ const Insights = () => {
               alt="Insights Left"
             />
             <div
-              className={`text-end highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
+              className={`text-end col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInLeft animate__delay-1s" : ""}`}
             >
               <h3>Optimize Your Sales</h3>
-              <p>
+              <p className="highlight">
                 Gain deep insights into your orders, customer preferences, and trending products. Use data to refine your strategy and target the right audience.
               </p>
             </div>
@@ -60,10 +60,10 @@ const Insights = () => {
           {/* Right Text and Image */}
           <div className="insights-text-content row" style={{ overflow: "hidden" }}>
             <div
-              className={`text-start highlight col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
+              className={`text-start col-12 col-sm-9 ${isAnimated ? "animate__animated animate__fadeInRight animate__delay-1s" : ""}`}
             >
               <h3>Smart Decisions, Better Results</h3>
-              <p>
+              <p className="highlight">
                 Track sales performance, analyze demand patterns, and make informed decisions to maximize profitability and business growth.
               </p>
             </div>

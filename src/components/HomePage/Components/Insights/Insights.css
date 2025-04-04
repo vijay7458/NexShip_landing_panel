@@ -31,6 +31,11 @@
   justify-content: space-between;
 }
 
+.insights-text-content h3 {
+  color: var(--sh-primary);
+  font-weight: 700;
+}
+
 .insights-text-content p {
   font-size: 24px;
   line-height: 1.5;
