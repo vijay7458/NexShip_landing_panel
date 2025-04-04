@@ -29,14 +29,16 @@ const InsightsFooter = () => {
     }, [isAnimated]);
     return (
         <>
-            <div className="row insights-footer" ref={sectionRef}>
-                <p className={`col-12 col-md-6 highlight ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
-                    Empower your business with tools that not only attract new leads but
-                    also provide actionable data to refine strategies and drive growth.
-                    Monitor your progress and make data-driven decisions for success.
-                </p>
-                <div className={`col-12 col-md-6 text-end ${isAnimated ? "animate__animated animate__fadeInRight" : ""}`}>
-                    <img src={InsightsGraph} alt="Insights Graph" />
+            <div className="row insights-footer-container" ref={sectionRef}>
+                <div className="row insights-footer p-0 gap-md-0">
+                    <p className={`col-12 col-md-6 p-0 text-start ${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
+                        Empower your business with tools that not only attract new leads but
+                        also provide actionable data to refine strategies and drive growth.
+                        Monitor your progress and make data-driven decisions for success.
+                    </p>
+                    <div className={`col-12 col-md-6 p-0 text-center text-md-end ${isAnimated ? "animate__animated animate__fadeInRight" : ""}`}>
+                        <img src={InsightsGraph} alt="Insights Graph" />
+                    </div>
                 </div>
             </div>
         </>

@@ -54,21 +54,40 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.insights-footer {
-  align-items: center;
+.insights-footer-container {
   background: linear-gradient(90deg,
       #60a9eb 0%,
       #C5DCF1 25%,
       #fff 50%,
       #C5DCF1 75%,
       #60a9eb 100%);
-  background: #fff;
-  padding-block: 40px;
-  padding-inline: 50px;
-  position: relative;
+  /* background: #fff; */
   overflow: hidden;
-  margin: 40px 0 !important;
-  background-image: url(../../../../assets/image/grid.svg);
+  background: var(--sh-primary-middle);
+  padding: 70px 2rem 50px;
+  margin: 0 0 40px !important;
+  background-image: url("../../../../assets/image/grid.png");
+  background-size: contain;
+  background-repeat: repeat;
+  animation: moveBackground 200s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 5000px 0px;
+  }
+}
+
+.insights-footer {
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin-inline: auto;
+  gap: 10px;
 }
 
 .insights-footer::before {
@@ -84,14 +103,14 @@
   content: "";
   position: absolute;
   left: -10px;
-  background: #F4F7FC;
+  /* background: #F4F7FC; */
   filter: blur(9px);
   height: 50px;
   width: 110%;
 }
 
 .insights-footer p {
-  font-size: 26px;
+  font-size: 1.8rem;
   line-height: 1.6;
   text-align: left;
   color: #fff;
