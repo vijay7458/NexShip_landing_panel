@@ -823,10 +823,6 @@
         padding-inline: 20px;
     }
 
-    .operations-dashboard-image img {
-        max-width: 100%;
-    }
-
     #insights .insights-content .insights-text-content:last-of-type {
         flex-direction: column-reverse;
     }
