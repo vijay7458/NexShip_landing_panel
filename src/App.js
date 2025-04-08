@@ -36,6 +36,7 @@ import FAQDetail from './components/page/HelpCenter/FAQDetail';
 import SubCategoryPage from './components/page/HelpCenter/SubCategoryPage';
 import VolumetricWeightCalculator from './components/page/VolumetricWeightCalculator/VolumetricWeightCalculator';
 import './responsive.css'
+import NotFound from './components/page/NotFound/NotFound';
 
 
 function App() {
@@ -92,6 +93,7 @@ function App() {
           <Route path="/support/solutions/articles/:id" element={<FAQDetail />} />
           <Route path="/support/solutions/:category/:subCategory" element={<SubCategoryPage />} />
           <Route path="/volumetric-weight-calculator" element={<VolumetricWeightCalculator />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
