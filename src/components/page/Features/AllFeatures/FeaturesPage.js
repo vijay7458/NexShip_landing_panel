@@ -1,6 +1,6 @@
 import React from 'react';
 import './FeaturesPage.css';
-import features from "./features.json"
+import features from "./features"
 import ArrowFeature from '../../../../assets/image/arrowFeature.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
@@ -37,7 +37,11 @@ const FeaturesPage = () => {
                         <div className="feature-card-content">
                             <div>
                                 <div className='logistics-feature-icon'>
-                                    <span>{card.icon}</span>
+                                    {
+                                        card.iconNew ?
+                                            <card.iconNew /> :
+                                            <span>{card.icon}</span>
+                                    }
                                 </div>
                                 <div style={{ maxWidth: 'calc(100% - 70px' }}>
                                     <h2>{card.title}</h2>

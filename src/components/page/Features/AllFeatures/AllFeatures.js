@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AllFeatures.css';
-import features from "./features.json"
 import FeaturesPage from './FeaturesPage';
+import features from './features';
 
 const AllFeatures = () => {
   return (

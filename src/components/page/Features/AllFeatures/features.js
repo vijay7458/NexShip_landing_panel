@@ -1,7 +1,29 @@
-[
+import BetterShippingRates from "./Icons/BetterShippingRates";
+import BrandedTracking from "./Icons/BrandedTracking";
+import BusinessAnalytics from "./Icons/BusinessAnalytics";
+import CourierSelection from "./Icons/CourierSelection";
+import CustomIntegration from "./Icons/CustomIntegration";
+import GstSplit from "./Icons/GstSplit";
+import Integration from "./Icons/Integration";
+import NdrReport from "./Icons/NdrReport";
+import RealTimeTrack from "./Icons/RealTimeTrack";
+import referal from "./Icons/referal";
+import ReportScheduling from "./Icons/ReportScheduling";
+import ReturnHandling from "./Icons/ReturnHandling";
+import ReturnManagement from "./Icons/ReturnManagement";
+import SaveOnFreight from "./Icons/SaveOnFreight";
+import ShipmentInsurance from "./Icons/ShipmentInsurance";
+import SubAccount from "./Icons/SubAccount";
+import Support from "./Icons/Support";
+import UnifiedPlatform from "./Icons/UnifiedPlatform";
+import WhatsApp from "./Icons/WhatsApp";
+import WiderPinocde from "./Icons/WiderPinocde";
+
+const features = [
     {
         "id": 1,
         "title": "Brand Promotion via Tracking",
+        "iconNew": BrandedTracking,
         "icon": "📍",
         "description": "Personalize your shipment tracking experience with your own branding.",
         "benefits": [
@@ -57,6 +79,7 @@
     {
         "id": 6,
         "title": "Automated GST Split",
+        "iconNew": GstSplit,
         "icon": "📊",
         "description": "Simplify tax management by automatically splitting GST charges across different accounts.",
         "benefits": [
@@ -68,6 +91,7 @@
     {
         "id": 7,
         "title": "Sub-Account Management",
+        "iconNew": SubAccount,
         "icon": "🔑",
         "description": "Create and manage multiple user accounts with customized access levels.",
         "benefits": [
@@ -79,6 +103,7 @@
     {
         "id": 8,
         "title": "WhatsApp Integration & Bots",
+        "iconNew": WhatsApp,
         "icon": "💬",
         "description": "Enhance customer support and automate communication using WhatsApp integration and bots.",
         "benefits": [
@@ -90,6 +115,7 @@
     {
         "id": 9,
         "title": "Comprehensive System Integration",
+        "iconNew": Integration,
         "icon": "🔗",
         "description": "Seamlessly integrate your entire logistics and business ecosystem, including channels, OMS, and marketplaces.",
         "benefits": [
@@ -101,6 +127,7 @@
     {
         "id": 10,
         "title": "Automated Report Scheduling",
+        "iconNew": ReportScheduling,
         "icon": "📅",
         "description": "Schedule and automate the generation of insightful business reports.",
         "benefits": [
@@ -112,6 +139,7 @@
     {
         "id": 11,
         "title": "24/7 Customer Support",
+        "iconNew": Support,
         "icon": "🙋‍♂️",
         "description": "Access dedicated support anytime for fast issue resolution and guidance.",
         "benefits": [
@@ -123,6 +151,7 @@
     {
         "id": 12,
         "title": "Simplified Return & Exchange Management",
+        "iconNew": ReturnManagement,
         "icon": "🔄",
         "description": "Efficiently manage returns and exchanges with an automated, user-friendly platform.",
         "benefits": [
@@ -145,6 +174,7 @@
     {
         "id": 14,
         "title": "Referral Program Benefits",
+        "iconNew": referal,
         "icon": "🎁",
         "description": "Reward customers for referring others and grow your business network.",
         "benefits": [
@@ -156,6 +186,7 @@
     {
         "id": 15,
         "title": "Exhaustive Real-Time Tracking",
+        "iconNew": RealTimeTrack,
         "icon": "📍",
         "description": "Track shipments in real-time and provide complete visibility to customers.",
         "benefits": [
@@ -189,6 +220,7 @@
     {
         "id": 18,
         "title": "Non-Delivery Report (NDR) Management",
+        "iconNew": NdrReport,
         "icon": "📊",
         "description": "Efficiently handle non-delivery issues to minimize failed deliveries.",
         "benefits": [
@@ -200,6 +232,7 @@
     {
         "id": 19,
         "title": "Advanced Business Analytics",
+        "iconNew": BusinessAnalytics,
         "icon": "📈",
         "description": "Leverage powerful analytics to make informed business decisions.",
         "benefits": [
@@ -211,6 +244,7 @@
     {
         "id": 20,
         "title": "Integrated Return Handling",
+        "iconNew": ReturnHandling,
         "icon": "🔄",
         "description": "Manage returns efficiently with a smooth and easy-to-use platform.",
         "benefits": [
@@ -222,6 +256,7 @@
     {
         "id": 21,
         "title": "Unified Logistics Platform",
+        "iconNew": UnifiedPlatform,
         "icon": "🔑",
         "description": "Centralize all logistics operations for seamless management and visibility.",
         "benefits": [
@@ -233,6 +268,7 @@
     {
         "id": 22,
         "title": "Wider Pincode Coverage",
+        "iconNew": WiderPinocde,
         "icon": "📍",
         "description": "Expand your reach with coverage across more pin codes, even to the remotest location.",
         "benefits": [
@@ -244,6 +280,7 @@
     {
         "id": 23,
         "title": "Competitive Shipping Rates",
+        "iconNew": BetterShippingRates,
         "icon": "💸",
         "description": "Access the best shipping rates from a range of courier partners.",
         "benefits": [
@@ -255,6 +292,7 @@
     {
         "id": 24,
         "title": "Smart Courier Recommendation",
+        "iconNew": CourierSelection,
         "icon": "⚙️",
         "description": "Use our recommendation engine to choose the best courier based on your needs.",
         "benefits": [
@@ -266,6 +304,7 @@
     {
         "id": 25,
         "title": "Custom Courier & Carrier Integration",
+        "iconNew": CustomIntegration,
         "icon": "🔗",
         "description": "Empower businesses to plug in their own courier and carrier services.",
         "benefits": [
@@ -277,6 +316,7 @@
     {
         "id": 26,
         "title": "Shipment Insurance Coverage",
+        "iconNew": ShipmentInsurance,
         "icon": "🛡️",
         "description": "Protect your shipments against loss or damage with comprehensive insurance options.",
         "benefits": [
@@ -288,6 +328,7 @@
     {
         "id": 27,
         "title": "Save on Freight with Merging & Splitting",
+        "iconNew": SaveOnFreight,
         "icon": "💸",
         "description": "Save on shipping costs by merging and splitting orders based on volume and destination.",
         "benefits": [
@@ -297,3 +338,5 @@
         ]
     }
 ]
+
+export default features;
