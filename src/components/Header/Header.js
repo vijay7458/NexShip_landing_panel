@@ -58,9 +58,39 @@ const Header = () => {
   }
 
   const LearnMoreNav = (path) => {
-    
+
+    document.querySelector(".dropdown-menu").classList.add("d-none")
+    setTimeout(() => {
+      document.querySelector(".dropdown-menu").classList.remove("d-none")
+    }, 1000);
+    window.loading = true
     navigate(path)
   }
+
+  useEffect(() => {
+    const anchorTags = document.querySelectorAll("a");
+
+    const handleClick = () => {
+      const dropdowns = document.querySelectorAll(".dropdown-menu");
+
+      dropdowns.forEach((menu) => {
+        menu.classList.add("d-none");
+      });
+
+      setTimeout(() => {
+        dropdowns.forEach((menu) => {
+          menu.classList.remove("d-none");
+        });
+      }, 500); // Adjust the delay as needed
+    };
+
+    anchorTags.forEach((a) => a.addEventListener("click", handleClick));
+
+    // Clean up the listeners on unmount
+    return () => {
+      anchorTags.forEach((a) => a.removeEventListener("click", handleClick));
+    };
+  }, []);
 
   return (
     <>
@@ -68,7 +98,7 @@ const Header = () => {
         <div style={{ zIndex: '3', paddingInline: '62px' }} className=" d-flex justify-content-between align-items-center position-relative">
           {/* Logo Section */}
           <div className="logo">
-            <a href="/" className="text-decoration-none fw-bold">
+            <Link to="/" className="text-decoration-none fw-bold">
               <img src={Logo} alt="My Website Logo" className="mt-3" style={{ height: '30px', width: 'auto' }} />
               {/* <LogoAnimation /> */}
               {/* <img
@@ -84,7 +114,7 @@ const Header = () => {
               loop
               playsInline
             /> */}
-            </a>
+            </Link>
           </div>
 
           {/* Centered Navigation Section with Dropdowns */}
@@ -98,21 +128,21 @@ const Header = () => {
                 </span>
                 <ul className="dropdown-menu row">
                   <li className="col-12 col-lg-3">
-                    <h4 className="mb-2">We understand the art of scaling rapidly</h4>
-                    <p>Founded in 2020 by Ajay, Lalit, and Pawan, ShipEase has quickly emerged as one of India’s fastest-growing SaaS companies.</p>
+                    <h4 className="mb-2">Powering Smarter Shipping for Modern Businesses</h4>
+                    <p>From real-time NDR management to Amazon self-ship and daily COD remittance, ShipEase equips you with powerful tools to streamline logistics and accelerate growth. Built for scale, backed by innovation.</p>
                     <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
                   </li>
                   <li className="col-12 col-lg-9">
                     <ul>
-                      <li><FontAwesomeIcon icon={faSuitcase} /><a className="dropdown-item" href="/all-features">All Features<hr /><span>Explore Our Full Feature Set</span></a></li>
-                      <li><FontAwesomeIcon icon={faBoxOpen} /><a className="dropdown-item" href="/damaged-shipment">Damaged Shipment<hr /><span>Advanced Recommendation Engine</span></a></li>
-                      <li><FontAwesomeIcon icon={faHandsHoldingCircle} /><a className="dropdown-item" href="/shipment-protection">Shipment Protection<hr /><span>Comprehensive Coverage</span></a></li>
-                      <li><FontAwesomeIcon icon={faBarsProgress} /><a className="dropdown-item" href="/ndr-management">NDR Management<hr /><span>Streamlined NDR Automation</span></a></li>
-                      <li><FontAwesomeIcon icon={faMapLocation} /><a className="dropdown-item" href="/hyper-local">Hyper Local<hr /><span>Fast and Reliable Hyper Local Delivery</span></a></li>
-                      <li><FontAwesomeIcon icon={faAmazon} /><a className="dropdown-item" href="/amazon-self-ship">Amazon Self Ship<hr /><span>Seamless Amazon Self-Shipping with Shipease</span></a></li>
-                      <li><FontAwesomeIcon icon={faMoneyBill1} /><a className="dropdown-item" href="/early-cod">Early COD<hr /><span>Enjoy Daily COD Remittance</span></a></li>
-                      <li><FontAwesomeIcon icon={faLocationDot} /><a className="dropdown-item" href="/pickup-locations">Pickup Locations<hr /><span>Optimize Your Pickup Strategy</span></a></li>
-                      <li><FontAwesomeIcon icon={faUserPlus} /><a className="dropdown-item signup-box" target="_blank" rel="noreferrer" href="https://app.shipease.in/sign-up">Create Account<hr /><span>Sign Up with Shipease Today</span></a></li>
+                      <li><FontAwesomeIcon icon={faSuitcase} /><Link className="dropdown-item" to="/all-features">All Features<hr /><span>Explore Our Full Feature Set</span></Link></li>
+                      <li><FontAwesomeIcon icon={faBoxOpen} /><Link className="dropdown-item" to="/damaged-shipment">Damaged Shipment<hr /><span>Advanced Recommendation Engine</span></Link></li>
+                      <li><FontAwesomeIcon icon={faHandsHoldingCircle} /><Link className="dropdown-item" to="/shipment-protection">Shipment Protection<hr /><span>Comprehensive Coverage</span></Link></li>
+                      <li><FontAwesomeIcon icon={faBarsProgress} /><Link className="dropdown-item" to="/ndr-management">NDR Management<hr /><span>Streamlined NDR Automation</span></Link></li>
+                      <li><FontAwesomeIcon icon={faMapLocation} /><Link className="dropdown-item" to="/hyper-local">Hyper Local<hr /><span>Fast and Reliable Hyper Local Delivery</span></Link></li>
+                      <li><FontAwesomeIcon icon={faAmazon} /><Link className="dropdown-item" to="/amazon-self-ship">Amazon Self Ship<hr /><span>Seamless Amazon Self-Shipping with Shipease</span></Link></li>
+                      <li><FontAwesomeIcon icon={faMoneyBill1} /><Link className="dropdown-item" to="/early-cod">Early COD<hr /><span>Enjoy Daily COD Remittance</span></Link></li>
+                      <li><FontAwesomeIcon icon={faLocationDot} /><Link className="dropdown-item" to="/pickup-locations">Pickup Locations<hr /><span>Optimize Your Pickup Strategy</span></Link></li>
+                      <li><FontAwesomeIcon icon={faUserPlus} /><Link className="dropdown-item signup-box" target="_blank" rel="noreferrer" to="https://app.shipease.in/sign-up">Create Account<hr /><span>Sign Up with Shipease Today</span></Link></li>
                     </ul>
                   </li>
                 </ul>
@@ -125,16 +155,16 @@ const Header = () => {
                 </span>
                 <ul className="dropdown-menu row">
                   <li className="col-3">
-                    <h4 className="mb-2">Support and Service</h4>
-                    <p>An essential component of every organization, dedicated to delivering assistance, guidance, and effective solutions to customers, clients, or users.</p>
+                    <h4 className="mb-2">Smart Tools. Simple Shipping.</h4>
+                    <p>Discover essential tools built to make shipping decisions easier — from transparent pricing plans to automated rate calculations and seamless payment options.</p>
                     <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
 
                   </li>
                   <li className="col-9">
                     <ul>
-                      <li><FontAwesomeIcon icon={faIndianRupeeSign} /><a className="dropdown-item" href="/plans-pricing">Plans and Pricing<hr /><span>Innovative Logistics Cost Solutions</span></a></li>
-                      <li><FontAwesomeIcon icon={faCalculator} /><a className="dropdown-item" href="/rate-calculator">Rate Calculator<hr /><span>Simplify Shipping with Automation</span></a></li>
-                      <li><FontAwesomeIcon icon={faWallet} /><a className="dropdown-item" href="/prepaid-cod">Prepaid and COD<hr /><span>Effortlessly Switch Payment Modes</span></a></li>
+                      <li><FontAwesomeIcon icon={faIndianRupeeSign} /><Link className="dropdown-item" to="/plans-pricing">Plans and Pricing<hr /><span>Innovative Logistics Cost Solutions</span></Link></li>
+                      <li><FontAwesomeIcon icon={faCalculator} /><Link className="dropdown-item" to="/rate-calculator">Rate Calculator<hr /><span>Simplify Shipping with Automation</span></Link></li>
+                      <li><FontAwesomeIcon icon={faWallet} /><Link className="dropdown-item" to="/prepaid-cod">Prepaid and COD<hr /><span>Effortlessly Switch Payment Modes</span></Link></li>
                     </ul>
                   </li>
                 </ul>
@@ -147,17 +177,17 @@ const Header = () => {
                 </span>
                 <ul className="dropdown-menu row">
                   <li className="col-3">
-                    <h4 className="mb-2">Unlock Benefits with Referral Codes</h4>
-                    <p>Take advantage of our exclusive referral program! Share your code with friends and colleagues to earn special discounts and rewards for both you and your referrals on premium logistics services.</p>
+                    <h4 className="mb-2">Integrate. Automate. Accelerate.</h4>
+                    <p>Simplify your operations with robust integrations — from carrier networks to WhatsApp updates. Unlock real-time sync and smart automation to scale effortlessly.</p>
                     <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
                   </li>
                   <li className="col-9">
                     <div>
                       <ul>
-                        <li><FontAwesomeIcon icon={faRoadBarrier} /><a className="dropdown-item" href="/carrier-integration">Carrier Integration<hr /><span>Sell Anywhere, Ship with Shipease</span></a></li>
-                        <li><FontAwesomeIcon icon={faCloud} /><a className="dropdown-item" href="/api-integration">API Integration<hr /><span>Centralized API Integration Hub</span></a></li>
-                        <li><FontAwesomeIcon icon={faShuffle} /><a className="dropdown-item" href="/channel-integration">Channel Integration<hr /><span>Achieve Seamless Channel Integration</span></a></li>
-                        <li><FontAwesomeIcon icon={faSquareWhatsapp} /><a className="dropdown-item" href="/whatsapp-integration">WhatsApp Integration<hr /><span>Effortless WhatsApp Integration</span></a></li>
+                        <li><FontAwesomeIcon icon={faRoadBarrier} /><Link className="dropdown-item" to="/carrier-integration">Carrier Integration<hr /><span>Sell Anywhere, Ship with Shipease</span></Link></li>
+                        <li><FontAwesomeIcon icon={faCloud} /><Link className="dropdown-item" to="/api-integration">API Integration<hr /><span>Centralized API Integration Hub</span></Link></li>
+                        <li><FontAwesomeIcon icon={faShuffle} /><Link className="dropdown-item" to="/channel-integration">Channel Integration<hr /><span>Achieve Seamless Channel Integration</span></Link></li>
+                        <li><FontAwesomeIcon icon={faSquareWhatsapp} /><Link className="dropdown-item" to="/whatsapp-integration">WhatsApp Integration<hr /><span>Effortless WhatsApp Integration</span></Link></li>
                       </ul>
                     </div>
                   </li>
@@ -171,15 +201,15 @@ const Header = () => {
                 </span>
                 <ul className="dropdown-menu row">
                   <li className="col-3">
-                    <h4 className="mb-2">Instantly Calculate Your Shipping Rates</h4>
-                    <p>Get quick and accurate shipping rate calculations with our tool. Share it with your network to unlock special discounts and exclusive benefits for both you and your referrals on premium logistics services.</p>
+                    <h4 className="mb-2">Share. Grow. Make an Impact.</h4>
+                    <p>Dive into the world of ShipEase — from media stories to meaningful career paths and rewarding referral programs. It’s more than logistics — it’s a movement.</p>
                     <button onClick={() => LearnMoreNav("/support/home")} className="btn">Learn More</button>
                   </li>
                   <li className="col-9">
                     <ul>
-                      <li><FontAwesomeIcon icon={faMedium} /><a className="dropdown-item" href="/media">Media<hr /><span>Amplify Your Impact with Media</span></a></li>
-                      <li><FontAwesomeIcon icon={faHandHoldingDollar} /><a className="dropdown-item" href="/refer-and-earn">Refer and Earn<hr /><span>Unlock Savings with Our Referral Program</span></a></li>
-                      <li><FontAwesomeIcon icon={faUsers} /><a className="dropdown-item" href="/careers">Career<hr /><span>Join Our Team of Experts Driving Rapid Growth</span></a></li>
+                      <li><FontAwesomeIcon icon={faMedium} /><Link className="dropdown-item" to="/media">Media<hr /><span>Amplify Your Impact with Media</span></Link></li>
+                      <li><FontAwesomeIcon icon={faHandHoldingDollar} /><Link className="dropdown-item" to="/refer-and-earn">Refer and Earn<hr /><span>Unlock Savings with Our Referral Program</span></Link></li>
+                      <li><FontAwesomeIcon icon={faUsers} /><Link className="dropdown-item" to="/careers">Career<hr /><span>Join Our Team of Experts Driving Rapid Growth</span></Link></li>
                     </ul>
                   </li>
                 </ul>
@@ -187,9 +217,9 @@ const Header = () => {
 
               {/* Contact Us */}
               <li className="nav-item">
-                <a className="nav-link cursor-pointer" href="/contact">
+                <Link className="nav-link cursor-pointer" to="/contact">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
