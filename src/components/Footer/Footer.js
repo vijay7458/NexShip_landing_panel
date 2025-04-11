@@ -44,7 +44,7 @@ const Footer = () => {
               <a href="https://www.youtube.com/@ShipEaseTechnologiesPvtLTD" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faYoutube} className="social-icon" />
               </a>
-              <a href="https://www.youtube.com/@ShipEaseTechnologiesPvtLTD" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/shipease-technologies-pvt-ltd/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
               </a>
             </div>
