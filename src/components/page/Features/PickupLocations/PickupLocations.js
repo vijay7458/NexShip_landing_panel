@@ -38,7 +38,7 @@ const PickupLocations = () => {
             answer:
                 "Using multiple pickup locations can significantly streamline your logistics operations. If you run a business with several warehouses or branches, you no longer need to ship products separately from each location. By scheduling pickups from all your locations, you can ship orders from any of your warehouses at the same time, saving time, reducing manual work, and allowing you to manage your shipments efficiently from anywhere in the world.",
             link: {
-                url: "https://www.shipease.in/blog/ecommerce-multi-pickup-locations-facility/",
+                url: "http://app.shipease.in/sign-up",
                 text: "Read More",
             },
         },
@@ -60,7 +60,7 @@ const PickupLocations = () => {
             answer:
                 "There are no complicated or additional steps to set up multiple pickup locations. Simply log into your Shipease account, go to the 'Settings' section, and add the addresses you want to use. Once you've entered your pickup addresses, you're ready to start scheduling pickups for those locations without any further setup.",
             link: {
-                url: "http://app.shipease.in/register",
+                url: "http://app.shipease.in/sign-up",
                 text: "Get Started",
             },
         },
