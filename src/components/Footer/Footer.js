@@ -12,17 +12,17 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const [data, setData] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const apiUrl = `${BASE_URL}/core-api/shipease-admin/footer-configuration/`;
-        const response = await axios.get(apiUrl);
-        setData(response?.data);
-      } catch (err) {
-      }
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const apiUrl = `${BASE_URL}/core-api/shipease-admin/footer-configuration/`;
+  //       const response = await axios.get(apiUrl);
+  //       setData(response?.data);
+  //     } catch (err) {
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
 
   return (

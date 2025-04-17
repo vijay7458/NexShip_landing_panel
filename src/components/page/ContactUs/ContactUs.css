@@ -137,3 +137,7 @@
 .contact-us-modal .modal-header {
     background: var(--sh-primary-light);
 }
+
+.contact-us-modal.error-message .modal-header {
+    background: #ff9e9e;
+}

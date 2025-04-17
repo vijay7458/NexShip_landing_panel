@@ -23,6 +23,13 @@
     /* transition: boxshadow 1s ease-in-out !important; */
 }
 
+.red-button {
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: 1px solid #ff9e9e !important;
+    background-color: #ff9e9e !important;
+}
+
 
 .main-button:hover,
 .main-button:active {
