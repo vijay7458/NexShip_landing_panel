@@ -263,11 +263,8 @@ const RateCalculator = () => {
                   </div>
                 </section>
 
-                <div className='text-end mt-4'>
-                  {
-                    error &&
-                    <span className='required-text'>{error}</span>
-                  }
+                <div className='position-relative text-end mt-5'>
+                  <span className={`required-text ${!error && 'invisible'}`}>{error || "error!"}</span>
                   <button
                     className="btn"
                     onClick={() => handleReset()}

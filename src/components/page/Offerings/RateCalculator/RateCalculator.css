@@ -144,6 +144,9 @@
 .required-text {
   color: red;
   font-size: 12px;
+  position: absolute;
+  top: -24px;
+  right: 0;
 }
 
 .courier-rates-pop::-webkit-scrollbar {
@@ -214,6 +217,7 @@
   align-items: center;
   gap: 10px;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 .shipping-rate-calculator__input-group .radio-options label input {
