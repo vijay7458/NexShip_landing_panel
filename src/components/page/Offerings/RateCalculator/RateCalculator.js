@@ -4,25 +4,43 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import CourierRatesModal from './CourierRatesModal';
 import RateCalculatorImg from '../../../../assets/image/RateCalculatorImg.png'
-import DifferentLocationsIcon from './Icons/DifferentLocationsIcon';
-import PackageWeightIcon from './Icons/PackageWeightIcon';
-import RemoteLocationIcon from './Icons/RemoteLocationIcon';
-import FragileItemIcon from './Icons/FragileItemIcon';
+
 import axios from 'axios';
+import HowToCalculateWeight from './HowToCalculateWeight';
+import WeightFactors from './WeightFactors';
 
 const RateCalculator = () => {
   const [pickupPincode, setPickupPincode] = useState('');
   const [deliveryPincode, setDeliveryPincode] = useState('');
   const [weight, setWeight] = useState('');
+  const [height, setheight] = useState("");
+  const [length, setlength] = useState("");
+  const [width, setwidth] = useState("")
+  const [paymentType, setpaymentType] = useState("cod")
+  const [invoice, setinvoice] = useState("")
+  const [orderType, setorderType] = useState("forward")
   const [shippingRate, setShippingRate] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState();
   const [shippingData, setShippingData] = useState(null);
+  const [errorFields, seterrorFields] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
   const calculateShippingRate = async () => {
-    if (!pickupPincode || !deliveryPincode || !weight) {
-      setError('Please fill in all the details.');
+    if (
+      pickupPincode.length !== 6 ||
+      deliveryPincode.length !== 6 ||
+      !parseFloat(weight)
+    ) {
+      setError("Please enter valid pickup/delivery pin codes and weight.");
+      seterrorFields(true);
       return;
     }
+    else {
+      setError('');
+      seterrorFields(false)
+    }
+
+    setIsLoading(true);
 
     setError('');
     setShippingData(null); // Reset previous data while fetching
@@ -32,6 +50,12 @@ const RateCalculator = () => {
       source_pincode: pickupPincode,
       destination_pincode: deliveryPincode,
       weight: parseFloat(weight) || 0, // Ensure valid number
+      height: parseFloat(height) || 0,
+      length: parseFloat(length) || 0,
+      width: parseFloat(width) || 0,
+      payment_type: paymentType,
+      invoice_amount: parseFloat(invoice) || 0,
+      order_type: orderType,
     };
 
     try {
@@ -45,6 +69,9 @@ const RateCalculator = () => {
       console.error("Error fetching shipping rate:", error);
       setError("Failed to fetch shipping rate. Please try again.");
     }
+    finally {
+      setIsLoading(false);
+    }
   };
 
   const handleScroll = () => {
@@ -53,6 +80,22 @@ const RateCalculator = () => {
       behavior: "smooth",
     });
   };
+
+  const handleReset = () => {
+    setDeliveryPincode("");
+    setPickupPincode("");
+    setWeight("");
+    setlength("");
+    setwidth("");
+    setheight("");
+    setpaymentType("");
+    setinvoice("");
+    setorderType("");
+    setShippingRate(false);
+    setShippingData(null);
+    setError("");
+    seterrorFields(false);
+  }
   return (
     <>
       <header className="page-header">
@@ -75,128 +118,187 @@ const RateCalculator = () => {
 
         <main className="shipping-rate-calculator__main">
           <div className='amazon-self-ship-container'>
-            <div className="shipping-rate-calculator__row">
-              <section className="shipping-rate-calculator__calculator">
-                {/* <h2 className='heading text-center'>Rate Calculator</h2> */}
-                <div className="shipping-rate-calculator__input-group">
-                  <label htmlFor="pickupPincode">Pick-up Area Pincode</label>
-                  <input
-                    type="text"
-                    id="pickupPincode"
-                    value={pickupPincode}
-                    onChange={(e) => setPickupPincode(e.target.value)}
-                  />
-                </div>
+            <div className="shipping-rate-calculator__row row">
+              <section className="col-12 col-lg-8">
+                <section className="shipping-rate-calculator__calculator">
+                  {/* <h2 className='heading text-center'>Rate Calculator</h2> */}
+                  <div className={`shipping-rate-calculator__input-group ${errorFields && 'error-field'}`}>
+                    <label htmlFor="pickupPincode">Pick-up Area Pincode</label>
+                    <input
+                      type="text"
+                      id="pickupPincode"
+                      value={pickupPincode}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/, ''); // only digits
+                        setPickupPincode(value);
+                      }}
+                      placeholder='Enter 6 digit Pickup Area Pincode'
+                      maxLength={6}
+                    />
+                  </div>
 
-                <div className="shipping-rate-calculator__input-group">
-                  <label htmlFor="deliveryPincode">Delivery Area Pincode</label>
-                  <input
-                    type="text"
-                    id="deliveryPincode"
-                    value={deliveryPincode}
-                    onChange={(e) => setDeliveryPincode(e.target.value)}
-                  />
-                </div>
+                  <div className={`shipping-rate-calculator__input-group ${errorFields && 'error-field'}`}>
+                    <label htmlFor="deliveryPincode">Delivery Area Pincode</label>
+                    <input
+                      type="text"
+                      id="deliveryPincode"
+                      placeholder='Enter 6 digit Delivery Area Pincode'
+                      value={deliveryPincode}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/, ''); // only digits
+                        setDeliveryPincode(value);
+                      }}
+                      maxLength={6}
+                    />
+                  </div>
 
-                <div className="shipping-rate-calculator__input-group">
-                  <label htmlFor="weight">Weight (kg)</label>
-                  <input
-                    type="text"
-                    id="weight"
-                    value={weight}
-                    onChange={(e) => setWeight(e.target.value)}
-                  />
-                </div>
-                <div className='text-end'>
+                  <div className={`shipping-rate-calculator__input-group weight-input ${errorFields && 'error-field'}`}>
+                    <label htmlFor="weight">Weight</label>
+                    <input
+                      type="text"
+                      id="weight"
+                      value={weight}
+                      placeholder='Enter weight in KG'
+                      onChange={(e) => setWeight(e.target.value)}
+                    />
+                  </div>
+                  <div className="shipping-rate-calculator__input-group">
+                    <label htmlFor="">Dimension (LxBxH)</label>
+                    <div className='dimension'>
+                      <label htmlFor="length">
+                        <input
+                          type="text"
+                          id="length"
+                          value={length}
+                          placeholder='L'
+                          onChange={(e) => setlength(e.target.value)}
+                        />
+                      </label>
+
+                      <label htmlFor="width">
+                        <input
+                          type="text"
+                          id="width"
+                          value={width}
+                          onChange={(e) => setwidth(e.target.value)}
+                          placeholder='B'
+                        />
+                      </label>
+
+                      <label htmlFor="height">
+                        <input
+                          type="text"
+                          id="height"
+                          value={height}
+                          onChange={(e) => setheight(e.target.value)}
+                          placeholder='H'
+                        />
+                      </label>
+                    </div>
+                  </div>
+
+
+
+                  <div className="shipping-rate-calculator__input-group">
+                    <label className='mb-0'>Payment Type</label>
+                    <div className="radio-options">
+                      <label>
+                        <input
+                          type="radio"
+                          name="paymentType"
+                          value="cod"
+                          checked={paymentType === 'cod'}
+                          onChange={(e) => setpaymentType(e.target.value)}
+                        />
+                        COD
+                      </label>
+                      <label>
+                        <input
+                          type="radio"
+                          name="paymentType"
+                          value="prepaid"
+                          checked={paymentType === 'prepaid'}
+                          onChange={(e) => setpaymentType(e.target.value)}
+                        />
+                        Prepaid
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="shipping-rate-calculator__input-group">
+                    <label className='mb-0'>Order Type</label>
+                    <div className="radio-options">
+                      <label>
+                        <input
+                          type="radio"
+                          name="orderType"
+                          value="forward"
+                          checked={orderType === 'forward'}
+                          onChange={(e) => setorderType(e.target.value)}
+                        />
+                        Forward
+                      </label>
+                      <label>
+                        <input
+                          type="radio"
+                          name="orderType"
+                          value="reverse"
+                          checked={orderType === 'reverse'}
+                          onChange={(e) => setorderType(e.target.value)}
+                        />
+                        Reverse
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="shipping-rate-calculator__input-group grid-item3">
+                    <label htmlFor="invoice">Invoice Amount (₹)</label>
+                    <input
+                      type="text"
+                      id="invoice"
+                      value={invoice}
+                      onChange={(e) => setinvoice(e.target.value)}
+                      placeholder='Enter invoice amount'
+                    />
+                  </div>
+                </section>
+
+                <div className='text-end mt-4'>
                   {
                     error &&
-                    <span className='required-text me-3'>{error}</span>
+                    <span className='required-text'>{error}</span>
                   }
+                  <button
+                    className="btn"
+                    onClick={() => handleReset()}
+                  >
+                    Reset
+                  </button>
                   <button
                     className="btn main-button"
                     onClick={calculateShippingRate}
+                    disabled={isLoading}
                   >
-                    Calculate Rate
+                    {isLoading ? 'Calculating...' : 'Calculate Rate'}
                   </button>
                 </div>
-
-                {/* {shippingRate && (
-                  <div className="shipping-rate-calculator__result">
-                    <h2>Estimated Shipping Rate</h2>
-                    <p>₹{shippingRate}</p>
-                  </div>
-                )} */}
               </section>
-              <div className='text-center'>
+
+              <div className='col-12 col-lg-4 text-center'>
                 <img src={RateCalculatorImg} alt="" />
               </div>
             </div>
           </div>
 
-          <section className="shipping-rate-calculator__factors">
-            <div className='amazon-self-ship-container row'>
-              <div className='col-12'>
-                <h2 className='heading text-center'>Weigh All The Factors Involved</h2>
-                <p className='text-center'>Avoid overspending on eCommerce shipping! Our free calculator lets you determine courier charges based on all the key factors that matter.</p>
-                <ul className=''>
-                  <li><DifferentLocationsIcon />The distance between the pickup and delivery locations.</li>
-                  <li><PackageWeightIcon />The weight of the shipment, as heavier items cost more to ship.</li>
-                  <li><RemoteLocationIcon />Additional charges for remote or difficult-to-access locations.</li>
-                  <li><FragileItemIcon />Any special handling requirements for fragile or oversized items.</li>
-                </ul>
-              </div>
-              {/* <div className='col-6'></div> */}
-            </div>
-          </section>
+          <HowToCalculateWeight />
+          <WeightFactors />
 
-          <section className="shipping-rate-calculator__how-to">
-            <div className='amazon-self-ship-container'>
-              <h2 className='heading text-center'>How to Calculate Shipping Rates</h2>
-              <div className="hyperlocal__steps">
-                <div className="hyperlocal__step">
-                  <div>
-                    <span className='hyperlocal-step-number'>01.</span>
-                  </div>
-                  <div>
-                    <h3 className="hyperlocal__step-title">Enter the pickup pincode of the shipment.</h3>
-                  </div>
-                </div>
-                <hr />
-                <div className="hyperlocal__step">
-                  <div>
-                    <span className='hyperlocal-step-number'>02.</span>
-                  </div>
-                  <div>
-                    <h3 className="hyperlocal__step-title">Enter the delivery pincode where the shipment will be sent.</h3>
-                  </div>
-                </div>
-                <hr />
-                <div className="hyperlocal__step">
-                  <div>
-                    <span className='hyperlocal-step-number'>03.</span>
-                  </div>
-                  <div>
-                    <h3 className="hyperlocal__step-title">Specify the weight of the shipment in kilograms.</h3>
-                  </div>
-                </div>
-                <hr />
-                <div className="hyperlocal__step">
-                  <div>
-                    <span className='hyperlocal-step-number'>04.</span>
-                  </div>
-                  <div>
-                    <h3 className="hyperlocal__step-title">Click the "Calculate Rate" button to get the estimated shipping rate.</h3>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </main>
       </div>
+      {shippingRate && shippingData && (
 
-      <CourierRatesModal shippingData={shippingData} show={shippingRate} handleClose={() => setShippingRate(false)} />
-
+        <CourierRatesModal shippingData={shippingData} show={shippingRate} handleClose={handleReset} />
+      )}
     </>
   );
 };
