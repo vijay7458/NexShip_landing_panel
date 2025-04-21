@@ -153,7 +153,7 @@ const ContactUs = () => {
                                     onChange={handleChange}
                                     required
                                 >
-                                    <option value="">Select type</option>
+                                    {/* <option value="">Select type</option> */}
                                     <option value="Business">Business</option>
                                     <option value="Customer">Customer</option>
                                 </select>
@@ -235,8 +235,9 @@ const ContactUs = () => {
                                     value={formData.monthly_shipment}
                                     onChange={handleChange}
                                     required
+                                    placeholder="Select your monthly shipments"
                                 >
-                                    <option value="">Select your monthly shipments</option>
+                                    {/* <option value="">Select your monthly shipments</option> */}
                                     <option value="less than 100">Less than 100</option>
                                     <option value="100-1000">100 to 1000</option>
                                     <option value="1000-5000">1000 to 5000</option>
