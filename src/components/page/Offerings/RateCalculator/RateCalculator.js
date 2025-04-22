@@ -16,7 +16,7 @@ const RateCalculator = () => {
   const [height, setheight] = useState("");
   const [length, setlength] = useState("");
   const [width, setwidth] = useState("")
-  const [paymentType, setpaymentType] = useState("cod")
+  const [paymentType, setpaymentType] = useState("prepaid")
   const [invoice, setinvoice] = useState("")
   const [orderType, setorderType] = useState("forward")
   const [shippingRate, setShippingRate] = useState(false);
@@ -88,9 +88,9 @@ const RateCalculator = () => {
     setlength("");
     setwidth("");
     setheight("");
-    setpaymentType("");
+    setpaymentType("prepaid");
     setinvoice("");
-    setorderType("");
+    setorderType("forward");
     setShippingRate(false);
     setShippingData(null);
     setError("");
@@ -206,21 +206,21 @@ const RateCalculator = () => {
                         <input
                           type="radio"
                           name="paymentType"
-                          value="cod"
-                          checked={paymentType === 'cod'}
-                          onChange={(e) => setpaymentType(e.target.value)}
-                        />
-                        COD
-                      </label>
-                      <label>
-                        <input
-                          type="radio"
-                          name="paymentType"
                           value="prepaid"
                           checked={paymentType === 'prepaid'}
                           onChange={(e) => setpaymentType(e.target.value)}
                         />
                         Prepaid
+                      </label>
+                      <label>
+                        <input
+                          type="radio"
+                          name="paymentType"
+                          value="cod"
+                          checked={paymentType === 'cod'}
+                          onChange={(e) => setpaymentType(e.target.value)}
+                        />
+                        COD
                       </label>
                     </div>
                   </div>
