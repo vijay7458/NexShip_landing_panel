@@ -13,15 +13,20 @@ import { Button, Modal } from 'react-bootstrap';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
-        type: '',
+        type: 'Business',
         first_name: '',
         mobile: '',
         company_name: '',
         website: '',
         email: '',
-        monthly_shipment: '',
+        monthly_shipment: 'less than 100',
         channel_name: []
     });
+
+    // useEffect(() => {
+    //     console.log(formData, "formData")
+    // }, [formData])
+
 
     const [error, seterror] = useState(false)
 
@@ -77,13 +82,13 @@ const ContactUs = () => {
     useEffect(() => {
         if (!showModal) {
             setFormData({
-                type: '',
+                type: 'Business',
                 first_name: '',
                 mobile: '',
                 company_name: '',
                 website: '',
                 email: '',
-                monthly_shipment: '',
+                monthly_shipment: 'less than 100',
                 channel_name: []
             })
             seterror(false)
