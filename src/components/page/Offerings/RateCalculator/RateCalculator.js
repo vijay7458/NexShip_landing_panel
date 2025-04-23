@@ -119,7 +119,7 @@ const RateCalculator = () => {
         <main className="shipping-rate-calculator__main">
           <div className='amazon-self-ship-container'>
             <div className="shipping-rate-calculator__row row">
-              <section className="col-12 col-lg-8">
+              <section className="col-12 col-lg-7">
                 <section className="shipping-rate-calculator__calculator">
                   {/* <h2 className='heading text-center'>Rate Calculator</h2> */}
                   <div className={`shipping-rate-calculator__input-group ${errorFields && 'error-field'}`}>
