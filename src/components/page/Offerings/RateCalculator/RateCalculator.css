@@ -255,6 +255,12 @@
   border-color: red;
 }
 
+.warning-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .shipping-rate-calculator__row {

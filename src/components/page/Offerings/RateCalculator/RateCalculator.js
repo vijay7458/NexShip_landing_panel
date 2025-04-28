@@ -24,6 +24,40 @@ const RateCalculator = () => {
   const [shippingData, setShippingData] = useState(null);
   const [errorFields, seterrorFields] = useState(false)
   const [isLoading, setIsLoading] = useState(false);
+  const [warningMessage, setWarningMessage] = useState('');
+
+  const handleWeightChange = (value) => {
+    // Allow only numbers and optional one dot
+    if (/^[0-9]*\.?[0-9]*$/.test(value)) {
+      // Allow max two decimal places
+      const parts = value.split('.');
+      if (parts.length === 1 || (parts.length === 2 && parts[1].length <= 2)) {
+        // If value is not empty, check max 500
+        if (value === '' || parseFloat(value) <= 500) {
+          setWeight(value);
+        }
+      }
+    }
+  };
+
+  const handleDimensionChange = (value, setter) => {
+    // If the value is 99, prevent entering decimals
+    if (parseFloat(value) === 99 && value.includes('.')) {
+      return; // Simply prevent entering decimal points
+    }
+
+    // Allow only numbers and an optional decimal point
+    if (/^[0-9]*\.?[0-9]*$/.test(value)) {
+      const parts = value.split('.');
+
+      // Allow max two decimal places, and ensure the value doesn't exceed 99
+      if (parts.length === 1 || (parts.length === 2 && parts[1].length <= 2)) {
+        if (value === '' || parseFloat(value) <= 99) {
+          setter(value);
+        }
+      }
+    }
+  };
 
   const calculateShippingRate = async () => {
     if (
@@ -152,16 +186,17 @@ const RateCalculator = () => {
                     />
                   </div>
 
-                  <div className={`shipping-rate-calculator__input-group weight-input ${errorFields && 'error-field'}`}>
+                  <div className={`shipping-rate-calculator__input-group weight-input ${errorFields ? 'error-field' : ''}`}>
                     <label htmlFor="weight">Weight</label>
                     <input
                       type="text"
                       id="weight"
                       value={weight}
-                      placeholder='Enter weight in KG'
-                      onChange={(e) => setWeight(e.target.value)}
+                      placeholder="Enter weight in KG"
+                      onChange={(e) => handleWeightChange(e.target.value)}
                     />
                   </div>
+
                   <div className="shipping-rate-calculator__input-group">
                     <label htmlFor="">Dimension (LxBxH)</label>
                     <div className='dimension'>
@@ -170,8 +205,8 @@ const RateCalculator = () => {
                           type="text"
                           id="length"
                           value={length}
-                          placeholder='L'
-                          onChange={(e) => setlength(e.target.value)}
+                          placeholder="L"
+                          onChange={(e) => handleDimensionChange(e.target.value, setlength)}
                         />
                       </label>
 
@@ -180,8 +215,8 @@ const RateCalculator = () => {
                           type="text"
                           id="width"
                           value={width}
-                          onChange={(e) => setwidth(e.target.value)}
-                          placeholder='B'
+                          placeholder="B"
+                          onChange={(e) => handleDimensionChange(e.target.value, setwidth)}
                         />
                       </label>
 
@@ -190,8 +225,8 @@ const RateCalculator = () => {
                           type="text"
                           id="height"
                           value={height}
-                          onChange={(e) => setheight(e.target.value)}
-                          placeholder='H'
+                          placeholder="H"
+                          onChange={(e) => handleDimensionChange(e.target.value, setheight)}
                         />
                       </label>
                     </div>
@@ -208,7 +243,13 @@ const RateCalculator = () => {
                           name="paymentType"
                           value="prepaid"
                           checked={paymentType === 'prepaid'}
-                          onChange={(e) => setpaymentType(e.target.value)}
+                          onChange={(e) => {
+                            setpaymentType(e.target.value);
+                            // Automatically set orderType to 'forward' if prepaid is selected
+                            if (e.target.value === 'prepaid') {
+                              setorderType('forward');
+                            }
+                          }}
                         />
                         Prepaid
                       </label>
@@ -218,7 +259,13 @@ const RateCalculator = () => {
                           name="paymentType"
                           value="cod"
                           checked={paymentType === 'cod'}
-                          onChange={(e) => setpaymentType(e.target.value)}
+                          onChange={(e) => {
+                            setpaymentType(e.target.value);
+                            // Automatically set orderType to 'forward' if COD is selected
+                            if (e.target.value === 'cod') {
+                              setorderType('forward');
+                            }
+                          }}
                         />
                         COD
                       </label>
@@ -234,7 +281,7 @@ const RateCalculator = () => {
                           name="orderType"
                           value="forward"
                           checked={orderType === 'forward'}
-                          onChange={(e) => setorderType(e.target.value)}
+                          onChange={() => setorderType('forward')}
                         />
                         Forward
                       </label>
@@ -244,12 +291,20 @@ const RateCalculator = () => {
                           name="orderType"
                           value="reverse"
                           checked={orderType === 'reverse'}
-                          onChange={(e) => setorderType(e.target.value)}
+                          onChange={() => {
+                            // If reverse is selected, automatically set paymentType to 'prepaid'
+                            if (paymentType !== 'cod') {
+                              setpaymentType('prepaid');
+                            }
+                            setorderType('reverse');
+                          }}
+                          disabled={paymentType === 'cod'} // Disable reverse if COD is selected
                         />
                         Reverse
                       </label>
                     </div>
                   </div>
+
 
                   <div className="shipping-rate-calculator__input-group grid-item3">
                     <label htmlFor="invoice">Invoice Amount (₹)</label>
