@@ -312,7 +312,10 @@ const RateCalculator = () => {
                       type="text"
                       id="invoice"
                       value={invoice}
-                      onChange={(e) => setinvoice(e.target.value)}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/, ''); // only digits
+                        setinvoice(value);
+                      }}
                       placeholder='Enter invoice amount'
                     />
                   </div>
