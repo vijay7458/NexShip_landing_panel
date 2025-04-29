@@ -3,7 +3,7 @@ import './RateCalculator.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import CourierRatesModal from './CourierRatesModal';
-import RateCalculatorImg from '../../../../assets/image/RateCalculatorImg.png'
+import RateCalculatorImg from '../../../../assets/image/RateCalculatorImg2.png'
 
 import axios from 'axios';
 import HowToCalculateWeight from './HowToCalculateWeight';
@@ -147,13 +147,13 @@ const RateCalculator = () => {
 
       <div className="shipping-rate-calculator">
         <header className="shipping-rate-calculator__header">
-          <h1 className='heading text-center'>Shipping Rate Calculator</h1>
+          <h2 className='heading text-center'>Shipping Rate Calculator</h2>
         </header>
 
         <main className="shipping-rate-calculator__main">
           <div className='amazon-self-ship-container'>
             <div className="shipping-rate-calculator__row row">
-              <section className="col-12 col-lg-7">
+              <section className="col-12 col-lg-7 rc-area">
                 <section className="shipping-rate-calculator__calculator">
                   {/* <h2 className='heading text-center'>Rate Calculator</h2> */}
                   <div className={`shipping-rate-calculator__input-group ${errorFields && 'error-field'}`}>
@@ -324,13 +324,13 @@ const RateCalculator = () => {
                 <div className='position-relative text-end mt-5'>
                   <span className={`required-text ${!error && 'invisible'}`}>{error || "error!"}</span>
                   <button
-                    className="btn"
+                    className="btn cancel-button"
                     onClick={() => handleReset()}
                   >
                     Reset
                   </button>
                   <button
-                    className="btn main-button"
+                    className="btn main-button ms-2"
                     onClick={calculateShippingRate}
                     disabled={isLoading}
                   >
@@ -340,7 +340,7 @@ const RateCalculator = () => {
               </section>
 
               <div className='col-12 col-lg-4 text-center'>
-                <img src={RateCalculatorImg} alt="" />
+                <img src={RateCalculatorImg} alt="sdasd" />
               </div>
             </div>
           </div>
