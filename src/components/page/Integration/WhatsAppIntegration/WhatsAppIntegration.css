@@ -24,6 +24,22 @@
 }
 
 /* Core Applications Section */
+.wip-heading,
+.wip-notifications,
+.wip-why-matters {
+    margin-block: 8rem;
+}
+
+.wip-heading img {
+    width: 100%;
+    /* max-width: 500px; */
+    height: auto;
+}
+
+.wip-heading p {
+    font-size: 2rem;
+}
+
 .whatsapp-integration-container__core-applications {
     text-align: center;
     margin-block: 50px;
