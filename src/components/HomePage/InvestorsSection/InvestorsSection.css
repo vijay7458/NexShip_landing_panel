@@ -33,8 +33,9 @@
 }
 
 .iv-container-left img {
-    height: 70px;
+    height: auto;
     width: auto;
+    max-width: 90%;
 }
 
 .iv-container-right img {

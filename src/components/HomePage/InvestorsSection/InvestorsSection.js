@@ -75,7 +75,7 @@ const InvestorsSection = () => {
                         <h3 className="subtitle">Our Investors</h3>
                         <h1>Fueling Innovation Through Strategic Partnerships</h1>
                     </div>
-                    <div className="d-flex align-items-center gap-2">
+                    <div className="d-flex flex-column flex-lg-row align-items-center gap-2">
                         <div className="iv-container-left">
                             {
                                 InvestorsData?.map((investor, index) => (
