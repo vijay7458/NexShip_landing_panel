@@ -229,7 +229,7 @@ const TrackingOrder = () => {
                                     }
                                 </label>
                                 <textarea onChange={(e) => setRemarks(e.target.value)} value={remarks} placeholder='Please enter your remarks here' rows={5} />
-                                <button onClick={handleSubmit} className='btn main-button float-end'>Sumbit</button>
+                                <button onClick={handleSubmit} className='btn main-button float-end'>Submit</button>
                             </div>
                         </div>
                     </>
