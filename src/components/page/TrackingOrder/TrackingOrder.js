@@ -24,8 +24,9 @@ const TrackingOrder = () => {
     const [remarks, setRemarks] = useState("")
     const [error, setError] = useState("")
 
-    const [TrackingData, setTrackingData] = useState()
+    const [TrackingData, setTrackingData] = useState("")
     const [showOrderTracking, setshowOrderTracking] = useState(false)
+    const [showTrackData, setShowTrackData] = useState(true)
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
@@ -77,13 +78,16 @@ const TrackingOrder = () => {
                 // console.error(`Error: ${response.status} - ${data?.message || "Unknown error"}`);
                 setTrackingData(data.detail || "Unknown Error");
                 // navigate(`/${awb}`)
+                setShowTrackData(false)
             } else {
                 setTrackingData(data);
+                setShowTrackData(true)
                 setshowOrderTracking(true);
             }
 
             return data; // Return the response for further use
         } catch (error) {
+            setShowTrackData(false)
             // console.error("Error fetching tracking data:", error);
             setTrackingData("Failed to fetch tracking data. Please try again.");
         }
@@ -98,7 +102,22 @@ const TrackingOrder = () => {
             navigate(`/order-tracking/${awb}`); // Update URL
             handleTracking(awb); // Fetch new data
         }
+        setTimeout(() => {
+            const scrollAmount = document.body.scrollHeight * 0.33;
+            window.scrollTo({
+                top: scrollAmount,
+                behavior: "smooth",
+            });
+        }, 600);
+
+
     };
+
+
+    console.log(12222, showTrackData)
+
+
+    // console.log(trac)
 
 
     return (
@@ -207,7 +226,7 @@ const TrackingOrder = () => {
                 </div>
             </section>
             {
-                showOrderTracking ?
+                showTrackData && showOrderTracking ?
                     <>
                         <div className='row justify-content-center mt-5 w-100'>
                             <div className='col-12 col-md-7 col-lg-5'>
@@ -235,7 +254,7 @@ const TrackingOrder = () => {
                     </>
                     :
                     <div>
-                        {TrackingData}
+                        <p className='track-awb-no'>{TrackingData}</p>
                     </div>
             }
         </>
