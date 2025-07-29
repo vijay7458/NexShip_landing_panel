@@ -3,12 +3,14 @@
     padding: 40px 0px 5px 60px;
     color: #fff;
     /* border-radius: 40px 40px 0 0; */
-    background: linear-gradient(312deg,
+    /* background: linear-gradient(312deg,
             #60a9eb 0%,
             #1975C9 50%,
-            #60a9eb 100%);
-    background: #000000;
-    /* background: var(--sh-secondary); */
+            #60a9eb 100%); */
+    /* background: #000000; */
+    background: #041f37;
+    /* background-color: #1975c9; */
+  /* background: linear-gradient(135deg, #1062ae, #03335d); */
     /* color: #092C4C; */
     border-radius: 44px 44px 0 0;
     margin-top: 100px;

@@ -1,6 +1,9 @@
 .detailed-footer {
     /* background-color: var(--sh-secondary); */
-    background-color: #000000;
+ background: #041f37;
+
+
+    /* background-color: #000000; */
     padding: 10px 20px 10px;
     text-align: center;
     /* border-top: 1px solid rgba(221, 221, 221, 30); */

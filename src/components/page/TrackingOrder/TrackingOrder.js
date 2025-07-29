@@ -138,7 +138,7 @@ const TrackingOrder = () => {
                             className="tracking-image"
                         />
                     </div>
-                    <div className="tracking-form">
+                    <div className={activeTab === "awb" ? "tracking-form-awb" : "tracking-form"}>
                         <div className="tracking-tabs">
                             <button
                                 className={`tab-button ${activeTab === "awb" ? "active" : ""}`}
@@ -184,6 +184,11 @@ const TrackingOrder = () => {
                                 <button type="submit" className="tracking-button">
                                     Send OTP
                                 </button>
+                                     <div>
+                                    <div style={{borderTop:"1px solid #EAEAEA", marginBottom:"15px", marginTop:"5px"}}></div>
+                                    <div> <h4 className='track-bootom-heading'>Can’t Find Your Order Details?</h4>
+                                      <p className='track-bootom-para'>We sent your AWB tracking number to you via Email & SMS upon order confirmation.</p>  </div>
+                                </div>
                             </form>
                         )}
 
@@ -199,6 +204,11 @@ const TrackingOrder = () => {
                                 <button type="submit" className="tracking-button">
                                     Track Now
                                 </button>
+                                <div>
+                                    <div style={{borderTop:"1px solid #EAEAEA", marginBottom:"15px", marginTop:"5px"}}></div>
+                                    <div> <h4 className='track-bootom-heading'>Can’t Find Your Order Details?</h4>
+                                      <p className='track-bootom-para'>We sent your AWB tracking number to you via Email & SMS upon order confirmation.</p>  </div>
+                                </div>
                             </form>
                         )}
 
@@ -221,6 +231,11 @@ const TrackingOrder = () => {
                                 <button type="submit" className="tracking-button">
                                     Track Now
                                 </button>
+                                 <div>
+                                    <div style={{borderTop:"1px solid #EAEAEA", marginBottom:"15px", marginTop:"5px"}}></div>
+                                    <div> <h4 className='track-bootom-heading'>Can’t Find Your Order Details?</h4>
+                                      <p className='track-bootom-para'>We sent your AWB tracking number to you via Email & SMS upon order confirmation.</p>  </div>
+                                </div>
                             </form>
                         )}
                     </div>
