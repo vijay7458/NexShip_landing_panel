@@ -5,6 +5,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import BoostIcon from './Icons/BoostIcon';
 import RewardsIcon from './Icons/RewardsIcon';
 import GrowIcon from './Icons/GrowIcon';
+import GenericFaq from '../../../generic/GenericFaq';
 
 const ReferAndEarn = () => {
     const handleScroll = () => {
@@ -13,6 +14,35 @@ const ReferAndEarn = () => {
             behavior: "smooth",
         });
     };
+
+    const referAndEarnFaq = [
+  {
+    question: "How do I earn rewards?",
+    answer:
+      "For every business that signs up through your referral link and uses our platform for shipping, you earn rewards, including monetary bonuses and platform credits.",
+  },
+  {
+    question: "Is there a limit to how many businesses I can refer?",
+    answer:
+      "No, there’s no limit! The more businesses you refer, the more rewards you can earn!",
+  },
+  {
+    question: "When will I receive my referral rewards?",
+    answer:
+      "Rewards are credited once the referred business completes their first successful shipment using our platform.",
+  },
+  {
+    question: "How do I track my referral progress?",
+    answer:
+      "You can monitor your referrals and earned rewards through your dashboard under the 'Refer and Earn' section.",
+  },
+  {
+    question: "Can I refer businesses outside my network?",
+    answer:
+      "Yes, your referral link can be shared with anyone—via email, social media, or directly. As long as they sign up using your link, you get the credit.",
+  },
+];
+
     return (
         <>
             <header className="page-header">
@@ -108,7 +138,7 @@ const ReferAndEarn = () => {
                     </div>
                 </section>
 
-                <section className="refer-and-earn__faq">
+                {/* <section className="refer-and-earn__faq">
                     <div className="amazon-self-ship-container">
                         <h2 className='heading text-center mb-5'>Frequently Asked Questions</h2>
                         <div className="refer-and-earn__faq-item">
@@ -120,7 +150,8 @@ const ReferAndEarn = () => {
                             <p>No, there’s no limit! The more businesses you refer, the more rewards you can earn!</p>
                         </div>
                     </div>
-                </section>
+                </section> */}
+                <GenericFaq data={referAndEarnFaq}/>
             </div>
         </>
     );
