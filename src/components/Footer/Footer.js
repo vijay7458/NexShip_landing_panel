@@ -28,29 +28,45 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-column">
+        <div className="footer-column-main">
           <div className="footer-logo-section ">
             <img src={Logo} alt="Shipease Logo" className="footer-logo" />
             <div className="footer-social-icons">
-              <a href="http://www.facebook.com/shipease.in" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
-              </a>
-              <a href="https://x.com/Shipease_IN" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faTwitter} className="social-icon" />
-              </a>
-              <a href="https://www.instagram.com/shipease.in/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} className="social-icon" />
-              </a>
-              <a href="https://www.youtube.com/@ShipEaseTechnologiesPvtLTD" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faYoutube} className="social-icon" />
-              </a>
-              <a href="https://www.linkedin.com/company/shipease-technologies-pvt-ltd/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
-              </a>
+              <div className="main-social">
+                <a href="http://www.facebook.com/shipease.in" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
+                </a>
+              </div>
+              <div className="main-social">
+
+                <a href="https://x.com/Shipease_IN" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+                </a>
+              </div>
+              <div className="main-social">
+                <a href="https://www.instagram.com/shipease.in/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+                </a>
+              </div>
+              <div className="main-social">
+
+                <a href="https://www.youtube.com/@ShipEaseTechnologiesPvtLTD" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faYoutube} className="social-icon" />
+                </a>
+              </div>
+              <div className="main-social">
+
+                <a href="https://www.linkedin.com/company/shipease-technologies-pvt-ltd/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
+                </a>
+              </div>
+
             </div>
           </div>
 
-          <h4>Reach Us At</h4>
+
+          <div className="footer-column">
+                <h4>Reach Us At</h4>
           <ul className="reach-us mb-2">
             <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:support@shipease.com">support@shipease.com</a></li>
             <li><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:sales@shipease.com" target="_blank">sales@shipease.com</a></li>
@@ -77,6 +93,8 @@ const Footer = () => {
               <img src={AppleStore} alt="App Store" />
             </a>
           </div> */}
+          </div>
+    
         </div>
 
 

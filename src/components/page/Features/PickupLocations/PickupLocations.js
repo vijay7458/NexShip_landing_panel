@@ -7,6 +7,8 @@ import FaqBg from '../../../../assets/image/FAQ-bg.svg'
 import FasterDeliveryIcom from './Icons/FasterDeliveryIcom';
 import ConvenienceIcon from './Icons/ConvenienceIcon';
 import CostSavingsIcon from './Icons/CostSavingsIcon';
+import DownArrowIcon from './Icons/DownArrow';
+import UpArrowIcon from './Icons/UpArrow';
 
 const PickupLocations = () => {
     const handleScroll = () => {
@@ -143,9 +145,9 @@ const PickupLocations = () => {
                     <div className='pickup-locations-faq-bg'>
                         <img src={FaqBg} alt="" />
                     </div>
-                    <p className='subtitle text-center mb-3'>FAQ</p>
-                    <h2 className="heading text-center">Frquently Asked Questions <br />
-                        <span className='pickup-locations__subtitle'>about Multiple Pickup Locations</span>
+                    {/* <p className='subtitle text-center mb-3'>FAQ</p> */}
+                    <h2 className="heading text-center"> Frquently <span style={{color: "#60a9eb"}}>Asked Questions </span> <br />
+                        <span className='pickup-locations__subtitle'>About Multiple Pickup Locations</span>
                     </h2>
                     <div className="pickup-locations__faqs-list">
                         {faqData.map(({ id, question, answer, link }) => (
@@ -154,7 +156,13 @@ const PickupLocations = () => {
                                 className={`pickup-locations__faq-item ${activeId === id ? "active" : ""}`}
                                 onClick={() => toggleFAQ(id)}
                             >
-                                <strong className="pickup-locations__faq-question">{question}</strong>
+                            <div style={{display:"flex", justifyContent:"space-between"}}>
+                                <div>  <strong className="pickup-locations__faq-question">{question}   </strong></div>
+                                <div> {activeId === id ?  <div className='donwArr'> <UpArrowIcon /> </div> : <div className='donwArr'> <DownArrowIcon /> </div>  }</div>
+                            </div>
+                                {/* <strong className="pickup-locations__faq-question">{question}  
+                                {activeId === id ?  <div className='donwArr'> <UpArrowIcon /> </div> : <div className='donwArr'> <DownArrowIcon /> </div>  }
+                                </strong> */}
                                 <div
                                     className="pickup-locations__faq-answer-container"
                                     style={{

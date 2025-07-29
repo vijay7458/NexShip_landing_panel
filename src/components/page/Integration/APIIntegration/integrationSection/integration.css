@@ -1,0 +1,257 @@
+.integration-wrapper {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  /* background: linear-gradient(to bottom, #f5faff, #eef3f8); */
+  padding: 4rem 6rem;
+  margin-top: 2rem;
+  /* background-color: #fff; */
+  font-family: Poppins, Helvetica, sans-serif;
+
+}
+
+.integration-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.integration-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.integration-content {
+  flex: 1;
+  min-width: 280px;
+  padding: 1rem;
+
+}
+
+.integration-content h2 {
+  font-size: 2.5rem;
+  color: #0a2e5c;
+  margin-bottom: 1rem;
+  font-family: Poppins, Helvetica, sans-serif;
+
+}
+
+.integration-content p {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.integration-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.integration-image img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .integration-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to bottom, #f5faff, #eef3f8); */
+  padding: 2rem 2rem;
+  margin-top: 2rem;
+  /* background-color: #fff; */
+}
+.integration-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+  .integration-section {
+    flex-direction: column;
+  }
+
+  .integration-section.reverse {
+    flex-direction: column;
+  }
+
+  .integration-content, .integration-image {
+    text-align: center;
+  }
+
+  .integration-content h2 {
+    font-size: 2rem;
+  }
+
+  .integration-content p {
+    font-size: 1rem;
+  }
+}
+
+
+.api-benefits-section {
+  font-family: Poppins, Helvetica, sans-serif;
+  margin-top: -1rem !important;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #f7fafd, #fff);
+}
+
+.api-benefits-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.api-benefits-heading {
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+  font-family: Poppins, Helvetica, sans-serif;
+  color: #0f1e40;
+  font-weight: 700;
+}
+
+.api-benefits-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.api-benefits-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.api-benefits-card:hover {
+  transform: translateY(-8px);
+}
+
+.api-icon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.api-card-title {
+  font-size: 1.25rem;
+  color: #1e2e50;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.api-card-description {
+  color: #586874;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
+.api-intro-section {
+  padding: 0rem 6rem 0rem 6rem;
+  /* padding: 60px 20px; */
+  margin-top: -1rem  !important;
+  /* background-color: #ffffff; */
+}
+
+.api-intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.api-intro-text {
+  padding: 20px;
+}
+
+.api-intro-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Poppins, Helvetica, sans-serif;
+  color: #1975c9;
+  margin-bottom: 20px;
+}
+
+.api-intro-description {
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.api-intro-image {
+  padding: 20px;
+}
+
+.api-intro-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+@media(max-width :700px){
+  
+.api-intro-section {
+  padding: 0rem 1rem 0rem 1rem;
+  /* padding: 60px 20px; */
+  margin-top: -1rem  !important;
+  /* background-color: #ffffff; */
+}
+.api-intro-heading {
+  font-size: 2rem !important;
+  font-weight: 700;
+  font-family: Poppins, Helvetica, sans-serif;
+  color: #1975c9;
+  margin-bottom: 20px;
+}
+
+
+.api-intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.api-intro-text {
+  padding: 20px;
+}
+
+.api-intro-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Poppins, Helvetica, sans-serif;
+  color: #1975c9;
+  margin-bottom: 20px;
+}
+
+.api-intro-description {
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.api-intro-image {
+  padding: 20px;
+}
+
+.api-intro-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+}

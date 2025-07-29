@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import volumetricWeightImage from '../../../assets/image/volumetricWeightImage.png'
 import HowToCalculate from '../../../assets/image/HowToCalculate.png'
+import GenericFaq from '../../generic/GenericFaq';
 
 const VolumetricWeightCalculator = () => {
     const [length, setLength] = useState('');
@@ -30,6 +31,25 @@ const VolumetricWeightCalculator = () => {
             behavior: "smooth",
         });
     };
+       const faqData = [
+        {
+        question: "Why is volumetric weight important?",
+        answer: "Volumetric weight allows shipping companies to charge based on the volume a package occupies rather than its actual weight. This is especially important for large but lightweight packages, ensuring fair pricing for both shippers and customers."
+       },
+       {
+        question: "Can my package's volumetric weight exceed its actual weight?",
+        answer: " Yes, if the volume of your package is large but it is lightweight, its volumetric weight will be higher than its actual weight. This may result in higher shipping costs."
+       },
+       {
+        question: "How can I reduce the volumetric weight of my package?",
+        answer :"To reduce volumetric weight, consider using smaller packaging that fits your item more closely. Ensure the box is as compact as possible while still protecting the item inside."
+       },
+        {
+        question: "Does volumetric weight affect all shipping carriers?",
+        answer :"Yes, most major shipping carriers (e.g., FedEx, UPS, DHL) use volumetric weight as a factor in calculating shipping costs. However, the divisor used in the formula may vary slightly between carriers."
+       }
+
+    ]
 
     return (
         <>
@@ -125,7 +145,7 @@ const VolumetricWeightCalculator = () => {
                     </div>
                 </section>
 
-                <section className="faq">
+                {/* <section className="faq">
                     <div className="amazon-self-ship-container">
                         <h2 className='heading text-center'>Frequently Asked Questions</h2>
                         <ul>
@@ -142,7 +162,8 @@ const VolumetricWeightCalculator = () => {
                             <li><strong>A:</strong> Yes, most major shipping carriers (e.g., FedEx, UPS, DHL) use volumetric weight as a factor in calculating shipping costs. However, the divisor used in the formula may vary slightly between carriers.</li>
                         </ul>
                     </div>
-                </section>
+                </section> */}
+                <GenericFaq data={faqData}/>
             </div>
         </>
     );
