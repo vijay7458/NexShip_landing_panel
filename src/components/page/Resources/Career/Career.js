@@ -182,7 +182,7 @@ const Career = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="fs-4 fs-sm-4">
+                    <h2>
                         While we don’t have any openings at the moment,<br /> we’re always excited to connect with passionate individuals.<br /><p className='mt-4'> Keep an eye on this space for future opportunities or send us your resume for future consideration at </p><a className="cta-button" href="mailto:hr@shipease.in">hr@shipease.in</a>
                     </h2>
 
