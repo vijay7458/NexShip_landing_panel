@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, useParams } from 'react-router';
+import TrackingComp from './TrackingUi/TrackingComp';
 
 const TrackingOrder = () => {
 
@@ -238,6 +239,9 @@ const TrackingOrder = () => {
                         {TrackingData}
                     </div>
             }
+
+            {/* Ui Components */}
+            <TrackingComp />
         </>
     );
 };

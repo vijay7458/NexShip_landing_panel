@@ -12,6 +12,14 @@ import KeepItSimple from '../../../../assets/image/KeepItSimple.webp'
 import DiversityAndInclusion from '../../../../assets/image/DiversityAndInclusion.webp'
 import WhoWeAreImageTransparent from '../../../../assets/image/WhoWeAreImageTransparent.png'
 import BlobSvg from './BlobSvg';
+import CarrerSection from './CarrerUi/CarrerSection';
+import { motion } from 'framer-motion';
+import img1 from "../../../../assets/image/showing-data-group-people-business-conference-modern-classroom-daytime.jpg"
+import img2 from "../../../../assets/image/meeting-2284501_1280.jpg"
+import img3 from "../../../../assets/image/brooke-lark-nMffL1zjbw4-unsplash.jpg"
+import img4 from "../../../../assets/image/business-3468267.jpg"
+import img5 from "../../../../assets/image/work-life-balance-5333818.jpg"
+
 
 const Career = () => {
     const handleScroll = () => {
@@ -28,6 +36,33 @@ const Career = () => {
         { title: "Keep it Simple", content: "We put all our energy into work and aim for continual progress. ‘We adhere to a flat organizational structure, keeping our communications simple and straight forward.", image: KeepItSimple },
         { title: "Diversity and Inclusion", content: "‘We value talent and drive above all else. We welcome and respect diversity in all its forms - race, language, culture, beliefs, gender, and identity.", image: DiversityAndInclusion },
     ];
+    const careerBenefits = [
+        {
+            title: 'Comprehensive Training',
+            description: 'Upskill and grow with our structured training programs designed for continuous learning.',
+            image: img1,
+        },
+        {
+            title: 'Impactful Projects',
+            description: 'Work on real-world projects that create value and reach a global audience.',
+            image: img2,
+        },
+        {
+            title: 'Creative Freedom',
+            description: 'Thrive in a culture that celebrates creativity and encourages individuality.',
+            image: img3,
+        },
+        {
+            title: 'Expert Mentorship',
+            description: 'Learn from experienced industry leaders and mentors who guide your journey.',
+            image: img4,
+        },
+        {
+            title: 'Work-Life Balance',
+            description: 'Enjoy flexible policies that support your health, happiness, and productivity.',
+            image: img5,
+        },
+    ];
 
     return (
         <>
@@ -43,9 +78,11 @@ const Career = () => {
                 <p className="page-header-description"> At ShipEase, we believe in empowering individuals to unlock their full potential. Join us to grow, innovate, and excel in your career</p>
                 <button onClick={handleScroll} className='btn main-button'>Explore More <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
             </header>
+            <CarrerSection />
+
             <div className="career-page">
                 <div className="career-content">
-                    <section className="career-section">
+                    {/* <section className="career-section">
                         <div className='amazon-self-ship-container'>
                             <div className='row align-items-center justify-content-between'>
                                 <div className='col-12 col-md-6 whoweare-img'>
@@ -60,15 +97,16 @@ const Career = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
+
 
                     <section className='w-100 d-flex justify-content-center'>
                         <div className='amazon-self-ship-container'>
-                            <h2 className="heading text-center">Our Values</h2>
+                            <h2 style={{ color: "#1975c9", marginTop: "-4rem", marginBottom: "20px" }} className="heading text-center">Our Values</h2>
                             <AccordionComponent items={accordionData} />
                         </div>
                     </section>
-                    <section className="career-section">
+                    {/* <section className="career-section">
                         <div className='amazon-self-ship-container'>
                             <h2 className="heading text-center">How We Help Build Your Career</h2>
                             <div className='row align-items-center mt-4'>
@@ -86,24 +124,85 @@ const Career = () => {
                                 </div>
                             </div>
                         </div>
+                    </section> */}
+                    <section className="career-growth-wrapper">
+                        <motion.h2
+                            className="career-growth-title"
+                            initial={{ y: 40, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                        >
+                            How We Help Build Your Career
+                        </motion.h2>
+
+                        <div className="container career-grid">
+                            {careerBenefits.map((item, idx) => (
+                                <motion.div
+                                    className="career-card"
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: idx * 0.1, duration: 0.5 }}
+                                    viewport={{ once: true, amount: 0.3 }}
+                                >
+                                    <img src={item.image} alt={item.title} className="career-image" />
+                                    <h3>{item.title}</h3>
+                                    <p>{item.description}</p>
+                                </motion.div>
+                            ))}
+                        </div>
                     </section>
-                    <section className="career-section no-openings">
+
+                    <section>
+
+                    </section>
+                    {/* <section  className="career-section no-openings">
                         <div className='amazon-self-ship-container'>
-                            {/* <h2 className="heading text-center">Currently No Open Positions</h2> */}
                             <p className="career-text">
                                 While we don’t have any openings at the moment, we’re always excited to connect with passionate individuals. Keep an eye on this space for future opportunities or send us your resume for future consideration at <a href="mailto:hr@shipease.in">hr@shipease.in</a>.
                             </p>
                         </div>
-                    </section>
+                    </section> */}
                 </div>
-                <section className="career-footer">
+                {/* <section className="career-footer">
                     <div className='amazon-self-ship-container'>
                         <h2 className="career-footer-text">
                             Join the journey of redefining logistics,<br />one step at a time.
                         </h2>
                     </div>
-                </section>
+                </section> */}
+
             </div>
+           <div className="m-2 m-sm-2 m-lg-4">
+                {/* Join the Journey Section */}
+                <motion.div
+                    className="why-cta-section"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <h2 className="fs-4 fs-sm-4">
+                        While we don’t have any openings at the moment,<br /> we’re always excited to connect with passionate individuals.<br /><p className='mt-4'> Keep an eye on this space for future opportunities or send us your resume for future consideration at </p><a className="cta-button" href="mailto:hr@shipease.in">hr@shipease.in</a>
+                    </h2>
+
+                </motion.div>
+            </div>
+            {/* <div className='m-4'>
+                <motion.div
+                    className="why-cta-section"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <h2>Join the journey of redefining logistics,<br />one step at a time.</h2>
+                    <p>
+                        Be part of a team where innovation meets impact. At ShipEase, your work creates real change.
+                    </p>
+                    <a href="/careers" className="cta-button">Explore Careers</a>
+                </motion.div>
+            </div> */}
+
         </>
     );
 };
