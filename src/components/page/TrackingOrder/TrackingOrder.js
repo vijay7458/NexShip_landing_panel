@@ -104,7 +104,7 @@ const TrackingOrder = () => {
             handleTracking(awb); // Fetch new data
         }
         setTimeout(() => {
-            const scrollAmount = document.body.scrollHeight * 0.33;
+            const scrollAmount = document.body.scrollHeight * 0.15;
             window.scrollTo({
                 top: scrollAmount,
                 behavior: "smooth",
