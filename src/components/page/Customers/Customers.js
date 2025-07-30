@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Customers.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +8,8 @@ import XYXX from "../../../assets/image/clients/xyxx.png"
 import RareRabbit from "../../../assets/image/clients/rareRabbit.jpeg"
 import TheAyurvedaExperience from "../../../assets/image/clients/ayurveda.png"
 import SwissMilitary from "../../../assets/image/clients/swissMilitary.png"
+import { motion } from 'framer-motion';
+
 
 const Customers = () => {
     const handleScroll = () => {
@@ -62,6 +64,33 @@ const Customers = () => {
         }
     ];
 
+
+
+    const metrics = [
+        { value: '75%', label: 'Decrease in WISMO inquiries' },
+        { value: '55', label: 'Point improvement in NPS score' },
+        { value: '30%', label: 'Growth in repeat purchases' },
+        { value: '50%', label: 'Boost in customer retention' },
+    ];
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 40 },
+        visible: (i = 1) => ({
+            opacity: 1,
+            y: 0,
+            transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' },
+        }),
+    };
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+        const { current } = scrollRef;
+        if (direction === 'left')
+            current.scrollBy({ left: -300, behavior: 'smooth' });
+        else current.scrollBy({ left: 300, behavior: 'smooth' });
+    };
+
+
     return (
         <>
             <header className="page-header">
@@ -82,7 +111,7 @@ const Customers = () => {
 
             <div className="customers-page">
 
-                <section className='customer-counts'>
+                {/* <section className='customer-counts'>
                     <div className='amazon-self-ship-container'>
                         <h2 className="heading text-center">Enhance your customer's experience with ShipEase.</h2>
                         <p className='customer-counts-des'>Our platform optimizes supply chain efficiency, reduces operational costs, and enhances customer satisfaction, driving long-term business growth.</p>
@@ -105,23 +134,47 @@ const Customers = () => {
                             </li>
                         </ul>
                     </div>
-                </section>
+                </section> */}
 
+                <section className='customer-metrics-section'>
+                    <div className='customer-metrics-container'>
+                        <motion.h2
+                            className="metrics-heading text-center"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeUp}
+                        >
+                            Enhance your customer's experience with ShipEase.
+                        </motion.h2>
 
-                {/* Customer Testimonials */}
-                <section className="customer-testimonials">
-                    <div className='amazon-self-ship-container'>
-                        <h2 className="heading text-center">What Our Clients Say</h2>
-                        <div className="testimonials-container">
-                            {Testimonials.map((item, id) => (
-                                <div key={id} className="testimonial-card">
-                                    <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
-                                    <p>"{item.message}"</p>
-                                    {/* <h4>{item.name}</h4> */}
-                                    <span>{item.designation}, {item.company_name}</span>
-                                </div>
+                        <motion.p
+                            className='metrics-description'
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            variants={fadeUp}
+                            custom={1}
+                        >
+                            Our platform optimizes supply chain efficiency, reduces operational costs, and enhances customer satisfaction, driving long-term business growth.
+                        </motion.p>
+
+                        <ul className='metrics-list'>
+                            {metrics.map((item, index) => (
+                                <motion.li
+                                    key={index}
+                                    className='metric-item'
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true }}
+                                    variants={fadeUp}
+                                    custom={index + 2}
+                                >
+                                    <p className='metric-value'>{item.value}</p>
+                                    <p className='metric-label'>{item.label}</p>
+                                </motion.li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
                 </section>
 
@@ -137,6 +190,48 @@ const Customers = () => {
                         <img src={XYXX} alt="Brand 4" />
                     </div>
                 </section>
+
+                {/* Customer Testimonials */}
+                <section className="customer-testimonials">
+                    <div className='amazon-self-ship-container'>
+                        <div style={{ display: "flex", justifyContent: "space-around", position: "relative" }}>
+                            {/* <div></div> */}
+                            <h2 className="heading text-center">What Our Clients Say</h2>
+                            <div className="testimonial-controls">
+                                <button className='btn-first' onClick={() => scroll('left')}>←</button>
+                                <button className='btn-second' onClick={() => scroll('right')}>→</button>
+                            </div>
+                        </div>
+
+                        {/* <div className="testimonials-container">
+                            {Testimonials.map((item, id) => (
+                                <div key={id} className="testimonial-card">
+                                    <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
+                                    <p>"{item.message}"</p>
+                                    <span>{item.designation}, {item.company_name}</span>
+                                </div>
+                            ))}
+                        </div> */}
+                    </div>
+                    {/* slider -- component  */}
+                    <div className="testimonial-wrapper">
+
+
+                        <div className="testimonial-scroll" ref={scrollRef}>
+                            {Testimonials?.map((item, index) => (
+                                <div className="testimonial-card" key={item?.id}>
+                                    <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
+                                    <p>"{item.message}"</p>
+                                    <span>{item.designation}, {item.company_name}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                </section>
+
+
+
 
                 {/* Case Studies */}
                 <section section className="case-studies" >
@@ -162,11 +257,27 @@ const Customers = () => {
                 </section> */}
 
                 {/* Get Started */}
-                <section section className="get-started" >
-                    <div className='amazon-self-ship-container'>
+                <section section  >
+                    {/* <div className='amazon-self-ship-container'>
                         <h2 className="heading text-center">Partner With Us</h2>
                         <p>Join the growing network of businesses that trust <strong>ShipEase</strong> for efficient logistics solutions. Get started today!</p>
                         <button className="btn main-button">Get Started</button>
+                    </div> */}
+
+                    <div className="m-2 m-sm-2 m-lg-4">
+                        {/* Join the Journey Section */}
+                        <motion.div
+                            className="why-cta-section"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <h2>
+                               Join the growing network of businesses that trust <strong>ShipEase</strong> for efficient logistics solutions. Get started today!<br />
+                                <a className="cta-button">Get Started</a>
+                            </h2>
+
+                        </motion.div>
                     </div>
                 </section>
             </div>
