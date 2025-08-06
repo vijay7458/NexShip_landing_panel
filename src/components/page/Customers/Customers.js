@@ -21,6 +21,18 @@ const Customers = () => {
 
 
 
+    const brandLogos = [
+        { src: Curefit, alt: 'Curefit' },
+        { src: SwissMilitary, alt: 'Swiss Military' },
+        { src: TheAyurvedaExperience, alt: 'The Ayurveda Experience' },
+        { src: RareRabbit, alt: 'Rare Rabbit' },
+        { src: XYXX, alt: 'XYXX' }
+    ];
+
+
+
+
+
     const Testimonials = [
         {
             id: "1",
@@ -89,6 +101,7 @@ const Customers = () => {
             current.scrollBy({ left: -300, behavior: 'smooth' });
         else current.scrollBy({ left: 300, behavior: 'smooth' });
     };
+
 
 
     return (
@@ -178,64 +191,35 @@ const Customers = () => {
                     </div>
                 </section>
 
-                {/* Trusted By */}
-                <section section className="trusted-by" >
-                    <h2 className="heading text-center">Trusted By Leading Brands</h2>
-                    <p>Our logistics network supports a diverse range of industries.</p>
-                    <div className="brands-logos">
-                        <img src={Curefit} alt="Brand 1" />
-                        <img src={SwissMilitary} alt="Brand 2" />
-                        <img src={TheAyurvedaExperience} alt="Brand 3" />
-                        <img src={RareRabbit} alt="Brand 4" />
-                        <img src={XYXX} alt="Brand 4" />
-                    </div>
-                </section>
-
                 {/* Customer Testimonials */}
-                <section className="customer-testimonials">
-                    <div className='amazon-self-ship-container'>
-                        <div style={{ display: "flex", justifyContent: "space-around", position: "relative" }}>
-                            {/* <div></div> */}
-                            <h2 className="heading text-center">What Our Clients Say</h2>
-                            <div className="testimonial-controls">
-                                <button className='btn-first' onClick={() => scroll('left')}>←</button>
-                                <button className='btn-second' onClick={() => scroll('right')}>→</button>
-                            </div>
+
+                <div className='main-container-testinomial'>
+                    <div className='testinomail-topbar'>
+                        <div>
+                            <h2 className="heading text-center">What Our <span style={{ color: "#1975c9" }}>Clients</span> Say</h2>
                         </div>
-
-                        {/* <div className="testimonials-container">
-                            {Testimonials.map((item, id) => (
-                                <div key={id} className="testimonial-card">
-                                    <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
-                                    <p>"{item.message}"</p>
-                                    <span>{item.designation}, {item.company_name}</span>
-                                </div>
-                            ))}
-                        </div> */}
+                        <div className="testimonial-controls">
+                            <button className='btn-first' onClick={() => scroll('left')}>←</button>
+                            <button className='btn-second' onClick={() => scroll('right')}>→</button>
+                        </div>
                     </div>
-                    {/* slider -- component  */}
                     <div className="testimonial-wrapper">
-
-
                         <div className="testimonial-scroll" ref={scrollRef}>
-                            {Testimonials?.map((item, index) => (
+                            <div className="scroll-start-spacer" />
+                            {Testimonials?.map((item) => (
                                 <div className="testimonial-card" key={item?.id}>
                                     <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft} />
                                     <p>"{item.message}"</p>
                                     <span>{item.designation}, {item.company_name}</span>
                                 </div>
                             ))}
-                        </div>
                     </div>
-
-                </section>
-
-
-
+                    </div>
+                </div>
 
                 {/* Case Studies */}
                 <section section className="case-studies" >
-                    <h2 className="heading text-center">Success Stories</h2>
+                    <h2  className="heading text-center">Success Stories</h2>
                     <div className="case-studies-container">
                         <div className="case-study-card">
                             <h3 className='heading text-center'>Retail Giant<br /> Optimizes Logistics</h3>
@@ -247,23 +231,16 @@ const Customers = () => {
                             <p>Our fulfillment centers enabled a startup to process 50,000+ orders monthly
                                 with zero delays.</p>
                         </div>
+                          <div className="case-study-card">
+                            <h3 className='heading text-center'>D2C Brand Expands Nationwide<br /> Scales Rapidly</h3>
+                            <p>With pan-India shipping support, a growing D2C brand expanded to 28 states in under 3 months.</p>
+                        </div>
                     </div>
                 </section>
 
-                {/* <section className='customer-carousel'>
-                    <div className='amazon-self-ship-container'>
-                        <CustomerCarousel />
-                    </div>
-                </section> */}
-
+      
                 {/* Get Started */}
                 <section section  >
-                    {/* <div className='amazon-self-ship-container'>
-                        <h2 className="heading text-center">Partner With Us</h2>
-                        <p>Join the growing network of businesses that trust <strong>ShipEase</strong> for efficient logistics solutions. Get started today!</p>
-                        <button className="btn main-button">Get Started</button>
-                    </div> */}
-
                     <div className="m-2 m-sm-2 m-lg-4">
                         {/* Join the Journey Section */}
                         <motion.div
@@ -272,8 +249,9 @@ const Customers = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.6 }}
                         >
+                        
                             <h2>
-                               Join the growing network of businesses that trust <strong>ShipEase</strong> for efficient logistics solutions. Get started today!<br />
+                                Join the growing network of businesses that trust <strong>ShipEase</strong> for efficient logistics solutions. Get started today!<br />
                                 <a className="cta-button">Get Started</a>
                             </h2>
 
@@ -281,6 +259,55 @@ const Customers = () => {
                     </div>
                 </section>
             </div>
+
+            {/* <section className="customer-testimonials"> */}
+
+            <section className="trusted-section-wrapper">
+                <motion.div
+                    className="trusted-section-content"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                >
+                    <h2 className="trusted-section-heading">Trusted by Leading Brands</h2>
+                    <p className="trusted-section-subtext">
+                        From fast-growing startups to enterprise giants, our logistics solutions power seamless order fulfillment and delivery across India.
+                    </p>
+                    <p className="trusted-section-description">
+                        We partner with brands that value performance, reliability, and customer experience. Join the companies who trust us to move their business forward.
+                    </p>
+                </motion.div>
+
+                <motion.div
+                    className="trusted-section-logos"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                >
+                    {brandLogos.map((brand, index) => (
+                        <motion.div
+                            key={index}
+                            className="trusted-logo-container"
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 200 }}
+                        >
+                            <img src={brand.src} alt={brand.alt} />
+                        </motion.div>
+                    ))}
+                </motion.div>
+
+                <motion.div
+                    className="trusted-cta"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                </motion.div>
+            </section>
+            {/* </section> */}
         </>
     );
 };

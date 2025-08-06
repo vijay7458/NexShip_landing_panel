@@ -28,7 +28,7 @@ export default function GenericFaq(props) {
                         <motion.div
                             key={index}
                             className="p-4"
-                            style={{ boxShadow: "0 6px 6px #00000008", border: "none", borderRadius: "12px" }}
+                            style={{ boxShadow: "0 6px 6px #00000008", border: "none", borderRadius: "0px" }}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}

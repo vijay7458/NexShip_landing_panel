@@ -106,7 +106,8 @@
 
 /* Case Studies */
 .case-studies {
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
+    padding-top: 10px;
     /* background: #f4f4f4; */
     text-align: center;
 }
@@ -115,7 +116,7 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
     flex-wrap: wrap;
 }
 
@@ -206,60 +207,60 @@ img[alt="Swiss Military"] {
 /* new design customer css */
 
 .customer-metrics-section {
- padding: 0rem 1rem;
-  background-color: #f8f9fb;
+    padding: 0rem 1rem;
+    background-color: #f8f9fb;
 }
 
 .customer-metrics-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .metrics-heading {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .metrics-description {
-  font-size: 1rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 2.5rem auto;
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
 }
 
 .metrics-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
 }
 
 .metric-item {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  width: 220px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 220px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .metric-value {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2b6cb0;
-  margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin-bottom: 0.5rem;
 }
 
 .metric-label {
-  font-size: 0.95rem;
-  color: #444;
+    font-size: 0.95rem;
+    color: #444;
 }
-.testimonial-controls button{
-    /* background-color: cyan; */
-    background-color: var(--sh-secondary);
+
+.testimonial-controls button {
+    background-color: #2b6cb0;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -268,28 +269,44 @@ img[alt="Swiss Military"] {
     font-size: 30px;
     font-weight: bolder !important;
     margin-right: 10px;
-     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
 }
 
 
 
 .testimonial-wrapper {
     position: relative;
-    padding: 40px 20px;
-    background-color: #ffffff;
+    /* padding: 40px 20px; */
+    /* background-color: #ffffff; */
     border-radius: 16px;
-    max-width: 1200px;
+    /* max-width: 100%; */
     margin: auto;
     overflow: hidden;
 }
 
+
 .testimonial-controls {
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
 
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+}
+
+.testinomail-topbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.testinomail-topbar h2 {
+    color: #000000;
+    font-family: "Poppins, sans-serif",
+
+
 }
 
 .testimonial-scroll {
@@ -298,11 +315,12 @@ img[alt="Swiss Military"] {
     scroll-behavior: smooth;
     gap: 20px;
     padding-bottom: 10px;
-    scrollbar-width: none; /* Firefox */
+    scroll-behavior: auto;
 }
 
 .testimonial-scroll::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    display: none;
+    /* Chrome, Safari */
 }
 
 .testimonial-card {
@@ -322,5 +340,118 @@ img[alt="Swiss Military"] {
 
 .testimonial-card:hover {
     transform: translateY(-5px);
+}
+
+.scroll-start-spacer {
+    min-width: 60px;
+    /* adjust as needed for your margin */
+    flex: 0 0 auto;
+}
+
+.main-container-testinomial {
+    margin-top: 6rem;
+    min-height: 450px;
+    padding: 4rem 0rem;
+    background-color: #e8f3f4
+}
+
+
+
+.trusted-section-wrapper {
+    padding: 60px 0px 20px 00px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.trusted-section-content {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.trusted-section-heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.trusted-section-subtext {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.trusted-section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.trusted-section-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.trusted-logo-container {
+    flex: 0 0 auto;
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.trusted-logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.trusted-logo-container:hover img {
+    filter: grayscale(0%);
+}
+
+.trusted-cta {
+    margin-top: 20px;
+}
+
+.trusted-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.trusted-cta-button {
+    background-color: #1e40af;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.trusted-cta-button:hover {
+    background-color: #1a3696;
+}
+
+
+
+/* media quesries */
+@media(max-width :786px){
+    .testinomail-topbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.scroll-start-spacer{
+    min-width: 0;
+}
 }
 
