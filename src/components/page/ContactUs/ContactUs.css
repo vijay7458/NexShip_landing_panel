@@ -451,11 +451,23 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+  .case-studies-container {
+    padding: 1rem;
+  }
+  .trusted-section-heading{
+    font-size: 30px !important;
+  }
 
+  .trusted-section-logos{
+    padding: 10px !important;
+  }
   .offering-item,
   .offering-item.reverse {
     flex-direction: column;
   }
+  .why-cta-section h2{
+    font-size: 25px !important;
+  } 
 
   .get-in-touch {
     font-weight: 500;

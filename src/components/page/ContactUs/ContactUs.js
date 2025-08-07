@@ -31,6 +31,7 @@ const ContactUs = () => {
 
     const [openVerifyModal, setOpenVerifyModal] = useState(false)
     const [selectedIds, setSelectedIds] = useState([]);
+    const [mainModalClose, setMainModalClose] = useState("")
 
     const handleitemboxChange = (id) => {
         setSelectedIds((prevSelected) =>
@@ -45,6 +46,17 @@ const ContactUs = () => {
     // useEffect(() => {
     //     console.log(formData, "formData")
     // }, [formData])
+
+    useEffect(() => {
+        if (mainModalClose === "closed") {
+            setOpenVerifyModal(false)
+            toast.info("We will contact you ")
+        } else {
+            setMainModalClose("")
+        }
+    }, [mainModalClose])
+
+    console.log(7777777777777777, mainModalClose)
 
 
     const [error, seterror] = useState(false)
@@ -168,10 +180,9 @@ const ContactUs = () => {
     };
 
     const submitForm = async () => {
-                    setOpenVerifyModal(true)
-
         const errors = {};
 
+        // Validation
         Object.entries(newFormData).forEach(([key, value]) => {
             let err = "";
 
@@ -197,7 +208,7 @@ const ContactUs = () => {
                 //     }
                 //     break;
                 default:
-                    err = "";
+                    break;
             }
 
             if (err) {
@@ -208,45 +219,47 @@ const ContactUs = () => {
         setNewError(errors);
 
         if (Object.keys(errors).length === 0) {
-            let payload = {
-                type: newFormData?.role,
-                first_name: newFormData?.name,
-                mobile: newFormData?.mobile,
-                company_name: newFormData?.companyName,
-                website: newFormData?.companyUrl,
-                email: newFormData?.emailAddress,
-                monthly_shipment: newFormData?.monthlyShipment,
+            const payload = {
+                type: newFormData.role,
+                first_name: newFormData.name,
+                mobile: newFormData.mobile,
+                company_name: newFormData.companyName,
+                website: newFormData.companyUrl,
+                email: newFormData.emailAddress,
+                monthly_shipment: newFormData.monthlyShipment,
                 channel_name: selectedIds
-            }
+            };
+
             try {
-                const response = await fetch('https://dev.shipease.in/core-api/seller/contact-us/', {
+                const response = await fetch('https://app.shipease.in/core-api/seller/contact-us/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(payload)
                 });
-
-                if (!response.ok) {
-                    throw new Error('Failed to submit form');
-                } else {
-                    setOpenVerifyModal(true)
-                }
                 const data = await response.json();
-                console.log('Success:', data);
-                setShowModal(true); // show modal on success
-                seterror(false)
+                if (data?.msgid) {
+                    toast.success("OTP sent");
+                    setOpenVerifyModal(true);
+                } else if (data?.is_otp_verify === false) {
+                    toast.info(data?.message || "OTP not verified");
+                    setOpenVerifyModal(true);
+                } else if (data?.is_otp_verify) {
+                    toast.info("We will contact you shortly.")
+                }
+
             } catch (error) {
-                toast.error(error)
-                console.log(11111111, error)
+                console.error("Submit error:", error);
+                toast.error(error.message || "Failed to submit form");
             }
 
-            // Proceed with form submission logic here
-        } else {
-            setOpenVerifyModal(false)
-            console.log("Form has validation errors.");
+
         }
     };
+
+
+    // Thank You! Our concerned person will contact you shortly.
     const offerings = [
         {
             title: "Seamless eCommerce Integration",
@@ -263,6 +276,9 @@ const ContactUs = () => {
     ];
 
     // console.log(99999999999, selectedIds)
+
+
+    console.log(5555555, mainModalClose)
 
 
     return (
@@ -313,13 +329,9 @@ const ContactUs = () => {
 
             <div className="new-contact-us">
                 <div className="left-contact-section">
-
-
                     <div className="row mt-4">
                         <h2 className="row get-in-touch">Connect with us</h2>
                     </div>
-
-
                     {/* Input Row 1*/}
                     <div className="row g-3 mt-4">
                         {/* Role Selector */}
@@ -634,9 +646,9 @@ const ContactUs = () => {
                         ))}
                     </div>
 
-                    {openVerifyModal && <OtpModal show={openVerifyModal} contactNumber={newFormData?.mobile} onClose={() => setOpenVerifyModal(false)} />}
+                    {openVerifyModal && <OtpModal show={openVerifyModal} setMainModalClose={setMainModalClose} contactNumber={newFormData?.mobile} onClose={() => setOpenVerifyModal(false)} />}
                 </div>
-                <ToastContainer />
+                <ToastContainer closeButton={false} autoClose={3000} />
             </div>
         </>
     );
