@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const OtpModal = ({ show, onClose, contactNumber, setMainModalClose }) => {
+const OtpModal = ({ show, onClose, contactNumber, resetForm }) => {
     const [otp, setOtp] = useState(["", "", "", "", "", ""]);
     const inputsRef = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
@@ -49,13 +49,14 @@ const OtpModal = ({ show, onClose, contactNumber, setMainModalClose }) => {
                 body: JSON.stringify(payload),
             });
             const data = await response.json();
-            console.log(8888, data?.message)
-            if(data?.message === "OTP verified successfully!"){
+            if (data?.message === "OTP verified successfully!") {
                 toast.success("We will contact you shortly.")
-                setTimeout(() =>{
+                setTimeout(() => {
                     onClose();
-                },2000)
-            }else{
+                    resetForm();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 2000)
+            } else {
                 toast.error("OTP is not verified")
             }
 
@@ -64,6 +65,8 @@ const OtpModal = ({ show, onClose, contactNumber, setMainModalClose }) => {
             toast.error("Something went wrong");
         }
     };
+
+
 
 
     const handleResend = async () => {
@@ -153,7 +156,7 @@ const OtpModal = ({ show, onClose, contactNumber, setMainModalClose }) => {
                     </div>
                 </Modal.Body>
             </Modal>
-            <ToastContainer  closeButton={false} autoClose={3000} />
+            <ToastContainer closeButton={false} autoClose={3000} />
         </div>
     );
 };

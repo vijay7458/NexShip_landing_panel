@@ -18,16 +18,29 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactUs = () => {
-    const [formData, setFormData] = useState({
-        type: 'Business',
-        first_name: '',
-        mobile: '',
-        company_name: '',
-        website: '',
-        email: '',
-        monthly_shipment: 'less than 100',
-        channel_name: []
-    });
+    // const [formData, setFormData] = useState({
+    //     type: 'Business',
+    //     first_name: '',
+    //     mobile: '',
+    //     company_name: '',
+    //     website: '',
+    //     email: '',
+    //     monthly_shipment: 'less than 100',
+    //     channel_name: []
+    // });
+
+    const resetForm = () => {
+        setNewFormData({
+            role: "buisness",
+            name: "",
+            mobile: "",
+            companyName: "",
+            companyUrl: "",
+            emailAddress: "",
+            monthlyShipment: "less than 1000",
+        })
+        setSelectedIds([])
+    }
 
     const [openVerifyModal, setOpenVerifyModal] = useState(false)
     const [selectedIds, setSelectedIds] = useState([]);
@@ -62,23 +75,23 @@ const ContactUs = () => {
     const [error, seterror] = useState(false)
 
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setFormData({
+    //         ...formData,
+    //         [name]: value
+    //     });
+    // };
 
-    const handleCheckboxChange = (e) => {
-        const { name, checked } = e.target;
-        setFormData({
-            ...formData,
-            channel_name: checked
-                ? [...formData.channel_name, name]
-                : formData.channel_name.filter(channel => channel !== name)
-        });
-    };
+    // const handleCheckboxChange = (e) => {
+    //     const { name, checked } = e.target;
+    //     setFormData({
+    //         ...formData,
+    //         channel_name: checked
+    //             ? [...formData.channel_name, name]
+    //             : formData.channel_name.filter(channel => channel !== name)
+    //     });
+    // };
 
     const [showModal, setShowModal] = useState(false);
 
@@ -89,21 +102,21 @@ const ContactUs = () => {
 
     };
 
-    useEffect(() => {
-        if (!showModal) {
-            setFormData({
-                type: 'Business',
-                first_name: '',
-                mobile: '',
-                company_name: '',
-                website: '',
-                email: '',
-                monthly_shipment: 'less than 100',
-                channel_name: []
-            })
-            seterror(false)
-        }
-    }, [showModal])
+    // useEffect(() => {
+    //     if (!showModal) {
+    //         setFormData({
+    //             type: 'Business',
+    //             first_name: '',
+    //             mobile: '',
+    //             company_name: '',
+    //             website: '',
+    //             email: '',
+    //             monthly_shipment: 'less than 100',
+    //             channel_name: []
+    //         })
+    //         seterror(false)
+    //     }
+    // }, [showModal])
 
 
     const handleScroll = () => {
@@ -127,6 +140,8 @@ const ContactUs = () => {
         { id: "custom", label: "Custom", img: CustomLogo },
         { id: "wooCommerce", label: "WooCommerce", img: WooLogo },
     ]
+
+
 
     const [newFormData, setNewFormData] = useState({
         role: "buisness",
@@ -247,6 +262,7 @@ const ContactUs = () => {
                     setOpenVerifyModal(true);
                 } else if (data?.is_otp_verify) {
                     toast.info("We will contact you shortly.")
+                    resetForm()
                 }
 
             } catch (error) {
@@ -257,6 +273,11 @@ const ContactUs = () => {
 
         }
     };
+
+
+    // const emptyStateFn = () => {
+
+    // }
 
 
     // Thank You! Our concerned person will contact you shortly.
@@ -278,55 +299,14 @@ const ContactUs = () => {
     // console.log(99999999999, selectedIds)
 
 
-    console.log(5555555, mainModalClose)
+    // console.log(5555555, mainModalClose)
+
+
+
 
 
     return (
         <>
-            {/* <header className="page-header">
-                <div className="ripple-shape">
-                    <span className="ripple-1" />
-                    <span className="ripple-2" />
-                    <span className="ripple-3" />
-                    <span className="ripple-4" />
-                    <span className="ripple-5" />
-                </div>
-                <h1>Got questions? We're here to listen and assist!</h1>
-                <p className="page-header-description">Our team is skilled, prepared, and dedicated to guiding you from start to success.</p>
-                <button onClick={handleScroll} className='btn main-button'>Contact Us <FontAwesomeIcon className='ms-2' icon={faArrowDown} /></button>
-            </header> */}
-
-            {/* Bootstrap Modal */}
-            {/* <Modal
-                show={showModal}
-                onHide={() => setShowModal(false)}
-                centered
-                backdrop="static"
-                keyboard={false}
-                className={`contact-us-modal ${error && "error-message"}`}
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title>
-                        {error ? "Oops! Something Went Wrong" : "Thank You for Reaching Out!"}
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <p>
-                        {error
-                            ? "We encountered an issue while submitting your message. Please try again later. If the problem persists, feel free to reach out to us directly at +91 97172 00551 or sales@shipease.in"
-                            : "We have successfully received your message. Our team will get back to you as soon as possible. If your request is urgent, please feel free to call us directly at +91 97172 00551."}
-                    </p>
-                    <div className="text-center mt-4">
-                        <button className={`btn ${error ? "red-button" : "main-button"}`} onClick={() => setShowModal(false)}>
-                            Close
-                        </button>
-                    </div>
-                </Modal.Body>
-            </Modal> */}
-
-            {/* Bootstrap Modal Backdrop */}
-            {/* {showModal && <div className="modal-backdrop fade show"></div>} */}
-
             <div className="new-contact-us">
                 <div className="left-contact-section">
                     <div className="row mt-4">
@@ -337,7 +317,7 @@ const ContactUs = () => {
                         {/* Role Selector */}
                         <div className="col-12 col-lg-6">
                             <Form.Label>Select your role</Form.Label>
-                            <InputGroup>
+                            <InputGroup className='shadow-sm'>
                                 <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
                                     <FontAwesomeIcon icon={newFormData?.role === "customer" ? faUser : faBuilding} />
                                 </InputGroup.Text>
@@ -355,8 +335,8 @@ const ContactUs = () => {
 
                         {/* Name Input */}
                         <div className="col-12 col-lg-6">
-                            <Form.Label>Your Name</Form.Label>
-                            <InputGroup>
+                            <Form.Label>Your Name <span style={{ color: "red" }}>*</span>  </Form.Label>
+                            <InputGroup className='shadow-sm'>
                                 <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
                                     <FontAwesomeIcon icon={faUser} />
                                 </InputGroup.Text>
@@ -383,8 +363,8 @@ const ContactUs = () => {
                     <div className="row g-3">
                         {/* Mobile Number */}
                         <div className="col-12 col-md-6">
-                            <Form.Label className='mt-3'>Mobile Number</Form.Label>
-                            <InputGroup>
+                            <Form.Label className='mt-3'>Mobile Number <span style={{ color: "red" }}>*</span>  </Form.Label>
+                            <InputGroup className='shadow-sm'>
                                 <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
                                     <FontAwesomeIcon icon={faMobileAlt} />
                                 </InputGroup.Text>
@@ -407,7 +387,7 @@ const ContactUs = () => {
                         {/* Company Name */}
                         <div className="col-12 col-md-6">
                             <Form.Label className='mt-3'>Company Name</Form.Label>
-                            <InputGroup>
+                            <InputGroup className='shadow-sm'>
                                 <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
                                     <FontAwesomeIcon icon={faBuilding} />
                                 </InputGroup.Text>
@@ -417,6 +397,7 @@ const ContactUs = () => {
                                     type="text"
                                     placeholder="Enter company name"
                                     className="border-start-0"
+                                    value={newFormData?.companyName}
                                 />
                             </InputGroup>
                         </div>
@@ -431,7 +412,7 @@ const ContactUs = () => {
                             <Form.Label className='mt-3'>
                                 Company Url <span className="text-muted">(Optional)</span>
                             </Form.Label>
-                            <InputGroup>
+                            <InputGroup className='shadow-sm'>
                                 <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
                                     <FontAwesomeIcon icon={faGlobe} />
                                 </InputGroup.Text>
@@ -441,6 +422,7 @@ const ContactUs = () => {
                                     type="text"
                                     placeholder="Enter URL"
                                     className="border-start-0"
+                                    value={newFormData?.companyUrl}
                                 />
                             </InputGroup>
                             {newError?.companyUrl && (
@@ -452,8 +434,8 @@ const ContactUs = () => {
 
                         {/* Email Address */}
                         <div className="col-12 col-md-6">
-                            <Form.Label className='mt-3'>Email Address</Form.Label>
-                            <InputGroup>
+                            <Form.Label className='mt-3'>Email Address <span style={{ color: "red" }}>*</span> </Form.Label>
+                            <InputGroup className='shadow-sm ' style={{ borderRadius: "10px !important" }}>
                                 <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
                                     <FontAwesomeIcon icon={faEnvelope} />
                                 </InputGroup.Text>
@@ -463,6 +445,7 @@ const ContactUs = () => {
                                     name="emailAddress"
                                     placeholder="Enter your email"
                                     className="border-start-0"
+                                    value={newFormData?.emailAddress}
                                 />
                             </InputGroup>
                             {newError?.emailAddress && (
@@ -479,7 +462,7 @@ const ContactUs = () => {
                     <div className="row g-3">
                         <div className="col-12">
                             <Form.Label className='mt-3'>Monthly Shipments</Form.Label>
-                            <InputGroup>
+                            <InputGroup className='shadow-sm'>
                                 <InputGroup.Text
                                     style={{
                                         background: "#fff",
@@ -513,6 +496,7 @@ const ContactUs = () => {
                         <div className="col" style={{ padding: 0 }}>
                             <Form.Label style={{ marginLeft: "13px" }}>Preferred Channels (select multiple)</Form.Label>
                             <div
+                                className='shadow-sm'
                                 style={{
                                     backgroundColor: "#fff",
                                     width: "97%",
@@ -521,7 +505,7 @@ const ContactUs = () => {
                                     overflowY: "hidden",
                                     borderBottom: "1px solid #EAEAEA",
                                     padding: "0px 10px",
-                                    borderRadius: "6px",
+                                    borderRadius: "0px",
                                 }}
                             >
                                 <div
@@ -646,7 +630,7 @@ const ContactUs = () => {
                         ))}
                     </div>
 
-                    {openVerifyModal && <OtpModal show={openVerifyModal} setMainModalClose={setMainModalClose} contactNumber={newFormData?.mobile} onClose={() => setOpenVerifyModal(false)} />}
+                    {openVerifyModal && <OtpModal resetForm={resetForm} show={openVerifyModal} setMainModalClose={setMainModalClose} contactNumber={newFormData?.mobile} onClose={() => setOpenVerifyModal(false)} />}
                 </div>
                 <ToastContainer closeButton={false} autoClose={3000} />
             </div>
