@@ -261,6 +261,7 @@ const ContactUs = () => {
                     toast.info(data?.message || "OTP not verified");
                     setOpenVerifyModal(true);
                 } else if (data?.is_otp_verify) {
+                     window.scrollTo({ top: 0, behavior: 'smooth' });
                     toast.info("We will contact you shortly.")
                     resetForm()
                 }
