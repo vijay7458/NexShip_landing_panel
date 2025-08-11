@@ -337,6 +337,19 @@
     }
 }
 
+.header .track-button{
+    outline: none;
+    font-size: 14px;
+    color: var(--sh-secondary);
+    border: 1px solid var(--sh-secondary);
+    padding: 5px 9px;
+    font-weight: 600;
+}
+.header .track-button:hover{
+    background: var(--sh-secondary);
+    color: #fff;
+}
+
 
 .header .login-button {
     font-size: 14px;
