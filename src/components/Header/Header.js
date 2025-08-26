@@ -227,9 +227,17 @@ const Header = () => {
           </nav>
 
           <div className="track-login-nav">
-            <Link to="/order-tracking" className="" title="Track Your Shipment" >
-              <button className="btn login-button" onMouseLeave={() => setIsHoverIcon(false)} onMouseEnter={() => setIsHoverIcon(true)}>Track Order <TrackingIcon   isHover={isHoverIcon}/></button>
+            <Link to="/order-tracking" title="Track Your Shipment">
+              <button
+                className="btn login-button"
+                onMouseLeave={() => setIsHoverIcon(false)}
+                onMouseEnter={() => setIsHoverIcon(true)}
+              >
+                <span className="track-text">Track Order</span>
+                <TrackingIcon isHover={isHoverIcon} />
+              </button>
             </Link>
+
             <button onClick={handleNavigation} className="btn login-button" title="Login">
               Login
             </button>

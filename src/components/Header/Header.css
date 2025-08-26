@@ -382,6 +382,16 @@
     cursor: pointer;
 }
 
+.track-text {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .track-text {
+    display: none;
+  }
+}
+
 #toggle-icon span {
     display: block;
     position: absolute;
