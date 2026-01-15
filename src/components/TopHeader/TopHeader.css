@@ -19,20 +19,6 @@
     /* Red for high visibility */
 }
 
-.btn-dark {
-    background-color: #212529;
-    color: #fff;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-}
-
-.btn-dark:hover {
-    background-color: #343a40;
-    color: #092C4C;
-    text-decoration: none;
-}
 
 .top-header .learn-more-btn {
     color: #fff;

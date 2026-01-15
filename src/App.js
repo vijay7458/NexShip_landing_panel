@@ -37,18 +37,23 @@ import SubCategoryPage from './components/page/HelpCenter/SubCategoryPage';
 import VolumetricWeightCalculator from './components/page/VolumetricWeightCalculator/VolumetricWeightCalculator';
 import './responsive.css'
 import NotFound from './components/page/NotFound/NotFound';
+import TopNav from './navbar/TopNav';
+import FeatureBanner from './components/banner/FeatureBanner';
+import FeatureMid from './pages/feature/FeatureMid';
+import Feature from './pages/feature/Feature';
 
 
 function App() {
   return (
     <>
-      <TopHeader />
-      <Header />
+    <Feature />
+   
+      {/* <TopHeader /> */}
+      {/* <Header /> */}
       <div className="App">
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomePage />} />
-
           {/* Features Routes */}
           <Route path='/all-features' element={<AllFeatures />} />
           <Route path='/damaged-shipment' element={<DamagedShipment />} />
