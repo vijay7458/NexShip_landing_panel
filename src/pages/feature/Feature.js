@@ -12,6 +12,7 @@ import cardImg2 from "../../assets/image/landingImage/ChatGPT Image Jan 15, 2026
 import ShipmentCounter from '../../components/shipmentCounter/ShipmentCounter'
 import CTASection from '../../components/cta/CTASection'
 import OrderStep from '../../components/steps/OrderSteps'
+import Footer from '../../websiteFooter/Footer'
 
 const questionAnswer = [
   {

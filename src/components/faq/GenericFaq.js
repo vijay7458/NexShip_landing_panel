@@ -33,7 +33,7 @@ export default function GenericFaq({ queAns }) {
   return (
     <motion.div
       className="container w-100 d-flex justify-content-between align-items-start"
-      style={{ marginTop: "8rem", marginBottom: "6rem" }}
+      style={{ marginTop: "2rem", marginBottom: "6rem" }}
       variants={parentVariants}
       initial="hidden"
       whileInView="visible"

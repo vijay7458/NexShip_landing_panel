@@ -5,12 +5,13 @@ import ScrollToTop from "./ScrollToTop";
 import HomePage from './components/HomePage/HomePage';
 import TopHeader from './components/TopHeader/TopHeader';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
+
 import AllFeatures from './components/page/Features/AllFeatures/AllFeatures';
 import DamagedShipment from './components/page/Features/DamagedShipment/DamagedShipment';
 import ShipmentProtection from './components/page/Features/ShipmentProtection/ShipmentProtection';
 import NDRManagement from './components/page/Features/NDRManagement/NDRManagement';
-import RateCalculator from './components/page/Offerings/RateCalculator/RateCalculator';
+// import RateCalculator from './components/page/Offerings/RateCalculator/RateCalculator';
 import CarrierIntegration from './components/page/Integration/CarrierIntegration/CarrierIntegration';
 import ReferAndEarn from './components/page/Resources/ReferAndEarn/ReferAndEarn';
 import ContactUs from './components/page/ContactUs/ContactUs';
@@ -28,7 +29,7 @@ import PriceAndPlans from './components/page/Offerings/PriceAndPlans/PriceAndPla
 import TrackingOrder from './components/page/TrackingOrder/TrackingOrder';
 import DetailedFooter from './components/DetailedFooter/DetailedFooter';
 import TermsAndConditions from './components/Footer/Components/TermsAndConditions/TermsAndConditions';
-import PrivacyPolicy from './components/Footer/Components/PrivacyPolicy/PrivacyPolicy';
+// import PrivacyPolicy from './components/Footer/Components/PrivacyPolicy/PrivacyPolicy';
 import AboutPage from './components/page/about/AboutPage';
 import Customers from './components/page/Customers/Customers';
 import HelpCenter from './components/page/HelpCenter/HelpCenter';
@@ -41,19 +42,27 @@ import TopNav from './navbar/TopNav';
 import FeatureBanner from './components/banner/FeatureBanner';
 import FeatureMid from './pages/feature/FeatureMid';
 import Feature from './pages/feature/Feature';
+import TermCondition from './pages/feature/term&condition/TermCondition';
+import Discount from './components/discount/Discount';
+import Footer from './websiteFooter/Footer';
+import PrivacyPolicy from './pages/feature/privacypolicy/PrivacyPolicy';
+import RateCalculator from './pages/feature/rateCalculator/RateCalculator';
 
 
 function App() {
   return (
     <>
-    <Feature />
-   
       {/* <TopHeader /> */}
       {/* <Header /> */}
-      <div className="App">
+      {/* <Discount />
+      <TopNav /> */}
+
         <ScrollToTop />
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<Feature />} />
+          <Route path='/terms' element={<TermCondition />} />
+          <Route path='/privacy' element={<PrivacyPolicy />} />
+          <Route path='/rate-calculator' element={<RateCalculator />} />
           {/* Features Routes */}
           <Route path='/all-features' element={<AllFeatures />} />
           <Route path='/damaged-shipment' element={<DamagedShipment />} />
@@ -66,7 +75,7 @@ function App() {
 
           {/* Offering Routes */}
           <Route path='/plans-pricing' element={<PriceAndPlans />} />
-          <Route path='/rate-calculator' element={<RateCalculator />} />
+          {/* <Route path='/rate-calculator' element={<RateCalculator />} /> */}
           <Route path='/prepaid-cod' element={<PrepaidAndCOD />} />
 
           {/* Integration Routes */}
@@ -100,9 +109,8 @@ function App() {
           <Route path="/volumetric-weight-calculator" element={<VolumetricWeightCalculator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      {/* <Footer /> */}
       <Footer />
-      <DetailedFooter />
     </>
   );
 }

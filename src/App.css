@@ -16,3 +16,9 @@ body {
 
 /*  -----  global landing page styling ----   */
 
+p{
+    line-height: 1.2;
+}
+li{
+    line-height: 1.2;
+}
