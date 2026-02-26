@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 import OtpModal from './OtpModal';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TopNav from '../../../navbar/TopNav';
 
 
 const ContactUs = () => {
@@ -308,7 +309,11 @@ const ContactUs = () => {
 
     return (
         <>
+        <div className='mt-2'>
+             <TopNav />
+        </div>
             <div className="new-contact-us">
+
                 <div className="left-contact-section">
                     <div className="row mt-4">
                         <h2 className="row get-in-touch">Connect with us</h2>

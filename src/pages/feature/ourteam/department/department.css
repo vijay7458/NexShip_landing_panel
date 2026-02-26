@@ -1,0 +1,144 @@
+/* -----------------------------
+   DEPARTMENT SHOWCASE SECTION
+------------------------------ */
+
+.department-showcase {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/* Wrapper */
+.departments-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Department Row */
+.department-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Alternate layout */
+.department-row.left .dept-img-container {
+  order: 1;
+}
+
+.department-row.left .dept-content {
+  order: 2;
+}
+
+.department-row.right .dept-img-container {
+  order: 2;
+}
+
+.department-row.right .dept-content {
+  order: 1;
+}
+
+/* Image */
+.dept-img-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.dept-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.dept-img-container:hover .dept-img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Content */
+.dept-content {
+  flex: 1;
+}
+
+.dept-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.dept-desc {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+/* Hover Card Animation */
+.department-row:hover .dept-content {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .department-showcase {
+    padding: 80px 0;
+  }
+
+  .department-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .dept-content {
+    margin-top: 25px;
+  }
+
+  .dept-title {
+    font-size: 1.5rem;
+  }
+
+  .dept-desc {
+    font-size: 0.95rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .dept-title {
+    font-size: 1.3rem;
+  }
+
+  .dept-desc {
+    font-size: 0.9rem;
+  }
+
+  .departments-wrapper {
+    gap: 60px;
+  }
+}

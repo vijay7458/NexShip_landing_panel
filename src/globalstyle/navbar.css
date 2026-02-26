@@ -1,0 +1,74 @@
+.nav-menuitems {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Create hidden underline */
+.nav-menuitems::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* distance below text */
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-menuitems:hover::after {
+  width: 100%;
+}
+
+.nav-menuitems:hover {
+  color: #000000 !important;
+}
+
+
+.nav-menuitems-light {
+  position: relative;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Create hidden underline */
+.nav-menuitems-light::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* distance below text */
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-menuitems-light:hover::after {
+  width: 100%;
+}
+
+.nav-menuitems-light:hover {
+  color: #fff !important;
+}
+
+
+
+.scroll-navbar {
+  background: rgba(0, 0, 0, 0.49); /* lighter & more transparent */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* softer shadow for contrast */
+  border: none; /* light glass edge */
+  border-radius: 14px;
+  width: 98% !important;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 6px auto;
+  transition: all 0.4s ease-in-out;
+  color: #000 !important; /* darker text since background is light */
+}
+
+
+

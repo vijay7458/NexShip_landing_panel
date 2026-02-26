@@ -1,0 +1,117 @@
+.cs-featured-section {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cs-featured-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.cs-featured-image {
+  flex: 1;
+  min-width: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.cs-featured-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.6s ease;
+  transform: scale(1);
+}
+
+.cs-featured-image:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Right Content */
+.cs-featured-content {
+  flex: 1;
+  color: #000;
+  min-width: 320px;
+}
+
+.cs-featured-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.cs-featured-heading span {
+  border-bottom: 3px solid #000;
+}
+
+.cs-featured-block {
+  margin-bottom: 1.5rem;
+}
+
+.cs-featured-block h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cs-featured-block p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.cs-featured-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cs-featured-block li {
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+/* Button */
+.cs-featured-btn {
+  margin-top: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cs-featured-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cs-featured-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cs-featured-image img {
+    max-width: 90%;
+  }
+
+  .cs-featured-content {
+    margin-top: 2rem;
+  }
+}

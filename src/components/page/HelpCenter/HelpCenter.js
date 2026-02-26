@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import faqData from "./faqData.json";
 import './HelpCenter.css';
+import TopNav from "../../../navbar/TopNav";
 
 const HelpCenter = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -60,59 +61,65 @@ const HelpCenter = () => {
   };
 
   return (
-    <div className="help-center">
-      <h1 className="help-center__title">Help Center</h1>
-      <input
-        type="text"
-        placeholder="Search for a question..."
-        className="help-center__search"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-
-      <div className="help-center__faq-list">
-        {Object.keys(filteredFAQs).length === 0 ? (
-          <p>No results found for "{searchTerm.trim()}".</p> // Display trimmed search term
-        ) : (
-          Object.keys(filteredFAQs).map((category) => (
-            <div key={category} className="help-center__category">
-              <h2 className="help-center__category-title">{category}</h2>
-              <div className="subcategory-container">
-                {Object.keys(filteredFAQs[category]).map((subCategory) => {
-                  const questions = filteredFAQs[category][subCategory];
-                  const hasMoreThanFive = questions.length > 5;
-
-                  return (
-                    <div key={subCategory} className="help-center__subcategory">
-                      <h3 className="help-center__subcategory-title">{subCategory}</h3>
-                      <ul className="help-center__questions">
-                        {questions.slice(0, 5).map((faq) => (
-                          <li
-                            key={faq.id}
-                            className="help-center__question"
-                            onClick={() => handleQuestionClick(faq)}
-                          >
-                            {faq.question}
-                          </li>
-                        ))}
-                      </ul>
-                      {hasMoreThanFive && (
-                        <p
-                          className="help-center__view-all"
-                          onClick={() => handleViewAllClick(category, subCategory)}
-                        >
-                          View all {questions.length} questions
-                        </p>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))
-        )}
+    <>
+      <div style={{ marginTop: "2rem" }}>
+        <TopNav />
       </div>
-    </div>
+
+      <div className="help-center" >
+        <h1 className="help-center__title" >Help Center</h1>
+        <input
+          type="text"
+          placeholder="Search for a question..."
+          className="help-center__search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <div className="help-center__faq-list">
+          {Object.keys(filteredFAQs).length === 0 ? (
+            <p>No results found for "{searchTerm.trim()}".</p> // Display trimmed search term
+          ) : (
+            Object.keys(filteredFAQs).map((category) => (
+              <div key={category} className="help-center__category">
+                <h2 className="help-center__category-title">{category}</h2>
+                <div className="subcategory-container">
+                  {Object.keys(filteredFAQs[category]).map((subCategory) => {
+                    const questions = filteredFAQs[category][subCategory];
+                    const hasMoreThanFive = questions.length > 5;
+
+                    return (
+                      <div key={subCategory} className="help-center__subcategory">
+                        <h3 className="help-center__subcategory-title">{subCategory}</h3>
+                        <ul className="help-center__questions">
+                          {questions.slice(0, 5).map((faq) => (
+                            <li
+                              key={faq.id}
+                              className="help-center__question"
+                              onClick={() => handleQuestionClick(faq)}
+                            >
+                              {faq.question}
+                            </li>
+                          ))}
+                        </ul>
+                        {hasMoreThanFive && (
+                          <p
+                            className="help-center__view-all"
+                            onClick={() => handleViewAllClick(category, subCategory)}
+                          >
+                            View all {questions.length} questions
+                          </p>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+    </>
+
   );
 };
 

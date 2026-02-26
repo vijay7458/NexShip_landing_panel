@@ -1,0 +1,95 @@
+.cs-hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #fff; /* White background */
+  color: #000; /* Black text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cs-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 0 1.5rem;
+}
+
+/* Title */
+.cs-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.cs-hero-title span {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+/* Subtitle */
+.cs-hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cs-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cs-btn-primary,
+.cs-btn-outline {
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Solid button */
+.cs-btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.cs-btn-primary:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Outline button */
+.cs-btn-outline {
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.cs-btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cs-hero-title {
+    font-size: 2.2rem;
+  }
+  .cs-hero-description {
+    font-size: 1rem;
+  }
+  .cs-hero-buttons {
+    flex-direction: column;
+  }
+}

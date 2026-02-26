@@ -1,0 +1,107 @@
+.kb-cat-section {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 6rem 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.kb-cat-header {
+  max-width: 750px;
+  margin: 0 auto 4rem;
+}
+
+.kb-cat-header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.kb-cat-header span {
+  border-bottom: 3px solid #000;
+}
+
+.kb-cat-header p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Grid Layout */
+.kb-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Category Card */
+.kb-cat-card {
+  background-color: #fafafa;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.kb-cat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #000;
+}
+
+/* Image Section */
+.kb-cat-img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.kb-cat-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.kb-cat-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Text Section */
+.kb-cat-info {
+  padding: 1.5rem;
+}
+
+.kb-cat-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.kb-cat-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.kb-cat-info p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kb-cat-header h2 {
+    font-size: 2rem;
+  }
+  .kb-cat-card {
+    margin: 0 auto;
+  }
+}

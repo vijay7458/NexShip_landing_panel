@@ -1,0 +1,132 @@
+/* -----------------------------
+   RTO PREDICTION HERO SECTION
+------------------------------ */
+
+.rto-hero-section {
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* TEXT SECTION */
+.text-section {
+  padding: 20px;
+}
+
+.rto-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+
+.rto-title span {
+  color: #007bff; /* You can change to your brand accent color */
+}
+
+.rto-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+.rto-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rto-btn:hover {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  transform: scale(1.05);
+}
+
+/* IMAGE SECTION */
+.image-section {
+  text-align: center;
+  position: relative;
+}
+
+.rto-hero-img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: float 5s ease-in-out infinite;
+}
+
+/* FLOATING ANIMATION */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .rto-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .rto-subtitle {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .rto-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .image-section {
+    margin-top: 50px;
+  }
+
+  .rto-hero-img {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rto-title {
+    font-size: 2rem;
+  }
+
+  .rto-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .rto-hero-img {
+    max-width: 350px;
+  }
+
+  .rto-btn {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+}

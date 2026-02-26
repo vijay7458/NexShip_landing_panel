@@ -1,0 +1,121 @@
+/* -----------------------------
+   LEADERSHIP / FOUNDERS SECTION
+------------------------------ */
+
+.leadership-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* Leader Card */
+.leader-card {
+  background-color: #111;
+  border-radius: 16px;
+  padding: 30px 25px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.leader-card:hover {
+  border-color: #fff;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+}
+
+/* Image */
+.leader-img-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.leader-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.leader-card:hover .leader-img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* Text Info */
+.leader-info {
+  margin-top: 20px;
+}
+
+.leader-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.leader-role {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.leader-quote {
+  font-size: 0.95rem;
+  color: #ddd;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .leadership-section {
+    padding: 80px 0;
+  }
+
+  .leader-card {
+    padding: 25px 20px;
+  }
+
+  .leader-name {
+    font-size: 1.3rem;
+  }
+
+  .leader-role {
+    font-size: 0.95rem;
+  }
+
+  .leader-quote {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .leader-card {
+    margin: 0 auto 30px;
+    width: 90%;
+  }
+
+  .leader-img {
+    height: auto;
+  }
+}

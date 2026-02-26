@@ -1,0 +1,129 @@
+/* -----------------------------
+   OUR MISSION & VISION SECTION
+------------------------------ */
+
+.mission-vision-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Prevent any white space */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Titles */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 4px solid #fff;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Paragraphs */
+.section-desc {
+  font-size: 1.1rem;
+  color: #dcdcdc;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: justify;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Layout styling */
+.mission,
+.vision {
+  padding: 30px;
+}
+
+.mission {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vision {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* -----------------------------
+   ANIMATIONS
+------------------------------ */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-left {
+  animation: slideLeft 1.2s ease forwards;
+}
+
+.animate-right {
+  animation: slideRight 1.2s ease forwards;
+}
+
+@keyframes slideLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  0% { opacity: 0; transform: translateX(30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .mission-vision-section {
+    padding: 80px 0;
+  }
+
+  .mission,
+  .vision {
+    border: none;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    border-left: none;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}

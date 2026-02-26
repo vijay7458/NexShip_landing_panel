@@ -10,6 +10,30 @@
     --sh-ddd: #dddddd;
 }
 
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* 2) make the page height consistent and avoid horizontal overflow */
+html, body {
+  height: 100%;
+  width: 100%;
+
+}
+
+/* 3) always show vertical scrollbar to avoid layout shift on first paint */
+body {
+  min-height: 100%;
+  /* This forces the vertical scrollbar to be present (even if not needed)
+     so layout doesn't jump when content changes (fonts/images load). */
+  overflow-y: scroll;
+}
+
+/* 4) make sections avoid accidental extra height when you have a fixed navbar */
+.main-section {
+  /* if you use full-height sections, subtract navbar height */
+  min-height: calc(100vh - 70px); /* replace 70px with your navbar height */
+}
+
+
 .main-button {
     background-color: #1975C9 !important;
     /* background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%); */
@@ -29,6 +53,8 @@
     border: 1px solid #ff9e9e !important;
     background-color: #ff9e9e !important;
 }
+
+
 
 
 .main-button:hover,

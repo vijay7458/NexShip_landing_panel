@@ -1,0 +1,177 @@
+/* -----------------------------
+   STORY SECTION (UNIQUE CLASSES)
+------------------------------ */
+
+.story-section {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.story-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/* Timeline base */
+.story-timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.story-timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.story-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+}
+
+.story-item.story-left {
+  left: 0;
+  text-align: right;
+}
+
+.story-item.story-right {
+  left: 50%;
+  text-align: left;
+}
+
+.story-box {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.story-item::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+}
+
+.story-item.story-right::after {
+  left: -10px;
+}
+
+/* Text styling */
+.story-year {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.story-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 5px;
+}
+
+.story-desc {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* -----------------------------
+   ANIMATIONS
+------------------------------ */
+
+@keyframes storyFadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes storySlideIn {
+  0% { opacity: 0; transform: translateX(40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.story-animate-fade {
+  animation: storyFadeIn 1.2s ease forwards;
+}
+
+.story-animate-slide {
+  animation: storySlideIn 1.3s ease forwards;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .story-timeline::after {
+    left: 8px;
+  }
+
+  .story-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+  }
+
+  .story-item.story-left,
+  .story-item.story-right {
+    text-align: left;
+    left: 0;
+  }
+
+  .story-item::after {
+    left: 0;
+  }
+
+  .story-box {
+    background: #f8f8f8;
+  }
+}
+
+@media (max-width: 576px) {
+  .story-title {
+    font-size: 1.6rem;
+  }
+
+  .story-box {
+    padding: 20px;
+  }
+
+  .story-year {
+    font-size: 1.2rem;
+  }
+
+  .story-desc {
+    font-size: 0.95rem;
+  }
+}

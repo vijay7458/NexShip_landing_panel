@@ -14,7 +14,6 @@ import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
 
   let navigate = useNavigate();
-
   const [isScrolled, setIsScrolled] = useState(false);
   const [showVideo, setShowVideo] = useState(true);
   const [ToggleShow, setToggleShow] = useState(false)

@@ -1,282 +1,284 @@
-import React, { useEffect, useState } from 'react'
-import './TrackingOrder.css'
-import DeliveryActivity from './DeliveryActivity';
-import TrackingBG from '../../../assets/image/TrackingBG.png'
-import OrderDetailsCard from './OrderDetailsCard';
-import CourierInfo from './CourierInfo';
-import { Button, Modal } from 'react-bootstrap';
-import Swal from 'sweetalert2';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate, useParams } from 'react-router';
-import TrackingComp from './TrackingUi/TrackingComp';
+import React, { useEffect, useState } from "react";
+import "./TrackingOrder.css";
+import Swal from "sweetalert2";
+import { useNavigate, useParams } from "react-router";
+import { motion, AnimatePresence } from "framer-motion";
+import moment from "moment";
+import TopNav from "../../../navbar/TopNav";
 
 const TrackingOrder = () => {
-
-    let navigate = useNavigate();
-    const { awbNumber } = useParams(); // Get AWB from URL
+    const navigate = useNavigate();
+    const { awbNumber } = useParams();
 
     const [activeTab, setActiveTab] = useState("awb");
-    const [mobileNumber, setMobileNumber] = useState("");
-    const [otp, setOtp] = useState("");
     const [awb, setAwb] = useState(awbNumber || "");
-    const [orderId, setOrderId] = useState("");
-    const [phone, setPhone] = useState("");
-    const [remarks, setRemarks] = useState("")
-    const [error, setError] = useState("")
-
-    const [TrackingData, setTrackingData] = useState("")
-    const [showOrderTracking, setshowOrderTracking] = useState(false)
-    const [showTrackData, setShowTrackData] = useState(true)
-
-    const handleTabChange = (tab) => {
-        setActiveTab(tab);
-    };
-
-    const handleSubmit = () => {
-        if (remarks !== "") {
-            Swal.fire({
-                title: `Your remarks has been submitted seccessfully`,
-                icon: "success",
-                html: `<br><br> <b>Thank you for your feedback</b>`,
-                showCloseButton: true,
-                showCancelButton: true,
-                focusConfirm: false,
-                confirmButtonText: `👍🏻 Great!`,
-                confirmButtonAriaLabel: "Thumbs up, great!",
-                cancelButtonText: `
-              👎🏻
-            `,
-                cancelButtonAriaLabel: "Thumbs down",
-                customClass: {
-                    confirmButton: 'btn main-button',
-                    cancelButton: 'btn cancel-button'
-                }
-            });
-            setError("")
-            setRemarks("")
-        }
-        else {
-            setError("Please enter your remarks")
-        }
-    }
+    const [trackingData, setTrackingData] = useState(null);
+    const [showData, setShowData] = useState(false);
+    const [remarks, setRemarks] = useState("");
+    const [error, setError] = useState("");
 
     useEffect(() => {
-        if (awbNumber) {
-            handleTracking(awbNumber)
-        }
-    }, [awbNumber])
+        if (awbNumber) handleTracking(awbNumber);
+    }, [awbNumber]);
 
-
-    const handleTracking = async (awbNumber) => {
+    const handleTracking = async (awbNum) => {
         try {
-            const response = await fetch(`https://app.shipease.in/core-api/shipping/track-order/${awbNumber}/`);
-            const data = await response.json(); // Store response in `data` always
-
-            console.log(data, "Tracking Response");
-
-            if (!response.ok) {
-                // console.error(`Error: ${response.status} - ${data?.message || "Unknown error"}`);
-                setTrackingData(data.detail || "Unknown Error");
-                // navigate(`/${awb}`)
-                setShowTrackData(false)
+            const res = await fetch(
+                `https://app.shipease.in/core-api/shipping/track-order/${awbNum}/`
+            );
+            const data = await res.json();
+            if (!res.ok) {
+                setShowData(false);
+                setTrackingData(null);
             } else {
                 setTrackingData(data);
-                setShowTrackData(true)
-                setshowOrderTracking(true);
+                setShowData(true);
             }
-
-            return data; // Return the response for further use
-        } catch (error) {
-            setShowTrackData(false)
-            // console.error("Error fetching tracking data:", error);
-            setTrackingData("Failed to fetch tracking data. Please try again.");
+        } catch {
+            setShowData(false);
+            setTrackingData(null);
         }
     };
-
-
-
 
     const handleSubmitAwb = (e) => {
         e.preventDefault();
         if (awb.trim()) {
-            navigate(`/order-tracking/${awb}`); // Update URL
-            handleTracking(awb); // Fetch new data
+            navigate(`/order-tracking/${awb}`);
+            handleTracking(awb);
         }
-        setTimeout(() => {
-            const scrollAmount = document.body.scrollHeight * 0.15;
-            window.scrollTo({
-                top: scrollAmount,
-                behavior: "smooth",
-            });
-        }, 600);
-
-
     };
 
+    const handleSubmit = () => {
+        if (!remarks.trim()) return setError("Please enter remarks");
+        Swal.fire({
+            title: "Thank you for your feedback!",
+            text: "Your remarks have been submitted successfully.",
+            icon: "success",
+            confirmButtonText: "Great!",
+        });
+        setRemarks("");
+        setError("");
+    };
 
-    // console.log(12222, showTrackData)
-
-
-    // console.log(trac)
-
+    const activities = trackingData?.order_tracking || [];
 
     return (
         <>
-            <section className="tracking-order">
-                <div className="tracking-container">
-                    <div className="tracking-content">
-                        <h1 className="tracking-heading">
-                            Effortlessly Track Your Orders Anytime
-                        </h1>
-                        <p className="tracking-description">
-                            Simply enter your Mobile Number, AWB tracking number, or Order ID, and quickly access your order status.
+        {/* <div className="mt-2">
+            <TopNav />
+        </div> */}
+            <div className="">
+                <section className="trackorder-dual">
+                    {/* LEFT SIDE (white) */}
+                    <motion.div
+                        className="trackorder-left white-side"
+                        initial={{ x: -50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <h1 className="left-title">Track Your Order</h1>
+                        <p className="left-subtext">
+                            Stay updated with your shipment in real-time. Enter your AWB number
+                            below and instantly view detailed delivery progress.
                         </p>
-                        <img
-                            src={TrackingBG}
-                            alt="Track"
-                            className="tracking-image"
-                        />
-                    </div>
-                    <div className={activeTab === "awb" ? "tracking-form-awb" : "tracking-form"}>
-                        <div className="tracking-tabs">
-                            <button
-                                className={`tab-button ${activeTab === "awb" ? "active" : ""}`}
-                                onClick={() => handleTabChange("awb")}
-                            >
-                                AWB
-                            </button>
-                            <button
-                                className={`tab-button ${activeTab === "order" ? "active" : ""}`}
-                                onClick={() => handleTabChange("order")}
-                            >
-                                Order ID
-                            </button>
-                            <button
-                                className={`tab-button ${activeTab === "mobile" ? "active" : ""}`}
-                                onClick={() => handleTabChange("mobile")}
-                            >
-                                Mobile Number
-                            </button>
-                        </div>
 
-                        {activeTab === "mobile" && (
-                            <form className="tracking-form-content">
-                                <input
-                                    type="text"
-                                    placeholder="Enter your mobile number"
-                                    value={mobileNumber}
-                                    onChange={(e) => setMobileNumber(e.target.value)}
-                                    maxLength="10"
-                                    minLength="10"
-                                    required
-                                />
-                                <input
-                                    type="text"
-                                    placeholder="Enter OTP"
-                                    value={otp}
-                                    onChange={(e) => setOtp(e.target.value)}
-                                    maxLength="6"
-                                    minLength="6"
-                                    required
+                        <div className="trackorder-form">
+                            <div className="trackorder-tabs">
+                                <button
+                                    className={`trackorder-tab ${activeTab === "awb" ? "active" : ""
+                                        }`}
+                                    onClick={() => setActiveTab("awb")}
+                                >
+                                    AWB
+                                </button>
+                                <button
+                                    className={`trackorder-tab ${activeTab === "order" ? "active" : ""
+                                        }`}
+                                    onClick={() => setActiveTab("order")}
                                     disabled
-                                />
-                                <button type="submit" className="tracking-button">
-                                    Send OTP
+                                    style={{cursor:"not-allowed"}}
+                                >
+                                    Order ID
                                 </button>
-                                     <div>
-                                    <div style={{borderTop:"1px solid #EAEAEA", marginBottom:"15px", marginTop:"5px"}}></div>
-                                    <div> <h4 className='track-bootom-heading'>Can’t Find Your Order Details?</h4>
-                                      <p className='track-bootom-para'>We sent your AWB tracking number to you via Email & SMS upon order confirmation.</p>  </div>
-                                </div>
-                            </form>
-                        )}
-
-                        {activeTab === "awb" && (
-                            <form className="tracking-form-content" onSubmit={handleSubmitAwb}>
-                                <input
-                                    type="text"
-                                    placeholder="Enter your AWB number"
-                                    value={awb}
-                                    onChange={(e) => setAwb(e.target.value)}
-                                    required
-                                />
-                                <button type="submit" className="tracking-button">
-                                    Track Now
+                                <button
+                                    className={`trackorder-tab ${activeTab === "mobile" ? "active" : ""
+                                        }`}
+                                    onClick={() => setActiveTab("mobile")}
+                                    style={{cursor:"not-allowed"}}
+                                    disabled
+                                >
+                                    Mobile
                                 </button>
-                                <div>
-                                    <div style={{borderTop:"1px solid #EAEAEA", marginBottom:"15px", marginTop:"5px"}}></div>
-                                    <div> <h4 className='track-bootom-heading'>Can’t Find Your Order Details?</h4>
-                                      <p className='track-bootom-para'>We sent your AWB tracking number to you via Email & SMS upon order confirmation.</p>  </div>
-                                </div>
-                            </form>
-                        )}
-
-                        {activeTab === "order" && (
-                            <form className="tracking-form-content">
-                                <input
-                                    type="text"
-                                    placeholder="Enter Order ID"
-                                    value={orderId}
-                                    onChange={(e) => setOrderId(e.target.value)}
-                                    required
-                                />
-                                <input
-                                    type="text"
-                                    placeholder="Phone Number/Email ID"
-                                    value={phone}
-                                    onChange={(e) => setPhone(e.target.value)}
-                                    required
-                                />
-                                <button type="submit" className="tracking-button">
-                                    Track Now
-                                </button>
-                                 <div>
-                                    <div style={{borderTop:"1px solid #EAEAEA", marginBottom:"15px", marginTop:"5px"}}></div>
-                                    <div> <h4 className='track-bootom-heading'>Can’t Find Your Order Details?</h4>
-                                      <p className='track-bootom-para'>We sent your AWB tracking number to you via Email & SMS upon order confirmation.</p>  </div>
-                                </div>
-                            </form>
-                        )}
-                    </div>
-                </div>
-            </section>
-            {
-                showTrackData && showOrderTracking ?
-                    <>
-                        <div className='row justify-content-center mt-5 w-100'>
-                            <div className='col-12 col-md-7 col-lg-5'>
-                                <OrderDetailsCard TrackingData={TrackingData} />
                             </div>
-                            <div className='col-12 col-md-7 col-lg-5'>
-                                <div className='d-flex flex-column'>
-                                    <CourierInfo TrackingData={TrackingData} />
-                                    <hr style={{ width: '93%', marginLeft: '25px', marginBlock: '0px' }} />
-                                    <DeliveryActivity TrackingData={TrackingData?.order_tracking} />
-                                </div>
-                            </div>
+
+                            {activeTab === "awb" && (
+                                <form onSubmit={handleSubmitAwb}>
+                                    <input
+                                        type="text"
+                                        placeholder="Enter AWB number"
+                                        value={awb}
+                                        onChange={(e) => setAwb(e.target.value)}
+                                        required
+                                    />
+                                    <button type="submit" className="trackorder-btn">
+                                        Track Now
+                                    </button>
+                                </form>
+                            )}
                         </div>
-                        <div className='tracking-feedback row'>
-                            <div className='col-10'>
-                                <label htmlFor="">Remarks
-                                    {error &&
-                                        <span style={{ color: 'red', fontSize: '12px', marginLeft: '15px' }}>{error}*</span>
-                                    }
-                                </label>
-                                <textarea onChange={(e) => setRemarks(e.target.value)} value={remarks} placeholder='Please enter your remarks here' rows={5} />
-                                <button onClick={handleSubmit} className='btn main-button float-end'>Submit</button>
-                            </div>
-                        </div>
-                    </>
-                    :
-                    <div>
-                        <p className='track-awb-no'>{TrackingData}</p>
-                    </div>
-            }
 
-            {/* Ui Components */}
-            <TrackingComp />
+                        {!showData && (
+                            <motion.div
+                                className="trackorder-about"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8 }}
+                            >
+                                <h3>About Shipease</h3>
+                                <p>
+                                    Shipease is an all-in-one logistics automation platform built for
+                                    modern eCommerce. From instant courier selection to unified
+                                    tracking, we simplify every step of the shipping process.
+                                </p>
+                                <ul>
+                                    <li>⚡ Real-time shipment tracking</li>
+                                    <li>🚀 Multi-courier integration</li>
+                                    <li>📊 Smart analytics dashboard</li>
+                                    <li>💬 Dedicated support</li>
+                                </ul>
+                                <p className="about-footer">
+                                    Powering 10K+ online merchants with reliable deliveries across
+                                    India.
+                                </p>
+                            </motion.div>
+                        )}
+
+                        {showData && trackingData && (
+                            <>
+                                <div className="trackorder-couriercard">
+                                    <div className="courier-head">
+                                        <img
+                                            src={trackingData?.courier_image}
+                                            alt="Courier"
+                                            className="courier-logo"
+                                        />
+                                        <span className="courier-name">
+                                            {trackingData?.courier || trackingData?.courier_partner}
+                                        </span>
+                                    </div>
+                                    <div className="courier-details">
+                                        <p>
+                                            <b>Tracking ID:</b> {trackingData?.awb_number}
+                                        </p>
+                                        <p>
+                                            <b>EDD:</b>{" "}
+                                            {moment(
+                                                trackingData?.other_details?.expected_delivery_date
+                                            ).format("DD MMM YYYY")}
+                                        </p>
+                                        <hr />
+                                        <p>
+                                            <b>Status:</b> {trackingData?.status}
+                                        </p>
+                                        <p>
+                                            <b>Amount:</b> ₹{trackingData?.invoice_amount}
+                                        </p>
+                                        <p>
+                                            <b>Payment:</b> {trackingData?.payment_type}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="trackorder-feedback">
+                                    <label>
+                                        Remarks {error && <span className="error-text">{error}</span>}
+                                    </label>
+                                    <textarea
+                                        value={remarks}
+                                        onChange={(e) => setRemarks(e.target.value)}
+                                        placeholder="Write your feedback..."
+                                    />
+                                    <button className="trackorder-btn" onClick={handleSubmit}>
+                                        Submit
+                                    </button>
+                                </div>
+                            </>
+                        )}
+                    </motion.div>
+
+                    {/* RIGHT SIDE (dark) */}
+                    <AnimatePresence mode="wait">
+                        {!showData ? (
+                            <motion.div
+                                key="empty"
+                                className="trackorder-right dark-side"
+                                initial={{ opacity: 0, y: 40 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                                transition={{ duration: 0.8 }}
+                            >
+                                <motion.div
+                                    className="glow-circle"
+                                    initial={{ scale: 0.7, opacity: 0 }}
+                                    animate={{ scale: 1, opacity: 1 }}
+                                    transition={{ duration: 1 }}
+                                />
+                                <div className="right-content">
+                                    <h2>Welcome to Shipease Tracking</h2>
+                                    <p>
+                                        Get transparent, detailed shipment movement logs and estimated
+                                        delivery timelines powered by intelligent logistics APIs.
+                                    </p>
+                                    <ul>
+                                        <li>📍 Track shipments from multiple couriers</li>
+                                        <li>🕓 Monitor real-time status changes</li>
+                                        <li>💡 Analyze delivery performance trends</li>
+                                        <li>🌐 India’s fastest eCommerce logistics platform</li>
+                                    </ul>
+                                </div>
+                            </motion.div>
+                        ) : (
+                            <motion.div
+                                key="timeline"
+                                className="trackorder-right dark-side"
+                                initial={{ opacity: 0, x: 40 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -40 }}
+                                transition={{ duration: 0.6 }}
+                            >
+                                <h3 className="timeline-heading">Delivery Timeline</h3>
+                                <div className="timeline-scroll">
+                                    <ul>
+                                        {activities.map((a, i) => (
+                                            <motion.li
+                                                key={i}
+                                                className={`timeline-step ${i === 0 ? "active" : ""}`}
+                                                initial={{ opacity: 0, y: 20 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                transition={{ delay: i * 0.05 }}
+                                            >
+                                                <div className="timeline-dot" />
+                                                <div className="timeline-text">
+                                                    <h4>{a?.shipease_status}</h4>
+                                                    <p className="loc">{a?.location}</p>
+                                                    <p className="time">
+                                                        {moment(a?.courier_action_date).format(
+                                                            "DD MMM YYYY, LT"
+                                                        )}
+                                                    </p>
+                                                </div>
+                                            </motion.li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                </section>
+            </div>
+
         </>
+
     );
 };
 
