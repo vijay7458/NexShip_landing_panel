@@ -2,7 +2,8 @@
   width: 90%;
   max-width: 1200px;
   margin-inline: auto;
-  margin-top: 60px;
+  /* margin-top: 4rem; */
+  padding-top: 5rem  !important;
 }
 
 .help-center__title {
@@ -39,9 +40,9 @@
 .help-center__category-title {
   font-size: 18px;
   font-weight: bold;
-  border-bottom: 2px solid var(--sh-primary-light);
+  border-bottom: 1px solid grey;
   padding-bottom: 8px;
-  color: #9aa1a6;
+  color: #000000;
 }
 
 .subcategory-container {

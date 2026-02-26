@@ -53,6 +53,7 @@ const cardData = [
     description:
       "Import, process, and dispatch orders from multiple sales channels like Shopify, WooCommerce, and Amazon — all in one place.",
     btnText: "Explore Now",
+    route: "sign-up"
   },
   {
     imgUrl: cardImg2,
@@ -61,6 +62,7 @@ const cardData = [
     description:
       "Gain end-to-end shipment visibility with live status updates, smart alerts, and customer notifications across all courier partners.",
     btnText: "Track Smarter",
+    route: "track"
   },
   {
     imgUrl: cardImage1,
@@ -69,6 +71,7 @@ const cardData = [
     description:
       "Leverage AI to automatically select the fastest and most cost-efficient courier for every order — saving time and reducing costs.",
     btnText: "Learn More",
+    route:"/sign-up"
   },
 ];
 
@@ -76,7 +79,7 @@ const cardData = [
 export default function Feature() {
   return (
     <div>
-      <Discount />
+      {/* <Discount /> */}
       <TopNav />
       <FeatureBanner />
       <PartnerCard />

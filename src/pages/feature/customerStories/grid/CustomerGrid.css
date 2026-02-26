@@ -1,0 +1,122 @@
+.cs-grid-section {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cs-grid-header {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.cs-grid-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cs-grid-header p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cs-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Card */
+.cs-grid-card {
+  background: #f9f9f9;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.cs-grid-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image (B/W to Color Hover) */
+.cs-grid-image {
+  overflow: hidden;
+}
+
+.cs-grid-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.cs-grid-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Content */
+.cs-grid-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.cs-grid-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.cs-grid-category {
+  font-size: 0.9rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cs-grid-content p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.cs-grid-btn {
+  margin-top: 1rem;
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cs-grid-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cs-grid-header h2 {
+    font-size: 1.8rem;
+  }
+  .cs-grid-content {
+    text-align: center;
+  }
+  .cs-grid-btn {
+    width: 100%;
+  }
+}

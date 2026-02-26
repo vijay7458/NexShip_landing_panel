@@ -1,19 +1,86 @@
 import React from "react";
 
 export default function Discount() {
-  return (
-    <div
-      className="bg-dark d-flex flex-wrap justify-content-center align-items-center text-center gap-3 px-3"
-      style={{ height: "70px" }}
-    >
-      <p className="text-light small fw-medium">
-        ⏰ Ends soon — claim your discount with
-        <span className="fw-bold ms-1">SALE24</span>
-      </p>
+  const styles = {
+    bar: {
+      width: "100%",
+      backgroundColor: "#000",
+      color: "#fff",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "8px 10px",
+      boxSizing: "border-box",
+      fontFamily: "Poppins, sans-serif",
+    },
+    content: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "8px",
+      flexWrap: "nowrap",
+      textAlign: "center",
+      whiteSpace: "nowrap",
+    },
+    text: {
+      fontSize: "14px",
+      margin: 0,
+    },
+    highlight: {
+      color: "#ffcc00",
+      fontWeight: 600,
+      marginLeft: "4px",
+    },
+    button: {
+      backgroundColor: "#fff",
+      color: "#000",
+      border: "none",
+      borderRadius: "4px",
+      padding: "4px 8px",
+      fontSize: "12px",
+      fontWeight: 500,
+      cursor: "pointer",
+      transition: "all 0.2s ease",
+    },
+  };
 
-      <button className="btn btn-light btn-sm fw-semibold px-3 rounded-pill" style={{marginTop:"-15px"}}>
-        Claim Offer
-      </button>
-    </div>
+  const handleClick = () => {
+    window.open("/sign-up", "_blank")
+  }
+  return (
+    <>
+      {/* Scoped responsive CSS */}
+      <style>
+        {`
+          @media (max-width: 576px) {
+            .discount-text-main {
+              font-size: 11px !important;
+            }
+            .discount-btn-main {
+              font-size: 10px !important;
+              padding: 2px 6px !important;
+            }
+          }
+        `}
+      </style>
+
+      <div className="discount-bar-main" style={styles.bar}>
+        <div style={styles.content}>
+          <p className="discount-text-main" style={styles.text}>
+            ⏰ Ends soon — claim your discount with
+            <span style={styles.highlight}> SALE24</span>
+          </p>
+          <button
+            onClick={handleClick}
+            className="discount-btn-main"
+            style={styles.button}
+            onMouseOver={(e) => (e.target.style.backgroundColor = "#ffcc00")}
+            onMouseOut={(e) => (e.target.style.backgroundColor = "#fff")}
+          >
+            Claim Offer
+          </button>
+        </div>
+      </div>
+    </>
   );
 }

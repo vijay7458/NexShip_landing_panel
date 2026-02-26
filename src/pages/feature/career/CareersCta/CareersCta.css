@@ -1,0 +1,73 @@
+/* -----------------------------
+   CAREERS CTA SECTION
+------------------------------ */
+.careers-cta-section {
+  background-color: #000;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cta-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.cta-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.7;
+}
+
+/* Button */
+.cta-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50px;
+  padding: 14px 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cta-btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: scale(1.05);
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 992px) {
+  .cta-title {
+    font-size: 1.9rem;
+  }
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-title {
+    font-size: 1.6rem;
+  }
+  .cta-subtitle {
+    font-size: 0.95rem;
+  }
+  .cta-btn {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+}

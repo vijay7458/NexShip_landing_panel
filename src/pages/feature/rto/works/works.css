@@ -1,0 +1,140 @@
+/* -----------------------------
+   HOW RTO PREDICTION WORKS
+------------------------------ */
+
+.how-rto-section {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.how-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.how-subtitle {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* STEP CARDS */
+.step-card {
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 40px 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON */
+.step-icon-wrapper {
+  margin-bottom: 25px;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.step-card:hover .step-icon {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.step-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.step-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CONNECTING LINES (optional decorative element for desktop) */
+@media (min-width: 992px) {
+  .how-rto-section .row {
+    position: relative;
+  }
+
+  .how-rto-section .row::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .step-card {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .how-title {
+    font-size: 2rem;
+  }
+
+  .step-card {
+    padding: 30px 20px;
+  }
+
+  .step-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .step-title {
+    font-size: 1.1rem;
+  }
+
+  .step-desc {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .how-title {
+    font-size: 1.8rem;
+  }
+
+  .how-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .step-card {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .step-icon {
+    width: 60px;
+    height: 60px;
+  }
+}

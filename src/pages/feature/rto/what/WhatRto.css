@@ -1,0 +1,114 @@
+/* -----------------------------
+   WHAT IS RTO SECTION
+------------------------------ */
+
+.what-is-rto-section {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rto-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.rto-description {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* CARD STYLING */
+.cause-card {
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 35px 25px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.cause-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ICONS */
+.icon-wrap {
+  margin-bottom: 20px;
+}
+
+.cause-icon {
+  width: 70px;
+  height: 70px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.cause-card:hover .cause-icon {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.cause-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.cause-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .rto-heading {
+    font-size: 2rem;
+  }
+
+  .rto-description {
+    font-size: 1rem;
+  }
+
+  .cause-card {
+    padding: 30px 20px;
+  }
+
+  .cause-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cause-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .rto-heading {
+    font-size: 1.8rem;
+  }
+
+  .cause-card {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .rto-description {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}

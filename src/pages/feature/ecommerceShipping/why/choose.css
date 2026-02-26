@@ -1,0 +1,92 @@
+.esh-why-section {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 6rem 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.esh-why-header {
+  max-width: 750px;
+  margin: 0 auto 4rem;
+}
+
+.esh-why-header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.esh-why-header span {
+  border-bottom: 3px solid #fff;
+}
+
+.esh-why-header p {
+  font-size: 1.05rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+/* Card Container */
+.esh-why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.esh-why-card {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.esh-why-card:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  transform: translateY(-8px);
+}
+
+.esh-why-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.esh-why-card:hover .esh-why-icon {
+  transform: scale(1.2);
+}
+
+.esh-why-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.esh-why-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.esh-why-card:hover p {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .esh-why-header h2 {
+    font-size: 2rem;
+  }
+
+  .esh-why-card {
+    padding: 1.8rem 1.2rem;
+  }
+}

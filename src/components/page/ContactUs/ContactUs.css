@@ -178,7 +178,7 @@
 }
 
 .get-in-touch {
-  color: #0a2e5c;
+  color: #000;
   font-family: "Poppins, sans-serif";
   font-weight: 600;
   font-size: 40px;
@@ -231,14 +231,14 @@
   font-family: "Poppins, sans-serif";
   font-size: 20px;
   border-radius: 5px;
-  background-color: #092C4C;
+  background-color: #000000;
   border: none;
 }
 
 .new-contact-us .form-label {
   font-size: 19px;
   margin-bottom: 0.1rem !important;
-  color: #092C4C;
+  color: #000000;
   font-family: "Poppins, sans-serif";
 }
 
@@ -250,7 +250,7 @@
 
 .left-contact-section button:hover {
   transition: 0.5s ease-in-out;
-  background-color: #092C4C;
+  background-color: #000000;
 
 }
 
@@ -279,7 +279,7 @@
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   font-family: "Poppins, sans-serif";
-  color: #092C4C;
+  color: #000000;
   font-weight: 600;
 }
 
@@ -526,7 +526,7 @@
     font-family: "Poppins, sans-serif";
     font-size: 15px;
     border-radius: 5px;
-    background-color: #092C4C;
+    background-color: #000000;
     border: none;
   }
 }

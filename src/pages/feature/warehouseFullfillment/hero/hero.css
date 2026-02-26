@@ -1,0 +1,142 @@
+.wf-hero-section {
+  background-color: #fff;
+  color: #000;
+  padding: 6rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.wf-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+/* Left Content */
+.wf-hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.wf-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.wf-hero-title span {
+  border-bottom: 3px solid #000;
+}
+
+.wf-hero-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Buttons */
+.wf-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.wf-btn-primary,
+.wf-btn-outline {
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+}
+
+.wf-btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.wf-btn-primary:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.wf-btn-outline {
+  background: transparent;
+  color: #000;
+}
+
+.wf-btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Stats */
+.wf-hero-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.wf-hero-stats div {
+  text-align: left;
+}
+
+.wf-hero-stats h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.wf-hero-stats p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Right Image */
+.wf-hero-image {
+  flex: 1;
+  min-width: 320px;
+  text-align: center;
+}
+
+.wf-hero-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  filter: grayscale(100%);
+  transition: all 0.6s ease;
+}
+
+.wf-hero-image:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .wf-hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .wf-hero-title {
+    font-size: 2.4rem;
+  }
+
+  .wf-hero-stats {
+    justify-content: center;
+  }
+
+  .wf-hero-image img {
+    max-width: 90%;
+  }
+}

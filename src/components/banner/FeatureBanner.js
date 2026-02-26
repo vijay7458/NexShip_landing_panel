@@ -30,6 +30,11 @@ export default function FeatureBanner() {
   }, [])
   console.log(6777, isScrolled)
 
+
+  const handleClickRoute = () => {
+    window.open("/sign-up", "_blank")
+  }
+
   return (
     <motion.div
       className={`feature-banner  d-flex pb-4 align-items-center`}
@@ -60,7 +65,7 @@ export default function FeatureBanner() {
               Power your logistics with automation, tracking, and analytics — all in one
               seamless platform built to scale your business efficiently.
             </p>
-            <button className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "btn-light text-dark" : "text-light bg-dark"}`}>
+            <button className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "btn-light text-dark" : "text-light bg-dark"}`} onClick={ handleClickRoute}>
               Explore Features
             </button>
           </motion.div>

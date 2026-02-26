@@ -1,0 +1,121 @@
+/* -----------------------------
+   RTO BENEFITS SECTION (BLACK THEME)
+------------------------------ */
+
+.rto-benefits-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.benefits-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.benefits-subtitle {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* CARD STYLING */
+.benefit-card {
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px 25px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ICONS */
+.benefit-icon-wrapper {
+  margin-bottom: 25px;
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+  filter: brightness(0) invert(1); /* make icon white */
+  transition: all 0.4s ease-in-out;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.05);
+  filter: brightness(1) invert(0);
+}
+
+/* TEXT */
+.benefit-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.benefit-desc {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .benefits-title {
+    font-size: 2rem;
+  }
+
+  .benefit-card {
+    padding: 30px 20px;
+  }
+
+  .benefit-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .benefit-title {
+    font-size: 1.1rem;
+  }
+
+  .benefit-desc {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits-title {
+    font-size: 1.8rem;
+  }
+
+  .benefits-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .benefit-card {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .benefit-icon {
+    width: 55px;
+    height: 55px;
+  }
+}

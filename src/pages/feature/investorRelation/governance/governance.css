@@ -1,0 +1,136 @@
+/* -----------------------------
+   CORPORATE GOVERNANCE SECTION
+------------------------------ */
+
+.corporate-governance-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.governance-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* Governance Card */
+.governance-card {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px 25px;
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.governance-card:hover {
+  transform: translateY(-5px);
+  border-color: #fff;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Icon */
+.governance-icon-wrapper {
+  margin-bottom: 25px;
+}
+
+.governance-icon {
+  width: 70px;
+  height: 70px;
+  filter: brightness(0) invert(1);
+  transition: all 0.4s ease;
+}
+
+.governance-card:hover .governance-icon {
+  transform: scale(1.05);
+}
+
+/* Text */
+.governance-card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.governance-card-desc {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+/* Footer Text */
+.governance-footer {
+  margin-top: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.governance-footer p {
+  font-size: 1.05rem;
+  color: #ddd;
+  line-height: 1.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .corporate-governance-section {
+    padding: 80px 0;
+  }
+
+  .governance-card {
+    padding: 30px 20px;
+  }
+
+  .governance-card-title {
+    font-size: 1.2rem;
+  }
+
+  .governance-card-desc {
+    font-size: 0.95rem;
+  }
+
+  .governance-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .governance-footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .governance-title {
+    font-size: 1.8rem;
+  }
+
+  .governance-card {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .governance-card-title {
+    font-size: 1.1rem;
+  }
+
+  .governance-card-desc {
+    font-size: 0.9rem;
+  }
+
+  .governance-footer p {
+    font-size: 0.9rem;
+  }
+}

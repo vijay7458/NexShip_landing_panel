@@ -38,6 +38,10 @@ export default function GenericCard({ titles, cardData }) {
 
     console.log("Component 20% visible:", isScrolled);
 
+    const handleRoute = (push) => {
+        window.open(`/${push}`, "_balnk")
+    }
+
     return (
         <motion.div
             ref={sectionRef}
@@ -90,7 +94,7 @@ export default function GenericCard({ titles, cardData }) {
                                     <div className="h5 mt-2">{item?.cardTitle}</div>
                                     <div className="small text-primary text-uppercase mt-4 mb-4">{item?.cardSubtitle}</div>
                                     <p className="small text-secondary" >{item.description}</p>
-                                    <button className={`btn fw-semibold px-4 mt-4 rounded-pill ${isScrolled ? "btn-light text-dark" : "btn-dark text-light"}`}>{item?.btnText}</button>
+                                    <button onClick={() => handleRoute(item.route)} className={`btn fw-semibold px-4 mt-4 rounded-pill ${isScrolled ? "btn-light text-dark" : "btn-dark text-light"}`}>{item?.btnText}</button>
                                 </motion.div>
                             </motion.div>
                         ))}

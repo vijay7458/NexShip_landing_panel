@@ -1,0 +1,113 @@
+.cs-cta-section {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background circles */
+.cs-cta-section::before,
+.cs-cta-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.cs-cta-section::before {
+  width: 200px;
+  height: 200px;
+  top: -60px;
+  left: -60px;
+}
+
+.cs-cta-section::after {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  right: -80px;
+}
+
+.cs-cta-container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cs-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.cs-cta-title span {
+  border-bottom: 3px solid #000;
+}
+
+.cs-cta-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.cs-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.cs-cta-btn-primary,
+.cs-cta-btn-outline {
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+/* Primary Button */
+.cs-cta-btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.cs-cta-btn-primary:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Outline Button */
+.cs-cta-btn-outline {
+  background-color: transparent;
+  color: #000;
+}
+
+.cs-cta-btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cs-cta-title {
+    font-size: 2rem;
+  }
+  .cs-cta-subtitle {
+    font-size: 1rem;
+  }
+  .cs-cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

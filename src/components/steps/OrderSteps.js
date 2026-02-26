@@ -3,38 +3,45 @@ import { motion, AnimatePresence } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./OrderStep.css";
 import vid1 from "../../assets/image/video/You_are_using_blue_color_a_lot.mp4"
+import vid3 from "../../assets/image/3.mp4"
+import vid4 from "../../assets/image/video/4.mp4"
+import vid5 from "../../assets/image/video/5.mp4"
+import vid6 from "../../assets/image/video/6.mp4"
+import vid7 from "../../assets/image/video/7.mp4"
+
+
 
 export default function OrderStep() {
     const steps = [
         {
-            title: "Order Placed",
-            desc: "We received your order and it is now being processed in our system. You can review your order details and estimated shipping date.",
-            img: "https://images.unsplash.com/photo-1612831455544-8cf6e3a246f6?auto=format&fit=crop&w=400&q=80",
-        },
-        {
-            title: "Payment Confirmed",
-            desc: "Your payment has been successfully confirmed and verified. You will receive a confirmation email with your invoice.",
-            img: "https://images.unsplash.com/photo-1581091870624-1e6a8b77b92b?auto=format&fit=crop&w=400&q=80",
-        },
-        {
             title: "Processing Started",
             desc: "Our team is preparing your items for shipment. Items are carefully packaged and quality-checked before leaving the warehouse.",
             img: "https://images.unsplash.com/photo-1606813904092-6a51861e3c49?auto=format&fit=crop&w=400&q=80",
+            video: vid3,
         },
         {
-            title: "Dispatched",
-            desc: "Your package has left the warehouse and is on its way. You can track the courier in real-time using your tracking link.",
+            title: "Courier Selected & Ready to Ship",
+            desc: "The seller has packed your order and chosen a courier partner. It’s now marked as Ready to Ship and will be dispatched shortly.",
             img: "https://images.unsplash.com/photo-1590080873859-fc53d1a5d9b2?auto=format&fit=crop&w=400&q=80",
+            video: vid4,
         },
         {
-            title: "Out for Delivery",
-            desc: "The courier is on the way to deliver your order to your address. Make sure someone is available to receive it.",
+            title: "Awaiting Courier Pickup",
+            desc: "The shipment is ready for pickup. The courier partner has been assigned and will collect the parcel shortly from the seller.",
             img: "https://images.unsplash.com/photo-1581091215365-944fbd3b3b6e?auto=format&fit=crop&w=400&q=80",
+            video: vid5,
         },
         {
-            title: "Delivered",
-            desc: "Your package has been delivered successfully. Enjoy your purchase! Remember to provide feedback and rate your experience.",
+            title: "Manifest Ready for Pickup",
+            desc: "The shipping manifest has been generated and verified. Your order is now queued for courier pickup.",
             img: "https://images.unsplash.com/photo-1580927752452-8a3c73f0f69c?auto=format&fit=crop&w=400&q=80",
+            video: vid6,
+        },
+        {
+            title: "Order Placed",
+            desc: "We received your order and it is now being processed in our system. You can review your order details and estimated shipping date.",
+            img: "https://images.unsplash.com/photo-1612831455544-8cf6e3a246f6?auto=format&fit=crop&w=400&q=80",
+            video: vid7,
         },
     ];
 
@@ -92,7 +99,7 @@ export default function OrderStep() {
         <div className="container py-5">
             <div className="row">
                 {/* Left section */}
-                <div className="col-lg-5 mb-5 mb-lg-0 position-sticky" style={{ height: "80vh", top: "150px" }}>
+                <div className="col-lg-5 mb-5 mb-lg-0 lg-position-sticky" style={{ height: "80vh", top: "150px" }}>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -197,13 +204,10 @@ export default function OrderStep() {
                                         }}
                                     >
                                         <video
-                                            src={vid1}
-                                            autoPlay
-                                            loop
-                                            muted
-                                            playsInline
+                                            src={step?.video}
+                                            controls
                                             style={{
-                                                width: "99%",              // responsive width
+                                                width: "99%",
                                                 height: "auto",
                                                 borderRadius: "8px",
                                                 objectFit: "cover",

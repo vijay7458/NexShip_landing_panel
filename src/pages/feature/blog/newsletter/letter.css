@@ -1,0 +1,118 @@
+/* -----------------------------
+   BLOG NEWSLETTER SECTION
+------------------------------ */
+
+.blog-newsletter-section {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.newsletter-subtitle {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* FORM */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  width: 380px;
+  max-width: 90%;
+  padding: 14px 22px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.newsletter-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.15);
+}
+
+.newsletter-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+  transform: scale(1.05);
+}
+
+/* NOTE */
+.newsletter-note {
+  color: #777;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 992px) {
+  .newsletter-heading {
+    font-size: 2rem;
+  }
+
+  .newsletter-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-btn {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter-heading {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-subtitle {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .newsletter-input {
+    width: 90%;
+    padding: 12px 18px;
+  }
+
+  .newsletter-btn {
+    width: auto;
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}

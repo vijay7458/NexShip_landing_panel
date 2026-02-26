@@ -1,234 +1,347 @@
-.tracking-order {
-    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
-    background-position: bottom;
-    z-index: 0;
-    padding: 155px 0 30px;
-    margin-top: -135px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+/* ---------- Global Layout ---------- */
+.trackorder-dual {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #000;
+  overflow: hidden;
+  padding-top: 3rem;
+  margin-bottom: 6rem;
 }
 
-.tracking-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px;
-    border-radius: 15px;
+/* ---------- Left Section ---------- */
+.white-side {
+  flex: 0.45;
+  background: #fff;
+  color: #000;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.tracking-content {
-    flex: 1;
-    min-width: 350px;
-    max-width: 600px;
-    padding: 20px;
+.left-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.tracking-heading {
-    color: var(--sh-secondary);
-    font-size: 3.38rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+.left-subtext {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
-.tracking-highlight {
-    background: linear-gradient(90deg, #1975C9, #60a9eb);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* ---------- Form ---------- */
+.trackorder-form {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
-.tracking-description {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: var(--sh-secondary);
+.trackorder-tabs {
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.tracking-image {
-    max-width: 100%;
-    margin-top: 15px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+.trackorder-tab {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+  font-weight: 500;
 }
 
-.tracking-image:hover {
-    transform: scale(1.05);
+.trackorder-tab.active {
+  background: #000;
+  color: #fff;
 }
 
-.tracking-form {
-    margin-top: 2.5rem;
-    max-height: 430px;
-    /* height: auto; */
-    flex: 1;
-    min-width: 330px;
-    max-width: 500px;
-    background: white;
-    /* padding: 25px; */
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+.trackorder-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-.tracking-form-awb {
-    margin-top: 2.5rem;
-    max-height: 370px;
-    height: auto;
-    flex: 1;
-    min-width: 330px;
-    max-width: 500px;
-    background: white;
-    /* padding: 25px; */
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+.trackorder-form input:focus {
+  border-color: #000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-
-.tracking-tabs {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    background: #f1f3f5;
-    padding: 5px;
-    border-radius: 10px;
+.trackorder-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.tab-button {
-    flex: 1;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    border-radius: 10px;
-    font-weight: bold;
+.trackorder-btn:hover {
+  background: #222;
 }
 
-.tab-button.active {
-    background: var(--sh-primary);
-    color: white;
-    box-shadow: 0px 3px 8px rgba(25, 117, 201, 0.3);
+/* ---------- Courier Info ---------- */
+.trackorder-couriercard {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-.tracking-form-content {
-    display: flex;
+.courier-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.courier-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.courier-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.courier-details p {
+  margin: 6px 0;
+  font-size: 13.5px;
+  color: #333;
+}
+
+/* ---------- Feedback ---------- */
+.trackorder-feedback {
+  margin-top: 20px;
+}
+
+.trackorder-feedback label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.trackorder-feedback textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 90px;
+  transition: 0.3s;
+}
+
+.trackorder-feedback textarea:focus {
+  border-color: #000;
+  outline: none;
+}
+
+/* ---------- About Section ---------- */
+.trackorder-about {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 13.5px;
+  margin-bottom: 20px;
+}
+
+.trackorder-about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.trackorder-about p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.trackorder-about ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.trackorder-about li {
+  margin: 6px 0;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ---------- Right Section ---------- */
+.dark-side {
+  flex: 0.55;
+  background: #fff;
+  color: #000;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid #e0e0e0;
+}
+
+/* Empty state */
+.right-content {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  z-index: 2;
+}
+
+.right-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.right-content p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.right-content ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.right-content li {
+  margin: 8px 0;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+/* ---------- Timeline ---------- */
+.timeline-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timeline-scroll {
+  flex: 1;
+  height: 80vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 25px;
+  background: #fafafa;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+  border-left: 2px solid #000;
+}
+
+/* Scrollbar */
+.timeline-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 6px;
+}
+
+/* Steps */
+.timeline-step {
+  position: relative;
+  padding-left: 35px;
+  margin: 25px 0;
+}
+
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.timeline-step.active .timeline-dot {
+  background: #333;
+}
+
+.timeline-text h4 {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.timeline-text .loc {
+  font-size: 13px;
+  color: #555;
+}
+
+.timeline-text .time {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .trackorder-dual {
     flex-direction: column;
-    gap: 15px;
-}
+  }
 
-.tracking-form-content input {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-}
+  .white-side,
+  .dark-side {
+    flex: 1;
+    padding: 20px;
+  }
 
-.tracking-form-content input:focus {
-    border-color: var(--sh-primary);
-    outline: none;
-    box-shadow: 0px 3px 8px rgba(25, 117, 201, 0.3);
-}
+  .timeline-scroll {
+    height: 50vh;
+  }
 
-.tracking-button {
-    background: var(--sh-primary);
-    color: white;
-    border: none;
-    padding: 14px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-weight: bold;
-    box-shadow: rgba(255, 255, 255, 0.25) 0.5px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
-}
-
-.tracking-button:hover {
-    background: var(--sh-primary);
-    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
-}
-
-.tracking-feedback {
-    /* background: transparent linear-gradient(244deg, #d3e6f7 0%, #d3e6f7 100%) 0% 0% no-repeat padding-box; */
-    /* padding-block: 50px; */
-    /* margin-top: 50px; */
-    justify-content: center;
-    width: 100%;
-}
-
-.tracking-feedback label {
-    margin-bottom: 10px;
-}
-
-.tracking-feedback textarea {
-    width: 100%;
-    background: transparent;
-    border: 1px solid var(--sh-secondary);
-    border-radius: 1rem;
-    padding: 10px;
-}
-
-.track-awb-no {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 500;
-    margin-top: 4rem;
-}
-
-.track-bootom-heading {
-    color: #1975c9;
-    font-family: Poppins, Helvetica, sans-serif;
-    font-size: 20px;
-
-}
-
-.track-bootom-para {
-    margin-top: 8px;
-    color: #000;
-    font-family: Poppins, Helvetica, sans-serif;
-    line-height: 20px;
-    font-size: 15px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .track-awb-no {
-        font-size: 20px;
-        text-align: center;
-        font-weight: 500;
-        margin-top: 2rem;
-    }
-
-    .tracking-form {
-        margin-top: 2.5rem;
-        max-height: 440px;
-        /* height: auto; */
-        flex: 1;
-        min-width: 330px;
-        max-width: 500px;
-        background: white;
-        /* padding: 25px; */
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .tracking-form-awb {
-        margin-top: 2.5rem;
-        max-height: 430px;
-        height: auto;
-        flex: 1;
-        min-width: 330px;
-        max-width: 500px;
-        background: white;
-        /* padding: 25px; */
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
+  .courier-logo {
+    width: 35px;
+    height: 35px;
+  }
 }
