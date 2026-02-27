@@ -172,19 +172,19 @@ export default function Footer() {
                     All rights reserved.
                 </p>
                 <div className="d-flex gap-3 align-items-center">
-                    <a href="#" className="text-light icon-hover">
+                    <a href="https://www.facebook.com/shipease.in/" target="_blank" className="text-light icon-hover">
                         <FacebookIcon size={20} />
                     </a>
-                    <a href="#" className="text-light icon-hover">
+                    <a href="https://x.com/Shipease_IN" target="_blank" className="text-light icon-hover">
                         <TwitterIcon size={20} />
                     </a>
-                    <a href="#" className="text-light icon-hover">
+                    <a href="https://in.linkedin.com/company/shipease-technologies-pvt-ltd" target="_blank" className="text-light icon-hover">
                         <LinkedinIcon size={20} />
                     </a>
-                    <a href="#" className="text-light icon-hover">
+                    <a href="https://www.instagram.com/shipease.in/?hl=en" target="_blank" className="text-light icon-hover">
                         <InstagramIcon size={20} />
                     </a>
-                    <a href="#" className="text-light icon-hover">
+                    <a href="https://www.youtube.com/@ShipEaseTechnologies" target="_blank" className="text-light icon-hover">
                         <YoutubeIcon size={20} />
                     </a>
                 </div>
