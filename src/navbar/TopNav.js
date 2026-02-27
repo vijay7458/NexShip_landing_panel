@@ -28,15 +28,15 @@ export default function TopNav() {
     setMenuOpen(false);
   };
 
+
   const handleClickRouteMain = () => {
-    window.open("/login", "_blank");
+    window.open("https://app.shipease.in/login", "_blank");
   };
 
   return (
     <nav
-      className={`topnav w-100 d-flex justify-content-between align-items-center ${
-        isScrolled ? "scroll-navbar px-2 py-2 top-0" : "px-4 top-1"
-      }`}
+      className={`topnav w-100 d-flex justify-content-between align-items-center ${isScrolled ? "scroll-navbar px-2 py-2 top-0" : "px-4 top-1"
+        }`}
       style={{ zIndex: 999, transition: "all 0.3s ease" }}
     >
       {/* Left Logo + Nav */}
@@ -48,11 +48,10 @@ export default function TopNav() {
           {NavList.map((item) => (
             <p
               key={item.title}
-              className={`${
-                isScrolled
-                  ? "nav-menuitems-light small m-0"
-                  : "nav-menuitems small m-0"
-              }`}
+              className={`${isScrolled
+                ? "nav-menuitems-light small m-0"
+                : "nav-menuitems small m-0"
+                }`}
               style={{ cursor: "pointer" }}
               onClick={() => handleClick(item.path)}
             >
@@ -64,13 +63,16 @@ export default function TopNav() {
 
       {/* Right Side Buttons */}
       <div className="nav-right d-none d-md-flex align-items-center gap-3 bg-secondary-subtle rounded-5 px-1 py-1">
-        <div
+        <a
           className="text-dark fw-semibold small py-1 px-3"
-          style={{ cursor: "pointer" }}
-          onClick={() => navigate("/login")}
+          style={{ cursor: "pointer", textDecoration:"none" }}
+          // onClick={handleClickRouteMain}
+            href="https://app.shipease.in/login"
+            target="_blank"
+            
         >
-          Log In
-        </div>
+          Log In 
+        </a>
         <div
           className="bg-dark text-light small rounded-4 py-1 px-3 fw-semibold"
           style={{ cursor: "pointer" }}
@@ -100,13 +102,15 @@ export default function TopNav() {
           </p>
         ))}
         <div className="mobile-buttons">
-          <div
-            className="text-dark fw-semibold small py-1 px-3 mb-2"
+          <a
+            href="https://app.shipease.in/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-dark fw-semibold small py-1 px-3 mb-2 d-inline-block text-decoration-none"
             style={{ cursor: "pointer" }}
-            onClick={handleClickRouteMain}
           >
             Log In
-          </div>
+          </a>
           <div
             className="bg-dark text-light small rounded-4 py-1 px-3 fw-semibold"
             style={{ cursor: "pointer" }}

@@ -53,7 +53,7 @@ const cardData = [
     description:
       "Import, process, and dispatch orders from multiple sales channels like Shopify, WooCommerce, and Amazon — all in one place.",
     btnText: "Explore Now",
-    route: "sign-up"
+    route: "https://app.shipease.in/sign-up"
   },
   {
     imgUrl: cardImg2,
@@ -71,7 +71,7 @@ const cardData = [
     description:
       "Leverage AI to automatically select the fastest and most cost-efficient courier for every order — saving time and reducing costs.",
     btnText: "Learn More",
-    route:"/sign-up"
+    route: "https://app.shipease.in/sign-up"
   },
 ];
 

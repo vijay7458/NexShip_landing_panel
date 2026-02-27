@@ -21,7 +21,8 @@ const AboutHero = () => {
   console.log(7888, chnageBg)
 
   const handleClick = () => {
-    window.open("/sign-up", "_blank")
+    window.open(  "https://app.shipease.in/sign-up"
+            ,"_blank")
   } 
   return (
     <section className={`about-hero d-flex align-items-center justify-content-center `}>

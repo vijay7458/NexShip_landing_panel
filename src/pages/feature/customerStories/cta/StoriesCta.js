@@ -4,7 +4,8 @@ import "./StoriesCta.css";
 
 const StoriesCta = () => {
   const handleClick = () => {
-    window.open("/sign-up", "_blank")
+    window.open(  "https://app.shipease.in/sign-up"
+            ,"_blank", )
   }
   return (
     <section className="cs-cta-section">

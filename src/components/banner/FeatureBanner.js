@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../globalstyle/banner.css";
 
@@ -65,9 +65,10 @@ export default function FeatureBanner() {
               Power your logistics with automation, tracking, and analytics — all in one
               seamless platform built to scale your business efficiently.
             </p>
-            <button className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "btn-light text-dark" : "text-light bg-dark"}`} onClick={ handleClickRoute}>
-              Explore Features
-            </button>
+            <a className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "btn-light text-dark" : "text-light bg-dark"}`} >
+            <a   href="https://app.shipease.in/sign-up"
+            target="_blank" style={{color:"#ffff", textDecoration:"none"}}>Explore Features</a>  
+            </a>
           </motion.div>
 
           {/* Right Section (Images, Static) */}

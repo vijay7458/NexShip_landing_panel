@@ -71,13 +71,14 @@ export default function Discount() {
             <span style={styles.highlight}> SALE24</span>
           </p>
           <button
-            onClick={handleClick}
+           
             className="discount-btn-main"
             style={styles.button}
             onMouseOver={(e) => (e.target.style.backgroundColor = "#ffcc00")}
             onMouseOut={(e) => (e.target.style.backgroundColor = "#fff")}
           >
-            Claim Offer
+           <a  href="https://app.shipease.in/sign-up"
+            target="_blank" style={{textDecoration:"none", color:"#000"}}> Claim Offer</a>
           </button>
         </div>
       </div>
