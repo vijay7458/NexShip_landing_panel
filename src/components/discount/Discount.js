@@ -67,19 +67,8 @@ export default function Discount() {
       <div className="discount-bar-main" style={styles.bar}>
         <div style={styles.content}>
           <p className="discount-text-main" style={styles.text}>
-            ⏰ Ends soon — claim your discount with
-            <span style={styles.highlight}> SALE24</span>
+            "Don’t Pick the Rocket 🚀 — Go with Ease"
           </p>
-          <button
-           
-            className="discount-btn-main"
-            style={styles.button}
-            onMouseOver={(e) => (e.target.style.backgroundColor = "#ffcc00")}
-            onMouseOut={(e) => (e.target.style.backgroundColor = "#fff")}
-          >
-           <a  href="https://app.shipease.in/sign-up"
-            target="_blank" style={{textDecoration:"none", color:"#000"}}> Claim Offer</a>
-          </button>
         </div>
       </div>
     </>
