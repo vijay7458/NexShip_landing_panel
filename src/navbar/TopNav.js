@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./topNav.css";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useNavigate } from "react-router";
+import { HiLocationMarker } from "react-icons/hi";
+import { IoLogIn } from "react-icons/io5";
 
 export default function TopNav() {
   const NavList = [
@@ -65,30 +67,76 @@ export default function TopNav() {
       <div className="nav-right d-none d-md-flex align-items-center gap-3 bg-secondary-subtle rounded-5 px-1 py-1">
         <a
           className="text-dark fw-semibold small py-1 px-3"
-          style={{ cursor: "pointer", textDecoration:"none" }}
+          style={{ cursor: "pointer", textDecoration: "none" }}
           // onClick={handleClickRouteMain}
-            href="https://app.shipease.in/login"
-            target="_blank"
-            
+          href="https://app.shipease.in/login"
+          target="_blank"
+
         >
-          Log In 
+          Log In
         </a>
         <div
           className="bg-dark text-light small rounded-4 py-1 px-3 fw-semibold"
           style={{ cursor: "pointer" }}
           onClick={() => navigate("/track")}
         >
-          Track Order
+          Track
+        </div>
+      </div>
+      {/* Mobile Menu Toggle */}
+      <div
+        className="menu-icon d-md-none d-flex align-items-center justify-content-between gap-3  py-2 "
+        style={{
+          backdropFilter: "blur(10px)",
+        }}
+      >
+        <div className="d-flex align-items-center gap-2 bg-secondary-subtle px-1 py-1 rounded-2">
+
+          <div
+
+            onClick={() => navigate("/track")}
+            style={{
+              background: "linear-gradient(90deg, #000000, #333333)",
+              color: "#fff",
+              padding: "3px 10px",
+              borderRadius: "8px",
+              display: "flex",
+              alignItems: "center",
+              gap: "4px",
+              fontSize: "14px",
+              fontWeight: "600",
+              textDecoration: "none",
+              boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+            }}
+          >
+            Track <HiLocationMarker className="main-track-icon" size={16} />
+          </div>
+          <a
+            href="https://app.shipease.in/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontWeight: "600",
+              color: "#111",
+              textDecoration: "none",
+              fontSize: "14px",
+              marginRight: "4px"
+            }}
+          >
+            Log In <IoLogIn />
+          </a>
+        </div>
+        <div onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? (
+            <FiX size={22} color="#000" />
+          ) : (
+            <FiMenu size={22} color="#000" />
+          )}
+
         </div>
       </div>
 
-      {/* Mobile Menu Toggle */}
-      <div
-        className="menu-icon d-md-none"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-      </div>
+
 
       {/* Mobile Dropdown Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>

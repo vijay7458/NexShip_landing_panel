@@ -18,10 +18,10 @@ const RtoHero = () => {
           <div className="col-lg-6 col-md-12 text-section">
             <motion.h1
               className="rto-title"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+              initial= {{ opacity: 0, y: 40 }}
+              whileInView= {{ opacity: 1, y: 0 }}
+              transition= {{ duration: 0.8 }}
+              viewport= {{ once: true }}
             >
               Predict & Prevent <span style={{color:"red"}}>RTOs</span> Before They Happen
             </motion.h1>
