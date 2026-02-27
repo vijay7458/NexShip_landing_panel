@@ -5,11 +5,11 @@ import "./hero.css";
 import img1 from "../../../../assets/image/WhatsApp Image 2026-02-25 at 4.19.47 PM.jpeg"
 
 const RtoHero = () => {
-
   const handleClick = () => {
-    window.open(  "https://app.shipease.in/sign-up",
-            "_blank")
+    window.open(  "https://app.shipease.in/sign-up","_blank")
   } 
+
+
   return (
     <section className="rto-hero-section">
       <div className="container">
