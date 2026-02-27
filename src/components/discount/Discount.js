@@ -78,7 +78,7 @@ export default function Discount() {
             onMouseOut={(e) => (e.target.style.backgroundColor = "#fff")}
           >
            <a  href="https://app.shipease.in/sign-up"
-            target="_blank" style={{textDecoration:"none", color:"#fff"}}> Claim Offer</a>
+            target="_blank" style={{textDecoration:"none", color:"#000"}}> Claim Offer</a>
           </button>
         </div>
       </div>
