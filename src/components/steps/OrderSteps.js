@@ -99,7 +99,7 @@ export default function OrderStep() {
         <div className="container py-5">
             <div className="row">
                 {/* Left section */}
-                <div className="col-lg-5 mb-5 mb-lg-0 lg-position-sticky" style={{ height: "80vh", top: "150px" }}>
+                <div className="col-lg-5 mb-5 mb-lg-0 lg-position-sticky" style={{ height: "25vh", top: "150px" }}>
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
