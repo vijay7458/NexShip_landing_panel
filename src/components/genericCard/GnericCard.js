@@ -39,7 +39,7 @@ export default function GenericCard({ titles, cardData }) {
     console.log("Component 20% visible:", isScrolled);
 
     const handleRoute = (push) => {
-        window.open(`/${push}`, "_balnk")
+        window.open(`${push}`, "_balnk")
     }
 
     return (

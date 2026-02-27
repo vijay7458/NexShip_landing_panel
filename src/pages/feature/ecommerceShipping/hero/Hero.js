@@ -5,11 +5,13 @@ import "./hero.css";
 const Hero = () => {
 
   const handleShip = () => {
-  window.open("/sign-up", "_blank")
+  window.open("https://app.shipease.in/sign-up"
+            ,"_blank",)
   }
 
   const bookDemo = () =>{
-    window.open("/sign-up", "_blank")
+    window.open(  "https://app.shipease.in/sign-up"
+            ,"_blank")
   }
    return (
     <section className="esh-hero-section">

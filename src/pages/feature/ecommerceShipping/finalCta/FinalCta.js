@@ -5,7 +5,8 @@ import "./cta.css";
 const FinalCTA = () => {
 
   const handleClick = () =>{
-    window.open("/sign-up" , "_blank")
+    window.open(  "https://app.shipease.in/sign-up",
+            "_blank")
   }
   return (
     <section className="esh-cta-section">

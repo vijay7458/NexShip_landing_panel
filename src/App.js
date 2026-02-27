@@ -71,8 +71,7 @@ function App() {
       {/* <Discount />
       <TopNav /> */}
       <ScrollToTop />
-      <Discount />
-      
+      <Discount /> 
       <Routes>
         <Route path='/terms' element={<TermCondition />} />
         <Route path='/' element={<Feature />} />
