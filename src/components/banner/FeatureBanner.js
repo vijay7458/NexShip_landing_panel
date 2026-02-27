@@ -39,7 +39,7 @@ export default function FeatureBanner() {
     <motion.div
       className={`feature-banner  d-flex pb-4 align-items-center`}
       animate={{
-        backgroundColor: isScrolled ? "#000000" : "#f8f9fa",
+        backgroundColor: isScrolled ? "#000000" : "#fff",
         color: isScrolled ? "#ffffff" : "#212529",
       }}
       transition={{
