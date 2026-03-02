@@ -27,13 +27,6 @@ body {
   overflow-y: scroll;
 }
 
-/* 4) make sections avoid accidental extra height when you have a fixed navbar */
-.main-section {
-  /* if you use full-height sections, subtract navbar height */
-  min-height: calc(100vh - 70px); /* replace 70px with your navbar height */
-}
-
-
 .main-button {
     background-color: #1975C9 !important;
     /* background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%); */
