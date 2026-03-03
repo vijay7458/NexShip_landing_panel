@@ -65,9 +65,9 @@ export default function FeatureBanner() {
               Power your logistics with automation, tracking, and analytics — all in one
               seamless platform built to scale your business efficiently.
             </p>
-            <a className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "btn-light text-dark" : "text-light bg-dark"}`} >
+            <a className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "bg-dark text-light" : "text-light bg-dark"}`} >
             <a   href="https://app.shipease.in/sign-up"
-            target="_blank" style={{color:"#ffff", textDecoration:"none"}}>Explore Features</a>  
+            target="_blank" style={isScrolled ? {color:"#fff", textDecoration:"none"} : {color:"#fff", textDecoration:"none"}}>Explore Features</a>  
             </a>
           </motion.div>
 

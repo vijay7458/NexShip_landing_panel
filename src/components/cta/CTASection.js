@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 export default function CTASection() {
   return (
     <motion.div
-      className="container-fluid d-flex flex-column justify-content-center align-items-center text-center py-5 px-3 rounded-4"
+      className="container-fluid d-flex flex-column justify-content-center align-items-center text-center py-5 px-3 rounded-0"
       style={{
         background:
           "linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(20,20,20,0.85) 60%, rgba(40,40,40,0.8) 100%)",
         marginBottom: "6rem",
         marginTop: "6rem",
+
       }}
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +21,7 @@ export default function CTASection() {
       <motion.h2
         className="fw-bold mb-3 text-light"
         style={{
-          fontSize: "clamp(1.8rem, 5vw, 2.6rem)", // responsive typography
+          fontSize: "clamp(1.8rem, 5vw, 2.6rem)", 
           lineHeight: "1.2",
         }}
         initial={{ opacity: 0, y: 30 }}
