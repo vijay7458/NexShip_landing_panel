@@ -80,7 +80,10 @@ export default function Feature() {
   return (
     <div>
       {/* <Discount /> */}
-      <TopNav />
+      <div className='mt-2'>
+        <TopNav />
+      </div>
+      
       <FeatureBanner />
       <PartnerCard />
       <GnericCard titles={genericCardTitles} cardData={cardData} />
