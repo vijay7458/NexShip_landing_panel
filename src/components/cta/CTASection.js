@@ -52,7 +52,7 @@ export default function CTASection() {
 
       {/* CTA Button */}
       <motion.a
-        href="https://app.shipease.in/login"
+        href="https://www.shipease.in/contact"
         className="btn fw-bold px-5 py-2 rounded-4"
         style={{
           background: "linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%)",
