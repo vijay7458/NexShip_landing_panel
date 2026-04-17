@@ -60,6 +60,7 @@ import Blog from './pages/feature/blog/Blog';
 import Knowledge from './pages/feature/knowledgeBase/Knowledge';
 import FaqMain from './components/page/faq/FaqMain';
 import TrackOrderMain from './components/trackOrder/TrackOrderMain';
+import MetaPixelTracker from "./components/metafixel/MetaPixelTracker";
 // import Feature from './Feature';
 
 
@@ -71,6 +72,7 @@ function App() {
       {/* <Discount />
       <TopNav /> */}
       <ScrollToTop />
+      <MetaPixelTracker /> 
       <Discount /> 
       <Routes>
         <Route path='/terms' element={<TermCondition />} />
