@@ -25,7 +25,7 @@ const PartnerHero = () => {
               Together, we empower businesses to ship faster, smarter, and further.
             </p>
             <motion.a
-            href="mailto:Leadership@shipeaase.in"
+            href="mailto:ops@nexshyp.com"
               className="partner-btn"
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
