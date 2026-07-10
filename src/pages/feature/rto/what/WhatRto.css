@@ -1,0 +1,194 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   WHAT IS RTO SECTION
+============================================ */
+.what-is-rto-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rto-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.rto-description {
+  color: #CBD5E1;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================
+   CARD STYLING (Glassmorphism)
+============================================ */
+.cause-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 35px 25px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.cause-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.2);
+}
+
+/* ============================================
+   ICONS
+============================================ */
+.icon-wrap {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.04));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cause-card:hover .icon-wrap {
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.08));
+  border-color: #3B82F6;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.25);
+}
+
+.cause-icon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.cause-card:hover .cause-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ============================================
+   TEXT
+============================================ */
+.cause-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.cause-desc {
+  font-size: 1rem;
+  color: #CBD5E1;
+  line-height: 1.6;
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .rto-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .rto-heading {
+    font-size: 2rem;
+  }
+
+  .rto-description {
+    font-size: 1rem;
+  }
+
+  .cause-card {
+    padding: 30px 20px;
+  }
+
+  .icon-wrap {
+    width: 76px;
+    height: 76px;
+  }
+
+  .cause-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .cause-title {
+    font-size: 1.1rem;
+  }
+
+  .what-is-rto-section {
+    padding: 80px 0;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .what-is-rto-section {
+    padding: 60px 0;
+  }
+
+  .rto-heading {
+    font-size: 1.8rem;
+  }
+
+  .cause-card {
+    width: 100%;
+    margin: 0 auto 25px;
+  }
+
+  .rto-description {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .rto-heading {
+    font-size: 1.5rem;
+  }
+
+  .cause-card {
+    padding: 25px 18px;
+  }
+
+  .icon-wrap {
+    width: 68px;
+    height: 68px;
+  }
+
+  .cause-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

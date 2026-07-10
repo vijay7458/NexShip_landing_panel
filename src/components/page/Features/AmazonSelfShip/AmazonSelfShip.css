@@ -1,0 +1,148 @@
+.amazon-self-ship {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.amazon-self-ship-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.amazon-self-ship__header {
+    background: linear-gradient(90deg,
+            #60a9eb 0%,
+            #C5DCF1 25%,
+            #fff 50%,
+            #C5DCF1 75%,
+            #60a9eb 100%);
+    /* color: #fff; */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.amazon-self-ship__title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.amazon-self-ship__subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.amazon-self-ship__features {
+    padding: 40px 0;
+}
+
+.amazon-self-ship__section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.amazon-self-ship__features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.amazon-self-ship__feature {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.amazon-self-ship__feature>div:first-of-type {
+    padding: 20px;
+
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px dashed var(--sh-secondary);
+}
+
+@keyframes cloudAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.amazon-self-ship__feature>div:last-of-type {
+    padding: 20px;
+    /* background: var(--sh-secondary);
+    background: linear-gradient(135deg,
+            #1975C9 20%,
+            #60a9eb 40%,
+            #C5DCF1 60%,
+            #092C4C 100%);
+    background-size: 200% 200%;
+    animation: cloudAnimation 10s ease-in-out infinite; */
+    text-align: start;
+}
+
+.amazon-self-ship-container h3 {
+    color: #092C4C;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Steps Section */
+.amazon-self-ship__steps {
+    background: #f1f5f9;
+    padding: 40px 0;
+}
+
+.amazon-self-ship__steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.amazon-self-ship__step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.amazon-self-ship__step-icon {
+    background: #092C4C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 0 auto 10px auto;
+}
+
+/* Footer */
+.amazon-self-ship__footer {
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    color: var(--sh-secondary);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}

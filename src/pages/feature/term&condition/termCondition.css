@@ -1,0 +1,126 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   PAGE WRAPPER
+============================================ */
+.terms-page-wrapper {
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A;
+  color: #E2E8F0;
+  min-height: 100vh;
+}
+
+/* ============================================
+   HERO SECTION
+============================================ */
+.terms-hero {
+  height: 100px;
+  background-color: #0F172A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+}
+
+.terms-hero-title {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* ============================================
+   CONTENT CARD (Glassmorphism)
+============================================ */
+.terms-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 16px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ============================================
+   TEXT CONTENT
+============================================ */
+.terms-heading {
+  color: #FFFFFF;
+}
+
+.terms-text {
+  color: #CBD5E1;
+  line-height: 1.8;
+}
+
+.terms-text li {
+  margin-bottom: 6px;
+}
+
+.terms-strong {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.terms-updated {
+  color: #94A3B8;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .terms-hero-title {
+    font-size: 2.3rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .terms-hero {
+    height: 240px;
+  }
+
+  .terms-hero-title {
+    font-size: 2rem;
+  }
+
+  .terms-card {
+    padding: 1.75rem !important;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .terms-hero {
+    height: 180px;
+  }
+
+  .terms-hero-title {
+    font-size: 1.5rem;
+  }
+
+  .terms-card {
+    padding: 1.25rem !important;
+  }
+
+  .terms-heading {
+    font-size: 1.1rem;
+  }
+
+  .terms-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .terms-hero-title {
+    font-size: 1.25rem;
+  }
+}

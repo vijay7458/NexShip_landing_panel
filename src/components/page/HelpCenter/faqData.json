@@ -1,0 +1,2277 @@
+{
+    "Home": {
+        "Getting Started": [
+            {
+                "id": 1,
+                "question": "How do I sign up for a Shipease account?",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            },
+            {
+                "id": 111,
+                "question": "What is Shipease and how does it work?",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            },
+            {
+                "id": 112,
+                "question": "Important Terms All Shipease Users Should Know",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            },
+            {
+                "id": 113,
+                "question": "Shipease: 3 Tips for Taking Better Shipment Photos",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            },
+            {
+                "id": 114,
+                "question": "Learn More About Your Home Page",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            },
+            {
+                "id": 115,
+                "question": "How do I contact the Shipease support team?",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            },
+            {
+                "id": 116,
+                "question": "What are the different Acronyms used at Shipease?",
+                "answer": "You can create an account by signing up on our platform using your email and setting a password."
+            }
+        ]
+    },
+    "Orders": {
+        "New Order": [
+            {
+                "id": 2,
+                "question": "How to Create an Order in Shipease?",
+                "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+            },
+            {
+                "id": 221,
+                "question": "How to add an order?",
+                "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+            },
+            {
+                "id": 222,
+                "question": "How to create manual order on Shipease?",
+                "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+            },
+            {
+                "id": 223,
+                "question": "What is Multi Packet Shipment? How to create it?",
+                "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+            },
+            {
+                "id": 224,
+                "question": "Learn More About the Shipease Orders Screen",
+                "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
+            }
+        ],
+        "Process Order": [
+            {
+                "id": 3,
+                "question": "How do I ship an order with Shipease?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 331,
+                "question": "How do I process or ship my orders in bulk?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 332,
+                "question": "How to change the payment mode of my order?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 333,
+                "question": "How to download a manifest?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 334,
+                "question": "How to verify my orders in Shipease?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 335,
+                "question": "How do I add order tag?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 336,
+                "question": "How to download shipping invoices and labels?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 337,
+                "question": "How to edit an order?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 338,
+                "question": "How do I update orders in bulk?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 339,
+                "question": "Why do I need to upload package images?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33101,
+                "question": "How to upload and change Eway Bill for forward orders?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33111,
+                "question": "How to download my orders report?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33122,
+                "question": "What are the actions you can take from the Ready to Ship tab?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33133,
+                "question": "What are the actions you can take from the Pickups tab?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33144,
+                "question": "What are the actions you can take from the In Transit tab?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33155,
+                "question": "What are the actions you can take from the Delivered tab?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33166,
+                "question": "What are the actions you can take from the RTO tab?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            },
+            {
+                "id": 33177,
+                "question": "What are the actions you can take from the New tab?",
+                "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
+            }
+        ],
+        "Pickups": [
+            {
+                "id": 4,
+                "question": "How do I schedule a pickup?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 441,
+                "question": "What is a pickup ID?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 442,
+                "question": "How do I find my pickup ID?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 443,
+                "question": "Can shipments be moved from one pickup ID to another?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 444,
+                "question": "Pickup ID vs. Manifest ID - Know the Difference",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 445,
+                "question": "Why I'm unable to request a pickup for my shipments? Please help!",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 446,
+                "question": "How do I handle pickup delays in my Shipease account?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 447,
+                "question": "What is a pickup exception?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 448,
+                "question": "Can I cancel a picked up shipment?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 449,
+                "question": "What do I do in case of a fake pickup attempt?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44101,
+                "question": "Can I schedule shipment for a future date?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44112,
+                "question": "Can I still use Manifest ID to escalate pickup delays?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44123,
+                "question": "I'm not able to locate my existing Pick up ID on Shipease",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44134,
+                "question": "What happens to a pickup ID if all shipments are canceled?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44145,
+                "question": "What are the various Pick up ID statuses?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44156,
+                "question": "In what circumstances can different pickup IDs be generated?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44167,
+                "question": "What will be the role of Manifest ID?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44178,
+                "question": "Will this have an impact on the pickup process in the Shipease mobile apps as well?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44189,
+                "question": "Can I modify the order details after I've scheduled pickup?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44190,
+                "question": "What are the steps from order creation to pick up?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44201,
+                "question": "What is a Pickup error and how to solve it?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44212,
+                "question": "Can I update the details of an already picked shipment?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44223,
+                "question": "My order is in out for pickup status. Can I cancel it?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            },
+            {
+                "id": 44234,
+                "question": "Can I change the payment mode of my order if it’s in the out for delivery status?",
+                "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
+            }
+        ],
+        "RTO Orders": [
+            {
+                "id": 5,
+                "question": "What is RTO?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 551,
+                "question": "Will I be charged for RTO?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 552,
+                "question": "How to block ODA (Out of Delivery Area) pincodes?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 553,
+                "question": "How to block RTO (Return to Origin) pincodes?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 554,
+                "question": "Why are there additional charges for weight and RTO on my account?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 555,
+                "question": "Where can I view my RTO orders?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 556,
+                "question": "How to upload Eway Bill for my RTO order?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 557,
+                "question": "What is RTO Initiated, Delivered and Acknowledged?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 558,
+                "question": "What happens if I don’t upload an Eway Bill for my RTO shipment?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 559,
+                "question": "What is RTO? What are the possible reasons behind RTO?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            },
+            {
+                "id": 560,
+                "question": "How can I reduce my RTO Shipments? What are the tools offered by Shipease?",
+                "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
+            }
+        ],
+        "Delivery Dispute": [
+            {
+                "id": 6,
+                "question": "How can I raise a delivery dispute?",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            },
+            {
+                "id": 661,
+                "question": "How to raise a delivery dispute in Shipease?",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            },
+            {
+                "id": 662,
+                "question": "How to File a Delivery Dispute for a Missing or Incorrectly Delivered Shipment?",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            },
+            {
+                "id": 663,
+                "question": "How to raise a complaint for delivery delay?",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            },
+            {
+                "id": 664,
+                "question": "How to raise an escalation against a fake POD?",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            },
+            {
+                "id": 665,
+                "question": "What Is RTO Delay Escalation and How to Raise it?",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            },
+            {
+                "id": 666,
+                "question": "Delivery Delays: Things to Know & How to Respond",
+                "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
+            }
+        ],
+        "NDR": [
+            {
+                "id": 7,
+                "question": "What is an NDR?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 771,
+                "question": "How to Process an NDR?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 772,
+                "question": "What is the process time for NDR?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 773,
+                "question": "How to escalate my NDR reattempt request?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 774,
+                "question": "How many attempts will be made by the courier company to deliver my order?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 775,
+                "question": "How long does it take for an action to be implemented on my undelivered shipment?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 776,
+                "question": "How does the Contact Buyer functionality work?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            },
+            {
+                "id": 777,
+                "question": "Do I get to Re-Escalate, if the delivery has not been attempted on the previous escalation raised?",
+                "answer": "NDR (Non-Delivery Report) lists unsuccessful delivery attempts."
+            }
+        ],
+        "Direct Ship": [
+            {
+                "id": 8,
+                "question": "What is Direct Ship?",
+                "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
+            },
+            {
+                "id": 881,
+                "question": "What is Shipease Direct-Ship?",
+                "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
+            },
+            {
+                "id": 882,
+                "question": "How to activate Shipease Direct-ship?",
+                "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
+            }
+        ]
+    },
+    "Return & Refund Management": {
+        "Return": [
+            {
+                "id": 9,
+                "question": "How do I initiate a return?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 991,
+                "question": "How to add a return order?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 992,
+                "question": "How to reassign a return order?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 993,
+                "question": "How to process a New Return Request?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 994,
+                "question": "How to cancel a return order?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 995,
+                "question": "How to enable Quality Check for Returns?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 996,
+                "question": "How do I enable ‘Returns’ on my Post Ship tracking page?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            },
+            {
+                "id": 997,
+                "question": "What happens if Quality Check fails for a Return?",
+                "answer": "Go to 'Return Management' and enter order details to process a return."
+            }
+        ],
+        "Refund": [
+            {
+                "id": 10,
+                "question": "How long does a refund take?",
+                "answer": "Refunds are usually processed within 5-7 business days."
+            },
+            {
+                "id": 1011,
+                "question": "How to edit and customise refund settings?",
+                "answer": "Refunds are usually processed within 5-7 business days."
+            },
+            {
+                "id": 1012,
+                "question": "What are the modes of Refund I can offer to my customers?",
+                "answer": "Refunds are usually processed within 5-7 business days."
+            },
+            {
+                "id": 1013,
+                "question": "Can I decide when to initiate a refund on a return order?",
+                "answer": "Refunds are usually processed within 5-7 business days."
+            },
+            {
+                "id": 1014,
+                "question": "How can I auto refund a buyer?",
+                "answer": "Refunds are usually processed within 5-7 business days."
+            },
+            {
+                "id": 1015,
+                "question": "How to activate 'refund' on my post ship tracking page?",
+                "answer": "Refunds are usually processed within 5-7 business days."
+            }
+        ]
+    },
+    "Delivery Boost": {
+        "Delivery Boost": [
+            {
+                "id": 11,
+                "question": "How does Delivery Boost work?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1111,
+                "question": "What is Delivery Boost?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1112,
+                "question": "What are the features and benefits of Delivery Boost?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1113,
+                "question": "How can I join Delivery Boost?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1114,
+                "question": "How I can try the Demo of Delivery Boost?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1115,
+                "question": "How will I be charged for using the Delivery Boost service?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1116,
+                "question": "How to check if the shipment delivered is a Delivery Boost shipment?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1117,
+                "question": "What is the extra revenue & how will I know when I saved RTO cost or generated revenue?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1118,
+                "question": "Can I switch back to NDR Buyer Flow?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1119,
+                "question": "What if I do not use Delivery Boost?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1120,
+                "question": "What will be the invoice cycle of Delivery Boost?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1121,
+                "question": "Will I be charged for the Delivery Boost trial period?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1122,
+                "question": "How to check the number of days remaining in the trial period?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            },
+            {
+                "id": 1123,
+                "question": "Will I be charged when the Delivery Boost trial period has ended?",
+                "answer": "Delivery Boost prioritizes your shipments with premium courier services for faster delivery."
+            }
+        ]
+    },
+    "Weight Management": {
+        "Weight Discrepancy": [
+            {
+                "id": 12,
+                "question": "What is a weight discrepancy?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1211,
+                "question": "Why there is a weight discrepancy pop up on my screen?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1212,
+                "question": "Please explain the Weight Discrepancy tab",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1213,
+                "question": "Explain the different types of weight terminology used in the platform?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1214,
+                "question": "What are the packaging tips to reduce weight errors in shipping?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1215,
+                "question": "How to calculate the volumetric weight of my shipment?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1216,
+                "question": "How do I export the Weight Discrepancy report?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1217,
+                "question": "How long does it take to resolve my order weight dispute?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            },
+            {
+                "id": 1218,
+                "question": "Why is my amount on-hold?",
+                "answer": "A weight discrepancy happens when the actual weight differs from the declared weight."
+            }
+        ],
+        "Weight Freeze": [
+            {
+                "id": 13,
+                "question": "What is Weight Freeze?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1311,
+                "question": "I want to freeze the weight and dimensions of my product",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Setup & Manage": {
+        "Channels": [
+            {
+                "id": 14,
+                "question": "What is Channels?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1411,
+                "question": "How do I integrate Amazon as a channel?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1412,
+                "question": "How Do I integrate Woocommerce with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1413,
+                "question": "How do I integrate Shopify as a channel with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1414,
+                "question": "How do I integrate Unicommerce with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1415,
+                "question": "What Is a Pull Order Status Mapper?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1416,
+                "question": "What Is a Push Order Status Mapper?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1417,
+                "question": "Shipease Wordpress App Help Document",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1418,
+                "question": "How do I integrate Ecwid as a channel with Shipease ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1419,
+                "question": "How Do I integrate Opencart with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1420,
+                "question": "How Do I integrate Magento(version 1) with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1421,
+                "question": "How Do I integrate Magento(Version 2) with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1422,
+                "question": "How to Integrate Prestashop with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1423,
+                "question": "What's a Map Payment Statuses Feature?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1424,
+                "question": "What is a custom channel and how do I use it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1425,
+                "question": "How do I integrate my Zoho website with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1426,
+                "question": "How do I integrate my Store Hippo account with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1427,
+                "question": "How to integrate Facebook Messenger with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1428,
+                "question": "Channel Integration: How to import the weight and dimensions of each product?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1429,
+                "question": "How do I integrate Instamojo with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1430,
+                "question": "Channel Integration: Importance of adding brand name",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1431,
+                "question": "How to Integrate Kartrocket with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1432,
+                "question": "How do I integrate 'WIX' as a channel with Shipease ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Catalogue": [
+            {
+                "id": 15,
+                "question": "What is Catalogue?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1511,
+                "question": "What kind of packaging is available with Shipease Fulfillment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1512,
+                "question": "Can I use my packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1513,
+                "question": "I want to edit or modify my packaging. How do I do it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1514,
+                "question": "Will you charge me for packaging if my order remains undelivered or move to the RTO status?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1515,
+                "question": "I want to check what packaging you used for my products?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1516,
+                "question": "Is GST applicable on SEF packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Courier": [
+            {
+                "id": 16,
+                "question": "What is Courier?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1611,
+                "question": "How to set courier priority?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1612,
+                "question": "How to block and unblock ODA and RTO pincodes?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1613,
+                "question": "How to set Courier Rules?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1614,
+                "question": "How to Activate or Deactivate Couriers?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1615,
+                "question": "What if no courier rule is applicable?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1616,
+                "question": "Where can I find the priority of the courier rule that is applied to shipments?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1617,
+                "question": "What is Courier Priority and How to set courier priority?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Packaging": [
+            {
+                "id": 17,
+                "question": "What is Packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1711,
+                "question": "What kind of packaging is available with Shipease Fulfillment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1712,
+                "question": "Can I use my packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1713,
+                "question": "I want to edit or modify my packaging. How do I do it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1714,
+                "question": "Will you charge me for packaging if my order remains undelivered or move to the RTO status?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1715,
+                "question": "I want to check what packaging you used for my products?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1716,
+                "question": "Is GST applicable on SEF packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Customers": [
+            {
+                "id": 17,
+                "question": "What is Customers?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1711,
+                "question": "How to add and search your customer's details in Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1712,
+                "question": "What are the benefits of saving customer details in Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1713,
+                "question": "What Customer Insights Can You Gain from Shipease's Customer Profiles?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Buyer Experience": {
+        "Brand Boost": [
+            {
+                "id": 18,
+                "question": "What is Brand Boost?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1811,
+                "question": "What is Shipease Brand Boost?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1812,
+                "question": "What are the benefits of Using Shipease Brand Boost?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1813,
+                "question": "How to Use Shipease Brand Boost?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1814,
+                "question": "What is the difference between basic tracking page and Shipease Brand Boost?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1815,
+                "question": "Want to Empower Your Customers? Unlock Shipease's Order Tracking Widget",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1816,
+                "question": "Is Brand boost a chargeable feature? if yes, What will be the charges?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Buyer Communication": [
+            {
+                "id": 19,
+                "question": "What is Buyer Communication?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1911,
+                "question": "What are Buyer Communication Settings?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1912,
+                "question": "How to customize my email notifications?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1913,
+                "question": "I don’t want to send any order notification from Shipease. Help me!",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1914,
+                "question": "What is Whatsapp communication and how is it helpful?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1915,
+                "question": "How can I select or customize the flow of WhatsApp Communication?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1916,
+                "question": "How can I enable or disable Whatsapp Communication",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1917,
+                "question": "Can I use WhatsApp Communication and then pay later?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1918,
+                "question": "What are the benefits of Whatsapp Communication?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1919,
+                "question": "How can I take a demo of Whatsapp communication?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1920,
+                "question": "How much will WhatsApp Communication cost me?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1921,
+                "question": "Which shipment status updates does Shipease send?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 1922,
+                "question": "Can I use my own messages to be sent to the buyer?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Return & Refunds": [
+            {
+                "id": 20,
+                "question": "What is Return & Refunds?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2011,
+                "question": "How does the return process work?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Billing": {
+        "Early COD": [
+            {
+                "id": 21,
+                "question": "What is Early COD?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2111,
+                "question": "What is Shipease Early COD? Should I opt for it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2112,
+                "question": "How to activate Early COD for my Shipease account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Postpaid": [
+            {
+                "id": 22,
+                "question": "What is Postpaid?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2211,
+                "question": "I have already activated Shipease Postpaid, but it's not showing active for my account.",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2212,
+                "question": "What is Shipease Postpaid? How do I activate it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "COD Remittance": [
+            {
+                "id": 23,
+                "question": "What is COD Remittance?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2311,
+                "question": "I want to check how much COD is pending to be remitted?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2312,
+                "question": "How soon can I receive my COD amount in my bank account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Plan Details": [
+            {
+                "id": 24,
+                "question": "What is Plan Details?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2411,
+                "question": "What are the available plans in Shipease and which one would be the most suitable for my shipping needs?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2412,
+                "question": "Can I upgrade and downgrade my plan at any time?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2413,
+                "question": "How do I recharge my Shipease wallet?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2414,
+                "question": "I want to upgrade my Shipease plan. How do I do it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Invoice Management": [
+            {
+                "id": 25,
+                "question": "What is Invoice Management?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2511,
+                "question": "How many times do I get freight invoices in a month?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "ONDC": {
+        "Getting Started": [
+            {
+                "id": 26,
+                "question": "What is Getting Started?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2611,
+                "question": "What are the compelling reasons for a seller to join the ONDC network?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2612,
+                "question": "What benefits does onboarding onto the ONDC network through Shipease offer?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2613,
+                "question": "What documents are necessary for the onboarding process?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2614,
+                "question": "What additional recurring charges should I be aware of, aside from the sales commission on orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2615,
+                "question": "Do buyer apps tend to prioritise displaying products from seller apps?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2616,
+                "question": "What practices can be employed to optimise the listing of a product for better visibility in search results?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Catalogue Update & Visibility": [
+            {
+                "id": 27,
+                "question": "What is Catalogue Update & Visibility?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2711,
+                "question": "What are the steps involved in adding the catalogue?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2712,
+                "question": "Is it possible to set different prices for products on the ONDC platform?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2713,
+                "question": "What is the process after uploading the catalogue?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2714,
+                "question": "Is there a specific time frame for updating the catalogue, and what specific details can be updated at the SKU or product level?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Order Processing": [
+            {
+                "id": 28,
+                "question": "What is Order Processing?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2811,
+                "question": "How can I access and monitor orders received through the ONDC channel?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2812,
+                "question": "Do all orders received through ONDC require shipment exclusively through Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2813,
+                "question": "Is Shipease planning to implement specific courier rules to identify such orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2814,
+                "question": "Are there specific ONDC brand packaging requirements for shipping the products?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Remittances and Billing": [
+            {
+                "id": 29,
+                "question": "What is Remittances and Billing",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2911,
+                "question": "When can I expect to receive the remittance for the order value, and what is the frequency of the payment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2912,
+                "question": "What is the process for confirming the receipt of remittance for the orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2913,
+                "question": "Who will receive notification about the shipment cancellation, the buyer or our team?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2914,
+                "question": "What is the amount I can expect to receive for a sale made through ONDC?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2915,
+                "question": "Will there be a commission fee for reverse pickup?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2916,
+                "question": "Where should I submit a request if I haven't received the expected payment or have received an incorrect amount?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 2917,
+                "question": "How often will ONDC payment invoices be issued, and what information will they include?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "In-transit/Post-Delivery Issues": [
+            {
+                "id": 30,
+                "question": "What is In-transit/Post-Delivery Issues?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3011,
+                "question": "What is the process for identifying and addressing customer concerns effectively?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3012,
+                "question": "How are post-delivery returns and concerns, such as product damage or destruction, addressed?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3013,
+                "question": "What is the procedure for raising and addressing operational issues?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Return Policy": [
+            {
+                "id": 31,
+                "question": "What is Plan Details?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3111,
+                "question": "What is the specified timeframe within which the buyer should initiate a return request?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3112,
+                "question": "Where can I find and review my return orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3113,
+                "question": "What are the available options for managing return orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3114,
+                "question": "How does the product get returned when a customer complaint has been accepted, and should it be returned through Shipease or Non- Shipease logistics courier partner?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3115,
+                "question": "Who is responsible for resolving buyer disputes if, as a seller, I choose not to address the buyer's complaint?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Tools": {
+        "Tracking and Notifications": [
+            {
+                "id": 32,
+                "question": "What is Tracking and Notifications",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3211,
+                "question": "How do tracking notifications enhance the customer experience in online shopping?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3212,
+                "question": "What are the privacy implications of location tracking notifications on smartphones, and how can users manage them?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3213,
+                "question": "What are the different types of tracking notifications that a consumer might receive when purchasing a product online?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Rate Calculator": [
+            {
+                "id": 33,
+                "question": "What is Rate Calculator?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3311,
+                "question": "How to calculate my shipping rate?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3312,
+                "question": "What do we mean by shipment forward charges and RTO charges?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3313,
+                "question": "Explaining shipping zones: How shipment zones affect order fulfillment and rates?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3314,
+                "question": "I want to send my shipment outside India. How do I check the international shipping rate in Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3315,
+                "question": "How to check the applied COD charges?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Rate Card": [
+            {
+                "id": 34,
+                "question": "What is Rate Card?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3411,
+                "question": "Can I see all Shipease rates in one place?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3412,
+                "question": "How to compare different Shipease plans rates while using filters?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3413,
+                "question": "What is Forward, Reverse and Document in the Rate Card?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3414,
+                "question": "What is Minimum Weight?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Bulk Print Actions": [
+            {
+                "id": 35,
+                "question": "What is Bulk Print Actions?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3511,
+                "question": "How do I create Manifest in Bulk?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3512,
+                "question": "How do I bulk import orders from sales channels?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3513,
+                "question": "How to generate invoice and label for single and bulk order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Reports": [
+            {
+                "id": 36,
+                "question": "What is Reports?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3611,
+                "question": "What are reports and how do I schedule a report?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3612,
+                "question": "Where can I receive my scheduled reports?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3613,
+                "question": "How do I determine which report to schedule?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3614,
+                "question": "Where can I find my scheduled report?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3615,
+                "question": "How can I request a demo of the report?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3616,
+                "question": "Who can see the report?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3617,
+                "question": "How many times can I schedule a report?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3618,
+                "question": "What is the maximum amount of data that can be requested in a single report?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3619,
+                "question": "What format will the report be in?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Settings": {
+        "Company Settings": [
+            {
+                "id": 37,
+                "question": "What is Company Settings?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3711,
+                "question": "What are the basic details required to start shipping with Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3712,
+                "question": "My Bank Verification Got Failed. What Now?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3713,
+                "question": "How do I get KYC verified?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3714,
+                "question": "What documents are required for KYC verification?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3715,
+                "question": "My KYC verification failed. What should I do now?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3716,
+                "question": "How much time it takes for KYC verification",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Billing Settings": [
+            {
+                "id": 38,
+                "question": "What is Billing Settings?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3811,
+                "question": "How many times do I get freight invoices in a month?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3812,
+                "question": "Please explain the Paid and Unpaid Freight Invoices.",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3813,
+                "question": "How can I pay my shipping invoice?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "API Settings": [
+            {
+                "id": 39,
+                "question": "What is API Settings?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3911,
+                "question": "Shipease API Document Helpsheet",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3912,
+                "question": "How to create an API user? Can I have more than one API users?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 3913,
+                "question": "Facing issue with API integration. Help me!",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "User Role Management": [
+            {
+                "id": 40,
+                "question": "What is User Role Management?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4011,
+                "question": "How to create Multi-users?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Shipment Features": {
+        "Secure Shipment": [
+            {
+                "id": 41,
+                "question": "What is Secure Shipment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4111,
+                "question": "List of Goods Covered Under Shipease Secure",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4112,
+                "question": "List of Goods Not Covered Under Shipease Secure",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4113,
+                "question": "What Is Shipease Secure? How Do I Activate It for My Account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4114,
+                "question": "How to activate Shipease Secure?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "RTO Score": [
+            {
+                "id": 42,
+                "question": "What is RTO Score?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4211,
+                "question": "What is the RTO score feature for you?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4212,
+                "question": "How can I enable or disable RTO score?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4213,
+                "question": "What is High or low RTO predicted order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4214,
+                "question": "What are the benefits of the RTO Score Feature?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4215,
+                "question": "What action can I take on High & Low RTO?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4216,
+                "question": "How much will RTO Score cost me?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4217,
+                "question": "Can I use RTO Score feature now and Pay later?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4218,
+                "question": "Will I be charged for my RTO score free trial period?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4219,
+                "question": "How to use the Customer Connect on RTO score?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4220,
+                "question": "The buyer has DND enabled on his/her number. What should I do?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Mobile App": {
+        "Account Setup": [
+            {
+                "id": 43,
+                "question": "What is Account Setup?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4311,
+                "question": "Download Shipease App",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4312,
+                "question": "Why do I need to add my bank account details?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4313,
+                "question": "Shipease App: Can I add my brand logo and product details to the shipping label?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4314,
+                "question": "Can I integrate my sales channel using Shipease app?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Tracking and Notifications": [
+            {
+                "id": 44,
+                "question": "What is Tracking and Notifications?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4411,
+                "question": "Shipease App: Explain Weight Discrepancy tab",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4412,
+                "question": "Shipease App: Shipment weight terms you should know",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Order Management": [
+            {
+                "id": 45,
+                "question": "What is Order Management?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4511,
+                "question": "How to create a return order in Shipease App?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4512,
+                "question": "Is it possible to reassign my shipment to a different courier partner once the manifest has been generated?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Billing & Recharge": [
+            {
+                "id": 46,
+                "question": "What is Billing & Recharge?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4611,
+                "question": "Why did you apply additional charges for weight and RTO on my account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4612,
+                "question": "Shipease App: When will I receive my COD payment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4613,
+                "question": "Shipease App: All about freight invoices",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4614,
+                "question": "Explaining Shipease Passbook Charges",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Shipease Fulfillment": {
+        "Introduction": [
+            {
+                "id": 47,
+                "question": "What is Shipease Fulfillment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4711,
+                "question": "What is Shipease Fulfillment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4712,
+                "question": "How does SEF work?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4713,
+                "question": "What is GRN?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4714,
+                "question": "What happens when the product goes out of stock?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4715,
+                "question": "How do you add products to your Shipease Fulfillment Account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4716,
+                "question": "Shipease Fulfillment: Will you also manage my return orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4717,
+                "question": "I’m on the Shipease Lite plan. Can I still register for SEF?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4718,
+                "question": "What are Active, On-Hold, Back and Completed Orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4719,
+                "question": "How to activate your Shipease Fulfillment account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4720,
+                "question": "How do I map products in Shipease Fulfillment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4721,
+                "question": "What is a HSN code? Why do we require it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "SEF Pricing": [
+            {
+                "id": 48,
+                "question": "What is SEF Pricing?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4811,
+                "question": "What exactly is 30-days free storage?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4812,
+                "question": "How do you calculate the volume of my products?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "SEF Inventory": [
+            {
+                "id": 49,
+                "question": "What is SEF Inventory ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4911,
+                "question": "How much inventory do you need for SEF?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4912,
+                "question": "What criteria are you using to evaluate the quality of inventory?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4913,
+                "question": "Can I cancel an ASN?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4914,
+                "question": "What happens to my QC failed items?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4915,
+                "question": "I want to register for SEF, but my business needs are season specific. Please help!",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4916,
+                "question": "Who pays for RTO?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4917,
+                "question": "Can I request RTO to my home/office instead of the warehouse?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4918,
+                "question": "What happens if a customer cancels the order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4919,
+                "question": "What happens in the case of multi-item order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4920,
+                "question": "What is ASN? How do I generate ASN for my shipments?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4921,
+                "question": "How can I make product combos in my Shipease Fulfillment Account?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4922,
+                "question": "What are the benefits of enabling the cost price feature for SKUs obtained from different vendors?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 4923,
+                "question": "What do we mean by SKU?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "SEF Packaging": [
+            {
+                "id": 50,
+                "question": "What is SEF Packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5011,
+                "question": "What happens in case of a multi-item order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5012,
+                "question": "When will I be billed for packaging?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5013,
+                "question": "Do I need to provide my packaging preference at the time of product upload?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5014,
+                "question": "Do I need to mention packaging type for all products?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Shipments": {
+        "Custom Buyer Communication": [
+            {
+                "id": 51,
+                "question": "What is Custom Buyer Communication?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5111,
+                "question": "How to customize my SMS notifications?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Weight Discrepancy": {
+        "Shipment Weight": [
+            {
+                "id": 52,
+                "question": "What is Shipment Weight?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5211,
+                "question": "Stop Weight Discrepancies Now! Simple Shipping Hacks",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Weight Freeze": [
+            {
+                "id": 53,
+                "question": "What is Weight Freeze?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5311,
+                "question": "Is there any SOP or Guide document for understanding Weight Freeze?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "NDR": {
+        "NDR Buyer Flow": [
+            {
+                "id": 54,
+                "question": "What is NDR Buyer Flow?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5411,
+                "question": "What is NDR Buyer Panel?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Setting": {
+        "Company Settings": [
+            {
+                "id": 55,
+                "question": "What is Company Settings?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5511,
+                "question": "How can I add my brand logo and product details to the shipping label?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Shipease Mobile App": {
+        "General FAQs & Settings": [
+            {
+                "id": 56,
+                "question": "What is General FAQs & Settings ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5611,
+                "question": "Where can I check my Recharge Logs?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5612,
+                "question": "How to activate and deactivate courier partners?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5613,
+                "question": "Can I submit my KYC details via Shipease app?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5614,
+                "question": "Shipease App: I want to integrate my sales channels?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5615,
+                "question": "How to set the courier priority in Shipease App?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5616,
+                "question": "I want to add my customer details in Shipease App",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5617,
+                "question": "I have an issue with my order. How do I contact the support team?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Hyperlocal": [
+            {
+                "id": 57,
+                "question": "What is Hyperlocal?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5711,
+                "question": "Shipease App: How to ship my local orders?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5712,
+                "question": "How to select my delivery location on the map?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Pickup & Delivery": [
+            {
+                "id": 58,
+                "question": "What is Pickup & Delivery?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5811,
+                "question": "Shipease App: How to escalate my order pickup?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5812,
+                "question": "Shipease App: My order hasn't been delivered yet. How to escalate it?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5813,
+                "question": "Shipease App: How to escalate my NDR reattempt request?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5814,
+                "question": "Shipease App: How to process an NDR shipment?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Orders & Shipments": [
+            {
+                "id": 59,
+                "question": "What is rders & Shipments ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5911,
+                "question": "Shipease App: How to process an order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5912,
+                "question": "Shipease App: How to generate label and invoice for an order?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5913,
+                "question": "Shipease App: How to generate manifest for multiple orders at once?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 5914,
+                "question": "What type of orders we can add in Shipease mobile app?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Invoice": {
+        "Billing & Remittance": [
+            {
+                "id": 60,
+                "question": "What is Billing & Remittance ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6011,
+                "question": "What are the necessary steps to be fulfilled for hassle free COD remittance?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6012,
+                "question": "Instant COD FAQs",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Invoice Management": [
+            {
+                "id": 61,
+                "question": "What is Invoice Management?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6111,
+                "question": "How to print eway bill number on shipping label?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6112,
+                "question": "What happens if I don't pay my invoice?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "Shipease Wallet": [
+            {
+                "id": 62,
+                "question": "What is Shipease Wallet?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6211,
+                "question": "I'm not able to recharge my wallet. Please help!",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6212,
+                "question": "My transaction is successful, but I haven't received money in my Shipease wallet",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "FAQ": {
+        "Others": [
+            {
+                "id": 63,
+                "question": "What is Others?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6311,
+                "question": "Which products are prohibited/dangerous to ship via Shipease?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6312,
+                "question": "Whom should I contact - Shipease or courier partner?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6313,
+                "question": "I'm not able to log in to my Shipease account",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "Shipping Queries": {
+        "International Shipping": [
+            {
+                "id": 64,
+                "question": "What is International Shipping?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6411,
+                "question": "How can I check if an international pincode is serviceable?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    },
+    "SE Checkout Articles": {
+        "SE Checkout": [
+            {
+                "id": 65,
+                "question": "What is SE Checkout?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6511,
+                "question": "Shipease Checkout Guide: An Overview of Dashboard",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6512,
+                "question": "SE Checkout: Manage Shipping Settings",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6513,
+                "question": "SE Checkout: Managing Store Settings",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6514,
+                "question": "SE Checkout: Payment",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6515,
+                "question": "SE Checkout: Platform",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6516,
+                "question": "SE Checkout: Tracking Info",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6517,
+                "question": "SE Checkout: Webhooks",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6518,
+                "question": "SE Checkout: Adding a Webhook",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ],
+        "SE Checkout: Manage Discount": [
+            {
+                "id": 66,
+                "question": "What is SE Checkout: Manage Discount ?",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6611,
+                "question": "SE Checkout: Manage Discount",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6612,
+                "question": "SE Checkout Discount: Amount off products",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6613,
+                "question": "SE Checkout Discount: Amount off Cart",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6614,
+                "question": "SE Checkout Discount: Buy 'Y' get 'X' ",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6615,
+                "question": "SE Checkout Discount: Bundle",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6616,
+                "question": "SE Checkout Discount: Tiered Discount",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            },
+            {
+                "id": 6617,
+                "question": "SE Checkout Discount: Import Discounts",
+                "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
+            }
+        ]
+    }
+}

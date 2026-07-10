@@ -1,0 +1,139 @@
+/* -----------------------------
+   WHO CAN PARTNER SECTION
+------------------------------ */
+
+.who-partner-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: #3B82F6;
+  border-radius: 4px;
+}
+
+/* Partner Card */
+.partner-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.35s ease-in-out;
+  height: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
+}
+
+/* Image Section */
+.partner-img-wrapper {
+  overflow: hidden;
+  height: 230px;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.partner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.partner-card:hover .partner-img {
+  transform: scale(1.05);
+}
+
+.partner-card:hover .partner-img-wrapper {
+  border-bottom-color: rgba(59, 130, 246, 0.4);
+}
+
+/* Text Section */
+.partner-card-content {
+  padding: 25px 20px;
+}
+
+.partner-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+}
+
+.partner-desc {
+  font-size: 1rem;
+  color: #CBD5E1;
+  line-height: 1.7;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .who-partner-section {
+    padding: 80px 0;
+  }
+
+  .partner-card-content {
+    padding: 20px 15px;
+  }
+
+  .partner-title {
+    font-size: 1.2rem;
+  }
+
+  .partner-desc {
+    font-size: 0.95rem;
+  }
+
+  .partner-img-wrapper {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .partner-img-wrapper {
+    height: 180px;
+  }
+
+  .partner-card {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .partner-title {
+    font-size: 1.1rem;
+  }
+
+  .partner-desc {
+    font-size: 0.9rem;
+  }
+}

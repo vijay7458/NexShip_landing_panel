@@ -1,0 +1,201 @@
+import React, { useEffect, useRef, useState } from "react";
+import BannerImage from "../../../../assets/image/banner-image.webp";
+import axios from "axios";
+import { BASE_URL } from "../../../../axios/config";
+import CountUp from "react-countup";
+import "animate.css";
+import "./OverviewSection.css"; // Import custom CSS file
+
+const OverviewSection = () => {
+    const [data, setData] = useState([
+        {
+            "id": 4,
+            "created_at": "2024-12-13T09:55:00.916733+05:30",
+            "updated_at": "2024-12-13T09:55:00.916733+05:30",
+            "title": "Delighted Customers",
+            "number": 2500,
+            "status": true
+        },
+        {
+            "id": 3,
+            "created_at": "2024-12-13T09:55:00.916733+05:30",
+            "updated_at": "2024-12-13T09:55:00.916733+05:30",
+            "title": "Daily Shipments",
+            "number": 12000,
+            "status": true
+        },
+        {
+            "id": 2,
+            "created_at": "2024-12-13T09:54:07.743171+05:30",
+            "updated_at": "2024-12-13T09:54:07.743171+05:30",
+            "title": "Pincode Covered",
+            "number": 28000,
+            "status": true
+        },
+        {
+            "id": 1,
+            "created_at": "2024-12-13T09:54:07.743171+05:30",
+            "updated_at": "2024-12-13T09:54:07.743171+05:30",
+            "title": "Expert Advisors",
+            "number": 150,
+            "status": true
+        }
+    ]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [isAnimated, setIsAnimated] = useState(false); // Track if animation has been applied
+    const sectionRef = useRef(null);
+
+    // Fetch API data
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const apiUrl = `${BASE_URL}/core-api/shipease-admin/stats-list/`;
+    //             const response = await axios.get(apiUrl);
+    //             setData(response.data);
+    //             setLoading(false);
+    //         } catch (err) {
+    //             setError("Failed to fetch data");
+    //             setLoading(false);
+    //         }
+    //     };
+    //     fetchData();
+    // }, []);
+
+    // Set up Intersection Observer
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !isAnimated) {
+                    setIsAnimated(true); // Trigger animation only once
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, [isAnimated]);
+
+
+    const [scale, setScale] = useState(0.5); // Scale of the image
+    const [isInView, setIsInView] = useState(false); // Track if the section is in view
+    const imageSectionRef = useRef(null); // Ref for the section containing the image
+    const imageRef = useRef(null); // Ref for the image
+
+    useEffect(() => {
+        // IntersectionObserver to detect when the section is in the viewport
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsInView(entry.isIntersecting); // Update state based on intersection
+            },
+            { threshold: 0.2 } // Trigger when at least 10% of the section is visible
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isInView) return;
+
+        const handleScroll = () => {
+            if (imageRef.current) {
+                const sectionTop = sectionRef.current.getBoundingClientRect().top;
+                const sectionHeight = sectionRef.current.offsetHeight;
+
+                // Calculate scroll progress within the section (0 to 1)
+                const progress = Math.min(
+                    Math.max(1 - sectionTop / sectionHeight, 0),
+                    1
+                );
+
+                // Update scale based on scroll progress (1x to 2x)
+                setScale(0.5 + progress * 0.6);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [isInView]);
+
+
+
+    return (
+        <section
+            className="home-section"
+            ref={sectionRef}
+        >
+            <div className="overview-container">
+                {/* Heading */}
+                <div className="heading">
+                    <p className="subtitle">A Reliable Partner for Accelerated Growth</p>
+                    <h1 className={`${isAnimated ? "animate__animated animate__fadeInLeft" : ""}`}>
+                        Lakhs of eCommerce businesses trust and chose<br />
+                        <span className="highlight-overview">
+                            <strong>ShipEase</strong> to enhance their customer experience—
+                            <br />
+                            seamlessly managing everything from shipping to returns and more.
+                        </span>
+                    </h1>
+                </div>
+
+                <div className="row" ref={imageSectionRef}>
+                    {/* Stats Section */}
+                    <div className="col-12 col-md-6 stats">
+                        {
+                            Array.isArray(data) && (
+                                data.map((item, index) => (
+                                    <div key={index} className="stat-item">
+                                        <h2>
+                                            {isAnimated && (
+                                                <CountUp
+                                                    start={0}
+                                                    end={item?.number}
+                                                    duration={3}
+                                                    separator=","
+                                                />
+                                            )}{" "}
+                                            +
+                                        </h2>
+                                        <p>{item?.title}</p>
+                                    </div>
+                                ))
+                            )}
+                    </div>
+
+                    {/* Visual Section */}
+                    <div className="col-12 col-md-6 visuals">
+                        <img
+                            ref={imageRef}
+                            src={BannerImage} alt="Banner"
+                            style={{
+                                transition: "transform .1s ease",
+                                transform: `scale(${scale})`,
+                            }}
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default OverviewSection;

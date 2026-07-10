@@ -1,0 +1,41 @@
+.bg-container-wt {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.bg-container-wt img:first-child {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation: upDown 10s linear infinite;
+}
+
+.bg-container-wt img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: upDown 10s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,173 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   BLOG NEWSLETTER SECTION
+============================================ */
+.blog-newsletter-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.newsletter-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.newsletter-subtitle {
+  color: #CBD5E1;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   FORM
+============================================ */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  width: 380px;
+  max-width: 90%;
+  padding: 14px 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #64748B;
+}
+
+.newsletter-input:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.newsletter-btn {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.5);
+}
+
+/* ============================================
+   NOTE
+============================================ */
+.newsletter-note {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .newsletter-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .blog-newsletter-section {
+    padding: 80px 0;
+  }
+
+  .newsletter-heading {
+    font-size: 2rem;
+  }
+
+  .newsletter-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-btn {
+    padding: 12px 30px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .blog-newsletter-section {
+    padding: 60px 0;
+  }
+
+  .newsletter-heading {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-subtitle {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    width: 90%;
+    padding: 12px 18px;
+  }
+
+  .newsletter-btn {
+    width: 90%;
+    max-width: 280px;
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .newsletter-heading {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-input {
+    padding: 11px 16px;
+    font-size: 0.9rem;
+  }
+}

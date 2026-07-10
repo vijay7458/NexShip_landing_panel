@@ -1,0 +1,119 @@
+/* DamagedShipment.css */
+
+.damaged-shipment-container {
+    padding: 20px;
+    /* background-color: #f8f9fb; */
+    max-width: 1200px;
+    margin: 30px auto;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+/* Intro Section */
+.damaged-shipment-intro {
+    text-align: center;
+}
+
+.damaged-shipment-intro p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Highlights Section */
+.damaged-shipment-highlights {
+    margin-bottom: 150px;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.damaged-shipment-highlights img {
+    max-width: 480px;
+}
+
+
+.damaged-shipment-highlights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.damaged-shipment-highlights li {
+    flex: 1 1 calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Solutions (Cards) Section */
+.damaged-shipment-solutions {
+    text-align: center;
+}
+
+
+.damaged-shipment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.damaged-shipment-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* max-width: 400px; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.damaged-shipment-item .solutions-image svg {
+    width: 180px;
+    height: 180px;
+}
+
+.damaged-shipment-item .solutions-description {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+}
+
+
+.damaged-shipment-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.damaged-shipment-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.damaged-shipment-description-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}

@@ -1,0 +1,133 @@
+.cs-grid-section {
+  width: 100%;
+  background: #0F172A;
+  color: #FFFFFF;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cs-grid-header {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.cs-grid-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.cs-grid-header p {
+  color: #CBD5E1;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.cs-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Card */
+.cs-grid-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease-in-out;
+}
+
+.cs-grid-card:hover {
+  transform: translateY(-6px);
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
+}
+
+/* Image — light panel so logos stay visible */
+.cs-grid-image {
+  overflow: hidden;
+  background: #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.cs-grid-image img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.cs-grid-card:hover .cs-grid-image img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.cs-grid-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.cs-grid-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #FFFFFF;
+}
+
+.cs-grid-category {
+  font-size: 0.85rem;
+  color: #3B82F6;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cs-grid-content p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  line-height: 1.6;
+}
+
+.cs-grid-btn {
+  margin-top: 1rem;
+  background: transparent;
+  border: 2px solid #3B82F6;
+  color: #FFFFFF;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cs-grid-btn:hover {
+  background: #3B82F6;
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cs-grid-header h2 {
+    font-size: 1.8rem;
+  }
+  .cs-grid-content {
+    text-align: center;
+  }
+  .cs-grid-btn {
+    width: 100%;
+  }
+}

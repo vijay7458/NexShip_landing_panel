@@ -1,0 +1,115 @@
+.esh-why-section {
+  width: 100%;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 6rem 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.esh-why-header {
+  max-width: 750px;
+  margin: 0 auto 4rem;
+}
+
+.esh-why-header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.esh-why-header span {
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
+}
+
+.esh-why-header p {
+  font-size: 1.05rem;
+  color: #CBD5E1;
+  line-height: 1.7;
+}
+
+/* Card Container */
+.esh-why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.esh-why-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease-in-out;
+}
+
+.esh-why-card:hover {
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
+  transform: translateY(-8px);
+}
+
+.esh-why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.04));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: inset 0 0 12px rgba(59, 130, 246, 0.08);
+  transition: all 0.35s ease;
+}
+
+.esh-why-card:hover .esh-why-icon {
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.08));
+  border-color: #3B82F6;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.25);
+  transform: scale(1.08);
+}
+
+.esh-why-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.esh-why-icon .icon-primary {
+  stroke: #60A5FA;
+}
+
+.esh-why-icon .icon-secondary {
+  stroke: #3B82F6;
+}
+
+.esh-why-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #FFFFFF;
+}
+
+.esh-why-card p {
+  color: #CBD5E1;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .esh-why-header h2 {
+    font-size: 2rem;
+  }
+
+  .esh-why-card {
+    padding: 1.8rem 1.2rem;
+  }
+}

@@ -1,0 +1,1120 @@
+@media only screen and (max-width: 1600px) {
+    .wip-heading p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .carrier-integration__partner-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .carrier-integration .bubble-image,
+    .channel-integration .bubble-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .career-page .accordion-header {
+        font-size: 1.8rem;
+        line-height: unset;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    #weight-accuracy .overview-container img {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .feature-card-content .benefit-list {
+        min-height: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .carrier-integration .bubble-image,
+    .channel-integration .bubble-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ceo-message-section .ceo-qoute {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #orbit-system {
+        margin: 0 !important;
+    }
+
+    .shipment-protection__cover-options {
+        gap: 110px;
+    }
+
+    .first-order img {
+        margin-bottom: -15px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1140px) {
+    .hero-banner {
+        padding: 32px;
+    }
+
+    .insights-footer img {
+        width: 100%;
+    }
+
+    #hero-banner .hero-banner {
+        padding: 50px 2rem;
+    }
+
+    .hero-banner .banner-text,
+    .hero-banner .banner-image {
+        padding: 0;
+    }
+
+    .header>div {
+        padding-inline: 2rem !important;
+    }
+
+    .header .navigation ul {
+        gap: 1.4rem;
+    }
+
+    .pickup-locations__faqs-section .amazon-self-ship-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pickup-locations__faqs-section .amazon-self-ship-container>p {
+        order: o;
+    }
+
+    .pickup-locations__faqs-section .amazon-self-ship-container>h2 {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .pickup-locations-faq-bg {
+        position: unset;
+        text-align: center;
+        order: 2;
+    }
+
+    .pickup-locations__faqs-list {
+        order: 3;
+    }
+
+    .ndr-management__benefits img {
+        width: 90%;
+        height: auto;
+        max-height: unset;
+    }
+
+    .ndr-management__page-container {
+        width: 90%;
+        margin-inline: auto;
+        padding: 0;
+    }
+
+    .carrier-integration .bubble-image,
+    .channel-integration .bubble-image {
+        opacity: 0.3;
+    }
+
+    .bubble-image:nth-child(1),
+    .bubble-image:nth-child(2) {
+        top: 59%;
+    }
+
+    .bubble-image:nth-child(3),
+    .bubble-image:nth-child(4) {
+        top: 79%;
+    }
+
+    .bubble-image:nth-child(5),
+    .bubble-image:nth-child(6) {
+        top: 69%;
+    }
+
+    .bubble-image:nth-child(7),
+    .bubble-image:nth-child(8) {
+        top: 89%;
+    }
+
+    .career-page .accordion-item img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .top-header {
+        display: none;
+    }
+
+    .header .navigation ul {
+        flex-direction: column;
+        /* Stack menu items vertically */
+        gap: 10px;
+        position: fixed;
+        background-color: var(--sh-primary-middle);
+        top: 0%;
+        right: -110%;
+        left: unset;
+        transition: 0.7s;
+        width: 150px;
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 20px;
+        padding-left: 10px;
+        z-index: 999999999;
+    }
+
+    .header .navigation ul li.nav-item>span,
+    .header .navigation ul li.nav-item>a {
+        text-align: end;
+    }
+
+    .header .navigation ul li.nav-item::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 22px;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-right: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .header .navigation ul li.nav-item:last-of-type:after {
+        display: none;
+    }
+
+    .navigation ul.show li.nav-item {
+        position: relative;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .navigation ul.show li.nav-item:hover .dropdown-menu {
+        max-width: unset;
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        margin-block: 15px;
+        position: absolute;
+        right: 130px;
+        left: unset;
+        /* height: 278px; */
+        padding-block: 20px;
+        padding-left: 10px;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .navigation ul.show {
+        right: 0;
+        padding: 20px 0;
+    }
+
+
+    .nav-item:hover .dropdown-menu {
+        position: static;
+        /* Dropdowns stack naturally */
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .track-login-nav {
+        gap: 7px;
+    }
+
+    .track-login-nav #toggle-icon {
+        display: block;
+    }
+
+    .navigation ul.show .nav-item:hover .dropdown-menu ul {
+        grid-template-columns: auto;
+        width: 100%;
+        gap: 6px;
+        padding: 0 10px;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .navigation ul.show .nav-item:hover ul.dropdown-menu>li:first-of-type {
+        display: none;
+    }
+
+    .navigation ul.show .nav-item:hover ul.dropdown-menu>li:last-of-type>div {
+        background: none;
+        padding: 10px;
+    }
+
+    .navigation ul.show .nav-item:hover ul.dropdown-menu>li:last-of-type>div ul {
+        padding: 0;
+    }
+
+    .navigation ul.show .nav-item:hover ul.dropdown-menu>li:last-of-type {
+        background: none;
+        padding: 0;
+    }
+
+    .navigation ul.show .nav-item:hover .dropdown-menu ul li {
+        height: fit-content;
+    }
+
+    .navigation ul.show .nav-item:hover .dropdown-menu ul li svg,
+    .navigation ul.show .nav-item:hover .dropdown-menu ul li a hr,
+    .navigation ul.show .nav-item:hover .dropdown-menu ul li a span {
+        display: none;
+    }
+
+    #orbit-system {
+        transform: translate(150px, -7px) !important;
+        -webkit-transform: translate(150px, -7px) !important;
+    }
+
+    .feature-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .feature-card-content>div {
+        place-self: unset;
+        min-height: 73px;
+        align-items: flex-start;
+    }
+
+    .tracking-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .tracking-container .tracking-content {
+        text-align: center;
+    }
+
+    .tracking-container .tracking-content img {
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .tracking-form {
+        width: 500px;
+    }
+
+    .damaged-shipment-highlights>div {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .damaged-shipment-highlights img {
+        width: 100%;
+    }
+
+    .business-plan-page .plans-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-inline: 15px;
+    }
+
+    .business-plan-page .plans-container .plan-item:nth-of-type(1),
+    .business-plan-page .plans-container .plan-item:nth-of-type(3) {
+        margin-block: 0;
+    }
+
+    .book-demo-sec {
+        width: 92%;
+        margin-inline: auto;
+        /* max-width: 380px; */
+    }
+
+    .shipping-rate-calculator__calculator button {
+        width: 100%;
+    }
+
+
+    .shipping-rate-calculator__row img {
+        width: 90%;
+        margin-inline: auto;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .shipping-rate-calculator__header {
+        padding-inline: 20px;
+    }
+
+    .shipment-protection-image {
+        bottom: -133px;
+    }
+
+
+
+    .early-cod__steps .hyperlocal__step {
+        max-width: 60%;
+    }
+
+    .pickup-benefits-items {
+        display: flex;
+        gap: 15px;
+    }
+
+    .hyperlocal__overview img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .career-page .accordion-header {
+        font-size: 1.3rem;
+    }
+
+    .career-section .whoweare-img img {
+        width: 100%;
+    }
+
+    .career-section .whoweare-img svg {
+        width: 90%;
+    }
+
+    .contact-us__container {
+        gap: 20px;
+    }
+
+    .contact-us__info,
+    .contact-us__form {
+        padding: 20px;
+    }
+
+    .contact-us__detail {
+        padding: 15px 20px;
+    }
+
+    .first-order {
+        order: -1;
+    }
+
+    .first-order img {
+        margin-bottom: 0;
+        max-width: 500px;
+    }
+
+    .about-section ul.why-choose-ul {
+        flex-direction: column;
+    }
+
+    .cr-section-info {
+        padding-top: 20px;
+    }
+
+    .cr-left-bg {
+        left: 40%;
+    }
+
+    .cr-left-logo {
+        left: 63%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #orbit-system {
+        transform: translate(150px, 50px) !important;
+        -webkit-transform: translate(150px, 50px) !important;
+    }
+
+    #checkout-recovery .checkout-flow img {
+        width: 90%;
+    }
+
+    #abandoned-cart .home-section {
+        padding-top: 0;
+    }
+
+    #abandoned-cart .abundant-recovery-flow img {
+        width: 90%;
+        max-width: unset;
+        margin-top: 1rem;
+    }
+
+    .detailed-footer .detailed-footer__container {
+        flex-direction: column-reverse;
+    }
+
+    .logistics-feature-card {
+        width: 95% !important;
+    }
+
+    .amazon-self-ship__features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career-page .accordion-item .accordion-text-content {
+        width: 100%;
+    }
+
+    .career-page .accordion-item img {
+        height: 191px;
+    }
+
+    .calc-input-container {
+        flex-direction: column;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight h3 {
+        font-size: 1.2rem;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+
+    #hero-banner .hero-banner {
+        flex-direction: column;
+    }
+
+    #orbit-system {
+        transform: translate(110px, 50px) !important;
+        -webkit-transform: translate(50px, 50px) !important;
+    }
+
+    #overview-section .home-section {
+        padding-top: 50px;
+    }
+
+    #overview-section .stats {
+        align-items: center;
+        margin-block: 0px;
+    }
+
+    #overview-section .stat-item h2>span {
+        font-size: 2rem;
+    }
+
+    #overview-section .stat-item p {
+        font-size: 0.8rem;
+    }
+
+    #overview-section .visuals {
+        flex-direction: column;
+    }
+
+    #overview-section .process-image,
+    #overview-section .truck-image {
+        margin-top: 2rem;
+    }
+
+    .timeline-container {
+        padding: 0;
+    }
+
+    .timeline::before {
+        left: 20px;
+        top: 9%;
+        height: 77%;
+    }
+
+    .timeline-event {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-event.left,
+    .timeline-event.right {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .timeline-icon {
+        left: -4px;
+        transform: none;
+        top: 30%;
+    }
+
+    .timeline-content {
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    .tracking-content {
+        max-width: 100%;
+        padding: 0;
+        min-width: unset;
+    }
+
+    .tracking-container .tracking-content img {
+        max-width: 90%;
+    }
+
+    .tracking-form {
+        max-width: unset;
+        min-width: 100%;
+        width: auto;
+        padding: 10px;
+    }
+
+    .tracking-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .tracking-description {
+        font-size: 16px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+    }
+
+    .benefits__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .shipment-protection__opt-for-cover {
+        padding-bottom: 180px;
+        padding-inline: 15px;
+    }
+
+    .shipment-protection-image {
+        width: 70%;
+        left: 15%;
+        bottom: -180px;
+    }
+
+    .shipment-protection__cover-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shipment-protection__cover {
+        width: 100%;
+    }
+
+    .shipment-protection-image {
+        width: 70%;
+        left: 15%;
+        bottom: -180px;
+    }
+
+    .ndr-management__feature-cards {
+        flex-direction: column;
+    }
+
+    .ndr-management__feature-card {
+        width: 100%;
+    }
+
+    .ndr-management__benefits {
+        gap: 15px;
+    }
+
+    .hyperlocal__cta-title {
+        font-size: 1.6rem;
+    }
+
+    .hyperlocal__steps {
+        padding-inline: 15px;
+    }
+
+    .early-cod__steps-bg {
+        display: none;
+    }
+
+    .early-cod__steps .hyperlocal__step {
+        max-width: 100%;
+    }
+
+    .pickup-benefits-items {
+        flex-direction: column;
+    }
+
+    .hyperlocal__overview .heading,
+    .hyperlocal__description {
+        text-align: center;
+    }
+
+
+    .carrier-integration__partner-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carrier-integration .bubble-image,
+    .channel-integration .bubble-image {
+        opacity: 0;
+    }
+
+    .whatsapp-integration-container__cta {
+        padding-inline: 0;
+    }
+
+    .whatsapp-integration-container__cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .whatsapp-integration-container__cta p {
+        font-size: 1rem;
+    }
+
+    .career-page .accordion-content {
+        z-index: 9;
+        position: relative;
+    }
+
+    .career-page .accordion-item img {
+        opacity: 1;
+    }
+
+    .career-page .accordion-item.open img {
+        opacity: 0.5;
+    }
+
+    .career-section .whoweare-img {
+        order: 1;
+        margin-bottom: 50px;
+    }
+
+    .about-mission {
+        background-size: cover;
+    }
+
+    .customer-counts ul {
+        flex-wrap: wrap;
+    }
+
+    .customer-counts ul li {
+        min-width: 33%;
+    }
+
+    .brands-logos {
+        flex-wrap: wrap;
+    }
+
+    .volumetric-weight-inputs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .volumetric-weight-inputs label {
+        min-width: calc(50% - 3rem);
+        width: 100%;
+        max-width: 500px;
+        min-width: calc(50% - 3rem);
+    }
+
+    .volumetric-weight-calculator .info img,
+    .volumetric-weight-calculator .calculation img {
+        max-width: 300px;
+    }
+
+    .volumetric-weight-calculator .info p,
+    .volumetric-weight-calculator .calculation p {
+        text-align: justify;
+    }
+
+    .cr-left-bg {
+        left: 20%;
+        width: 140%;
+        height: 80%;
+        top: 10%;
+    }
+
+    .cr-left-logo {
+        left: 38%;
+    }
+
+    .hyperlocal__marketplace img {
+        margin-bottom: 30px;
+        max-width: 300px;
+        margin-inline: auto;
+    }
+
+    .channel-integration__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .shipping-rate-calculator__calculator {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    #hero-banner .hero-banner {
+        justify-content: flex-end;
+        height: auto;
+        padding-block: 100px 0;
+        padding-inline: 20px;
+    }
+
+    .hero-banner .banner-image,
+    .hero-banner .banner-text {
+        flex: 0 0 auto;
+    }
+
+    .page-header h1,
+    .hero-banner .banner-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-banner .banner-text p {
+        font-size: 1rem;
+    }
+
+    .hero-banner .banner-text h1:first-of-type:after {
+        background-size: contain;
+        width: 32px;
+        height: 32px;
+        top: -9px;
+        right: -24px;
+    }
+
+    #orbit-system {
+        transform: translate(180px, -80px) !important;
+        -webkit-transform: translate(180px, -80px) !important;
+    }
+
+    #business-growth .features-grid {
+        flex-direction: column;
+    }
+
+    #operations-panel .features {
+        flex-direction: column;
+    }
+
+    .homepage .home-section {
+        padding-inline: 20px;
+    }
+
+    .home-section h1 {
+        font-size: 1.4rem !important;
+        line-height: 40px !important;
+    }
+
+    .highlight-overview {
+        font-size: 1.2rem !important;
+        line-height: 40px !important;
+    }
+
+    .insights-content .insights-text-content img {
+        max-width: 200px;
+        margin-inline: auto;
+    }
+
+    .insights-footer {
+        padding-inline: 20px;
+    }
+
+    #insights .insights-content .insights-text-content:last-of-type {
+        flex-direction: column-reverse;
+    }
+
+    #checkout-recovery .checkout-flow img {
+        width: 100%;
+    }
+
+    .bg-container-wt img {
+        width: 30%;
+    }
+
+    .feature-card-content .benefit-list {
+        min-height: 140px;
+    }
+
+
+    .tracking-form .tab-button {
+        padding: 6px;
+    }
+
+    .damaged-shipment-highlights img {
+        width: 90%;
+    }
+
+    .shipment-protection__opt-for-cover {
+        padding-bottom: 180px;
+    }
+
+    .shipment-protection-image {
+        width: 100%;
+        left: 0;
+        bottom: -180px;
+    }
+
+    .amazon-self-ship__features-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pickup-benefits-bg {
+        height: auto;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .carrier-integration__partner-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .page-header-description {
+        font-size: 1rem;
+    }
+
+    .whatsapp-integration-container .whatsapp-features-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ceo-message-section .ceo-qoute {
+        font-size: 1.4rem;
+    }
+
+    .about-impact ul,
+    .about-section ol,
+    .about-services ul {
+        padding-left: 0px;
+    }
+
+    .about-impact ul li,
+    .about-section ol li,
+    .about-services ul li {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        flex: auto;
+    }
+
+    .feature-card-content h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .cr-left-bg {
+        height: 60%;
+        top: 20%;
+    }
+
+    .cr-left-logo {
+        left: 30%;
+        height: 280px;
+    }
+
+    .cr-pointers p {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .cr-pointers p svg {
+        width: 40px;
+        height: 60px;
+    }
+
+    .insights-footer-container {
+        padding-inline: 20px;
+    }
+
+    .insights-footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #orbit-system {
+        scale: 0.8 !important;
+        transform: translate(110px, -50px) !important;
+        -webkit-transform: translate(110px, -50px) !important;
+    }
+
+    .track-login-nav a {
+        padding: 0;
+    }
+
+    .header>div {
+        padding-inline: 20px !important;
+    }
+
+    .logo img {
+        margin-top: 21px !important;
+        max-height: 22px;
+    }
+
+    .feature-card-content>div {
+        min-height: 155px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    h2.heading {
+        font-size: 1.6rem;
+    }
+
+    .amazon-self-ship-container h3 {
+        font-size: 1rem;
+    }
+
+    .hyperlocal__step {
+        max-width: 100%;
+    }
+
+    .career-page .accordion-item {
+        width: 75px;
+    }
+
+    .career-page .accordion-item.open {
+        width: 500px;
+    }
+
+    .career-page .accordion-container {
+        gap: 15px;
+    }
+
+    .career-page .accordion-item .accordion-text-content {
+        padding: 15px;
+    }
+
+    .career-page .accordion-content {
+        font-size: 0.8rem;
+    }
+
+    .career-page .career-text {
+        font-size: 1rem;
+    }
+
+    .career-page .no-openings::before {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-mission img {
+        width: 80px;
+        left: 142px;
+        right: unset;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight>div {
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight.open,
+    .volumetric-weight-calculator .calculator .calculated-weight.open>div {
+        height: 305px;
+    }
+
+    .volumetric-weight-calculator .calculator .calculated-weight h3,
+    .volumetric-weight-calculator .calculator .calculated-weight p {
+        max-width: 80%;
+    }
+
+    .cr-left-bg {
+        width: 188%;
+        height: 63%;
+        top: 20%;
+        left: 5%;
+    }
+
+    .cr-left-logo {
+        top: 31%;
+        left: 30%;
+        width: 130%;
+        height: 50%;
+    }
+
+    .cr-section .blue-half {
+        height: 480px;
+    }
+
+
+    .channel-integration__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tc-invester-container .iv-container-left {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .page-header h1,
+    .hero-banner .banner-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .feature-card-content .benefit-list {
+        min-height: 180px;
+    }
+
+    .feature-card-content>div {
+        min-height: 172px;
+    }
+
+    .order-header {
+        align-items: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .order-header>* {
+        text-align: right;
+    }
+
+    .courier-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .damaged-shipment-item .solutions-image svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .shipment-protection__opt-for-cover {
+        padding-bottom: 180px;
+    }
+
+    .shipment-protection-image {
+        width: 100%;
+        left: 0;
+        bottom: -180px;
+    }
+
+    .shipment-protection-image img {
+        width: 100%;
+    }
+
+    .shipment-protection__product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

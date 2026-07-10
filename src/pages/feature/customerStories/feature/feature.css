@@ -1,0 +1,130 @@
+.cs-featured-section {
+  width: 100%;
+  background-color: #0F172A;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cs-featured-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.cs-featured-image {
+  flex: 1;
+  min-width: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  box-sizing: border-box;
+  transition: all 0.35s ease-in-out;
+}
+
+.cs-featured-image:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.2);
+}
+
+.cs-featured-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.cs-featured-image:hover img {
+  transform: scale(1.03);
+}
+
+/* Right Content */
+.cs-featured-content {
+  flex: 1;
+  color: #FFFFFF;
+  min-width: 320px;
+}
+
+.cs-featured-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+}
+
+.cs-featured-heading span {
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
+}
+
+.cs-featured-block {
+  margin-bottom: 1.5rem;
+}
+
+.cs-featured-block h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.cs-featured-block p {
+  color: #CBD5E1;
+  line-height: 1.7;
+}
+
+.cs-featured-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cs-featured-block li {
+  color: #CBD5E1;
+  margin-bottom: 0.4rem;
+}
+
+/* Button */
+.cs-featured-btn {
+  margin-top: 1.5rem;
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  padding: 0.8rem 1.8rem;
+  border: 2px solid #3B82F6;
+  border-radius: 40px;
+  font-weight: 600;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cs-featured-btn:hover {
+  background-color: #2563EB;
+  border-color: #2563EB;
+  color: #FFFFFF;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cs-featured-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cs-featured-image img {
+    max-width: 90%;
+  }
+
+  .cs-featured-content {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,123 @@
+.early-cod {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.early-cod__header {
+    background: linear-gradient(90deg, #60a9eb 0%, #c5dcf1 50%, #60a9eb 100%);
+    text-align: center;
+    /* color: #fff;  */
+    padding: 40px 20px;
+}
+
+.early-cod__title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.early-cod__subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.early-cod__section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.early-cod__description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.early-cod__feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cm__feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.early-cod__feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.early-cod__feature h3 {
+    color: #092C4C;
+    margin-bottom: 10px;
+}
+
+.early-cod__steps {
+    margin-block: 3rem;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    padding-block: 40px 60px;
+}
+
+.early-cod__steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.early-cod__step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.early-cod__step-icon {
+    background: #092C4C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 0 auto 10px auto;
+}
+
+.early-cod__steps-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.early-cod__steps-bg img {
+    height: 100%;
+}
+
+.cm-feature-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.early-cod__conclude {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--sh-primary);
+    font-size: 1.4rem;
+}

@@ -1,0 +1,75 @@
+.cs-brands-section {
+  width: 100%;
+  background: #0F172A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 6rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.cs-brands-header {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.cs-brands-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.cs-brands-header p {
+  color: #CBD5E1;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Logo Grid */
+.cs-brands-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Brand Logo Card — light panel so logos stay visible */
+.cs-brand-card {
+  background: #F1F5F9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease-in-out;
+  cursor: pointer;
+}
+
+.cs-brand-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.cs-brand-card:hover img {
+  transform: scale(1.1);
+}
+
+.cs-brand-card:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cs-brands-header h2 {
+    font-size: 1.8rem;
+  }
+  .cs-brand-card img {
+    width: 60px;
+    height: 60px;
+  }
+}

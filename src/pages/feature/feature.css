@@ -1,0 +1,17 @@
+/* .video-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+} */
+
+/* ============================================
+   PAGE-LEVEL DARK THEME WRAPPER
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.feature-page-wrapper {
+  background-color: #0F172A;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}

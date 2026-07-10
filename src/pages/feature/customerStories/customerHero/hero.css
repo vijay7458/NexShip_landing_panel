@@ -1,0 +1,99 @@
+.cs-hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #0F172A;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cs-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 0 1.5rem;
+}
+
+/* Title */
+.cs-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.cs-hero-title span {
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
+}
+
+/* Subtitle */
+.cs-hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #CBD5E1;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.cs-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cs-btn-primary,
+.cs-btn-outline {
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Solid button */
+.cs-btn-primary {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border-color: #3B82F6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+}
+
+.cs-btn-primary:hover {
+  background-color: #2563EB;
+  border-color: #2563EB;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+}
+
+/* Outline button */
+.cs-btn-outline {
+  background: transparent;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.cs-btn-outline:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cs-hero-title {
+    font-size: 2.2rem;
+  }
+  .cs-hero-description {
+    font-size: 1rem;
+  }
+  .cs-hero-buttons {
+    flex-direction: column;
+  }
+}

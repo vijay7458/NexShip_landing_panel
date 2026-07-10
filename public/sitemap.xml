@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+  <url>
+    <loc>https://www.shipease.in/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://www.shipease.in/all-features</loc></url>
+  <url><loc>https://www.shipease.in/damaged-shipment</loc></url>
+  <url><loc>https://www.shipease.in/shipment-protection</loc></url>
+  <url><loc>https://www.shipease.in/ndr-management</loc></url>
+  <url><loc>https://www.shipease.in/hyper-local</loc></url>
+  <url><loc>https://www.shipease.in/amazon-self-ship</loc></url>
+  <url><loc>https://www.shipease.in/early-cod</loc></url>
+  <url><loc>https://www.shipease.in/pickup-locations</loc></url>
+  <url><loc>https://www.shipease.in/plans-pricing</loc></url>
+  <url><loc>https://www.shipease.in/rate-calculator</loc></url>
+  <url><loc>https://www.shipease.in/prepaid-cod</loc></url>
+  <url><loc>https://www.shipease.in/carrier-integration</loc></url>
+  <url><loc>https://www.shipease.in/api-integration</loc></url>
+  <url><loc>https://www.shipease.in/channel-integration</loc></url>
+  <url><loc>https://www.shipease.in/whatsapp-integration</loc></url>
+  <url><loc>https://www.shipease.in/refer-and-earn</loc></url>
+  <url><loc>https://www.shipease.in/media</loc></url>
+  <url><loc>https://www.shipease.in/careers</loc></url>
+  <url><loc>https://www.shipease.in/order-tracking</loc></url>
+  <url><loc>https://www.shipease.in/track-order</loc></url>
+  <url><loc>https://www.shipease.in/contact</loc></url>
+  <url><loc>https://www.shipease.in/terms-and-conditions</loc></url>
+  <url><loc>https://www.shipease.in/privacy-policy</loc></url>
+  <url><loc>https://www.shipease.in/about-us</loc></url>
+  <url><loc>https://www.shipease.in/customers</loc></url>
+  <url><loc>https://www.shipease.in/support/home</loc></url>
+  <url><loc>https://www.shipease.in/volumetric-weight-calculator</loc></url>
+</urlset>

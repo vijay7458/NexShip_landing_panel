@@ -1,0 +1,49 @@
+/* .whatsapp-integration-container .pin-spacer {
+  height: 5400px !important;
+}
+
+.whatsapp-integration-container .wi-carousel-section {
+  height: 100vh !important;
+} */
+
+.wi-carousel-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wi-carousel-track {
+  display: flex;
+  width: max-content;
+  height: 80vh;
+  align-items: center;
+}
+
+.wi-carousel-item {
+  flex: 0 0 50vw;
+  max-width: 50vw;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wi-carousel-item img {
+  width: 28%;
+  display: block;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.wi-carousel-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.wi-carousel-item p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 300px;
+  white-space: wrap;
+}

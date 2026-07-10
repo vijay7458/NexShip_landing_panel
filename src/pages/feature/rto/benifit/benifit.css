@@ -1,0 +1,192 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   RTO BENEFITS SECTION
+============================================ */
+.rto-benefits-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.benefits-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.benefits-subtitle {
+  color: #CBD5E1;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================
+   CARD STYLING (Glassmorphism)
+============================================ */
+.benefit-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 40px 25px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.benefit-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* ============================================
+   ICONS
+============================================ */
+.benefit-icon-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.04));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.35s ease;
+}
+
+.benefit-card:hover .benefit-icon-wrapper {
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.08));
+  border-color: #3B82F6;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.25);
+}
+
+.benefit-icon {
+  width: 42px;
+  height: 42px;
+  filter: brightness(0) invert(1); /* white icon on dark badge */
+  transition: all 0.4s ease-in-out;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1);
+}
+
+/* ============================================
+   TEXT
+============================================ */
+.benefit-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+}
+
+.benefit-desc {
+  font-size: 1rem;
+  color: #CBD5E1;
+  line-height: 1.6;
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .benefits-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .benefits-title {
+    font-size: 2rem;
+  }
+
+  .benefit-card {
+    padding: 30px 20px;
+  }
+
+  .benefit-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .benefit-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .benefit-title {
+    font-size: 1.1rem;
+  }
+
+  .benefit-desc {
+    font-size: 0.95rem;
+  }
+
+  .rto-benefits-section {
+    padding: 80px 0;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .rto-benefits-section {
+    padding: 60px 0;
+  }
+
+  .benefits-title {
+    font-size: 1.8rem;
+  }
+
+  .benefits-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .benefit-card {
+    width: 100%;
+    margin: 0 auto 25px;
+  }
+
+  .benefit-icon-wrapper {
+    width: 72px;
+    height: 72px;
+  }
+
+  .benefit-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .benefits-title {
+    font-size: 1.5rem;
+  }
+
+  .benefit-card {
+    padding: 25px 18px;
+  }
+}

@@ -1,0 +1,213 @@
+/* Page Layout */
+.hyperlocal__page-container {
+    padding-block: 4rem;
+    color: #333;
+    position: relative;
+}
+
+
+
+.hyperlocal__page-container section {
+    padding-inline: 4rem;
+    margin-top: 100px;
+    width: 100%;
+}
+
+/* Header */
+.hyperlocal__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hyperlocal__main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.hyperlocal__sub-title {
+    font-size: 1.25rem;
+    color: #7f8c8d;
+}
+
+/* Section Titles */
+.hyperlocal__section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Overview Section */
+.hyperlocal__overview {
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hyperlocal__description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+/* Features Section */
+.hyperlocal__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.hyperlocal__feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.hyperlocal__feature-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hyperlocal__feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.hyperlocal__feature-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Benefits Section */
+.hyperlocal__marketplace {
+    margin-bottom: 3rem;
+    justify-content: space-between;
+}
+
+.hyperlocal__benefit-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hyperlocal__benefit-list li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.hyperlocal__benefit-item {
+    font-size: 1.125rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+/* How It Works Section */
+.hyperlocal__how-it-works {
+    margin-bottom: 3rem;
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    padding-block: 40px 60px;
+}
+
+.hyperlocal__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid #B8C6C8;
+    margin-top: 34px;
+}
+
+.hyperlocal__steps p {
+    margin-bottom: 0px;
+}
+
+.hyperlocal__steps hr {
+    border-color: #AEBBBD;
+}
+
+.hyperlocal__step {
+    display: flex;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.hyperlocal__step .hyperlocal-step-number {
+    color: var(--sh-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 24px;
+}
+
+.hyperlocal__step-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #092C4C;
+    margin-bottom: 15px;
+}
+
+/* Call to Action Section */
+.hyperlocal__cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+    /* border-radius: 8px; */
+}
+
+.hyperlocal__cta-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hyperlocal__cta-description {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hyperlocal__cta-button {
+    background-color: #ffffff;
+    color: #092C4C;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hyperlocal__cta-button:hover {
+    background-color: #ecf0f1;
+}
+
+
+.hyperlocal__marketplace img {
+    width: 100%;
+    height: auto;
+}
+
+.hyperlocal__page-container section {
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+.hyperlocal__header {
+    padding-inline: 20px;
+}

@@ -1,0 +1,146 @@
+/* -----------------------------
+   FINANCIAL REPORTS & FILINGS SECTION
+------------------------------ */
+
+.financial-reports-section {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.reports-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+/* Report Card */
+.report-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 40px 25px;
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  border-color: #000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.report-icon-wrapper {
+  margin-bottom: 25px;
+}
+
+.report-icon {
+  width: 70px;
+  height: 70px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.report-card:hover .report-icon {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Text */
+.report-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.report-desc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  min-height: 80px;
+}
+
+/* Button */
+.download-btn {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  align-self: center;
+}
+
+.download-btn:hover {
+  background-color: transparent;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .financial-reports-section {
+    padding: 80px 0;
+  }
+
+  .report-card {
+    padding: 30px 20px;
+  }
+
+  .report-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .report-title {
+    font-size: 1.2rem;
+  }
+
+  .report-desc {
+    font-size: 0.95rem;
+  }
+
+  .download-btn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .reports-title {
+    font-size: 1.8rem;
+  }
+
+  .report-card {
+    width: 90%;
+    margin: 0 auto 25px;
+  }
+
+  .report-title {
+    font-size: 1.1rem;
+  }
+
+  .report-desc {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    padding: 8px 20px;
+  }
+}

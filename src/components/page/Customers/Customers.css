@@ -1,0 +1,457 @@
+.customers-page section {
+    margin-top: 100px;
+}
+
+.customer-counts ul {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    text-align: center;
+}
+
+.customer-counts ul p {
+    margin-bottom: 0;
+}
+
+.customer-counts ul p:first-of-type {
+    color: var(--sh-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.customer-counts ul li {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Customer Testimonials */
+.customer-testimonials {
+    text-align: center;
+    padding: 0px 20px;
+    /* background: #f4f4f4; */
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.quote-icon {
+    color: #1975C9;
+    font-size: 2rem;
+}
+
+.testimonial-card p {
+    margin: 10px 0;
+}
+
+
+.testimonial-card span {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Trusted By */
+.trusted-by {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.brands-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.brands-logos img {
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.brands-logos img:nth-of-type(1),
+.brands-logos img:nth-of-type(5),
+.brands-logos img:nth-of-type(4) {
+    border-radius: 8px;
+}
+
+.brands-logos img:hover {
+    transform: scale(1.3);
+}
+
+/* Case Studies */
+.case-studies {
+    /* padding: 60px 20px; */
+    padding-top: 10px;
+    /* background: #f4f4f4; */
+    text-align: center;
+}
+
+.case-studies-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.case-study-card {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 5px var(--sh-primary-light);
+    max-width: 400px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.case-study-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-card h3 {
+    font-size: 1.2rem;
+}
+
+/* Get Started */
+.get-started {
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb40 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box; */
+    padding-block: 3rem 2rem;
+    box-shadow: 0 0 17px 0px #0d6efd4a;
+    text-align: center;
+}
+
+.get-started p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.customer-counts-des {
+    max-width: 900px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+/* 
+.customer-carousel .swiper-wrapper {
+    transition: 0.5s !important;
+} */
+
+.customer-carousel .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.customer-carousel .swiper-slide:hover {
+    box-shadow: inset 0 0 0 5px var(--sh-primary-light);
+}
+
+.customer-carousel .swiper-slide img {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    max-height: 80px;
+    width: auto;
+}
+
+img[alt="Swiss Military"] {
+    padding: 10px;
+}
+
+.customer-carousel .swiper-pagination {
+    bottom: 4px !important;
+}
+
+.customer-carousel .swiper-pagination-bullet {
+    transition: 0.5s;
+}
+
+.customer-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 50px;
+    border-radius: 5px;
+    background: var(--sh-primary-middle);
+}
+
+
+
+
+/* new design customer css */
+
+.customer-metrics-section {
+    padding: 0rem 1rem;
+    background-color: #f8f9fb;
+}
+
+.customer-metrics-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.metrics-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.metrics-description {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.metrics-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.metric-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 220px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.testimonial-controls button {
+    background-color: #2b6cb0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder !important;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
+}
+
+
+
+.testimonial-wrapper {
+    position: relative;
+    /* padding: 40px 20px; */
+    /* background-color: #ffffff; */
+    border-radius: 16px;
+    /* max-width: 100%; */
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.testimonial-controls {
+    /* position: absolute;
+    right: 0; */
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.testinomail-topbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.testinomail-topbar h2 {
+    color: #000000;
+    font-family: "Poppins, sans-serif",
+
+
+}
+
+.testimonial-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-behavior: auto;
+}
+
+.testimonial-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.testimonial-card {
+    min-width: 300px;
+    max-width: 350px;
+    flex: 0 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.scroll-start-spacer {
+    min-width: 60px;
+    /* adjust as needed for your margin */
+    flex: 0 0 auto;
+}
+
+.main-container-testinomial {
+    margin-top: 6rem;
+    min-height: 450px;
+    padding: 4rem 0rem;
+    background-color: #e8f3f4
+}
+
+
+
+.trusted-section-wrapper {
+    padding: 60px 0px 20px 00px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.trusted-section-content {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.trusted-section-heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.trusted-section-subtext {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.trusted-section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.trusted-section-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.trusted-logo-container {
+    flex: 0 0 auto;
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.trusted-logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.trusted-logo-container:hover img {
+    filter: grayscale(0%);
+}
+
+.trusted-cta {
+    margin-top: 20px;
+}
+
+.trusted-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.trusted-cta-button {
+    background-color: #1e40af;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.trusted-cta-button:hover {
+    background-color: #1a3696;
+}
+
+
+
+/* media quesries */
+@media(max-width :786px){
+    .testinomail-topbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.scroll-start-spacer{
+    min-width: 0;
+}
+}
+

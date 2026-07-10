@@ -1,0 +1,74 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   DISCOUNT / ANNOUNCEMENT BAR
+============================================ */
+.discount-bar-main {
+  width: 100%;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.discount-content-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.discount-text-main {
+  font-size: 14px;
+  font-weight: 500;
+  color: #CBD5E1;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .discount-text-main {
+    font-size: 13px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .discount-bar-main {
+    padding: 7px 8px;
+  }
+
+  .discount-text-main {
+    font-size: 11.5px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .discount-content-main {
+    white-space: normal;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .discount-text-main {
+    font-size: 10.5px;
+  }
+}

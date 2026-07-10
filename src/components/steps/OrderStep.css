@@ -1,0 +1,23 @@
+.order-step-container {
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-step-class{
+    position: sticky;
+    height: 80vh;
+    top: 200px;
+}
+
+@media  (max-width : 500px){
+    .main-step-class{
+    position: relative;
+    height: 30vh;
+    top: 20px;
+}
+
+}

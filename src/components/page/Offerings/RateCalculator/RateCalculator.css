@@ -1,0 +1,330 @@
+/* Container Styling */
+.shipping-rate-calculator {
+  margin-block: 50px 100px;
+}
+
+.shipping-rate-calculator__header {
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.shipping-rate-calculator__header h2.heading {
+  margin-bottom: 10px;
+}
+
+/* Main Layout */
+.shipping-rate-calculator__main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* background: linear-gradient(to right bottom, #ff7cb1, #e69ae3, #c3b7ff, #aacfff, #abe1ff); */
+
+}
+
+/* Row Layout */
+.shipping-rate-calculator__row {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+  /* padding: 20px 15px; */
+  overflow: hidden;
+  border-radius: 15px;
+  /* position: relative; */
+  z-index: 1;
+  margin-top: 30px;
+
+  /* background: rgba(255, 255, 255, 0.52);
+  border-radius: 16px;
+  backdrop-filter: blur(15.3px);
+  -webkit-backdrop-filter: blur(15.3px);
+  border: 1px solid rgba(255, 255, 255, 1); */
+}
+
+.rc-area {
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px;
+  background: #fff;
+}
+
+/* .shipping-rate-calculator__main>.amazon-self-ship-container {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+} */
+
+/* .shipping-rate-calculator__main>.amazon-self-ship-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  height: 90%;
+  background-image: url("../../../../assets/image/RateCalculatorImg.svg");
+  background-repeat: no-repeat;
+  top: 50px;
+  right: 0%;
+  z-index: -1;
+  animation: bigSmall 8s ease-in-out infinite;
+} */
+
+@keyframes bigSmall {
+  0% {
+    transform: scale(1.0);
+  }
+
+  50% {
+    transform: scale(1.17);
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+.shipping-rate-calculator__row img {
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+  opacity: 0.8;
+}
+
+/* How-To Section */
+.shipping-rate-calculator__calculator {
+  /* flex: 1; */
+  /* min-width: 300px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* max-width: 70%; */
+  /* padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9; */
+}
+
+.shipping-rate-calculator__how-to ol {
+  color: #555;
+}
+
+.shipping-rate-calculator__how-to li {
+  margin-bottom: 8px;
+}
+
+/* Calculator Section */
+.shipping-rate-calculator__input-group {
+  margin-bottom: 0px;
+}
+
+.shipping-rate-calculator__input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+
+.shipping-rate-calculator__input-group input,
+.shipping-rate-calculator__input-group input:focus-visible {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--sh-primary-light);
+  border-radius: 6px;
+  height: 40px;
+  outline: none;
+}
+
+.grid-item3 {
+  grid-column: auto / span 2;
+}
+
+
+.shipping-rate-calculator__button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shipping-rate-calculator__button:hover {
+  background-color: #0056b3;
+}
+
+/* Result Section */
+.shipping-rate-calculator__result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shipping-rate-calculator__result p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Factors Section */
+.shipping-rate-calculator__factors {
+  background-color: #f8f9fa;
+  margin-block: 20px;
+  padding-block: 20px;
+}
+
+
+.shipping-rate-calculator__factors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.shipping-rate-calculator__factors li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.required-text {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+
+.courier-rates-pop::-webkit-scrollbar {
+  width: 5px;
+}
+
+.courier-rates-pop::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.courier-rates-pop::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.courier-rates-pop::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.courier-rates-pop {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  /* position: relative; */
+}
+
+.courier-rates-pop thead tr {
+  position: sticky;
+  top: 0;
+}
+
+.courier-rates-pop thead tr th {
+  background: #fff;
+}
+
+.courier-rates-pop td {
+  padding-block: 10px;
+}
+
+
+.shipping-rate-calculator__input-group .dimension {
+  display: flex;
+  gap: 15px;
+}
+
+.shipping-rate-calculator__input-group.weight-input {
+  position: relative;
+}
+
+
+
+.shipping-rate-calculator__input-group .dimension label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.shipping-rate-calculator__input-group .radio-options {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.shipping-rate-calculator__input-group .radio-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.shipping-rate-calculator__input-group .radio-options label input {
+  height: auto;
+}
+
+.shipping-rate-calculator__input-group.weight-input::after,
+.shipping-rate-calculator__input-group .dimension label::after {
+  content: "kg";
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  background: var(--sh-primary-light);
+  /* background: #dfdfdf; */
+  width: 35px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 6px 6px 0;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.shipping-rate-calculator__input-group.weight-input::after {
+  content: "KG";
+}
+
+.shipping-rate-calculator__input-group .dimension label::after {
+  content: "CM";
+}
+
+
+.shipping-rate-calculator__input-group.error-field input {
+  border-color: red;
+}
+
+.warning-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .shipping-rate-calculator__row {
+    flex-direction: column;
+  }
+}

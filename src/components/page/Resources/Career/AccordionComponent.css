@@ -1,0 +1,111 @@
+.accordion-container {
+  display: flex;
+  /* width: 100%; */
+  /* max-width: 800px; */
+  margin: auto;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.accordion-item {
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  /* border-right: 1px solid #ddd; */
+  width: 100px;
+  height: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 20px 40px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border-radius: 8px !important;
+}
+
+
+.accordion-item .accordion-text-content {
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  padding: 40px;
+  color: #fff;
+  width: 60%;
+}
+
+.accordion-item.open .accordion-text-content {
+  opacity: 1;
+  visibility: visible;
+  max-height: 350px;
+  /* Adjust as needed */
+}
+
+.accordion-item:nth-of-type(1) {
+  background: linear-gradient(90deg, #FFCA7E 0%, #FF813A 100%);
+}
+
+.accordion-item:nth-of-type(2) {
+  background: linear-gradient(90deg, #00A489 0%, #116775 100%);
+}
+
+.accordion-item:nth-of-type(3) {
+  background: linear-gradient(90deg, #5EC0FF 0%, #8167FF 100%);
+}
+
+.accordion-item:nth-of-type(4) {
+  background: linear-gradient(90deg, #CF89FF 0%, #9B2DBD 100%);
+}
+
+.accordion-item:nth-of-type(5) {
+  background: linear-gradient(90deg, #F47D66 0%, #C3053D 100%);
+}
+
+.accordion-item:last-child {
+  border-right: none;
+}
+
+.accordion-item.open {
+  width: 600px;
+}
+
+.accordion-header {
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.accordion-content {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* max-width: 60%; */
+  margin-top: 20px;
+}
+
+.accordion-header,
+.accordion-content {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.accordion-item.open .accordion-header,
+.accordion-item.open .accordion-content {
+  opacity: 1;
+}
+
+.accordion-item img {
+  position: absolute;
+  height: 300px;
+  width: auto;
+  bottom: 0;
+  right: -44px;
+  transition: right 0.3s ease-in-out;
+}
+
+.accordion-item.open img {
+  right: 0;
+}

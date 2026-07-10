@@ -1,0 +1,113 @@
+.business-growth-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    color: #092C4C;
+    /* Adjust the color */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dashboard-image-container {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 30px; */
+}
+
+.dashboard-image {
+    max-width: 100%;
+    height: auto;
+    /* border: 1px solid #ddd; */
+    /* Optional border for visibility */
+    border-radius: 10px;
+    /* Rounded corners */
+    /* margin-bottom: 50px; */
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures responsiveness */
+    gap: 30px;
+}
+
+.feature-item {
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* vert-card */
+
+    background: linear-gradient(150.67deg, #C5DCF1 20.05%, #60A9EB 41.29%, #1975C9 86.07%);
+    background: linear-gradient(150.67deg, #c5dcf182 20.05%, #60a9eb1c 41.29%, #1975c97a 86.07%);
+    /* background: linear-gradient(135deg, #e0f7ff, #c0e7ff); */
+    background: #fff;
+    border-radius: 12px;
+
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.bg-feature-title {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.feature-description {
+    color: #000;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+.business-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 18px;
+    border: 2px dashed #6c757d;
+}
+
+.bg-fetaure-section {
+    padding: 100px 2rem 100px;
+    background: var(--sh-primary-middle);
+    position: relative;
+    /* margin-top: 50px; */
+    /* border-radius: 20px; */
+    /* margin-inline: -2rem; */
+    overflow: hidden;
+}
+
+.bg-fetaure-section .overview-container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-fetaure-section::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    left: 0;
+    background: url("../../../../assets/image/growth-bg2.png");
+    background-size: contain;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    opacity: 0.2;
+    /* filter: brightness(1) grayscale(0.5); */
+}

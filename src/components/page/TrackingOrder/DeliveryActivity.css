@@ -1,0 +1,131 @@
+.delivery-info {
+    padding: 25px 10px 10px 10px;
+    position: relative;
+    /* background: #fff; */
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 5px;
+}
+
+.delivery-list-wrap {
+    max-height: 175px;
+    /* overflow-y: auto; */
+}
+
+.delivery-info ul {
+    padding-left: 100px;
+    width: 100%;
+    float: right;
+    margin: 0;
+    margin-top: -20px;
+    max-height: 260px;
+    overflow: auto;
+}
+
+/* For WebKit browsers */
+.delivery-info ul::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Track (background) */
+.delivery-info ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Light grey background */
+    border-radius: 5px;
+}
+
+/* Handle (the moving part) */
+.delivery-info ul::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Dark grey handle */
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.delivery-info ul::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker grey */
+}
+
+.delivery-list-item {
+    list-style: none;
+    /* background: #fff; */
+    padding: 22px 0px 5px 17px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    margin-right: 5px;
+}
+
+.delivery-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.delivery-list-item span:first-child {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.delivery-list-item span span {
+    display: inline;
+}
+
+.delivery-info li .date-for-activities {
+    position: absolute;
+    left: -85px;
+    top: 28px;
+    text-align: right;
+    font-size: 11px;
+}
+
+.delivery-info li .date-for-activities span:first-child {
+    margin-bottom: 1px;
+}
+
+.delivery-info li .activity {
+    color: #737373;
+    font-size: 16px;
+}
+
+.delivery-list-item:after {
+    content: '';
+    height: 100%;
+    width: 2px;
+    display: block;
+    position: absolute;
+    left: -8px;
+    top: 59px;
+    z-index: 3;
+    border: 1px dashed #e4e2e2;
+}
+
+.delivery-list-item.active .circle-icon {
+    border: 3px solid white;
+}
+
+.delivery-list-item:last-child:after {
+    display: none;
+}
+
+.circle-icon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 0;
+    border: 3px solid white;
+    box-shadow: 0 0 2px #a8a8a8;
+    display: block;
+    left: -15px;
+    border-radius: 50%;
+    background: #a8a8a8;
+    z-index: 9;
+    top: 42px;
+}
+
+.delivery-list-item.active .circle-icon {
+    background: #18F040;
+}
+
+.delivery-list-item.active span span {
+    color: #1EA231;
+}

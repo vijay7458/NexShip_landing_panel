@@ -1,0 +1,205 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   RTO SUCCESS STORIES SECTION
+============================================ */
+.rto-case-white {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  padding: 120px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.case-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+/* ============================================
+   LAYOUT
+============================================ */
+.case-row {
+  gap: 30px;
+  margin-bottom: 80px !important;
+}
+
+.case-img-wrap {
+  text-align: center;
+}
+
+.case-img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.case-img:hover {
+  box-shadow: 0 24px 60px rgba(59, 130, 246, 0.2);
+}
+
+/* ============================================
+   TEXT SIDE
+============================================ */
+.case-content {
+  padding: 20px 30px;
+}
+
+.case-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #FFFFFF;
+}
+
+.case-desc {
+  font-size: 1.05rem;
+  color: #CBD5E1;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  max-width: 520px;
+}
+
+/* ============================================
+   STAT PILLS
+============================================ */
+.case-stats {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.case-stats li {
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.case-stats li:hover {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  border-color: #3B82F6;
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .case-heading {
+    font-size: 2.3rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .case-heading {
+    font-size: 2.2rem;
+  }
+
+  .case-title {
+    font-size: 1.6rem;
+  }
+
+  .case-desc {
+    font-size: 1rem;
+  }
+
+  .case-img {
+    max-width: 420px;
+  }
+
+  .case-content {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .case-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .case-stats {
+    justify-content: center;
+  }
+
+  .rto-case-white {
+    padding: 90px 0;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .rto-case-white {
+    padding: 70px 0;
+  }
+
+  .case-heading {
+    font-size: 1.8rem;
+  }
+
+  .case-title {
+    font-size: 1.4rem;
+  }
+
+  .case-desc {
+    font-size: 0.95rem;
+  }
+
+  .case-img {
+    max-width: 320px;
+  }
+
+  .case-stats li {
+    font-size: 0.85rem;
+    padding: 8px 18px;
+  }
+
+  .case-content {
+    padding: 20px 10px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .case-heading {
+    font-size: 1.6rem;
+  }
+
+  .case-img {
+    max-width: 260px;
+  }
+
+  .case-stats {
+    gap: 10px;
+  }
+
+  .case-stats li {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+}

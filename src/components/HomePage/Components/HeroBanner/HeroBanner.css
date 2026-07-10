@@ -1,0 +1,235 @@
+.hero-banner {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  overflow-y: unset;
+  /* overflow-x: clip; */
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 220px);
+
+  max-width: 1322px;
+}
+
+#hero-banner {
+  overflow: hidden;
+  position: relative;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-banner::before {
+  /* content: "";
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  height: 42%;
+  background: #fff;
+  background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+  z-index: 1;
+  top: 100%;
+  filter: blur(13px);
+  transition: all 1s ease; */
+  content: "";
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 50px;
+  background: #f9f9f9;
+  filter: blur(13px);
+  bottom: 0;
+  z-index: 3;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  bottom: -108px;
+  left: -100%;
+  width: 300%;
+  height: 157%;
+  /* background: linear-gradient(90deg,
+      #60a9eb 0%,
+      #C5DCF1 25%,
+      #fff 50%,
+      #C5DCF1 75%,
+      #60a9eb 100%); */
+  background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+  background-size: 300% 300%;
+  /* transform: rotate(-3deg); */
+  border-radius: 16px;
+  /* animation: gradientBG 10s ease infinite; */
+  z-index: -1;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.banner-text {
+  flex: 1;
+  /* Adjust proportionally */
+  padding-right: 20px;
+  /* Space between text and image */
+  color: #333;
+  /* Dark text color */
+  z-index: 1;
+}
+
+.banner-text h1 {
+  font-size: 3.38rem;
+  /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 0;
+  color: var(--sh-secondary);
+}
+
+.banner-text h1 span {
+  cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.banner-text h1 span:hover {
+  transform: translateY(-10px);
+  /* Jump effect */
+  color: var(--sh-primary);
+  /* Optional: Change color on hover */
+  animation: letterBounce 0.5s ease-in-out;
+  /* Smooth bounce effect */
+}
+
+
+.banner-text h1:first-of-type {
+  position: relative;
+  width: fit-content;
+}
+
+.banner-text h1:first-of-type:after {
+  position: absolute;
+  content: "";
+  top: -12px;
+  right: -36px;
+  background: url(../../../../assets/image/generic-1.svg) no-repeat 98% 0%;
+  width: 52px;
+  height: 52px;
+}
+
+@keyframes letterBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.banner-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #666;
+  margin-top: 15px;
+}
+
+.banner-image {
+  flex: 1;
+  /* Adjust proportionally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* 
+.banner-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  animation: floatAnimation 8s ease-in-out infinite;
+} */
+
+
+/* Floating Animation */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-10px) scale(1.02);
+    /* Slight lift and zoom */
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* General container */
+.animated-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  gap: 0px;
+}
+
+/* Base animation for each letter */
+.text-animate-hover {
+  display: inline-block;
+  opacity: 1;
+  animation: jumpAnimation 0.6s ease forwards;
+  transform-origin: center;
+}
+
+/* Keyframe for the jump effect */
+@keyframes jumpAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  70% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

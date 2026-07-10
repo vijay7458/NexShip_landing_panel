@@ -1,0 +1,218 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   OUR MISSION & VISION SECTION
+============================================ */
+.mission-vision-section {
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A;
+  /* background-image:
+    radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%); */
+  color: #FFFFFF;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   ROW — EQUAL HEIGHT CARDS FIX
+============================================ */
+.mission-vision-section .row {
+  row-gap: 24px;
+  column-gap: 24px;
+  align-items: stretch !important; /* overrides Bootstrap's align-items-center so both cards match height */
+}
+
+.mission-vision-section .row > div[class*="col-"] {
+  display: flex; /* ensures the card inside stretches to fill the column height */
+}
+
+/* ============================================
+   TITLES
+============================================ */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 4px solid #3B82F6;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* ============================================
+   PARAGRAPHS — BRIGHTER, MORE VISIBLE TEXT
+============================================ */
+.section-desc {
+  font-size: 1.1rem;
+  color: #E2E8F0;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 1; /* ensures text is fully visible once animation completes */
+}
+
+/* ============================================
+   LAYOUT — GLASS CARD PANELS (EQUAL SIZE)
+============================================ */
+.mission,
+.vision {
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.mission:hover,
+.vision:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.15);
+}
+
+.mission {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  margin-right: 4px;
+}
+
+.vision {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  margin-left: 4px;
+}
+
+/* ============================================
+   ANIMATIONS
+============================================ */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-left {
+  animation: slideLeft 1.2s ease forwards;
+}
+
+.animate-right {
+  animation: slideRight 1.2s ease forwards;
+}
+
+@keyframes slideLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  0% { opacity: 0; transform: translateX(30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .mission-vision-section {
+    padding: 80px 0;
+  }
+
+  .mission-vision-section .row {
+    row-gap: 20px;
+  }
+
+  .mission,
+  .vision {
+    border: none;
+    text-align: center;
+    padding: 24px 16px;
+    margin: 0;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    border-left: none;
+    border-bottom: 2px solid #3B82F6;
+    display: inline-block;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .mission-vision-section {
+    padding: 60px 0;
+  }
+
+  .mission-vision-section .row {
+    row-gap: 16px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .mission,
+  .vision {
+    padding: 20px 14px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-desc {
+    font-size: 0.9rem;
+  }
+}

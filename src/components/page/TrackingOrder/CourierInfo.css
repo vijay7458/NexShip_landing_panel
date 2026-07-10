@@ -1,0 +1,44 @@
+.courier-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.courier-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.courier-name {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.courier-title {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.tracking-info {
+    text-align: right;
+}
+
+.tracking-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tracking-id {
+    color: var(--sh-primary);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 425px) {
+    .courier-title {
+        font-size: 16px;
+    }
+}

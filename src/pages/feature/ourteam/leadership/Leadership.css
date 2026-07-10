@@ -1,0 +1,134 @@
+/* -----------------------------
+   LEADERSHIP / FOUNDERS SECTION
+------------------------------ */
+
+.leadership-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: #3B82F6;
+  border-radius: 4px;
+}
+
+/* Leader Card */
+.leader-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px 25px;
+  transition: all 0.35s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.leader-card:hover {
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
+}
+
+/* Image */
+.leader-img-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.leader-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.leader-card:hover .leader-img {
+  transform: scale(1.05);
+}
+
+/* Text Info */
+.leader-info {
+  margin-top: 20px;
+}
+
+.leader-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.leader-role {
+  font-size: 1rem;
+  color: #3B82F6;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.leader-quote {
+  font-size: 0.95rem;
+  color: #CBD5E1;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .leadership-section {
+    padding: 80px 0;
+  }
+
+  .leader-card {
+    padding: 25px 20px;
+  }
+
+  .leader-name {
+    font-size: 1.3rem;
+  }
+
+  .leader-role {
+    font-size: 0.95rem;
+  }
+
+  .leader-quote {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .leader-card {
+    margin: 0 auto 30px;
+    width: 90%;
+  }
+
+  .leader-img {
+    height: auto;
+  }
+}

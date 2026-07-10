@@ -1,0 +1,98 @@
+/* -----------------------------
+   OUR TEAM HERO SECTION
+------------------------------ */
+.team-hero-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Title and Subtitle */
+.team-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.team-hero-title span {
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
+}
+
+.team-hero-subtitle {
+  font-size: 1.1rem;
+  color: #CBD5E1;
+  margin-top: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Team Grid */
+.team-grid {
+  margin-top: 60px;
+}
+
+.team-card {
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px;
+  transition: all 0.35s ease-in-out;
+}
+
+.team-card:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.03);
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 992px) {
+  .team-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .team-hero-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .team-grid {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-hero-title {
+    font-size: 2rem;
+  }
+
+  .team-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .team-card {
+    border-radius: 12px;
+  }
+}

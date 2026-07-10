@@ -1,0 +1,135 @@
+/* -----------------------------
+   PARTNER WITH US HERO SECTION (SPLIT LAYOUT)
+------------------------------ */
+.partner-hero-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 100px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-section {
+  padding: 20px;
+}
+
+.partner-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.partner-title span {
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
+}
+
+.partner-subtitle {
+  font-size: 1.1rem;
+  color: #CBD5E1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/* Button */
+.partner-btn {
+  display: inline-block;
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border: 2px solid #3B82F6;
+  border-radius: 50px;
+  padding: 14px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease-in-out;
+}
+
+.partner-btn:hover {
+  background-color: #2563EB;
+  border-color: #2563EB;
+  color: #FFFFFF;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+  transform: scale(1.05);
+}
+
+/* Image */
+.image-section {
+  text-align: center;
+}
+
+.partner-hero-img {
+  width: 90%;
+  max-width: 480px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  transition: all 0.35s ease-in-out;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.image-section:hover .partner-hero-img {
+  border-color: #3B82F6;
+  transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25);
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 992px) {
+  .partner-title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .partner-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px auto 25px;
+  }
+
+  .partner-btn {
+    display: inline-block;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .image-section {
+    margin-top: 40px;
+  }
+
+  .partner-hero-img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .partner-title {
+    font-size: 1.9rem;
+  }
+
+  .partner-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .partner-btn {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  .partner-hero-img {
+    width: 100%;
+    max-width: 320px;
+  }
+}

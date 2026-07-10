@@ -1,0 +1,179 @@
+:root {
+    --sh-primary: #1975C9;
+    --sh-secondary: #092C4C;
+    --sh-primary-middle: #60a9eb;
+    --sh-primary-light: #c5dcf1;
+    --sh-green: #3BB54B;
+    --sh-bg-green: #ECF8EE;
+    --sh-red: #F31429;
+    --sh-bg-red: #FCEAEA;
+    --sh-ddd: #dddddd;
+}
+
+/* body{
+    height: auto;
+} */
+
+.main-button {
+    background-color: #1975C9 !important;
+    /* background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%); */
+    color: #fff !important;
+    padding: 10px 20px;
+    white-space: nowrap;
+    position: relative;
+    border: 1px solid var(--sh-primary) !important;
+    border: 0;
+    box-shadow: rgba(255, 255, 255, 0.25) 0.5px 0.5px 0px 0px inset, rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px;
+    /* transition: boxshadow 1s ease-in-out !important; */
+}
+
+.red-button {
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: 1px solid #ff9e9e !important;
+    background-color: #ff9e9e !important;
+}
+
+.main-button:hover,
+.main-button:active {
+    /* box-shadow: inset 0px -38px 10px rgba(0, 0, 0, 0.2), 3px 3px 9px 0px rgba(0, 0, 0, 0.75); */
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    background-color: var(--sh-primary) !important;
+    color: #fff !important;
+    border: 1px solid var(--sh-primary) !important;
+}
+
+.main-button:active {
+    transform: translateY(2px)
+}
+
+.cancel-button {
+    background-color: rgb(240, 240, 240) !important;
+    padding: 10px 20px;
+}
+
+
+.main-button-outline:focus-visible,
+.main-button-outline:active,
+.main-button-outline {
+    border-color: var(--sh-primary) !important;
+    color: var(--sh-primary) !important;
+    /* background-color: #fff; */
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.main-button-outline:hover {
+    /* background-color: #1975C9 !important; */
+    background: linear-gradient(180deg, var(--sh-primary-light) 0%, var(--sh-primary-middle) 0%, var(--sh-primary) 100%);
+    color: #fff !important;
+}
+
+.heading {
+    color: #092C4C;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2.heading {
+    font-size: 2.4rem;
+}
+
+.page-header {
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+    background-position: bottom;
+    z-index: 0;
+    padding: 215px 0 180px;
+    margin-top: -135px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* new */
+    /* background: linear-gradient(135deg, #d3e3fd, #84c4ff, #a8c7fa, #84c4ff, #d3e3fd, #d3e3fd, #84c4ff, #a8c7fa, #84c4ff, #d3e3fd);
+    animation: workspace-labs-gradient 4s infinite linear;
+    background-size: 800% 800%; */
+}
+
+@keyframes workspace-labs-gradient {
+    0% {
+        background-position: bottom right;
+    }
+
+    100% {
+        background-position: top 37.5% left 37.5%;
+    }
+}
+
+.page-header h1 {
+    color: var(--sh-secondary);
+    font-size: 3.38rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-inline: 20px;
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+.page-header h1 span.highlight {
+    font-size: 3.38rem;
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(114deg, #1975C9, #A3D1F5 69%, #0D4A89) 0px 0px no-repeat padding-box text transparent;
+}
+
+.page-header::after {
+    content: "";
+    position: absolute;
+    top: 92%;
+    left: -10%;
+    width: 120%;
+    height: 100px;
+    background: #F9F9F9;
+    z-index: 1;
+    filter: blur(13px);
+}
+
+.page-header-description {
+    text-align: center;
+    font-size: 1.13rem;
+    margin-bottom: 30px;
+    color: var(--sh-secondary);
+    padding-inline: 20px;
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.backdrop {
+    position: fixed;
+    background: #0000008f;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 0;
+    left: 0;
+}

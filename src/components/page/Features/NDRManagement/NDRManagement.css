@@ -1,0 +1,233 @@
+/* Page Container */
+.ndr-management__page-container {
+    padding: 20px;
+}
+
+.ndr-management__page-container>section {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 100px;
+}
+
+/* Title Styling */
+.ndr-management__page-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Section Title */
+.ndr-management__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #092C4C;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Overview Section */
+.ndr-management__overview h1 {
+    margin-bottom: 50px;
+}
+
+.ndr-management__description {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Features Section */
+.ndr-management__features {
+    margin-bottom: 2rem;
+}
+
+.ndr-management__feature-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.ndr-management__feature-card {
+    background: transparent linear-gradient(244deg, #fff 0%, #C5DCF1 100%) 0% 0% no-repeat padding-box;
+    background: White;
+    border: 1px solid rgb(10 108 155 / 30%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.inner__feature-card {
+    background: #EFF6FD;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.inner__feature-card.second-card {
+    background: var(--sh-secondary);
+}
+
+.inner__feature-card.second-card .ndr-management__feature-title,
+.inner__feature-card.second-card p {
+    color: #fff;
+}
+
+.ndr-management__feature-card .card-icon {
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.ndr-management__feature-card .card-icon span {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px dashed var(--sh-secondary);
+}
+
+.ndr-management__feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.ndr-management__feature-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.ndr-management__feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #092C4C;
+    margin-bottom: 1rem;
+}
+
+.ndr-management__feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Benefits Section */
+.ndr-management__benefits {
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ndr-management__benefits img {
+    max-height: 450px;
+    border-bottom-right-radius: 30px;
+}
+
+.ndr-management__benefit-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.ndr-management__benefit-item {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.ndr-management__benefit-item svg {
+    margin-right: 15px;
+}
+
+/* CTA Section */
+.ndr-management__cta {
+    background: transparent linear-gradient(244deg, #d3e6f7 0%, #60a9eb 100%) 0% 0% no-repeat padding-box;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ndr-management__cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #092C4C;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ndr-management__cta-button:hover {
+    background-color: #0055a5;
+}
+
+.ndr-management__cta-button:focus {
+    outline: none;
+}
+
+
+
+/* Grid Layout */
+.ndr-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Card Styling */
+.ndr-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ndr-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.ndr-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.ndr-method {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.ndr-desc {
+    font-size: 1rem;
+    color: #555;
+    max-width: 250px;
+}

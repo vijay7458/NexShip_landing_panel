@@ -1,0 +1,130 @@
+/* -----------------------------
+   TESTIMONIALS / SELLER STORIES
+------------------------------ */
+
+.testimonials-section {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 16px;
+}
+
+.section-title::before {
+  /* content: ""; */
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: #3B82F6;
+  border-radius: 4px;
+}
+
+/* Card Styling */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 40px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.35s ease-in-out;
+  backdrop-filter: blur(6px);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
+}
+
+/* Icon wrapper — duotone avatar, matches Core Values style */
+.testimonial-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.04));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: inset 0 0 12px rgba(59, 130, 246, 0.08);
+  transition: all 0.35s ease;
+}
+
+.testimonial-card:hover .testimonial-icon {
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.08));
+  border-color: #3B82F6;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.25);
+}
+
+.testimonial-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.testimonial-icon .icon-primary {
+  stroke: #60A5FA;
+}
+
+.testimonial-icon .icon-secondary {
+  stroke: #3B82F6;
+}
+
+/* Text */
+.testimonial-feedback {
+  font-size: 1rem;
+  font-style: italic;
+  color: #CBD5E1;
+  line-height: 1.7;
+  margin: 20px auto;
+  max-width: 320px;
+}
+
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.testimonial-company {
+  font-size: 0.95rem;
+  color: #94A3B8;
+  margin-top: 5px;
+}
+
+/* -----------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+
+@media (max-width: 992px) {
+  .testimonials-section { padding: 80px 0; }
+  .testimonial-card { padding: 30px 20px; }
+  .testimonial-feedback { font-size: 0.95rem; }
+}
+
+@media (max-width: 576px) {
+  .section-title { font-size: 1.8rem; }
+  .testimonial-card { width: 90%; margin: 0 auto 30px; }
+  .testimonial-icon { width: 64px; height: 64px; }
+  .testimonial-icon svg { width: 30px; height: 30px; }
+}
