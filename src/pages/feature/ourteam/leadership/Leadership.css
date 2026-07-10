@@ -3,8 +3,8 @@
 ------------------------------ */
 
 .leadership-section {
-  background-color: #000;
-  color: #fff;
+  background-color: #0F172A;
+  color: #FFFFFF;
   padding: 100px 0;
   width: 100%;
   overflow: hidden;
@@ -13,30 +13,44 @@
 .section-title {
   font-size: 2.3rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: #fff;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: #3B82F6;
+  border-radius: 4px;
 }
 
 /* Leader Card */
 .leader-card {
-  background-color: #111;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 30px 25px;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.35s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 .leader-card:hover {
-  border-color: #fff;
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
 }
 
 /* Image */
 .leader-img-wrapper {
   overflow: hidden;
   border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .leader-img {
@@ -44,13 +58,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  filter: grayscale(100%);
-  transition: transform 0.5s ease, filter 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .leader-card:hover .leader-img {
   transform: scale(1.05);
-  filter: grayscale(0%);
 }
 
 /* Text Info */
@@ -61,18 +73,19 @@
 .leader-name {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .leader-role {
   font-size: 1rem;
-  color: #ccc;
+  color: #3B82F6;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
 .leader-quote {
   font-size: 0.95rem;
-  color: #ddd;
+  color: #CBD5E1;
   font-style: italic;
   line-height: 1.6;
   margin: 0 auto;

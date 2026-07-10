@@ -10,7 +10,6 @@ export default function GenericFaq({ queAns }) {
     setActiveIndex((prev) => (prev === index ? null : index));
   };
 
-  // Animation Variants
   const parentVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -48,12 +47,9 @@ export default function GenericFaq({ queAns }) {
     >
       {/* Left side heading */}
       <motion.div variants={itemVariants} className="faq-heading mt-2">
-        <p className="text-dark h2 fw-semibold mb-1">Questions?</p>
-        <p
-          className="h2 text-muted"
-          style={{ lineHeight: "1.1", fontSize: "1.8rem" }}
-        >
-          We’re glad you asked..
+        <p className="faq-heading-primary h2 fw-semibold mb-1">Questions?</p>
+        <p className="faq-heading-secondary h2" style={{ lineHeight: "1.1", fontSize: "1.8rem" }}>
+          We're glad you asked..
         </p>
       </motion.div>
 
@@ -68,16 +64,18 @@ export default function GenericFaq({ queAns }) {
         {queAns?.map((item, index) => (
           <motion.div
             key={index}
-            className="border-bottom border-muted pt-3 pb-3"
+            className="faq-item pt-3 pb-3"
             onClick={(e) => handleOpenAns(e, index)}
             style={{ cursor: "pointer" }}
             variants={itemVariants}
           >
             <div className="d-flex justify-content-between align-items-center">
-              <div className="fw-semibold" style={{ fontSize: "1rem" }}>
+              <div className="faq-question fw-semibold" style={{ fontSize: "1rem" }}>
                 {item?.question}
               </div>
-              <div>{activeIndex === index ? <Minus size={18} /> : <Plus size={18} />}</div>
+              <div className="faq-toggle-icon">
+                {activeIndex === index ? <Minus size={18} /> : <Plus size={18} />}
+              </div>
             </div>
 
             <AnimatePresence>
@@ -88,7 +86,7 @@ export default function GenericFaq({ queAns }) {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.25, ease: "easeInOut" }}
-                  className="small mt-2 text-muted overflow-hidden"
+                  className="faq-answer small mt-2 overflow-hidden"
                 >
                   {item?.answer}
                 </motion.div>
@@ -98,8 +96,40 @@ export default function GenericFaq({ queAns }) {
         ))}
       </motion.div>
 
-      {/* Inline Responsive Styles */}
+      {/* Inline Responsive + Theme Styles */}
       <style>{`
+        .faq-heading-primary {
+          color: #FFFFFF;
+        }
+        .faq-heading-secondary {
+          color: #94A3B8;
+        }
+        .faq-item {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          transition: all 0.25s ease;
+        }
+        .faq-item:hover {
+          border-bottom-color: #3B82F6;
+        }
+        .faq-question {
+          color: #FFFFFF;
+        }
+        .faq-toggle-icon {
+          color: #3B82F6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: rgba(59, 130, 246, 0.12);
+          border: 1px solid rgba(59, 130, 246, 0.25);
+        }
+        .faq-answer {
+          color: #CBD5E1;
+          line-height: 1.7;
+        }
+
         @media (max-width: 992px) {
           .faq-container {
             flex-direction: column !important;

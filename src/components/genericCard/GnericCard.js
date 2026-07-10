@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import "./genericCard.css";
 
 export default function GenericCard({ titles, cardData }) {
     const sectionRef = useRef(null);
@@ -45,12 +46,7 @@ export default function GenericCard({ titles, cardData }) {
     return (
         <motion.div
             ref={sectionRef}
-            className="mt-4 py-5"
-            style={{
-                background: isScrolled ? "#000" : "#f8f9fa",
-                color: isScrolled ? "#fff" : "#000",
-                transition: "all 0.6s ease",
-            }}
+            className="mt-4 py-5 generic-card-section"
         >
             <motion.div
                 className="container"
@@ -61,8 +57,8 @@ export default function GenericCard({ titles, cardData }) {
                 <div className="d-flex flex-column">
 
                     <div className="mt-4 mb-4">
-                        <h2 className="mb-3 h2" style={{ lineHeight: "0.3" }}>{titles?.[0]}</h2>
-                        <p className="text-secondary h2" style={{ lineHeight: "0.8" }}>{titles?.[1]}</p>
+                        <h2 className="mb-3 h2 generic-card-title" style={{ lineHeight: "0.3" }}>{titles?.[0]}</h2>
+                        <p className="h2 generic-card-subtitle" style={{ lineHeight: "0.8" }}>{titles?.[1]}</p>
                     </div>
 
                     <div className="row mt-4">
@@ -76,13 +72,9 @@ export default function GenericCard({ titles, cardData }) {
                                 viewport={{ once: true }}
                             >
                                 <motion.div
-                                    className="rounded p-2"
+                                    className="rounded p-2 generic-card"
                                     whileHover={{ y: -8, scale: 1.02 }}
                                     transition={{ type: "spring", stiffness: 200, damping: 18 }}
-                                    style={{
-                                        background: isScrolled ? "#000000" : "#fff",
-                                        transition: "all 0.6s ease",
-                                    }}
                                 >
 
                                     <img
@@ -91,10 +83,10 @@ export default function GenericCard({ titles, cardData }) {
                                         className="img-fluid rounded mb-3"
                                         style={{ objectFit: "cover", minHeight: 450 }}
                                     />
-                                    <div className="h5 mt-2">{item?.cardTitle}</div>
-                                    <div className="small text-primary text-uppercase mt-4 mb-4">{item?.cardSubtitle}</div>
-                                    <p className="small text-secondary" >{item.description}</p>
-                                    <button onClick={() => handleRoute(item.route)} className={`btn fw-semibold px-4 mt-4 rounded-pill ${isScrolled ? "btn-light text-dark" : "btn-dark text-light"}`}>{item?.btnText}</button>
+                                    <div className="h5 mt-2 generic-card-heading">{item?.cardTitle}</div>
+                                    <div className="small text-uppercase mt-4 mb-4 generic-card-subheading">{item?.cardSubtitle}</div>
+                                    <p className="small generic-card-desc">{item.description}</p>
+                                    <button onClick={() => handleRoute(item.route)} className="btn fw-semibold px-4 mt-4 rounded-pill generic-card-btn">{item?.btnText}</button>
                                 </motion.div>
                             </motion.div>
                         ))}

@@ -2,19 +2,41 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./choose.css";
 
+const chooseIcons = {
+  delayed: (
+    <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <circle className="icon-secondary" cx="12" cy="12" r="9" />
+      <path className="icon-primary" d="M12 7v5l3.5 2" />
+    </svg>
+  ),
+  rto: (
+    <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path className="icon-secondary" d="M4 10v4h4l5 4V6L8 10H4z" />
+      <path className="icon-primary" d="M17 9l4 4m0-4l-4 4" />
+    </svg>
+  ),
+  manual: (
+    <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path className="icon-secondary" d="M4 4h11l5 5v11H4V4z" />
+      <path className="icon-primary" d="M14 4v5h5" />
+      <path className="icon-primary" d="M8 13l2.5 2.5L16 10" />
+    </svg>
+  ),
+};
+
 const reasons = [
   {
-    icon: "🚚",
+    icon: chooseIcons.delayed,
     title: "Delayed Deliveries?",
     desc: "Traditional shipping methods slow your growth. Our AI automatically allocates the best courier for every order.",
   },
   {
-    icon: "📦",
+    icon: chooseIcons.rto,
     title: "High RTO Rates?",
     desc: "Predict and prevent returns using real-time buyer insights and automated verification workflows.",
   },
   {
-    icon: "🕒",
+    icon: chooseIcons.manual,
     title: "Manual Order Processing?",
     desc: "Automate dispatch, tracking, and notifications with one click across all your ecommerce platforms.",
   },

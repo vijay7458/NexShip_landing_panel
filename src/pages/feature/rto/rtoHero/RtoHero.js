@@ -6,7 +6,7 @@ import img1 from "../../../../assets/image/WhatsApp Image 2026-02-25 at 4.19.47 
 
 const RtoHero = () => {
   const handleClick = () => {
-    window.open(  "https://app.shipease.in/sign-up","_blank")
+    window.open(  "https://nexshyp.com/sign-up","_blank")
   } 
 
 
@@ -23,7 +23,7 @@ const RtoHero = () => {
               transition= {{ duration: 0.8 }}
               viewport= {{ once: true }}
             >
-              Predict & Prevent <span style={{color:"red"}}>RTOs</span> Before They Happen
+              Predict & Prevent <span className="rto-highlight">RTOs</span> Before They Happen
             </motion.h1>
 
             <motion.p
@@ -50,7 +50,7 @@ const RtoHero = () => {
           {/* RIGHT IMAGE SIDE */}
           <div className="col-lg-6 col-md-12 image-section text-center">
             <motion.img
-              src={img1}// Replace this with your dashboard screenshot
+              src={img1}
               alt="RTO Prediction Dashboard"
               className="rto-hero-img"
               initial={{ opacity: 0, scale: 0.9 }}

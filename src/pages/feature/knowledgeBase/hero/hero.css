@@ -1,7 +1,15 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   KNOWLEDGE BASE BANNER SECTION
+============================================ */
 .kb-banner-section {
-  background-color: #fff;
-  color: #000;
-  font-family: "Poppins", sans-serif;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
   padding: 6rem 2rem;
 }
 
@@ -15,7 +23,9 @@
   gap: 3rem;
 }
 
-/* Text Content */
+/* ============================================
+   TEXT CONTENT
+============================================ */
 .kb-banner-content {
   flex: 1;
   min-width: 300px;
@@ -26,20 +36,24 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
+  color: #FFFFFF;
 }
 
 .kb-banner-title span {
-  border-bottom: 3px solid #000;
+  color: #93C5FD;
+  border-bottom: 3px solid #3B82F6;
 }
 
 .kb-banner-subtitle {
   font-size: 1.1rem;
-  color: #444;
+  color: #CBD5E1;
   line-height: 1.6;
   max-width: 600px;
 }
 
-/* Image Content */
+/* ============================================
+   IMAGE CONTENT
+============================================ */
 .kb-banner-image {
   flex: 1;
   min-width: 320px;
@@ -50,18 +64,29 @@
   width: 100%;
   max-width: 520px;
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  filter: grayscale(100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
   transition: all 0.6s ease;
 }
 
 .kb-banner-image:hover img {
-  filter: grayscale(0%);
   transform: scale(1.03);
+  box-shadow: 0 24px 60px rgba(59, 130, 246, 0.25);
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) {
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .kb-banner-title {
+    font-size: 2.7rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
   .kb-banner-container {
     flex-direction: column-reverse;
     text-align: center;
@@ -78,13 +103,38 @@
   .kb-banner-image img {
     max-width: 90%;
   }
+
+  .kb-banner-section {
+    padding: 5rem 1.5rem;
+  }
 }
 
-@media (max-width: 600px) {
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .kb-banner-section {
+    padding: 4rem 1.25rem;
+  }
+
   .kb-banner-title {
     font-size: 2rem;
   }
+
   .kb-banner-subtitle {
     font-size: 1rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .kb-banner-title {
+    font-size: 1.6rem;
+  }
+
+  .kb-banner-subtitle {
+    font-size: 0.9rem;
   }
 }

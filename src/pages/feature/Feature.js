@@ -53,7 +53,7 @@ const cardData = [
     description:
       "Import, process, and dispatch orders from multiple sales channels like Shopify, WooCommerce, and Amazon — all in one place.",
     btnText: "Explore Now",
-    route: "https://app.shipease.in/sign-up"
+    route: "https://nexshyp.com/sign-up"
   },
   {
     imgUrl: cardImg2,
@@ -71,26 +71,26 @@ const cardData = [
     description:
       "Leverage AI to automatically select the fastest and most cost-efficient courier for every order — saving time and reducing costs.",
     btnText: "Learn More",
-    route: "https://app.shipease.in/sign-up"
+    route: "https://nexshyp.com/sign-up"
   },
 ];
 
 
 export default function Feature() {
   return (
-    <div>
+    <div className="feature-page-wrapper">
       {/* <Discount /> */}
       <div className='mt-2'>
         <TopNav />
       </div>
-      
+
       <FeatureBanner />
       <PartnerCard />
       <GnericCard titles={genericCardTitles} cardData={cardData} />
       <ShipmentCounter />
-      <OrderStep />
+      {/* <OrderStep /> */}
       <GenericFaq queAns={questionAnswer} />
-      <FeatureMid />
+      {/* <FeatureMid /> */}
       <CTASection />
     </div>
   )

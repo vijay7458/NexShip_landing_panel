@@ -36,8 +36,7 @@ export default function CustomBanner(props) {
     <motion.div
       className={`feature-banner  d-flex pb-4 align-items-center`}
       animate={{
-        backgroundColor: isScrolled ? "#000000" : "#f8f9fa",
-        color: isScrolled ? "#ffffff" : "#212529",
+        color: "#ffffff",
       }}
       transition={{
         duration: 0.4,
@@ -53,15 +52,15 @@ export default function CustomBanner(props) {
             animate="visible"
             variants={textVariants}
           >
-            <h1 style={{lineHeight:"1"}} className={`display-5 fw-bold text-uppercase  ${isScrolled ? "text-light" : "text-dark"}`}>
+            <h1 style={{lineHeight:"1"}} className="display-5 fw-bold text-uppercase text-light">
               {props?.mainHedingFirst}
             </h1>
-            <h1 style={{lineHeight:"1"}}  className={`display-5 fw-bold text-uppercase  ${isScrolled ? "text-light" : "text-dark"}`}>  
+            <h1 style={{lineHeight:"1"}} className="display-5 fw-bold text-uppercase text-light">
               {props?.mainHedingSecond}</h1>
-            <p className="lead mt-4 text-secondary pe-3">
+            <p className="lead mt-4 pe-3 banner-subtext">
               {props?.subHeading}
             </p>
-            <button className={`btn  btn-sm rounded-4 px-3 mt-4 fw-semibold ${isScrolled ? "btn-light text-dark" : "text-light bg-dark"}`}>
+            <button className="btn btn-sm rounded-4 px-3 mt-4 fw-semibold banner-cta">
               {props?.btnText}
             </button>
           </motion.div>
