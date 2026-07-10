@@ -1,124 +1,74 @@
-/* ---------- Discount Bar ---------- */
-.discount-bar {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   DISCOUNT / ANNOUNCEMENT BAR
+============================================ */
+.discount-bar-main {
+  width: 100%;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.discount-content-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.discount-text-main {
+  font-size: 14px;
+  font-weight: 500;
+  color: #CBD5E1;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .discount-text-main {
+    font-size: 13px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .discount-bar-main {
+    padding: 7px 8px;
+  }
+
+  .discount-text-main {
+    font-size: 11.5px;
+    white-space: normal;
     text-align: center;
-    padding: 10px;
-    /* padding: 10px 16px  15px 16px; */
+  }
 
-    /* box-sizing: border-box; */
+  .discount-content-main {
+    white-space: normal;
+  }
 }
 
-/* ---------- Inner Flex Container ---------- */
-.discount-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-    max-width: 900px;
-    width: 100%;
-}
-
-/* ---------- Text ---------- */
-.discount-text {
-    display: flex;
-    align-items: center;
-    /* vertically align text and SALE24 */
-    justify-content: center;
-    gap: 6px;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0;
-    line-height: 1.2;
-    color: #fff;
-}
-
-.discount-text .highlight {
-    font-weight: 600;
-    color: #fff;
-    font-size: inherit;
-    /* keep same size as parent text */
-    line-height: 1.2;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* ---------- Button ---------- */
-.claim-button {
-    background-color: #fff;
-    color: #000;
-    font-weight: 600;
-    border: none;
-    border-radius: 50px;
-    padding: 6px 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-.claim-button:hover {
-    background-color: #222;
-    color: #fff;
-}
-
-/* ---------- Responsive Tweaks ---------- */
-
-/* Tablet (medium screens) */
-@media (max-width: 768px) {
-    .discount-bar {
-        padding: 14px 10px;
-    }
-
-    .discount-content {
-        gap: 10px;
-    }
-
-    .discount-text {
-        font-size: 0.9rem;
-    }
-
-    .claim-button {
-        font-size: 0.85rem;
-        padding: 6px 18px;
-    }
-}
-
-/* Mobile (small screens) */
-@media (max-width: 576px) {
-    .discount-content {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .discount-text {
-        font-size: 0.85rem;
-        flex-direction: column;
-        /* stack text properly if narrow */
-    }
-
-    .claim-button {
-        width: 100%;
-        max-width: 220px;
-        font-size: 0.85rem;
-        padding: 8px 16px;
-    }
-    .discount-bar {
-        padding: 4px 40px 20px 20px;
-    }
-}
-
-/* Extra-small devices */
-@media (max-width: 400px) {
-    .discount-text {
-        font-size: 0.8rem;
-    }
-    .claim-button {
-        font-size: 0.8rem;
-        padding: 7px 14px;
-    }
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .discount-text-main {
+    font-size: 10.5px;
+  }
 }

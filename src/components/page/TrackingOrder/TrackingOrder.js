@@ -24,7 +24,7 @@ const TrackingOrder = () => {
     const handleTracking = async (awbNum) => {
         try {
             const res = await fetch(
-                `https://app.shipease.in/core-api/shipping/track-order/${awbNum}/`
+                `https://nexshyp.com/core-api/shipping/track-order/${awbNum}/`
             );
             const data = await res.json();
             if (!res.ok) {
@@ -69,7 +69,7 @@ const TrackingOrder = () => {
         </div> */}
             <div className="">
                 <section className="trackorder-dual">
-                    {/* LEFT SIDE (white) */}
+                    {/* LEFT SIDE */}
                     <motion.div
                         className="trackorder-left white-side"
                         initial={{ x: -50, opacity: 0 }}
@@ -92,19 +92,17 @@ const TrackingOrder = () => {
                                     AWB
                                 </button>
                                 <button
-                                    className={`trackorder-tab ${activeTab === "order" ? "active" : ""
+                                    className={`trackorder-tab tab-disabled ${activeTab === "order" ? "active" : ""
                                         }`}
                                     onClick={() => setActiveTab("order")}
                                     disabled
-                                    style={{cursor:"not-allowed"}}
                                 >
                                     Order ID
                                 </button>
                                 <button
-                                    className={`trackorder-tab ${activeTab === "mobile" ? "active" : ""
+                                    className={`trackorder-tab tab-disabled ${activeTab === "mobile" ? "active" : ""
                                         }`}
                                     onClick={() => setActiveTab("mobile")}
-                                    style={{cursor:"not-allowed"}}
                                     disabled
                                 >
                                     Mobile
@@ -134,9 +132,9 @@ const TrackingOrder = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8 }}
                             >
-                                <h3>About Shipease</h3>
+                                <h3>About NexShyp</h3>
                                 <p>
-                                    Shipease is an all-in-one logistics automation platform built for
+                                    NexShyp is an all-in-one logistics automation platform built for
                                     modern eCommerce. From instant courier selection to unified
                                     tracking, we simplify every step of the shipping process.
                                 </p>
@@ -154,59 +152,43 @@ const TrackingOrder = () => {
                         )}
 
                         {showData && trackingData && (
-                            <>
-                                <div className="trackorder-couriercard">
-                                    <div className="courier-head">
-                                        <img
-                                            src={trackingData?.courier_image}
-                                            alt="Courier"
-                                            className="courier-logo"
-                                        />
-                                        <span className="courier-name">
-                                            {trackingData?.courier || trackingData?.courier_partner}
-                                        </span>
-                                    </div>
-                                    <div className="courier-details">
-                                        <p>
-                                            <b>Tracking ID:</b> {trackingData?.awb_number}
-                                        </p>
-                                        <p>
-                                            <b>EDD:</b>{" "}
-                                            {moment(
-                                                trackingData?.other_details?.expected_delivery_date
-                                            ).format("DD MMM YYYY")}
-                                        </p>
-                                        <hr />
-                                        <p>
-                                            <b>Status:</b> {trackingData?.status}
-                                        </p>
-                                        <p>
-                                            <b>Amount:</b> ₹{trackingData?.invoice_amount}
-                                        </p>
-                                        <p>
-                                            <b>Payment:</b> {trackingData?.payment_type}
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="trackorder-feedback">
-                                    <label>
-                                        Remarks {error && <span className="error-text">{error}</span>}
-                                    </label>
-                                    <textarea
-                                        value={remarks}
-                                        onChange={(e) => setRemarks(e.target.value)}
-                                        placeholder="Write your feedback..."
+                            <div className="trackorder-couriercard">
+                                <div className="courier-head">
+                                    <img
+                                        src={trackingData?.courier_image}
+                                        alt="Courier"
+                                        className="courier-logo"
                                     />
-                                    <button className="trackorder-btn" onClick={handleSubmit}>
-                                        Submit
-                                    </button>
+                                    <span className="courier-name">
+                                        {trackingData?.courier || trackingData?.courier_partner}
+                                    </span>
                                 </div>
-                            </>
+                                <div className="courier-details">
+                                    <p>
+                                        <b>Tracking ID:</b> {trackingData?.awb_number}
+                                    </p>
+                                    <p>
+                                        <b>EDD:</b>{" "}
+                                        {moment(
+                                            trackingData?.other_details?.expected_delivery_date
+                                        ).format("DD MMM YYYY")}
+                                    </p>
+                                    <hr />
+                                    <p>
+                                        <b>Status:</b> {trackingData?.status}
+                                    </p>
+                                    <p>
+                                        <b>Amount:</b> ₹{trackingData?.invoice_amount}
+                                    </p>
+                                    <p>
+                                        <b>Payment:</b> {trackingData?.payment_type}
+                                    </p>
+                                </div>
+                            </div>
                         )}
                     </motion.div>
 
-                    {/* RIGHT SIDE (dark) */}
+                    {/* RIGHT SIDE */}
                     <AnimatePresence mode="wait">
                         {!showData ? (
                             <motion.div
@@ -224,7 +206,7 @@ const TrackingOrder = () => {
                                     transition={{ duration: 1 }}
                                 />
                                 <div className="right-content">
-                                    <h2>Welcome to Shipease Tracking</h2>
+                                    <h2>Welcome to NexShyp Tracking</h2>
                                     <p>
                                         Get transparent, detailed shipment movement logs and estimated
                                         delivery timelines powered by intelligent logistics APIs.
@@ -233,45 +215,56 @@ const TrackingOrder = () => {
                                         <li>📍 Track shipments from multiple couriers</li>
                                         <li>🕓 Monitor real-time status changes</li>
                                         <li>💡 Analyze delivery performance trends</li>
-                                        <li>🌐 India’s fastest eCommerce logistics platform</li>
+                                        <li>🌐 India's fastest eCommerce logistics platform</li>
                                     </ul>
                                 </div>
                             </motion.div>
                         ) : (
                             <motion.div
-                                key="timeline"
-                                className="trackorder-right dark-side"
-                                initial={{ opacity: 0, x: 40 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: -40 }}
-                                transition={{ duration: 0.6 }}
-                            >
-                                <h3 className="timeline-heading">Delivery Timeline</h3>
-                                <div className="timeline-scroll">
-                                    <ul>
-                                        {activities.map((a, i) => (
-                                            <motion.li
-                                                key={i}
-                                                className={`timeline-step ${i === 0 ? "active" : ""}`}
-                                                initial={{ opacity: 0, y: 20 }}
-                                                animate={{ opacity: 1, y: 0 }}
-                                                transition={{ delay: i * 0.05 }}
-                                            >
-                                                <div className="timeline-dot" />
-                                                <div className="timeline-text">
-                                                    <h4>{a?.shipease_status}</h4>
-                                                    <p className="loc">{a?.location}</p>
-                                                    <p className="time">
-                                                        {moment(a?.courier_action_date).format(
-                                                            "DD MMM YYYY, LT"
-                                                        )}
-                                                    </p>
-                                                </div>
-                                            </motion.li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </motion.div>
+    key="timeline"
+    className="trackorder-right dark-side"
+    initial={{ opacity: 0, x: 40 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -40 }}
+    transition={{ duration: 0.6 }}
+>
+    <div className="timeline-header-row">
+        <h3 className="timeline-heading">Delivery Timeline</h3>
+        <div className="live-indicator">
+            <span className="live-dot-pulse" />
+            Live Tracking
+        </div>
+    </div>
+    <div className="timeline-scroll">
+        <ul>
+            {activities.map((a, i) => (
+                <motion.li
+                    key={i}
+                    className={`timeline-step ${i === 0 ? "active" : ""}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.05 }}
+                >
+                    <div className="timeline-dot-wrap">
+                        {i === 0 && <span className="timeline-dot-ping" />}
+                        <div className="timeline-dot" />
+                    </div>
+                    <div className="timeline-card">
+                        <h4>{a?.shipease_status}</h4>
+                        <span className="timeline-status-pill">
+                            {a?.status_category || "Update"}
+                        </span>
+                        <p className="loc">{a?.location}</p>
+                        <p className="time">
+                            {moment(a?.courier_action_date).format("DD MMM YYYY")} ||{" "}
+                            {moment(a?.courier_action_date).format("hh:mm A")}
+                        </p>
+                    </div>
+                </motion.li>
+            ))}
+        </ul>
+    </div>
+</motion.div>
                         )}
                     </AnimatePresence>
                 </section>

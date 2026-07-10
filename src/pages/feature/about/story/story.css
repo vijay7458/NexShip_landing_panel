@@ -1,13 +1,23 @@
-/* -----------------------------
-   STORY SECTION (UNIQUE CLASSES)
------------------------------- */
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+/* ============================================
+   STORY SECTION
+============================================ */
 .story-section {
-  background-color: #fff;
-  color: #000;
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A;
+  /* background-image:
+    radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%); */
+  color: #FFFFFF;
   padding: 100px 0;
   width: 100%;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .story-title {
@@ -15,10 +25,12 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #FFFFFF;
 }
 
-/* Timeline base */
+/* ============================================
+   TIMELINE BASE
+============================================ */
 .story-timeline {
   position: relative;
   max-width: 1100px;
@@ -30,14 +42,16 @@
   content: "";
   position: absolute;
   width: 3px;
-  background-color: #000;
+  background: linear-gradient(180deg, #3B82F6 0%, rgba(59, 130, 246, 0.2) 100%);
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Timeline items */
+/* ============================================
+   TIMELINE ITEMS
+============================================ */
 .story-item {
   padding: 20px 30px;
   position: relative;
@@ -54,61 +68,73 @@
   text-align: left;
 }
 
+/* ============================================
+   GLASS CARD BOX
+============================================ */
 .story-box {
-  background: #f7f7f7;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
   padding: 25px;
   position: relative;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
 .story-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.2);
 }
 
+/* Timeline dot */
 .story-item::after {
   content: "";
   position: absolute;
   width: 20px;
   height: 20px;
   right: -10px;
-  background-color: #000;
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  border: 3px solid #0F172A;
   border-radius: 50%;
   top: 20px;
-  z-index: 1;
+  z-index: 2;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
 }
 
 .story-item.story-right::after {
   left: -10px;
 }
 
-/* Text styling */
+/* ============================================
+   TEXT STYLING
+============================================ */
 .story-year {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #000;
+  color: #3B82F6;
+  letter-spacing: 0.5px;
 }
 
 .story-subtitle {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #222;
+  color: #FFFFFF;
   margin-top: 5px;
 }
 
 .story-desc {
-  color: #555;
+  color: #CBD5E1;
   font-size: 1rem;
   margin-top: 10px;
   line-height: 1.7;
 }
 
-/* -----------------------------
+/* ============================================
    ANIMATIONS
------------------------------- */
-
+============================================ */
 @keyframes storyFadeIn {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -127,11 +153,23 @@
   animation: storySlideIn 1.3s ease forwards;
 }
 
-/* -----------------------------
-   RESPONSIVE DESIGN
------------------------------- */
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .story-title {
+    font-size: 2rem;
+  }
+}
 
-@media (max-width: 992px) {
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .story-section {
+    padding: 80px 0;
+  }
+
   .story-timeline::after {
     left: 8px;
   }
@@ -152,13 +190,16 @@
   .story-item::after {
     left: 0;
   }
-
-  .story-box {
-    background: #f8f8f8;
-  }
 }
 
-@media (max-width: 576px) {
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .story-section {
+    padding: 60px 0;
+  }
+
   .story-title {
     font-size: 1.6rem;
   }
@@ -171,7 +212,25 @@
     font-size: 1.2rem;
   }
 
+  .story-subtitle {
+    font-size: 1.05rem;
+  }
+
   .story-desc {
     font-size: 0.95rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .story-title {
+    font-size: 1.4rem;
+  }
+
+  .story-item {
+    padding-left: 32px;
+    padding-right: 16px;
   }
 }

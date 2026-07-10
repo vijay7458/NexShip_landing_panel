@@ -1,6 +1,6 @@
 .esh-hero-section {
-  background-color: #fff;
-  color: #000;
+  background-color: #0F172A;
+  color: #FFFFFF;
   padding: 6rem 2rem;
   font-family: "Poppins", sans-serif;
 }
@@ -26,16 +26,18 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
+  color: #FFFFFF;
 }
 
 .esh-hero-title span {
-  border-bottom: 3px solid #000;
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
 }
 
 .esh-hero-subtitle {
   font-size: 1.1rem;
-  color: #444;
-  line-height: 1.6;
+  color: #CBD5E1;
+  line-height: 1.7;
   margin-bottom: 2rem;
 }
 
@@ -54,27 +56,32 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 2px solid #000;
+  border: 2px solid transparent;
 }
 
 .esh-btn-primary {
-  background-color: #000;
-  color: #fff;
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border-color: #3B82F6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
 }
 
 .esh-btn-primary:hover {
-  background-color: transparent;
-  color: #000;
+  background-color: #2563EB;
+  border-color: #2563EB;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
 }
 
 .esh-btn-outline {
   background: transparent;
-  color: #000;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .esh-btn-outline:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: #3B82F6;
+  color: #FFFFFF;
 }
 
 /* Stats */
@@ -92,10 +99,11 @@
 .esh-hero-stats h3 {
   font-size: 1.8rem;
   font-weight: 700;
+  color: #3B82F6;
 }
 
 .esh-hero-stats p {
-  color: #555;
+  color: #94A3B8;
   font-size: 0.95rem;
 }
 
@@ -110,14 +118,18 @@
   width: 100%;
   max-width: 500px;
   border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  filter: grayscale(100%);
-  transition: all 0.6s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: all 0.35s ease-in-out;
 }
 
 .esh-hero-image:hover img {
-  filter: grayscale(0%);
+  border-color: #3B82F6;
   transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.25);
 }
 
 /* Responsive */

@@ -1,6 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom';
-import './App.css'
+// import './App.css'
 import ScrollToTop from "./ScrollToTop";
 import HomePage from './components/HomePage/HomePage';
 import TopHeader from './components/TopHeader/TopHeader';
@@ -35,7 +35,7 @@ import HelpCenter from './components/page/HelpCenter/HelpCenter';
 import FAQDetail from './components/page/HelpCenter/FAQDetail';
 import SubCategoryPage from './components/page/HelpCenter/SubCategoryPage';
 import VolumetricWeightCalculator from './components/page/VolumetricWeightCalculator/VolumetricWeightCalculator';
-import './responsive.css'
+// import './responsive.css'
 import NotFound from './components/page/NotFound/NotFound';
 import TopNav from './navbar/TopNav';
 import FeatureBanner from './components/banner/FeatureBanner';

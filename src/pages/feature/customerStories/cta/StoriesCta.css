@@ -1,7 +1,7 @@
 .cs-cta-section {
   width: 100%;
-  background: #fff;
-  color: #000;
+  background: #0F172A;
+  color: #FFFFFF;
   padding: 6rem 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(59, 130, 246, 0.08);
   z-index: 1;
 }
 
@@ -44,17 +44,19 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
+  color: #FFFFFF;
 }
 
 .cs-cta-title span {
-  border-bottom: 3px solid #000;
+  color: #3B82F6;
+  border-bottom: 3px solid #3B82F6;
 }
 
 .cs-cta-subtitle {
   font-size: 1.1rem;
-  color: #444;
+  color: #CBD5E1;
   margin-bottom: 2.5rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Buttons */
@@ -73,29 +75,34 @@
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   cursor: pointer;
-  border: 2px solid #000;
+  border: 2px solid transparent;
 }
 
 /* Primary Button */
 .cs-cta-btn-primary {
-  background-color: #000;
-  color: #fff;
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  border-color: #3B82F6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
 }
 
 .cs-cta-btn-primary:hover {
-  background-color: transparent;
-  color: #000;
+  background-color: #2563EB;
+  border-color: #2563EB;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
 }
 
 /* Outline Button */
 .cs-cta-btn-outline {
   background-color: transparent;
-  color: #000;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .cs-cta-btn-outline:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: #3B82F6;
+  color: #FFFFFF;
 }
 
 /* Responsive */

@@ -1,17 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./ctaSection.css";
 
 export default function CTASection() {
   return (
     <motion.div
-      className="container-fluid d-flex flex-column justify-content-center align-items-center text-center py-5 px-3 rounded-0"
-      style={{
-        background:
-          "linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(20,20,20,0.85) 60%, rgba(40,40,40,0.8) 100%)",
-        marginBottom: "6rem",
-        marginTop: "6rem",
-
-      }}
+      className="container-fluid d-flex flex-column justify-content-center align-items-center text-center py-5 px-3 rounded-0 cta-section"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -19,11 +13,7 @@ export default function CTASection() {
     >
       {/* Title */}
       <motion.h2
-        className="fw-bold mb-3 text-light"
-        style={{
-          fontSize: "clamp(1.8rem, 5vw, 2.6rem)", 
-          lineHeight: "1.2",
-        }}
+        className="fw-bold mb-3 cta-title"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -34,13 +24,7 @@ export default function CTASection() {
 
       {/* Subtitle */}
       <motion.p
-        className="mb-4 mx-auto"
-        style={{
-          fontSize: "clamp(0.95rem, 3vw, 1.15rem)",
-          color: "#d1d1d1",
-          maxWidth: "720px",
-          lineHeight: "1.6",
-        }}
+        className="mb-4 mx-auto cta-subtitle"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.35 }}
@@ -52,20 +36,11 @@ export default function CTASection() {
 
       {/* CTA Button */}
       <motion.a
-        href="https://www.shipease.in/contact"
-        className="btn fw-bold px-5 py-2 rounded-4"
-        style={{
-          background: "linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%)",
-          color: "#000000",
-          borderRadius: "12px",
-          boxShadow: "0 8px 25px rgba(255,255,255,0.15)",
-          textDecoration: "none",
-          fontSize: "clamp(0.9rem, 2.5vw, 1.1rem)",
-        }}
+        href="http://localhost:3000/contact"
+        className="btn fw-bold px-5 py-2 rounded-4 cta-button"
         whileHover={{
           y: -4,
           scale: 1.05,
-          boxShadow: "0 16px 40px rgba(255,255,255,0.25)",
         }}
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 250, damping: 18 }}

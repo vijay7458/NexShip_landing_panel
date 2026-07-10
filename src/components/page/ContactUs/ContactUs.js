@@ -19,16 +19,6 @@ import TopNav from '../../../navbar/TopNav';
 
 
 const ContactUs = () => {
-    // const [formData, setFormData] = useState({
-    //     type: 'Business',
-    //     first_name: '',
-    //     mobile: '',
-    //     company_name: '',
-    //     website: '',
-    //     email: '',
-    //     monthly_shipment: 'less than 100',
-    //     channel_name: []
-    // });
 
     const resetForm = () => {
         setNewFormData({
@@ -50,16 +40,12 @@ const ContactUs = () => {
     const handleitemboxChange = (id) => {
         setSelectedIds((prevSelected) =>
             prevSelected.includes(id)
-                ? prevSelected.filter((item) => item !== id) // remove if exists
-                : [...prevSelected, id] // add if not exists
+                ? prevSelected.filter((item) => item !== id)
+                : [...prevSelected, id]
         );
     };
 
     console.log(openVerifyModal)
-
-    // useEffect(() => {
-    //     console.log(formData, "formData")
-    // }, [formData])
 
     useEffect(() => {
         if (mainModalClose === "closed") {
@@ -75,50 +61,12 @@ const ContactUs = () => {
 
     const [error, seterror] = useState(false)
 
-
-    // const handleChange = (e) => {
-    //     const { name, value } = e.target;
-    //     setFormData({
-    //         ...formData,
-    //         [name]: value
-    //     });
-    // };
-
-    // const handleCheckboxChange = (e) => {
-    //     const { name, checked } = e.target;
-    //     setFormData({
-    //         ...formData,
-    //         channel_name: checked
-    //             ? [...formData.channel_name, name]
-    //             : formData.channel_name.filter(channel => channel !== name)
-    //     });
-    // };
-
     const [showModal, setShowModal] = useState(false);
 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-
     };
-
-    // useEffect(() => {
-    //     if (!showModal) {
-    //         setFormData({
-    //             type: 'Business',
-    //             first_name: '',
-    //             mobile: '',
-    //             company_name: '',
-    //             website: '',
-    //             email: '',
-    //             monthly_shipment: 'less than 100',
-    //             channel_name: []
-    //         })
-    //         seterror(false)
-    //     }
-    // }, [showModal])
-
 
     const handleScroll = () => {
         window.scrollTo({
@@ -128,9 +76,9 @@ const ContactUs = () => {
     };
 
     const contactBoxObj = [
-        { icon: <FontAwesomeIcon icon={faEnvelope} />, content: "sales@shipease.in" },
-        { icon: <FontAwesomeIcon icon={faMobileAlt} />, content: "+91 97172 00551" },
-        { icon: <FontAwesomeIcon icon={faMapMarkerAlt} />, content: "Unit 321, Tower B1, M3M Cosmopolitan, Sector-66, Gurugram, Haryana, Pin-122101" },
+        { icon: <FontAwesomeIcon icon={faEnvelope} />, content: "ops@nexshyp.com" },
+        { icon: <FontAwesomeIcon icon={faMobileAlt} />, content: "+91 9625673132" },
+        { icon: <FontAwesomeIcon icon={faMapMarkerAlt} />, content: "Plot No. B1, PU 4, Scheme No. 54, Vijay Nagar Square, AB Rd, Vijay Nagar, Indore, Madhya Pradesh 452010" },
     ]
 
     const formCheck = [
@@ -180,11 +128,6 @@ const ContactUs = () => {
                     err = "Enter a valid email address.";
                 }
                 break;
-            // case "companyUrl":
-            //     if (!/^https?:\/\/[^\s$.?#].[^\s]*$/.test(value)) {
-            //         err = "Enter a valid company URL (with http/https).";
-            //     }
-            //     break;
             default:
                 err = "";
         }
@@ -198,7 +141,6 @@ const ContactUs = () => {
     const submitForm = async () => {
         const errors = {};
 
-        // Validation
         Object.entries(newFormData).forEach(([key, value]) => {
             let err = "";
 
@@ -218,11 +160,6 @@ const ContactUs = () => {
                         err = "Enter a valid email address.";
                     }
                     break;
-                // case "companyUrl":
-                //     if (!/^https?:\/\/[^\s$.?#].[^\s]*$/.test(value)) {
-                //         err = "Enter a valid company URL (with http/https).";
-                //     }
-                //     break;
                 default:
                     break;
             }
@@ -247,7 +184,7 @@ const ContactUs = () => {
             };
 
             try {
-                const response = await fetch('https://app.shipease.in/core-api/seller/contact-us/', {
+                const response = await fetch('https://nexshyp.com/core-api/seller/contact-us/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -276,13 +213,6 @@ const ContactUs = () => {
         }
     };
 
-
-    // const emptyStateFn = () => {
-
-    // }
-
-
-    // Thank You! Our concerned person will contact you shortly.
     const offerings = [
         {
             title: "Seamless eCommerce Integration",
@@ -297,15 +227,6 @@ const ContactUs = () => {
             image: "https://images.unsplash.com/photo-1674027392887-751d6396b710?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
     ];
-
-    // console.log(99999999999, selectedIds)
-
-
-    // console.log(5555555, mainModalClose)
-
-
-
-
 
     return (
         <>
@@ -324,14 +245,14 @@ const ContactUs = () => {
                         <div className="col-12 col-lg-6">
                             <Form.Label>Select your role</Form.Label>
                             <InputGroup className='shadow-sm'>
-                                <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={newFormData?.role === "customer" ? faUser : faBuilding} />
                                 </InputGroup.Text>
                                 <Form.Select
                                     aria-label="Select your role"
                                     name="role"
                                     onChange={(e) => handleChangeFormData(e)}
-                                    className="border-start-0"
+                                    className="border-start-0 dark-form-control"
                                 >
                                     <option value="buisness">Business</option>
                                     <option value="customer">Customer</option>
@@ -341,9 +262,9 @@ const ContactUs = () => {
 
                         {/* Name Input */}
                         <div className="col-12 col-lg-6">
-                            <Form.Label>Your Name <span style={{ color: "red" }}>*</span>  </Form.Label>
+                            <Form.Label>Your Name <span className="required-asterisk">*</span>  </Form.Label>
                             <InputGroup className='shadow-sm'>
-                                <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={faUser} />
                                 </InputGroup.Text>
                                 <Form.Control
@@ -352,11 +273,11 @@ const ContactUs = () => {
                                     type="text"
                                     value={newFormData?.name}
                                     placeholder="Enter your name"
-                                    className="border-start-0"
+                                    className="border-start-0 dark-form-control"
                                 />
                             </InputGroup>
                             {newError?.name && (
-                                <div className="text-danger" style={{ fontSize: "13px" }}>
+                                <div className="text-danger error-text">
                                     {newError?.name}
                                 </div>
                             )}
@@ -369,9 +290,9 @@ const ContactUs = () => {
                     <div className="row g-3">
                         {/* Mobile Number */}
                         <div className="col-12 col-md-6">
-                            <Form.Label className='mt-3'>Mobile Number <span style={{ color: "red" }}>*</span>  </Form.Label>
+                            <Form.Label className='mt-3'>Mobile Number <span className="required-asterisk">*</span>  </Form.Label>
                             <InputGroup className='shadow-sm'>
-                                <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={faMobileAlt} />
                                 </InputGroup.Text>
                                 <Form.Control
@@ -380,11 +301,11 @@ const ContactUs = () => {
                                     name="mobile"
                                     type="number"
                                     placeholder="Enter mobile no."
-                                    className="border-start-0"
+                                    className="border-start-0 dark-form-control"
                                 />
                             </InputGroup>
                             {newError?.mobile && (
-                                <div className="text-danger" style={{ fontSize: "13px" }}>
+                                <div className="text-danger error-text">
                                     {newError?.mobile}
                                 </div>
                             )}
@@ -394,7 +315,7 @@ const ContactUs = () => {
                         <div className="col-12 col-md-6">
                             <Form.Label className='mt-3'>Company Name</Form.Label>
                             <InputGroup className='shadow-sm'>
-                                <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={faBuilding} />
                                 </InputGroup.Text>
                                 <Form.Control
@@ -402,7 +323,7 @@ const ContactUs = () => {
                                     name="companyName"
                                     type="text"
                                     placeholder="Enter company name"
-                                    className="border-start-0"
+                                    className="border-start-0 dark-form-control"
                                     value={newFormData?.companyName}
                                 />
                             </InputGroup>
@@ -416,10 +337,10 @@ const ContactUs = () => {
                         {/* Company URL (Optional) */}
                         <div className="col-12 col-md-6">
                             <Form.Label className='mt-3'>
-                                Company Url <span className="text-muted">(Optional)</span>
+                                Company Url <span className="optional-text">(Optional)</span>
                             </Form.Label>
                             <InputGroup className='shadow-sm'>
-                                <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={faGlobe} />
                                 </InputGroup.Text>
                                 <Form.Control
@@ -427,12 +348,12 @@ const ContactUs = () => {
                                     name="companyUrl"
                                     type="text"
                                     placeholder="Enter URL"
-                                    className="border-start-0"
+                                    className="border-start-0 dark-form-control"
                                     value={newFormData?.companyUrl}
                                 />
                             </InputGroup>
                             {newError?.companyUrl && (
-                                <div className="text-danger" style={{ fontSize: "13px" }}>
+                                <div className="text-danger error-text">
                                     {newError?.companyUrl}
                                 </div>
                             )}
@@ -440,9 +361,9 @@ const ContactUs = () => {
 
                         {/* Email Address */}
                         <div className="col-12 col-md-6">
-                            <Form.Label className='mt-3'>Email Address <span style={{ color: "red" }}>*</span> </Form.Label>
-                            <InputGroup className='shadow-sm ' style={{ borderRadius: "10px !important" }}>
-                                <InputGroup.Text className="bg-white border-end-0 text-primary-emphasis border-0 rounded-0">
+                            <Form.Label className='mt-3'>Email Address <span className="required-asterisk">*</span> </Form.Label>
+                            <InputGroup className='shadow-sm'>
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={faEnvelope} />
                                 </InputGroup.Text>
                                 <Form.Control
@@ -450,12 +371,12 @@ const ContactUs = () => {
                                     onChange={(e) => handleChangeFormData(e)}
                                     name="emailAddress"
                                     placeholder="Enter your email"
-                                    className="border-start-0"
+                                    className="border-start-0 dark-form-control"
                                     value={newFormData?.emailAddress}
                                 />
                             </InputGroup>
                             {newError?.emailAddress && (
-                                <div className="text-danger" style={{ fontSize: "13px" }}>
+                                <div className="text-danger error-text">
                                     {newError?.emailAddress}
                                 </div>
                             )}
@@ -469,24 +390,14 @@ const ContactUs = () => {
                         <div className="col-12">
                             <Form.Label className='mt-3'>Monthly Shipments</Form.Label>
                             <InputGroup className='shadow-sm'>
-                                <InputGroup.Text
-                                    style={{
-                                        background: "#fff",
-                                        borderRight: "0",
-                                        border: "none",
-                                        borderRadius: "0",
-                                        color: "#092C4C"
-                                    }}
-                                >
+                                <InputGroup.Text className="icon-input-addon">
                                     <FontAwesomeIcon icon={faBox} />
                                 </InputGroup.Text>
                                 <Form.Select
                                     onChange={(e) => handleChangeFormData(e)}
                                     name="mothlyShipment"
                                     aria-label="Referral Source"
-                                    style={{
-                                        borderLeft: "0",
-                                    }}
+                                    className="dark-form-control border-start-0"
                                 >
                                     <option value="less than 100">Less Than 100</option>
                                     <option value="100 to 1000">100 to 1000</option>
@@ -496,62 +407,33 @@ const ContactUs = () => {
                             </InputGroup>
                         </div>
                     </div>
-                    <div className="row mt-4" style={{ gap: "0px" }}>
+                    <div className="row mt-4 channels-row">
 
                         {/* mobile number */}
-                        <div className="col" style={{ padding: 0 }}>
-                            <Form.Label style={{ marginLeft: "13px" }}>Preferred Channels (select multiple)</Form.Label>
-                            <div
-                                className='shadow-sm'
-                                style={{
-                                    backgroundColor: "#fff",
-                                    width: "97%",
-                                    margin: "auto",
-                                    overflowX: "auto",
-                                    overflowY: "hidden",
-                                    borderBottom: "1px solid #EAEAEA",
-                                    padding: "0px 10px",
-                                    borderRadius: "0px",
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        flexWrap: "nowrap",
-                                        gap: "24px",
-                                        alignItems: "center",
-                                        minHeight: "70px",
-                                    }}
-                                >
+                        <div className="col channels-col">
+                            <Form.Label className="channels-label">Preferred Channels (select multiple)</Form.Label>
+                            <div className='shadow-sm channels-wrapper'>
+                                <div className="channels-inner">
                                     {formCheck?.map((item, index) => (
                                         <div
                                             key={index}
-                                            style={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                gap: "8px",
-                                                minWidth: "fit-content",
-                                            }}
+                                            className="channel-item"
                                         >
                                             <Form.Check
                                                 type="checkbox"
                                                 id={item?.id}
                                                 checked={selectedIds.includes(item.id)}
                                                 onChange={() => handleitemboxChange(item.id)}
-                                                style={{ margin: 0 }}
+                                                className="channel-checkbox"
                                             />
                                             {item?.img && (
                                                 <img
                                                     src={item.img}
                                                     alt={item.label || `img-${index}`}
-                                                    style={{
-                                                        width: "24px",
-                                                        height: "24px",
-                                                        objectFit: "contain",
-                                                    }}
+                                                    className="channel-img"
                                                 />
                                             )}
-                                            <label htmlFor={item?.id} style={{ margin: 0, cursor: "pointer", whiteSpace: "nowrap" }}>
+                                            <label htmlFor={item?.id} className="channel-label-text">
                                                 {item?.label}
                                             </label>
                                         </div>
@@ -560,18 +442,8 @@ const ContactUs = () => {
                             </div>
 
                         </div>
-                        <div
-                            className='mt-4'
-                            style={{
-                                borderBottom: "1px solid #EAEAEA",
-                                marginTop: "3.5rem",
-                                width: "100vw",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"
-                            }}
-                        >
-                            <button onClick={submitForm} style={{ marginBottom: "3rem" }} className="btn btn-primary">Submit Form</button>
+                        <div className='mt-4 submit-row'>
+                            <button onClick={submitForm} className="btn submit-btn">Submit Form</button>
                         </div>
 
 
@@ -582,28 +454,17 @@ const ContactUs = () => {
                         <div className="row">
                             {contactBoxObj?.map((item, index) => (
                                 <div className="col-12 col-md-6 col-lg-4 mt-4" key={index}>
-                                    <div className="p-3 border rounded h-100 d-flex flex-column">
-                                        <div
-                                            style={{
-                                                color: "#092C4C",
-                                                fontSize: "25px",
-                                                // border: "1px solid #092C4C",
-                                                padding: "6px 14px",
-                                                borderRadius: "7px",
-                                                marginBottom: "10px",
-                                                display: "inline-block"
-                                            }}
-                                        >
+                                    <div className="p-3 border rounded h-100 d-flex flex-column contact-box-item">
+                                        <div className="contact-icon-box">
                                             {item?.icon}
                                         </div>
-                                        <div className="text-dark mt-2">{item?.content}</div>
+                                        <div className="contact-box-content">{item?.content}</div>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
                     </div>
-                    {/* <button className='btn btn-primary'>Submit Form</button> */}
                 </div>
 
 

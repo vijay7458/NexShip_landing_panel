@@ -16,8 +16,8 @@ const MapboxComponent = () => {
 
 
     const [viewport, setViewport] = useState({
-        latitude: 28.40210377028585,
-        longitude: 77.06037752131253,
+        latitude: 22.75115,
+        longitude: 75.89555,
         zoom: 16,
         width: '100%',  // Full width
         height: screenWidth > 600 ? '800px' : '400px',  // Ensure map has height
@@ -60,24 +60,28 @@ const MapboxComponent = () => {
         >
             <div
                 style={{
-                    background: 'white',
-                    padding: '5px 10px',
-                    borderRadius: '8px',
-                    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+                    background: 'rgba(15, 23, 42, 0.92)',
+                    padding: '10px 14px',
+                    borderRadius: '10px',
+                    boxShadow: '0 4px 14px rgba(0,0,0,0.35)',
                     fontSize: '12px',
+                    lineHeight: '1.5',
                     textAlign: 'center',
-                    marginBottom: '5px',
                     position: 'absolute',
-                    width: '50%',
-                    top: '10%',
-                    left: '10%'
+                    maxWidth: '260px',
+                    width: 'max-content',
+                    top: '10px',
+                    left: '10px',
+                    zIndex: 5,
+                    color: '#FFFFFF',
+                    border: '1px solid rgba(255,255,255,0.1)',
                 }}
             >
-                <strong>Shipease Technologies Pvt. Ltd.</strong><br />
-                {address}
+                <strong>NexShyp Technology Pvt. Ltd.</strong><br />
+                Plot No. B1, PU 4, Scheme No. 54, Vijay Nagar Square, AB Rd, Vijay Nagar, Indore, Madhya Pradesh 452010
             </div>
             {/* Place a Marker at the specified latitude and longitude */}
-            <Marker latitude={28.40202} longitude={77.060888}>
+            <Marker latitude={22.75115} longitude={75.89555}>
                 <div style={{ fontSize: '30px', color: 'red' }}>📍</div>
             </Marker>
             <div style={{ position: 'absolute', right: 50, top: 10 }}>

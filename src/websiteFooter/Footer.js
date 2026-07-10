@@ -9,6 +9,8 @@ import {
     InstagramIcon,
     YoutubeIcon,
 } from "lucide-react";
+import "./footer.css";
+import logo from "../assets/logo512.png";
 
 export default function Footer() {
     const navigate = useNavigate();
@@ -24,11 +26,11 @@ export default function Footer() {
             links: [
                 { label: "About Us", url: "/about" },
                 { label: "Careers", url: "/careers" },
-                { label: "Our Team", url: "/team" },
+                // { label: "Our Team", url: "/team" },
                 { label: "Partner With Us", url: "/partners" },
-                { label: "Investor Relations", url: "/investors" },
-                { label: "Newsroom", url: "/newsroom" },
-                { label: "Seller Stories", url: "/stories" },
+                // { label: "Investor Relations", url: "/investors" },
+                // { label: "Newsroom", url: "/newsroom" },
+                // { label: "Seller Stories", url: "/stories" },
             ],
         },
         {
@@ -66,12 +68,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-light pt-5 pb-4 mb-0"
-            style={{
-                background: "#000000",
-                borderTopRightRadius: "12px",
-                borderTopLeftRadius: "12px",
-            }}
+            className="text-light pt-5 pb-4 mb-0 site-footer"
         >
             <div className="container">
                 {/* ======= TOP ROW ======= */}
@@ -80,29 +77,29 @@ export default function Footer() {
                     <div className="col-lg-3 col-md-6">
                         <h3 className="fw-bold text-light mb-3">
                             <img
-                                src="./logo512.png"
+                                src={logo}
                                 className="me-2"
                                 style={{ height: "30px" }}
-                                alt="Shipease Logo"
+                                alt="NexShyp Logo"
                             />{" "}
-                            SHIPEASE
+                            NexShyp
                         </h3>
-                        <p className="small text-light-50 mb-3 text-secondary">
+                        <p className="small mb-3 footer-desc">
                             Simplifying eCommerce shipping with technology and
                             AI-driven logistics. Manage orders, automate courier
                             selection, and deliver faster — all in one platform.
                         </p>
                         <div className="mt-3">
-                            <h6 className="fw-semibold mb-2">Office Address</h6>
-                            <p className="small mb-0 text-secondary">
-                                Shipease Technologies Pvt. Ltd.
+                            <h6 className="fw-semibold mb-2 footer-subheading">Office Address</h6>
+                            <p className="small mb-0 footer-desc">
+                                NexShyp Technologies Pvt. Ltd.
                                 <br />
-                                M3M Unit No - 321, 3rd Floor , M3m Cosmopolition 
+                                Plot No. B1, PU 4, Scheme No. 54
                                 <br />
-                                Gurugram Sector -66
+                                Vijay Nagar Square, AB Rd, Vijay Nagar, Indore, Madhya Pradesh 452010
                                 <br />
                                 <span className="d-block mt-1">
-                                    sales@shipease.in
+                                    ops@nexshyp.com
                                 </span>
                             </p>
                         </div>
@@ -111,7 +108,7 @@ export default function Footer() {
                     {/* Footer Links */}
                     {sections.map((section, idx) => (
                         <div key={idx} className="col-lg-2 col-md-3 col-6 mb-4">
-                            <h6 className="fw-bold text-light mb-3">
+                            <h6 className="fw-bold text-light mb-3 footer-subheading">
                                 {section.title}
                             </h6>
                             <ul className="list-unstyled m-0 p-0">
@@ -122,12 +119,6 @@ export default function Footer() {
                                                 handleLinkClick(link.url)
                                             }
                                             className="footer-link small text-decoration-none d-inline-block position-relative"
-                                            style={{
-                                                color: "#bfbfbf",
-                                                transition: "all 0.3s ease",
-                                                padding: "1px 0",
-                                                cursor: "pointer",
-                                            }}
                                             onMouseEnter={(e) => {
                                                 e.currentTarget.style.color =
                                                     "#ffffff";
@@ -136,14 +127,14 @@ export default function Footer() {
                                             }}
                                             onMouseLeave={(e) => {
                                                 e.currentTarget.style.color =
-                                                    "#bfbfbf";
+                                                    "#94A3B8";
                                                 e.currentTarget.style.transform =
                                                     "translateX(0)";
                                             }}
                                         >
                                             {link.label}
                                             {link.label === "RTO Prediction" && (
-                                                <span className="ms-2 bg-success text-light fw-semibold px-2 py-1 small rounded-pill">
+                                                <span className="ms-2 footer-new-badge fw-semibold px-2 py-1 small rounded-pill">
                                                     New
                                                 </span>
                                             )}
@@ -156,52 +147,48 @@ export default function Footer() {
                 </div>
 
                 {/* ======= DIVIDER ======= */}
-                <hr className="border-secondary mt-5" />
+                <hr className="footer-divider mt-5" />
             </div>
 
             {/* ======= BOTTOM ROW ======= */}
-            <div
-                className="container pb-2 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center pt-4"
-                style={{ borderTop: "1px solid #8c8c8cff" }}
-            >
-                <p
-                    className="small text-light-50 mb-2 mb-md-0"
-                    style={{ color: "grey" }}
-                >
-                    © {new Date().getFullYear()} Shipease Technologies Pvt. Ltd.
+            <div className="container pb-2 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 footer-bottom-row">
+                <p className="small mb-2 mb-md-0 footer-copyright">
+                    © {new Date().getFullYear()} NexShyp Technologies Pvt. Ltd.
                     All rights reserved.
                 </p>
                 <div className="d-flex gap-3 align-items-center">
-                    <a href="https://www.facebook.com/shipease.in/" target="_blank" className="text-light icon-hover">
+                    {/* <a href="https://www.facebook.com/shipease.in/" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
                         <FacebookIcon size={20} />
                     </a>
-                    <a href="https://x.com/Shipease_IN" target="_blank" className="text-light icon-hover">
+                    <a href="https://x.com/Shipease_IN" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
                         <TwitterIcon size={20} />
                     </a>
-                    <a href="https://in.linkedin.com/company/shipease-technologies-pvt-ltd" target="_blank" className="text-light icon-hover">
+                    <a href="https://in.linkedin.com/company/shipease-technologies-pvt-ltd" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
                         <LinkedinIcon size={20} />
                     </a>
-                    <a href="https://www.instagram.com/shipease.in/?hl=en" target="_blank" className="text-light icon-hover">
+                    <a href="https://www.instagram.com/shipease.in/?hl=en" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
                         <InstagramIcon size={20} />
                     </a>
-                    <a href="https://www.youtube.com/@ShipEaseTechnologies" target="_blank" className="text-light icon-hover">
+                    <a href="https://www.youtube.com/@ShipEaseTechnologies" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
+                        <YoutubeIcon size={20} />
+                    </a> */}
+                    <a href="" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
+                        <FacebookIcon size={20} />
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
+                        <TwitterIcon size={20} />
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
+                        <LinkedinIcon size={20} />
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
+                        <InstagramIcon size={20} />
+                    </a>
+                    <a href="" target="_blank" rel="noopener noreferrer" className="text-light icon-hover">
                         <YoutubeIcon size={20} />
                     </a>
                 </div>
             </div>
-
-            {/* ======= INLINE STYLE ======= */}
-            <style jsx>{`
-                .icon-hover {
-                    transition: all 0.3s ease;
-                    opacity: 0.8;
-                }
-                .icon-hover:hover {
-                    color: #ffffff;
-                    opacity: 1;
-                    transform: translateY(-2px);
-                }
-            `}</style>
         </motion.footer>
     );
 }

@@ -5,6 +5,7 @@ import { faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './otpModal.css';
 
 
 const OtpModal = ({ show, onClose, contactNumber, resetForm }) => {
@@ -41,7 +42,7 @@ const OtpModal = ({ show, onClose, contactNumber, resetForm }) => {
         };
 
         try {
-            const response = await fetch('https://app.shipease.in/core-api/seller/verify-otp/', {
+            const response = await fetch('https://nexshyp.com/core-api/seller/verify-otp/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -77,7 +78,7 @@ const OtpModal = ({ show, onClose, contactNumber, resetForm }) => {
             contact_number: contactNumber,
         }
         try {
-            const response = await fetch('https://app.shipease.in/core-api/seller/resend-otp/', {
+            const response = await fetch('https://nexshyp.com/core-api/seller/resend-otp/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -102,26 +103,16 @@ const OtpModal = ({ show, onClose, contactNumber, resetForm }) => {
                 onHide={onClose}
                 centered
                 dialogClassName="centered"
+                className="otp-modal-dark"
             >
                 <Modal.Body>
                     <div className='main-verify'>
-                        <div
-                            style={{
-                                backgroundColor: '#0d6efd', // Bootstrap primary
-                                borderRadius: '50%',
-                                width: '90px',
-                                height: '90px',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                margin: '0 auto',
-                            }}
-                        >
-                            <FontAwesomeIcon icon={faShieldHalved} size="2x" style={{ color: 'white' }} />
+                        <div className="otp-shield-icon">
+                            <FontAwesomeIcon icon={faShieldHalved} size="2x" className="otp-shield-icon-glyph" />
                         </div>
                         <div className='maintext-verify text-center'><h2>Verify your code</h2></div>
-                        <div className='text-center mt-1'><p>We’ve sent a 6-digit code to your number.</p></div>
-                        <div className='text-center' style={{ marginTop: "-23px" }}>
+                        <div className='text-center mt-1'><p>We&rsquo;ve sent a 6-digit code to your number.</p></div>
+                        <div className='text-center otp-masked-number'>
                             <p>{maskedNumber}</p>
                         </div>
                     </div>
@@ -142,10 +133,9 @@ const OtpModal = ({ show, onClose, contactNumber, resetForm }) => {
                         ))}
                     </div>
 
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <div className="otp-verify-btn-row">
                         <Button
-                            style={{ width: "90%", marginTop: "0px", fontSize: "20px", fontFamily: "Poppins, sans-serif" }}
-                            className='btn btn-primary'
+                            className='btn otp-verify-btn'
                             onClick={handleSubmit}
                         >
                             Verify

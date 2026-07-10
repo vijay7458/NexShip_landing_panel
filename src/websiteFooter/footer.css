@@ -1,0 +1,153 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   FOOTER WRAPPER
+============================================ */
+.site-footer {
+  font-family: 'Inter', sans-serif;
+  background: #0F172A;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 85% 90%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* ============================================
+   TEXT — DESCRIPTION / ADDRESS
+============================================ */
+.footer-desc {
+  color: #94A3B8 !important;
+  line-height: 1.7;
+}
+
+.footer-subheading {
+  color: #FFFFFF !important;
+  letter-spacing: 0.3px;
+}
+
+/* ============================================
+   FOOTER LINKS
+============================================ */
+.footer-link {
+  color: #94A3B8;
+  transition: all 0.3s ease;
+  padding: 1px 0;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #FFFFFF;
+}
+
+/* "New" badge on RTO Prediction */
+.footer-new-badge {
+  background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+  color: #FFFFFF !important;
+  font-size: 0.65rem;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.35);
+}
+
+/* ============================================
+   DIVIDER
+============================================ */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 1;
+}
+
+/* ============================================
+   BOTTOM ROW
+============================================ */
+.footer-bottom-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-copyright {
+  color: #64748B;
+}
+
+/* ============================================
+   SOCIAL ICONS
+============================================ */
+.icon-hover {
+  transition: all 0.3s ease;
+  opacity: 0.75;
+  color: #CBD5E1 !important;
+}
+
+.icon-hover:hover {
+  color: #3B82F6 !important;
+  opacity: 1;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+/* Laptop (1024px–1439px) */
+@media (max-width: 1439px) {
+  .site-footer h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablet (768px–1023px) */
+@media (max-width: 1023px) {
+  .site-footer {
+    padding-top: 3rem !important;
+  }
+
+  .footer-desc {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile (320px–767px) */
+@media (max-width: 767px) {
+  .site-footer {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2rem !important;
+    text-align: center;
+  }
+
+  .site-footer h3 {
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+
+  .site-footer .col-lg-3,
+  .site-footer .col-lg-2 {
+    text-align: center;
+  }
+
+  .footer-link {
+    display: inline-block;
+  }
+
+  .footer-bottom-row {
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small mobile (320px–479px) */
+@media (max-width: 479px) {
+  .site-footer h3 {
+    font-size: 1.15rem;
+  }
+
+  .footer-desc {
+    font-size: 0.8rem;
+  }
+}

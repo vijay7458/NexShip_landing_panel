@@ -48,7 +48,7 @@ export default function RateCalculator() {
 
   return (
     <div>
-      <Discount />
+      {/* <Discount /> */}
       <TopNav />
       <div className='mb-4'>
         <CustomBanner
