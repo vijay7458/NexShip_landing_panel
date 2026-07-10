@@ -1,0 +1,172 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   404 PAGE HEADER
+============================================ */
+.notfound-page-header {
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A !important;
+  background-image: none !important;
+  color: #FFFFFF;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.notfound-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #FFFFFF !important;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.notfound-description {
+  font-size: 1.1rem;
+  color: #CBD5E1 !important;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================
+   CTA BUTTON
+============================================ */
+.notfound-main-button {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  padding: 14px 32px;
+  border-radius: 50px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+}
+
+.notfound-main-button:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%) !important;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 14px 32px rgba(59, 130, 246, 0.5);
+  color: #FFFFFF !important;
+}
+
+.notfound-main-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* ============================================
+   RIPPLE BACKGROUND EFFECT
+============================================ */
+.notfound-ripple-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.notfound-ripple-shape span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notfound-ripple-1 { width: 200px; height: 200px; }
+.notfound-ripple-2 { width: 350px; height: 350px; }
+.notfound-ripple-3 { width: 500px; height: 500px; }
+.notfound-ripple-4 { width: 650px; height: 650px; }
+.notfound-ripple-5 { width: 800px; height: 800px; }
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .notfound-title {
+    font-size: 2.7rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .notfound-title {
+    font-size: 2.3rem;
+  }
+
+  .notfound-description {
+    font-size: 1rem;
+  }
+
+  .notfound-ripple-5 { width: 600px; height: 600px; }
+  .notfound-ripple-4 { width: 480px; height: 480px; }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .notfound-page-header {
+    padding: 30px 16px;
+  }
+
+  .notfound-title {
+    font-size: 1.8rem;
+  }
+
+  .notfound-description {
+    font-size: 0.95rem;
+  }
+
+  .notfound-main-button {
+    padding: 12px 26px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+
+  .notfound-ripple-5,
+  .notfound-ripple-4 {
+    display: none;
+  }
+
+  .notfound-ripple-3 { width: 350px; height: 350px; }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .notfound-title {
+    font-size: 1.5rem;
+  }
+
+  .notfound-ripple-3,
+  .notfound-ripple-2 {
+    width: 250px;
+    height: 250px;
+  }
+}

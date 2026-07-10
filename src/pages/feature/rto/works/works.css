@@ -1,10 +1,15 @@
-/* -----------------------------
-   HOW RTO PREDICTION WORKS
------------------------------- */
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+/* ============================================
+   HOW RTO PREDICTION WORKS
+============================================ */
 .how-rto-section {
-  background-color: #fff;
-  color: #000;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
   padding: 100px 0;
   width: 100%;
   overflow: hidden;
@@ -14,20 +19,24 @@
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: capitalize;
+  color: #FFFFFF;
 }
 
 .how-subtitle {
-  color: #444;
+  color: #CBD5E1;
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.7;
 }
 
-/* STEP CARDS */
+/* ============================================
+   STEP CARDS (Glassmorphism)
+============================================ */
 .step-card {
-  background-color: #f9f9f9;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
   border-radius: 16px;
   padding: 40px 25px;
   height: 100%;
@@ -35,42 +44,67 @@
 }
 
 .step-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.2);
 }
 
-/* ICON */
+/* ============================================
+   ICON
+============================================ */
 .step-icon-wrapper {
   margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.04));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.35s ease;
+}
+
+.step-card:hover .step-icon-wrapper {
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.08));
+  border-color: #3B82F6;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.25);
 }
 
 .step-icon {
-  width: 80px;
-  height: 80px;
-  filter: grayscale(100%);
+  width: 44px;
+  height: 44px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
   transition: all 0.4s ease;
 }
 
 .step-card:hover .step-icon {
-  filter: grayscale(0%);
-  transform: scale(1.05);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
-/* TEXT */
+/* ============================================
+   TEXT
+============================================ */
 .step-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000;
+  color: #FFFFFF;
   margin-bottom: 12px;
 }
 
 .step-desc {
   font-size: 1rem;
-  color: #555;
+  color: #CBD5E1;
   line-height: 1.6;
 }
 
-/* CONNECTING LINES (optional decorative element for desktop) */
+/* ============================================
+   CONNECTING LINE (desktop decorative element)
+============================================ */
 @media (min-width: 992px) {
   .how-rto-section .row {
     position: relative;
@@ -83,7 +117,7 @@
     left: 50%;
     width: 80%;
     height: 2px;
-    background: rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), transparent);
     transform: translateX(-50%);
     z-index: 0;
   }
@@ -94,8 +128,19 @@
   }
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 992px) {
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .how-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
   .how-title {
     font-size: 2rem;
   }
@@ -104,9 +149,14 @@
     padding: 30px 20px;
   }
 
+  .step-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
   .step-icon {
-    width: 65px;
-    height: 65px;
+    width: 36px;
+    height: 36px;
   }
 
   .step-title {
@@ -116,9 +166,20 @@
   .step-desc {
     font-size: 0.95rem;
   }
+
+  .how-rto-section {
+    padding: 80px 0;
+  }
 }
 
-@media (max-width: 576px) {
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .how-rto-section {
+    padding: 60px 0;
+  }
+
   .how-title {
     font-size: 1.8rem;
   }
@@ -129,12 +190,30 @@
   }
 
   .step-card {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 25px;
   }
 
+  .step-icon-wrapper {
+    width: 72px;
+    height: 72px;
+  }
+
   .step-icon {
-    width: 60px;
-    height: 60px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .how-title {
+    font-size: 1.5rem;
+  }
+
+  .step-card {
+    padding: 25px 18px;
   }
 }

@@ -32,7 +32,7 @@ const CareersCta = () => {
         </motion.p>
 
         <motion.a
-          href="mailto:hr@shipease.in"
+          href="mailto:ops@nexshyp.com"
           className="cta-btn"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

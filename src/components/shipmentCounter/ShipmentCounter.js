@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import "./shipmentCounter.css";
 
 export default function ShipmentCounter() {
     const shipmentData = [
@@ -58,7 +59,7 @@ export default function ShipmentCounter() {
     return (
         <motion.div
             ref={sectionRef}
-            className="mt-4 d-flex flex-column container"
+            className="mt-4 d-flex flex-column container shipment-counter-section"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -71,53 +72,47 @@ export default function ShipmentCounter() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
             >
-                <div className="h2" style={{ color: "#000000", lineHeight: "0.3" }}>
+                <div className="h2 counter-heading-title" style={{ lineHeight: "0.3" }}>
                     Tried and tested
                 </div>
-                <div className="h2 text-secondary">With proven results at scale</div>
+                <div className="h2 counter-heading-subtitle">With proven results at scale</div>
             </motion.div>
 
-            <div className="w-100 d-flex flex-wrap gap-4 py-4">
-                <div className="w-50">
+            <div className="w-100 counter-grid py-4">
+                <div className="counter-col">
                     {shipmentData?.slice(0, 2).map((item, index) => (
                         <motion.div
                             key={index}
-                            className="py-3"
+                            className="py-3 counter-card"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.2, duration: 0.6 }}
                             viewport={{ once: true }}
                         >
-                            <div
-                                className="display-2 fw-semibold mt-2"
-                                style={{ color: "#000000" }}
-                            >
+                            <div className="display-2 fw-semibold mt-2 counter-number">
                                 <AutomateCounter number={item.count} start={isVisible} />+
                             </div>
-                            <div className="text-muted fw-semibold h1 small mb-4">
+                            <div className="fw-semibold h1 small mb-4 counter-label">
                                 {item.title}
                             </div>
                         </motion.div>
                     ))}
                 </div>
 
-                <div>
+                <div className="counter-col">
                     {shipmentData?.slice(2, 4).map((item, index) => (
                         <motion.div
                             key={index}
-                            className="py-3"
+                            className="py-3 counter-card"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.2, duration: 0.6 }}
                             viewport={{ once: true }}
                         >
-                            <div
-                                className="display-2 fw-semibold mt-2"
-                                style={{ color: "#000000" }}
-                            >
+                            <div className="display-2 fw-semibold mt-2 counter-number">
                                 <AutomateCounter number={item.count} start={isVisible} />+
                             </div>
-                            <div className="text-muted fw-semibold h1 small mb-4">
+                            <div className="fw-semibold h1 small mb-4 counter-label">
                                 {item.title}
                             </div>
                         </motion.div>

@@ -1,9 +1,21 @@
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   HELP CENTER PAGE WRAPPER
+============================================ */
 .help-center {
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A;
   width: 90%;
   max-width: 1200px;
   margin-inline: auto;
-  /* margin-top: 4rem; */
-  padding-top: 5rem  !important;
+  padding-top: 5rem !important;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  color: #FFFFFF;
 }
 
 .help-center__title {
@@ -11,26 +23,44 @@
   font-weight: bold;
   text-align: start;
   margin-bottom: 20px;
-  color: #333;
+  color: #FFFFFF;
 }
 
+/* ============================================
+   SEARCH INPUT
+============================================ */
 .help-center__search {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
   margin-bottom: 20px;
   font-size: 16px;
-  transition: border-color 0.3s ease;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.help-center__search::placeholder {
+  color: #64748B;
 }
 
 .help-center__search:focus {
   outline: none;
-  border-color: #007BFF;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
 }
 
+/* ============================================
+   FAQ LIST
+============================================ */
 .help-center__faq-list {
   margin-top: 30px;
+}
+
+.help-center__faq-list > p {
+  color: #94A3B8;
 }
 
 .help-center__category {
@@ -40,22 +70,41 @@
 .help-center__category-title {
   font-size: 18px;
   font-weight: bold;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding-bottom: 8px;
-  color: #000000;
+  color: #FFFFFF;
 }
 
+/* ============================================
+   SUBCATEGORY GRID (Glassmorphism cards)
+============================================ */
 .subcategory-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  margin-top: 6px;
+  margin-top: 16px;
+}
+
+.help-center__subcategory {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.help-center__subcategory:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.15);
 }
 
 .help-center__subcategory hr {
   margin-block: 5px;
   width: 50%;
   text-align: start;
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .help-center__subcategory-title {
@@ -63,10 +112,13 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.2px;
-  font-family: Poppins, Helvetica, sans-serif;
-  color: #183247;
+  font-family: 'Inter', sans-serif;
+  color: #93C5FD;
 }
 
+/* ============================================
+   QUESTIONS LIST
+============================================ */
 .help-center__questions {
   list-style: none;
   padding: 0;
@@ -74,24 +126,30 @@
 }
 
 .help-center__question {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   cursor: pointer;
-  /* border-bottom: 1px solid #eee; */
-  transition: background-color 0.3s ease, padding-left 0.3s ease;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #CBD5E1;
+  transition: background-color 0.3s ease, padding-left 0.3s ease, color 0.3s ease;
   font-size: 14px;
 }
 
 .help-center__question:hover {
-  background-color: #f7f7f7;
-  padding-left: 20px;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #FFFFFF;
+  padding-left: 16px;
 }
 
 .help-center__question:active {
-  background-color: #f0f0f0;
+  background-color: rgba(59, 130, 246, 0.18);
 }
 
+/* ============================================
+   VIEW ALL LINK
+============================================ */
 .help-center__view-all {
-  color: blue;
+  color: #3B82F6;
   cursor: pointer;
   text-decoration: underline;
   margin-top: 10px;
@@ -99,14 +157,26 @@
 }
 
 .help-center__view-all:hover {
-  color: darkblue;
+  color: #93C5FD;
 }
 
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .help-center__title {
+    font-size: 24px;
+  }
+}
 
-@media (max-width: 768px) {
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
   .help-center {
     max-width: 100%;
     padding: 15px;
+    padding-top: 5rem !important;
   }
 
   .help-center__title {
@@ -123,5 +193,51 @@
 
   .help-center__subcategory-title {
     font-size: 16px;
+  }
+
+  .subcategory-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .help-center {
+    padding: 12px;
+    padding-top: 4.5rem !important;
+  }
+
+  .help-center__title {
+    font-size: 20px;
+  }
+
+  .subcategory-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .help-center__subcategory {
+    padding: 16px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .help-center__title {
+    font-size: 18px;
+  }
+
+  .help-center__search {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .help-center__question {
+    font-size: 13px;
   }
 }

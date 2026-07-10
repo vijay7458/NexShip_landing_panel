@@ -4,7 +4,7 @@ import "./StoriesCta.css";
 
 const StoriesCta = () => {
   const handleClick = () => {
-    window.open(  "https://app.shipease.in/sign-up"
+    window.open(  "https://nexshyp.com/sign-up"
             ,"_blank", )
   }
   return (

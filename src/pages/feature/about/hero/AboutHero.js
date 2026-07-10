@@ -21,7 +21,7 @@ const AboutHero = () => {
   console.log(7888, chnageBg)
 
   const handleClick = () => {
-    window.open(  "https://app.shipease.in/sign-up"
+    window.open(  "https://nexshyp.com/sign-up"
             ,"_blank")
   } 
   return (
@@ -29,7 +29,7 @@ const AboutHero = () => {
       <div className="container text-center">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12 text-section">
-            <h1 className={`hero-title animate-slide-up text-dark`}>
+            <h1 className={`hero-title animate-slide-up`}>
               Simplifying Shipping for Every Seller
             </h1>
             <p className="hero-subtitle animate-fade-in">
@@ -41,7 +41,6 @@ const AboutHero = () => {
 
           <div className="col-lg-6 col-md-12 image-section">
             <img
-              style={{borderRadius:"10px"}}
               src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Courier Illustration"
               className="hero-img animate-float"

@@ -1,10 +1,15 @@
-/* -----------------------------
-   BLOG FEATURED / TRENDING SECTION
------------------------------- */
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+/* ============================================
+   BLOG FEATURED / TRENDING SECTION
+============================================ */
 .blog-featured-section {
-  background-color: #fff;
-  color: #000;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
   padding: 100px 0;
   width: 100%;
   overflow: hidden;
@@ -13,16 +18,20 @@
 .featured-heading {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #000;
+  color: #FFFFFF;
   letter-spacing: 0.5px;
 }
 
-/* BLOG CARD */
+/* ============================================
+   BLOG CARD (Glassmorphism)
+============================================ */
 .blog-card {
-  background-color: #f9f9f9;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
   height: 100%;
   display: flex;
@@ -30,10 +39,15 @@
 }
 
 .blog-card:hover {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.2);
+  transform: translateY(-6px);
 }
 
+/* ============================================
+   IMAGE
+============================================ */
 .blog-img-wrap {
   width: 100%;
   overflow: hidden;
@@ -51,7 +65,9 @@
   transform: scale(1.05);
 }
 
-/* CONTENT */
+/* ============================================
+   CONTENT
+============================================ */
 .blog-content {
   padding: 25px 20px;
   text-align: left;
@@ -64,12 +80,12 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #000;
+  color: #FFFFFF;
   line-height: 1.4;
 }
 
 .blog-excerpt {
-  color: #444;
+  color: #CBD5E1;
   font-size: 1rem;
   margin-bottom: 20px;
   line-height: 1.7;
@@ -77,15 +93,17 @@
 
 .blog-meta {
   font-size: 0.9rem;
-  color: #777;
+  color: #94A3B8;
   margin-bottom: 15px;
 }
 
-/* READ MORE BUTTON */
+/* ============================================
+   READ MORE BUTTON
+============================================ */
 .read-more-btn {
   background: none;
   border: none;
-  color: #007bff;
+  color: #3B82F6;
   font-weight: 600;
   text-align: left;
   padding: 0;
@@ -94,14 +112,23 @@
 }
 
 .read-more-btn:hover {
-  color: #000;
+  color: #93C5FD;
   text-decoration: underline;
 }
 
-/* -----------------------------
-   RESPONSIVE DESIGN
------------------------------- */
-@media (max-width: 992px) {
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .featured-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
   .featured-heading {
     font-size: 2rem;
   }
@@ -109,9 +136,20 @@
   .blog-img-wrap {
     height: 210px;
   }
+
+  .blog-featured-section {
+    padding: 80px 0;
+  }
 }
 
-@media (max-width: 576px) {
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .blog-featured-section {
+    padding: 60px 0;
+  }
+
   .featured-heading {
     font-size: 1.7rem;
   }
@@ -126,5 +164,22 @@
 
   .blog-img-wrap {
     height: 200px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .featured-heading {
+    font-size: 1.5rem;
+  }
+
+  .blog-img-wrap {
+    height: 180px;
+  }
+
+  .blog-content {
+    padding: 20px 16px;
   }
 }

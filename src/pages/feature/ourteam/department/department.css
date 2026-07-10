@@ -3,8 +3,8 @@
 ------------------------------ */
 
 .department-showcase {
-  background-color: #fff;
-  color: #000;
+  background-color: #0F172A;
+  color: #FFFFFF;
   padding: 100px 0;
   width: 100%;
   overflow: hidden;
@@ -13,9 +13,21 @@
 .section-title {
   font-size: 2.3rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: #3B82F6;
+  border-radius: 4px;
 }
 
 /* Wrapper */
@@ -55,20 +67,28 @@
   flex: 1;
   overflow: hidden;
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.35s ease-in-out;
+}
+
+.dept-img-container:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.2);
 }
 
 .dept-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  filter: grayscale(100%);
-  transition: all 0.5s ease;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
 .dept-img-container:hover .dept-img {
-  filter: grayscale(0%);
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /* Content */
@@ -79,13 +99,13 @@
 .dept-title {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #000;
+  color: #FFFFFF;
   margin-bottom: 15px;
 }
 
 .dept-desc {
   font-size: 1.05rem;
-  color: #444;
+  color: #CBD5E1;
   line-height: 1.8;
   max-width: 550px;
 }

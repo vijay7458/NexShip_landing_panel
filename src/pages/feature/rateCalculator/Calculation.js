@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./calculation.css";
 
 export default function Calculation() {
   const inputs = [
@@ -46,10 +47,10 @@ export default function Calculation() {
   };
 
   return (
-    <div className="container py-5 d-flex flex-column">
+    <div className="container py-5 d-flex flex-column calc-page-wrapper">
       <div className="w-100 mb-3">
-        <h3 className="fw-bold mb-2 text-dark">Calculate Shipping Rate</h3>
-        <p className="text-muted small">
+        <h3 className="fw-bold mb-2 calc-heading">Calculate Shipping Rate</h3>
+        <p className="calc-subheading small">
           Get instant courier charges and delivery estimates — compare rates, delivery speed,
           and partner performance in one click.
         </p>
@@ -59,21 +60,21 @@ export default function Calculation() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="card border-0 shadow-sm p-4 bg-secondary-subtle rounded-1"
+        className="card border-0 shadow-sm p-4 calc-card rounded-4"
       >
         <div className="row">
           {/* Left side — Form */}
-          <div className="col-lg-7 col-md-12 border-end">
+          <div className="col-lg-7 col-md-12 calc-form-col">
             <form onSubmit={handleSubmit}>
               <div className="row g-3">
                 {inputs.map((item, index) => (
                   <div key={index} className="col-md-6">
-                    <label className="form-label small fw-semibold text-dark">
+                    <label className="form-label small fw-semibold calc-label">
                       {item.label}
                     </label>
                     {item.options ? (
                       <select
-                        className={`form-select form-select-sm ${
+                        className={`form-select form-select-sm calc-input ${
                           errors[item.key] ? "is-invalid" : ""
                         }`}
                         onChange={(e) => handleChange(item.key, e.target.value)}
@@ -89,7 +90,7 @@ export default function Calculation() {
                     ) : (
                       <input
                         type="text"
-                        className={`form-control form-control-sm ${
+                        className={`form-control form-control-sm calc-input ${
                           errors[item.key] ? "is-invalid" : ""
                         }`}
                         placeholder={item.label}
@@ -105,12 +106,12 @@ export default function Calculation() {
               </div>
 
               <div className="mt-4 d-flex justify-content-start">
-                <button type="submit" className="btn btn-dark px-4 py-2 me-3 rounded-0">
+                <button type="submit" className="btn calc-btn-primary px-4 py-2 me-3 rounded-3">
                   Calculate
                 </button>
                 <button
                   type="button"
-                  className="btn btn-outline-dark px-4 py-2 rounded-0"
+                  className="btn calc-btn-outline px-4 py-2 rounded-3"
                   onClick={() => {
                     setFormData({});
                     setRate(null);
@@ -134,21 +135,13 @@ export default function Calculation() {
               {rate ? (
                 <motion.div
                   key={rate} // <— IMPORTANT: re-triggers animation when rate changes
-                  className="text-center p-4"
-                  style={{
-                    background: "linear-gradient(135deg, #111 0%, #222 60%, #333 100%)",
-                    color: "#fff",
-                    borderRadius: "16px",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
-                    width: "100%",
-                    maxWidth: "400px",
-                  }}
+                  className="text-center p-4 calc-result-card"
                   initial={{ opacity: 0, y: 30, scale: 0.9 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.4 }}
                 >
                   <motion.h5
-                    className="fw-bold"
+                    className="fw-bold calc-result-title"
                     initial={{ scale: 0.8 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.3 }}
@@ -157,16 +150,7 @@ export default function Calculation() {
                   </motion.h5>
 
                   <motion.div
-                    className="fw-bold mt-3"
-                    style={{
-                      fontSize: "2.5rem",
-                      color: "#00ffb0",
-                      background: "rgba(255,255,255,0.1)",
-                      padding: "18px 40px",
-                      borderRadius: "12px",
-                      border: "1px solid rgba(255,255,255,0.2)",
-                      boxShadow: "inset 0 0 10px rgba(255,255,255,0.1)",
-                    }}
+                    className="fw-bold mt-3 calc-result-value"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.4 }}
@@ -174,21 +158,14 @@ export default function Calculation() {
                     ₹ {rate}
                   </motion.div>
 
-                  <p className="mt-3 text-light small opacity-75">
+                  <p className="mt-3 small calc-result-note">
                     *Estimated based on input data and base charges.
                   </p>
                 </motion.div>
               ) : (
-                <div
-                  className="text-center text-light small mt-3 p-4 w-100"
-                  style={{
-                    background: "linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%)",
-                    borderRadius: "12px",
-                    maxWidth: "400px",
-                  }}
-                >
+                <div className="text-center small mt-3 p-4 w-100 calc-placeholder-card">
                   Fill out the details and click{" "}
-                  <strong  style={{color:"#00ffb0"}}>Calculate</strong> to get your rate.
+                  <strong className="calc-placeholder-highlight">Calculate</strong> to get your rate.
                 </div>
               )}
             </div>

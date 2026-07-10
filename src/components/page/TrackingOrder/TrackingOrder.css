@@ -1,56 +1,70 @@
-/* ---------- Global Layout ---------- */
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   GLOBAL LAYOUT
+============================================ */
 .trackorder-dual {
   display: flex;
   width: 100vw;
   height: 100vh;
-  font-family: "Poppins", sans-serif;
-  background: #fff;
-  color: #000;
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A;
+  color: #FFFFFF;
   overflow: hidden;
   padding-top: 3rem;
   margin-bottom: 6rem;
 }
 
-/* ---------- Left Section ---------- */
+/* ============================================
+   LEFT SECTION
+============================================ */
 .white-side {
   flex: 0.45;
-  background: #fff;
-  color: #000;
+  background-color: #0F172A;
+  color: #FFFFFF;
   padding: 40px;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .left-title {
   font-size: 2rem;
   margin-bottom: 10px;
   font-weight: 700;
+  color: #FFFFFF;
 }
 
 .left-subtext {
   font-size: 0.95rem;
-  color: #444;
+  color: #CBD5E1;
   margin-bottom: 25px;
   line-height: 1.5;
 }
 
-/* ---------- Form ---------- */
+/* ============================================
+   FORM (Glassmorphism)
+============================================ */
 .trackorder-form {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
   padding: 20px;
   margin-bottom: 25px;
-  background: #fff;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .trackorder-tabs {
   display: flex;
-  background: #f6f6f6;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
   margin-bottom: 10px;
+  padding: 4px;
 }
 
 .trackorder-tab {
@@ -62,54 +76,71 @@
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  color: #000;
+  color: #CBD5E1;
   font-weight: 500;
 }
 
 .trackorder-tab.active {
-  background: #000;
-  color: #fff;
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  color: #FFFFFF;
+}
+
+.trackorder-tab.tab-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .trackorder-form input {
   width: 100%;
   padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF;
   margin-bottom: 12px;
   font-size: 14px;
   transition: 0.3s;
 }
 
+.trackorder-form input::placeholder {
+  color: #64748B;
+}
+
 .trackorder-form input:focus {
-  border-color: #000;
+  border-color: #3B82F6;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
 
 .trackorder-btn {
-  background: #000;
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
   color: #fff;
   border: none;
   padding: 12px;
-  border-radius: 8px;
-  font-weight: 500;
+  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35);
+  width: 100%;
 }
 
 .trackorder-btn:hover {
-  background: #222;
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  transform: translateY(-2px);
 }
 
-/* ---------- Courier Info ---------- */
+/* ============================================
+   COURIER INFO CARD
+============================================ */
 .trackorder-couriercard {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .courier-head {
@@ -123,7 +154,7 @@
   width: 45px;
   height: 45px;
   border-radius: 8px;
-  background: #f8f8f8;
+  background: #fff;
   object-fit: contain;
   padding: 5px;
 }
@@ -131,49 +162,33 @@
 .courier-name {
   font-weight: 600;
   font-size: 15px;
+  color: #FFFFFF;
 }
 
 .courier-details p {
   margin: 6px 0;
   font-size: 13.5px;
-  color: #333;
+  color: #CBD5E1;
 }
 
-/* ---------- Feedback ---------- */
-.trackorder-feedback {
-  margin-top: 20px;
+.courier-details b {
+  color: #FFFFFF;
 }
 
-.trackorder-feedback label {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 6px;
-  display: block;
+.courier-details hr {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-.trackorder-feedback textarea {
-  width: 100%;
-  margin-top: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  resize: vertical;
-  min-height: 90px;
-  transition: 0.3s;
-}
-
-.trackorder-feedback textarea:focus {
-  border-color: #000;
-  outline: none;
-}
-
-/* ---------- About Section ---------- */
+/* ============================================
+   ABOUT SECTION
+============================================ */
 .trackorder-about {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   font-size: 13.5px;
   margin-bottom: 20px;
 }
@@ -181,10 +196,11 @@
 .trackorder-about h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #FFFFFF;
 }
 
 .trackorder-about p {
-  color: #333;
+  color: #CBD5E1;
   line-height: 1.6;
   margin-bottom: 10px;
 }
@@ -198,21 +214,40 @@
 .trackorder-about li {
   margin: 6px 0;
   font-weight: 500;
-  color: #000;
+  color: #FFFFFF;
 }
 
-/* ---------- Right Section ---------- */
+.about-footer {
+  color: #94A3B8 !important;
+  font-size: 12.5px;
+  font-style: italic;
+}
+
+/* ============================================
+   RIGHT SECTION
+============================================ */
 .dark-side {
   flex: 0.55;
-  background: #fff;
-  color: #000;
+  background-color: #16213E;
+  color: #FFFFFF;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  border-left: 1px solid #e0e0e0;
+}
+
+.glow-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 /* Empty state */
@@ -221,16 +256,18 @@
   max-width: 600px;
   margin: auto;
   z-index: 2;
+  position: relative;
 }
 
 .right-content h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: #FFFFFF;
 }
 
 .right-content p {
   font-size: 1rem;
-  color: #444;
+  color: #CBD5E1;
   margin-bottom: 15px;
 }
 
@@ -244,26 +281,48 @@
 
 .right-content li {
   margin: 8px 0;
-  color: #000;
+  color: #E2E8F0;
   font-size: 0.95rem;
 }
 
-/* ---------- Timeline ---------- */
+/* ============================================
+   TIMELINE — PROFESSIONAL REDESIGN
+============================================ */
 .timeline-heading {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
 }
 
 .timeline-scroll {
   flex: 1;
   height: 80vh;
   overflow-y: auto;
-  border-radius: 10px;
-  padding: 25px;
-  background: #fafafa;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
-  border-left: 2px solid #000;
+  border-radius: 16px;
+  padding: 8px 4px 8px 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.timeline-scroll ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 4px 0 22px;
+  position: relative;
+}
+
+/* Continuous vertical connector line */
+.timeline-scroll ul::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.5) 0%, rgba(255, 255, 255, 0.08) 100%);
 }
 
 /* Scrollbar */
@@ -271,77 +330,444 @@
   width: 6px;
 }
 .timeline-scroll::-webkit-scrollbar-thumb {
-  background: #000;
+  background: rgba(59, 130, 246, 0.4);
   border-radius: 6px;
 }
 
 /* Steps */
 .timeline-step {
   position: relative;
-  padding-left: 35px;
-  margin: 25px 0;
+  list-style: none;
+  margin: 0 0 18px 0;
 }
 
-.timeline-step::before {
-  content: "";
-  position: absolute;
-  left: 16px;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: #ccc;
+.timeline-step:last-child {
+  margin-bottom: 4px;
 }
 
+/* Dot */
 .timeline-dot {
   position: absolute;
-  left: 10px;
-  top: 6px;
-  width: 12px;
-  height: 12px;
+  left: -22px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  background: #000;
+  background: #475569;
+  border: 3px solid #16213E;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
+  z-index: 2;
 }
 
 .timeline-step.active .timeline-dot {
-  background: #333;
+  background: #3B82F6;
+  box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.2), 0 0 12px rgba(59, 130, 246, 0.6);
+}
+
+/* Card */
+.timeline-text {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-left: 14px;
+  transition: all 0.3s ease;
+}
+
+.timeline-step.active .timeline-text {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.15);
+}
+
+.timeline-text:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateX(2px);
+}
+
+/* Status row + badge */
+.timeline-status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .timeline-text h4 {
   font-size: 15px;
-  color: #000;
-  margin-bottom: 4px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
   text-transform: capitalize;
+}
+
+.timeline-latest-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #93C5FD;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  padding: 2px 8px;
+  border-radius: 20px;
 }
 
 .timeline-text .loc {
   font-size: 13px;
-  color: #555;
+  color: #CBD5E1;
+  margin: 6px 0 4px;
 }
 
 .timeline-text .time {
   font-size: 12px;
-  color: #888;
-  margin-top: 4px;
+  color: #94A3B8;
+  margin: 0;
 }
 
-/* ---------- Responsive ---------- */
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .left-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-heading {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET/MOBILE (≤900px)
+============================================ */
 @media (max-width: 900px) {
   .trackorder-dual {
     flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .white-side,
   .dark-side {
     flex: 1;
-    padding: 20px;
+    padding: 24px;
+  }
+
+  .white-side {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .timeline-scroll {
-    height: 50vh;
+    height: 55vh;
   }
 
   .courier-logo {
     width: 35px;
     height: 35px;
   }
+
+  .glow-circle {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .white-side,
+  .dark-side {
+    padding: 18px;
+  }
+
+  .left-title {
+    font-size: 1.5rem;
+  }
+
+  .left-subtext {
+    font-size: 0.88rem;
+  }
+
+  .right-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .right-content p {
+    font-size: 0.9rem;
+  }
+
+  .right-content li {
+    font-size: 0.85rem;
+  }
+
+  .timeline-heading {
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+  }
+
+  .timeline-scroll {
+    height: 50vh;
+  }
+
+  .timeline-scroll ul {
+    padding-left: 18px;
+  }
+
+  .timeline-scroll ul::before {
+    left: 18px;
+  }
+
+  .timeline-dot {
+    left: -18px;
+    width: 12px;
+    height: 12px;
+    top: 18px;
+  }
+
+  .timeline-text {
+    padding: 12px 14px;
+    margin-left: 10px;
+  }
+
+  .timeline-text h4 {
+    font-size: 13.5px;
+  }
+
+  .timeline-latest-badge {
+    font-size: 9.5px;
+    padding: 2px 6px;
+  }
+
+  .timeline-text .loc {
+    font-size: 12px;
+  }
+
+  .timeline-text .time {
+    font-size: 11px;
+  }
+
+  .trackorder-tabs {
+    flex-wrap: wrap;
+  }
+
+  .trackorder-tab {
+    min-width: 30%;
+    font-size: 12.5px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .left-title {
+    font-size: 1.3rem;
+  }
+
+  .trackorder-form {
+    padding: 14px;
+  }
+
+  .trackorder-couriercard,
+  .trackorder-about {
+    padding: 16px;
+  }
+
+  .courier-head {
+    gap: 8px;
+  }
+
+  .courier-name {
+    font-size: 13.5px;
+  }
+
+  .courier-details p {
+    font-size: 12.5px;
+  }
+
+  .timeline-status-row {
+    gap: 6px;
+  }
+}
+
+/* ============================================
+   TIMELINE — BOXED CARD STYLE (matches reference)
+============================================ */
+.timeline-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4ADE80;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.live-dot-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22C55E;
+  animation: liveDotPulse 1.6s infinite;
+}
+
+@keyframes liveDotPulse {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.timeline-scroll {
+  flex: 1;
+  height: 78vh;
+  overflow-y: auto;
+  padding: 4px 8px 4px 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.timeline-scroll ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.4);
+  border-radius: 6px;
+}
+
+/* Step wrapper */
+.timeline-step {
+  position: relative;
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding-left: 10px;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 4px;
+}
+
+/* Dot — sits on the card's left border */
+.timeline-dot-wrap {
+  position: absolute;
+  left: -1px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0B1120;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-step.active .timeline-dot {
+  background: #3B82F6;
+  border-color: #FFFFFF;
+}
+
+/* Ping ripple on the current/active step */
+.timeline-dot-ping {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.55);
+  animation: dotPing 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+  z-index: 1;
+}
+
+@keyframes dotPing {
+  0% { transform: scale(1); opacity: 0.7; }
+  75%, 100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Card — boxed, left accent border, matches reference */
+.timeline-card {
+  background: #16213E;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #3B82F6;
+  border-radius: 12px;
+  padding: 16px 18px 16px 26px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.timeline-step.active .timeline-card {
+  border-left-color: #3B82F6;
+  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.15);
+}
+
+.timeline-card:hover {
+  background: #1A2848;
+}
+
+.timeline-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+  text-transform: capitalize;
+}
+
+.timeline-status-pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.timeline-card .loc {
+  font-size: 13px;
+  color: #CBD5E1;
+  margin: 0 0 6px;
+}
+
+.timeline-card .time {
+  font-size: 12px;
+  color: #64748B;
+  margin: 0;
+  font-weight: 500;
 }

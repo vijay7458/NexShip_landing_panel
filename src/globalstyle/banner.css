@@ -1,19 +1,88 @@
-body {
-  background-color: #fff;
+/* ============================================
+   GOOGLE FONT IMPORT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   GLOBAL / BASE
+============================================ */
+* {
+  font-family: 'Inter', sans-serif;
 }
 
+body {
+  background-color: #0F172A;
+}
+
+/* ============================================
+   BANNER SECTION
+============================================ */
 .feature-banner {
   min-height: 520px;
-  background-color: #fff;
+  background-color: #0F172A;
   margin-top: -1rem;
-
-  color: #000;
+  color: #ffffff;
   overflow: hidden;
-  /* border-bottom: 1px solid #e5e5e5; */
   position: relative;
+  transition: background-color 0.4s ease;
 }
 
-/* Floating Wrapper */
+/* ============================================
+   TYPOGRAPHY
+============================================ */
+.feature-banner h1 {
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.feature-banner .lead {
+  color: #CBD5E1 !important;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   CUSTOM BANNER — SUBTEXT (reused component)
+============================================ */
+.banner-subtext {
+  color: #CBD5E1 !important;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   BUTTON / CTA
+============================================ */
+.banner-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.banner-cta:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  color: #ffffff !important;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.5);
+}
+
+.banner-cta:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* ============================================
+   FLOATING IMAGE WRAPPER (GLASS CARD FRAME)
+============================================ */
 .floating-wrapper {
   position: relative;
   height: 420px;
@@ -25,8 +94,11 @@ body {
   position: absolute;
   border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.3s ease;
 }
 
 /* Image Layout */
@@ -59,12 +131,15 @@ body {
 
 /* Hover Effect */
 .floating-img:hover {
-  transform: scale(1.05) translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  transform: scale(1.06) translateY(-8px);
+  box-shadow: 0 20px 45px rgba(59, 130, 246, 0.35);
+  border-color: rgba(59, 130, 246, 0.4);
   z-index: 5;
 }
 
-/* Fade Animations */
+/* ============================================
+   FADE / ENTRANCE ANIMATIONS
+============================================ */
 .fade-in-left {
   opacity: 0;
   transform: translateX(-50px);
@@ -79,23 +154,120 @@ body {
 }
 
 @keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(-50px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  from { opacity: 0; transform: translateX(50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (≤991px)
+============================================ */
+@media (max-width: 991px) {
+  .feature-banner {
+    min-height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem !important;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .floating-wrapper {
+    height: 380px;
+  }
+
+  .main-img {
+    width: 68%;
+    left: 16%;
+  }
+
+  .side-img-1,
+  .side-img-2 {
+    width: 42%;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (≤767px)
+============================================ */
+@media (max-width: 767px) {
+  .feature-banner h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .feature-banner .lead {
+    text-align: center;
+    padding-right: 0 !important;
+    font-size: 0.95rem;
+  }
+
+  .feature-banner .col-lg-6.col-md-12 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feature-banner .col-lg-6.col-md-12:first-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-cta {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .floating-wrapper {
+    height: 300px;
+    max-width: 380px;
+    margin: 1.5rem auto 0;
+  }
+
+  .main-img {
+    width: 70%;
+    height: 240px;
+    top: 20px;
+    left: 15%;
+  }
+
+  .side-img-1 {
+    width: 48%;
+    height: 150px;
+    top: 0;
+    left: -2%;
+  }
+
+  .side-img-2 {
+    width: 48%;
+    height: 150px;
+    bottom: 0;
+    right: -2%;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (≤480px)
+============================================ */
+@media (max-width: 480px) {
+  .feature-banner h1 {
+    font-size: 1.65rem;
+  }
+
+  .floating-wrapper {
+    height: 260px;
+    max-width: 300px;
+  }
+
+  .main-img {
+    height: 200px;
+  }
+
+  .side-img-1,
+  .side-img-2 {
+    height: 120px;
   }
 }

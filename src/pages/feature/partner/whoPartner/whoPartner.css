@@ -3,8 +3,8 @@
 ------------------------------ */
 
 .who-partner-section {
-  background-color: #fff;
-  color: #000;
+  background-color: #0F172A;
+  color: #FFFFFF;
   padding: 100px 0;
   width: 100%;
   overflow: hidden;
@@ -13,26 +13,39 @@
 .section-title {
   font-size: 2.3rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  background: #3B82F6;
+  border-radius: 4px;
 }
 
 /* Partner Card */
 .partner-card {
-  background: #f9f9f9;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.35s ease-in-out;
   height: 100%;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  backdrop-filter: blur(6px);
 }
 
 .partner-card:hover {
   transform: translateY(-5px);
-  border-color: #000;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #3B82F6;
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
 }
 
 /* Image Section */
@@ -40,19 +53,22 @@
   overflow: hidden;
   height: 230px;
   border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .partner-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%);
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .partner-card:hover .partner-img {
-  filter: grayscale(0%);
   transform: scale(1.05);
+}
+
+.partner-card:hover .partner-img-wrapper {
+  border-bottom-color: rgba(59, 130, 246, 0.4);
 }
 
 /* Text Section */
@@ -64,12 +80,12 @@
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #000;
+  color: #FFFFFF;
 }
 
 .partner-desc {
   font-size: 1rem;
-  color: #444;
+  color: #CBD5E1;
   line-height: 1.7;
 }
 

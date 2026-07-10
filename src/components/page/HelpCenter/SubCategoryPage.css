@@ -1,84 +1,165 @@
-/* Overall layout of the subcategory page */
+/* ============================================
+   GOOGLE FONT
+============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ============================================
+   SUBCATEGORY PAGE LAYOUT
+============================================ */
 .subcategory-page {
-    width: 90%;
-    max-width: 1200px;
-    margin-inline: auto;
-    margin-top: 60px;
+  font-family: 'Inter', sans-serif;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 60px;
+  min-height: 100vh;
+  padding-bottom: 4rem;
 }
 
-/* Heading for the subcategory page */
+/* ============================================
+   HEADING
+============================================ */
 .subcategory-page h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: 600;
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-/* Styling for the FAQ list */
+/* ============================================
+   FAQ LIST
+============================================ */
 .subcategory-page ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
 }
 
+/* ============================================
+   FAQ CARD (Glassmorphism)
+============================================ */
 .subcategory-page li {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    padding: 15px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* Hover effect for individual FAQ items */
 .subcategory-page li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(59, 130, 246, 0.2);
 }
 
-/* FAQ question styling */
+/* ============================================
+   FAQ QUESTION
+============================================ */
 .subcategory-page li h3 {
-    font-size: 1.2rem;
-    color: var(--sh-primary);
-    margin: 0;
+  font-size: 1.2rem;
+  color: #93C5FD;
+  margin: 0;
+  font-weight: 600;
 }
 
-/* FAQ answer styling */
+/* ============================================
+   FAQ ANSWER
+============================================ */
 .subcategory-page li p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 10px;
+  font-size: 1rem;
+  color: #CBD5E1;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
-/* Message when no questions are available */
+/* ============================================
+   NO QUESTIONS MESSAGE
+============================================ */
 .subcategory-page p.no-questions {
+  font-size: 1rem;
+  color: #94A3B8;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ============================================
+   RESPONSIVE — LAPTOP (1024px–1439px)
+============================================ */
+@media (max-width: 1439px) {
+  .subcategory-page h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (768px–1023px)
+============================================ */
+@media (max-width: 1023px) {
+  .subcategory-page {
+    width: 92%;
+  }
+
+  .subcategory-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .subcategory-page li {
+    padding: 14px;
+  }
+
+  .subcategory-page li h3 {
     font-size: 1rem;
-    color: #777;
-    text-align: center;
-    margin-top: 30px;
+  }
+
+  .subcategory-page li p {
+    font-size: 0.9rem;
+  }
 }
 
-/* Add some space between list items and the top of the page */
-.subcategory-page ul {
-    margin-top: 20px;
+/* ============================================
+   RESPONSIVE — MOBILE (320px–767px)
+============================================ */
+@media (max-width: 767px) {
+  .subcategory-page {
+    width: 94%;
+    margin-top: 40px;
+  }
+
+  .subcategory-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .subcategory-page li {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .subcategory-page li h3 {
+    font-size: 0.95rem;
+  }
+
+  .subcategory-page li p {
+    font-size: 0.85rem;
+  }
 }
 
-/* Responsive styling */
-@media (max-width: 768px) {
-    .subcategory-page h1 {
-        font-size: 1.6rem;
-    }
+/* ============================================
+   RESPONSIVE — SMALL MOBILE (320px–479px)
+============================================ */
+@media (max-width: 479px) {
+  .subcategory-page h1 {
+    font-size: 1.25rem;
+  }
 
-    .subcategory-page li {
-        padding: 10px;
-    }
-
-    .subcategory-page li h3 {
-        font-size: 1rem;
-    }
-
-    .subcategory-page li p {
-        font-size: 0.9rem;
-    }
+  .subcategory-page li {
+    padding: 10px;
+  }
 }
