@@ -4,7 +4,7 @@ import "./StoriesCta.css";
 
 const StoriesCta = () => {
   const handleClick = () => {
-    window.open(  "https://nexshyp.com/sign-up"
+    window.open(  process.env.REACT_APP_BASE_URL + "/login"
             ,"_blank", )
   }
   return (

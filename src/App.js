@@ -15,6 +15,7 @@ import NDRManagement from './components/page/Features/NDRManagement/NDRManagemen
 import CarrierIntegration from './components/page/Integration/CarrierIntegration/CarrierIntegration';
 import ReferAndEarn from './components/page/Resources/ReferAndEarn/ReferAndEarn';
 import ContactUs from './components/page/ContactUs/ContactUs';
+import NewContactUs from './components/page/ContactUs/NewContactUs';
 import APIIntegration from './components/page/Integration/APIIntegration/APIIntegration';
 import HyperLocal from './components/page/Features/HyperLocal/HyperLocal';
 import AmazonSelfShip from './components/page/Features/AmazonSelfShip/AmazonSelfShip';
@@ -49,6 +50,7 @@ import Rto from './pages/feature/rto/Rto';
 import About from './pages/feature/about/About';
 import Career from './pages/feature/career/Career';
 import OurTeam from './pages/feature/ourteam/OurTeam';
+import RefundPolicy from './pages/feature/refundcancellation/refundcacellation';
 import Partner from './pages/feature/partner/Partner';
 import InvestorRelation from './pages/feature/investorRelation/InvestorRelation';
 import NewsRoom from './pages/feature/newsroom/NewsRoom';
@@ -73,7 +75,7 @@ function App() {
       <TopNav /> */}
       <ScrollToTop />
       <MetaPixelTracker /> 
-      <Discount /> 
+      {/* <Discount />  */}
       <Routes>
         <Route path='/terms' element={<TermCondition />} />
         <Route path='/' element={<Feature />} />
@@ -101,6 +103,7 @@ function App() {
         <Route path='/channel-integration' element={<ChannelIntegration />} />
         <Route path='/whatsapp-integration' element={<WhatsAppIntegration />} />
         <Route path='/team' element={<OurTeam />} />
+        <Route path='/refund-cancellation-policy' element={<RefundPolicy />} />
         <Route path='/investors' element={<InvestorRelation />} />
         {/* Resources Routes */}
         <Route path='/refer-and-earn' element={<ReferAndEarn />} />
@@ -121,7 +124,7 @@ function App() {
         <Route path="/track-order/:awbNumber" element={<TrackingOrder />} />
         <Route path="/about" element={<About />} />
         <Route path="/newsroom" element={<NewsRoom />} />
-        <Route path='/contact' element={<ContactUs />} />
+        <Route path='/contact' element={<NewContactUs />} />
         {/* Footer Links */}
         <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />

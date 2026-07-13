@@ -63,7 +63,7 @@ const WhatsAppIntegration = () => {
             <div className='col-6'>
               <h2 className='heading text-start'>Power Up Your Business Communication With WhatsApp</h2>
               <p>Customers today expect instant updates and a smooth delivery experience. Our WhatsApp integration ensures they stay informed with real-time updates — from order pickup to final delivery — all within the messaging app they trust and use daily.</p>
-              <button onClick={() => handleOpenLink("https://app.shipease.in/sign-up")} className='btn main-button'>Find The Best For You</button>
+              <button onClick={() => handleOpenLink(process.env.REACT_APP_BASE_URL + "/login")} className='btn main-button'>Find The Best For You</button>
             </div>
             <div className='col-6 text-end'>
               <img src={PowerUpYourBusiness} alt="WhatsApp Integration" />

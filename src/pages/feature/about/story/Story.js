@@ -4,11 +4,11 @@ import "./story.css";
 
 const Story = () => {
   const storyTimeline = [
-    {
-      year: "2020",
-      title: "The Beginning",
-      desc: "We started with a simple idea — to simplify logistics for small sellers struggling with complex delivery systems.",
-    },
+    // {
+    //   year: "2020",
+    //   title: "The Beginning",
+    //   desc: "We started with a simple idea — to simplify logistics for small sellers struggling with complex delivery systems.",
+    // },
     {
       year: "2021",
       title: "Building the Platform",

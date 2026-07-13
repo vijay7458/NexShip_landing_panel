@@ -12,6 +12,7 @@ export default function TopNav() {
     // { title: "Our Team", path: "/team" },
     { title: "Careers", path: "/careers" },
     // { title: "Seller Stories", path: "/stories" },
+    { title: "Refund & Cancellation Policy", path: "/refund-cancellation-policy" },
     { title: "Rate Calculator", path: "/rate-calculator" },
     { title: "Contact Us", path: "/contact" },
     { title: "Track Order", path: "/track" },
@@ -74,7 +75,7 @@ export default function TopNav() {
       {/* Right Side Buttons */}
       <div className="nav-right d-none d-md-flex align-items-center gap-3 nav-pill-bg rounded-5 px-1 py-1">
         <a
-          href="https://nexshyp.com/login"
+          href={`${process.env.REACT_APP_BASE_URL}/login`}
           target="_blank"
           rel="noopener noreferrer"
           className="nav-login-link fw-semibold small py-1 px-3 d-flex align-items-center text-decoration-none"
@@ -106,7 +107,7 @@ export default function TopNav() {
           </div>
 
           <a
-            href="https://nexshyp.com/login"
+            href={`${process.env.REACT_APP_BASE_URL}/login`}
             target="_blank"
             rel="noopener noreferrer"
             className="mobile-login-link d-flex align-items-center text-decoration-none"
@@ -138,7 +139,7 @@ export default function TopNav() {
 
         <div className="mobile-buttons">
           <a
-            href="https://nexshyp.com/login"
+            href={`${process.env.REACT_APP_BASE_URL}/login`}
             target="_blank"
             rel="noopener noreferrer"
             className="nav-login-link fw-semibold small py-1 px-3 mb-2 d-inline-block text-decoration-none"

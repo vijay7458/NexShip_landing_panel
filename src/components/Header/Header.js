@@ -49,7 +49,7 @@ const Header = () => {
   }, []);
 
   const handleNavigation = () => {
-    window.open("https://app.shipease.in", "_blank", "noopener,noreferrer");
+    window.open(process.env.REACT_APP_BASE_URL + "/login", "_blank", "noopener,noreferrer");
   };
 
   const handleToggle = () => {
@@ -143,7 +143,7 @@ const Header = () => {
                       <li><FontAwesomeIcon icon={faAmazon} /><Link className="dropdown-item" to="/amazon-self-ship">Amazon Self Ship<hr /><span>Seamless Amazon Self-Shipping with Shipease</span></Link></li>
                       <li><FontAwesomeIcon icon={faMoneyBill1} /><Link className="dropdown-item" to="/early-cod">Early COD<hr /><span>Enjoy Daily COD Remittance</span></Link></li>
                       <li><FontAwesomeIcon icon={faLocationDot} /><Link className="dropdown-item" to="/pickup-locations">Pickup Locations<hr /><span>Optimize Your Pickup Strategy</span></Link></li>
-                      <li><FontAwesomeIcon icon={faUserPlus} /><Link className="dropdown-item signup-box" target="_blank" rel="noreferrer" to="https://app.shipease.in/sign-up">Create Account<hr /><span>Sign Up with Shipease Today</span></Link></li>
+                      <li><FontAwesomeIcon icon={faUserPlus} /><Link className="dropdown-item signup-box" target="_blank" rel="noreferrer" to={process.env.REACT_APP_BASE_URL + "/login"}>Create Account<hr /><span>Sign Up with NexShyp Today</span></Link></li>
                     </ul>
                   </li>
                 </ul>

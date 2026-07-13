@@ -5,12 +5,12 @@ import "./hero.css";
 const Hero = () => {
 
   const handleShip = () => {
-  window.open("https://app.shipease.in/sign-up"
+  window.open(  process.env.REACT_APP_BASE_URL + "/login"
             ,"_blank",)
   }
 
   const bookDemo = () =>{
-    window.open(  "https://app.shipease.in/sign-up"
+    window.open(  process.env.REACT_APP_BASE_URL + "/login"
             ,"_blank")
   }
    return (
