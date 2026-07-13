@@ -79,7 +79,7 @@ const RateCalculator = () => {
     setError('');
     setShippingData(null); // Reset previous data while fetching
 
-    const url = "https://app.shipease.in/core-api/shipping/calculate-rate/";
+    const url = "https://nexshyp.com/core-api/shipping/calculate-rate/";
     const payload = {
       source_pincode: pickupPincode,
       destination_pincode: deliveryPincode,

@@ -36,7 +36,7 @@ export default function CTASection() {
 
       {/* CTA Button */}
       <motion.a
-        href="http://localhost:3000/contact"
+        href={`${window.location.origin}/contact`}
         className="btn fw-bold px-5 py-2 rounded-4 cta-button"
         whileHover={{
           y: -4,

@@ -65,7 +65,7 @@ export default function FeatureBanner() {
             </p>
 
             <a
-              href="https://nexshyp.com/sign-up"
+              href={`${process.env.REACT_APP_BASE_URL}/login`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-sm rounded-4 px-4 mt-4 fw-semibold banner-cta"
