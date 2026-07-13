@@ -64,8 +64,8 @@ const TrackingOrder = () => {
 };
 
     const handleAwbChange = (e) => {
-        const numericValue = e.target.value.replace(/[^0-9]/g, "");
-        setAwb(numericValue);
+        const alphanumericValue = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
+        setAwb(alphanumericValue);
     };
 
     const handleSubmitAwb = (e) => {
@@ -80,10 +80,10 @@ const TrackingOrder = () => {
             return;
         }
 
-        if (!/^\d+$/.test(trimmedAwb)) {
+        if (!/^[a-zA-Z0-9]+$/.test(trimmedAwb)) {
             Toast.fire({
                 icon: "warning",
-                title: "AWB number should contain digits only.",
+                title: "AWB number should only contain letters and numbers.",
             });
             return;
         }
@@ -157,8 +157,6 @@ const TrackingOrder = () => {
                                 <form onSubmit={handleSubmitAwb}>
                                     <input
                                         type="text"
-                                        inputMode="numeric"
-                                        pattern="[0-9]*"
                                         placeholder="Enter AWB number"
                                         value={awb}
                                         onChange={handleAwbChange}
