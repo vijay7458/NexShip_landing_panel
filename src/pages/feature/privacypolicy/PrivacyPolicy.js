@@ -118,7 +118,7 @@ export default function PrivacyPolicy() {
               please contact us through any of the following methods:
             </p>
             <ul className="privacy-text">
-              <li><strong className="privacy-strong">Email:</strong> ops@nexshyp.com</li>
+              <li><strong className="privacy-strong">Email:</strong> sales@nexshyp.com</li>
               <li><strong className="privacy-strong">Office Address:</strong> Unit - 321, Emaar Colonnade, Main Golf Course Ext Rd, Sector 66 Gurugram, Haryana, India</li>
               <li><strong className="privacy-strong">Business Hours:</strong> Monday – Friday, 9:00 AM to 6:00 PM (IST)</li>
             </ul>

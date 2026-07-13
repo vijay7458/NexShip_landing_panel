@@ -6,7 +6,7 @@ import img1 from "../../../../assets/image/WhatsApp Image 2026-02-25 at 4.19.47 
 
 const RtoHero = () => {
   const handleClick = () => {
-    window.open(  "https://nexshyp.com/sign-up","_blank")
+    window.open(  process.env.REACT_APP_BASE_URL + "/login","_blank")
   } 
 
 

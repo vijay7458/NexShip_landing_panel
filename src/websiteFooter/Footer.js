@@ -31,6 +31,7 @@ export default function Footer() {
                 // { label: "Investor Relations", url: "/investors" },
                 // { label: "Newsroom", url: "/newsroom" },
                 // { label: "Seller Stories", url: "/stories" },
+                { label: "Refund & Cancellation Policy", url: "/refund-cancellation-policy" },
             ],
         },
         {
@@ -47,7 +48,7 @@ export default function Footer() {
             links: [
                 { label: "Blog", url: "/blog" },
                 { label: "Help Center", url: "/help" },
-                { label: "Knowledge Base", url: "/knowledge" },
+                // { label: "Knowledge Base", url: "/knowledge" },
             ],
         },
         {
@@ -99,7 +100,7 @@ export default function Footer() {
                                 Vijay Nagar Square, AB Rd, Vijay Nagar, Indore, Madhya Pradesh 452010
                                 <br />
                                 <span className="d-block mt-1">
-                                    ops@nexshyp.com
+                                    sales@nexshyp.com
                                 </span>
                             </p>
                         </div>

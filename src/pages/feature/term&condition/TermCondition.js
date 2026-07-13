@@ -81,7 +81,7 @@ export default function TermCondition() {
               If you have any questions or concerns about these Terms and Conditions, please reach out to our support team:
             </p>
             <ul className="terms-text">
-              <li><strong className="terms-strong">Email:</strong> ops@nexshyp.com</li>
+              <li><strong className="terms-strong">Email:</strong> sales@nexshyp.com</li>
               <li><strong className="terms-strong">Business Hours:</strong> Monday – Friday, 9:00 AM to 6:00 PM</li>
             </ul>
 

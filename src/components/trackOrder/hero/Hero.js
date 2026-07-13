@@ -21,7 +21,7 @@ const TrackHero = () => {
       setTrackingData(null);
 
       const response = await axios.get(
-        `https://app.shipease.in/core-api/shipping/track-order/${awb}/`
+        `https://nexshyp.com/core-api/shipping/track-order/${awb}/`
       );
 
       setTrackingData(response.data);
