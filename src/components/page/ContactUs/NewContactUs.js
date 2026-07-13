@@ -1,24 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './ContactUs.css';
 import MapboxComponent from './MapboxComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import ShopifyLogo from "../../../assets/image/Channels/logo/shopify.jpg"
 import AmazonLogo from "../../../assets/image/Channels/logo/AmazonLogo.png"
 import WooLogo from "../../../assets/image/Channels/logo/WCLogo.png"
 import HippoLogo from "../../../assets/image/Channels/logo/StoreHippo.png"
 import MagentoLogo from "../../../assets/image/Channels/logo/magento.png"
 import CustomLogo from "../../../assets/image/Channels/logo/Manual.png"
-import { Button, Form, InputGroup, Modal } from 'react-bootstrap';
+import { Form, InputGroup } from 'react-bootstrap';
 import { faUser, faBuilding, faMobileAlt, faEnvelope, faBox, faGlobe, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
-import OtpModal from './OtpModal';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
 import TopNav from '../../../navbar/TopNav';
 
+const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3500,
+    timerProgressBar: true,
+    didOpen: (toastEl) => {
+        toastEl.addEventListener("mouseenter", Swal.stopTimer);
+        toastEl.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+});
 
-const ContactUs = () => {
+const NewContactUs = () => {
 
     const resetForm = () => {
         setNewFormData({
@@ -33,9 +41,8 @@ const ContactUs = () => {
         setSelectedIds([])
     }
 
-    const [openVerifyModal, setOpenVerifyModal] = useState(false)
     const [selectedIds, setSelectedIds] = useState([]);
-    const [mainModalClose, setMainModalClose] = useState("")
+    const [submitting, setSubmitting] = useState(false);
 
     const handleitemboxChange = (id) => {
         setSelectedIds((prevSelected) =>
@@ -43,36 +50,6 @@ const ContactUs = () => {
                 ? prevSelected.filter((item) => item !== id)
                 : [...prevSelected, id]
         );
-    };
-
-    console.log(openVerifyModal)
-
-    useEffect(() => {
-        if (mainModalClose === "closed") {
-            setOpenVerifyModal(false)
-            toast.info("We will contact you ")
-        } else {
-            setMainModalClose("")
-        }
-    }, [mainModalClose])
-
-    console.log(7777777777777777, mainModalClose)
-
-
-    const [error, seterror] = useState(false)
-
-    const [showModal, setShowModal] = useState(false);
-
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-    };
-
-    const handleScroll = () => {
-        window.scrollTo({
-            top: 550,
-            behavior: "smooth",
-        });
     };
 
     const contactBoxObj = [
@@ -89,8 +66,6 @@ const ContactUs = () => {
         { id: "custom", label: "Custom", img: CustomLogo },
         { id: "wooCommerce", label: "WooCommerce", img: WooLogo },
     ]
-
-
 
     const [newFormData, setNewFormData] = useState({
         role: "buisness",
@@ -171,45 +146,60 @@ const ContactUs = () => {
 
         setNewError(errors);
 
-        if (Object.keys(errors).length === 0) {
-            const payload = {
-                type: newFormData.role,
-                first_name: newFormData.name,
-                mobile: newFormData.mobile,
-                company_name: newFormData.companyName,
-                website: newFormData.companyUrl,
-                email: newFormData.emailAddress,
-                monthly_shipment: newFormData.monthlyShipment,
-                channel_name: selectedIds
-            };
+        if (Object.keys(errors).length > 0) {
+            Toast.fire({
+                icon: "warning",
+                title: "Please fix the highlighted fields before submitting.",
+            });
+            return;
+        }
 
-            try {
-                const response = await fetch('https://nexshyp.com/core-api/seller/contact-us/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(payload)
+        const payload = {
+            type: newFormData.role,
+            first_name: newFormData.name,
+            mobile: newFormData.mobile,
+            company_name: newFormData.companyName,
+            website: newFormData.companyUrl,
+            email: newFormData.emailAddress,
+            monthly_shipment: newFormData.monthlyShipment,
+            channel_name: selectedIds
+        };
+
+        setSubmitting(true);
+
+        try {
+            const response = await fetch('https://nexshyp.com/core-api/seller/new-contact-us/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
+            const data = await response.json();
+
+            if (!response.ok) {
+                Toast.fire({
+                    icon: "error",
+                    title: data?.message || "Something went wrong. Please try again.",
                 });
-                const data = await response.json();
-                if (data?.msgid) {
-                    toast.success("OTP sent");
-                    setOpenVerifyModal(true);
-                } else if (data?.is_otp_verify === false) {
-                    toast.info(data?.message || "OTP not verified");
-                    setOpenVerifyModal(true);
-                } else if (data?.is_otp_verify) {
-                     window.scrollTo({ top: 0, behavior: 'smooth' });
-                    toast.info("We will contact you shortly.")
-                    resetForm()
-                }
-
-            } catch (error) {
-                console.error("Submit error:", error);
-                toast.error(error.message || "Failed to submit form");
+                return;
             }
 
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            Toast.fire({
+                icon: "success",
+                title: data?.message || "Form submitted successfully.",
+            });
+            resetForm();
 
+        } catch (error) {
+            console.error("Submit error:", error);
+            Toast.fire({
+                icon: "error",
+                title: error.message || "Failed to submit form. Please try again.",
+            });
+        } finally {
+            setSubmitting(false);
         }
     };
 
@@ -230,9 +220,9 @@ const ContactUs = () => {
 
     return (
         <>
-        <div className='mt-2'>
-             <TopNav />
-        </div>
+            <div className='mt-2'>
+                <TopNav />
+            </div>
             <div className="new-contact-us">
 
                 <div className="left-contact-section">
@@ -443,7 +433,9 @@ const ContactUs = () => {
 
                         </div>
                         <div className='mt-4 submit-row'>
-                            <button onClick={submitForm} className="btn submit-btn">Submit Form</button>
+                            <button onClick={submitForm} className="btn submit-btn" disabled={submitting}>
+                                {submitting ? "Submitting..." : "Submit Form"}
+                            </button>
                         </div>
 
 
@@ -496,13 +488,10 @@ const ContactUs = () => {
                             </motion.div>
                         ))}
                     </div>
-
-                    {openVerifyModal && <OtpModal resetForm={resetForm} show={openVerifyModal} setMainModalClose={setMainModalClose} contactNumber={newFormData?.mobile} onClose={() => setOpenVerifyModal(false)} />}
                 </div>
-                <ToastContainer closeButton={false} autoClose={3000} />
             </div>
         </>
     );
 };
 
-export default ContactUs;
+export default NewContactUs;

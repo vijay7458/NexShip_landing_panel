@@ -17,7 +17,7 @@ const HeroBanner = () => {
   const nameArray = ['i', 'm', 'a', 'n', 's', 'h', 'u']
 
   const handleNavigation = () => {
-    window.open("https://app.shipease.in/sign-up", "_blank", "noopener,noreferrer");
+    window.open(process.env.REACT_APP_BASE_URL + "/signup", "_blank", "noopener,noreferrer");
   };
 
   return (

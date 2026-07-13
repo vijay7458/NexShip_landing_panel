@@ -6,6 +6,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import moment from "moment";
 import TopNav from "../../../navbar/TopNav";
 
+const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3500,
+    timerProgressBar: true,
+    didOpen: (toastEl) => {
+        toastEl.addEventListener("mouseenter", Swal.stopTimer);
+        toastEl.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+});
+
 const TrackingOrder = () => {
     const navigate = useNavigate();
     const { awbNumber } = useParams();
@@ -22,30 +34,62 @@ const TrackingOrder = () => {
     }, [awbNumber]);
 
     const handleTracking = async (awbNum) => {
-        try {
-            const res = await fetch(
-                `https://nexshyp.com/core-api/shipping/track-order/${awbNum}/`
-            );
-            const data = await res.json();
-            if (!res.ok) {
-                setShowData(false);
-                setTrackingData(null);
-            } else {
-                setTrackingData(data);
-                setShowData(true);
-            }
-        } catch {
+    try {
+        const res = await fetch(
+            `https://nexshyp.com/core-api/shipping/track-order/${awbNum}/`
+        );
+        const data = await res.json();
+
+        const isError = !res.ok || !data?.awb_number || data?.message;
+
+        if (isError) {
             setShowData(false);
             setTrackingData(null);
+            Toast.fire({
+                icon: "error",
+                title: data?.message || "No tracking details found for this AWB number.",
+            });
+        } else {
+            setTrackingData(data);
+            setShowData(true);
         }
+    } catch {
+        setShowData(false);
+        setTrackingData(null);
+        Toast.fire({
+            icon: "error",
+            title: "Something went wrong while fetching tracking details. Please try again.",
+        });
+    }
+};
+
+    const handleAwbChange = (e) => {
+        const numericValue = e.target.value.replace(/[^0-9]/g, "");
+        setAwb(numericValue);
     };
 
     const handleSubmitAwb = (e) => {
         e.preventDefault();
-        if (awb.trim()) {
-            navigate(`/order-tracking/${awb}`);
-            handleTracking(awb);
+        const trimmedAwb = awb.trim();
+
+        if (!trimmedAwb) {
+            Toast.fire({
+                icon: "warning",
+                title: "Please enter an AWB number.",
+            });
+            return;
         }
+
+        if (!/^\d+$/.test(trimmedAwb)) {
+            Toast.fire({
+                icon: "warning",
+                title: "AWB number should contain digits only.",
+            });
+            return;
+        }
+
+        navigate(`/order-tracking/${trimmedAwb}`);
+        handleTracking(trimmedAwb);
     };
 
     const handleSubmit = () => {
@@ -113,9 +157,11 @@ const TrackingOrder = () => {
                                 <form onSubmit={handleSubmitAwb}>
                                     <input
                                         type="text"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
                                         placeholder="Enter AWB number"
                                         value={awb}
-                                        onChange={(e) => setAwb(e.target.value)}
+                                        onChange={handleAwbChange}
                                         required
                                     />
                                     <button type="submit" className="trackorder-btn">
@@ -255,6 +301,7 @@ const TrackingOrder = () => {
                             {a?.status_category || "Update"}
                         </span>
                         <p className="loc">{a?.location}</p>
+                        {a?.remarks && <p className="remark">{a.remarks}</p>}
                         <p className="time">
                             {moment(a?.courier_action_date).format("DD MMM YYYY")} ||{" "}
                             {moment(a?.courier_action_date).format("hh:mm A")}

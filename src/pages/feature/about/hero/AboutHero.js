@@ -21,7 +21,7 @@ const AboutHero = () => {
   console.log(7888, chnageBg)
 
   const handleClick = () => {
-    window.open(  "https://nexshyp.com/sign-up"
+    window.open(  `${process.env.REACT_APP_BASE_URL}/login`
             ,"_blank")
   } 
   return (

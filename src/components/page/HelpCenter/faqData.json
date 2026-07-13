@@ -3,22 +3,22 @@
         "Getting Started": [
             {
                 "id": 1,
-                "question": "How do I sign up for a Shipease account?",
+                "question": "How do I sign up for a NexShyp account?",
                 "answer": "You can create an account by signing up on our platform using your email and setting a password."
             },
             {
                 "id": 111,
-                "question": "What is Shipease and how does it work?",
+                "question": "What is NexShyp and how does it work?",
                 "answer": "You can create an account by signing up on our platform using your email and setting a password."
             },
             {
                 "id": 112,
-                "question": "Important Terms All Shipease Users Should Know",
+                "question": "Important Terms All NexShyp Users Should Know",
                 "answer": "You can create an account by signing up on our platform using your email and setting a password."
             },
             {
                 "id": 113,
-                "question": "Shipease: 3 Tips for Taking Better Shipment Photos",
+                "question": "NexShyp: 3 Tips for Taking Better Shipment Photos",
                 "answer": "You can create an account by signing up on our platform using your email and setting a password."
             },
             {
@@ -28,12 +28,12 @@
             },
             {
                 "id": 115,
-                "question": "How do I contact the Shipease support team?",
+                "question": "How do I contact the NexShyp support team?",
                 "answer": "You can create an account by signing up on our platform using your email and setting a password."
             },
             {
                 "id": 116,
-                "question": "What are the different Acronyms used at Shipease?",
+                "question": "What are the different Acronyms used at NexShyp?",
                 "answer": "You can create an account by signing up on our platform using your email and setting a password."
             }
         ]
@@ -42,7 +42,7 @@
         "New Order": [
             {
                 "id": 2,
-                "question": "How to Create an Order in Shipease?",
+                "question": "How to Create an Order in NexShyp?",
                 "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
             },
             {
@@ -52,7 +52,7 @@
             },
             {
                 "id": 222,
-                "question": "How to create manual order on Shipease?",
+                "question": "How to create manual order on NexShyp?",
                 "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
             },
             {
@@ -62,14 +62,14 @@
             },
             {
                 "id": 224,
-                "question": "Learn More About the Shipease Orders Screen",
+                "question": "Learn More About the NexShyp Orders Screen",
                 "answer": "Go to the 'New Order' section, fill in the required details, and confirm your order."
             }
         ],
         "Process Order": [
             {
                 "id": 3,
-                "question": "How do I ship an order with Shipease?",
+                "question": "How do I ship an order with NexShyp?",
                 "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
             },
             {
@@ -89,7 +89,7 @@
             },
             {
                 "id": 334,
-                "question": "How to verify my orders in Shipease?",
+                "question": "How to verify my orders in NexShyp?",
                 "answer": "Order details can only be edited before dispatching. After that, changes may not be possible."
             },
             {
@@ -191,7 +191,7 @@
             },
             {
                 "id": 446,
-                "question": "How do I handle pickup delays in my Shipease account?",
+                "question": "How do I handle pickup delays in my NexShyp account?",
                 "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
             },
             {
@@ -221,7 +221,7 @@
             },
             {
                 "id": 44123,
-                "question": "I'm not able to locate my existing Pick up ID on Shipease",
+                "question": "I'm not able to locate my existing Pick up ID on NexShyp",
                 "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
             },
             {
@@ -246,7 +246,7 @@
             },
             {
                 "id": 44178,
-                "question": "Will this have an impact on the pickup process in the Shipease mobile apps as well?",
+                "question": "Will this have an impact on the pickup process in the NexShyp mobile apps as well?",
                 "answer": "Go to the 'Pickups' section and select a date and time for the pickup."
             },
             {
@@ -333,7 +333,7 @@
             },
             {
                 "id": 560,
-                "question": "How can I reduce my RTO Shipments? What are the tools offered by Shipease?",
+                "question": "How can I reduce my RTO Shipments? What are the tools offered by NexShyp?",
                 "answer": "RTO stands for 'Return to Origin,' meaning the package is sent back due to non-delivery."
             }
         ],
@@ -345,7 +345,7 @@
             },
             {
                 "id": 661,
-                "question": "How to raise a delivery dispute in Shipease?",
+                "question": "How to raise a delivery dispute in NexShyp?",
                 "answer": "If you have a dispute regarding delivery, submit a request through the 'Delivery Dispute' section."
             },
             {
@@ -424,12 +424,12 @@
             },
             {
                 "id": 881,
-                "question": "What is Shipease Direct-Ship?",
+                "question": "What is NexShyp Direct-Ship?",
                 "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
             },
             {
                 "id": 882,
-                "question": "How to activate Shipease Direct-ship?",
+                "question": "How to activate NexShyp Direct-ship?",
                 "answer": "Direct Ship enables sellers to use their own logistics instead of a third-party courier."
             }
         ]
@@ -659,17 +659,17 @@
             },
             {
                 "id": 1412,
-                "question": "How Do I integrate Woocommerce with Shipease?",
+                "question": "How Do I integrate Woocommerce with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1413,
-                "question": "How do I integrate Shopify as a channel with Shipease?",
+                "question": "How do I integrate Shopify as a channel with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1414,
-                "question": "How do I integrate Unicommerce with Shipease?",
+                "question": "How do I integrate Unicommerce with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -684,32 +684,32 @@
             },
             {
                 "id": 1417,
-                "question": "Shipease Wordpress App Help Document",
+                "question": "NexShyp Wordpress App Help Document",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1418,
-                "question": "How do I integrate Ecwid as a channel with Shipease ?",
+                "question": "How do I integrate Ecwid as a channel with NexShyp ?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1419,
-                "question": "How Do I integrate Opencart with Shipease?",
+                "question": "How Do I integrate Opencart with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1420,
-                "question": "How Do I integrate Magento(version 1) with Shipease?",
+                "question": "How Do I integrate Magento(version 1) with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1421,
-                "question": "How Do I integrate Magento(Version 2) with Shipease?",
+                "question": "How Do I integrate Magento(Version 2) with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1422,
-                "question": "How to Integrate Prestashop with Shipease?",
+                "question": "How to Integrate Prestashop with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -724,17 +724,17 @@
             },
             {
                 "id": 1425,
-                "question": "How do I integrate my Zoho website with Shipease?",
+                "question": "How do I integrate my Zoho website with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1426,
-                "question": "How do I integrate my Store Hippo account with Shipease?",
+                "question": "How do I integrate my Store Hippo account with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1427,
-                "question": "How to integrate Facebook Messenger with Shipease?",
+                "question": "How to integrate Facebook Messenger with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -744,7 +744,7 @@
             },
             {
                 "id": 1429,
-                "question": "How do I integrate Instamojo with Shipease?",
+                "question": "How do I integrate Instamojo with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -754,12 +754,12 @@
             },
             {
                 "id": 1431,
-                "question": "How to Integrate Kartrocket with Shipease?",
+                "question": "How to Integrate Kartrocket with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1432,
-                "question": "How do I integrate 'WIX' as a channel with Shipease ?",
+                "question": "How do I integrate 'WIX' as a channel with NexShyp ?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -771,7 +771,7 @@
             },
             {
                 "id": 1511,
-                "question": "What kind of packaging is available with Shipease Fulfillment?",
+                "question": "What kind of packaging is available with NexShyp Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -850,7 +850,7 @@
             },
             {
                 "id": 1711,
-                "question": "What kind of packaging is available with Shipease Fulfillment?",
+                "question": "What kind of packaging is available with NexShyp Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -887,17 +887,17 @@
             },
             {
                 "id": 1711,
-                "question": "How to add and search your customer's details in Shipease?",
+                "question": "How to add and search your customer's details in NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1712,
-                "question": "What are the benefits of saving customer details in Shipease?",
+                "question": "What are the benefits of saving customer details in NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1713,
-                "question": "What Customer Insights Can You Gain from Shipease's Customer Profiles?",
+                "question": "What Customer Insights Can You Gain from NexShyp's Customer Profiles?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -911,27 +911,27 @@
             },
             {
                 "id": 1811,
-                "question": "What is Shipease Brand Boost?",
+                "question": "What is NexShyp Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1812,
-                "question": "What are the benefits of Using Shipease Brand Boost?",
+                "question": "What are the benefits of Using NexShyp Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1813,
-                "question": "How to Use Shipease Brand Boost?",
+                "question": "How to Use NexShyp Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1814,
-                "question": "What is the difference between basic tracking page and Shipease Brand Boost?",
+                "question": "What is the difference between basic tracking page and NexShyp Brand Boost?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 1815,
-                "question": "Want to Empower Your Customers? Unlock Shipease's Order Tracking Widget",
+                "question": "Want to Empower Your Customers? Unlock NexShyp's Order Tracking Widget",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -958,7 +958,7 @@
             },
             {
                 "id": 1913,
-                "question": "I don’t want to send any order notification from Shipease. Help me!",
+                "question": "I don’t want to send any order notification from NexShyp. Help me!",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -998,7 +998,7 @@
             },
             {
                 "id": 1921,
-                "question": "Which shipment status updates does Shipease send?",
+                "question": "Which shipment status updates does NexShyp send?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1029,12 +1029,12 @@
             },
             {
                 "id": 2111,
-                "question": "What is Shipease Early COD? Should I opt for it?",
+                "question": "What is NexShyp Early COD? Should I opt for it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2112,
-                "question": "How to activate Early COD for my Shipease account?",
+                "question": "How to activate Early COD for my NexShyp account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1046,12 +1046,12 @@
             },
             {
                 "id": 2211,
-                "question": "I have already activated Shipease Postpaid, but it's not showing active for my account.",
+                "question": "I have already activated NexShyp Postpaid, but it's not showing active for my account.",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2212,
-                "question": "What is Shipease Postpaid? How do I activate it?",
+                "question": "What is NexShyp Postpaid? How do I activate it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1080,7 +1080,7 @@
             },
             {
                 "id": 2411,
-                "question": "What are the available plans in Shipease and which one would be the most suitable for my shipping needs?",
+                "question": "What are the available plans in NexShyp and which one would be the most suitable for my shipping needs?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1090,12 +1090,12 @@
             },
             {
                 "id": 2413,
-                "question": "How do I recharge my Shipease wallet?",
+                "question": "How do I recharge my NexShyp wallet?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2414,
-                "question": "I want to upgrade my Shipease plan. How do I do it?",
+                "question": "I want to upgrade my NexShyp plan. How do I do it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1126,7 +1126,7 @@
             },
             {
                 "id": 2612,
-                "question": "What benefits does onboarding onto the ONDC network through Shipease offer?",
+                "question": "What benefits does onboarding onto the ONDC network through NexShyp offer?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1190,12 +1190,12 @@
             },
             {
                 "id": 2812,
-                "question": "Do all orders received through ONDC require shipment exclusively through Shipease?",
+                "question": "Do all orders received through ONDC require shipment exclusively through NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 2813,
-                "question": "Is Shipease planning to implement specific courier rules to identify such orders?",
+                "question": "Is NexShyp planning to implement specific courier rules to identify such orders?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1291,7 +1291,7 @@
             },
             {
                 "id": 3114,
-                "question": "How does the product get returned when a customer complaint has been accepted, and should it be returned through Shipease or Non- Shipease logistics courier partner?",
+                "question": "How does the product get returned when a customer complaint has been accepted, and should it be returned through NexShyp or Non- NexShyp logistics courier partner?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1347,7 +1347,7 @@
             },
             {
                 "id": 3314,
-                "question": "I want to send my shipment outside India. How do I check the international shipping rate in Shipease?",
+                "question": "I want to send my shipment outside India. How do I check the international shipping rate in NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1364,12 +1364,12 @@
             },
             {
                 "id": 3411,
-                "question": "Can I see all Shipease rates in one place?",
+                "question": "Can I see all NexShyp rates in one place?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 3412,
-                "question": "How to compare different Shipease plans rates while using filters?",
+                "question": "How to compare different NexShyp plans rates while using filters?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1467,7 +1467,7 @@
             },
             {
                 "id": 3711,
-                "question": "What are the basic details required to start shipping with Shipease?",
+                "question": "What are the basic details required to start shipping with NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1526,7 +1526,7 @@
             },
             {
                 "id": 3911,
-                "question": "Shipease API Document Helpsheet",
+                "question": "NexShyp API Document Helpsheet",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1562,22 +1562,22 @@
             },
             {
                 "id": 4111,
-                "question": "List of Goods Covered Under Shipease Secure",
+                "question": "List of Goods Covered Under NexShyp Secure",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4112,
-                "question": "List of Goods Not Covered Under Shipease Secure",
+                "question": "List of Goods Not Covered Under NexShyp Secure",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4113,
-                "question": "What Is Shipease Secure? How Do I Activate It for My Account?",
+                "question": "What Is NexShyp Secure? How Do I Activate It for My Account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4114,
-                "question": "How to activate Shipease Secure?",
+                "question": "How to activate NexShyp Secure?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1648,7 +1648,7 @@
             },
             {
                 "id": 4311,
-                "question": "Download Shipease App",
+                "question": "Download NexShyp App",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1658,12 +1658,12 @@
             },
             {
                 "id": 4313,
-                "question": "Shipease App: Can I add my brand logo and product details to the shipping label?",
+                "question": "NexShyp App: Can I add my brand logo and product details to the shipping label?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4314,
-                "question": "Can I integrate my sales channel using Shipease app?",
+                "question": "Can I integrate my sales channel using NexShyp app?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1675,12 +1675,12 @@
             },
             {
                 "id": 4411,
-                "question": "Shipease App: Explain Weight Discrepancy tab",
+                "question": "NexShyp App: Explain Weight Discrepancy tab",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4412,
-                "question": "Shipease App: Shipment weight terms you should know",
+                "question": "NexShyp App: Shipment weight terms you should know",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -1692,7 +1692,7 @@
             },
             {
                 "id": 4511,
-                "question": "How to create a return order in Shipease App?",
+                "question": "How to create a return order in NexShyp App?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1714,31 +1714,31 @@
             },
             {
                 "id": 4612,
-                "question": "Shipease App: When will I receive my COD payment?",
+                "question": "NexShyp App: When will I receive my COD payment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4613,
-                "question": "Shipease App: All about freight invoices",
+                "question": "NexShyp App: All about freight invoices",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4614,
-                "question": "Explaining Shipease Passbook Charges",
+                "question": "Explaining NexShyp Passbook Charges",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
     },
-    "Shipease Fulfillment": {
+    "NexShyp Fulfillment": {
         "Introduction": [
             {
                 "id": 47,
-                "question": "What is Shipease Fulfillment?",
+                "question": "What is NexShyp Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4711,
-                "question": "What is Shipease Fulfillment?",
+                "question": "What is NexShyp Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1758,17 +1758,17 @@
             },
             {
                 "id": 4715,
-                "question": "How do you add products to your Shipease Fulfillment Account?",
+                "question": "How do you add products to your NexShyp Fulfillment Account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4716,
-                "question": "Shipease Fulfillment: Will you also manage my return orders?",
+                "question": "NexShyp Fulfillment: Will you also manage my return orders?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4717,
-                "question": "I’m on the Shipease Lite plan. Can I still register for SEF?",
+                "question": "I’m on the NexShyp Lite plan. Can I still register for SEF?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1778,12 +1778,12 @@
             },
             {
                 "id": 4719,
-                "question": "How to activate your Shipease Fulfillment account?",
+                "question": "How to activate your NexShyp Fulfillment account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 4720,
-                "question": "How do I map products in Shipease Fulfillment?",
+                "question": "How do I map products in NexShyp Fulfillment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1867,7 +1867,7 @@
             },
             {
                 "id": 4921,
-                "question": "How can I make product combos in my Shipease Fulfillment Account?",
+                "question": "How can I make product combos in my NexShyp Fulfillment Account?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -1977,7 +1977,7 @@
             }
         ]
     },
-    "Shipease Mobile App": {
+    "NexShyp Mobile App": {
         "General FAQs & Settings": [
             {
                 "id": 56,
@@ -1996,22 +1996,22 @@
             },
             {
                 "id": 5613,
-                "question": "Can I submit my KYC details via Shipease app?",
+                "question": "Can I submit my KYC details via NexShyp app?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5614,
-                "question": "Shipease App: I want to integrate my sales channels?",
+                "question": "NexShyp App: I want to integrate my sales channels?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5615,
-                "question": "How to set the courier priority in Shipease App?",
+                "question": "How to set the courier priority in NexShyp App?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5616,
-                "question": "I want to add my customer details in Shipease App",
+                "question": "I want to add my customer details in NexShyp App",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -2028,7 +2028,7 @@
             },
             {
                 "id": 5711,
-                "question": "Shipease App: How to ship my local orders?",
+                "question": "NexShyp App: How to ship my local orders?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -2045,22 +2045,22 @@
             },
             {
                 "id": 5811,
-                "question": "Shipease App: How to escalate my order pickup?",
+                "question": "NexShyp App: How to escalate my order pickup?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5812,
-                "question": "Shipease App: My order hasn't been delivered yet. How to escalate it?",
+                "question": "NexShyp App: My order hasn't been delivered yet. How to escalate it?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5813,
-                "question": "Shipease App: How to escalate my NDR reattempt request?",
+                "question": "NexShyp App: How to escalate my NDR reattempt request?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5814,
-                "question": "Shipease App: How to process an NDR shipment?",
+                "question": "NexShyp App: How to process an NDR shipment?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
@@ -2072,22 +2072,22 @@
             },
             {
                 "id": 5911,
-                "question": "Shipease App: How to process an order?",
+                "question": "NexShyp App: How to process an order?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5912,
-                "question": "Shipease App: How to generate label and invoice for an order?",
+                "question": "NexShyp App: How to generate label and invoice for an order?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5913,
-                "question": "Shipease App: How to generate manifest for multiple orders at once?",
+                "question": "NexShyp App: How to generate manifest for multiple orders at once?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 5914,
-                "question": "What type of orders we can add in Shipease mobile app?",
+                "question": "What type of orders we can add in NexShyp mobile app?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -2127,10 +2127,10 @@
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ],
-        "Shipease Wallet": [
+        "NexShyp Wallet": [
             {
                 "id": 62,
-                "question": "What is Shipease Wallet?",
+                "question": "What is NexShyp Wallet?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
@@ -2140,7 +2140,7 @@
             },
             {
                 "id": 6212,
-                "question": "My transaction is successful, but I haven't received money in my Shipease wallet",
+                "question": "My transaction is successful, but I haven't received money in my NexShyp wallet",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -2154,17 +2154,17 @@
             },
             {
                 "id": 6311,
-                "question": "Which products are prohibited/dangerous to ship via Shipease?",
+                "question": "Which products are prohibited/dangerous to ship via NexShyp?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6312,
-                "question": "Whom should I contact - Shipease or courier partner?",
+                "question": "Whom should I contact - NexShyp or courier partner?",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {
                 "id": 6313,
-                "question": "I'm not able to log in to my Shipease account",
+                "question": "I'm not able to log in to my NexShyp account",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             }
         ]
@@ -2192,7 +2192,7 @@
             },
             {
                 "id": 6511,
-                "question": "Shipease Checkout Guide: An Overview of Dashboard",
+                "question": "NexShyp Checkout Guide: An Overview of Dashboard",
                 "answer": "Weight Freeze locks your shipment weight to prevent additional weight discrepancy charges."
             },
             {

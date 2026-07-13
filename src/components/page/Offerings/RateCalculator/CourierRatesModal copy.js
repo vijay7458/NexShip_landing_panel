@@ -77,7 +77,7 @@ const CourierRatesModal = ({ show, handleClose }) => {
                 <Button variant="secondary" onClick={handleClose}>
                     Close
                 </Button>
-                <Button variant="primary" href="https://app.shipease.in/signup" target="_blank">
+                <Button variant="primary" href={process.env.REACT_APP_BASE_URL + "/signup"} target="_blank">
                     Signup Now
                 </Button>
             </Modal.Footer>
