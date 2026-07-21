@@ -77,7 +77,7 @@ const MapboxComponent = () => {
                     border: '1px solid rgba(255,255,255,0.1)',
                 }}
             >
-                <strong>NexShyp Technology Pvt. Ltd.</strong><br />
+                <strong>NEXSHYP TECHNOLOGIES PVT. LTD.</strong><br />
                 Plot No. B1, PU 4, Scheme No. 54, Vijay Nagar Square, AB Rd, Vijay Nagar, Indore, Madhya Pradesh 452010
             </div>
             {/* Place a Marker at the specified latitude and longitude */}
