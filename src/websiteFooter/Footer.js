@@ -93,7 +93,7 @@ export default function Footer() {
                         <div className="mt-3">
                             <h6 className="fw-semibold mb-2 footer-subheading">Office Address</h6>
                             <p className="small mb-0 footer-desc">
-                                NexShyp Technologies Pvt. Ltd.
+                                NEXSHYP TECHNOLOGIES PVT. LTD.
                                 <br />
                                 Plot No. B1, PU 4, Scheme No. 54
                                 <br />
@@ -154,7 +154,7 @@ export default function Footer() {
             {/* ======= BOTTOM ROW ======= */}
             <div className="container pb-2 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 footer-bottom-row">
                 <p className="small mb-2 mb-md-0 footer-copyright">
-                    © {new Date().getFullYear()} NexShyp Technologies Pvt. Ltd.
+                    © {new Date().getFullYear()} NEXSHYP TECHNOLOGIES PVT. LTD.
                     All rights reserved.
                 </p>
                 <div className="d-flex gap-3 align-items-center">
